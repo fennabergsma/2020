@@ -10,3 +10,15 @@
 *.bcf
 
 *.aux
+
+*.fls
+
+*.fdb_latexmk
+
+*.xdv
+
+.DS_Store
+
+*.bbl
+
+*.blg

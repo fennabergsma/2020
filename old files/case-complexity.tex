@@ -1,0 +1,106 @@
+% !TEX root = thesis.tex
+
+\chapter{Case complexity}
+
+\section{basic pattern}
+
+
+German \citep[344]{vogel2001}
+
+\ex.
+\ag. *Ich vertraue, wem Maria mag. \\
+I trust\scsub{dat} who.{\tsc{dat}} also Maria likes\scsub{acc}\\
+`I trust whoever Maria also likes.'
+\bg. *Ich vertraue, wen auch Maria mag. \\
+I trust\scsub{dat} who.\tsc{acc} also Maria likes\scsub{acc}\\
+`I trust whoever Maria also likes.'
+
+\ex.
+\ag. Ich {lade ein}, wem Maria vertraut. \\
+I invite\scsub{acc} who.{\tsc{dat}} also Maria trusts\scsub{dat}\\
+`I invite whoever Maria also trusts.'
+\bg. *Ich {lade ein}, wen auch Maria vertraut. \\
+I invite\scsub{acc} who.{\tsc{acc}} also Maria trusts\scsub{dat}\\
+`I invite whoever Maria also trusts.'
+
+--add all examples--
+
+
+
+\begin{table}[h]
+	\center
+	\setlength{\tabcolsep}{10pt}
+	\caption {German mismatching free relatives}
+		\begin{minipage}{\linewidth}
+			\begin{tabularx}{\textwidth}{c *{4}{Y}}
+				\toprule
+					\diagbox{m}{e}	& V\scsub{nom} 											& V\scsub{acc} 											& V\scsub{dat} 											& V\scsub{gen} 											\\
+														\cmidrule(lr){2-5}
+					V\scsub{nom} 		& \cellcolor{Gray}{\tsc{nom}} 			& \diagbox{*\tsc{nom}}{\tsc{acc}} 	& \diagbox{*\tsc{nom}}{\tsc{dat}} 	& \diagbox{*\tsc{nom}}{\tsc{gen}} 	\\
+					V\scsub{acc} 		& \diagbox{*\tsc{acc}}{*\tsc{nom}} 	&	\cellcolor{Gray}{\tsc{acc}} 			&	\diagbox{*\tsc{acc}}{\tsc{dat}} 	&	\diagbox{*\tsc{acc}}{\tsc{gen}} 	\\
+					V\scsub{dat} 		& \diagbox{*\tsc{dat}}{*\tsc{nom}}	&	\diagbox{*\tsc{dat}}{*\tsc{acc}} 	& \cellcolor{Gray}{\tsc{dat}} 			& \diagbox{*\tsc{dat}}{*\tsc{gen}}	\\
+					V\scsub{gen} 		& \diagbox{*\tsc{gen}}{*\tsc{nom}} 	& \diagbox{*\tsc{gen}}{*\tsc{acc}} 	& \diagbox{*\tsc{gen}}{*\tsc{dat}} 	& \cellcolor{Gray}{\tsc{gen}}													\\
+				\bottomrule
+			\end{tabularx}
+		\end{minipage}
+\end{table}
+
+With German: dat/gen > acc > nom
+
+gothic
+
+Old High german
+
+
+
+
+
+\section{Case in syntax}
+
+\begin{itemize}
+	\item Show case complexity can also be morphologically
+	\item Introduce nano and how on captures the morphology
+\end{itemize}
+
+
+
+\section{The basic mechanism}
+
+More complex can license less complex
+
+
+\section{Gothic \citep[339,434]{harbert1978}}
+
+\exg. hva nu wileiþ ei taujau þamm-ei qiþiþ þiudan Iudaie?\\
+what now want that do\scsub{dat} \tsc{dat}-compl say\scsub{acc} king {of Jews}\\
+`What now do you wish that I do to him whom you call King of the Jews?'
+
+\exg. ushafjands ana þamm-ei lag\\
+{picking up}\scsub{acc} on \tsc{dat}-compl lay\scsub{dat}\\
+`picking up that on which he lay'
+
+
+
+\exg. þaim-ei iupa sind fraþjaiþ, ni þaim þo-ei ana airþai sind.\\
+that.dat-comp above are {think on} not that.dat that.acc-comp on earth are\\
+`Set your affection on things above, not on things on the earth.'
+
+
+
+\begin{table}[h]
+	\center
+	\setlength{\tabcolsep}{10pt}
+	\caption {Gothic mismatching free relatives}
+		\begin{minipage}{\linewidth}
+			\begin{tabularx}{\textwidth}{c *{4}{Y}}
+				\toprule
+					\diagbox{m}{e}	& V\scsub{nom} 										& V\scsub{acc} 										& V\scsub{dat} 										& V\scsub{gen} 										\\
+														\cmidrule(lr){2-5}
+					V\scsub{nom} 		& \cellcolor{Gray}{\tsc{nom}}			& \diagbox{*\tsc{nom}}{\tsc{acc}} & \diagbox{*\tsc{nom}}{\tsc{dat}} & ? 															\\
+					V\scsub{acc} 		& \diagbox{\tsc{acc}}{*\tsc{nom}} & \cellcolor{Gray}{\tsc{acc}}			& \diagbox{*\tsc{acc}}{\tsc{dat}} & \diagbox{*\tsc{acc}}{\tsc{gen}} \\
+					V\scsub{dat} 		& \diagbox{\tsc{dat}}{*\tsc{nom}} & \diagbox{\tsc{dat}}{*\tsc{acc}} & \cellcolor{Gray}{\tsc{dat}}			& ?															 	\\
+					V\scsub{gen} 		& ? 															& \diagbox{\tsc{gen}}{*\tsc{acc}} & ? 															& \cellcolor{Gray}{?}							\\
+				\bottomrule
+	\end{tabularx}
+\end{minipage}
+\end{table}

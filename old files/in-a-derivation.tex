@@ -1,0 +1,1130 @@
+% !TEX root = thesis.tex
+
+\chapter{In a derivation}
+
+here the step by step derivation of what happens for German, Old High German and Gothic
+
+
+
+\section{German}
+
+\subsection{Lexical entries}
+
+\ex. \a. [case [base [deixis [number [category]]]]]
+\b. [thing [person]] \hfill category
+\b. [plural [singular]] \hfill number
+\b. [distal [medial [proximal]]] \hfill deixis
+\b. [D [Rel [Wh]]] \hfill base (for free relative pronoun)
+\b. [D] \hfill base (for determiner)
+\b. [K4 [K3 [K2 [K1]]]] \hfill case
+
+\begin{itemize}
+  \item I am leaving out deixis here. Can deixis be related to the d/wh distinction and the absence or presence of number in the wh-elements.
+  \item I am also leaving out number below.
+\end{itemize}
+
+
+\ex. \a. [KP [D [Rel [Wh [CategoryP]]]]] \hfill wh-relative
+\b. [KP [D [(DeixisP) [(NumP) [CategoryP]]]]]  \hfill d-relative
+
+
+\ex. \a. \begin{forest} boom [DP
+ 			[D]
+ 			[RelP
+					[Rel]
+ 					[Wh]
+			]
+	]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{w-}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [DP
+      [D, roof]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{d-}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [DatP
+      [K3]
+      [AccP
+          [K2]
+          [NomP
+              [K1]
+              [PersonP
+                  [Person]
+                  [Thing]
+              ]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-em}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [AccP
+      [K2]
+      [NomP
+          [K1]
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-en}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [NomP
+      [K1]
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-er}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [AccP
+      [K1]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-as}}; }
+\end{forest}
+
+hi
+
+\subsection{\tsc{int > ext}}
+
+\exg. Ich {lade ein}, wem Maria vertraut. \\
+I invite\scsub{acc} who.{\tsc{dat}} also Maria trusts\scsub{dat}\\
+`I invite whoever Maria also trusts.'\label{ex:ger-int>ext}
+
+First: main clause
+
+\ex. Thing and Person are merged\\
+ \begin{forest} boom
+  [PersonP
+      [Person]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+\end{forest}
+
+Then: embedded clause
+
+Not sure how to handle the two heads in both clauses. Do they appear at once? How are they created? Copied in a way?
+
+\ex. Thing and Person are merged\\
+ \begin{forest} boom
+  [PersonP
+      [Person]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+\end{forest}
+
+\ex. Wh is merged
+ \a.
+ \begin{forest} boom
+  [WhP
+      [Wh]
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ *}; }
+\end{forest}\\
+\b. Spellout fails for all movement options, complex spec is built\\
+ \begin{forest} boom
+  [WhP
+      [WhP
+          [Wh, roof]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+  ]
+\end{forest}
+
+What is exactly in this spec? Wh and ?
+
+\ex. Rel is merged
+ \a. \begin{forest} boom
+  [RelP
+      [Rel]
+      [WhP
+          [WhP
+              [Wh, roof]
+          ]
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ *}; }
+\end{forest}\\
+\b. Spellout succeeds during backtracking: Rel is co-spelled out with Wh\\
+ \begin{forest} boom
+   [RelP
+      [RelP
+          [Rel]
+          [WhP
+              [Wh, roof]
+          ]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+  ]
+\end{forest}
+
+\ex. merge K1
+\a. \begin{forest} boom
+  [NomP
+      [K1]
+      [RelP
+         [RelP
+             [Rel]
+             [WhP
+                 [Wh, roof]
+             ]
+         ]
+         {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+         [PersonP
+             [Person]
+             [Thing]
+         ]
+         {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+     ]
+  ]
+\end{forest}
+\b. Spellout succeeds during backtracking: K1 is co-spelled out with PersonP
+\begin{forest} boom
+    [RelP
+        [RelP
+           [Rel]
+           [WhP
+               [Wh, roof]
+           ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+        [NomP
+            [K1]
+            [PersonP
+                [Person]
+                [Thing]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+    ]
+\end{forest}
+
+
+\ex. merge K2-K4, proceeds similarly
+\begin{forest} boom
+    [RelP
+        [RelP
+           [Rel]
+           [WhP
+               [Wh, roof]
+           ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+        [DatP
+            [K3]
+            [AccP
+                [K2]
+                [NomP
+                    [K1]
+                    [PersonP
+                        [Person]
+                        [Thing]
+                    ]
+                ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+    ]
+\end{forest}
+
+
+
+By now \tit{wer} is high in the structure. It is merged into the main spine with the other head.
+
+\ex. merge two head together\\
+\begin{forest} boom
+  [RelP
+      [RelP
+          [RelP
+             [Rel]
+             [WhP
+                 [Wh, roof]
+             ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+          [DatP
+              [K3]
+              [AccP
+                  [K2]
+                  [NomP
+                      [K1]
+                      [PersonP
+                          [Person]
+                          [Thing]
+                      ]
+                  ]
+              ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+      ]
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+    ]
+\end{forest}
+
+\ex. merge D
+\a. \begin{forest} boom
+  [DP
+      [D]
+      [RelP
+          [RelP
+              [RelP
+                 [Rel]
+                 [WhP
+                     [Wh, roof]
+                 ]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+              [DatP
+                  [K3]
+                  [AccP
+                      [K2]
+                      [NomP
+                          [K1]
+                          [PersonP
+                              [Person]
+                              [Thing]
+                          ]
+                      ]
+                  ]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+          ]
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+        ]
+    ]
+\end{forest}
+\b. Spellout succeeds during backtracking: D is co-spelled out with RelP\\
+\begin{forest} boom
+    [DP
+        [DP
+            [DP
+                [D]
+                [RelP
+                   [Rel]
+                   [WhP
+                       [Wh, roof]
+                   ]
+                ]
+            ]
+            {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+            [DatP
+                [K3]
+                [AccP
+                    [K2]
+                    [NomP
+                        [K1]
+                        [PersonP
+                            [Person]
+                            [Thing]
+                        ]
+                    ]
+                ]
+            ]
+            {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+        ]
+        [PersonP
+            [Person]
+            [Thing]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+  ]
+\end{forest}
+
+
+\ex. merge K1\\
+\a. \begin{forest} boom
+    [NomP
+        [K1]
+        [DP
+            [DP
+                [DP
+                    [D]
+                    [RelP
+                       [Rel]
+                       [WhP
+                           [Wh, roof]
+                       ]
+                    ]
+                ]
+                {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+                [DatP
+                    [K3]
+                    [AccP
+                        [K2]
+                        [NomP
+                            [K1]
+                            [PersonP
+                                [Person]
+                                [Thing]
+                            ]
+                        ]
+                    ]
+                ]
+                {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+            ]
+            [PersonP
+                [Person]
+                [Thing]
+            ]
+            {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+      ]
+  ]
+\end{forest}
+\b. \begin{forest} boom
+    [DP
+        [DP
+            [DP
+                [D]
+                [RelP
+                   [Rel]
+                   [WhP
+                       [Wh, roof]
+                   ]
+                ]
+            ]
+            {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+            [DatP
+                [K3]
+                [AccP
+                    [K2]
+                    [NomP
+                        [K1]
+                        [PersonP
+                            [Person]
+                            [Thing]
+                        ]
+                    ]
+                ]
+            ]
+            {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+        ]
+        [NomP
+            [K1]
+            [PersonP
+                [Person]
+                [Thing]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+  ]
+\end{forest}
+
+
+\ex. merge K2, similar\\
+\begin{forest} boom
+[DP
+    [DP
+        [DP
+            [D]
+            [RelP
+               [Rel]
+               [WhP
+                   [Wh, roof]
+               ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+        [DatP
+            [K3]
+            [AccP
+                [K2]
+                [NomP
+                    [K1]
+                    [PersonP
+                        [Person]
+                        [Thing]
+                    ]
+                ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+    ]
+    [AccP
+        [K2]
+        [NomP
+            [K1]
+            [PersonP
+                [Person]
+                [Thing]
+            ]
+        ]
+    ]
+    {\draw (.east) node[right]{$\Rightarrow$ \tit{-en}}; }
+]
+\end{forest}
+
+now: DP contains AccP, DP c-commands AccP >> deletion
+
+\begin{forest} boom
+  [DP
+      [DP
+          [D]
+          [RelP
+             [Rel]
+             [WhP
+                 [Wh, roof]
+             ]
+          ]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+      [DatP
+          [K3]
+          [AccP
+          ,tikz={\node [draw,fit to=tree]{};}
+              [K2]
+              [NomP
+                  [K1]
+                  [PersonP
+                      [Person]
+                      [Thing]
+                  ]
+              ]
+          ]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+  ]
+\end{forest}
+
+
+
+
+\subsection{\tsc{int > ext}}
+
+\exg. Ich {lade ein}, wem Maria vertraut. \\
+I invite\scsub{acc} who.{\tsc{dat}} also Maria trusts\scsub{dat}\\
+`I invite whoever Maria also trusts.'\label{ex:ger-int>ext}
+
+\begin{forest} boom
+[DP
+    [DP
+        [DP
+            [D]
+            [RelP
+               [Rel]
+               [WhP
+                   [Wh, roof]
+               ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+        [AccP
+            [K2]
+            [NomP
+                [K1]
+                [PersonP
+                    [Person]
+                    [Thing]
+                ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-en}}; }
+    ]
+    [DatP
+        [K3]
+        [AccP
+            [K2]
+            [NomP
+                [K1]
+                [PersonP
+                    [Person]
+                    [Thing]
+                ]
+            ]
+        ]
+    ]
+    {\draw (.east) node[right]{$\Rightarrow$ \tit{-em}}; }
+]
+\end{forest}
+
+The element in the embedded clause does not contain the DatP.
+
+\ex. \begin{forest} boom
+    [DP
+        [DP
+            [D]
+            [RelP
+               [Rel]
+               [WhP
+                   [Wh, roof]
+               ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{w-}}; }
+        [AccP
+            [K2]
+            [NomP
+                [K1]
+                [PersonP
+                    [Person]
+                    [Thing]
+                ]
+            ]
+        ]
+        {\draw (.east) node[right]{$\Rightarrow$ \tit{-en}}; }
+    ]
+   \end{forest}
+
+
+Q: why does German not have the Old High German strategy?
+
+
+
+
+\section{Old High German}
+
+
+\subsection{Lexical entries}
+
+\ex. \a. \begin{forest} boom
+  [WhP
+      [Wh, roof]
+	]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{w-}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [DP
+      [D, roof]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{d-}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [DatP
+      [K3]
+      [AccP
+          [K2]
+          [NomP
+              [K1]
+              [PersonP
+                  [Person]
+                  [Thing]
+              ]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-ëmu/o}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [AccP
+      [K2]
+      [NomP
+          [K1]
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-ën}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [NomP
+      [K1]
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-ër}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [AccP
+      [K1]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{-aʐ}}; }
+\end{forest}
+
+\subsection{\tsc{int > ext}}
+
+First: main clause
+
+\ex. Thing and Person are merged\\
+ \begin{forest} boom
+  [PersonP
+      [Person]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+\end{forest}
+
+Then: embedded clause
+
+Not sure how to handle the two heads in both clauses. Do they appear at once? How are they created? Copied in a way?
+
+\ex. Thing and Person are merged\\
+ \begin{forest} boom
+  [PersonP
+      [Person]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+\end{forest}
+
+Now Wh and Rel can be merged, but then there is no spellout in OHG. Because German doesnt really have relative pronouns. So this is not the construction that is made in OHD. How do we know? Because there are also these correlative structures, with the d-element in the main clause in situ.
+Instead:
+
+\ex. merge K1
+\a. \begin{forest} boom
+    [NomP
+        [K1]
+        [PersonP
+            [Person]
+            [Thing]
+        ]
+    ]
+    {\draw (.east) node[right]{$\Rightarrow$ \tit{-ër}}; }
+\end{forest}
+
+
+\ex. merge K2-K3, proceeds similarly\\
+\begin{forest} boom
+    [DatP
+        [K3]
+        [AccP
+            [K2]
+            [NomP
+                [K1]
+                [PersonP
+                    [Person]
+                    [Thing]
+                ]
+            ]
+        ]
+    ]
+    {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+\end{forest}
+
+This element is now somewhere down in the structure, not high up. Two the clauses are merged back together.
+
+
+
+
+\ex. merge two head together\\
+\begin{forest} boom
+  [DatP
+      [DatP
+          [K3]
+          [AccP
+              [K2]
+              [NomP
+                  [K1]
+                  [PersonP
+                      [Person]
+                      [Thing]
+                  ]
+              ]
+          ]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+  {\draw (.east) node[right]{$\Rightarrow$ \tit{-ër}}; }
+  ]
+\end{forest}
+
+
+
+\ex. merge D
+\a. \begin{forest} boom
+  [DP
+      [D]
+          [DatP
+              [DatP
+                  [K3]
+                  [AccP
+                      [K2]
+                      [NomP
+                          [K1]
+                          [PersonP
+                              [Person]
+                              [Thing]
+                          ]
+                      ]
+                  ]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+              [PersonP
+                  [Person]
+                  [Thing]
+              ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ër}}; }
+          ]
+    ]
+\end{forest}
+\b. Now D is merged. And what happens? A complex spec is built, and this cannot attach to something within the relative clause. Instead, triggers the movement of the small PersonP over the relative clause? How do we see that this element comes from within a relative clause? Probably I should have put more structure between them? But what if the internal element is the subject to begin with?\\
+\begin{forest} boom
+  [DP
+      [DP
+          [DP
+              [D,roof]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-d}}; }
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ër}}; }
+      ]
+      [DatP
+          [K3]
+          [AccP
+              [K2]
+              [NomP
+                  [K1]
+                  [PersonP
+                      [Person]
+                      [Thing]
+                  ]
+              ]
+          ]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+    ]
+\end{forest}
+
+\ex. K1 is merged
+\a. \begin{forest} boom
+  [NomP
+      [K1]
+      [DP
+          [DP
+              [DP
+                  [D,roof]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-d}}; }
+              [PersonP
+                  [Person]
+                  [Thing]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-ër}}; }
+          ]
+          [DatP
+              [K3]
+              [AccP
+                  [K2]
+                  [NomP
+                      [K1]
+                      [PersonP
+                          [Person]
+                          [Thing]
+                      ]
+                  ]
+              ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+      ]
+  ]
+\end{forest}
+\b. This should end up on the d-pronoun here. Via backtracking? So we forgot that this element has just been moved from somewhere?\\
+\begin{forest}
+      [DP
+          [DP
+              [DP
+                  [D,roof]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-d}}; }
+              [NomP
+                  [K1]
+                  [PersonP
+                      [Person]
+                      [Thing]
+                  ]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-ër}}; }
+          ]
+          [DatP
+              [K3]
+              [AccP
+                  [K2]
+                  [NomP
+                      [K1]
+                      [PersonP
+                          [Person]
+                          [Thing]
+                      ]
+                  ]
+              ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+      ]
+\end{forest}
+
+\ex. K2 is merged and spelled out similarly:\\
+\begin{forest}
+      [DP
+          [DP
+              [DP
+                  [D,roof]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-d}}; }
+              [AccP
+                  [K1]
+                  [NomP
+                      [K1]
+                      [PersonP
+                          [Person]
+                          [Thing]
+                      ]
+                  ]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-ën}}; }
+          ]
+          [DatP
+              [K3]
+              [AccP
+                  [K2]
+                  [NomP
+                      [K1]
+                      [PersonP
+                          [Person]
+                          [Thing]
+                      ]
+                  ]
+              ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+      ]
+\end{forest}
+
+no containment, so no deletion possible
+
+
+\subsection{\tsc{ext > int}}
+
+the outcome is this:
+
+\ex. \begin{forest}
+      [DP
+          [DP
+              [DP
+                  [D,roof]
+              ]
+              {\draw (.east) node[right]{$\Rightarrow$ \tit{-d}}; }
+          [DatP
+              [K3]
+              [AccP
+                  [K2]
+                  [NomP
+                      [K1]
+                      [PersonP
+                          [Person]
+                          [Thing]
+                      ]
+                  ]
+              ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+          ]
+          [AccP
+              [K1]
+              [NomP
+                  [K1]
+                  [PersonP
+                      [Person]
+                      [Thing]
+                  ]
+              ]
+          ]
+          {\draw (.east) node[right]{$\Rightarrow$ \tit{-ën}}; }
+      ]
+\end{forest}
+
+deletion is possible because we have containment
+
+\ex.
+\begin{forest} boom
+[DP
+    [DP
+        [D,roof]
+    ]
+    {\draw (.east) node[right]{$\Rightarrow$ \tit{-d}}; }
+    [DatP
+        [K3]
+        [AccP
+        ,tikz={\node [draw,fit to=tree]{};}
+            [K2]
+            [NomP
+                [K1]
+                [PersonP
+                    [Person]
+                    [Thing]
+                ]
+            ]
+        ]
+    ]
+    {\draw (.east) node[right]{$\Rightarrow$ \tit{-ëmu/o}}; }
+]
+\end{forest}
+
+hi
+
+
+\section{Gothic}
+
+\subsection{Lexical entries}
+
+\ex.
+\a. \begin{forest} boom
+ 	[DP
+			[D, roof]
+	]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{þ-}}; }
+\end{forest}
+\b. \begin{forest} boom
+	[RelP
+			[Rel]
+			[WhP
+					[Wh]
+			]
+	]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-ei}}; }
+\end{forest}
+\b. \begin{forest} boom
+ 	[WhP
+			[Wh, roof]
+	]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{ƕ-}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [DatP
+      [K3]
+      [AccP
+          [K2]
+          [NomP
+              [K1]
+              [PersonP
+                  [Person]
+                  [Thing]
+              ]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{dat}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [AccP
+      [K2]
+      [NomP
+          [K1]
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Leftrightarrow$ \tit{acc}}; }
+\end{forest}
+
+hi
+
+
+\subsection{\tsc{int > ext}}
+
+First: main clause
+
+\ex. Thing and Person are merged\\
+ \begin{forest} boom
+  [PersonP
+      [Person]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-acc}}; }
+\end{forest}
+
+Then: embedded clause
+
+Not sure how to handle the two heads in both clauses. Do they appear at once? How are they created? Copied in a way?
+
+\ex. Thing and Person are merged\\
+ \begin{forest} boom
+  [PersonP
+      [Person]
+      [Thing]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ \tit{-acc}}; }
+\end{forest}
+
+\ex. Wh is merged
+ \a.
+ \begin{forest} boom
+  [WhP
+      [Wh]
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ *}; }
+\end{forest}\\
+\b. Spellout fails for all movement options, complex spec is built\\
+ \begin{forest} boom
+  [WhP
+      [WhP
+          [Wh, roof]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{ƕ-}}; }
+      [PersonP
+          [Person]
+          [Thing]
+      ]
+      {\draw (.east) node[right]{$\Rightarrow$ \tit{-er}}; }
+  ]
+\end{forest}
+
+
+\ex. Rel is merged
+ \a. \begin{forest} boom
+  [RelP
+      [Rel]
+      [WhP
+          [WhP
+              [Wh, roof]
+          ]
+          [PersonP
+              [Person]
+              [Thing]
+          ]
+      ]
+  ]
+	{\draw (.east) node[right]{$\Rightarrow$ *}; }
+\end{forest}\\
+\b. Backtracking, make Wh and Rel a suffix. Ah! And this can of course never work. Because suffix goes before complex spec. Then, is ei make not a suffix, but something else?
+
+hi

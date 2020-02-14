@@ -19,95 +19,67 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{behaghel1923}{book}{}
+    \entry{hachem2015a}{book}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=361141bb7279a8c17b1d24cb81a43910}{%
-           family={Behaghel},
-           familyi={B\bibinitperiod},
-           given={Otto},
-           giveni={O\bibinitperiod},
+        {{un=0,uniquepart=base,hash=4082346d21d75e581d93fcc1da5601ba}{%
+           family={Hachem},
+           familyi={H\bibinitperiod},
+           given={Mirjam},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Heidelberg}%
-      }
       \list{publisher}{1}{%
-        {Winter}%
+        {Utrecht University}%
       }
-      \strng{namehash}{361141bb7279a8c17b1d24cb81a43910}
-      \strng{fullhash}{361141bb7279a8c17b1d24cb81a43910}
-      \strng{bibnamehash}{361141bb7279a8c17b1d24cb81a43910}
-      \strng{authorbibnamehash}{361141bb7279a8c17b1d24cb81a43910}
-      \strng{authornamehash}{361141bb7279a8c17b1d24cb81a43910}
-      \strng{authorfullhash}{361141bb7279a8c17b1d24cb81a43910}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \strng{namehash}{4082346d21d75e581d93fcc1da5601ba}
+      \strng{fullhash}{4082346d21d75e581d93fcc1da5601ba}
+      \strng{bibnamehash}{4082346d21d75e581d93fcc1da5601ba}
+      \strng{authorbibnamehash}{4082346d21d75e581d93fcc1da5601ba}
+      \strng{authornamehash}{4082346d21d75e581d93fcc1da5601ba}
+      \strng{authorfullhash}{4082346d21d75e581d93fcc1da5601ba}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Deutsche Syntax: Eine geschichtliche Darstellung}
-      \field{year}{1923-1932}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Multifunctionality}
+      \field{title}{Multifunctionality: {{The}} Internal and External Syntax of d-and w-Items in {{German}} and {{Dutch}}}
+      \field{year}{2015}
+      \verb{file}
+      \verb C:\\Users\\bergsma\\Zotero\\storage\\AQL9DEWH\\Hachem - 2015 - Multifunctionality The internal and external synt.pdf;C:\\Users\\bergsma\\Zotero\\storage\\JHY2M3JJ\\320401.html
+      \endverb
     \endentry
-    \entry{helgander1971}{article}{}
+    \entry{harbert1978}{thesis}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e2aca8747b0894906578f1d08a67b6f8}{%
-           family={Helgander},
+        {{un=0,uniquepart=base,hash=348d0a5b64fb6e7ac931742ff6d5ece2}{%
+           family={Harbert},
            familyi={H\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
+           given={Wayne\bibnamedelima Eugene},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{e2aca8747b0894906578f1d08a67b6f8}
-      \strng{fullhash}{e2aca8747b0894906578f1d08a67b6f8}
-      \strng{bibnamehash}{e2aca8747b0894906578f1d08a67b6f8}
-      \strng{authorbibnamehash}{e2aca8747b0894906578f1d08a67b6f8}
-      \strng{authornamehash}{e2aca8747b0894906578f1d08a67b6f8}
-      \strng{authorfullhash}{e2aca8747b0894906578f1d08a67b6f8}
+      \list{institution}{1}{%
+        {University of Illinois}%
+      }
+      \list{location}{1}{%
+        {Urbana-Champaign}%
+      }
+      \strng{namehash}{348d0a5b64fb6e7ac931742ff6d5ece2}
+      \strng{fullhash}{348d0a5b64fb6e7ac931742ff6d5ece2}
+      \strng{bibnamehash}{348d0a5b64fb6e7ac931742ff6d5ece2}
+      \strng{authorbibnamehash}{348d0a5b64fb6e7ac931742ff6d5ece2}
+      \strng{authornamehash}{348d0a5b64fb6e7ac931742ff6d5ece2}
+      \strng{authorfullhash}{348d0a5b64fb6e7ac931742ff6d5ece2}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The relative clause in English and other Germanic languages: a historical and analytical survey}
-      \field{year}{1971}
-    \endentry
-    \entry{pittner1995}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fda28924add6d7a40a1e050df04e952}{%
-           family={Pittner},
-           familyi={P\bibinitperiod},
-           given={Karin},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{5fda28924add6d7a40a1e050df04e952}
-      \strng{fullhash}{5fda28924add6d7a40a1e050df04e952}
-      \strng{bibnamehash}{5fda28924add6d7a40a1e050df04e952}
-      \strng{authorbibnamehash}{5fda28924add6d7a40a1e050df04e952}
-      \strng{authornamehash}{5fda28924add6d7a40a1e050df04e952}
-      \strng{authorfullhash}{5fda28924add6d7a40a1e050df04e952}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The linguistic review}
-      \field{number}{3}
-      \field{title}{The Case of {{German}} Relatives}
-      \field{volume}{12}
-      \field{year}{1995}
-      \field{pages}{197\bibrangedash 231}
-      \range{pages}{35}
-      \verb{doi}
-      \verb 10.1515/tlir.1995.12.3.197
-      \endverb
-      \verb{file}
-      \verb U:\\Literature\\Pittner - 1995 - The case of German relatives.pdf
-      \endverb
-      \keyw{glow18}
+      \field{title}{Gothic syntax: a relational grammar}
+      \field{type}{phdthesis}
+      \field{year}{1978}
     \endentry
   \enddatalist
 \endrefsection
