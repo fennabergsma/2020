@@ -1,21 +1,22 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[80] biber-darwin:322> INFO - === Fri Feb 14, 2020, 14:04:25
-[99] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[194] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
-[208] Biber.pm:4256> INFO - Processing section 0
-[208] Utils.pm:75> INFO - Globbing data source 'fenna-files/references.bib'
-[208] Utils.pm:91> INFO - Globbed data source 'fenna-files/references.bib' to fenna-files/references.bib
-[224] Biber.pm:4455> INFO - Looking for bibtex format file 'fenna-files/references.bib' for section 0
-[539] bibtex.pm:1653> INFO - LaTeX decoding ...
-[12451] bibtex.pm:1471> INFO - Found BibTeX data source 'fenna-files/references.bib'
-[12467] Utils.pm:304> WARN - Duplicate entry key: 'baunaz2018' in file 'fenna-files/references.bib', skipping ...
-[12871] Utils.pm:304> WARN - Duplicate entry key: 'koopman2000' in file 'fenna-files/references.bib', skipping ...
-[13162] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/j8/kz7_fjwj1yqfh1l29jj09h200000gn/T/biber_tmp_Fxgg/references.bib_8564.utf8, line 120, warning: 178 characters of junk seen at toplevel
-[13174] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[13174] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[13174] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[13174] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[13176] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[13178] bbl.pm:755> INFO - Output to thesis.bbl
-[13178] Biber.pm:128> INFO - WARNINGS: 3
+[109] biber-darwin:322> INFO - === Tue Feb 18, 2020, 19:23:54
+[129] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[239] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
+[252] Biber.pm:4256> INFO - Processing section 0
+[254] Utils.pm:75> INFO - Globbing data source 'fenna-files/references.bib'
+[255] Utils.pm:91> INFO - Globbed data source 'fenna-files/references.bib' to fenna-files/references.bib
+[266] Biber.pm:4455> INFO - Looking for bibtex format file 'fenna-files/references.bib' for section 0
+[595] bibtex.pm:1653> INFO - LaTeX decoding ...
+[14437] bibtex.pm:1471> INFO - Found BibTeX data source 'fenna-files/references.bib'
+[14456] Utils.pm:304> WARN - Duplicate entry key: 'baunaz2018' in file 'fenna-files/references.bib', skipping ...
+[14895] Utils.pm:304> WARN - Duplicate entry key: 'koopman2000' in file 'fenna-files/references.bib', skipping ...
+[15185] Utils.pm:304> WARN - year field '1923-1932' in entry 'behaghel1923' is not an integer - this will probably not sort properly.
+[15189] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/j8/kz7_fjwj1yqfh1l29jj09h200000gn/T/biber_tmp_fV_p/references.bib_6453.utf8, line 120, warning: 178 characters of junk seen at toplevel
+[15198] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[15198] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[15198] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[15198] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[15202] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[15203] bbl.pm:755> INFO - Output to thesis.bbl
+[15203] Biber.pm:128> INFO - WARNINGS: 4
