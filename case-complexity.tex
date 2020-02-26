@@ -2,21 +2,263 @@
 
 \chapter{Case complexity}
 
-  \section{The pattern}
+\section{The pattern}
 
-Illustrate complexity with Gothic
+\ex. \tsc{int:nom}, \tsc{ext:acc}
+\a. \tsc{nom} not attested
+\bg. jah þ-o-ei ist us Laudeikaion jus ussiggwaid\\
+ and D-\tsc{f.sg.acc}-\tsc{comp} is\scsub{[nom]} from Laodicea you read\scsub{[acc]}\\
+ `and read that which is from Laodicea' \hfill (Colossians 4:16, gloss and translation by \citealt[357]{harbert1978})
+
+\ex. \tsc{int:nom}, \tsc{ext:dat}
+\a. \tsc{nom} not attested
+\bg. þ-aim-ei iupa sind fraþjaiþ\\
+ D-\tsc{pl.dat}-\tsc{comp} above are\scsub{[nom]} {think on}\scsub{[dat]}\\
+ `set your mind on those which are above' \hfill (Colossians 3:2, gloss and translation by \citealt[339]{harbert1978})
+
+\ex. \tsc{int:nom}, \tsc{ext:gen}
+\a. \tsc{nom} not attested
+\b. \tsc{gen} not attested
+
+\ex. \tsc{int:acc}, \tsc{ext:nom}
+\ag. þ-an-ei frijos siuks ist\\
+ D-\tsc{m.sg.acc}-\tsc{comp} love\scsub{[acc]} sick is\scsub{[nom]}\\
+ `the one whom you love is sick' \hfill (John 11:3, gloss and translation by \citealt[342]{harbert1978})
+\b. \tsc{nom} not attested
+
+\ex. \tsc{int:acc}, \tsc{ext:dat}
+\a. \tsc{acc} not attested
+\bg. hva nu wileiþ ei taujau þ-amm-ei qiþiþ þiudan Iudaie?\\
+ what now want that do\scsub{[dat]} D-\tsc{m.sg.dat}-\tsc{comp} say\scsub{[acc]} king {of Jews}\\
+ `what now do you wish that I do to him whom you call King of the Jews?' \hfill (Mark 15:12, gloss and translation by \citealt[339]{harbert1978})
+
+\ex. \tsc{int:acc}, \tsc{ext:gen}, partitive?
+\a. \tsc{acc} not attested
+\bg. ni waiht þ-iz-ei gasehvun\\
+ not thing\scsub{[gen]} D-\tsc{n.sg.gen}-\tsc{comp} saw\scsub{[acc]}\\
+ `not any of that which they saw' \hfill (Luke 9:36, gloss and translation by \citealt[340]{harbert1978})
+
+\ex. \tsc{int:dat}, \tsc{ext:nom}
+\ag. iþ þ-amm-ei leitil fraletada leitil frijod\\
+ but D-\tsc{m.sg.dat}-\tsc{comp} little {is forgiven\scsub{[dat]}} little loves\scsub{[nom]}\\
+ `but the one whom little is forgiven loves little' \hfill (Luke 7:47, gloss and translation by \citealt[342]{harbert1978})
+\b. \tsc{nom} not attested
+
+\ex. \tsc{int:dat}, \tsc{ext:acc}, is with a preposition
+\ag. ushafjands ana þ-amm-ei lag\\
+ {picking up}\scsub{[acc]}\scsub{[dat]} on D-\tsc{m.sg.dat}-\tsc{comp} lay\\
+ `picking up that on which he lay' \hfill (Luke 5:25, gloss and translation by \citealt[343]{harbert1978})
+\b. \tsc{acc} not attested
+
+\ex. \tsc{int:dat}, \tsc{ext:gen}
+\a. \tsc{dat} not attested
+\b. \tsc{gen} not attested
+
+\ex.  \tsc{int:gen}, \tsc{ext:nom}
+\a. \tsc{gen} not attested
+\b. \tsc{nom} not attested
+
+\ex. \tsc{int:gen}, \tsc{ext:acc}, partitive?
+\ag. bugei þ-iz-ei þaurbeima\\
+ buy\scsub{[acc]} D-\tsc{n.sg.gen}-\tsc{comp} need\scsub{[gen]}\\
+ `buy that which we need' \hfill (John 13:29, gloss and translation by \citealt[343]{harbert1978})
+\b. \tsc{acc} not attested
+
+\ex. \tsc{int:gen}, \tsc{ext:dat}
+\a. \tsc{gen} not attested
+\b. \tsc{dat} not attested
+
+\begin{table}[h]
+  \center
+  \caption {Case attraction in headless relatives in Gothic}
+    \begin{minipage}{\linewidth}
+      \begin{tabularx}{\textwidth}{c|Y|Y|Y|Y}
+        \toprule
+          \diagbox[linecolor=white]{\tsc{int}}{\tsc{ext}}
+              & \tsc{[nom]}
+              & \tsc{[acc]}
+              & \tsc{[dat]}
+              & \tsc{[gen]}
+              \\ \cmidrule(lr){1-5}
+          \tsc{[nom]}
+              & \colorbox{LG}{\tsc{nom}}
+              & \diagbox[linecolor=white]{?\tsc{nom}}{\colorbox{DG}{\tsc{acc}}}
+              & \diagbox[linecolor=white]{?\tsc{nom}}{\colorbox{DG}{\tsc{dat}}}
+              & \diagbox[linecolor=white]{?\tsc{nom}}{?\tsc{gen}}
+              \\ \cmidrule(lr){1-5}
+          \tsc{[acc]}
+              & \diagbox[linecolor=white]{\colorbox{DG}{\tsc{acc}}}{?\tsc{nom}}
+              &	\colorbox{LG}{\tsc{acc}}
+              &	\diagbox[linecolor=white]{?\tsc{acc}}{\colorbox{DG}{\tsc{dat}}}
+              &	\diagbox[linecolor=white]{?\tsc{acc}}{\colorbox{DG}{\tsc{gen}}}
+              \\ \cmidrule(lr){1-5}
+          \tsc{[dat]}
+              & \diagbox[linecolor=white]{\colorbox{DG}{\tsc{dat}}}{?\tsc{nom}}
+              &	\diagbox[linecolor=white]{\colorbox{DG}{\tsc{dat}}}{?\tsc{acc}}
+              & \colorbox{LG}{\tsc{dat}}
+              & \diagbox[linecolor=white]{?\tsc{dat}}{?\tsc{gen}}
+              \\ \cmidrule(lr){1-5}
+          \tsc{[gen]}
+              & \diagbox[linecolor=white]{?\tsc{gen}}{?\tsc{nom}}
+              & \diagbox[linecolor=white]{\colorbox{DG}{\tsc{gen}}}{?\tsc{acc}}
+              & \diagbox[linecolor=white]{?\tsc{gen}}{?\tsc{dat}}
+              & \colorbox{LG}{\tsc{gen}}
+              \\
+        \bottomrule
+      \end{tabularx}
+    \end{minipage}
+\end{table}
+
+\ex. \tsc{nom} < \tsc{acc} < \tsc{dat}
+
+reasons to leave out genitive
+
+\begin{itemize}
+  \item Gothic: it is not verbs that select for genitive, but
+\end{itemize}
 
 
-  \section{Background: case hierarchy theory, nano theory}
+\section{Another instance of case competition}
 
-also argue against scott grimm? or add to it
+numerals
 
 
-  \section{Analysis}
+\section{Case containment}
+
+\subsection{Morphological containment}
+
+\begin{table}[h]
+  \center
+	\caption {Transparent case containment in Khanty \citep[16]{nikolaeva1999}
+	\begin{minipage}{0.4\linewidth}
+		\begin{tabularx}{\textwidth}{c *{3}{Y}}
+		\toprule
+        & \tsc{nom} & \tsc{acc}       & \tsc{dat}         \\
+		\midrule
+    1sg & ma        & ma\tbf{:-ne:m}  & ma\tbf{:-ne:m}-na \\
+    3sg & luw       & luw\tbf{-e:l}   & luw\tbf{-e:l}-na  \\
+    1pl & muŋ       & muŋ\tbf{-e:w}   & muŋ\tbf{-e:w}-na  \\
+		\bottomrule
+		\end{tabularx}
+	\end{minipage}
+\end{table}
+
+\begin{table}[h]
+  \center
+	\caption {Transparent case containment in Kalderaš Romani \citep[31-46]{boretzky1994}}
+	\begin{minipage}{0.6\linewidth}
+		\begin{tabularx}{\textwidth}{c *{3}{Y}}
+		\toprule
+    \tsc{nom} & \tsc{acc}       & \tsc{dat}           &             \\
+		\midrule
+    phral     & phral-\tbf{és}  & phral-\tbf{és}-kə   & `brother'   \\
+    phral-(á) & phral-\tbf{én}  & phral-\tbf{én}-gə   & `brothers'  \\
+    rakl-í    & rakl-\tbf{já}   & rakl-\tbf{já}-kə    & `girl'      \\
+    rakl-já   & rakl-já-\tbf{n} & rakl-\tbf{já}-n-gə  & `girls'     \\
+		\bottomrule
+		\end{tabularx}
+	\end{minipage}
+\end{table}
+
+
+\begin{table}[h]
+  \center
+	\caption {Transparent case containment in West Tocharian \citep[23-24]{gippert1987}}
+	\begin{minipage}{0.4\linewidth}
+		\begin{tabularx}{\textwidth}{c *{3}{Y}}
+		\toprule
+    \tsc{nom} & \tsc{acc}      & \tsc{dat}          &          \\
+		\midrule
+    yakwi     & yakwe-\tbf{ṃ}  & yäkwe-\tbf{ṃ}-ts   & `horses' \\
+    eṅkwi     & eṅkwe-\tbf{ṃ}  & eṅkwe-\tbf{ṃ}-ts   & `men'    \\
+		\bottomrule
+		\end{tabularx}
+	\end{minipage}
+\end{table}
+
+
+
+
+\subsection{Suppletion}
+
+\subsubsection{ABB}
+
+
+cognates widespread in Indo-European
+Icelandic ég mig mér
+
+cognates across Slavic
+Russian 1pl my nas nam
+
+cognates across Slavic
+Serbian 3sg(m) on nje-ga nje-mu
+Serbian 3sg(f) ona nju njoj
+Serbian 3pl(m) oni njih njima
+
+
+\subsubsection{ABC}
+
+Indo-European:
+Albanian 3sg.f ajo (a)të asaj 95
+Nakh-Dagestanian:
+Khinalugh 1sg zɨ jä as(ɨr)
+
+
+\subsubsection{AAB}
+
+Algic:
+Yurok 3sg yoɂ, woɂ, yoɂo·t, woɂo·t yoɂo·t, woɂo·t weyaɂik
+
+Australian:
+Wardaman 3sg narnaj narnaj-(j)i gunga
+Wardaman 3pl narnaj-bulu narnaj-bulu-yi wurrugu
+
+\subsection{Syncretism}
+
+
+
+
+\section{Nanosyntax}
+
+\subsection{Basics}
+
+\subsection{Spellout}
+
+\ex. The Superset Principle \citet{starke2009}: \\
+A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
+
+\ex. The Elsewhere Condition (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
+When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
+
+\ex. Merge F and \label{ex:spellout}
+ \a. Spell out FP.
+ \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+ \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+When a new match is found, it overrides previous spellouts.
+
+\ex. Cyclic Override \citep{starke2018}:\\
+Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+
+\ex. Backtracking \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+If backtracking also does not help, a specifier is constructed.
+
+\ex. Spec Formation \citep{starke2018}:\\
+If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+
+
+\section{Analysis}
 
 No syntax of relative clauses yet, just "when one contains the other, the contained one can be deleted"
 
 
-  \section{Bigger picture}
+
+
+\section{Bigger picture}
 
 Case is complex
