@@ -16,3 +16,9 @@
 \newcommand{\seccitep}[2]{(\citealt{#1}:~$\S$#2)}
 \newcommand{\pgcitet}[2]{\citeauthor{#1} (\citeyear{#1}:~#2)}
 \newcommand{\seccitet}[2]{\citeauthor{#1} (\citeyear{#1}:~$\S$#2)}
+
+%%%examples%%%
+\newcommand{\flushfill}[1]{\hspace{\fill}\mbox{}\linebreak[0]\hspace*{\fill}\mbox{#1}} %hfill on the next line if too long
+\apptocmd{\gl@stop}{\nobreak}{}{} %do not allow breaks within examples
+
+\sloppy
