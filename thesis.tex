@@ -2,6 +2,8 @@
 
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
+\usepackage{fenna-files/abbreviations}
+\usepackage{fenna-files/primary-texts}
 \usepackage{fenna-files/commands}
 
 \title{Case attraction in headless relatives}
@@ -10,11 +12,20 @@
 
 \begin{document}
 
+\ac{angelsperarea}, \ac{numofangels} and \ac{areaofneedle} are part of the
+nomenclature
+
 \maketitle
 
-\newpage
+\clearpage
 \tableofcontents
 
+\clearpage
+\listoftables
+
+\chapter*{List of abbreviations}
+\printacronyms[include-classes=abbr, heading=none]
+\addcontentsline{toc}{chapter}{List of abbreviations}
 
 \include{introduction}
 
@@ -26,7 +37,12 @@
 
 \include{conclusion}
 
+\clearpage
+\chapter*{Primary texts}
+\printacronyms[include-classes=nomencl, heading=none]
+\addcontentsline{toc}{chapter}{Primary texts}
 
 \printbibliography
+
 
 \end{document}

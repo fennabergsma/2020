@@ -21,4 +21,37 @@
 \newcommand{\flushfill}[1]{\hspace{\fill}\mbox{}\linebreak[0]\hspace*{\fill}\mbox{#1}} %hfill on the next line if too long
 \apptocmd{\gl@stop}{\nobreak}{}{} %do not allow breaks within examples
 
+%%%overfull%%%
 \sloppy
+
+%%%no capitals in headers%%%
+\renewcommand{\listtablename}{List of tables}
+
+%%%automatically put chapter headings in lot%%%
+\usepackage{etoolbox}
+\providebool{newchap}
+\newcommand{\newchapter}[1]{%
+    \chapter{#1}
+    \global\setbool{newchap}{true}
+}
+\let\oldcaption\caption
+\renewcommand{\caption}[2][\shortcaption]{%
+\def\shortcaption{#2}
+\ifbool{newchap}{%
+    \addtocontents{lot}{\protect\contentsline{chapter}{%
+        Chapter \thechapter \vspace{10pt}
+    }{}}}{}
+    \global\boolfalse{newchap}
+    \oldcaption[#1]{#2}
+}
+\makeatletter
+\newcommand{\saved@chapter}{}
+\let\saved@chapter\chapter
+\renewcommand{\chapter}{%
+  \@ifstar {\saved@chapter*}{\@dblarg\my@chapter}%
+}
+\newcommand*{\my@chapter}[2][]{%
+  \saved@chapter[#1]{#2}%
+  \global\setbool{newchap}{true}
+}
+\makeatother
