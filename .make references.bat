@@ -1,2 +1,3 @@
 xelatex thesis.tex
-biber thesis.tex
+biber thesis
+xelatex thesis.tex

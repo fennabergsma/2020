@@ -4,18 +4,36 @@
 \newcommand{\tsc}[1]{\textsc{#1}}%shorter small caps
 \newcommand{\scsub}[1]{\tsc{\textsubscript{#1}}}%shorter small caps in subscript
 
-%%%citations%%%%
-\newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
-\newcommand{\posscitealt}[1]{\citeauthor{#1}'s \citeyear{#1}}
-\newcommand{\possciteauthor}[1]{\citeauthor{#1}'s}
-\newcommand{\pgposscitet}[2]{\citeauthor{#1}'s (\citeyear{#1}:~#2)}
-\newcommand{\secposscitet}[2]{\citeauthor{#1}'s (\citeyear{#1}:~$\S$#2)}
-\newcommand{\pgcitealt}[2]{\citealt{#1}:~#2}
-\newcommand{\seccitealt}[2]{\citealt{#1}:~$\S$#2}
-\newcommand{\pgcitep}[2]{(\citealt{#1}:~#2)}
-\newcommand{\seccitep}[2]{(\citealt{#1}:~$\S$#2)}
-\newcommand{\pgcitet}[2]{\citeauthor{#1} (\citeyear{#1}:~#2)}
-\newcommand{\seccitet}[2]{\citeauthor{#1} (\citeyear{#1}:~$\S$#2)}
+%%%citations%%%% hieronder komt uit glossa
+\bibpunct[: ]{(}{)}{; }{a}{}{;~}
+\newcommand{\BIBand}{\&}
+\setlength{\bibsep}{0pt}
+\setlength{\bibhang}{0.25in}
+\bibliographystyle{glossa}
+  \newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+  \newcommand{\posscitealt}[1]{\citeauthor{#1}'s \citeyear{#1}}
+  \newcommand{\possciteauthor}[1]{\citeauthor{#1}'s}
+  \newcommand{\pgposscitet}[2]{\citeauthor{#1}'s (\citeyear{#1}:~#2)}
+  \newcommand{\secposscitet}[2]{\citeauthor{#1}'s (\citeyear{#1}:~$\S$#2)}
+  \newcommand{\pgcitealt}[2]{\citealt{#1}:~#2}
+  \newcommand{\seccitealt}[2]{\citealt{#1}:~$\S$#2}
+  \newcommand{\pgcitep}[2]{(\citealt{#1}:~#2)}
+  \newcommand{\seccitep}[2]{(\citealt{#1}:~$\S$#2)}
+  \newcommand{\pgcitet}[2]{\citeauthor{#1} (\citeyear{#1}:~#2)}
+  \newcommand{\seccitet}[2]{\citeauthor{#1} (\citeyear{#1}:~$\S$#2)}
+
+
+% \newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+% \newcommand{\posscitealt}[1]{\citeauthor{#1}'s \citeyear{#1}}
+% \newcommand{\possciteauthor}[1]{\citeauthor{#1}'s}
+% \newcommand{\pgposscitet}[2]{\citeauthor{#1}'s (\citeyear{#1}:~#2)}
+% \newcommand{\secposscitet}[2]{\citeauthor{#1}'s (\citeyear{#1}:~$\S$#2)}
+% \newcommand{\pgcitealt}[2]{\citealt{#1}:~#2}
+% \newcommand{\seccitealt}[2]{\citealt{#1}:~$\S$#2}
+% \newcommand{\pgcitep}[2]{(\citealt{#1}:~#2)}
+% \newcommand{\seccitep}[2]{(\citealt{#1}:~$\S$#2)}
+% \newcommand{\pgcitet}[2]{\citeauthor{#1} (\citeyear{#1}:~#2)}
+% \newcommand{\seccitet}[2]{\citeauthor{#1} (\citeyear{#1}:~$\S$#2)}
 
 %%%examples%%%
 \newcommand{\flushfill}[1]{\hspace{\fill}\mbox{}\linebreak[0]\hspace*{\fill}\mbox{#1}} %hfill on the next line if too long
