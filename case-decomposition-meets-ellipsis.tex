@@ -1,0 +1,136 @@
+% !TEX root = thesis.tex
+
+\chapter{Case decomposition meets ellipsis}
+
+
+\section{Case decomposition}
+
+Syntax = morphology
+
+\ex.
+\begin{forest} boom
+  [\ac{dat}P
+      [\ac{dat}]
+      [\ac{acc}P
+          [\ac{acc}]
+          [\ac{nom}P
+              [\ac{nom}]
+              [..
+                  [..,roof]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+\section{Elipsis}
+
+Elipsis targets phrases
+
+
+
+
+\section{Phrasal spellout}
+
+Single morphemes spell out phrases
+
+
+
+\section{The intuition}
+
+\begin{table}[h]
+  \center
+	\caption {\tsc{dat} vs. \tsc{acc}}
+		\begin{tabular}{cc}
+		\toprule
+      \begin{forest} boom
+        [\tsc{datP}
+            [\tsc{dat}]
+            [\tsc{accP}
+                [\tsc{acc}]
+                [\tsc{nomP}
+                    [\tsc{nom}]
+                    [..
+                        [..,roof]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      &
+      \begin{forest} boom
+        [\tsc{accP}
+            [\tsc{acc}]
+            [\tsc{nomP}
+                [\tsc{nom}]
+                [..
+                    [..,roof]
+                ]
+            ]
+        ]
+      \end{forest}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \center
+	\caption {\tsc{dat} vs. \tsc{nom}}
+		\begin{tabular}{cc}
+		\toprule
+      \begin{forest} boom
+        [\tsc{datP}
+            [\tsc{dat}]
+            [\tsc{accP}
+                [\tsc{acc}]
+                [\tsc{nomP}
+                    [\tsc{nom}]
+                    [..
+                        [..,roof]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      &
+      \begin{forest} boom
+        [\tsc{nomP}
+            [\tsc{nom}]
+            [..
+                [..,roof]
+            ]
+        ]
+      \end{forest}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \center
+	\caption {\tsc{acc} vs. \tsc{nom}}
+		\begin{tabular}{cc}
+		\toprule
+      \begin{forest} boom
+        [\tsc{accP}
+            [\tsc{acc}]
+            [\tsc{nomP}
+                [\tsc{nom}]
+                [..
+                    [..,roof]
+                ]
+            ]
+        ]
+      \end{forest}
+      &
+      \begin{forest} boom
+        [\tsc{nomP}
+            [\tsc{nom}]
+            [..
+                [..,roof]
+            ]
+        ]
+      \end{forest}\\
+    \bottomrule
+  \end{tabular}
+\end{table}

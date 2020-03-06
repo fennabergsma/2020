@@ -1,14 +1,10 @@
-\documentclass{memoir}
+\documentclass[11pt]{memoir}
 
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
 \usepackage{fenna-files/abbreviations}
-\usepackage{fenna-files/primary-texts}
-\usepackage{fenna-files/commands}
 
-\renewcommand{\arraystretch}{1.25}
-
-\title{Case attraction in headless relatives}
+\title{Case competition in headless relatives}
 \author{Fenna Bergsma}
 \date{\today}
 
@@ -28,11 +24,16 @@
 
 \include{introduction}
 
-\include{case-complexity}
-\include{ellipsis}
+\part{The constant case complexity}
+\include{reoccuring-pattern}
+\include{case-decomposition-meets-ellipsis}
 
-\include{direction-of-attraction}
-\include{prepositions}
+\part{The direction that differs}
+\include{variation}
+\include{morphology-syntax}
+
+\part{Details}
+\include{details}
 
 \include{conclusion}
 

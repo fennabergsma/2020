@@ -1,0 +1,39 @@
+% !TEX root = thesis.tex
+
+\chapter{Technical implementation}
+
+
+\section{Background}
+
+\ex. \tbf{The Superset Principle} \citet{starke2009}:\\
+A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
+
+\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2019}):\\
+When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
+
+\ex. \tbf{Spellout Algorithm:}\\
+Merge F and \label{ex:spellout}
+ \a. Spell out FP.
+ \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+ \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+When a new match is found, it overrides previous spellouts.
+
+\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
+Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+If backtracking also does not help, a specifier is constructed.
+
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\
+If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+\phantom{hi}
+
+
+
+\section{Derivations}
