@@ -15,9 +15,7 @@ Syntax = morphology
           [\ac{acc}]
           [\ac{nom}P
               [\ac{nom}]
-              [..
-                  [..,roof]
-              ]
+              [X]
           ]
       ]
   ]
@@ -36,23 +34,26 @@ Elipsis targets phrases
 Single morphemes spell out phrases
 
 
-
 \section{The intuition}
 
-\begin{table}[h]
+\begin{table}[H]
   \center
-	\caption {\tsc{dat} vs. \tsc{acc}}
-		\begin{tabular}{cc}
+	\caption {\tsc{acc}P deletes \tsc{acc}P}
+		\begin{tabular}{c|c}
 		\toprule
       \begin{forest} boom
-        [\tsc{datP}
+        [\tsc{datP},baseline
             [\tsc{dat}]
-            [\tsc{accP}
-                [\tsc{acc}]
-                [\tsc{nomP}
-                    [\tsc{nom}]
-                    [..
-                        [..,roof]
+              [\tsc{acc}P,name=accp,
+              tikz={
+              \node[draw,circle,
+              fit=(accp)(acc)(x),
+              xscale=0.88,yscale=0.88]{};
+              }
+                [\tsc{acc},name=acc]
+                [\tsc{nomP},name=nomp
+                    [\tsc{nom},name=nom]
+                    [X,name=x
                     ]
                 ]
             ]
@@ -60,13 +61,18 @@ Single morphemes spell out phrases
       \end{forest}
       &
       \begin{forest} boom
-        [\tsc{accP}
-            [\tsc{acc}]
-            [\tsc{nomP}
-                [\tsc{nom}]
-                [..
-                    [..,roof]
-                ]
+        [\tsc{accP},name=accp,baseline,
+        tikz={
+        \node[draw,circle,
+        fit=(accp)(acc)(x),
+        xscale=0.88,yscale=0.88,
+        fill opacity=0.5,
+        fill=LG]{};
+        }
+            [\tsc{acc},name=acc]
+            [\tsc{nomP},name=nomp
+                [\tsc{nom},name=nom]
+                [X,name=x]
             ]
         ]
       \end{forest}\\
@@ -74,7 +80,7 @@ Single morphemes spell out phrases
   \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \center
 	\caption {\tsc{dat} vs. \tsc{nom}}
 		\begin{tabular}{cc}
@@ -86,9 +92,7 @@ Single morphemes spell out phrases
                 [\tsc{acc}]
                 [\tsc{nomP}
                     [\tsc{nom}]
-                    [..
-                        [..,roof]
-                    ]
+                    [X]
                 ]
             ]
         ]
@@ -106,7 +110,7 @@ Single morphemes spell out phrases
   \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \center
 	\caption {\tsc{acc} vs. \tsc{nom}}
 		\begin{tabular}{cc}
@@ -116,9 +120,7 @@ Single morphemes spell out phrases
             [\tsc{acc}]
             [\tsc{nomP}
                 [\tsc{nom}]
-                [..
-                    [..,roof]
-                ]
+                [X]
             ]
         ]
       \end{forest}
@@ -126,9 +128,7 @@ Single morphemes spell out phrases
       \begin{forest} boom
         [\tsc{nomP}
             [\tsc{nom}]
-            [..
-                [..,roof]
-            ]
+            [X]
         ]
       \end{forest}\\
     \bottomrule

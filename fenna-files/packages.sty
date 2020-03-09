@@ -11,6 +11,8 @@
 %%%SPACING/BREAKING%%%
 \OnehalfSpacing*
 \sloppy%%%overfull%%%
+\usepackage{float}%%place tables exactly there with H
+\raggedbottom %%do not spread content over page
 %%%SPACING/BREAKING%%%
 
 
@@ -73,8 +75,9 @@ boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 
 %%%%%TABLE OF CONTENTS%%%
 %%%depth up to subsections also in toc%%%
+\mainmatter
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 %%%%%TABLE OF CONTENTS%%%
 
 

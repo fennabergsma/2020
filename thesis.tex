@@ -1,4 +1,5 @@
 \documentclass[11pt]{memoir}
+\nouppercaseheads
 
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
@@ -12,6 +13,9 @@
 
 \maketitle
 
+%%%%
+\frontmatter
+
 \clearpage
 \tableofcontents
 
@@ -21,6 +25,10 @@
 \chapter*{List of abbreviations}
 \printacronyms[include-classes=abbr, heading=none]
 \addcontentsline{toc}{chapter}{List of abbreviations}
+
+%%%%
+\mainmatter
+\setcounter{secnumdepth}{4}
 
 \include{introduction}
 
@@ -37,6 +45,9 @@
 
 \include{conclusion}
 
+%%%%%
+\backmatter
+
 \clearpage
 \chapter*{Primary texts}
 \printacronyms[include-classes=texts, heading=none]
@@ -44,5 +55,6 @@
 
 \printbibliography
 
+%%%%
 
 \end{document}
