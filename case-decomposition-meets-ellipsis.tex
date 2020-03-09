@@ -3,6 +3,7 @@
 \chapter{Case decomposition meets ellipsis}
 
 
+
 \section{Case decomposition}
 
 Syntax = morphology
@@ -36,24 +37,117 @@ Single morphemes spell out phrases
 
 \section{The intuition}
 
+\subsection{Cases contain each other}
+
+\ex.
+\begin{forest} boom
+  [\tsc{datP},name=datp,
+  tikz={
+  \node[draw,circle,LG,
+  xscale=0.9,yscale=0.9,
+  fill opacity=0.2,
+  fill=LG,
+  fit=(datp)(dat)(nom)(x)]{};
+  }
+      [\tsc{dat},name=dat]
+        [\tsc{acc}P,name=accp,
+        tikz={
+        \node[draw,circle,
+        xscale=0.87,yscale=0.87,
+        fill opacity=0.2,
+        fill=DG,DG,
+        fit=(accp)(acc)(nom)(x)]{};
+        }
+          [\tsc{acc},name=acc]
+          [\tsc{nomP},name=nomp
+              [\tsc{nom},name=nom]
+              [XP,name=x
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+\ex.
+\begin{forest} boom
+  [\tsc{datP},name=datp,
+  tikz={
+  \node[draw,circle,LG,
+  xscale=0.93,yscale=0.93,
+  fill opacity=0.2,
+  fill=LG,
+  fit=(datp)(dat)(nom)(x)]{};
+  }
+      [\tsc{dat},name=dat]
+      [\tsc{acc}P,name=accp
+          [\tsc{acc},name=acc]
+          [\tsc{nomP},name=nomp,
+          tikz={
+          \node[draw,circle,DG,
+          xscale=0.85,yscale=0.85,
+          fill opacity=0.2,
+          fill=DG,
+          fit=(nomp)(nom)(x)]{};
+          }
+              [\tsc{nom},name=nom]
+              [XP,name=x
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+
+\ex.
+\begin{forest} boom
+      [\tsc{acc}P,name=accp,
+      tikz={
+      \node[draw,circle,
+      xscale=0.9,yscale=0.9,
+      fill opacity=0.2,
+      fill=LG,LG,
+      fit=(accp)(acc)(nom)(x)]{};
+      }
+          [\tsc{acc},name=acc]
+          [\tsc{nomP},name=nomp,
+          tikz={
+          \node[draw,circle,DG,
+          xscale=0.85,yscale=0.85,
+          fill opacity=0.2,
+          fill=DG,
+          fit=(nomp)(nom)(x)]{};
+          }
+              [\tsc{nom},name=nom]
+              [XP,name=x
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+
+\subsection{Cases elide each other}
+
 \begin{table}[H]
   \center
-	\caption {\tsc{acc}P deletes \tsc{acc}P}
-		\begin{tabular}{c|c}
-		\toprule
+	\caption {\tsc{dat}P deletes \tsc{acc}P}
+		\begin{tabular}[b]{c c}
       \begin{forest} boom
-        [\tsc{datP},baseline
+        [\tsc{datP}
             [\tsc{dat}]
               [\tsc{acc}P,name=accp,
               tikz={
               \node[draw,circle,
-              fit=(accp)(acc)(x),
-              xscale=0.88,yscale=0.88]{};
+              xscale=0.87,yscale=0.87,
+              fit=(accp)(acc)(nom)(x)]{};
               }
                 [\tsc{acc},name=acc]
                 [\tsc{nomP},name=nomp
                     [\tsc{nom},name=nom]
-                    [X,name=x
+                    [XP,name=x,baseline
                     ]
                 ]
             ]
@@ -61,76 +155,90 @@ Single morphemes spell out phrases
       \end{forest}
       &
       \begin{forest} boom
-        [\tsc{accP},name=accp,baseline,
+        [\textcolor{LG}{\tsc{accP}},name=accp,baseline,
         tikz={
         \node[draw,circle,
-        fit=(accp)(acc)(x),
-        xscale=0.88,yscale=0.88,
-        fill opacity=0.5,
-        fill=LG]{};
+        xscale=0.87,yscale=0.87,
+        fit=(accp)(acc)(nom)(x)]{};
         }
-            [\tsc{acc},name=acc]
-            [\tsc{nomP},name=nomp
-                [\tsc{nom},name=nom]
-                [X,name=x]
+            [\textcolor{LG}{\tsc{acc}},name=acc,edge=LG]
+            [\textcolor{LG}{\tsc{nomP}},name=nomp,edge=LG
+                [\textcolor{LG}{\tsc{nom}},name=nom,edge=LG]
+                [\textcolor{LG}{XP},name=x,baseline,edge=LG]
             ]
         ]
-      \end{forest}\\
-    \bottomrule
+      \end{forest} \\
   \end{tabular}
 \end{table}
 
 \begin{table}[H]
   \center
-	\caption {\tsc{dat} vs. \tsc{nom}}
-		\begin{tabular}{cc}
-		\toprule
+	\caption {\tsc{dat}P deletes \tsc{nom}P}
+		\begin{tabular}[b]{cc}
       \begin{forest} boom
         [\tsc{datP}
             [\tsc{dat}]
-            [\tsc{accP}
-                [\tsc{acc}]
-                [\tsc{nomP}
-                    [\tsc{nom}]
-                    [X]
+              [\tsc{acc}P,name=accp
+                [\tsc{acc},name=acc]
+                [\tsc{nomP},name=nomp,
+                tikz={
+                \node[draw,circle,
+                xscale=0.87,yscale=0.87,
+                fit=(nomp)(nom)(x)]{};
+                }
+                    [\tsc{nom},name=nom]
+                    [XP,name=x,baseline
+                    ]
                 ]
             ]
         ]
       \end{forest}
       &
       \begin{forest} boom
-        [\tsc{nomP}
-            [\tsc{nom}]
-            [..
-                [..,roof]
-            ]
+        [\textcolor{LG}{\tsc{nomP}},name=nomp,
+        tikz={
+        \node[draw,circle,
+        xscale=0.87,yscale=0.87,
+        fit=(nomp)(nom)(x)]{};
+        }
+            [\textcolor{LG}{\tsc{nom}},name=nom,edge=LG]
+            [\textcolor{LG}{XP},name=x,baseline,edge=LG]
         ]
-      \end{forest}\\
-    \bottomrule
+      \end{forest} \\
   \end{tabular}
 \end{table}
 
 \begin{table}[H]
   \center
-	\caption {\tsc{acc} vs. \tsc{nom}}
-		\begin{tabular}{cc}
-		\toprule
+	\caption {\tsc{acc}P deletes \tsc{nom}P}
+		\begin{tabular}[b]{cc}
       \begin{forest} boom
-        [\tsc{accP}
-            [\tsc{acc}]
-            [\tsc{nomP}
-                [\tsc{nom}]
-                [X]
-            ]
-        ]
+          [\tsc{acc}P,name=accp
+              [\tsc{acc},name=acc]
+              [\tsc{nomP},name=nomp,
+              tikz={
+              \node[draw,circle,
+              xscale=0.87,yscale=0.87,
+              fit=(nomp)(nom)(x)]{};
+              }
+                  [\tsc{nom},name=nom]
+                  [XP,name=x,baseline]
+              ]
+          ]
       \end{forest}
       &
       \begin{forest} boom
-        [\tsc{nomP}
-            [\tsc{nom}]
-            [X]
+        [\textcolor{LG}{\tsc{nomP}},name=nomp,
+        tikz={
+        \node[draw,circle,
+        xscale=0.87,yscale=0.87,
+        fit=(nomp)(nom)(x)]{};
+        }
+            [\textcolor{LG}{\tsc{nom}},name=nom,
+            edge=LG]
+            [\textcolor{LG}{XP},name=x,baseline,
+            edge=LG]
         ]
       \end{forest}\\
-    \bottomrule
   \end{tabular}
 \end{table}
