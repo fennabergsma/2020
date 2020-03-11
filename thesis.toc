@@ -8,9 +8,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}The title}{1}%
+\contentsline {section}{\numberline {1.1}Case assignment}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Three parts}{4}%
+\contentsline {section}{\numberline {1.2}Headless relatives}{3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}The constant case complexity}{7}%
 \defcounter {refsection}{0}\relax 
