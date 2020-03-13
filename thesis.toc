@@ -18,43 +18,53 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Case competition in Gothic headless relatives}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}The accessibility hierarchy}{11}%
+\contentsline {section}{\numberline {2.2}matching}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Case in morphology}{11}%
+\contentsline {section}{\numberline {2.3}non-matching}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Morphological containment}{11}%
+\contentsline {section}{\numberline {2.4}The accessibility hierarchy}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Suppletion patterns}{12}%
+\contentsline {section}{\numberline {2.5}Case in morphology}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.1}ABB}{12}%
+\contentsline {subsection}{\numberline {2.5.1}Morphological containment}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.2}AAB}{13}%
+\contentsline {subsection}{\numberline {2.5.2}Suppletion patterns}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.3}ABC}{13}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}ABB}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Syncretism patterns}{13}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}AAB}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.1}ABB}{13}%
+\contentsline {subsubsection}{\numberline {2.5.2.3}ABC}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.2}AAB}{14}%
+\contentsline {subsection}{\numberline {2.5.3}Syncretism patterns}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.3}ABC}{14}%
+\contentsline {subsubsection}{\numberline {2.5.3.1}ABB}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}A side note on the genitive}{14}%
+\contentsline {subsubsection}{\numberline {2.5.3.2}AAB}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.3.3}ABC}{16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}A side note on the genitive}{16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Case decomposition}{17}%
+\contentsline {section}{\numberline {3.1}Problem with previous analyses of headless relatives}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Elipsis}{18}%
+\contentsline {section}{\numberline {3.2}Case decomposition in morphology}{18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Phrasal spellout}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}The intuition}{18}%
+\contentsline {section}{\numberline {3.4}Ellipsis}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Cases contain each other}{18}%
+\contentsline {section}{\numberline {3.5}Relation between morphology and syntax}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Cases elide each other}{19}%
+\contentsline {section}{\numberline {3.6}The intuition}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}Morphology}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Syntax}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Similar analyses}{20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {II}The direction that differs}{21}%
 \defcounter {refsection}{0}\relax 
@@ -121,5 +131,3 @@
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{39}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{41}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{43}%
