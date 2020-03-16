@@ -12,124 +12,130 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}The content of this dissertation}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {I}The constant case complexity}{7}%
+\contentsline {part}{\partnumberline {I}The winner of the competition}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {2}A reoccurring pattern}{9}%
+\contentsline {chapter}{\chapternumberline {2}A reoccurring pattern}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Case competition in Gothic headless relatives}{9}%
+\contentsline {section}{\numberline {2.1}Case competition in Gothic headless relatives}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}matching}{10}%
+\contentsline {subsection}{\numberline {2.1.1}matching}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}non-matching}{10}%
+\contentsline {subsection}{\numberline {2.1.2}non-matching}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}The accessibility hierarchy}{12}%
+\contentsline {section}{\numberline {2.2}The accessibility hierarchy}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Case in morphology}{12}%
+\contentsline {subsection}{\numberline {2.2.1}Agreement}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Morphological containment}{12}%
+\contentsline {subsection}{\numberline {2.2.2}Relativization}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Suppletion patterns}{13}%
+\contentsline {section}{\numberline {2.3}Case in morphology}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.1}ABB}{14}%
+\contentsline {subsection}{\numberline {2.3.1}Morphological containment}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.2}AAB}{14}%
+\contentsline {subsection}{\numberline {2.3.2}Suppletion patterns}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.3}ABC}{15}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}ABB}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Syncretism patterns}{15}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}AAB}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.1}ABB}{15}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}ABC}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.2}AAB}{15}%
+\contentsline {subsection}{\numberline {2.3.3}Syncretism patterns}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.3}ABC}{16}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}ABB}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}A side note on the genitive}{16}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}AAB}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{17}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}ABC}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Problem with previous analyses of headless relatives}{17}%
+\contentsline {section}{\numberline {2.4}A side note on the genitive}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Morphology}{18}%
+\contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Case decomposition}{18}%
+\contentsline {section}{\numberline {3.1}Problem with previous analyses of headless relatives}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Phrasal spellout}{18}%
+\contentsline {section}{\numberline {3.2}Morphology}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Ellipsis}{18}%
+\contentsline {subsection}{\numberline {3.2.1}Case decomposition}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Relation between morphology and syntax}{19}%
+\contentsline {subsection}{\numberline {3.2.2}Phrasal spellout}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}The intuition}{19}%
+\contentsline {section}{\numberline {3.3}Ellipsis}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Morphology}{19}%
+\contentsline {section}{\numberline {3.4}Relation between morphology and syntax}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Syntax}{20}%
+\contentsline {section}{\numberline {3.5}The intuition}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Similar analyses}{21}%
+\contentsline {subsection}{\numberline {3.5.1}Morphology}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The direction that differs}{23}%
+\contentsline {subsection}{\numberline {3.5.2}Syntax}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}The variation}{25}%
+\contentsline {section}{\numberline {3.6}Similar analyses}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}The different patterns}{25}%
+\contentsline {part}{\partnumberline {II}The competitors in the competition}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Both: Gothic}{26}%
+\contentsline {chapter}{\chapternumberline {4}The variation}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Only from external: Old High German}{26}%
+\contentsline {section}{\numberline {4.1}The different patterns}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Only from internal: Modern German}{28}%
+\contentsline {subsection}{\numberline {4.1.1}Both: Gothic}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}None: Italian}{30}%
+\contentsline {subsection}{\numberline {4.1.2}Only from external: Old High German}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Shape of relative pronoun}{30}%
+\contentsline {subsection}{\numberline {4.1.3}Only from internal: Modern German}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Gothic}{30}%
+\contentsline {subsection}{\numberline {4.1.4}None: Italian}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1.1}Headless relatives}{30}%
+\contentsline {section}{\numberline {4.2}Shape of relative pronoun}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1.2}Light-headed relatives}{31}%
+\contentsline {subsection}{\numberline {4.2.1}Gothic}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Old High German}{31}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Headless relatives}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2.1}Headless relatives}{31}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Light-headed relatives}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2.2}Light-headed relatives}{32}%
+\contentsline {subsection}{\numberline {4.2.2}Old High German}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Modern German}{32}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Headless relatives}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3.1}Headless relatives}{32}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Light-headed relatives}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3.2}Light-headed relatives}{33}%
+\contentsline {subsection}{\numberline {4.2.3}Modern German}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Italian}{33}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Headless relatives}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.4.1}Headless relatives}{33}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Light-headed relatives}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.4.2}Light-headed relatives}{33}%
+\contentsline {subsection}{\numberline {4.2.4}Italian}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Bringing this together}{33}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Headless relatives}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}Connecting morphology and syntax}{35}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Light-headed relatives}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Background: relative clause theory}{35}%
+\contentsline {section}{\numberline {4.3}Bringing this together}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Analysis}{35}%
+\contentsline {chapter}{\chapternumberline {5}Connecting morphology and syntax}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Old High German}{35}%
+\contentsline {section}{\numberline {5.1}Background: relative clause theory}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Modern German}{36}%
+\contentsline {section}{\numberline {5.2}Analysis}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Gothic}{36}%
+\contentsline {subsection}{\numberline {5.2.1}Old High German}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {III}Details}{37}%
+\contentsline {subsection}{\numberline {5.2.2}Modern German}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Technical implementation}{39}%
+\contentsline {subsection}{\numberline {5.2.3}Gothic}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Background}{39}%
+\contentsline {part}{\partnumberline {III}Details}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Derivations}{40}%
+\contentsline {chapter}{\chapternumberline {6}Technical implementation}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{41}%
+\contentsline {section}{\numberline {6.1}Background}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{43}%
+\contentsline {section}{\numberline {6.2}Derivations}{44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Primary texts}{47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{49}%
