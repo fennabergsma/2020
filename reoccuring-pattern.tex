@@ -131,71 +131,75 @@ Extern
 
 \ex.
 \ag. Nǐ bǎ shū gěi wǒ-le.\\
- you ba book give me-\tsc{asp}\\
+ you ba book give me-\ac{asp}\\
  `You gave me the book.' \flushfill{Mandarin Chinese}
-\bg. Du gib -st mi das Buch.\\
- \tsc{nom}.2\tsc{sg} give -\tbf{2\tsc{sg}} \tsc{acc}.3\tsc{sg}.f the book\\
+\bg. Du gib -st mir das Buch.\\
+ you give -\tbf{2\tsc{sg}} me the book\\
  `You give me the book.' \flushfill{German}
 \bg. tayta-yki qam-ta qu -maran\\
- father-2 you-\tsc{acc} give -\tbf{\tsc{3}->1}.\tsc{past}\\
- `Your father gave you to me.' \flushfill{Huallaga Quechua, \citealt{weber1983}{21}}
+ father-your you-\ac{acc} give -\tbf{3\tsc{sg}→1\tsc{sg}}.\ac{pst}\\
+ `Your father gave you to me.' \flushfill{Huallaga Quechua, \pgcitealt{weber1983}{21}}
 \bg. Zu-k ni-ri liburu-a emon d -austa -zu.\\
- 2\tsc{sg}.\tsc{erg} 1\tsc{sg}.\tsc{dat} book.\tsc{acc} given \tbf{\tsc{acc}.3\tsc{sg}} \tbf{-\tsc{dat}.1\tsc{sg}} \tbf{-\tsc{erg}.2\tsc{sg}}\\
- `You gave me the book.' \flushfill{Basque, Arregi and Molina-Azaola}
+ you-\ac{erg} me-\ac{dat} book-\ac{def}.\ac{acc} given \tbf{\ac{acc}.3\tsc{sg}} \tbf{-\ac{dat}.1\tsc{sg}} \tbf{-\ac{erg}.2\tsc{sg}}\\
+ `You gave me the book.' \flushfill{Basque, \pgcitealt{arregi2004}{45}}
 
 \begin{table}[H]
   \center
   \caption {Agreement accessibility}
-    \begin{tabular}{ccccc}
+    \begin{tabular}[t]{ccccc}
       \toprule
             \multicolumn{3}{c}{agreement with}
             &
           & \\
       \cmidrule{1-3}
+            & direct
+            & indirect
+            & number
+          & \\
             subject
-            & direct object
-            & indirect object
-            & number of languages
+            & object
+            & object
+            & of languages
           & example \\
       \cmidrule{1-3} \cmidrule{4-4} \cmidrule{5-5}
-            -
-            & -
-            & -
+            *
+            & *
+            & *
             & 23
           & Mandarin Chinese \\
-            x
-            & -
-            & -
+            ✔
+            & *
+            & *
             & 31
           & German \\
-            x
-            & x
-            & -
+            ✔
+            & ✔
+            & *
             & 25
           & Huallaga Quechua \\
-            x
-            & x
-            & x
+            ✔
+            & ✔
+            & ✔
             & 23
           & Basque \\
-            x
-            & -
-            & x
+            ✔
+            & *
+            & ✔
             & (1)
           & - \\
-            -
-            & x
-            & x
+            {*}
+            & ✔
+            & ✔
             & 0
           & - \\
-            -
+            {*}
             & x
-            & -
+            & *
             & 0
           & - \\
-            -
-            & -
-            & x
+            {*}
+            & *
+            & ✔
             & 0
           & - \\
       \bottomrule
@@ -207,17 +211,214 @@ Extern
 \subsection{Relativization}
 
 
+\ex.
+\ag. Nahita ny vehivavy ny mpianatra.\\
+ saw the woman the student\\
+ `The student saw the woman.'
+\bg. ny mpianatra izay nahita ny vehivavy\\
+ the student that saw the woman\\
+ `the student that saw the woman'
+\bg. *ny vehivavy izay nahita ny mpianatra\\
+ the woman that saw the student\\
+ `the woman that the student saw' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}
+
+\ex.
+\ag. Nohitan' ny mpianatra ny vehivavy.\\
+ seen.\ac{pass} the student the woman\\
+ `The woman was seen by the student.'
+\bg. ny vehivavy izay nohitan' ny mpianatra\\
+ the woman that seen.\ac{pass} the student\\
+ `the woman that was seen by the student' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}
 
 
 
-\ex. \ac{nom} - \ac{acc} - \ac{dat}
 
-gives examples of each of these languages
+
+\exg. Ali bunoh ayam yang Aminah sedang memakan.\\
+ Ali kill chicken that Aminah \ac{prog} eat\\
+ `Ali killed the chicken that Aminah is eating.' \flushfill{Malay, \pgcitealt{keenan1977}{71}}
+
+\ex.
+\ag. Ali beri {ubi kentang} itu kapada perempuan itu.\\
+ Ali give potato the to woman the\\
+ `Ali gave the potato to the woman.'
+\bg. *perempuan yang Ali beri {ubi kentang} itu kapada\\
+ woman that Ali give potato the to\\
+\bg. *perempuan kapada yang Ali beri {ubi kentang} itu\\
+ woman to who Ali give potato that\\ \flushfill{Malay, \pgcitealt{keenan1977}{71}}
+
+\exg. perempuan yang menerima {ubi kentang} itu daripada Ali\\
+ woman that received potato the from Ali\\
+ `the woman that received the potato from Ali'\flushfill{Malay, \pgcitealt{keenan1977}{71}}
+
+
+
+
+\ex.
+\ag. Gizon-a-k emakume-a-ri liburu-a eman dio.\\
+ man-\ac{def}-\ac{erg} woman-\ac{def}-\ac{dat} book-\ac{def}.\ac{acc} give has\\
+ `The man has given the book to the woman.'
+\bg. emakume-a-ri liburu-a eman dio-n gizon-a\\
+ woman-\ac{def}-\ac{dat} book-\ac{def}.\ac{acc} give has-\ac{rel} man-\ac{def}\\
+ `the man who has given the book to the woman'
+\bg. gizon-a-k emakume-a-ri eman dio-n liburu-a\\
+ man-\ac{def}-\ac{erg} woman-\ac{def}-\tsc{dat} give has-\ac{rel} book-\ac{def}\\
+ `the book that the man has given to the woman'
+\bg. gizon-a-k liburu-a eman dio-n emakume-a\\
+ man-\ac{def}-\ac{erg} book-\ac{def}.\ac{acc} give has-\ac{rel} woman-\ac{def}\\
+ `the woman that the man has given the book to' \flushfill{Basque, \pgcitealt{keenan1977}{72}}
+
+
+
+
+ \begin{table}[H]
+   \center
+   \caption {Relativization accessibility}
+     \begin{tabular}{cccc}
+       \toprule
+             \multicolumn{3}{c}{relativization of}
+           & \\
+       \cmidrule{1-3}
+             & direct
+             & indirect
+           & \\
+             subject
+             & object
+             & object
+           & example \\
+       \cmidrule{1-3} \cmidrule{4-4}
+             ✔
+             & *
+             & *
+           & Malagasy \\
+             ✔
+             & ✔
+             & *
+           & Malay \\
+             ✔
+             & ✔
+             & ✔
+           & Basque \\
+       \bottomrule
+     \end{tabular}
+ \end{table}
+
+
 
 
 
 
 \section{Case in morphology}
+
+
+\subsection{Suppletion patterns}
+
+\begin{table}[H]
+  \center
+  \caption {Suppletion patterns}
+    \begin{tabular}{cccccccc}
+      \toprule
+          \multicolumn{3}{c}{pattern}
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            & translation
+            & language \\
+      \cmidrule(lr){1-3} \cmidrule(lr){4-6} \cmidrule(lr){7-7} \cmidrule(lr){8-8}
+          A & A & A
+            & \cellcolor{LG}\tbf{þ}ú
+            & \cellcolor{LG}\tbf{þ}ig
+            & \cellcolor{LG}\tbf{þ}ér
+            & 2\tsc{sg}
+            & Icelandic \\
+          A & B & B
+            & my
+            & \cellcolor{LG}\tbf{n}as
+            & \cellcolor{LG}\tbf{n}am
+            & 1\tsc{pl}
+            & Russian \\
+          A & A & B
+            & \cellcolor{LG}\tbf{narnaj}
+            & \cellcolor{LG}\tbf{narnaj}(j)i
+            & gunga
+            & 3\tsc{sg}
+            & Wardaman \\
+          A & B & C
+            & zɨ
+            & jä
+            & as(ɨr)
+            & 1\tsc{sg}
+            & Khinalugh \\
+          A & B & A
+            & \cellcolor{LG}
+            &
+            & \cellcolor{LG}
+            &
+            & not attested \\
+      \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
+
+
+\subsection{Syncretism patterns}
+
+\begin{table}[H]
+  \center
+  \caption {Syncretism patterns}
+    \begin{tabular}{cccccccc}
+      \toprule
+          \multicolumn{3}{c}{pattern}
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            & translation
+            & language \\
+      \cmidrule(lr){1-3} \cmidrule(lr){4-6} \cmidrule(lr){7-7} \cmidrule(lr){8-8}
+          A & A & A
+            & \cellcolor{LG}\tbf{inu}
+            & \cellcolor{LG}\tbf{inu}
+            & \cellcolor{LG}\tbf{inu}
+            & 2\tsc{pl}
+            & Lavukaleve \\
+          A & B & B
+            & ta
+            & \cellcolor{LG}\tbf{bor}
+            & \cellcolor{LG}\tbf{bor}
+            & 1\tsc{pl}
+            & Teribe \\
+          A & A & B
+            & \cellcolor{LG}\tbf{sie}
+            & \cellcolor{LG}\tbf{sie}
+            & ihr
+            & 3\tsc{sg}.\tsc{f}
+            & German \\
+          A & B & C
+            & zɨ
+            & jä
+            & as(ɨr
+            & 1\tsc{sg}
+            & Khinalugh \\
+          A & B & A
+            & \cellcolor{LG}
+            &
+            & \cellcolor{LG}
+            &
+            & not attested \\
+      \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
+
+
+
+
+\ex. \ac{nom} < \ac{acc} < \ac{dat}
+
 
 \subsection{Morphological containment}
 
@@ -297,153 +498,6 @@ gives examples of each of these languages
 \ex. \ac{nom} < \ac{acc} < \ac{dat}
 
 \phantom{nom}
-
-\subsection{Suppletion patterns}
-
-\ex. \ac{nom} < \ac{acc} < \ac{dat}
-
-\phantom{nom}
-
-\subsubsection{ABB}
-
-
-cognates widespread in Indo-European - Icelandic\\
-cognates across Slavic - Russian\\
-cognates across Slavic - Serbian
-
-
-\begin{table}[H]
-  \center
-	\caption {ABB patterns in suppletion}
-		\begin{tabular}{cccccc}
-		\toprule
-              & Icelandic           & Russian             & \multicolumn{3}{c}{Serbian}                                           \\
-		            \cmidrule(lr){2-2}    \cmidrule(lr){3-3}    \cmidrule(lr){4-6}
-              & \ac{1}\ac{sg}       & \ac{1}\ac{pl}       & \ac{3}\ac{sg}.\ac{f}  & \ac{3}\ac{sg}.\ac{m}  & \ac{3}\ac{sg}.\ac{n}  \\
-		            \cmidrule(lr){2-2}    \cmidrule(lr){3-3}    \cmidrule(lr){4-6}
-    \ac{nom}  & ég                  & my                  &  ona                  & oni                   & on                    \\
-    \ac{acc}  & \tbf{m}ig           & \tbf{n}as           & \tbf{nj}u             & \tbf{nji}h            & \tbf{nje}-ga          \\
-    \ac{dat}  & \tbf{m}ér           & \tbf{n}am           & \tbf{nj}oj            & \tbf{nji}ma           & \tbf{nje}-mu          \\
-    \bottomrule
-		\end{tabular}
-\end{table}
-
-
-
-
-
-\subsubsection{AAB}
-
-
-\begin{table}[H]
-  \center
-	\caption {AAB patterns in suppletion}
-		\begin{tabular}{cccc}
-		\toprule
-              & Yurok                          & \multicolumn{2}{c}{Wardaman}               \\
-		            \cmidrule(lr){2-2}               \cmidrule(lr){3-4}
-              & \ac{3}\ac{sg}                  & \ac{3}\ac{sg}       & \ac{3}\ac{pl}        \\
-		            \cmidrule(lr){2-2}               \cmidrule(lr){3-4}
-    \ac{nom}  & \tbf{yoɂ}(o·t), \tbf{woɂ}(o·t)  & \tbf{narnaj}        & \tbf{narnaj}-bulu    \\
-    \ac{acc}  & \tbf{yoɂ}o·t, \tbf{woɂ}o·t      & \tbf{narnaj}-(j)i   & \tbf{narnaj}-bulu-yi \\
-    \ac{dat}  & weyaɂik                         & gunga               & wurrugu              \\
-    \bottomrule
-		\end{tabular}
-\end{table}
-
-
-\subsubsection{ABC}
-
-\begin{table}[H]
-  \center
-	\caption {ABC patterns in suppletion}
-		\begin{tabular}{ccc}
-		\toprule
-              & Khinalugh          \\
-		            \cmidrule(lr){2-2}
-              & \ac{1}\ac{sg}      \\
-		            \cmidrule(lr){2-2}
-    \ac{nom}  & zɨ                  \\
-    \ac{acc}  & jä                  \\
-    \ac{dat}  & as(ɨr)              \\
-    \bottomrule
-		\end{tabular}
-\end{table}
-
-
-
-
-
-
-\subsection{Syncretism patterns}
-
-\subsubsection{ABB}
-
-Van Baal, Don
-
-\begin{table}[H]
-  \center
-	\caption {ABB patterns in suppletion}
-		\begin{tabular}{cccccc}
-		\toprule
-              & Dutch           &                      & \multicolumn{3}{c}{x}                                           \\
-		            \cmidrule(lr){2-2}    \cmidrule(lr){3-3}    \cmidrule(lr){4-6}
-              & \ac{1}\ac{sg}   & \ac{2}\ac{sg}        & \ac{sg}.\ac{f}  & \ac{3}\ac{sg}.\ac{m}  & \ac{3}\ac{sg}.\ac{n}  \\
-		            \cmidrule(lr){2-2}    \cmidrule(lr){3-3}    \cmidrule(lr){4-6}
-    \ac{nom}  & ik              & jij                  &  ona                  & oni                   & on                    \\
-    \ac{acc}  & \tbf{mij}       & \tbf{jou}            & \tbf{nj}u             & \tbf{nji}h            & \tbf{nje}-ga          \\
-    \ac{dat}  & \tbf{mij}       & \tbf{jou}            & \tbf{nj}oj            & \tbf{nji}ma           & \tbf{nje}-mu          \\
-    \bottomrule
-		\end{tabular}
-\end{table}
-
-
-https://linguistlist.org/issues/13/13-1129.html
-
-
-\subsubsection{AAB}
-
-Russian: table pl,
-stol-y
-stol-y
-stol-ov
-
-
-Russian, building sg,
-zdani-e
-zdani-e
-zdani-ju
-
-
-
-
-endings of Latin nouns.9
-n(n) n(mf) I(fm) V(fm) ffl(n) ffl(mf) nii(mf) mi(n) IV(mf) IV(n)
-sg. -um -us -a -es 0,-s -is,-es -c -us -u(-u?)
-Ac -um -um -am -em -em -em -e -um -u(-u?)
--I -~i -ai>-ae 4l -is -is -is -is -Qs -us
--6 -6 -ae -el -I -1 -I -1 -ul *u
-Ab -6 -6 -a -S -e -c -e, -i -I -Q -u
-pl. -a -I -ae -es -a -es -cs -ia -us -ua
-Ac -a -6s -as -es -a  -es, -Is -ia -us -ua
--orum -omm -arum -erum -um -um -ium -ium -uum -uum
-DAb -is -Ts -Is -ebus -ibus -ibus -ibus -ibus -ibus -ibus
-
-
-
-
-german:
-die die der
-das das dem
-
-
-
-\subsubsection{ABC}
-
-all different endings
-
-
-\ex. \ac{nom} < \ac{acc} < \ac{dat}
 
 
 

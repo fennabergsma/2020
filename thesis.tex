@@ -22,8 +22,12 @@
 \listoftables
 
 \chapter*{List of abbreviations}
+\begingroup
+  \setlength{\LTleft}{-\tabcolsep}
 \printacronyms[include-classes=abbr, heading=none]
+\endgroup
 \addcontentsline{toc}{chapter}{List of abbreviations}
+
 
 %%%%
 \mainmatter

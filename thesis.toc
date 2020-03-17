@@ -4,7 +4,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of tables}{iv}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{vii}%
+\contentsline {chapter}{List of abbreviations}{viii}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}%
 \defcounter {refsection}{0}\relax 
@@ -28,25 +28,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Relativization}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Case in morphology}{15}%
+\contentsline {section}{\numberline {2.3}Case in morphology}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Morphological containment}{15}%
+\contentsline {subsection}{\numberline {2.3.1}Suppletion patterns}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Suppletion patterns}{16}%
+\contentsline {subsection}{\numberline {2.3.2}Syncretism patterns}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.1}ABB}{17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.2}AAB}{17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2.3}ABC}{18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Syncretism patterns}{18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.1}ABB}{18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.2}AAB}{18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.3}ABC}{19}%
+\contentsline {subsection}{\numberline {2.3.3}Morphological containment}{18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}A side note on the genitive}{19}%
 \defcounter {refsection}{0}\relax 
@@ -62,15 +50,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Ellipsis}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Relation between morphology and syntax}{23}%
+\contentsline {section}{\numberline {3.4}Reflex of morphology in syntax}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}The intuition}{23}%
+\contentsline {subsection}{\numberline {3.4.1}Morphology}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Morphology}{23}%
+\contentsline {subsection}{\numberline {3.4.2}Syntax}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Syntax}{24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Similar analyses}{25}%
+\contentsline {section}{\numberline {3.5}Similar analyses}{25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {II}The competitors in the competition}{27}%
 \defcounter {refsection}{0}\relax 
