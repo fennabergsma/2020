@@ -36,7 +36,7 @@ boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 
 
 %%%%REFERENCES%%%
-\usepackage[backend=biber,style=authoryear,natbib=true]{biblatex}
+\usepackage[backend=biber,style=authoryear-comp,natbib=true]{biblatex}
 \newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
 \newcommand{\posscitealt}[1]{\citeauthor{#1}'s \citeyear{#1}}
 \newcommand{\possciteauthor}[1]{\citeauthor{#1}'s}
@@ -80,6 +80,7 @@ boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 \mainmatter
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{2}
+\usepackage{bookmark}%links etc
 %%%%%TABLE OF CONTENTS%%%
 
 
@@ -88,31 +89,31 @@ boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 \renewcommand{\listtablename}{List of tables}%%%no capitals in headers%%%
 
 %%%automatically put chapter headings in lot%%%
-\usepackage{etoolbox}
-\providebool{newchap}
-\newcommand{\newchapter}[1]{%
-    \chapter{#1}
-    \global\setbool{newchap}{true}
-}
-\let\oldcaption\caption
-\renewcommand{\caption}[2][\shortcaption]{%
-\def\shortcaption{#2}
-\ifbool{newchap}{%
-    \addtocontents{lot}{\protect\contentsline{chapter}{%
-        Chapter \thechapter \vspace{10pt}
-    }{}}}{}
-    \global\boolfalse{newchap}
-    \oldcaption[#1]{#2}
-}
-\makeatletter
-\newcommand{\saved@chapter}{}
-\let\saved@chapter\chapter
-\renewcommand{\chapter}{%
-  \@ifstar {\saved@chapter*}{\@dblarg\my@chapter}%
-}
-\newcommand*{\my@chapter}[2][]{%
-  \saved@chapter[#1]{#2}%
-  \global\setbool{newchap}{true}
-}
-\makeatother
+% \usepackage{etoolbox}
+% \providebool{newchap}
+% \newcommand{\newchapter}[1]{%
+%     \chapter{#1}
+%     \global\setbool{newchap}{true}
+% }
+% \let\oldcaption\caption
+% \renewcommand{\caption}[2][\shortcaption]{%
+% \def\shortcaption{#2}
+% \ifbool{newchap}{%
+%     \addtocontents{lot}{\protect\contentsline{chapter}{%
+%         Chapter \thechapter \vspace{10pt}
+%     }{}}}{}
+%     \global\boolfalse{newchap}
+%     \oldcaption[#1]{#2}
+% }
+% \makeatletter
+% \newcommand{\saved@chapter}{}
+% \let\saved@chapter\chapter
+% \renewcommand{\chapter}{%
+%   \@ifstar {\saved@chapter*}{\@dblarg\my@chapter}%
+% }
+% \newcommand*{\my@chapter}[2][]{%
+%   \saved@chapter[#1]{#2}%
+%   \global\setbool{newchap}{true}
+% }
+% \makeatother
 %%%LIST OF TABLES%%%

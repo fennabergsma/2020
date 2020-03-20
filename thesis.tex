@@ -1,4 +1,4 @@
-\documentclass[11pt]{memoir}
+\documentclass[11pt,hidelinks]{memoir}
 
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
@@ -10,11 +10,15 @@
 
 \begin{document}
 
-\maketitle
+\bookmarksetup{startatroot}
+
+\begin{titlingpage}
+  \maketitle
+\end{titlingpage}
 
 %%%%
-\frontmatter
 
+\frontmatter
 \clearpage
 \tableofcontents
 
@@ -46,6 +50,7 @@
 \part{Details}\label{part:details}
 \include{details}
 
+\bookmarksetup{startatroot}
 \include{conclusion}
 
 %%%%%
@@ -53,8 +58,12 @@
 
 \clearpage
 \chapter*{Primary texts}
+\begingroup
+  \setlength{\LTleft}{-\tabcolsep}
 \printacronyms[include-classes=texts, heading=none]
+\endgroup
 \addcontentsline{toc}{chapter}{Primary texts}
+
 
 \printbibliography
 

@@ -1,30 +1,26 @@
 % !TEX root = thesis.tex
 
-\begin{table}[H]
-  \center
-  \caption {Case attraction in headless relatives in Gothic}
-    \begin{tabular}{c|c|c|c}
-      \toprule
-        \diagbox[linecolor=white]{\ac{int}}{\ac{ext}}
-            & [\ac{nom}]
-            & [\ac{acc}]
-            & [\ac{dat}]
-            \\ \cmidrule{1-4}
-        [\ac{nom}]
-            & \colorbox{LG}{\ac{nom}}
-            & \diagbox[linecolor=white]{*\ac{nom}}{\colorbox{DG}{\ac{acc}}}
-            & \diagbox[linecolor=white]{*\ac{nom}}{\colorbox{DG}{\ac{dat}}}
-            \\ \cmidrule{1-4}
-        [\ac{acc}]
-            & \diagbox[linecolor=white]{\colorbox{DG}{\ac{acc}}}{*\ac{nom}}
-            & \colorbox{LG}{\ac{acc}}
-            & \diagbox[linecolor=white]{*\ac{acc}}{\colorbox{DG}{\ac{dat}}}
-            \\ \cmidrule{1-4}
-        [\ac{dat}]
-            & \diagbox[linecolor=white]{\colorbox{DG}{\ac{dat}}}{*\ac{nom}}
-            & \diagbox[linecolor=white]{\colorbox{DG}{\ac{dat}}}{*\ac{acc}}
-            & \colorbox{LG}{\ac{dat}}
-            \\
-      \bottomrule
-    \end{tabular}
-\end{table}
+\begin{tabular}{c|c|c|c}
+  \toprule
+    \diagbox[linecolor=white]{\ac{int}}{\ac{ext}}
+        & [\ac{nom}]
+        & [\ac{acc}]
+        & [\ac{dat}]
+        \\ \cmidrule{1-4}
+    [\ac{nom}]
+        & \colorbox{DG}{\ac{nom}}
+        & \diagbox[linecolor=white]{*\ac{nom}}{\colorbox{LG}{\ac{acc}}}
+        & \diagbox[linecolor=white]{*\ac{nom}}{\colorbox{LG}{\ac{dat}}}
+        \\ \cmidrule{1-4}
+    [\ac{acc}]
+        & \diagbox[linecolor=white]{\colorbox{LG}{\ac{acc}}}{*\ac{nom}}
+        & \colorbox{DG}{\ac{acc}}
+        & \diagbox[linecolor=white]{*\ac{acc}}{\colorbox{LG}{\ac{dat}}}
+        \\ \cmidrule{1-4}
+    [\ac{dat}]
+        & \diagbox[linecolor=white]{\colorbox{LG}{\ac{dat}}}{*\ac{nom}}
+        & \diagbox[linecolor=white]{\colorbox{LG}{\ac{dat}}}{*\ac{acc}}
+        & \colorbox{DG}{\ac{dat}}
+        \\
+  \bottomrule
+\end{tabular}
