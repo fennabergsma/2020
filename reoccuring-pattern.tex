@@ -189,27 +189,24 @@ In this section I discuss two additional phenomena in morphosyntax that reflect 
 
 \subsection{Agreement}
 
+The hierarchy is to be read as follows: if a language allows the verb to agree
+with an argument marked by a case X, it also allows the verb to agree with
+all arguments to the left of X.
+
+\begin{tikzpicture}
+  \draw (0,0) circle (2);
+  \draw (0,-0.5) circle (1.5);
+  \draw (0,-1) circle (1);
+
+  \draw[decoration={text along path,reverse path,text align={align=center},text={IO}},decorate] (0.6,-1) arc (0:1:0.5);
+  \draw[decoration={text along path,reverse path,text align={align=center},text={DO}},decorate] (0.6,0.25) arc (0:180:0.5);
+  \draw[decoration={text along path,reverse path,text align={align=center},text={S}},decorate] (0,1.5) arc (0:180:0.5);
+\end{tikzpicture}
+
+
+
+
 \citealt{moravcsik1978,gilligan1987} with subject, object and indirect object.
-
-
-\citealt{bobaljik2006} makes it default/dependent/dative
-
-Mandarin Chinese does not show any agreement on the verb. In German, the verb agrees with the subject. In Huallaga Quechua, the verb agrees with the subject and the object. In Basque, the verb agrees with the subject, the object and the indirect object.
-
-
-\ex.
-\ag. Nǐ bǎ shū gěi wǒ-le.\\
- you ba book give me-\ac{asp}\\
- `You gave me the book.' \flushfill{Mandarin Chinese}
-\bg. Du gib -st mir das Buch.\\
- you give -\tbf{2\ac{sg}} me the book\\
- `You give me the book.' \flushfill{German}
-\bg. tayta-yki qam-ta qu -maran\\
- father-your you-\ac{acc} give -\tbf{3\ac{sg}→1\ac{sg}}.\ac{pst}\\
- `Your father gave you to me.' \flushfill{Huallaga Quechua, \pgcitealt{weber1983}{21}}
-\bg. Zu-k ni-ri liburu-a emon d -austa -zu.\\
- you-\ac{erg} me-\ac{dat} book-\ac{def}.\ac{acc} given \tbf{\ac{acc}.3\ac{sg}} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
- `You gave me the book.' \flushfill{Basque, \pgcitealt{arregi2004}{45}}
 
 \begin{table}[H]
   \center
@@ -244,7 +241,7 @@ Mandarin Chinese does not show any agreement on the verb. In German, the verb ag
             & ✔
             & *
             & 25
-          & Huallaga Quechua \\
+          & Hungarian \\
             ✔
             & ✔
             & ✔
@@ -270,6 +267,76 @@ Mandarin Chinese does not show any agreement on the verb. In German, the verb ag
             & ✔
             & 0
           & - \\
+      \bottomrule
+    \end{tabular}
+\end{table}
+
+
+Mandarin Chinese is an example of a language that does not show any agreement on the predicate. An example is given in \ref{ex:chineseagr}. The predicate \tit{gěi} `give' does not agree with the subject \tit{nǐ} `you', with the direct object \tit{shū} `book' or with the indirect object \tit{wǒ} `me'.
+
+\exg. Nǐ bǎ shū gěi wǒ -le.\\
+ you ba book give me -\ac{asp}\\
+ `You gave me the book.' \flushfill{Mandarin Chinese, Zheng Shen p.c.}\label{ex:chineseagr}
+
+German is an example of a language that shows agreement with the subject of the clause. An example is given in \ref{ex:germanagr}. The predicate \tit{gibst} `give' contains the morpheme \tit{-st}. This morpheme is the agreement morpheme for second person singular subjects. The predicate \tit{gibst} `give' agrees in person and number with the subject \tit{du} `you'. There is no agreement with the direct object \tit{das Buch} `the book' or the indirect object \tit{mir} `me'.
+
+\exg. Du gib -st mir das Buch.\\
+ you give -\tbf{2\ac{sg}} me the book\\
+ `You give me the book.' \flushfill{German}\label{ex:germanagr}
+
+Hungarian is an example of a language that shows agreement with the subject and the direct object of a clause. An example is given in \ref{ex:hungarianagr}. The predicate \tit{adom} `give' contains the morpheme \tit{-om}. This is a portmonteau morpheme for a first person singular subject and a third person object agreement. The predicate \tit{adom} `give' agrees with the subject \tit{én} `I' and the direct object \tit{a könyvet} `the book'. There is no agreement with the indirect object \tit{neked} `you'.
+
+\exg. (Én) neked ad -om a könyv -et\\
+ I you.\tsc{dat}.\tsc{sg} give -\tbf{\tsc{1sg}.\tsc{sbj}>3.\tsc{obj}} the book -\tsc{acc}\\
+ `I give you the book.' \flushfill{Hungarian, András Bárány p.c.}\label{ex:hungarianagr}
+
+Basque is an example of language that shows agreement with the subject, the direct object and the indirect object. An example is given in \ref{ex:basqueagr}. The auxiliary consists of the morphemes \tit{d-}, \tit{-austa} and \tit{-zu}. The morpheme \tit{d-} agrees with the direct object \tit{liburua} `the book'. The morpheme \tit{-austa} agrees with the indirect object \tit{niri} `me'. The morpheme \tit{-zu} agrees with the subject \tit{zuk} `you'.
+
+\exg. Zu -k ni -ri liburu -a emon d -austa -zu.\\
+ you -\ac{erg} me -\ac{dat} book -\ac{def}.\ac{acc} given \tbf{\ac{acc}.3\ac{sg}} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
+ `You gave me the book.' \flushfill{Basque, \pgcitealt{arregi2004}{45}}\label{ex:basqueagr}
+
+% Is the segmentation and glossing correct? I took the example from the literature but they were not very clear about which morpheme does what exactly. And the agreement, would you say it agrees in number, person and definiteness?
+
+
+
+\citealt{bobaljik2006} makes it default/dependent/dative
+
+\begin{table}[H]
+  \center
+  \caption {Agreement accessibility}
+    \begin{tabular}[t]{ccc}
+      \toprule
+          \multicolumn{3}{c}{agreement with} \\
+      \cmidrule{1-3}
+            \tsc{nom}
+            & \tsc{acc}
+          & \tsc{dat} \\
+      \cmidrule{1-3}
+            *
+            & *
+          & * \\
+            ✔
+            & *
+          & * \\
+            ✔
+            & ✔
+          & * \\
+            ✔
+            & ✔
+          & ✔ \\
+            ✔
+            & *
+          & ✔ \\
+            {*}
+            & ✔
+          & ✔ \\
+            {*}
+            & x
+          & * \\
+            {*}
+            & *
+          & ✔ \\
       \bottomrule
     \end{tabular}
 \end{table}
