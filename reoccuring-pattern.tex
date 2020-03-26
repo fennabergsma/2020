@@ -189,88 +189,29 @@ In this section I discuss two additional phenomena in morphosyntax that reflect 
 
 \subsection{Agreement}
 
-The hierarchy is to be read as follows: if a language allows the verb to agree
-with an argument marked by a case X, it also allows the verb to agree with
-all arguments to the left of X.
+% The hierarchy is to be read as follows: if a language allows the verb to agree with an argument marked by a case X, it also allows the verb to agree with all arguments to the left of X.
+%
+% Moravcsik (1974) presented a set of implicational universals regarding (NP-predicate) agreement. The universals are formulated in terms of grammatical functions (subject, object, etc.), and include implicational hierarchy schematized in (12). The hierarchy ranges over languages, not sentences, and conflates a set of statements such as the following (see Moravcsik 1978 for revisions):
+% • If in a language the verb agrees with anything, it agrees with some or all subjects
+% • If the verb agrees with anything other than subjects, it agrees with some or all direct objects
 
-\begin{tikzpicture}
-  \draw (0,0) circle (2);
-  \draw (0,-0.5) circle (1.5);
-  \draw (0,-1) circle (1);
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,1) circle (2.25);
+    \draw (0,0.5) circle (1.75);
+    \draw (0,0) circle (1.25);
 
-  \draw[decoration={text along path,reverse path,text align={align=center},text={IO}},decorate] (0.6,-1) arc (0:1:0.5);
-  \draw[decoration={text along path,reverse path,text align={align=center},text={DO}},decorate] (0.6,0.25) arc (0:180:0.5);
-  \draw[decoration={text along path,reverse path,text align={align=center},text={S}},decorate] (0,1.5) arc (0:180:0.5);
-\end{tikzpicture}
+    \node[] at (0,2.75) {subject};
+    \node[] at (0,1.5) {direct object};
+    \node[align=center] at (0,0) {indirect\\ object};
+  \end{tikzpicture}
+  \caption{\posscitealt{moravcsik1978} schema}
+  \label{fig:subdoio}
+\end{figure}
 
 
-
-
-\citealt{moravcsik1978,gilligan1987} with subject, object and indirect object.
-
-\begin{table}[H]
-  \center
-  \caption {Agreement accessibility}
-    \begin{tabular}[t]{ccccc}
-      \toprule
-            \multicolumn{3}{c}{agreement with}
-            &
-          & \\
-      \cmidrule{1-3}
-            & direct
-            & indirect
-            & number
-          & \\
-            subject
-            & object
-            & object
-            & of languages
-          & example \\
-      \cmidrule{1-3} \cmidrule{4-4} \cmidrule{5-5}
-            *
-            & *
-            & *
-            & 23
-          & Mandarin Chinese \\
-            ✔
-            & *
-            & *
-            & 31
-          & German \\
-            ✔
-            & ✔
-            & *
-            & 25
-          & Hungarian \\
-            ✔
-            & ✔
-            & ✔
-            & 23
-          & Basque \\
-            ✔
-            & *
-            & ✔
-            & (1)
-          & - \\
-            {*}
-            & ✔
-            & ✔
-            & 0
-          & - \\
-            {*}
-            & x
-            & *
-            & 0
-          & - \\
-            {*}
-            & *
-            & ✔
-            & 0
-          & - \\
-      \bottomrule
-    \end{tabular}
-\end{table}
-
+\citealt{moravcsik1978} with subject, object and indirect object.
 
 Mandarin Chinese is an example of a language that does not show any agreement on the predicate. An example is given in \ref{ex:chineseagr}. The predicate \tit{gěi} `give' does not agree with the subject \tit{nǐ} `you', with the direct object \tit{shū} `book' or with the indirect object \tit{wǒ} `me'.
 
@@ -296,50 +237,104 @@ Basque is an example of language that shows agreement with the subject, the dire
  you -\ac{erg} me -\ac{dat} book -\ac{def}.\ac{acc} given \tbf{\ac{acc}.3\ac{sg}} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
  `You gave me the book.' \flushfill{Basque, \pgcitealt{arregi2004}{45}}\label{ex:basqueagr}
 
-% Is the segmentation and glossing correct? I took the example from the literature but they were not very clear about which morpheme does what exactly. And the agreement, would you say it agrees in number, person and definiteness?
+\posscitealt{gilligan1987} typological study confims the picture.
 
-
+ \begin{table}[H]
+   \center
+   \caption {Agreement accessibility}
+     \begin{tabular}[t]{ccccc}
+       \toprule
+             \multicolumn{3}{c}{agreement with}
+             &
+           & \\
+       \cmidrule{1-3}
+             & direct
+             & indirect
+             & number
+           & \\
+             subject
+             & object
+             & object
+             & of languages
+           & example \\
+       \cmidrule{1-3} \cmidrule{4-4} \cmidrule{5-5}
+             *
+             & *
+             & *
+             & 23
+           & Mandarin Chinese \\
+             ✔
+             & *
+             & *
+             & 31
+           & German \\
+             ✔
+             & ✔
+             & *
+             & 25
+           & Hungarian \\
+             ✔
+             & ✔
+             & ✔
+             & 23
+           & Basque \\
+             ✔
+             & *
+             & ✔
+             & (1)
+           & - \\
+             {*}
+             & ✔
+             & ✔
+             & 0
+           & - \\
+             {*}
+             & x
+             & *
+             & 0
+           & - \\
+             {*}
+             & *
+             & ✔
+             & 0
+           & - \\
+       \bottomrule
+     \end{tabular}
+ \end{table}
 
 \citealt{bobaljik2006} makes it default/dependent/dative
 
-\begin{table}[H]
-  \center
-  \caption {Agreement accessibility}
-    \begin{tabular}[t]{ccc}
-      \toprule
-          \multicolumn{3}{c}{agreement with} \\
-      \cmidrule{1-3}
-            \tsc{nom}
-            & \tsc{acc}
-          & \tsc{dat} \\
-      \cmidrule{1-3}
-            *
-            & *
-          & * \\
-            ✔
-            & *
-          & * \\
-            ✔
-            & ✔
-          & * \\
-            ✔
-            & ✔
-          & ✔ \\
-            ✔
-            & *
-          & ✔ \\
-            {*}
-            & ✔
-          & ✔ \\
-            {*}
-            & x
-          & * \\
-            {*}
-            & *
-          & ✔ \\
-      \bottomrule
-    \end{tabular}
-\end{table}
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,1) circle (2.25);
+    \draw (0,0.5) circle (1.75);
+    \draw (0,0) circle (1.25);
+
+    \node[] at (0,2.75) {default case};
+    \node[] at (0,1.5) {dependent case};
+    \node[] at (0,0) {dative};
+  \end{tikzpicture}
+  \caption{\posscitealt{bobaljik2006} schema}
+  \label{fig:defdepdat}
+\end{figure}
+
+For this dissertation, this translates to this:
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,1) circle (2.25);
+    \draw (0,0.5) circle (1.75);
+    \draw (0,0) circle (1.25);
+
+    \node[] at (0,2.75) {\tsc{nom}};
+    \node[] at (0,1.75) {\tsc{acc}};
+    \node[] at (0,0) {\tsc{dat}};
+  \end{tikzpicture}
+  \label{fig:nomaccdat}
+  \caption{Schema for this dissertation}
+\end{figure}
 
 
 
@@ -349,7 +344,13 @@ Keenan Comrie sub/obj/ind obj
 
 Caha nom/acc/dat
 
-In Malagasy, only subjects can be relativized.
+In Malagasy, only subjects can be relativized. The basic word order of Malagasy is VOXS. a illustrates this point. a relative clause is formed by moving the head to the left, optionally adding the invariable relativizer \tit{izay}, and let the rest of the clause follow
+
+
+RCs place
+the head NP to the left, followed optionally by an invariable relativizer izay, followed
+by the restricting clause with no pronoun in the NPrei position (Keenan (1972b))
+
 
 \ex.
 \ag. Nahita ny vehivavy ny mpianatra.\\
