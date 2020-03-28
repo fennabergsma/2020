@@ -20,17 +20,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Parallels in accessibility hierarchies}{17}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Agreement}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Agreement}{17}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Relativization}{21}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Case in morphology}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Case in morphology}{24}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism patterns}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Syncretism patterns}{24}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Morphological containment}{24}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Morphological containment}{25}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}A side note on the genitive}{25}{section.2.4}%
+\contentsline {section}{\numberline {2.4}A side note on the genitive}{26}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{27}{chapter.3}%
 \defcounter {refsection}{0}\relax 

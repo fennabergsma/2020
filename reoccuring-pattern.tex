@@ -195,16 +195,23 @@ In this section I discuss two additional phenomena in morphosyntax that reflect 
 % • If in a language the verb agrees with anything, it agrees with some or all subjects
 % • If the verb agrees with anything other than subjects, it agrees with some or all direct objects
 
+A language outside the circle does not show any agreement. A language in the white circle only shows agreement with the subject. A language within the light gray circle shows agreement with both subjects and direct objects. Notice it is not possible for a language to show agreement with the direct object and not show it with a subject. A language within the dark gray circle shown agreement with subjects, direct objects and indirect objects. Here it is impossible for a language to show agree
+
 \begin{figure}[H]
   \centering
   \begin{tikzpicture}
     \draw (0,1) circle (2.25);
-    \draw (0,0.5) circle (1.75);
-    \draw (0,0) circle (1.25);
+    \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+    \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
     \node[] at (0,2.75) {subject};
     \node[] at (0,1.5) {direct object};
     \node[align=center] at (0,0) {indirect\\ object};
+
+    \node[] at (2.5,3) {\footnotesize{● Chinese}};
+    \node[] at (2.25,2) {\footnotesize{● German}};
+    \node[] at (2,1) {\footnotesize{● Hungarian}};
+    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
   \caption{\posscitealt{moravcsik1978} schema}
   \label{fig:subdoio}
@@ -231,13 +238,13 @@ Hungarian is an example of a language that shows agreement with the subject and 
  I you.\tsc{dat}.\tsc{sg} give -\tbf{\tsc{1sg}.\tsc{sbj}>3.\tsc{obj}} the book -\tsc{acc}\\
  `I give you the book.' \flushfill{Hungarian, András Bárány p.c.}\label{ex:hungarianagr}
 
-Basque is an example of language that shows agreement with the subject, the direct object and the indirect object. An example is given in \ref{ex:basqueagr}. The auxiliary consists of the morphemes \tit{d-}, \tit{-austa} and \tit{-zu}. The morpheme \tit{d-} agrees with the direct object \tit{liburua} `the book'. The morpheme \tit{-austa} agrees with the indirect object \tit{niri} `me'. The morpheme \tit{-zu} agrees with the subject \tit{zuk} `you'.
+Basque is an example of language that shows agreement with the subject, the direct object and the indirect object. Basque is an ergative-absolutive language, so in transitive clauses subjects are marked as ergative and objects are marked as absolutive. An example from the Bizkaian dialect is given in \ref{ex:basqueagr}. The stem of the auxiliary \tit{aus} combines with the morphemes \tit{d-}, \tit{-ta} and \tit{-zu}. The morpheme \tit{d-} is the agreement morpheme for third person singular as direct objects, which is here \tit{liburua} `the book'. The morpheme \tit{-ta} is the agreement morpheme for first person singular indirect objects, which is here \tit{niri} `me'. The morpheme \tit{-zu} is the agreement morpheme for second person singular ergative subjects, which is here \tit{zuk} `you'.
 
-\exg. Zu -k ni -ri liburu -a emon d -austa -zu.\\
- you -\ac{erg} me -\ac{dat} book -\ac{def}.\ac{acc} given \tbf{\ac{acc}.3\ac{sg}} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
- `You gave me the book.' \flushfill{Basque, \pgcitealt{arregi2004}{45}}\label{ex:basqueagr}
+\exg. Zu -k ni -ri liburu -a emon d -aus -ta -zu.\\
+ you -\ac{erg} me -\ac{dat} book -\ac{def}.\ac{abs} given \tbf{\ac{abs}.3\ac{sg}} -\ac{aux} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
+ `You gave me the book.' \flushfill{Bizkaian Basque, \pgcitealt{arregi2004}{45}}\label{ex:basqueagr}
 
-\posscitealt{gilligan1987} typological study confims the picture.
+\posscitealt{gilligan1987} typological study confirms the picture.
 
  \begin{table}[H]
    \center
@@ -308,12 +315,17 @@ Basque is an example of language that shows agreement with the subject, the dire
   \centering
   \begin{tikzpicture}
     \draw (0,1) circle (2.25);
-    \draw (0,0.5) circle (1.75);
-    \draw (0,0) circle (1.25);
+    \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+    \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
     \node[] at (0,2.75) {default case};
     \node[] at (0,1.5) {dependent case};
     \node[] at (0,0) {dative};
+
+    \node[] at (2.5,3) {\footnotesize{● Chinese}};
+    \node[] at (2.25,2) {\footnotesize{● German}};
+    \node[] at (2,1) {\footnotesize{● Hungarian}};
+    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
   \caption{\posscitealt{bobaljik2006} schema}
   \label{fig:defdepdat}
@@ -325,12 +337,17 @@ For this dissertation, this translates to this:
   \centering
   \begin{tikzpicture}
     \draw (0,1) circle (2.25);
-    \draw (0,0.5) circle (1.75);
-    \draw (0,0) circle (1.25);
+    \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+    \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
     \node[] at (0,2.75) {\tsc{nom}};
     \node[] at (0,1.75) {\tsc{acc}};
     \node[] at (0,0) {\tsc{dat}};
+
+    \node[] at (2.5,3) {\footnotesize{● Chinese}};
+    \node[] at (2.25,2) {\footnotesize{● German}};
+    \node[] at (2,1) {\footnotesize{● Hungarian}};
+    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
   \label{fig:nomaccdat}
   \caption{Schema for this dissertation}
@@ -342,75 +359,99 @@ For this dissertation, this translates to this:
 
 Keenan Comrie sub/obj/ind obj
 
-Caha nom/acc/dat
 
-In Malagasy, only subjects can be relativized. The basic word order of Malagasy is VOXS. a illustrates this point. a relative clause is formed by moving the head to the left, optionally adding the invariable relativizer \tit{izay}, and let the rest of the clause follow
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,1) circle (2.25);
+    \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+    \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
+    \node[] at (0,2.75) {subject};
+    \node[] at (0,1.5) {direct object};
+    \node[align=center] at (0,0) {indirect\\ object};
 
-RCs place
-the head NP to the left, followed optionally by an invariable relativizer izay, followed
-by the restricting clause with no pronoun in the NPrei position (Keenan (1972b))
+    \node[] at (2.25,2) {\footnotesize{● Malagasy}};
+    \node[] at (2,1) {\footnotesize{● Malay}};
+    \node[] at (1.375,0) {\footnotesize{● Basque}};
+  \end{tikzpicture}
+  \caption{Schema for relativization}
+  \label{fig:relativization}
+\end{figure}
 
+Malagasy is an example of a language that allows subjects to be relativized, but not direct and indirect objects. \ref{ex:malagasy-decl} is an example of a declarative sentence in Malagasy. It is a transitive that contains the subject \tit{ny mpianatra} `the student' and the direct object \tit{ny vehivavy} `the woman'.
 
-\ex.
-\ag. Nahita ny vehivavy ny mpianatra.\\
+\exg. Nahita ny vehivavy ny mpianatra.\\
  saw the woman the student\\
- `The student saw the woman.'
-\bg. ny mpianatra izay nahita ny vehivavy\\
+ `The student saw the woman.' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}\label{ex:malagasy-decl}
+
+In \ref{ex:malagasy-sub}, the subject from the declarative sentence is relativized. The subject \tit{ny mpianatra} `the student' appears in the first position of the clause. It is followed by the invariable relativizer \tit{izay} `that'. After that, the rest of the relative clause follows, in this case \tit{nahita ny vehivavy} `saw the woman'.
+
+\exg. ny mpianatra izay nahita ny vehivavy\\
  the student that saw the woman\\
- `the student that saw the woman'
-\bg. *ny vehivavy izay nahita ny mpianatra\\
+ `the student that saw the woman' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}\label{ex:malagasy-sub}
+
+The object of \ref{ex:malagasy-decl} cannot be relativized in the same way, as shown in \ref{ex:malagasy-no-do}. Here the object \tit{ny vehivavy} `the woman' appears in the first position of the clause. It is again followed by the relativizer \tit{izay} `that' and the rest of the relative clause, which is here \tit{nahita ny mpianatra} `saw the student'. This example is ungrammatical.
+
+\exg. *ny vehivavy izay nahita ny mpianatra\\
  the woman that saw the student\\
- `the woman that the student saw' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}
+ `the woman that the student saw' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}\label{ex:malagasy-no-do}
 
-Objects can be passivized and then relativized (again relativization of a subject).
+% Objects can be passivized and then relativized (again relativization of a subject).
+%
+% \ex.
+% \ag. Nohitan' ny mpianatra ny vehivavy.\\
+%  seen.\ac{pass} the student the woman\\
+%  `The woman was seen by the student.'\label{ex:}
+% \bg. ny vehivavy izay nohitan' ny mpianatra\\
+%  the woman that seen.\ac{pass} the student\\
+%  `the woman that was seen by the student' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}
 
-\ex.
-\ag. Nohitan' ny mpianatra ny vehivavy.\\
- seen.\ac{pass} the student the woman\\
- `The woman was seen by the student.'
-\bg. ny vehivavy izay nohitan' ny mpianatra\\
- the woman that seen.\ac{pass} the student\\
- `the woman that was seen by the student' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}
-
-In Malay, subjects and objects can be relativized using \tit{yang}. Below I only give an example of a relativized object.
+Malay is an example of a language that has a relativization strategy for subjects and direct objects, but not for indirect objects. \ref{ex:malay-do} shows an example in which the object is relativized. The object here is \tit{ayam} `chicken'. It is followed by the relativizer \tit{yang} `that'. After that, the rest of the relative clause \tit{Aminah sedang memakan} `Aminah is eating' follows. The same strategy works to relativize subjects.
 
 \exg. Ali bunoh ayam yang Aminah sedang memakan.\\
  Ali kill chicken that Aminah \ac{prog} eat\\
- `Ali killed the chicken that Aminah is eating.' \flushfill{Malay, \pgcitealt{keenan1977}{71}}
+ `Ali killed the chicken that Aminah is eating.' \flushfill{Malay, \pgcitealt{keenan1977}{71}}\label{ex:malay-do}
 
-Indirect objects cannot be relativized in the same way.
+Indirect objects cannot be relativized using the same strategy. \ref{ex:malay-decl} is an example of a ditransitive sentence in Malay. The indirect object \tit{kapada perempuan itu} `to the woman' cannot be relativized using \tit{yang}.
 
-\ex.
-\ag. Ali beri {ubi kentang} itu kapada perempuan itu.\\
+\exg. Ali beri {ubi kentang} itu kapada perempuan itu.\\
  Ali give potato the to woman the\\
- `Ali gave the potato to the woman.'
+ `Ali gave the potato to the woman.'\label{ex:malay-decl} \flushfill{Malay, \pgcitealt{keenan1977}{71}}\label{ex:malay-no-io2}
+
+This is illustrated by the examples in \ref{ex:malay-no-io}. In \ref{ex:malay-no-io1}, the direct object \tit{perempuan kapada} `to the woman' appears in the first position of the clause. It is followed by the relativizer \tit{yang} `that' and the rest of the relative clause \tit{Ali beri ubi kentang itu} `Ali gave the potato to'. This example in ungrammatical. The example in \ref{ex:malay-no-io2} differs from \ref{ex:malay-no-io} in that the preposition \tit{kapada} `to' has been stranded in the relative clause. This example is ungrammatical as well, indicating this was not the reason for the ungrammaticality.
+
+\ex.\label{ex:malay-no-io}
+\ag. *perempuan kapada yang Ali beri {ubi kentang} itu\\
+ woman to who Ali give potato that\\ \label{ex:malay-no-io1}
 \bg. *perempuan yang Ali beri {ubi kentang} itu kapada\\
- woman that Ali give potato the to\\
-\bg. *perempuan kapada yang Ali beri {ubi kentang} itu\\
- woman to who Ali give potato that\\ \flushfill{Malay, \pgcitealt{keenan1977}{71}}
+ woman that Ali give potato the to\\ \flushfill{Malay, \pgcitealt{keenan1977}{71}}\label{ex:malay-no-io2}
 
-A different construction is made.
+Basque is an example of a language that has a relativization strategy for subjects, direct objects and indirect objects. \ref{ex:basque-decl} is an example of a declarative ditransitive sentence in Basque. The sentence contains the subject \tit{gizonak} `the man', the direct object \tit{liburua} `the book' and the indirect object \tit{emakumeari} `the woman'.
 
-\exg. perempuan yang menerima {ubi kentang} itu daripada Ali\\
- woman that received potato the from Ali\\
- `the woman that received the potato from Ali'\flushfill{Malay, \pgcitealt{keenan1977}{71}}
+\exg. Gizon-a-k emakume-a-ri liburu-a eman dio.\\
+ man-\ac{def}-\ac{erg} woman-\ac{def}-\ac{dat} book-\ac{def}.\ac{abs} give has\\
+ `The man has given the book to the woman.' \flushfill{Basque, \pgcitealt{keenan1977}{72}}\label{ex:basque-decl}
 
-In Basque, subjects, objects and indirect objects can be relativized with the same strategy.
+A relative clause in Basque appears in the prenominal position and it is marked by the invariable marker \tit{-n}.\footnote{
+additionally, the relatized positions do not appear in verbal agreement anymore, but this not visible in the example, because they are all phonologicall zero(?).
+}
+\ref{ex:malagasy-sub} shows examples or relativeiations.
 
-\ex.
-\ag. Gizon-a-k emakume-a-ri liburu-a eman dio.\\
- man-\ac{def}-\ac{erg} woman-\ac{def}-\ac{dat} book-\ac{def}.\ac{acc} give has\\
- `The man has given the book to the woman.'
+
+%%%%%
+
+
+\ex.\label{ex:basque-rel}
 \bg. emakume-a-ri liburu-a eman dio-n gizon-a\\
- woman-\ac{def}-\ac{dat} book-\ac{def}.\ac{acc} give has-\ac{rel} man-\ac{def}\\
- `the man who has given the book to the woman'
+ woman-\ac{def}-\ac{dat} book-\ac{def}.\ac{abs} give has-\ac{rel} man-\ac{def}\\
+ `the man who has given the book to the woman'\label{ex:basque-sub}
 \bg. gizon-a-k emakume-a-ri eman dio-n liburu-a\\
  man-\ac{def}-\ac{erg} woman-\ac{def}-\ac{dat} give has-\ac{rel} book-\ac{def}\\
- `the book that the man has given to the woman'
+ `the book that the man has given to the woman'\label{ex:basque-do}
 \bg. gizon-a-k liburu-a eman dio-n emakume-a\\
- man-\ac{def}-\ac{erg} book-\ac{def}.\ac{acc} give has-\ac{rel} woman-\ac{def}\\
- `the woman that the man has given the book to' \flushfill{Basque, \pgcitealt{keenan1977}{72}}
+ man-\ac{def}-\ac{erg} book-\ac{def}.\ac{abs} give has-\ac{rel} woman-\ac{def}\\
+ `the woman that the man has given the book to' \flushfill{Basque, \pgcitealt{keenan1977}{72}}\label{ex:basque-io}
 
 
 
@@ -448,6 +489,8 @@ In Basque, subjects, objects and indirect objects can be relativized with the sa
  \end{table}
 
 
+
+Caha nom/acc/dat
 
 
 
