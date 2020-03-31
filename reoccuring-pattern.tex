@@ -56,6 +56,9 @@ The relative pronoun \tit{þan(a)} `who.\ac{acc}' appears in the accusative.
 A summary of data so far is given in Table \ref{tbl:summarygothicmatch}. The left column shows the internal case between square brackets. The upper row shows the external case between square brackets. The other cells indicate the case of the relative pronoun.
 So far only the diagonal line is filled. These are the matching examples, the examples in which the internal case matches the external case. The relative pronoun appears in the internal and external case, and it is marked in dark gray. The nominative is given in \ref{ex:gothicnomnom}, the accusative in \ref{ex:gothicaccaccrep}, and the dative in \ref{ex:gothicdatdat}.
 
+
+
+
 \begin{table}[H]
   \center
   \caption {Summary of Gothic matching headless relative data}
@@ -67,19 +70,19 @@ So far only the diagonal line is filled. These are the matching examples, the ex
             & [\ac{dat}]
             \\ \cmidrule{1-4}
         [\ac{nom}]
-            & \colorbox{LG}{\ac{nom}}
+            & \ac{nom}
             & \diagbox[linecolor=white]{\phantom{nom}}{\phantom{nom}}
             & \diagbox[linecolor=white]{\phantom{nom}}{\phantom{nom}}
             \\ \cmidrule{1-4}
         [\ac{acc}]
             & \diagbox[linecolor=white]{\phantom{nom}}{\phantom{nom}}
-            & \colorbox{LG}{\ac{acc}}
+            & \ac{acc}
             & \diagbox[linecolor=white]{\phantom{nom}}{\phantom{nom}}
             \\ \cmidrule{1-4}
         [\ac{dat}]
             & \diagbox[linecolor=white]{\phantom{nom}}{\phantom{nom}}
             & \diagbox[linecolor=white]{\phantom{nom}}{\phantom{nom}}
-            & \colorbox{LG}{\ac{dat}}
+            & \ac{dat}
             \\
       \bottomrule
     \end{tabular}
@@ -169,6 +172,36 @@ Throughout this dissertation * stands for 'not found in natural language'. For e
 The three instances in the lower left corner correspond to the examples \ref{ex:gothicaccnom}, \ref{ex:gothicdatnom} and \ref{ex:gothicdataccrep}. In the attested examples, the relative pronoun appears in the internal case.
 The three instances in the upper right corner correspond to the examples in \ref{ex:gothicnomacc}, \ref{ex:gothicnomdat} and \ref{ex:gothicaccdatrep}. In the attested examples, the relative pronoun appears in the external case.
 
+
+\begin{table}[H]
+  \center
+  \caption {Summary of Gothic matching headless relative data}
+    \begin{tabular}{c|c|c|c}
+      \toprule
+            & [\ac{nom}]
+            & [\ac{acc}]
+            & [\ac{dat}]
+            \\ \cmidrule{1-4}
+        [\ac{nom}]
+            & \ac{nom}
+            & \ac{acc}
+            & \ac{dat}
+            \\ \cmidrule{1-4}
+        [\ac{acc}]
+            & \ac{acc}
+            & \ac{acc}
+            & \ac{dat}
+            \\ \cmidrule{1-4}
+        [\ac{dat}]
+            & \ac{dat}
+            & \ac{dat}
+            & \ac{dat}
+            \\
+      \bottomrule
+    \end{tabular}
+    \label{tbl:summarygothic1}
+\end{table}
+
 This can be reformulated as follows. In a competition, dative wins over accusative and nominative. This can be seen in the lowest row and the most right column. Additionally, accusative wins over nominative. In sum, the situation can be summarized as in \ref{ex:competition1by1}.
 
 \ex.\label{ex:competition1by1}
@@ -189,13 +222,14 @@ In this section I discuss two additional phenomena in morphosyntax that reflect 
 
 \subsection{Agreement}
 
-% The hierarchy is to be read as follows: if a language allows the verb to agree with an argument marked by a case X, it also allows the verb to agree with all arguments to the left of X.
-%
-% Moravcsik (1974) presented a set of implicational universals regarding (NP-predicate) agreement. The universals are formulated in terms of grammatical functions (subject, object, etc.), and include implicational hierarchy schematized in (12). The hierarchy ranges over languages, not sentences, and conflates a set of statements such as the following (see Moravcsik 1978 for revisions):
-% • If in a language the verb agrees with anything, it agrees with some or all subjects
-% • If the verb agrees with anything other than subjects, it agrees with some or all direct objects
+Agreement can be seen as ``a systematic covariance between a semantic or formal property of one element and a formal property of another'' \citep{steel1978}. Put differently, the shape of one element changes according to some properties of an element it relates to. In this section I discuss the agreement between a predicate and its arguments.
 
-A language outside the circle does not show any agreement. A language in the white circle only shows agreement with the subject. A language within the light gray circle shows agreement with both subjects and direct objects. Notice it is not possible for a language to show agreement with the direct object and not show it with a subject. A language within the dark gray circle shown agreement with subjects, direct objects and indirect objects. Here it is impossible for a language to show agree
+It differs per language with how many of its arguments a predicate agrees. However, it is not random with which agreement takes place. Instead, there is a implicational hierarchy that is identical to the one observed for headless relatives in Gothic: \tsc{nom} --- \tsc{acc} --- \tsc{dat}.
+
+\citet{moravcsik1978} formulated the implicational hierarchy in terms of grammatical functions subject, direct object and indirect object.\footnote{
+\citet{moravcsik1978} also included adverbs on the lowest end of the hierarchy. I leave them out here, because they are not relevant for the discussion.
+}
+The hierarchy is schematically represented in Figure \ref{fig:agr-sub-do-io}. It should be read as follows: if a languages allows the verb to agree with the argument in a particular circle, it also allows the verb to agree with the argument in the circle around it.
 
 \begin{figure}[H]
   \centering
@@ -207,23 +241,17 @@ A language outside the circle does not show any agreement. A language in the whi
     \node[] at (0,2.75) {subject};
     \node[] at (0,1.5) {direct object};
     \node[align=center] at (0,0) {indirect\\ object};
-
-    \node[] at (2.5,3) {\footnotesize{● Chinese}};
-    \node[] at (2.25,2) {\footnotesize{● German}};
-    \node[] at (2,1) {\footnotesize{● Hungarian}};
-    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
   \caption{\posscitealt{moravcsik1978} schema}
-  \label{fig:subdoio}
+  \label{fig:agr-sub-do-io}
 \end{figure}
 
-
-\citealt{moravcsik1978} with subject, object and indirect object.
+Then, there are four types of languages possible: first, a language that does not show any agreement; second, a language that shows agreement only with the subject and not with the direct and indirect object; third, a language that shows agreement with the subject and direct object but not with the indirect object; and fourth, a language that shows agreement with the subject, the direct object and the indirect object.
 
 Mandarin Chinese is an example of a language that does not show any agreement on the predicate. An example is given in \ref{ex:chineseagr}. The predicate \tit{gěi} `give' does not agree with the subject \tit{nǐ} `you', with the direct object \tit{shū} `book' or with the indirect object \tit{wǒ} `me'.
 
-\exg. Nǐ bǎ shū gěi wǒ -le.\\
- you ba book give me -\ac{asp}\\
+\exg. Nǐ bǎ shū gěi wǒ-le.\\
+ you ba book give me-\ac{asp}\\
  `You gave me the book.' \flushfill{Mandarin Chinese, Zheng Shen p.c.}\label{ex:chineseagr}
 
 German is an example of a language that shows agreement with the subject of the clause. An example is given in \ref{ex:germanagr}. The predicate \tit{gibst} `give' contains the morpheme \tit{-st}. This morpheme is the agreement morpheme for second person singular subjects. The predicate \tit{gibst} `give' agrees in person and number with the subject \tit{du} `you'. There is no agreement with the direct object \tit{das Buch} `the book' or the indirect object \tit{mir} `me'.
@@ -240,76 +268,58 @@ Hungarian is an example of a language that shows agreement with the subject and 
 
 Basque is an example of language that shows agreement with the subject, the direct object and the indirect object. Basque is an ergative-absolutive language, so in transitive clauses subjects are marked as ergative and objects are marked as absolutive. An example from the Bizkaian dialect is given in \ref{ex:basqueagr}. The stem of the auxiliary \tit{aus} combines with the morphemes \tit{d-}, \tit{-ta} and \tit{-zu}. The morpheme \tit{d-} is the agreement morpheme for third person singular as direct objects, which is here \tit{liburua} `the book'. The morpheme \tit{-ta} is the agreement morpheme for first person singular indirect objects, which is here \tit{niri} `me'. The morpheme \tit{-zu} is the agreement morpheme for second person singular ergative subjects, which is here \tit{zuk} `you'.
 
-\exg. Zu -k ni -ri liburu -a emon d -aus -ta -zu.\\
- you -\ac{erg} me -\ac{dat} book -\ac{def}.\ac{abs} given \tbf{\ac{abs}.3\ac{sg}} -\ac{aux} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
+\exg. Zu-k ni-ri liburu-a emon d -aus -ta -zu.\\
+ you-\ac{erg} me-\ac{dat} book-\ac{def}.\ac{abs} given \tbf{\ac{abs}.3\ac{sg}} -\ac{aux} \tbf{-\ac{dat}.1\ac{sg}} \tbf{-\ac{erg}.2\ac{sg}}\\
  `You gave me the book.' \flushfill{Bizkaian Basque, \pgcitealt{arregi2004}{45}}\label{ex:basqueagr}
 
-\posscitealt{gilligan1987} typological study confirms the picture.
+Putting the languages in \posscitet{moravcsik1978} figure gives the following result.
+
+ \begin{figure}[H]
+   \centering
+   \begin{tikzpicture}
+     \draw (0,1) circle (2.25);
+     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
+
+     \node[] at (0,2.75) {subject};
+     \node[] at (0,1.5) {direct object};
+     \node[align=center] at (0,0) {indirect\\ object};
+
+     \node[] at (2.5,3) {\footnotesize{● Chinese}};
+     \node[] at (2.25,2) {\footnotesize{● German}};
+     \node[] at (2,1) {\footnotesize{● Hungarian}};
+     \node[] at (1.375,0) {\footnotesize{● Basque}};
+   \end{tikzpicture}
+   \caption{\posscitealt{moravcsik1978} schema with languages}
+   \label{fig:agr-sub-do-io-lang}
+ \end{figure}
+
+\citealt{gilligan1987} performed a typological study among 100 genetically and areally diverse languages, which confirms the picture. The results are shown in Table \ref{tbl:agr-typo}. There are 23 languages that do not show any agreement, like Chinese. There are 31 languages that show agreement only with the subject and not with the direct and indirect object, like German. There are 25 languages that show agreement with the subject and direct object but not with the indirect object, like Hungarian. There are 23 languages that show agreement with the subject, the direct object and the indirect object, like Basque.
 
  \begin{table}[H]
    \center
    \caption {Agreement accessibility}
      \begin{tabular}[t]{ccccc}
        \toprule
-             \multicolumn{3}{c}{agreement with}
-             &
-           & \\
+           \multicolumn{3}{c}{agreement with} &              &         \\
        \cmidrule{1-3}
-             & direct
-             & indirect
-             & number
-           & \\
-             subject
-             & object
-             & object
-             & of languages
-           & example \\
+                    & direct & indirect       & number       &         \\
+           subject  & object & object         & of languages & example \\
        \cmidrule{1-3} \cmidrule{4-4} \cmidrule{5-5}
-             *
-             & *
-             & *
-             & 23
-           & Mandarin Chinese \\
-             ✔
-             & *
-             & *
-             & 31
-           & German \\
-             ✔
-             & ✔
-             & *
-             & 25
-           & Hungarian \\
-             ✔
-             & ✔
-             & ✔
-             & 23
-           & Basque \\
-             ✔
-             & *
-             & ✔
-             & (1)
-           & - \\
-             {*}
-             & ✔
-             & ✔
-             & 0
-           & - \\
-             {*}
-             & x
-             & *
-             & 0
-           & - \\
-             {*}
-             & *
-             & ✔
-             & 0
-           & - \\
+           *    & * & * & 23  & Chinese    \\
+           ✔    & * & * & 31  & German     \\
+           ✔    & ✔ & * & 25  & Hungarian  \\
+           ✔    & ✔ & ✔ & 23  & Basque     \\
+           ✔    & * & ✔ & (1) & -          \\
+           {*}  & ✔ & ✔ & 0   & -          \\
+           {*}  & x & * & 0   & -          \\
+           {*}  & * & ✔ & 0   & -          \\
        \bottomrule
      \end{tabular}
+     \label{tbl:agr-typo}
  \end{table}
 
-\citealt{bobaljik2006} makes it default/dependent/dative
+\citealt{bobaljik2006} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. He argues for the picture shown in \ref{fig:agr-def-dep-dat}.
 
 \begin{figure}[H]
   \centering
@@ -321,17 +331,26 @@ Basque is an example of language that shows agreement with the subject, the dire
     \node[] at (0,2.75) {default case};
     \node[] at (0,1.5) {dependent case};
     \node[] at (0,0) {dative};
-
-    \node[] at (2.5,3) {\footnotesize{● Chinese}};
-    \node[] at (2.25,2) {\footnotesize{● German}};
-    \node[] at (2,1) {\footnotesize{● Hungarian}};
-    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
   \caption{\posscitealt{bobaljik2006} schema}
-  \label{fig:defdepdat}
+  \label{fig:agr-def-dep-dat}
 \end{figure}
 
-For this dissertation, this translates to this:
+He gives examples of situations in which grammatical function and morphological case do not match. In these situations, case seem to be capture the facts for the implicational hierarchy. I give examples from Icelandic that illustrate this point.
+
+Icelandic has dative subjects. However, dative subjects never agree with the verb. This is illustrated in xx. The dative subject `many students' is plural, and and the verb has plural agreement as well. The sentence is ungrammatical.
+
+\exg. *Morgum studentum líka verkið.\\
+ many students.\tsc{dat} like-PL job.\tsc{nom} \\
+`Many students like the job.' \flushfill{Harley 1995, 208}
+
+Instead, it is the nominative object that agrees with the verb. This is illustrated in xxx.
+
+\exg. Um veturinn voru konunginum gefnar ambáttir\\
+In the.winter were.PL the.king.\tsc{dat} given slaves.\tsc{nom}\\
+`In the winter, the king was given (female) slaves.' \flushfill{Zaenen et al, 112}
+
+In the languages I discuss in this dissertation, I focus on languages that have nominative as default case and accusative as dependent case. That is, \posscitealt{bobaljik2006} schema translates into Figure \ref{fig:agr-nom-acc-dat}.
 
 \begin{figure}[H]
   \centering
@@ -343,16 +362,12 @@ For this dissertation, this translates to this:
     \node[] at (0,2.75) {\tsc{nom}};
     \node[] at (0,1.75) {\tsc{acc}};
     \node[] at (0,0) {\tsc{dat}};
-
-    \node[] at (2.5,3) {\footnotesize{● Chinese}};
-    \node[] at (2.25,2) {\footnotesize{● German}};
-    \node[] at (2,1) {\footnotesize{● Hungarian}};
-    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
-  \label{fig:nomaccdat}
+  \label{fig:agr-nom-acc-dat}
   \caption{Schema for this dissertation}
 \end{figure}
 
+In conclusion, agreement follows the same implicational hierarchy as the strength hierarchy in headless relatives: \tsc{nom} --- \tsc{acc} --- \tsc{dat}.
 
 
 \subsection{Relativization}
@@ -396,16 +411,6 @@ The object of \ref{ex:malagasy-decl} cannot be relativized in the same way, as s
 \exg. *ny vehivavy izay nahita ny mpianatra\\
  the woman that saw the student\\
  `the woman that the student saw' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}\label{ex:malagasy-no-do}
-
-% Objects can be passivized and then relativized (again relativization of a subject).
-%
-% \ex.
-% \ag. Nohitan' ny mpianatra ny vehivavy.\\
-%  seen.\ac{pass} the student the woman\\
-%  `The woman was seen by the student.'\label{ex:}
-% \bg. ny vehivavy izay nohitan' ny mpianatra\\
-%  the woman that seen.\ac{pass} the student\\
-%  `the woman that was seen by the student' \flushfill{Malagasy, \pgcitealt{keenan1977}{70}}
 
 Malay is an example of a language that has a relativization strategy for subjects and direct objects, but not for indirect objects. \ref{ex:malay-do} shows an example in which the object is relativized. The object here is \tit{ayam} `chicken'. It is followed by the relativizer \tit{yang} `that'. After that, the rest of the relative clause \tit{Aminah sedang memakan} `Aminah is eating' follows. The same strategy works to relativize subjects.
 
