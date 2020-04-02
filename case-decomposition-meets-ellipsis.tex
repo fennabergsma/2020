@@ -21,6 +21,10 @@ if the morphology is different, than so will the syntax
 
 \subsection{Case decomposition}
 
+morphological containment
+
+how can we account for that? well, all these morphemes have their own heads
+
 \ex.
 \begin{forest} boom
   [\ac{dat}P
@@ -29,14 +33,87 @@ if the morphology is different, than so will the syntax
           [\ac{acc}]
           [\ac{nom}P
               [\ac{nom}]
-              [X]
+              [NP
+                  [..., roof]
+              ]
           ]
       ]
   ]
 \end{forest}
 
 
-morphological containment
+\exg. phral -és -kə\\
+ brother.\ac{nom} -\ac{acc} -\ac{dat}\\ \flushfill{Kalderaš Romani, \pgcitealt{boretzky1994}{31-46}}
+
+
+\ex.
+\begin{forest} boom
+[\tsc{datP}
+    [\ac{acc}P,name=accp2, s sep=20mm
+        [\tsc{nomP},name=nomp,
+        tikz={
+        \node[label=below right:\tit{phral},
+        draw,circle,
+        xscale=0.8,yscale=1,
+        fit=(nomp)(nom)(brother)(np)]{};
+        }
+            [\ac{nom},name=nom]
+            [NP,name=np
+                [\tsc{brother},name=brother, roof],baseline
+            ]
+        ]
+        [\ac{acc}P,name=accp,
+        tikz={
+        \node[label={below right:\tit{-és}},
+        draw,circle,
+        xscale=0.7,yscale=0.9,
+        fit=(acc)(accp)]{};
+        }
+         [\ac{acc},name=acc]
+        ]
+    ]
+    [\tsc{datP},name=datp,
+    tikz={
+    \node[label={below right:\tit{-kə}},
+    draw,circle,
+    xscale=0.7,yscale=0.9,
+    fit=(dat)(datp)]{};
+    }
+        [\ac{dat},name=dat]
+    ]
+]
+\end{forest}
+
+how to deal with it that \tit{phral} spells out brother and nominative, so spells out phrases already..
+
+\ex.
+\a.
+\begin{forest} boom
+  [\ac{nom}P
+      [\ac{nom}]
+      [NP
+          [\tsc{brother}, roof]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{phral}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [\ac{acc}P
+      [\ac{acc}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{-és}}; }
+\end{forest}
+\b. \begin{forest} boom
+  [\ac{dat}P
+      [\ac{dat}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{-kə}}; }
+\end{forest}
+
+
+
+this is how this works in nanosyntax
+
 
 
 
@@ -44,9 +121,15 @@ morphological containment
 
 \subsection{Phrasal spellout}
 
-Single morphemes spell out phrases
+but what about the syncretism patterns?
 
-suppletion and syncretism
+we want to start out with the same syntax
+
+with phrasal spellout, we spell out multiple heads at once
+
+this is how that works in nanosyntax
+
+
 
 
 
@@ -57,6 +140,8 @@ suppletion and syncretism
 \section{Ellipsis}
 
 Ellipsis targets phrases
+
+it does not delete elements one by one
 
 
 
@@ -70,24 +155,25 @@ Ellipsis targets phrases
   [\tsc{datP},name=datp,
   tikz={
   \node[draw,circle,LG,
-  xscale=0.9,yscale=0.9,
+  xscale=0.8,yscale=1,
   fill opacity=0.2,
   fill=LG,
   fit=(datp)(dat)(nom)(x)]{};
   }
-      [\tsc{dat},name=dat]
-        [\tsc{acc}P,name=accp,
+      [\ac{dat},name=dat]
+        [\ac{acc}P,name=accp,
         tikz={
         \node[draw,circle,
-        xscale=0.87,yscale=0.87,
+        xscale=0.75,yscale=0.95,
         fill opacity=0.2,
         fill=DG,DG,
-        fit=(accp)(acc)(nom)(x)]{};
+        fit=(accp)(acc)(nom)(np)(x)]{};
         }
-          [\tsc{acc},name=acc]
+          [\ac{acc},name=acc]
           [\tsc{nomP},name=nomp
-              [\tsc{nom},name=nom]
-              [XP,name=x
+              [\ac{nom},name=nom]
+              [NP,name=np
+                  [...,name=x, roof]
               ]
           ]
       ]
@@ -100,24 +186,25 @@ Ellipsis targets phrases
   [\tsc{datP},name=datp,
   tikz={
   \node[draw,circle,LG,
-  xscale=0.93,yscale=0.93,
+  xscale=0.8,yscale=1,
   fill opacity=0.2,
   fill=LG,
   fit=(datp)(dat)(nom)(x)]{};
   }
-      [\tsc{dat},name=dat]
-      [\tsc{acc}P,name=accp
-          [\tsc{acc},name=acc]
+      [\ac{dat},name=dat]
+      [\ac{acc}P,name=accp
+          [\ac{acc},name=acc]
           [\tsc{nomP},name=nomp,
           tikz={
           \node[draw,circle,DG,
-          xscale=0.85,yscale=0.85,
+          xscale=0.7,yscale=0.9,
           fill opacity=0.2,
           fill=DG,
-          fit=(nomp)(nom)(x)]{};
+          fit=(nomp)(nom)(np)(x)]{};
           }
-              [\tsc{nom},name=nom]
-              [XP,name=x
+              [\ac{nom},name=nom]
+              [NP,name=np
+                  [...,name=x, roof]
               ]
           ]
       ]
@@ -128,25 +215,26 @@ Ellipsis targets phrases
 
 \ex.
 \begin{forest} boom
-      [\tsc{acc}P,name=accp,
+      [\ac{acc}P,name=accp,
       tikz={
       \node[draw,circle,
-      xscale=0.9,yscale=0.9,
+      xscale=0.8,yscale=1,
       fill opacity=0.2,
       fill=LG,LG,
       fit=(accp)(acc)(nom)(x)]{};
       }
-          [\tsc{acc},name=acc]
+          [\ac{acc},name=acc]
           [\tsc{nomP},name=nomp,
           tikz={
           \node[draw,circle,DG,
-          xscale=0.85,yscale=0.85,
+          xscale=0.75,yscale=0.95,
           fill opacity=0.2,
           fill=DG,
           fit=(nomp)(nom)(x)]{};
           }
-              [\tsc{nom},name=nom]
-              [XP,name=x
+              [\ac{nom},name=nom]
+              [NP,name=np
+                  [...,name=x, roof]
               ]
           ]
       ]
@@ -159,21 +247,22 @@ Ellipsis targets phrases
 
 \begin{table}[H]
   \center
-	\caption {\tsc{dat}P deletes \tsc{acc}P}
+	\caption {\ac{dat}P deletes \ac{acc}P}
 		\begin{tabular}[b]{c c}
       \begin{forest} boom
         [\tsc{datP}
-            [\tsc{dat}]
-              [\tsc{acc}P,name=accp,
+            [\ac{dat}]
+              [\ac{acc}P,name=accp,
               tikz={
               \node[draw,circle,
-              xscale=0.87,yscale=0.87,
+              xscale=0.775,yscale=0.975,
               fit=(accp)(acc)(nom)(x)]{};
               }
-                [\tsc{acc},name=acc]
+                [\ac{acc},name=acc]
                 [\tsc{nomP},name=nomp
-                    [\tsc{nom},name=nom]
-                    [XP,name=x,baseline
+                    [\ac{nom},name=nom]
+                    [NP,name=np
+                        [...,name=x, roof ,baseline]
                     ]
                 ]
             ]
@@ -181,16 +270,20 @@ Ellipsis targets phrases
       \end{forest}
       &
       \begin{forest} boom
-        [\textcolor{LG}{\tsc{accP}},name=accp,baseline,
+        [\textcolor{LG}{\tsc{accP}},name=accp,
         tikz={
         \node[draw,circle,
-        xscale=0.87,yscale=0.87,
+        xscale=0.775,yscale=0.975,
         fit=(accp)(acc)(nom)(x)]{};
         }
-            [\textcolor{LG}{\tsc{acc}},name=acc,edge=LG]
+            [\textcolor{LG}{\ac{acc}},name=acc,edge=LG]
             [\textcolor{LG}{\tsc{nomP}},name=nomp,edge=LG
-                [\textcolor{LG}{\tsc{nom}},name=nom,edge=LG]
-                [\textcolor{LG}{XP},name=x,baseline,edge=LG]
+                [\textcolor{LG}{\ac{nom}},name=nom,edge=LG]
+                [\textcolor{LG}{NP},name=np,edge=LG
+                    [\textcolor{LG}{...},name=x,
+                    roof, baseline, edge=LG
+                    ]
+                ]
             ]
         ]
       \end{forest} \\
@@ -199,21 +292,22 @@ Ellipsis targets phrases
 
 \begin{table}[H]
   \center
-	\caption {\tsc{dat}P deletes \tsc{nom}P}
+	\caption {\ac{dat}P deletes \ac{nom}P}
 		\begin{tabular}[b]{cc}
       \begin{forest} boom
         [\tsc{datP}
-            [\tsc{dat}]
-              [\tsc{acc}P,name=accp
-                [\tsc{acc},name=acc]
+            [\ac{dat}]
+              [\ac{acc}P,name=accp
+                [\ac{acc},name=acc]
                 [\tsc{nomP},name=nomp,
                 tikz={
                 \node[draw,circle,
-                xscale=0.87,yscale=0.87,
+                xscale=0.75,yscale=0.95,
                 fit=(nomp)(nom)(x)]{};
                 }
-                    [\tsc{nom},name=nom]
-                    [XP,name=x,baseline
+                    [\ac{nom},name=nom]
+                    [NP,name=np
+                        [...,name=x, roof, baseline]
                     ]
                 ]
             ]
@@ -224,11 +318,15 @@ Ellipsis targets phrases
         [\textcolor{LG}{\tsc{nomP}},name=nomp,
         tikz={
         \node[draw,circle,
-        xscale=0.87,yscale=0.87,
+        xscale=0.75,yscale=0.95,
         fit=(nomp)(nom)(x)]{};
         }
-            [\textcolor{LG}{\tsc{nom}},name=nom,edge=LG]
-            [\textcolor{LG}{XP},name=x,baseline,edge=LG]
+            [\textcolor{LG}{\ac{nom}},name=nom,edge=LG]
+            [\textcolor{LG}{NP},name=np,baseline,edge=LG
+                [\textcolor{LG}{...},name=x,
+                roof,baseline,edge=LG
+                ]
+            ]
         ]
       \end{forest} \\
   \end{tabular}
@@ -236,19 +334,23 @@ Ellipsis targets phrases
 
 \begin{table}[H]
   \center
-	\caption {\tsc{acc}P deletes \tsc{nom}P}
+	\caption {\ac{acc}P deletes \ac{nom}P}
 		\begin{tabular}[b]{cc}
       \begin{forest} boom
-          [\tsc{acc}P,name=accp
-              [\tsc{acc},name=acc]
+          [\ac{acc}P,name=accp
+              [\ac{acc},name=acc]
               [\tsc{nomP},name=nomp,
               tikz={
               \node[draw,circle,
-              xscale=0.87,yscale=0.87,
+              xscale=0.75,yscale=0.95,
               fit=(nomp)(nom)(x)]{};
               }
-                  [\tsc{nom},name=nom]
-                  [XP,name=x,baseline]
+                  [\ac{nom},name=nom]
+                  [NP,name=np
+                      [...,name=x,
+                      roof,baseline
+                      ]
+                  ]
               ]
           ]
       \end{forest}
@@ -257,13 +359,17 @@ Ellipsis targets phrases
         [\textcolor{LG}{\tsc{nomP}},name=nomp,
         tikz={
         \node[draw,circle,
-        xscale=0.87,yscale=0.87,
+        xscale=0.75,yscale=0.95,
         fit=(nomp)(nom)(x)]{};
         }
-            [\textcolor{LG}{\tsc{nom}},name=nom,
+            [\textcolor{LG}{\ac{nom}},name=nom,
             edge=LG]
-            [\textcolor{LG}{XP},name=x,baseline,
-            edge=LG]
+            [\textcolor{LG}{NP},name=np,
+            edge=LG
+                [\textcolor{LG}{...},name=x,
+                roof,baseline,edge=LG
+                ]
+            ]
         ]
       \end{forest}\\
   \end{tabular}

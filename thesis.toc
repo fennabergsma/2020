@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Case competition in Gothic headless relatives}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Two impliciational hierarchies}{18}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Two implicational hierarchies}{18}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Agreement}{18}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -40,17 +40,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Case decomposition}{32}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Phrasal spellout}{32}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Phrasal spellout}{33}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Ellipsis}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Ellipsis}{33}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Reflex of morphology in syntax}{33}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Reflex of morphology in syntax}{34}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Morphology}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Morphology}{34}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Syntax}{34}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Syntax}{35}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Similar analyses}{35}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Similar analyses}{36}{section.3.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {II}The competitors in the competition}{37}{part.2}%
 \defcounter {refsection}{0}\relax 
