@@ -28,9 +28,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Syncretism}{28}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Morphological containment}{28}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Morphological containment}{29}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Excluding the genitive}{29}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Excluding the genitive}{30}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{31}{chapter.3}%
 \defcounter {refsection}{0}\relax 
