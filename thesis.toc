@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}The winner of the competition}{9}{part.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {2}A reoccurring pattern}{11}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}A recurring pattern}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Case competition in headless relatives}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -119,6 +119,8 @@
 \contentsline {section}{\numberline {6.2}Derivations}{58}{section.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{59}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Coming back to the genitive}{59}{section.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{61}{table.7.1}%
 \defcounter {refsection}{0}\relax 
