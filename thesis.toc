@@ -30,13 +30,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Formal containment}{29}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-<<<<<<< Updated upstream
-\contentsline {section}{\numberline {2.4}Summary}{31}{section.2.4}%
-=======
-\contentsline {section}{\numberline {2.4}Excluding the genitive}{30}{section.2.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Summary}{31}{section.2.5}%
->>>>>>> Stashed changes
+\contentsline {section}{\numberline {2.4}Summary}{30}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{33}{chapter.3}%
 \defcounter {refsection}{0}\relax 
