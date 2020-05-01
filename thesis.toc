@@ -16,15 +16,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}A recurring pattern}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Case competition in headless relatives}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.1}In headless relatives}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Two implicational hierarchies}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.2}In syntax}{16}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Agreement}{17}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Relativization}{22}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Case in morphology}{28}{section.2.3}%
+\contentsline {section}{\numberline {2.3}In morphology}{28}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Syncretism}{28}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
