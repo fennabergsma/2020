@@ -7,7 +7,7 @@ At the beginning of the previous chapter I discussed the case scale active in he
 ``One of the reviewers notes that an explanation in terms of a Case hierarchy is rather stipulative. However, as far as I know, nobody has suggested a nonstipulative explanation for these facts.'' \pgcitep{pittner1995}{201} (footnote 4)
 
 What I showed as well in the previous chapter is the pattern \tsc{nom < acc < dat} is reccurring. It can be observed in at least two more syntactic phenomena: agreement en relativization.\footnote{
-In this dissertation I do not work out an account, but I only used this as an illustration that the pattern in reflected in syntax.}
+In this dissertation I do not work out an account for these two syntactic phenomena. They merely serve as an illustration that the pattern is reflected in different syntactic phenomena.}
 We also see it in morphology with syncretism patterns and formal containment. Morphology was also mentioned by Pittner.
 
 ``Furthermore, the Case hierarchies receive some independent support by morphology as shown by the various inflectional paradigms.'' \pgcitep{pittner1995}{201} (footnote 4)
@@ -19,13 +19,78 @@ That's exactly what I'm going to propose. (this intuition has been worked out in
 First I show where the case hierarchy is, which is in morphology, with actual structural containment: \tsc{[[[nom]acc]dat]}. What we see in syntax is a by-product of the morphology, it's a consequence, it's an indirect relation. cause and effect
 
 
-\section{Morphology}
+\section{Case decomposition}
 
-\subsection{Case decomposition}
+The claim: case should be decomposed
 
-morphological containment
+(\citealt{caha2009,caha2013} and later \citealt[cf.][]{starke2009,bobaljik2012,mcfadden2018,smith2019,vanbaal2018})
 
-how can we account for that? well, all these morphemes have their own heads
+\begin{table}[h]
+  \center
+	\caption {Decomposed cases}
+		\begin{tabular}{ll}
+    \toprule
+    case      & features                      \\
+    \midrule
+    \tsc{nom} & \tsc{f}1                      \\
+    \tsc{acc} & \tsc{f}1, \tsc{f}2            \\
+    \tsc{dat} & \tsc{f}1, \tsc{f}2, \tsc{f}3  \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+With that in place, case containment and syncretism does not longer come as a surprise.
+
+The intuition
+
+containment:
+
+\exg. phral -és -kə\\
+ brother.\ac{nom} -\ac{acc} -\ac{dat}\\ \flushfill{Kalderaš Romani, \pgcitealt{boretzky1994}{31-46}}
+
+syncretism:
+
+contigent zones, no ABA. spellout is not only exact match, but also a subset of the features can be a match
+
+
+I show how this can be derived exactly, within Nanosyntax, the framework which this proposal works in.
+
+
+\subsection{Case containment}
+
+in general
+
+insert figure with syntax, lexicon, pf and cf
+
+
+only syntax can make complex syntactic structures
+
+The specific implications of this claim are strengthened by the way Nanosyntax
+treats complex feature structures. In particular, the core assumption is that
+the only way how a complex feature structure can arise is for it to be assembled
+by Merge. Complex feature structures are never the input to syntax, they are
+always its product. Syntactic trees are therefore not assembled from some preexisting
+‘feature bundles’ or any similar complex building blocks (lexical items).
+The idea is that syntax starts from single, atomic, indivisible grammatical features,
+ideally the same for all languages (cf. Cinque \& Rizzi 2008).
+
+
+what's in the lexion?
+
+Following Starke (2014), I understand lexical entries as nothing else but links
+between well-formed syntactic representations, well formed phonological representations,
+and/or conceptual representations. One of the motivations for adopting
+this view is to have a ‘principled’ theory of the lexicon. What ‘principled’
+means is not that lexical items are no longer arbitrary associations between syntax,
+phonology and/or conceptual meaning; they still are. Rather, ‘principled’
+is used in the sense that the format of the lexical item is restricted. Since wellformed
+syntactic structures are constrained by principles, and lexical items link
+such representations to their pronunciation (a phonological representation), it
+follows that the representations in a lexical entry are constrained by universal
+principles (the same ones that regulate what syntactic trees look like).
+
+
+case tree
 
 \ex.
 \begin{forest} boom
@@ -43,10 +108,56 @@ how can we account for that? well, all these morphemes have their own heads
   ]
 \end{forest}
 
+now let's look at the case decomposition example again
 
-\exg. phral -és -kə\\
- brother.\ac{nom} -\ac{acc} -\ac{dat}\\ \flushfill{Kalderaš Romani, \pgcitealt{boretzky1994}{31-46}}
+give whole table
 
+first the nominative
+
+\ex. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{phral},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(brother)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{brother},name=brother, roof],baseline
+    ]
+]
+\end{forest}
+
+then the accusative
+
+\ex. \begin{forest} boom
+[\ac{acc}P,name=accp2, s sep=20mm
+    [\tsc{nomP},name=nomp,
+    tikz={
+    \node[label=below right:\tit{phral},
+    draw,circle,
+    xscale=0.8,yscale=1,
+    fit=(nomp)(nom)(brother)(np)]{};
+    }
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{brother},name=brother, roof],baseline
+        ]
+    ]
+    [\ac{acc}P,name=accp,
+    tikz={
+    \node[label={below right:\tit{-és}},
+    draw,circle,
+    xscale=0.7,yscale=0.9,
+    fit=(acc)(accp)]{};
+    }
+     [\ac{acc},name=acc]
+    ]
+]
+\end{forest}
+
+then dative
 
 \ex.
 \begin{forest} boom
@@ -87,34 +198,6 @@ how can we account for that? well, all these morphemes have their own heads
 \end{forest}
 
 how to deal with it that \tit{phral} spells out brother and nominative, so spells out phrases already..
-
-\ex.
-\a.
-\begin{forest} boom
-  [\ac{nom}P
-      [\ac{nom}]
-      [NP
-          [\tsc{brother}, roof]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{phral}}; }
-\end{forest}
-\b. \begin{forest} boom
-  [\ac{acc}P
-      [\ac{acc}]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{-és}}; }
-\end{forest}
-\b. \begin{forest} boom
-  [\ac{dat}P
-      [\ac{dat}]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{-kə}}; }
-\end{forest}
-
-
-
-this is how this works in nanosyntax
 
 
 

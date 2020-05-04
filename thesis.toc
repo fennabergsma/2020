@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}In headless relatives}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}In syntax}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.2}In syntax}{17}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Agreement}{17}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -28,27 +28,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Syncretism}{28}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Formal containment}{29}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Formal containment}{30}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{30}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Summary}{31}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition meets ellipsis}{33}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Morphology}{34}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Case decomposition}{34}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Case decomposition}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}Case containment}{35}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Phrasal spellout}{35}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Phrasal spellout}{37}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Ellipsis}{36}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Ellipsis}{37}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Reflex of morphology in syntax}{36}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Reflex of morphology in syntax}{37}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Morphology}{36}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Morphology}{37}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Syntax}{38}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Syntax}{39}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Similar analyses}{39}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Similar analyses}{40}{section.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {II}The competitors in the competition}{41}{part.2}%
 \defcounter {refsection}{0}\relax 
