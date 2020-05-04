@@ -58,7 +58,7 @@ I show how this can be derived exactly, within Nanosyntax, the framework which t
 
 \subsection{Case containment}
 
-in general
+in general the organization of nano
 
 insert figure with syntax, lexicon, pf and cf
 
@@ -110,9 +110,28 @@ case tree
 
 now let's look at the case decomposition example again
 
-give whole table
+\begin{table}[ht]
+  \center
+  \caption {Containment pattern}
+    \input{tables/containment-nom-acc-dat.tex}
+  \label{tbl:containment-derive}
+\end{table}
 
 first the nominative
+\footnote{
+I address the issue of phrasal spellout in the next section.
+}
+
+\ex.
+\begin{forest} boom
+  [\ac{nom}P
+      [\ac{nom}]
+      [NP
+          [\tsc{brother}, roof]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{phral}}; }
+\end{forest}
 
 \ex. \begin{forest} boom
 [\tsc{nomP},name=nomp,
@@ -130,6 +149,16 @@ fit=(nomp)(nom)(brother)(np)]{};
 \end{forest}
 
 then the accusative
+\footnote{
+I will come back to the movement later.
+}
+
+\ex. \begin{forest} boom
+  [\ac{acc}P
+      [\ac{acc}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{-és}}; }
+\end{forest}
 
 \ex. \begin{forest} boom
 [\ac{acc}P,name=accp2, s sep=20mm
@@ -158,6 +187,15 @@ then the accusative
 \end{forest}
 
 then dative
+
+
+\ex. \begin{forest} boom
+  [\ac{dat}P
+      [\ac{dat}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{-kə}}; }
+\end{forest}
+
 
 \ex.
 \begin{forest} boom
@@ -197,14 +235,27 @@ then dative
 ]
 \end{forest}
 
-how to deal with it that \tit{phral} spells out brother and nominative, so spells out phrases already..
-
-
-
-
 
 
 \subsection{Phrasal spellout}
+
+basic background on matching in nano
+
+\ex. \tbf{The Superset Principle} \citet{starke2009}:\\
+A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
+
+What the Superset Principle states is that matching between a lexical tree and a syntactic tree does not require full identity, but ‘only’ containment.
+
+\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2019}):\\
+When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
+
+\begin{table}[ht]
+  \center
+  \caption {Syncretism pattern}
+    \input{tables/syncretism-nom-acc-dat.tex}
+  \label{tbl:syncretisms-derive}
+\end{table}
+
 
 but what about the syncretism patterns?
 
