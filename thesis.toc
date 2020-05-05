@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}The content of this dissertation}{6}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {I}The winner of the competition}{9}{part.1}%
+\contentsline {part}{\partnumberline {I}The constant winner}{9}{part.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}A recurring pattern}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -50,7 +50,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Similar analyses}{42}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The competitors in the competition}{43}{part.2}%
+\contentsline {part}{\partnumberline {II}The varying participants}{43}{part.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {4}The variation}{45}{chapter.4}%
 \defcounter {refsection}{0}\relax 
