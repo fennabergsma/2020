@@ -21,6 +21,23 @@ First I show where the case hierarchy is, which is in morphology, with actual st
 
 \section{Case decomposition}
 
+The intuition: case is complex
+
+containment:
+
+\exg. luw -e:l -na\\
+ 3\tsc{sg}.\ac{nom} -\ac{acc} -\ac{dat}\\ \flushfill{Kalderaš Romani, \pgcitealt{boretzky1994}{31-46}}
+
+syncretism:
+
+contigent zones, no ABA. spellout is not only exact match, but also a subset of the features can be a match
+
+I show how this can be derived exactly, within Nanosyntax, the framework which this proposal works in.
+
+
+
+\subsection{The basic idea}
+
 The claim: case should be decomposed
 
 (\citealt{caha2009,caha2013} and later \citealt[cf.][]{starke2009,bobaljik2012,mcfadden2018,smith2019,vanbaal2018})
@@ -41,22 +58,15 @@ The claim: case should be decomposed
 
 With that in place, case containment and syncretism does not longer come as a surprise.
 
-The intuition
 
-containment:
+\subsection{Deriving case containment}
 
-\exg. phral -és -kə\\
- brother.\ac{nom} -\ac{acc} -\ac{dat}\\ \flushfill{Kalderaš Romani, \pgcitealt{boretzky1994}{31-46}}
-
-syncretism:
-
-contigent zones, no ABA. spellout is not only exact match, but also a subset of the features can be a match
+\exg. luw -e:l -na\\
+ 3\tsc{sg}.\ac{nom} -\ac{acc} -\ac{dat}\\ \flushfill{Kalderaš Romani, \pgcitealt{boretzky1994}{31-46}}
 
 
-I show how this can be derived exactly, within Nanosyntax, the framework which this proposal works in.
 
 
-\subsection{Case containment}
 
 in general the organization of nano
 
@@ -90,16 +100,41 @@ follows that the representations in a lexical entry are constrained by universal
 principles (the same ones that regulate what syntactic trees look like).
 
 
-case tree
+
+
+
+case trees
 
 \ex.
+\a.
+\begin{forest} boom
+  [\ac{nom}P
+      [\ac{f}1]
+      [NP
+          [..., roof]
+      ]
+  ]
+\end{forest}
+\b.
+\begin{forest} boom
+  [\ac{acc}P
+      [\ac{f}2]
+      [\ac{nom}P
+          [\ac{f}1]
+          [NP
+              [..., roof]
+          ]
+      ]
+  ]
+\end{forest}
+\b.
 \begin{forest} boom
   [\ac{dat}P
-      [\ac{dat}]
+      [\ac{f}3]
       [\ac{acc}P
-          [\ac{acc}]
+          [\ac{f}2]
           [\ac{nom}P
-              [\ac{nom}]
+              [\ac{f}1]
               [NP
                   [..., roof]
               ]
@@ -127,23 +162,23 @@ I address the issue of phrasal spellout in the next section.
   [\ac{nom}P
       [\ac{nom}]
       [NP
-          [\tsc{brother}, roof]
+          [\tsc{3sg}, roof]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{phral}}; }
+  {\draw (.east) node[right]{⇔ \tit{luw}}; }
 \end{forest}
 
 \ex. \begin{forest} boom
 [\tsc{nomP},name=nomp,
 tikz={
-\node[label=below right:\tit{phral},
+\node[label=below right:\tit{luw},
 draw,circle,
 xscale=0.8,yscale=1,
-fit=(nomp)(nom)(brother)(np)]{};
+fit=(nomp)(nom)(3sg)(np)]{};
 }
     [\ac{nom},name=nom]
     [NP,name=np
-        [\tsc{brother},name=brother, roof],baseline
+        [\tsc{3sg},name=3sg, roof],baseline
     ]
 ]
 \end{forest}
@@ -157,26 +192,26 @@ I will come back to the movement later.
   [\ac{acc}P
       [\ac{acc}]
   ]
-  {\draw (.east) node[right]{⇔ \tit{-és}}; }
+  {\draw (.east) node[right]{⇔ \tit{-e:l}}; }
 \end{forest}
 
 \ex. \begin{forest} boom
 [\ac{acc}P,name=accp2, s sep=20mm
     [\tsc{nomP},name=nomp,
     tikz={
-    \node[label=below right:\tit{phral},
+    \node[label=below right:\tit{luw},
     draw,circle,
     xscale=0.8,yscale=1,
-    fit=(nomp)(nom)(brother)(np)]{};
+    fit=(nomp)(nom)(3sg)(np)]{};
     }
         [\ac{nom},name=nom]
         [NP,name=np
-            [\tsc{brother},name=brother, roof],baseline
+            [\tsc{3sg},name=3sg, roof],baseline
         ]
     ]
     [\ac{acc}P,name=accp,
     tikz={
-    \node[label={below right:\tit{-és}},
+    \node[label={below right:\tit{-e:l}},
     draw,circle,
     xscale=0.7,yscale=0.9,
     fit=(acc)(accp)]{};
@@ -193,7 +228,7 @@ then dative
   [\ac{dat}P
       [\ac{dat}]
   ]
-  {\draw (.east) node[right]{⇔ \tit{-kə}}; }
+  {\draw (.east) node[right]{⇔ \tit{-na}}; }
 \end{forest}
 
 
@@ -203,19 +238,19 @@ then dative
     [\ac{acc}P,name=accp2, s sep=20mm
         [\tsc{nomP},name=nomp,
         tikz={
-        \node[label=below right:\tit{phral},
+        \node[label=below right:\tit{luw},
         draw,circle,
         xscale=0.8,yscale=1,
-        fit=(nomp)(nom)(brother)(np)]{};
+        fit=(nomp)(nom)(3sg)(np)]{};
         }
             [\ac{nom},name=nom]
             [NP,name=np
-                [\tsc{brother},name=brother, roof],baseline
+                [\tsc{3sg},name=3sg, roof],baseline
             ]
         ]
         [\ac{acc}P,name=accp,
         tikz={
-        \node[label={below right:\tit{-és}},
+        \node[label={below right:\tit{-e:l}},
         draw,circle,
         xscale=0.7,yscale=0.9,
         fit=(acc)(accp)]{};
@@ -225,7 +260,7 @@ then dative
     ]
     [\tsc{datP},name=datp,
     tikz={
-    \node[label={below right:\tit{-kə}},
+    \node[label={below right:\tit{-na}},
     draw,circle,
     xscale=0.7,yscale=0.9,
     fit=(dat)(datp)]{};
@@ -237,7 +272,7 @@ then dative
 
 
 
-\subsection{Phrasal spellout}
+\subsection{Deriving syncretism}
 
 basic background on matching in nano
 
@@ -280,6 +315,21 @@ Ellipsis targets phrases
 
 it does not delete elements one by one
 
+(1) Sluicing
+Someone stayed out until 7am,
+but I have no idea who stayed out until 7 am.
+
+(2) VP ellipsis
+Elin stayed out until 7am, and Fraser did stay out until 7 am too.
+
+(3) Fragment answers
+Q: Who stayed out until 7am?
+A: Elin stayed out until 7am
+
+
+(Õ) VP Ellipsis:
+a. Betsy was hassled by the police and Peter was [VP hassled by the police ] too.
+b. John put his beer on the floor, so Mary did [VP put her beer on the floor ]
 
 
 \section{Reflex of morphology in syntax}
