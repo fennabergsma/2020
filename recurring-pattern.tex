@@ -103,29 +103,7 @@ The three instances in the upper right corner correspond to the examples in \ref
 \begin{table}[ht]
   \center
   \caption {Summary of Gothic matching headless relative data}
-    \begin{tabular}{c|c|c|c}
-      \toprule
-            & [\ac{nom}]
-            & [\ac{acc}]
-            & [\ac{dat}]
-            \\ \cmidrule{1-4}
-        [\ac{nom}]
-            &
-            & \ac{acc}
-            & \ac{dat}
-            \\ \cmidrule{1-4}
-        [\ac{acc}]
-            & \ac{acc}
-            &
-            & \ac{dat}
-            \\ \cmidrule{1-4}
-        [\ac{dat}]
-            & \ac{dat}
-            & \ac{dat}
-            &
-            \\
-      \bottomrule
-    \end{tabular}
+    \input{tables/gothic-summary.tex}
     \label{tbl:summary-gothic-1}
 \end{table}
 
@@ -471,7 +449,23 @@ The third person singular and first person plural show the same pattern. The acc
 \begin{table}[ht]
   \center
   \caption {Case containment in Khanty}
-    \input{tables/containment-nom-acc-dat.tex}
+  \begin{tabular}{clll}
+  \toprule
+            & \ac{1}\ac{sg}
+            & \ac{3}\ac{sg}
+            & \ac{1}\ac{pl}                           \\
+            \cmidrule{2-4}
+  \ac{nom}  & ma
+            & luw
+            & muŋ                                     \\
+  \ac{acc}  & ma:\tbf{-ne:m}
+            & luw\tbf{-e:l}
+            & muŋ\tbf{-e:w}                           \\
+  \ac{dat}  & ma:\tbf{-ne:m}\tcol{DG}{\tbf{-na}}
+            & luw\tbf{-e:l}\tcol{DG}{\tbf{-na}}
+            & muŋ\tbf{-e:w}\tcol{DG}{\tbf{-na}}       \\
+  \bottomrule
+  \end{tabular}
   \label{tbl:cont-khanty}
 \end{table}
 
