@@ -68,41 +68,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.2.1}external case = ungrammatical}{49}{subsubsection.4.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2.2}internal case = grammatical}{49}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}internal case = grammatical}{50}{subsubsection.4.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Only from external: Old High German}{50}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Only from external: Old High German}{51}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3.1}external is grammatical}{50}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}external is grammatical}{51}{subsubsection.4.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3.2}internal is ungrammatical}{51}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}internal is ungrammatical}{53}{subsubsection.4.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Shape of relative pronoun}{52}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Shape of relative pronoun}{54}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Gothic}{52}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Gothic}{54}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.1}Headless relatives}{52}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Headless relatives}{54}{subsubsection.4.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.2}Light-headed relatives}{53}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}Light-headed relatives}{54}{subsubsection.4.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Old High German}{53}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Old High German}{55}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.1}Headless relatives}{53}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Headless relatives}{55}{subsubsection.4.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.2}Light-headed relatives}{54}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}Light-headed relatives}{55}{subsubsection.4.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Modern German}{54}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}Modern German}{55}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.1}Headless relatives}{54}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}Headless relatives}{55}{subsubsection.4.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3.2}Light-headed relatives}{55}{subsubsection.4.3.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}Light-headed relatives}{56}{subsubsection.4.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Bringing this together}{55}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Bringing this together}{56}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Two points: all or nothing}{55}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Two points: all or nothing}{56}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}No matches work}{55}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.1}No matches work}{56}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}All allow for matching ones (and syncretic ones! whuut)}{55}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}All allow for matching ones (and syncretic ones! whuut)}{57}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}Connecting morphology and syntax}{59}{chapter.5}%
 \defcounter {refsection}{0}\relax 
