@@ -69,6 +69,9 @@ In this section I show how case syncretism patterns can be derived from the case
 \end{table}
 
 The intuition is the following.
+%In Nanosyntax (the framework I shall be using in this study), lexical
+% items apply to feature sets not based on identity, but on the basis of a containment
+% relation.
 
  % The morphological form of the pronouns mirror the cumulative feature decomposition given in Table \ref{tbl:case-decomposed}. That is, the accusative has the morphology that the nominative has (\tit{luw}) plus something extra (\tit{-e:l}). The dative has the morphology that the accusative has (\tit{luw-e:l}) plus something extra (\tit{luw-e:l}-na). In what follows I make it concrete how syntactic features translate to morphological form.
 
@@ -98,50 +101,32 @@ After syntax (actually, each instance of merge), the syntactic structure is matc
 In Nanosyntax, the lexicon is nothing but links between syntactic representations, phonological representations and conceptual representations \citep{starke2014}.\footnote{
 The syntactic representation does not have to correspond to both a phonological and a conceptual representation. Syntactic representation that only correspond to a conceptual representations and not to phonological representations are (phrasal or clausal) idioms. Syntactic representations that only correspond to phonological representations but not to conceptual representations are for instance irregular plurals.
 }
-%I leave out semantics here, because it's not so important for case here.
-The fact that only syntax can create complex feature structures also has a consequence for the content of the lexicon.
+I leave the conceptual representation out of discussion for now, as it not relevant for the discussion here. The fact that only syntax can create complex feature structures also has a consequence for the content of the lexicon.
 Syntactic structures are constrained by certain principles, such that only well-formed syntactic structures exist. Since the lexical items from the lexicon link syntactic representation to phonological and conceptual representation, these syntactic representations are constrained by the same principles as syntactic trees are. As a result, the lexicon only contains well-formed syntactic structures. The lexicon does not contain unstructured `feature bundles', because they could never be created by syntax.
 
-Following complex structures only be created with merge, a lexical entries as xxx do not exist. This cannot be the result of merge and syntax starts with atomic features.
+Following this logic, the syntactic representation for a lexical entry as in \ref{ex:feature-set} cannot exist. The feature bundle cannot have entered syntax, because syntax starts with atomic features. It can also not be created by syntax, because complex structures can only be created with merge.
 
-\ex. [ \tsc{f}1, \tsc{f}2, \tsc{f}3 ]
+\ex. [ \tsc{f}1, \tsc{f}2, \tsc{f}3 ]\label{ex:feature-set}
 
-instead, we have a tree
+Instead, a possible syntactic representation for a lexical entry looks as in \ref{ex:feature-structure}. The features are merged one by one in a binary syntactic structure.
 
 \ex. \begin{forest} boom
   [\ac{dat}P
       [\ac{f}3]
       [\ac{acc}P
           [\ac{f}2]
-          [\ac{nom}P
-              [\ac{f}1]
-              ]
-          ]
+          [\ac{f}1]
       ]
   ]
-\end{forest}
+\end{forest}\label{ex:feature-structure}
 
-phrasal spellout
-multiple features with a single element
+This structure leads to the concept of phrasal spellout. Phrasal spellout is that not terminals but multiple syntactic heads (phrases) are realized with a single piece of phonology (i.e. a single morpheme). A necessary requirement is that these multiple syntactic heads form a constituent.
 
-% A crucial part of this model is the idea that linking syntactically wellformed
-% objects to phonology is not restricted to terminals. Since phrases
-% containing multiple terminals are also well-formed syntactic objects, they
-% may be easily pronounced by a single piece of phonology (a single morpheme
-% in the traditional sense), provided these terminals form a constituent
-% (i.e., they correspond to a syntactic object). An example is provided in (20)
-% by the entry for an M-root. It will become clear in the course of the discussion
-% that in our model, spellout in fact has to target phrasal nodes and
-% cannot target terminals.
+Let me illustrate all of the above with the Faroese pronouns from Table \ref{tbl:syncretisms-derive}. I simplify the situation in two respects. First, I do not show the internal complexity of the pronouns, including person and number features. Instead, I give a triangle, indicating that this is a complex syntactic structure. Second, in this simplified representation I consider the Faroese pronouns to be monomorphemic. I ignore the fact that all three pronouns clearly have the stem \tit{t} with a suffix on it.
 
-
-
-Let us apply this now to pronouns. I simplify. (1) I do not show internal complexity of pronouns, including person and number features. I just make a triangle.
-
-For Faroese specific, (2) make Faroese pronouns monomorphemic
+The lexical entry for \tit{tú} `3\tsc{sg}.\tsc{nom}' is given in \ref{ex:faroese-tu}. The syntactic representation consists of the complex syntactic structure that corresponds to the third person singular pronoun, and \tsc{f}1, making it a \tsc{nom}P. The phonological representation that is linked to the syntactic representation in \tit{tú}.
 
 \ex.
-\a.
 \begin{forest} boom
   [\ac{nom}P
       [\ac{f}1]
@@ -149,8 +134,13 @@ For Faroese specific, (2) make Faroese pronouns monomorphemic
           [3\tsc{sg}, roof]
       ]
   ]
+  {\draw (.east) node[right]{⇔ \tit{tú}}; }
 \end{forest}
-\b.
+\label{ex:faroese-tu-lexicon}
+
+The lexical entry for \tit{teg} `3\tsc{sg}.\tsc{acc}' is given in \ref{ex:faroese-teg}. The syntactic representation contains all the features of the syntactic structure in \ref{ex:faroese-tu}, plus \tsc{f}2, making it an \tsc{acc}P. The linked phonological representation is \tit{teg}.
+
+\ex.
 \begin{forest} boom
   [\ac{acc}P
       [\ac{f}2]
@@ -161,8 +151,13 @@ For Faroese specific, (2) make Faroese pronouns monomorphemic
           ]
       ]
   ]
+  {\draw (.east) node[right]{⇔ \tit{teg}}; }
 \end{forest}
-\b.
+\label{ex:faroese-teg-lexicon}
+
+The lexical entry for \tit{tær} `3\tsc{sg}.\tsc{dat}' is given in \ref{ex:faroese-taer}. The syntactic representation contains all the features of the syntactic structure in \ref{ex:faroese-teg}, plus \tsc{f}3, making it an \tsc{dat}P. The linked phonological representation is \tit{tær}.
+
+\ex.
 \begin{forest} boom
   [\ac{dat}P
       [\ac{f}3]
@@ -176,10 +171,66 @@ For Faroese specific, (2) make Faroese pronouns monomorphemic
           ]
       ]
   ]
+  {\draw (.east) node[right]{⇔ \tit{tær}}; }
+\end{forest}
+\label{ex:faroese-taer-lexicon}
+
+%something about: here there's syntax, we have these lexical entries, so this is what's gonna happen now:
+
+\ex.
+\a. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{tú},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(3sg)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{3sg},name=3sg, roof],baseline
+    ]
+]
+\end{forest}
+\b. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{teg},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(3sg)(np)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\b. \begin{forest} boom
+[\tsc{datP},name=datp,
+tikz={
+\node[label=below right:\tit{tær},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(datp)(dat)(3sg)(np)]{};
+}
+    [\tsc{dat},name=dat]
+    [\tsc{acc}P,name=accp
+        [\tsc{acc},name=acc]
+        [\tsc{nom}P,name=nomp
+            [\ac{nom},name=nom]
+            [NP,name=np
+                [\tsc{3sg},name=3sg, roof],baseline
+            ]
+        ]
+    ]
+]
 \end{forest}
 
-not only exact matching works
-
+% however: not only exact matching works
 
 \ex. \tbf{The Superset Principle} \citet{starke2009}:\\
 A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
@@ -202,7 +253,64 @@ jullie: a single lexical entry for all
           ]
       ]
   ]
+  {\draw (.east) node[right]{⇔ \tit{jullie}}; }
 \end{forest}
+
+
+\ex.
+\a. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{jullie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(2pl)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{2pl},name=2pl, roof],baseline
+    ]
+]
+\end{forest}
+\b. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{jullie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(np)(2pl)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{2pl},name=2pl, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\b. \begin{forest} boom
+[\tsc{datP},name=datp,
+tikz={
+\node[label=below right:\tit{jullie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(datp)(dat)(2pl)(np)]{};
+}
+    [\tsc{dat},name=dat]
+    [\tsc{acc}P,name=accp
+        [\tsc{acc},name=acc]
+        [\tsc{nom}P,name=nomp
+            [\ac{nom},name=nom]
+            [NP,name=np
+                [\tsc{2pl},name=2pl, roof],baseline
+            ]
+        ]
+    ]
+]
+\end{forest}
+
+
 
 minimize junk
 
