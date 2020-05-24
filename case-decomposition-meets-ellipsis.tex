@@ -287,27 +287,7 @@ fit=(datp)(dat)(2pl)(np)]{};
 \end{forest}
 \label{ex:dutch-jullie-spellout-dat}
 
-The syntactic structure of the accusative second person plural is given in \ref{ex:dutch-jullie-spellout-acc}. This syntactic structure does not exactly match the syntactic structure in the lexical entry in \ref{ex:dutch-jullie-lexicon}. However, the syntactic structure in the lexical entry \tbf{contains} the syntactic structure in \ref{ex:dutch-jullie-spellout-acc}.
-
-\ex. \begin{forest} boom
-[\tsc{accP},name=accp,
-tikz={
-\node[label=below right:\tit{jullie},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(accp)(acc)(np)(2pl)]{};
-}
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{2pl},name=2pl, roof],baseline
-        ]
-    ]
-]
-\end{forest}
-\label{ex:dutch-jullie-spellout-acc}
-
+The syntactic structure of the accusative second person plural is given in \ref{ex:dutch-jullie-spellout-acc}. This syntactic structure does not exactly match the syntactic structure in the lexical entry in \ref{ex:dutch-jullie-lexicon}. However, the syntactic structure in the lexical entry \tbf{contains} the syntactic structure of the accusative.
 I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-acc}, marking the subpart of the tree that matches the syntactic structure in gray.
 
 \ex. \begin{forest} boom
@@ -333,25 +313,30 @@ I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-ac
 \end{forest}
 \label{ex:dutch-jullie-lexicon-acc}
 
-The same holds for the nominative second person plural. The syntactic structure is given in \ref{ex:dutch-jullie-spellout-acc}. This syntactic structure does not exactly match the syntactic structure in the lexical entry in \ref{ex:dutch-jullie-lexicon}. However, again, the syntactic structure in the lexical entry \tbf{contains} the syntactic structure in \ref{ex:dutch-jullie-spellout-nom}.
+As a result, the accusative is spelled out as \tit{jullie}, shown in \ref{ex:dutch-jullie-spellout-acc}.
 
-\ex.
-\begin{forest} boom
-[\tsc{nomP},name=nomp,
+\ex. \begin{forest} boom
+[\tsc{accP},name=accp,
 tikz={
 \node[label=below right:\tit{jullie},
 draw,circle,
 xscale=0.8,yscale=1,
-fit=(nomp)(nom)(2pl)(np)]{};
+fit=(accp)(acc)(np)(2pl)]{};
 }
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{2pl},name=2pl, roof],baseline
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{2pl},name=2pl, roof],baseline
+        ]
     ]
 ]
 \end{forest}
- \label{ex:dutch-jullie-spellout-nom}
+\label{ex:dutch-jullie-spellout-acc}
 
+
+
+The same holds for the nominative second person plural. The syntactic structure is given in \ref{ex:dutch-jullie-spellout-acc}. This syntactic structure does not exactly match the syntactic structure in the lexical entry in \ref{ex:dutch-jullie-lexicon}. However, again, the syntactic structure in the lexical entry \tbf{contains} the syntactic structure of the nominative.
 I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-nom}, marking the subpart of the tree that matches the syntactic structure in gray.
 
  \ex. \begin{forest} boom
@@ -376,6 +361,26 @@ I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-no
    {\draw (.east) node[right]{⇔ \tit{jullie}}; }
  \end{forest}
  \label{ex:dutch-jullie-lexicon-nom}
+
+As a result, the nominative is spelled out as \tit{jullie}, as shown in \ref{ex:dutch-jullie-spellout-nom}.
+
+\ex.
+\begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{jullie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(2pl)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{2pl},name=2pl, roof],baseline
+    ]
+]
+\end{forest}
+ \label{ex:dutch-jullie-spellout-nom}
+
 
 A question arises at this point. Why is the accusative and nominative in Faroese not spelled out by the lexical entry for the dative (and why is the nominative not spelled out by the lexical entry for the accusative)? These syntactic structures are namely contained in the lexical entry for the dative (and the accusative).
 The reason for that comes from how competition between lexical entries is regulated. When two lexical entries compete, the best fit wins. The best fit is the lexical entry with the least unused features. This is formalized as in \ref{ex:elsewhere-condition}.
@@ -428,47 +433,6 @@ The second one is given in \ref{ex:icelandic-okkur-lexicon}. It contains in addi
 \end{forest}
 \label{ex:icelandic-okkur-lexicon}
 
-The syntactic structure in \ref{ex:icelandic-vid-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-vid-lexicon} and in \ref{ex:icelandic-okkur-lexicon}.
-The former, \ref{ex:icelandic-vid-lexicon}, has no unused features. The latter, \ref{ex:icelandic-okkur-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3.
-Therefore, \ref{ex:icelandic-okkur-lexicon} wins the competition, and the syntactic structure is spelled out as \tit{við}.
-
-\ex. \begin{forest} boom
-[\tsc{nomP},name=nomp,
-tikz={
-\node[label=below right:\tit{við},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(nomp)(nom)(3sg)(np)]{};
-}
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{3sg},name=3sg, roof],baseline
-    ]
-]
-\end{forest}
-\label{ex:icelandic-vid-spellout}
-
-The syntactic structure in \ref{ex:icelandic-okkur-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
-
-\ex. \begin{forest} boom
-[\tsc{accP},name=accp,
-tikz={
-\node[label=below right:\tit{okkur},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(accp)(acc)(3sg)(np)]{};
-}
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{3sg},name=3sg, roof],baseline
-        ]
-    ]
-]
-\end{forest}
-\label{ex:icelandic-okkur-spellout-acc}
-
 The syntactic structure in \ref{ex:icelandic-okkur-spellout-dat} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
 
 \ex. \begin{forest} boom
@@ -493,8 +457,51 @@ fit=(datp)(dat)(3sg)(np)]{};
 \end{forest}
 \label{ex:icelandic-okkur-spellout-dat}
 
-For the third person singular femimine, German uses \tit{sie} for nominative and accusative, and \tit{ihr} for dative. Two lexical entries are needed for that.
-The first one in \ref{ex:german-sie-lexicon} contain pronominal syntactic structure, \tsc{f}1 and \tsc{f}2, and corresponds to the phonology \tit{sie}.
+The syntactic structure in \ref{ex:icelandic-okkur-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
+
+\ex. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{okkur},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(3sg)(np)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\label{ex:icelandic-okkur-spellout-acc}
+
+The syntactic structure in \ref{ex:icelandic-vid-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-vid-lexicon} and in \ref{ex:icelandic-okkur-lexicon}.
+The former, \ref{ex:icelandic-vid-lexicon}, has no unused features. The latter, \ref{ex:icelandic-okkur-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3.
+Therefore, \ref{ex:icelandic-okkur-lexicon} wins the competition, and the syntactic structure is spelled out as \tit{við}.
+
+\ex. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{við},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(3sg)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{3sg},name=3sg, roof],baseline
+    ]
+]
+\end{forest}
+\label{ex:icelandic-vid-spellout}
+
+
+
+For the third person singular feminine, German uses \tit{sie} for nominative and accusative, and \tit{ihr} for dative. Two lexical entries are needed for that.
+The first one in \ref{ex:german-sie-lexicon} contains pronominal syntactic structure, \tsc{f}1 and \tsc{f}2, and corresponds to the phonology \tit{sie}.
 The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition to what \ref{ex:german-sie-lexicon} the feature \tsc{f}3.
 
 \ex.
@@ -530,54 +537,12 @@ The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition 
 \end{forest}
 \label{ex:german-ihr-lexicon}
 
-The syntactic structure in \ref{ex:german-sie-spellout-nom} is contained in the syntactic structure of the lexical entry \ref{ex:german-sie-lexicon} and in \ref{ex:german-ihr-lexicon}.
-The former, \ref{ex:german-sie-lexicon}, has one unused feature: \tsc{f}2. The latter, \ref{ex:german-ihr-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3. Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
-
-\ex. \begin{forest} boom
-[\tsc{nomP},name=nomp,
-tikz={
-\node[label=below right:\tit{við},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(nomp)(nom)(3sg)(np)]{};
-}
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{3sg},name=3sg, roof],baseline
-    ]
-]
-\end{forest}
-\label{ex:german-sie-spellout-nom}
-
-The syntactic structure in \ref{ex:german-sie-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:german-sie-lexicon} and in \ref{ex:german-ihr-lexicon}.
-The former, \ref{ex:german-sie-lexicon}, has one no unused features. The latter, \ref{ex:german-ihr-lexicon}, has one unused feature: \tsc{f}3.
-
-\ex. \begin{forest} boom
-[\tsc{accP},name=accp,
-tikz={
-\node[label=below right:\tit{okkur},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(accp)(acc)(3sg)(np)]{};
-}
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{3sg},name=3sg, roof],baseline
-        ]
-    ]
-]
-\end{forest}
-\label{ex:german-sie-spellout-acc}
-
-Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
 The syntactic structure in \ref{ex:german-ihr-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:german-ihr-lexicon}, and therefore, spelled out as \tit{ihr}.
 
 \ex. \begin{forest} boom
 [\tsc{datP},name=datp,
 tikz={
-\node[label=below right:\tit{okkur},
+\node[label=below right:\tit{ihr},
 draw,circle,
 xscale=0.8,yscale=1,
 fit=(datp)(dat)(3sg)(np)]{};
@@ -596,18 +561,52 @@ fit=(datp)(dat)(3sg)(np)]{};
 \end{forest}
 \label{ex:german-ihr-spellout}
 
+The syntactic structure in \ref{ex:german-sie-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:german-sie-lexicon} and in \ref{ex:german-ihr-lexicon}.
+The former, \ref{ex:german-sie-lexicon}, has one no unused features. The latter, \ref{ex:german-ihr-lexicon}, has one unused feature: \tsc{f}3.
+Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
 
-now imagine that there is a language
+\ex. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{sie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(3sg)(np)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\label{ex:german-sie-spellout-acc}
 
-the only way to achieve that by stipulating three lexical entries.
-because the lexical entry for acc would always win over dat!
+The syntactic structure in \ref{ex:german-sie-spellout-nom} is contained in the syntactic structure of the lexical entry \ref{ex:german-sie-lexicon} and in \ref{ex:german-ihr-lexicon}.
+The former, \ref{ex:german-sie-lexicon}, has one unused feature: \tsc{f}2. The latter, \ref{ex:german-ihr-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3. Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
 
+\ex. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{sie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(3sg)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{3sg},name=3sg, roof],baseline
+    ]
+]
+\end{forest}
+\label{ex:german-sie-spellout-nom}
 
+This last example also illustrates that the laid out system is unable to derive an ABA pattern. The unability of the system to derive such a pattern is a welcome one, since the pattern is unattested cross-linguistically. In an ABA pattern, the nominative and the dative are syncretic, to the exclusion of the accusative. Staying close to the German example, in this hypothetical example, the dative would be \tit{ihr}, the accusative \tit{sie}, and the nominative \tit{ihr} again.
+This result could never be derived with the lexical entries given in \ref{ex:german-sie-lexicon} and \ref{ex:german-ihr-lexicon}. \tit{Ihr} is inserted for the dative and the cases contained in it (so accusative and nominative), unless a more specific lexical entry is found. \tit{Sie} is the more specific lexical entry that is found from the accusative on. From the accusative on, \tit{sie} will be inserted until a more specific entry is found. If no entry is specified for nominative, \tit{sie} will surface. \tit{Ihr} will not resurface, because the lexical entry for \tit{sie} will remain to be more specific.
 
-the system is unable to derive ABA
-no ABA
-
-
+%say how others do not account for this, at the place where it's necessary, so the end?
 
 \subsection{Deriving case containment}
 
@@ -622,7 +621,7 @@ In this section I show how morphological case containment can be derived from th
 
 The intuition is the following. The morphological form of the pronouns mirror the cumulative feature decomposition given in Table \ref{tbl:case-decomposed}. That is, the accusative has the morphology that the nominative has (\tit{luw}) plus something extra (\tit{-e:l}). The dative has the morphology that the accusative has (\tit{luw-e:l}) plus something extra (\tit{luw-e:l}-na). In what follows I make it concrete how syntactic features translate to morphological form.
 
-first the nominative
+First, I give the lexical entry for the nominative third person singular. It contains pronominal syntactic structure and the feature \tsc{f}1. The lexical entry is given in \ref{ex:khanty-luw-lexicon}.
 
 \ex.
 \begin{forest} boom
@@ -633,7 +632,9 @@ first the nominative
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{luw}}; }
-\end{forest}
+\end{forest}\label{ex:khanty-luw-lexicon}
+
+The syntactic structure in \ref{ex:khanty-luw-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:khanty-luw-spellout}. The nominative is spelled out as \tit{luw}.
 
 \ex. \begin{forest} boom
 [\tsc{nomP},name=nomp,
@@ -648,18 +649,63 @@ fit=(nomp)(nom)(3sg)(np)]{};
         [\tsc{3sg},name=3sg, roof],baseline
     ]
 ]
-\end{forest}
+\end{forest}\label{ex:khanty-luw-spellout}
 
-then the accusative
+In the previous section I only gave examples in which the forms were syncretic or suppletive (i.e. formally unrelated). The examples from Khanty are different. The accusative pronoun formally contains the nominative pronoun. This can be modelled by letting \tsc{nom}P still be realized by the lexical entry for the nominative, and giving the accusative its own realization.\footnote{
+Note that it is crucial here to have a theory in which the accusative contains the nominative. If not, it would be a surprise that the nominative is contained in the accusative.
+}
+
+Accordingly, I give the lexical entry for the accusative marker \tit{-e:l} in \ref{ex:khanty-luw-el}.
 
 \ex. \begin{forest} boom
   [\ac{acc}P
       [\ac{acc}]
   ]
   {\draw (.east) node[right]{⇔ \tit{-e:l}}; }
+\end{forest}\label{ex:khanty-el-lexicon}
+
+If we leave the situation as we had it so far, maybe one would think that what happens now is this:
+
+%turn the circle
+
+\ex. \begin{forest} boom
+[\ac{acc}P,name=accp, s sep=30mm,
+tikz={
+\node[label={below left:\tit{-e:l}},
+draw,circle,
+xscale=0.7,yscale=0.9,
+fit=(acc)(accp)]{};
+}
+    [\ac{acc},name=acc]
+    [\tsc{nomP},name=nomp,
+    tikz={
+    \node[label=below right:\tit{luw},
+    draw,circle,
+    xscale=0.8,yscale=1,
+    fit=(nomp)(nom)(3sg)(np)]{};
+    }
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+]
 \end{forest}
 
-but movement
+Empirically, something is going wrong now: we want the marker to follow the pronoun, not precede it.
+
+Making a few things about nanosyntactic theory more explicit clears these issues up. Spellout targets constituents, spellout is regulated by a spellout algorithm, of part of which is different spellout driven movement operations.
+
+In Nanosyntax spellout targets constituents. So it is impossible to let accP spell out \tit{e:l} without spelling out also everything below it.
+
+feature by feature, and spellout is driven by the spellout algorithm
+
+\ex. Merge F and
+\a. Spell out FP
+\b. If fails, attempt movement of the Spec of the complement of F, and retry (a)
+\b. If (b) fails, move the complement of F, and retry (a)
+
+
 
 \ex. \begin{forest} boom
 [\ac{acc}P,name=accp2, s sep=20mm
