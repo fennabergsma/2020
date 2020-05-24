@@ -124,7 +124,7 @@ This structure leads to the concept of phrasal spellout. Phrasal spellout is tha
 
 Let me illustrate all of the above with the Faroese pronouns from Table \ref{tbl:syncretisms-derive}. I simplify the situation in two respects. First, I do not show the internal complexity of the pronouns, including person and number features. Instead, I give a triangle, indicating that this is a complex syntactic structure. Second, in this simplified representation I consider the Faroese pronouns to be monomorphemic. I ignore the fact that all three pronouns clearly have the stem \tit{t} with a suffix on it.
 
-The lexical entry for \tit{tú} `3\tsc{sg}.\tsc{nom}' is given in \ref{ex:faroese-tu}. The syntactic representation consists of the complex syntactic structure that corresponds to the third person singular pronoun, and \tsc{f}1, making it a \tsc{nom}P. The phonological representation that is linked to the syntactic representation in \tit{tú}.
+The lexical entry for \tit{tú} `3\tsc{sg}.\tsc{nom}' is given in \ref{ex:faroese-tu-lexicon}. The syntactic representation consists of the complex syntactic structure that corresponds to the third person singular pronoun, and \tsc{f}1, making it a \tsc{nom}P. The phonological representation that is linked to the syntactic representation in \tit{tú}.
 
 \ex.
 \begin{forest} boom
@@ -138,7 +138,7 @@ The lexical entry for \tit{tú} `3\tsc{sg}.\tsc{nom}' is given in \ref{ex:faroes
 \end{forest}
 \label{ex:faroese-tu-lexicon}
 
-The lexical entry for \tit{teg} `3\tsc{sg}.\tsc{acc}' is given in \ref{ex:faroese-teg}. The syntactic representation contains all the features of the syntactic structure in \ref{ex:faroese-tu}, plus \tsc{f}2, making it an \tsc{acc}P. The linked phonological representation is \tit{teg}.
+The lexical entry for \tit{teg} `3\tsc{sg}.\tsc{acc}' is given in \ref{ex:faroese-teg-lexicon}. The syntactic representation contains all the features of the syntactic structure in \ref{ex:faroese-tu-lexicon}, plus \tsc{f}2, making it an \tsc{acc}P. The linked phonological representation is \tit{teg}.
 
 \ex.
 \begin{forest} boom
@@ -155,7 +155,7 @@ The lexical entry for \tit{teg} `3\tsc{sg}.\tsc{acc}' is given in \ref{ex:faroes
 \end{forest}
 \label{ex:faroese-teg-lexicon}
 
-The lexical entry for \tit{tær} `3\tsc{sg}.\tsc{dat}' is given in \ref{ex:faroese-taer}. The syntactic representation contains all the features of the syntactic structure in \ref{ex:faroese-teg}, plus \tsc{f}3, making it an \tsc{dat}P. The linked phonological representation is \tit{tær}.
+The lexical entry for \tit{tær} `3\tsc{sg}.\tsc{dat}' is given in \ref{ex:faroese-taer-lexicon}. The syntactic representation contains all the features of the syntactic structure in \ref{ex:faroese-teg-lexicon}, plus \tsc{f}3, making it an \tsc{dat}P. The linked phonological representation is \tit{tær}.
 
 \ex.
 \begin{forest} boom
@@ -175,9 +175,12 @@ The lexical entry for \tit{tær} `3\tsc{sg}.\tsc{dat}' is given in \ref{ex:faroe
 \end{forest}
 \label{ex:faroese-taer-lexicon}
 
-%something about: here there's syntax, we have these lexical entries, so this is what's gonna happen now:
+This brings me to the part of the discussion about matching. The syntactic structures and their phonological counterparts I gave in \ref{ex:faroese-tu-lexicon} to \ref{ex:faroese-taer-lexicon} are lexical entries. These are matched against the actual syntactic structure that is to be realized. Examples of syntactic structures are given in \ref{ex:faroese-spellout}.
+The syntactic structure in \ref{ex:faroese-tu-spellout} matches the syntactic structure of the lexical entry in \ref{ex:faroese-tu-lexicon}. Therefore, this syntactic structure is spelled out as \tit{tu}. Throughout this dissertation I circle the part of the structure that corresponds to a particular lexical entry, and I place corresponding the phonology next to it.
+\ref{ex:faroese-teg-spellout} matches the syntactic structure of the lexical entry in \ref{ex:faroese-teg-lexicon}, and it is spelled out as \tit{teg}.
+\ref{ex:faroese-taer-spellout} matches the syntactic structure of the lexical entry in \ref{ex:faroese-taer-lexicon}, and it is spelled out as \tit{tær}.
 
-\ex.
+\ex.\label{ex:faroese-spellout}
 \a. \begin{forest} boom
 [\tsc{nomP},name=nomp,
 tikz={
@@ -192,6 +195,7 @@ fit=(nomp)(nom)(3sg)(np)]{};
     ]
 ]
 \end{forest}
+\label{ex:faroese-tu-spellout}
 \b. \begin{forest} boom
 [\tsc{accP},name=accp,
 tikz={
@@ -209,6 +213,7 @@ fit=(accp)(acc)(3sg)(np)]{};
     ]
 ]
 \end{forest}
+\label{ex:faroese-teg-spellout}
 \b. \begin{forest} boom
 [\tsc{datP},name=datp,
 tikz={
@@ -229,15 +234,16 @@ fit=(datp)(dat)(3sg)(np)]{};
     ]
 ]
 \end{forest}
+\label{ex:faroese-taer-spellout}
 
-% however: not only exact matching works
+In the Faroese examples above, the syntactic structure in the syntax always exactly matched the syntactic structure of the lexical entry. However, to be a successful match, identity is not a necessary requirement. Instead, matching relies on a containment relation. A lexical entry applies when it contains all features. This is formalized as in \ref{ex:superset-principle}.
 
 \ex. \tbf{The Superset Principle} \citet{starke2009}:\\
 A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
+\label{ex:superset-principle}
 
-What the Superset Principle states is that matching between a lexical tree and a syntactic tree does not require full identity, but ‘only’ containment.
-
-jullie: a single lexical entry for all
+Let me illustrate this with the Dutch second person plural pronoun from Table \ref{tbl:syncretisms-derive}. This pronoun is syncretic between between the nominative, accusative and dative.
+The lexicon only contains a single lexical entry, namely \ref{ex:dutch-jullie-lexicon}. The nominative, the accusative and the dative can all be spelled out with this lexical entry.
 
 \ex.
 \begin{forest} boom
@@ -255,41 +261,11 @@ jullie: a single lexical entry for all
   ]
   {\draw (.east) node[right]{⇔ \tit{jullie}}; }
 \end{forest}
+\label{ex:dutch-jullie-lexicon}
 
+The syntactic structure of the dative, given in \ref{ex:dutch-jullie-spellout-dat}, is the least exciting of the three. It is an exact match to the syntactic structure in the lexical entry \ref{ex:dutch-jullie-lexicon}, and therefore, spelled out as \tit{jullie}.
 
-\ex.
-\a. \begin{forest} boom
-[\tsc{nomP},name=nomp,
-tikz={
-\node[label=below right:\tit{jullie},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(nomp)(nom)(2pl)(np)]{};
-}
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{2pl},name=2pl, roof],baseline
-    ]
-]
-\end{forest}
-\b. \begin{forest} boom
-[\tsc{accP},name=accp,
-tikz={
-\node[label=below right:\tit{jullie},
-draw,circle,
-xscale=0.8,yscale=1,
-fit=(accp)(acc)(np)(2pl)]{};
-}
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{2pl},name=2pl, roof],baseline
-        ]
-    ]
-]
-\end{forest}
-\b. \begin{forest} boom
+\ex. \begin{forest} boom
 [\tsc{datP},name=datp,
 tikz={
 \node[label=below right:\tit{jullie},
@@ -309,21 +285,326 @@ fit=(datp)(dat)(2pl)(np)]{};
     ]
 ]
 \end{forest}
+\label{ex:dutch-jullie-spellout-dat}
 
+The syntactic structure of the accusative second person plural is given in \ref{ex:dutch-jullie-spellout-acc}. This syntactic structure does not exactly match the syntactic structure in the lexical entry in \ref{ex:dutch-jullie-lexicon}. However, the syntactic structure in the lexical entry \tbf{contains} the syntactic structure in \ref{ex:dutch-jullie-spellout-acc}.
 
+\ex. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{jullie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(np)(2pl)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{2pl},name=2pl, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\label{ex:dutch-jullie-spellout-acc}
 
-minimize junk
+I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-acc}, marking the subpart of the tree that matches the syntactic structure in gray.
 
-\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2019}):\\
+\ex. \begin{forest} boom
+  [\tsc{datP},name=datp
+      [\tsc{dat},name=dat]
+      [\tsc{acc}P,name=accp,
+      tikz={
+      \node[draw,circle,DG,
+      fill=DG,fill opacity=0.2,
+      xscale=0.8,yscale=1,
+      fit=(accp)(acc)(2pl)(np)]{};
+      }
+          [\tsc{acc},name=acc]
+          [\tsc{nom}P,name=nomp
+              [\ac{nom},name=nom]
+              [NP,name=np
+                  [\tsc{2pl},name=2pl, roof],baseline
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{jullie}}; }
+\end{forest}
+\label{ex:dutch-jullie-lexicon-acc}
+
+The same holds for the nominative second person plural. The syntactic structure is given in \ref{ex:dutch-jullie-spellout-acc}. This syntactic structure does not exactly match the syntactic structure in the lexical entry in \ref{ex:dutch-jullie-lexicon}. However, again, the syntactic structure in the lexical entry \tbf{contains} the syntactic structure in \ref{ex:dutch-jullie-spellout-nom}.
+
+\ex.
+\begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{jullie},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(2pl)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{2pl},name=2pl, roof],baseline
+    ]
+]
+\end{forest}
+ \label{ex:dutch-jullie-spellout-nom}
+
+I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-nom}, marking the subpart of the tree that matches the syntactic structure in gray.
+
+ \ex. \begin{forest} boom
+   [\tsc{datP},name=datp
+       [\tsc{dat},name=dat]
+       [\tsc{acc}P,name=accp
+           [\tsc{acc},name=acc]
+           [\tsc{nom}P,name=nomp,
+           tikz={
+           \node[draw,circle,DG,
+           fill=DG,fill opacity=0.2,
+           xscale=0.8,yscale=1,
+           fit=(nomp)(nom)(2pl)(np)]{};
+           }
+               [\ac{nom},name=nom]
+               [NP,name=np
+                   [\tsc{2pl},name=2pl, roof],baseline
+               ]
+           ]
+       ]
+   ]
+   {\draw (.east) node[right]{⇔ \tit{jullie}}; }
+ \end{forest}
+ \label{ex:dutch-jullie-lexicon-nom}
+
+A question arises at this point. Why is the accusative and nominative in Faroese not spelled out by the lexical entry for the dative (and why is the nominative not spelled out by the lexical entry for the accusative)? These syntactic structures are namely contained in the lexical entry for the dative (and the accusative).
+The reason for that comes from how competition between lexical entries is regulated. When two lexical entries compete, the best fit wins. The best fit is the lexical entry with the least unused features. This is formalized as in \ref{ex:elsewhere-condition}.
+
+\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
 When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
+\label{ex:elsewhere-condition}
 
-sie for acc
-ihr for dat
+Let me come back to the Faroese examples. Consider first again the syntactic structure in \ref{ex:faroese-tu-spellout}.
+All the Faroese lexical entries \ref{ex:faroese-tu-lexicon}, \ref{ex:faroese-teg-lexicon} and \ref{ex:faroese-taer-lexicon} contain the syntactic structure for it.
+\ref{ex:faroese-taer-lexicon} has two unused features: \tsc{f2} and \tsc{f3}. \ref{ex:faroese-teg-lexicon} has one unused feature: \tsc{f2}. Only \ref{ex:faroese-tu-lexicon} does not have any unused features, hence is wins the competition over the other two.
 
-okkur for dat
-vidxd for nom
+Regarding the syntactic structure \ref{ex:faroese-teg-spellout}, the lexical entries \ref{ex:faroese-teg-lexicon} and \ref{ex:faroese-taer-lexicon} contain the syntactic structure. \footnote{
+\ref{ex:faroese-tu-lexicon} is not even a candidate here, because it does not contain the syntactic structure (it lacks \tsc{f2}.)
+}
+However, only \ref{ex:faroese-taer-lexicon} does not have any unused features, and it is inserted.
+
+The Table in \ref{tbl:syncretisms-derive} contains two more attested patterns: the ABB in Icelandic and the AAB in German. In the remainder of this section I show how these two patterns are derived. I also how the system is unable to derive an ABA, which is a pattern unattested crosslinguistically.
+
+Let us first consider the Icelanic pattern. For the first person plural, Icelandic has \tit{við} for the nominative and \tit{okkur} for the accusative and dative. Two lexical entries are needed for that. The first one in \ref{ex:icelandic-vid-lexicon} contain pronominal syntactic structure and \tsc{f}1, and corresponds to the phonology \tit{við}.
+The second one is given in \ref{ex:icelandic-okkur-lexicon}. It contains in addition to what \ref{ex:icelandic-vid-lexicon} the features \tsc{f}2 and \tsc{f}3.
+
+\ex.
+\a.
+\begin{forest} boom
+  [\ac{nom}P
+      [\ac{f}1]
+      [NP
+          [1\tsc{pl}, roof]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{við}}; }
+\end{forest}
+\label{ex:icelandic-vid-lexicon}
+\b.
+\begin{forest} boom
+  [\ac{dat}P
+      [\ac{f}3]
+      [\ac{acc}P
+          [\ac{f}2]
+          [\ac{nom}P
+              [\ac{f}1]
+              [1\tsc{pl}
+                  [..., roof]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{okkur}}; }
+\end{forest}
+\label{ex:icelandic-okkur-lexicon}
+
+The syntactic structure in \ref{ex:icelandic-vid-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-vid-lexicon} and in \ref{ex:icelandic-okkur-lexicon}.
+The former, \ref{ex:icelandic-vid-lexicon}, has no unused features. The latter, \ref{ex:icelandic-okkur-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3.
+Therefore, \ref{ex:icelandic-okkur-lexicon} wins the competition, and the syntactic structure is spelled out as \tit{við}.
+
+\ex. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{við},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(3sg)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{3sg},name=3sg, roof],baseline
+    ]
+]
+\end{forest}
+\label{ex:icelandic-vid-spellout}
+
+The syntactic structure in \ref{ex:icelandic-okkur-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
+
+\ex. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{okkur},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(3sg)(np)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\label{ex:icelandic-okkur-spellout-acc}
+
+The syntactic structure in \ref{ex:icelandic-okkur-spellout-dat} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
+
+\ex. \begin{forest} boom
+[\tsc{datP},name=datp,
+tikz={
+\node[label=below right:\tit{okkur},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(datp)(dat)(3sg)(np)]{};
+}
+    [\tsc{dat},name=dat]
+    [\tsc{acc}P,name=accp
+        [\tsc{acc},name=acc]
+        [\tsc{nom}P,name=nomp
+            [\ac{nom},name=nom]
+            [NP,name=np
+                [\tsc{3sg},name=3sg, roof],baseline
+            ]
+        ]
+    ]
+]
+\end{forest}
+\label{ex:icelandic-okkur-spellout-dat}
+
+For the third person singular femimine, German uses \tit{sie} for nominative and accusative, and \tit{ihr} for dative. Two lexical entries are needed for that.
+The first one in \ref{ex:german-sie-lexicon} contain pronominal syntactic structure, \tsc{f}1 and \tsc{f}2, and corresponds to the phonology \tit{sie}.
+The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition to what \ref{ex:german-sie-lexicon} the feature \tsc{f}3.
+
+\ex.
+\a.
+\begin{forest} boom
+  [\ac{acc}P
+      [\ac{f}2]
+      [\ac{nom}P
+          [\ac{f}1]
+          [3\ac{sg}.\tsc{f}
+              [..., roof]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{sie}}; }
+\end{forest}
+\label{ex:german-sie-lexicon}
+\b.
+\begin{forest} boom
+  [\ac{dat}P
+      [\ac{f}3]
+      [\ac{acc}P
+          [\ac{f}2]
+          [\ac{nom}P
+              [\ac{f}1]
+              [3\ac{sg}.\tsc{f}
+                  [..., roof]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{ihr}}; }
+\end{forest}
+\label{ex:german-ihr-lexicon}
+
+The syntactic structure in \ref{ex:german-sie-spellout-nom} is contained in the syntactic structure of the lexical entry \ref{ex:german-sie-lexicon} and in \ref{ex:german-ihr-lexicon}.
+The former, \ref{ex:german-sie-lexicon}, has one unused feature: \tsc{f}2. The latter, \ref{ex:german-ihr-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3. Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
+
+\ex. \begin{forest} boom
+[\tsc{nomP},name=nomp,
+tikz={
+\node[label=below right:\tit{við},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(nomp)(nom)(3sg)(np)]{};
+}
+    [\ac{nom},name=nom]
+    [NP,name=np
+        [\tsc{3sg},name=3sg, roof],baseline
+    ]
+]
+\end{forest}
+\label{ex:german-sie-spellout-nom}
+
+The syntactic structure in \ref{ex:german-sie-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:german-sie-lexicon} and in \ref{ex:german-ihr-lexicon}.
+The former, \ref{ex:german-sie-lexicon}, has one no unused features. The latter, \ref{ex:german-ihr-lexicon}, has one unused feature: \tsc{f}3.
+
+\ex. \begin{forest} boom
+[\tsc{accP},name=accp,
+tikz={
+\node[label=below right:\tit{okkur},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(accp)(acc)(3sg)(np)]{};
+}
+    [\tsc{acc},name=acc]
+    [\tsc{nom}P,name=nomp
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+]
+\end{forest}
+\label{ex:german-sie-spellout-acc}
+
+Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
+The syntactic structure in \ref{ex:german-ihr-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:german-ihr-lexicon}, and therefore, spelled out as \tit{ihr}.
+
+\ex. \begin{forest} boom
+[\tsc{datP},name=datp,
+tikz={
+\node[label=below right:\tit{okkur},
+draw,circle,
+xscale=0.8,yscale=1,
+fit=(datp)(dat)(3sg)(np)]{};
+}
+    [\tsc{dat},name=dat]
+    [\tsc{acc}P,name=accp
+        [\tsc{acc},name=acc]
+        [\tsc{nom}P,name=nomp
+            [\ac{nom},name=nom]
+            [NP,name=np
+                [\tsc{3sg},name=3sg, roof],baseline
+            ]
+        ]
+    ]
+]
+\end{forest}
+\label{ex:german-ihr-spellout}
 
 
+now imagine that there is a language
+
+the only way to achieve that by stipulating three lexical entries.
+because the lexical entry for acc would always win over dat!
+
+
+
+the system is unable to derive ABA
 no ABA
 
 
