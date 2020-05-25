@@ -664,15 +664,15 @@ Accordingly, I give the lexical entry for the accusative marker \tit{-e:l} in \r
   {\draw (.east) node[right]{⇔ \tit{-e:l}}; }
 \end{forest}\label{ex:khanty-el-lexicon}
 
-If we leave the situation as we had it so far, maybe one would think that what happens now is this:
+So, \tit{luw-e:l} consists of two morphemes that both correspond to their own piece of syntactic structure: \tit{luw} and \tit{e:l}. But how do these two morphemes combine? This brings me to another detour into the Nanosyntactic theory. To understand how multiple morphemes combine, I need to address the spellout procedure in Nanosyntax, which happens according to a spellout algorithm. Part of this algorithm are two movement options, that create different constituents. The two movement options are Cinquan rollup movement and spec to spec movement.
 
-%turn the circle
+Spellout in Nanosyntax only targets constituents. So it is impossible to let accP spell out \tit{e:l} without spelling out also everything below it.
 
 \ex. \begin{forest} boom
 [\ac{acc}P,name=accp, s sep=30mm,
 tikz={
 \node[label={below left:\tit{-e:l}},
-draw,circle,
+draw,circle,rotate=45,
 xscale=0.7,yscale=0.9,
 fit=(acc)(accp)]{};
 }
@@ -691,21 +691,9 @@ fit=(acc)(accp)]{};
     ]
 ]
 \end{forest}
+\label{ex:khanty-el-luw-spellout}
 
-Empirically, something is going wrong now: we want the marker to follow the pronoun, not precede it.
-
-Making a few things about nanosyntactic theory more explicit clears these issues up. Spellout targets constituents, spellout is regulated by a spellout algorithm, of part of which is different spellout driven movement operations.
-
-In Nanosyntax spellout targets constituents. So it is impossible to let accP spell out \tit{e:l} without spelling out also everything below it.
-
-feature by feature, and spellout is driven by the spellout algorithm
-
-\ex. Merge F and
-\a. Spell out FP
-\b. If fails, attempt movement of the Spec of the complement of F, and retry (a)
-\b. If (b) fails, move the complement of F, and retry (a)
-
-
+The \tsc{acc}P can only be spelled out if the \tsc{nom}P has moved away. So like this:
 
 \ex. \begin{forest} boom
 [\ac{acc}P,name=accp2, s sep=20mm
@@ -732,9 +720,11 @@ feature by feature, and spellout is driven by the spellout algorithm
     ]
 ]
 \end{forest}
+\label{ex:khanty-luw-el-spellout}
 
-then dative
+This is exactly one of the movement options that exists in the spellout algorithm.
 
+Just as the accusative, the dative also has its own realization. The lexical entry for \tit{-na} is given in \ref{ex:khanty-na-lexion}.
 
 \ex. \begin{forest} boom
   [\ac{dat}P
@@ -742,7 +732,38 @@ then dative
   ]
   {\draw (.east) node[right]{⇔ \tit{-na}}; }
 \end{forest}
+\label{ex:khanty-na-lexion}
 
+Again, because the spellout only targets constituents, it cannot be spelled out right after it has been merged, shown in \ref{ex:khanty-na-luw-el-spellout}.
+
+\ex. \begin{forest} boom
+[\ac{acc}P,name=accp2, s sep=20mm
+    [\tsc{nomP},name=nomp,
+    tikz={
+    \node[label=below right:\tit{luw},
+    draw,circle,
+    xscale=0.8,yscale=1,
+    fit=(nomp)(nom)(3sg)(np)]{};
+    }
+        [\ac{nom},name=nom]
+        [NP,name=np
+            [\tsc{3sg},name=3sg, roof],baseline
+        ]
+    ]
+    [\ac{acc}P,name=accp,
+    tikz={
+    \node[label={below right:\tit{-e:l}},
+    draw,circle,
+    xscale=0.7,yscale=0.9,
+    fit=(acc)(accp)]{};
+    }
+     [\ac{acc},name=acc]
+    ]
+]
+\end{forest}
+\label{ex:khanty-na-luw-el-spellout}
+
+Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the lexical entry can be inserted.
 
 \ex.
 \begin{forest} boom
@@ -781,7 +802,7 @@ then dative
     ]
 ]
 \end{forest}
-
+\label{ex:khanty-luw-el-na-spellout}
 
 
 
@@ -808,6 +829,12 @@ A: John woke up early
 (Õ) VP Ellipsis:
 a. John was hassled by the police and Mary was [VP hassled by the police ] too.
 b. John put his beer on the floor, so Mary did [VP put her beer on the floor ]
+
+
+
+
+
+I will climb a mountain today but he will not [climb a mountain today]
 
 
 \section{Reflex of morphology in syntax}
