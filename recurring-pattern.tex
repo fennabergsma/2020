@@ -225,12 +225,28 @@ Putting the languages in \posscitet{moravcsik1978} figure gives the following re
      \label{tbl:agr-typo}
  \end{table}
 
-It is often the case that subjects appear in nominative case, and that direct objects appear in accusative. However, this is not always the case. Subjects can be non-nominative and direct objects can be non-accusative. \citet{bobaljik2006} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. He argues for the picture shown in \ref{fig:agr-nom-acc-dat}.\footnote{
-Actually, \citet{bobaljik2006} also includes ergative-absolutive languages, and argues for the picture in Figure \ref{fig:agr-def-dep-dat}. Default case can be nominative or absolutive case (in transitive clauses), and dependent case can be accusative and ergative case.
+It is often the case that subjects appear in nominative case, and that direct objects appear in accusative. However, this is not always the case. Subjects can be non-nominative and direct objects can be non-accusative. \citet{bobaljik2006} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. \citeauthor{bobaljik2006} gives examples of two types of situations in which grammatical function and morphological case do not match: non-nominative subjects in Icelandic and ergative-absolutive languages. In these situations, case seem to capture the facts for the implicational hierarchy, and grammatical function does not.
+
+Icelandic is a language that has dative subjects. If agreement takes place with the grammatical subject, it is expected that the dative subject agrees with the predicate. This is not what happens, as illustrated in \ref{ex:icelandic-dat-subj}. The dative subject \tit{morgum studentum} `many students' is plural. The sentence is ungrammatical with the predicate \tit{líka} `like' inflecting for plural as well. So, the dative subject does not agree in number with the predicate. In other words, it is not the grammatical subject that shows agreement.
+
+\exg. *Morgum studentum líka verkið.\\
+ many students.\ac{dat} like.\ac{pl} job.\ac{nom} \\
+`Many students like the job.' \flushfill{\pgcitealt{harley1995}{208}}\label{ex:icelandic-dat-subj}
+
+Instead, it is the nominative object that agrees with the verb. This is illustrated in \ref{ex:icelandic-nom-obj}. The dative subject \tit{konunginum} `the king' is singular. The nominative object \tit{ambáttir} `slaves' is plural. The predicate \tit{voru} `were' is inflected for plural, agreeing with the nominative object. This is expected if morphological case determines agreement: it is the nominative that shows agreement. The grammatical role, the fact that this nominative is an object, does not influence agreement.
+
+\exg. Um veturinn voru konunginum gefnar ambáttir\\
+In the.winter were.\ac{pl} the.king.\ac{dat} given slaves.\ac{nom}\\
+`In the winter, the king was given (female) slaves.' \flushfill{\pgcitealt{zaenen1985}{112}}\label{ex:icelandic-nom-obj}
+
+The second type of evidence that \citeauthor{bobaljik2006} gives comes from ergative-absolutive languages. In these languages, absolutive marks the object of a transitive clause and it marks the subject in an intransitive clause.
+%look at bobaljik's argument there.
+
+
+Reformulating Figure \ref{fig:agr-sub-do-io} in terms of case instead of grammatical function gives the schema in Figure \ref{fig:agr-nom-acc-dat}. Default case can be nominative or absolutive case (in transitive clauses), and dependent case can be accusative and ergative case.
 
 \begin{figure}[H]
   \centering
-  \footnotesize{
   \begin{tikzpicture}
     \draw (0,1) circle (2.25);
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
@@ -239,13 +255,22 @@ Actually, \citet{bobaljik2006} also includes ergative-absolutive languages, and 
     \node[] at (0,2.75) {default case};
     \node[] at (0,1.5) {dependent case};
     \node[] at (0,0) {dative};
+
+    \node[] at (2.5,3) {\footnotesize{● Japanese}};
+    \node[] at (2.25,2) {\footnotesize{● German}};
+    \node[] at (2,1) {\footnotesize{● Hungarian}};
+    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
-  }
   \caption{\footnotesize{\posscitealt{bobaljik2006} actual schema}}
   \label{fig:agr-def-dep-dat}
 \end{figure}
 
-In the languages I discuss in this dissertation, I focus on languages that have nominative as default case and accusative as dependent case, so Figure \ref{fig:agr-nom-acc-dat} suffices.}
+First, Japanese is a language that does not show any agreement, as shown in \ref{ex:japanese-agr}. There is no agreement with the default case (here the nominative), not with the dependent case (here the accusative) and not with the dative case.
+Second, German is a language that shows agreement only with the default case, as shown in \ref{ex:german-agr}. The morpheme \tit{-st} on the predicate agrees with the element in default nominative case \tit{du} `you'. There is no agreement with the dependent accusative case or with the dative case.
+Third, Hungarian is a language that shows agreement with the default and the dependent case, as shown in \ref{ex:hungarian-agr}. The portmanteau morpheme \tit{-om} on the predicates agrees with the element in default nominative case \tit{én} `I' and the element in dependent accusative case \tit{a könyvet} `the book'.
+Last, Basque is a language that shows agreement with the default, the dependent and the dative case, as shown in \ref{ex:basque-agr}. The morpheme \tit{-zu} on the auxiliary agrees with the element in default ergative case \tit{zuk} `you'. The morpheme \tit{d-} on the auxiliary agrees with the element in dependent absolutive case \tit{liburua} `the book'. The morpheme \tit{-ta} on the auxiliary agrees with the element in dative case \tit{niri} `me'.
+
+In the languages I discuss in this dissertation, I focus on languages that have nominative as default case and accusative as dependent case, so Figure \ref{fig:agr-nom-acc-dat} suffices.
 
 \begin{figure}[ht]
   \centering
@@ -262,21 +287,7 @@ In the languages I discuss in this dissertation, I focus on languages that have 
   \caption{\posscitealt{bobaljik2006} simplified schema}
 \end{figure}
 
-\citeauthor{bobaljik2006} gives examples of situations in which grammatical function and morphological case do not match. In these situations, case seem to capture the facts for the implicational hierarchy, and grammatical function does not. I give two examples from Icelandic that illustrate this point.
-
-Icelandic is a language that has dative subjects. If agreement takes place with the grammatical subject, it is expected that the dative subject agrees with the predicate. This is not what happens, as illustrated in \ref{ex:icelandic-dat-subj}. The dative subject \tit{morgum studentum} `many students' is plural. The sentence is ungrammatical with the predicate \tit{líka} `like' inflecting for plural as well. So, the dative subject does not agree in number with the predicate. In other words, it is not the grammatical subject that shows agreement.
-
-\exg. *Morgum studentum líka verkið.\\
- many students.\ac{dat} like.\ac{pl} job.\ac{nom} \\
-`Many students like the job.' \flushfill{\pgcitealt{harley1995}{208}}\label{ex:icelandic-dat-subj}
-
-Instead, it is the nominative object that agrees with the verb. This is illustrated in \ref{ex:icelandic-nom-obj}. The dative subject \tit{konunginum} `the king' is singular. The nominative object \tit{ambáttir} `slaves' is plural. The predicate \tit{voru} `were' is inflected for plural, agreeing with the nominative object. This is expected if morphological case determines agreement: it is the nominative that shows agreement. The grammatical role, the fact that this nominative is an object, does not influence agreement.
-
-\exg. Um veturinn voru konunginum gefnar ambáttir\\
-In the.winter were.\ac{pl} the.king.\ac{dat} given slaves.\ac{nom}\\
-`In the winter, the king was given (female) slaves.' \flushfill{\pgcitealt{zaenen1985}{112}}\label{ex:icelandic-nom-obj}
-
-In conclusion, agreement follows the same implicational hierarchy as the case scale in headless relatives: \ac{nom} < \ac{acc} < \ac{dat}.
+In sum, this section has shown that agreement follows the same implicational hierarchy as the case scale in headless relatives: \ac{nom} < \ac{acc} < \ac{dat}.
 
 
 \subsection{Relativization}
@@ -401,8 +412,44 @@ In \ref{ex:basque-io}, the dative indirect object \tit{emakumeari} `the woman' f
  man-\ac{def}-\ac{erg} book-\ac{def}.\ac{abs} give has-\ac{rel} woman-\ac{def}\\
  `the woman that the man has given the book to' \flushfill{Basque, \pgcitealt{keenan1977}{72}, my boldfacing}\label{ex:basque-io}
 
-\citet{caha2009} restates the implicational hierarchy in terms of case. Subject corresponds to nominative, direct object corresponds to accusative, and indirect object corresponds to dative. Again, the case scale \ac{nom} < \ac{acc} < \ac{dat} can be observed.
+\citet{caha2009} restates the implicational hierarchy in terms of case. Subject corresponds to nominative, direct object corresponds to accusative, and indirect object corresponds to dative.
+%same argument as bobaljik, when there is a mismatch between case and grammatical function, case wins
 
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,1) circle (2.25);
+    \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+    \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
+
+    \node[] at (0,2.75) {default case};
+    \node[] at (0,1.5) {dependent case};
+    \node[align=center] at (0,0) {dative};
+
+    \node[] at (2.25,2) {\footnotesize{● Malagasy}};
+    \node[] at (2,1) {\footnotesize{● Malay}};
+    \node[] at (1.375,0) {\footnotesize{● Basque}};
+  \end{tikzpicture}
+  \caption{Schema for relativization}
+  \label{fig:relativization-def-dep-dat}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,1) circle (2.25);
+    \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
+    \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
+
+    \node[] at (0,2.75) {nominative};
+    \node[] at (0,1.5) {accusative};
+    \node[align=center] at (0,0) {dative};
+  \end{tikzpicture}
+  \caption{Schema for relativization}
+  \label{fig:relativization-nom-acc-dat}
+\end{figure}
+
+Again, the case scale \ac{nom} < \ac{acc} < \ac{dat} can be observed.
 
 \section{In morphology}\label{sec:case-morphology}
 
