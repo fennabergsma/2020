@@ -1,0 +1,179 @@
+\documentclass[11pt,hidelinks]{memoir}
+
+\usepackage{../fenna-files/packages}
+\addbibresource{../fenna-files/references.bib}
+\usepackage{../fenna-files/abbreviations}
+
+\usepackage{fixltx2e}
+
+\title{A Germanic typology of case competition in headless relatives}
+\author{Fenna Bergsma}
+\date{\today}
+
+\begin{document}
+
+%% Case competition in headless relatives
+\begin{itemize}
+  \item case competition: a situation in which two cases are assigned but only one of them surfaces
+  \item headless relative: a relative clause constructions that lack a head
+\end{itemize}
+
+\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ Us visits\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} likes\scsub{[acc]}\\
+ `Who visits us likes Maria likes.' \flushfill{\pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc}
+%%
+
+%%The content of my dissertation
+
+headless relatives in three Germanic languages:
+\begin{itemize}
+  \item Gothic
+  \item Old High German
+  \item Modern German
+\end{itemize}
+
+two aspects:
+\begin{itemize}
+  \item one is stable crosslinguistically
+  \item one differs across languages
+\end{itemize}
+%%
+
+%%The crosslinguistically stable one
+
+\ex. \ac{nom} < \ac{acc} < \ac{dat}
+
+this is not something special
+
+in syntax
+\begin{itemize}
+  \item agreement
+  \item relativization
+\end{itemize}
+
+in morphology
+\begin{itemize}
+  \item syncretism patterns
+  \item formal containment
+\end{itemize}
+%%
+
+%%A reflex of morphology in syntax
+
+\begin{forest} boom
+    [\ac{acc}P,name=accp
+        [\ac{acc},name=acc]
+        [\tsc{nomP},name=nomp
+            [\ac{nom},name=nom]
+            [NP,name=np
+                [...,name=x,
+                roof,baseline
+                ]
+            ]
+        ]
+    ]
+\end{forest}
+
+
+
+
+
+
+\begin{table}[H]
+  \center
+	\caption {\ac{acc}P deletes \ac{nom}P}
+		\begin{tabular}[b]{cc}
+      \begin{forest} boom
+          [\ac{acc}P,name=accp
+              [\ac{acc},name=acc]
+              [\tsc{nomP},name=nomp,
+              tikz={
+              \node[draw,circle,
+              xscale=0.75,yscale=0.95,
+              fit=(nomp)(nom)(x)]{};
+              }
+                  [\ac{nom},name=nom]
+                  [NP,name=np
+                      [...,name=x,
+                      roof,baseline
+                      ]
+                  ]
+              ]
+          ]
+      \end{forest}
+      &
+      \begin{forest} boom
+        [\textcolor{LG}{\tsc{nomP}},name=nomp,
+        tikz={
+        \node[draw,circle,
+        xscale=0.75,yscale=0.95,
+        fit=(nomp)(nom)(x)]{};
+        }
+            [\textcolor{LG}{\ac{nom}},name=nom,
+            edge=LG]
+            [\textcolor{LG}{NP},name=np,
+            edge=LG
+                [\textcolor{LG}{...},name=x,
+                roof,baseline,edge=LG
+                ]
+            ]
+        ]
+      \end{forest}\\
+  \end{tabular}
+\end{table}
+
+%%
+
+
+
+
+
+
+
+
+
+
+Focus of this talk
+
+\exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
+\ac{rel}.\ac{acc}.\ac{m}.\ac{sg} -\ac{comp} love\scsub{[acc]} sick is\scsub{[nom]}\\
+`the one whom you love is sick' \flushfill{Gothic, \ac{john} 11:3, adapted from \pgcitealt{harbert1978}{342}}\label{ex:gothic-acc-nom}
+
+\exg. jah þo \tbf{-ei} \tbf{ist} \tbf{us} \tbf{Laudeikaion} jus ussiggwaid\\
+and \ac{rel}.\ac{acc}.\ac{n}.\ac{sg} -\ac{comp} is\scsub{[nom]} from Laodicea you read\scsub{[acc]}\\
+`and read that which is from Laodicea' \flushfill{Gothic, \ac{col} 4:16, adapted from \pgcitealt{harbert1978}{357}}\label{ex:gothic-nom-acc}
+
+
+
+
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+ I invite\scsub{[acc]} \tsc{rel}.\ac{acc}.\tsc{an} me nice is\scsub{[nom]}\\
+ `I invite who I like.' \flushfill{\pgcitealt{vogel2001}{344}}
+
+\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ Us visits\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} likes\scsub{[acc]}\\
+ `Who visits us likes Maria likes.' \flushfill{\pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc}
+
+\exg. ih bibringu fona Juda dhen \tbf{mina} \tbf{berga} \tbf{chisetzit}\\
+ I educate\scsub{[acc]} about Juda \tsc{rel}.\ac{acc}.\tsc{m}.\tsc{sg} my mountains {through pull}\scsub{[nom]}\\
+ `I educate the one who wanders through my mountains about Judas' \flushfill{\ac{ohg}, \ac{isid} 34:3, \pgcitealt{behaghel1923}{761}}\label{ex:ohg-acc-nom}
+
+
+
+\begin{table}[H]
+	\center
+	\caption {Variation}
+		\begin{tabular}{ccc}
+		\toprule
+		 					      & \ac{int}>\ac{ext}		& \ac{ext}>\ac{int}	\\
+								      \cmidrule{2-3}
+		Modern German 	& ✔			 							&	*									\\
+		Old High German	& *										&	✔									\\
+		Gothic		      &	✔										&	✔									\\
+		\bottomrule
+		\end{tabular}
+\end{table}
+
+
+
+\end{document}
