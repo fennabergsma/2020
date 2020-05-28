@@ -1,96 +1,156 @@
-\documentclass[11pt,hidelinks]{memoir}
+\documentclass[12pt]{beamer}
 
-\usepackage{../fenna-files/packages}
+\geometry{paperwidth=140mm,paperheight=105mm}
+
+\usepackage{../fenna-files/packages-presentation}
 \addbibresource{../fenna-files/references.bib}
 \usepackage{../fenna-files/abbreviations}
 
-\usepackage{fixltx2e}
+\usepackage{framed} %boxes
+\newcommand*{\mybox}[1]{\framebox{#1}} %box around word
 
-\title{A Germanic typology of case competition in headless relatives}
+\usepackage{booktabs}
+
+% \usepackage{fixltx2e}
+
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+\usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+\definecolor{goethe}{rgb}{0,0.37,0.66}
+\usecolortheme[named=goethe]{structure}
+	% \usefonttheme{serif}  % or try serif, structurebold, ...
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\resetcounteronoverlays{exx}
+}
+
+\renewcommand{\eachwordone}{\sffamily}
+\renewcommand{\eachwordtwo}{\sffamily}
+\renewcommand{\eachwordthree}{\sffamily}
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}{}
+
+%gets rid of navigation symbols
+%\setbeamertemplate{navigation symbols}{}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+\usebeamerfont{footline}%
+\usebeamercolor[fg]{footline}%
+\hspace{1em}%
+\insertframenumber/\inserttotalframenumber
+}
+
+
+\title{Case competition in headless relatives: a Germanic typology}
 \author{Fenna Bergsma}
-\date{\today}
+\institute{\normalsize Goethe-Universität Frankfurt}
+\date{GK colloquium\\ \today}
+
 
 \begin{document}
 
-%% Case competition in headless relatives
+
+\begin{frame}
+\titlepage
+
+\centering{
+\includegraphics[width=0.4\textwidth]{dfg-logo}
+\hspace{2cm}
+\includegraphics[width=0.3\textwidth]{goethe-logo}}
+\end{frame}
+
+\begin{frame}{Case competition in headless relatives}
 \begin{itemize}
-  \item case competition: a situation in which two cases are assigned but only one of them surfaces
-  \item headless relative: a relative clause constructions that lack a head
+  \item \tbf{case competition}: a situation in which two cases are assigned but only one of them surfaces \pause
+  \item \tbf{headless relative}: a relative clause construction that lacks a head \pause
 \end{itemize}
 
-\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- Us visits\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} likes\scsub{[acc]}\\
- `Who visits us likes Maria likes.' \flushfill{\pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc}
+\vspace{1em}
+
+\exg. Ich {lade ein} \mybox{\tbf{wem}} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+ I invite\scsub{[acc]} \tsc{rel}.\ac{dat}.\tsc{an} also Maria trusts\scsub{[dat]}.\\
+ `I invite whoever Maria also trusts.' \flushfill{\pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat-intro}
+
+\end{frame}
+
+%
+
+\begin{frame}{The content of my dissertation}
+
+\begin{itemize}
+  \item headless relatives in three Germanic languages:
+  \begin{itemize}
+    \item Gothic
+    \item Old High German
+    \item Modern German
+  \end{itemize}\pause
+  \item two aspects:
+  \begin{itemize}
+    \item one is stable crosslinguistically
+    \item one differs crosslinguitically
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
 %%
 
-%%The content of my dissertation
+\begin{frame}{The crosslinguistically stable one}
 
-headless relatives in three Germanic languages:
+\ex. \ac{nom} < \ac{acc} < \ac{dat}\pause
+
+\exg. Ich {lade ein} \mybox{\tbf{wem}} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+ I invite\scsub{[acc]} \tsc{rel}.\ac{dat}.\tsc{an} also Maria trusts\scsub{[dat]}.\\
+ `I invite whoever Maria also trusts.' \flushfill{\pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat-rep} \pause
+
+this case scale is not unique to case attraction in headless relatives \pause
+
 \begin{itemize}
-  \item Gothic
-  \item Old High German
-  \item Modern German
+  \item in syntax
+  \begin{itemize}
+    \item agreement
+    \item relativization
+  \end{itemize} \pause
+  \item in morphology
+  \begin{itemize}
+    \item syncretism patterns
+    \item formal containment
+  \end{itemize}
 \end{itemize}
 
-two aspects:
-\begin{itemize}
-  \item one is stable crosslinguistically
-  \item one differs crosslinguitically
-\end{itemize}
+
+\end{frame}
 %%
 
-%%The crosslinguistically stable one
+\begin{frame}{A reflex of morphology in syntax}
 
-\ex. \ac{nom} < \ac{acc} < \ac{dat}
-
-\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- Us visits\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} likes\scsub{[acc]}\\
- `Who visits us likes Maria likes.' \flushfill{\pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc}
-
-this is not something special
-
-in syntax
-\begin{itemize}
-  \item agreement
-  \item relativization
-\end{itemize}
-
-in morphology
-\begin{itemize}
-  \item syncretism patterns
-  \item formal containment
-\end{itemize}
-%%
-
-%%A reflex of morphology in syntax
-\begin{forest} boom
-    [\ac{acc}P,name=accp
-        [\ac{acc},name=acc]
-        [\tsc{nomP},name=nomp
-            [\ac{nom},name=nom]
-            [NP,name=np
-                [...,name=x,
-                roof,baseline
-                ]
-            ]
-        ]
-    ]
-\end{forest}
-
-
-\begin{table}[H]
+\begin{table}[h]
   \center
-	\caption {\ac{acc}P deletes \ac{nom}P}
 		\begin{tabular}[b]{cc}
       \begin{forest} boom
-          [\ac{acc}P,name=accp
-              [\ac{acc},name=acc]
-              [\tsc{nomP},name=nomp,
+      [\tsc{dat}P,name=datp
+          [\tsc{dat},name=dat]
+          [\ac{acc}P,name=accp,
+          tikz={
+          \node[draw,circle,
+          xscale=0.75,yscale=0.95,
+          color=white,
+          fit=(accp)(acc)(x)]{};
+          }
+              [\ac{acc},name=acc],
               tikz={
               \node[draw,circle,
               xscale=0.75,yscale=0.95,
+              color=white,
               fit=(nomp)(nom)(x)]{};
               }
+              [\tsc{nomP},name=nomp
                   [\ac{nom},name=nom]
                   [NP,name=np
                       [...,name=x,
@@ -99,97 +159,227 @@ in morphology
                   ]
               ]
           ]
+      ]
       \end{forest}
-      &
+      &\pause
       \begin{forest} boom
-        [\textcolor{LG}{\tsc{nomP}},name=nomp,
+    [\tsc{acc}P,name=accp
+        [\tsc{acc},name=acc],
         tikz={
         \node[draw,circle,
         xscale=0.75,yscale=0.95,
-        fit=(nomp)(nom)(x)]{};
+        color=white,
+        fit=(accp)(acc)(x)]{};
         }
-            [\textcolor{LG}{\ac{nom}},name=nom,
-            edge=LG]
-            [\textcolor{LG}{NP},name=np,
-            edge=LG
-                [\textcolor{LG}{...},name=x,
-                roof,baseline,edge=LG
+        [{\tsc{nomP}},name=nomp
+            [{\ac{nom}},name=nom]
+            [NP,name=np
+                [...,name=x,
+                roof,baseline
                 ]
             ]
         ]
+    ]
       \end{forest}\\
   \end{tabular}
 \end{table}
+
+
+\end{frame}
+
+
+\begin{frame}{A reflex of morphology in syntax}
+
+  \begin{table}[H]
+    \center
+  	% \caption {\ac{dat}P deletes \ac{acc}P}
+  		\begin{tabular}[b]{c c}
+        \begin{forest} boom
+          [\tsc{datP}
+              [\ac{dat}]
+                [\ac{acc}P,name=accp,
+                tikz={
+                \node[draw,circle,
+                xscale=0.775,yscale=0.975,
+                fit=(accp)(acc)(nom)(x)]{};
+                }
+                  [\ac{acc},name=acc]
+                  [\tsc{nomP},name=nomp
+                      [\ac{nom},name=nom]
+                      [NP,name=np
+                          [...,name=x, roof ,baseline]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}
+        &
+        \begin{forest} boom
+          [\textcolor{LG}{\tsc{accP}},name=accp,
+          tikz={
+          \node[draw,circle,
+          xscale=0.775,yscale=0.975,
+          fit=(accp)(acc)(nom)(x)]{};
+          }
+              [\textcolor{LG}{\ac{acc}},name=acc,edge=LG]
+              [\textcolor{LG}{\tsc{nomP}},name=nomp,edge=LG
+                  [\textcolor{LG}{\ac{nom}},name=nom,edge=LG]
+                  [\textcolor{LG}{NP},name=np,edge=LG
+                      [\textcolor{LG}{...},name=x,
+                      roof, baseline, edge=LG
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest} \\
+    \end{tabular}
+  \end{table}
+
+\end{frame}
+
 %%
 
+\begin{frame}{The crosslinguistically differing one}
 
-%%The crosslinguistically differing one
+\begin{itemize}
+  \item \tbf{internal case} refers to the case associated with the relative pronoun internal to the relative clause
+  \item \tbf{external case} refers to the case associated with the missing head in the main clause, which is external to the relative clause
+\end{itemize}
 
-internal and external
+\pause
 
-\begin{table}[H]
+\begin{table}[h]
 	\center
-	\caption {Variation}
 		\begin{tabular}{ccc}
 		\toprule
 		 					      & \ac{int}>\ac{ext}		& \ac{ext}>\ac{int}	\\
 								      \cmidrule{2-3}
-		Modern German 	& ✔			 							&	*									\\
-		Old High German	& *										&	✔									\\
-		Gothic		      &	✔										&	✔									\\
+		Modern German 	& yes			 						&	no								\\
+		Old High German	& no									&	yes								\\
+		Gothic		      &	yes									&	yes								\\
 		\bottomrule
 		\end{tabular}
 \end{table}
 
+\end{frame}
+
 %%
 
-%%Gothic: both directions
-\exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
-\ac{rel}.\ac{acc}.\ac{m}.\ac{sg} -\ac{comp} love\scsub{[acc]} sick is\scsub{[nom]}\\
-`the one whom you love is sick' \flushfill{Gothic, \ac{john} 11:3, adapted from \pgcitealt{harbert1978}{342}}\label{ex:gothic-acc-nom}
+\begin{frame}{Gothic: both directions}
 
-\exg. jah þo \tbf{-ei} \tbf{ist} \tbf{us} \tbf{Laudeikaion} jus ussiggwaid\\
-and \ac{rel}.\ac{acc}.\ac{n}.\ac{sg} -\ac{comp} is\scsub{[nom]} from Laodicea you read\scsub{[acc]}\\
-`and read that which is from Laodicea' \flushfill{Gothic, \ac{col} 4:16, adapted from \pgcitealt{harbert1978}{357}}\label{ex:gothic-nom-acc}
+\exg. hva nu wileiþ ei taujau \mybox{þamm} \tbf{-ei} \tbf{qiþiþ} \tbf{þiudan} \tbf{Iudaie}?\\
+ what now want that do\scsub{[dat]} \ac{rel}.\ac{dat}.\ac{m}.\ac{sg} -\ac{comp} say\scsub{[acc]} king {of Jews}\\
+ `what now do you wish that I do to (him) whom you call King of the Jews?' \flushfill{Gothic, \ac{mark} 15:12, adapted from \pgcitealt{harbert1978}{339}}\label{ex:gothic-dat-acc-rep}
+
+\exg. ushafjands \tbf{ana} \mybox{\tbf{þamm}} \tbf{-ei} \tbf{lag}\\
+{picking up}\scsub{[acc]} on\scsub{[dat]} \ac{rel}.\ac{dat}.\ac{n}.\ac{sg} -\ac{comp} lay\\
+`picking up (that) on which he lay' \flushfill{Gothic, \ac{luke} 5:25, adapted from \pgcitealt{harbert1978}{343}}\label{ex:gothic-acc-dat-rep}
+
+\end{frame}
+
 %%
 
-%%Modern German: only internal
-\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
- I invite\scsub{[acc]} \tsc{rel}.\ac{acc}.\tsc{an} me nice is\scsub{[nom]}\\
- `I invite who I like.' \flushfill{\pgcitealt{vogel2001}{344}}
+\begin{frame}{Modern German: only internal}
 
-\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- Us visits\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} likes\scsub{[acc]}\\
- `Who visits us likes Maria likes.' \flushfill{\pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc}
+\exg. *Ich vertraue \mybox{wem} \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+ I trust\scsub{[dat]} \tsc{rel}.\ac{dat}.\tsc{an} also Maria likes\scsub{[acc]}.\\
+ `I trust whoever Maria also likes.' \flushfill{\pgcitealt{vogel2001}{345}}
+
+\exg. Ich {lade ein} \mybox{\tbf{wem}} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+ I invite\scsub{[acc]} \tsc{rel}.\ac{dat}.\tsc{an} also Maria trusts\scsub{[dat]}.\\
+ `I invite whoever Maria also trusts.' \flushfill{\pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat}
+
+\end{frame}
+
 %%
 
-%%Old High German: only external
-\exg. ih bibringu fona Juda dhen \tbf{mina} \tbf{berga} \tbf{chisetzit}\\
- I educate\scsub{[acc]} about Juda \tsc{rel}.\ac{acc}.\tsc{m}.\tsc{sg} my mountains {through pull}\scsub{[nom]}\\
- `I educate the one who wanders through my mountains about Judas' \flushfill{\ac{ohg}, \ac{isid} 34:3, \pgcitealt{behaghel1923}{761}}\label{ex:ohg-acc-nom}
-%%
+\begin{frame}{Old High German: only external}
 
+\exg. bistû furira Abrâhame, ouh thên \tbf{man} \tbf{hiar} \tbf{nû} \tbf{zalta}?\\
+ {are you} older\scsub{[dat]} {to Abraham} also \tsc{rel}.\ac{dat}.\tsc{pl} one here now named\scsub{[acc]}\\
+ `are you really older than Abraham and those who have been mentioned here?' \flushfill{\ac{ohg}, \ac{otfrid} III 18:33, \pgcitealt{behaghel1923}{761}}\label{ex:ohg-dat-acc}
 
-%%A reflex of morphology in syntax
-d
-d + ei
-wh
+\end{frame}
 
-but how?
-
-relative pronouns in headed relatives are different animals
 %%
 
 
-%% ohg is derivable from headed relatives
-headed relative
+\begin{frame}{Again a reflex of morphology in syntax?}
+
+  \begin{table}[h]
+  	\center
+  		\begin{tabular}{cccc}
+  		\toprule
+                      & \multicolumn{2}{l}{headless relatives}   & relative pronoun    \\
+  		 					      & \ac{int}>\ac{ext}		& \ac{ext}>\ac{int}	&                      \\
+  								      \cmidrule{2-3}   & \cmidrule{4-4}
+  		Modern German 	& yes			 						&	no								& \tsc{wh}             \\
+  		Old High German	& no									&	yes								& \tsc{d}              \\
+  		Gothic		      &	yes									&	yes								& \tsc{d} + \tsc{comp} \\
+  		\bottomrule
+  		\end{tabular}
+  \end{table}
+
+how?
+
+\end{frame}
+
+%%
+
+
+\begin{frame}{Old High German}
+
+\ex. \ac{acc} instead of \ac{nom}
+\ag. unde ne wolden níet besên den mort den dô was geschên\\
+ and not wanted not see the murder.\ac{acc} that.\ac{acc} there had happened\\
+ `and they didn't want to see the murder that had happened.' \flushfill{MHG, \ac{nib} 1391,14, \pgcitealt{behaghel1923}{756}, after \pgcitealt{pittner1995}{198}}
 
 ellipsis under identity
-%%
+
+\end{frame}
+
+%
+
+\begin{frame}
+
+hoi
 
 
-%%
+  	\begin{forest} boom
+  	[PP
+  			[P
+  					[about, roof]
+  			]
+  			[DP
+  					[D
+  							[some-\tsc{gen}, roof]
+  					]
+  					[YP
+  							[CP
+  									[DP
+  											[NP
+  													[sufferings-\tsc{gen}, roof]
+  											]
+  											[DP
+  													[DP
+  															[which-\tsc{gen}, roof]
+  													]
+  													[t$_{NP}$ ]
+  											]
+  									]
+  									[IP
+  											[happened to her at home, roof]
+  									]
+  							]
+  							[Y
+  									[\sout{sufferings}, roof]
+  							]
+  					]
+  			]
+  	]
+  	\end{forest}
 
+\end{frame}
 
 
 

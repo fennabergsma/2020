@@ -24,9 +24,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Relativization}{23}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{28}{section.2.3}%
+\contentsline {section}{\numberline {2.3}In morphology}{29}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism}{29}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Syncretism}{30}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Formal containment}{31}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
@@ -131,3 +131,5 @@
 \contentsline {section}{\numberline {7.1}Coming back to the genitive}{81}{section.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{83}{table.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{85}{section*.9}%
