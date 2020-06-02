@@ -13,6 +13,8 @@
 
 \usepackage{graphicx}
 
+% \def\bibfont{\tiny}
+
 % \usepackage{fixltx2e}
 
 % Choose how your presentation looks.
@@ -360,13 +362,15 @@ how?
 \begin{itemize}
   \item raising analysis
   \begin{itemize}
-    \item amount interpretation: \tit{Had he continued to be dean, he could not have written the books that he wrote.}
+    \item \tit{Had he continued to be dean, he could not have written the books that he wrote.}
     \item dP₂ moves to specCP and deletes dP₁
+    \item amount interpretation
   \end{itemize} \pause
   \item matching analysis
   \begin{itemize}
-    \item individual interpretation: \tit{The book that John wrote lies on the shelf.}
+    \item \tit{The book that John wrote lies on the shelf.}
     \item dP₁ moves to specFP and deletes dP₂
+    \item individual interpretation
   \end{itemize}
 \end{itemize}
 
@@ -378,8 +382,8 @@ how?
 \begin{frame}{The variation explained in a nutshell}
 
   \begin{itemize}
-    \item the relative pronoun in Old High German is actually the \tbf{external head}
-    \item in Modern German, the relative pronoun \tbf{stays} in the relative clause
+    \item the relative pronoun in Old High German is actually the \tbf{external head} which has deleted the (attracted) relative pronoun
+    \item in Modern German, the relative pronoun in the relative clause deletes an indefinite
     \item Gothic: ?
   \end{itemize}
 
@@ -409,18 +413,18 @@ how?
   			]
 				[DP
             [DP
-                [\textcolor{goethe}{\tit{den}} `the.\tbf{\ac{acc}}.\ac{sg}', roof]
+                [{\tit{den}} `the.\tbf{\ac{acc}}.\ac{sg}', roof]
             ]
             [FP
                 [NP
-                    [murder, roof]
+                    [murder,name=murder-end, roof]
                 ]
                 [FP
                     [F]
                     [YP
                         [CP
                             [DP
-                                [\textcolor{goethe}{\tit{den}} `\ac{rel}.\tbf{\ac{acc}}.\ac{sg}', roof]
+                                [{\tit{den}} `\ac{rel}.\tbf{\ac{acc}}.\ac{sg}', roof]
                             ]
                             [CP
                                 [\sout{murder} there had happened, roof]
@@ -429,7 +433,7 @@ how?
                         [YP
                             [Y]
                             [NP
-                                [\sout{murder}]
+                                [\sout{murder},name=murder-begin]
                             ]
                         ]
                     ]
@@ -437,6 +441,7 @@ how?
             ]
   			]
   	]
+    \draw[->] (murder-begin) to[out=west,in=south] (murder-end);
   	\end{forest}
 
 }
@@ -466,18 +471,18 @@ how?
   			]
 				[DP
             [DP
-                [\textcolor{goethe}{\tit{thên}} `\tsc{d}.\tbf{\ac{dat}}.\tsc{pl}', roof]
+                [{\tit{thên}} `\tsc{d}.\tbf{\ac{dat}}.\tsc{pl}', roof]
             ]
             [FP
                 [NP
-                    [∅, roof]
+                    [∅,name=zero-end, roof]
                 ]
                 [FP
                     [F]
                     [YP
                         [CP
                             [DP
-                                [\sout{\textcolor{goethe}{\tit{thên}} `\ac{rel}.\tbf{\ac{dat}}.\tsc{pl}'}, roof]
+                                [\sout{{\tit{thên}} `\ac{rel}.\tbf{\ac{dat}}.\tsc{pl}'}, roof]
                             ]
                             [CP
                                 [one here now \sout{∅} named, roof]
@@ -486,7 +491,7 @@ how?
                         [YP
                             [Y]
                             [NP
-                                [\sout{∅}]
+                                [\sout{∅},name=zero-begin]
                             ]
                         ]
                     ]
@@ -494,6 +499,7 @@ how?
             ]
   			]
   	]
+    \draw[->] (zero-begin) to[out=west,in=south] (zero-end);
   	\end{forest}
 
 \phantom{x}
@@ -544,7 +550,7 @@ how?
             ]
             [FP
                 [NP
-                    [∅, roof]
+                    [∅,name=zero-end, roof]
                 ]
                 [FP
                     [F]
@@ -586,7 +592,7 @@ how?
                         [YP
                             [Y]
                             [NP
-                                [\sout{∅}]
+                                [\sout{∅},name=zero-begin]
                             ]
                         ]
                     ]
@@ -594,6 +600,7 @@ how?
             ]
   			]
     ]
+    \draw[->] (zero-begin) to[out=west,in=south] (zero-end);
   	\end{forest}
 
 \phantom{x}
@@ -602,7 +609,7 @@ how?
 
 \end{frame}
 
-\begin{frame}{OHG: deletion of a contained constituent}
+\begin{frame}{OHG: without attraction?}
 
 \scriptsize{
 
@@ -643,7 +650,7 @@ how?
             ]
             [FP
                 [NP
-                    [∅, roof]
+                    [∅,name=zero-end, roof]
                 ]
                 [FP
                     [F]
@@ -682,7 +689,7 @@ how?
                         [YP
                             [Y]
                             [NP
-                                [\sout{∅}]
+                                [\sout{∅},name=zero-begin]
                             ]
                         ]
                     ]
@@ -690,6 +697,7 @@ how?
             ]
   			]
     ]
+    \draw[->] (zero-begin) to[out=west,in=south] (zero-end);
   	\end{forest}
 
 \phantom{x}
@@ -700,25 +708,34 @@ how?
 
 \begin{frame}{Summary Old High German}
 
-  only external, no internal
-  derived from headed relative
+\pause
 
+\begin{table}[h]
+  \center
+    \begin{tabular}{cccc}
+    \toprule
+                          & \multicolumn{2}{l}{headless relatives}  & \only<2>{relative pronoun}    \\
+                          & \ac{int}>\ac{ext}		& \ac{ext}>\ac{int}	&                               \\
+                          \cmidrule{2-3}
+    Old High German	& * 					  &	\tsc{int}	  & \tsc{d}                  \\
+    \bottomrule
+    \end{tabular}
+\end{table}
 
-  two options:
-  1 attraction + deletion under identity under c-command
-  2 no attraction + deletion under containment under c-command
+derived from headed relative\pause
+
+\begin{itemize}
+  \item \tbf{attraction} + deletion under \tbf{identity} under c-command\pause
+  \item \tbf{no attraction} + deletion under \tbf{containment} under c-command
+\end{itemize}
+
 
 \end{frame}
 
 
 
 
-\begin{frame}{Modern German: also derived from headed?}
-
-\exg. Ich {lade ein} \mybox{\tbf{wem}} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
- I invite\scsub{[acc]} \ac{rel}.\ac{dat}.\tsc{an} also Maria trusts\scsub{[dat]}.\\
- `I invite whoever Maria also trusts.' \flushfill{Modern German, \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat}
-
+\begin{frame}{Modern German: not derived from headed relative}
 \pause
 
 \exg. Den schilt \mybox{\tbf{den}} \tbf{er} {\tbf{vür} \tbf{bôt}} der wart schiere zeslagen\\
@@ -727,12 +744,20 @@ the.\tsc{acc} shield.\tsc{acc} \tsc{rel}.\tsc{acc}.\tsc{an} he held\scsub{acc}, 
 
 \pause
 
-\centering{
-no, because
+\exg. Ich {lade ein} \mybox{\tbf{wem}} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+ I invite\scsub{[acc]} \ac{rel}.\ac{dat}.\tsc{an} also Maria trusts\scsub{[dat]}.\\
+ `I invite whoever Maria also trusts.' \flushfill{Modern German, \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat}
 
-different pronoun
-different sentence structure
-}
+\pause
+
+no, because:
+
+\begin{itemize}
+  \item different pronoun
+  \item extra pronoun
+  \item different sentence structure
+\end{itemize}
+
 
 \end{frame}
 
@@ -756,7 +781,7 @@ different sentence structure
                     [F]
                     [YP
                         [CP
-                        [RelP
+                        [RelP,name=wem-end
                             [RelP,name=dp1,
                             tikz={
                             \node[label=below left:\tit{w-},
@@ -786,7 +811,7 @@ different sentence structure
                             ]
                         ]
                             [CP
-                                [also Maria trusts \sout{\tit{wem}}, roof]
+                                [also Maria trusts \sout{\tit{wem}},name=wem-begin, roof]
                             ]
                         ]
                         [YP
@@ -822,11 +847,41 @@ different sentence structure
             ]
   			]
     ]
+    \draw[->] (wem-begin) to[out=east,in=south west] (wem-end);
   	\end{forest}
 
 \phantom{x}
 
 }
+
+\end{frame}
+
+
+\begin{frame}{Summary Modern German}
+
+\pause
+
+\begin{table}[h]
+  \center
+    \begin{tabular}{cccc}
+    \toprule
+                          & \multicolumn{2}{l}{headless relatives}  & \only<2>{relative pronoun}    \\
+                          & \ac{int}>\ac{ext}		& \ac{ext}>\ac{int}	&                               \\
+                          \cmidrule{2-3}
+    Modern German	        & \tsc{int} 				  &	*	                & \tsc{wh}                      \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\vspace{2em}
+
+\pause
+
+\begin{itemize}
+  \item deletion under \tbf{containment} under c-command\pause
+\end{itemize}
+
+\ex. Few dogs like Whiskas and \sout{few} cats \sout{like} Alpo.\flushfill{\citealt{johnson2000}}
 
 \end{frame}
 
@@ -973,14 +1028,10 @@ different sentence structure
 
 \appendix
 
-\begin{frame}{References}
+\begin{frame}[allowframebreaks]{References}
 
-	\tiny{
   \newrefcontext[sorting=nyt]
-  \tiny{
-		\printbibliography
-    }
-	}
+	\printbibliography
 
 \end{frame}
 
