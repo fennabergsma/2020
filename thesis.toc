@@ -120,15 +120,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {6}Technical implementation}{77}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Background}{77}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Deletion operation}{77}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Gothic relative pronouns}{78}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Background}{77}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Derivations}{80}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Gothic relative pronouns}{78}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Derivations}{80}{section.6.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Conclusion}{81}{chapter.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Coming back to the genitive}{81}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Diachronic part}{82}{section.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{83}{table.7.1}%
 \defcounter {refsection}{0}\relax 
