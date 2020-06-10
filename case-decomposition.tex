@@ -35,10 +35,17 @@ This is illustrated in Table \ref{tbl:case-decomposed}. Accusative has all the f
     \label{tbl:case-decomposed}
 \end{table}
 
+So, the case scale, repeated in \ref{ex:case-scale-derive}, actually indicates containment. Dative corresponds to \tsc{f1}, \tsc{f2} and \tsc{f3}, accusative corresponds to \tsc{f1} and \tsc{f2}, and nominative corresponds to \tsc{f1}.
+Nominative corresponds to a set of features (namely \tsc{f1}) that is contained in the set of features accusative and dative corresponds to (which is respectively \tsc{f1} and \tsc{f2} vs. \tsc{f1}, \tsc{f2} and \tsc{f3}). Accusative corresponds to a set of features (\tsc{f1} and \tsc{f2}) that is contained in the set of features of dative (\tsc{f1}, \tsc{f2} and \tsc{f3}).
+
+\ex. \ac{nom} < \ac{acc} < \ac{dat}\label{ex:case-scale-derive}
+
 The decomposition in Table \ref{tbl:case-decomposed} forms the basis to derive the case scale effects observed in the previous chapter. The next section shows how case containment and syncretism effects follow naturally. Later in this chapter I show how the decomposition also derives the case competition facts in headless relatives.
 
 
 \section{Deriving syncretism}\label{sec:syncretism}
+
+Start with the observation in terms of the case scale: \ac{nom} < \ac{acc} < \ac{dat}
 
 In this section I show how case syncretism patterns can be derived from the case decomposition in Table \ref{tbl:case-decomposed}. I repeat an example that shows the possible and impossible syncretism patterns in Table \ref{tbl:syncretisms-derive}.
 
@@ -50,7 +57,6 @@ In this section I show how case syncretism patterns can be derived from the case
 \end{table}
 
 The intuition is the following.
-
 
 % If different cases in a paradigm are syncretic, they can be stored as a single form in the lexicon. That is, Dutch only has a single form in its lexicon for \tit{jullie}. This form is carries \tsc{f1}, \tsc{f2} and \tsc{f3} (see Table \ref{tbl:case-decomposed}). In the framework I will be using (Nanosyntax), lexical items apply to feature sets based on containment. \tsc{f1} and \tsc{f2} are contained in the set of \tsc{f1}, \tsc{f2} and \tsc{f3}.
 
@@ -118,8 +124,8 @@ The lexical entry for \tit{tú} `3\tsc{sg}.\tsc{nom}' is given in \ref{ex:faroes
 \begin{forest} boom
   [\ac{nom}P
       [\ac{f}1]
-      [NP
-          [3\tsc{sg}, roof]
+      [3\tsc{sg}P
+          [\phantom{xxx}, roof]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{tú}}; }
@@ -134,8 +140,8 @@ The lexical entry for \tit{teg} `3\tsc{sg}.\tsc{acc}' is given in \ref{ex:faroes
       [\ac{f}2]
       [\ac{nom}P
           [\ac{f}1]
-          [3\ac{sg}
-              [..., roof]
+          [3\ac{sg}P
+              [\phantom{xxx}, roof]
           ]
       ]
   ]
@@ -153,8 +159,8 @@ The lexical entry for \tit{tær} `3\tsc{sg}.\tsc{dat}' is given in \ref{ex:faroe
           [\ac{f}2]
           [\ac{nom}P
               [\ac{f}1]
-              [3\ac{sg}
-                  [..., roof]
+              [3\ac{sg}P
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -168,15 +174,16 @@ Examples of syntactic structures are given in \ref{ex:faroese-tu-spellout} to \r
 The syntactic structure in \ref{ex:faroese-tu-spellout} matches the syntactic structure of the lexical entry in \ref{ex:faroese-tu-lexicon}. Therefore, this syntactic structure is spelled out as \tit{tu}. Throughout this dissertation I circle the part of the structure that corresponds to a particular lexical entry, and I place corresponding the phonology next to it.
 
 \ex. \begin{forest} boom
-[\tsc{nomP},name=nomp,
+[\tsc{nomP},
 tikz={
 \node[label=below:\tit{tú},
 draw,circle,
-fit=(nomp)(nom)(3sg)(np)]{};
+scale=0.8,
+fit to=tree]{};
 }
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{3sg},name=3sg, roof],baseline
+    [\ac{f}1]
+    [\tsc{3sg}P
+        [\phantom{xxx}, roof]
     ]
 ]
 \end{forest}
@@ -185,17 +192,18 @@ fit=(nomp)(nom)(3sg)(np)]{};
 \ref{ex:faroese-teg-spellout} matches the syntactic structure of the lexical entry in \ref{ex:faroese-teg-lexicon}, and it is spelled out as \tit{teg}.
 
 \ex. \begin{forest} boom
-[\tsc{accP},name=accp,
+[\tsc{accP},
 tikz={
 \node[label=below:\tit{teg},
 draw,circle,
-fit=(accp)(acc)(3sg)(np)]{};
+scale=0.825,
+fit to=tree]{};
 }
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{f2}]
+    [\tsc{nom}P
+        [\ac{f}1]
+        [3\tsc{sg}P
+            [\phantom{xxx}, roof]
         ]
     ]
 ]
@@ -205,19 +213,20 @@ fit=(accp)(acc)(3sg)(np)]{};
 \ref{ex:faroese-taer-spellout} matches the syntactic structure of the lexical entry in \ref{ex:faroese-taer-lexicon}, and it is spelled out as \tit{tær}.
 
 \ex. \begin{forest} boom
-[\tsc{datP},name=datp,
+[\tsc{datP},
 tikz={
 \node[label=below:\tit{tær},
 draw,circle,
-fit=(datp)(dat)(3sg)(np)]{};
+scale=0.85,
+fit to=tree]{};
 }
-    [\tsc{dat},name=dat]
-    [\tsc{acc}P,name=accp
-        [\tsc{acc},name=acc]
-        [\tsc{nom}P,name=nomp
-            [\ac{nom},name=nom]
-            [NP,name=np
-                [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{f3}]
+    [\tsc{acc}P
+        [\tsc{f2}]
+        [\tsc{nom}P
+            [\tsc{f1}]
+            [3\tsc{sg}P
+                [\phantom{xxx}, roof]
             ]
         ]
     ]
@@ -242,8 +251,8 @@ The lexicon only contains a single lexical entry, namely \ref{ex:dutch-jullie-le
           [\ac{f}2]
           [\ac{nom}P
               [\ac{f}1]
-              [2\ac{pl}
-                  [..., roof]
+              [2\ac{pl}P
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -255,19 +264,20 @@ The lexicon only contains a single lexical entry, namely \ref{ex:dutch-jullie-le
 The syntactic structure of the dative, given in \ref{ex:dutch-jullie-spellout-dat}, is the least exciting of the three. It is an exact match to the syntactic structure in the lexical entry \ref{ex:dutch-jullie-lexicon}, and therefore, spelled out as \tit{jullie}.
 
 \ex. \begin{forest} boom
-[\tsc{datP},name=datp,
+[\tsc{datP},
 tikz={
 \node[label=below:\tit{jullie},
 draw,circle,
-fit=(datp)(dat)(2pl)(np)]{};
+scale=0.85,
+fit to=tree]{};
 }
-    [\tsc{dat},name=dat]
-    [\tsc{acc}P,name=accp
-        [\tsc{acc},name=acc]
-        [\tsc{nom}P,name=nomp
-            [\ac{nom},name=nom]
-            [NP,name=np
-                [\tsc{2pl},name=2pl, roof],baseline
+    [\tsc{f3}]
+    [\tsc{acc}P
+        [\tsc{f2}]
+        [\tsc{nom}P
+            [\tsc{f1}]
+            [2\tsc{pl}P
+                [\phantom{xxx}, roof]
             ]
         ]
     ]
@@ -279,19 +289,20 @@ The syntactic structure of the accusative second person plural is given in \ref{
 I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-acc}, marking the subpart of the tree that matches the syntactic structure in gray.
 
 \ex. \begin{forest} boom
-  [\tsc{datP},name=datp
-      [\tsc{dat},name=dat]
-      [\tsc{acc}P,name=accp,
+  [\tsc{datP}
+      [\tsc{f3}]
+      [\tsc{acc}P,
       tikz={
-      \node[draw,circle,DG,
+      \node[draw,circle,
       fill=DG,fill opacity=0.2,
-      fit=(accp)(acc)(2pl)(np)]{};
+      scale=0.825,
+      fit to=tree]{};
       }
-          [\tsc{acc},name=acc]
-          [\tsc{nom}P,name=nomp
-              [\ac{nom},name=nom]
-              [NP,name=np
-                  [\tsc{2pl},name=2pl, roof],baseline
+          [\tsc{f2}]
+          [\tsc{nom}P
+              [\tsc{f1}]
+              [2\tsc{pl}P
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -303,17 +314,18 @@ I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-ac
 As a result, the accusative is spelled out as \tit{jullie}, shown in \ref{ex:dutch-jullie-spellout-acc}.
 
 \ex. \begin{forest} boom
-[\tsc{accP},name=accp,
+[\tsc{accP},
 tikz={
 \node[label=below:\tit{jullie},
 draw,circle,
-fit=(accp)(acc)(np)(2pl)]{};
+scale=0.825,
+fit to=tree]{};
 }
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{2pl},name=2pl, roof],baseline
+    [\tsc{acc}]
+    [\tsc{nom}P
+        [\tsc{f1}]
+        [2\tsc{pl}P
+            [\phantom{xxx}, roof]
         ]
     ]
 ]
@@ -326,19 +338,20 @@ The same holds for the nominative second person plural. The syntactic structure 
 I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-nom}, marking the subpart of the tree that matches the syntactic structure in gray.
 
  \ex. \begin{forest} boom
-   [\tsc{datP},name=datp
-       [\tsc{dat},name=dat]
-       [\tsc{acc}P,name=accp
-           [\tsc{acc},name=acc]
-           [\tsc{nom}P,name=nomp,
+   [\tsc{datP}
+       [\tsc{dat}]
+       [\tsc{acc}P
+           [\tsc{acc}]
+           [\tsc{nom}P,
            tikz={
-           \node[draw,circle,DG,
+           \node[draw,circle,
            fill=DG,fill opacity=0.2,
-           fit=(nomp)(nom)(2pl)(np)]{};
+           scale=0.8,
+           fit to=tree]{};
            }
-               [\ac{nom},name=nom]
-               [NP,name=np
-                   [\tsc{2pl},name=2pl, roof],baseline
+               [\tsc{f1}]
+               [2\tsc{pl}P
+                   [\phantom{xxx}, roof]
                ]
            ]
        ]
@@ -351,15 +364,16 @@ As a result, the nominative is spelled out as \tit{jullie}, as shown in \ref{ex:
 
 \ex.
 \begin{forest} boom
-[\tsc{nomP},name=nomp,
+[\tsc{nomP},
 tikz={
 \node[label=below:\tit{jullie},
 draw,circle,
-fit=(nomp)(nom)(2pl)(np)]{};
+scale=0.8,
+fit to=tree]{};
 }
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{2pl},name=2pl, roof],baseline
+    [\tsc{f1}]
+    [2\tsc{pl}P
+        [\phantom{xxx}, roof]
     ]
 ]
 \end{forest}
@@ -391,8 +405,8 @@ The second one is given in \ref{ex:icelandic-okkur-lexicon}. It contains in addi
 \begin{forest} boom
   [\ac{nom}P
       [\ac{f}1]
-      [NP
-          [1\tsc{pl}, roof]
+      [1\tsc{pl}P
+          [\phantom{xxx}, roof]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{við}}; }
@@ -406,8 +420,8 @@ The second one is given in \ref{ex:icelandic-okkur-lexicon}. It contains in addi
           [\ac{f}2]
           [\ac{nom}P
               [\ac{f}1]
-              [1\tsc{pl}
-                  [..., roof]
+              [1\tsc{pl}P
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -419,19 +433,20 @@ The second one is given in \ref{ex:icelandic-okkur-lexicon}. It contains in addi
 The syntactic structure in \ref{ex:icelandic-okkur-spellout-dat} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
 
 \ex. \begin{forest} boom
-[\tsc{datP},name=datp,
+[\tsc{datP},
 tikz={
 \node[label=below:\tit{okkur},
 draw,circle,
-fit=(datp)(dat)(3sg)(np)]{};
+scale=0.85,
+fit to=tree]{};
 }
-    [\tsc{dat},name=dat]
-    [\tsc{acc}P,name=accp
-        [\tsc{acc},name=acc]
-        [\tsc{nom}P,name=nomp
-            [\ac{nom},name=nom]
-            [NP,name=np
-                [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{dat}]
+    [\tsc{acc}P
+        [\tsc{acc}]
+        [\tsc{nom}P
+            [\tsc{f1}]
+            [3\tsc{sg}P
+                [\phantom{xxx}, roof]
             ]
         ]
     ]
@@ -442,17 +457,18 @@ fit=(datp)(dat)(3sg)(np)]{};
 The syntactic structure in \ref{ex:icelandic-okkur-spellout-acc} is contained in the syntactic structure of the lexical entry \ref{ex:icelandic-okkur-lexicon}, and therefore, spelled out as \tit{okkur}.
 
 \ex. \begin{forest} boom
-[\tsc{accP},name=accp,
+[\tsc{accP},
 tikz={
 \node[label=below:\tit{okkur},
 draw,circle,
-fit=(accp)(acc)(3sg)(np)]{};
+scale=0.825,
+fit to=tree]{};
 }
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{acc}]
+    [\tsc{nom}P
+        [\tsc{f1}]
+        [3\tsc{sg}P
+            [\phantom{xxx}, roof]
         ]
     ]
 ]
@@ -464,15 +480,16 @@ The former, \ref{ex:icelandic-vid-lexicon}, has no unused features. The latter, 
 Therefore, \ref{ex:icelandic-okkur-lexicon} wins the competition, and the syntactic structure is spelled out as \tit{við}.
 
 \ex. \begin{forest} boom
-[\tsc{nomP},name=nomp,
+[\tsc{nomP},
 tikz={
 \node[label=below:\tit{við},
 draw,circle,
-fit=(nomp)(nom)(3sg)(np)]{};
+scale=0.8,
+fit to=tree]{};
 }
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{f1}]
+    [3\tsc{sg}P
+        [\phantom{xxx}, roof]
     ]
 ]
 \end{forest}
@@ -491,8 +508,8 @@ The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition 
       [\ac{f}2]
       [\ac{nom}P
           [\ac{f}1]
-          [3\ac{sg}.\tsc{f}
-              [..., roof]
+          [3\ac{sg}.\tsc{f}P
+              [\phantom{xxx}, roof]
           ]
       ]
   ]
@@ -507,8 +524,8 @@ The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition 
           [\ac{f}2]
           [\ac{nom}P
               [\ac{f}1]
-              [3\ac{sg}.\tsc{f}
-                  [..., roof]
+              [3\ac{sg}.\tsc{f}P
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -520,19 +537,20 @@ The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition 
 The syntactic structure in \ref{ex:german-ihr-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:german-ihr-lexicon}, and therefore, spelled out as \tit{ihr}.
 
 \ex. \begin{forest} boom
-[\tsc{datP},name=datp,
+[\tsc{datP},
 tikz={
 \node[label=below:\tit{ihr},
 draw,circle,
-fit=(datp)(dat)(3sg)(np)]{};
+scale=0.85,
+fit to=tree]{};
 }
-    [\tsc{dat},name=dat]
-    [\tsc{acc}P,name=accp
-        [\tsc{acc},name=acc]
-        [\tsc{nom}P,name=nomp
-            [\ac{nom},name=nom]
-            [NP,name=np
-                [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{dat}]
+    [\tsc{acc}P
+        [\tsc{acc}]
+        [\tsc{nom}P
+            [\tsc{f1}]
+            [3\tsc{sg}.\tsc{f}P
+                [\phantom{xxx}, roof]
             ]
         ]
     ]
@@ -545,17 +563,18 @@ The former, \ref{ex:german-sie-lexicon}, has one no unused features. The latter,
 Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
 
 \ex. \begin{forest} boom
-[\tsc{accP},name=accp,
+[\tsc{accP},
 tikz={
 \node[label=below:\tit{sie},
 draw,circle,
-fit=(accp)(acc)(3sg)(np)]{};
+scale=0.825,
+fit to=tree]{};
 }
-    [\tsc{acc},name=acc]
-    [\tsc{nom}P,name=nomp
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{acc}]
+    [\tsc{nom}P
+        [\tsc{f1}]
+        [3\tsc{sg}.\tsc{f}P
+            [\phantom{xxx}, roof]
         ]
     ]
 ]
@@ -566,15 +585,16 @@ The syntactic structure in \ref{ex:german-sie-spellout-nom} is contained in the 
 The former, \ref{ex:german-sie-lexicon}, has one unused feature: \tsc{f}2. The latter, \ref{ex:german-ihr-lexicon}, has two unused features: \tsc{f}2 and \tsc{f}3. Therefore, \ref{ex:german-sie-lexicon} wins the competition, and the syntactic structurer is spelled out as \tit{sie}.
 
 \ex. \begin{forest} boom
-[\tsc{nomP},name=nomp,
+[\tsc{nomP},
 tikz={
 \node[label=below:\tit{sie},
 draw,circle,
-fit=(nomp)(nom)(3sg)(np)]{};
+scale=0.8,
+fit to=tree]{};
 }
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{3sg},name=3sg, roof],baseline
+    [\ac{nom},]
+    [3\tsc{sg}.\tsc{f}P
+        [\phantom{xxx}, roof]
     ]
 ]
 \end{forest}
@@ -585,6 +605,8 @@ This result could never be derived with the lexical entries given in \ref{ex:ger
 
 
 \section{Deriving case containment}
+
+Start with the observation in terms of the case scale: \ac{nom} < \ac{acc} < \ac{dat}
 
 In this section I show how morphological case containment can be derived from the case decomposition in Table \ref{tbl:case-decomposed}. I repeat an example that shows morphological case containment in Table \ref{tbl:cont-khanty} \pgcitep{nikolaeva1999}{16}.
 
@@ -602,9 +624,9 @@ First, I give the lexical entry for the nominative third person singular. It con
 \ex.
 \begin{forest} boom
   [\ac{nom}P
-      [\ac{nom}]
-      [3\ac{sg}
-          [.., roof]
+      [\tsc{f1}]
+      [3\ac{sg}P
+          [\phantom{xxx}, roof]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{luw}}; }
@@ -613,15 +635,16 @@ First, I give the lexical entry for the nominative third person singular. It con
 The syntactic structure in \ref{ex:khanty-luw-spellout} is contained in the syntactic structure of the lexical entry \ref{ex:khanty-luw-spellout}. The nominative is spelled out as \tit{luw}.
 
 \ex. \begin{forest} boom
-[\tsc{nomP},name=nomp,
+[\tsc{nomP},
 tikz={
 \node[label=below:\tit{luw},
 draw,circle,
-fit=(nomp)(nom)(3sg)(np)]{};
+scale=0.8,
+fit to=tree]{};
 }
-    [\ac{nom},name=nom]
-    [NP,name=np
-        [\tsc{3sg},name=3sg, roof],baseline
+    [\tsc{f1}]
+    [\tsc{3sg}P
+        [\phantom{xxx}, roof]
     ]
 ]
 \end{forest}\label{ex:khanty-luw-spellout}
@@ -634,7 +657,7 @@ Accordingly, I give the lexical entry for the accusative marker \tit{-e:l} in \r
 
 \ex. \begin{forest} boom
   [\ac{acc}P
-      [\ac{acc}]
+      [\tsc{f2}]
   ]
   {\draw (.east) node[right]{⇔ \tit{-e:l}}; }
 \end{forest}\label{ex:khanty-el-lexicon}
@@ -644,22 +667,24 @@ So, \tit{luw-e:l} consists of two morphemes that both correspond to their own pi
 Spellout in Nanosyntax only targets constituents. So, it is impossible to let \tsc{accP} spell out as \tit{e:l} while it contains \tsc{nom}P.\footnote{Notice that this would also have given the incorrect order of the morphemes: \tit{e:l-luw} instead of \tit{luw-e:l}.}
 
 \ex. \begin{forest} boom
-[\ac{acc}P,name=accp, s sep=30mm,
+[\ac{acc}P,name=accp, s sep=20mm,
 tikz={
-\node[label={below left:\tit{-e:l}},
-draw,circle,rotate=-45,
+\node[label={below:\tit{-e:l}},
+draw,circle,
+scale=0.8,
 fit=(acc)(accp)]{};
 }
     [\ac{acc},name=acc]
-    [\tsc{nomP},name=nomp,
+    [\tsc{nomP},
     tikz={
     \node[label=below:\tit{luw},
     draw,circle,
-    fit=(nomp)(nom)(3sg)(np)]{};
+    scale=0.8,
+    fit to=tree]{};
     }
-        [\ac{nom},name=nom]
-        [NP,name=np
-            [\tsc{3sg},name=3sg, roof],baseline
+        [\tsc{f1}]
+        [3\tsc{sg}P
+            [\phantom{xxx}, roof]
         ]
     ]
 ]
@@ -677,43 +702,45 @@ For the discussion in this section, only the second type of movement is relevant
 This is exactly the type of movement I described necessary for the Khanty pronoun. The movement is displayed in \ref{ex:khanty-luw-el-movement}. The complement of \tsc{f2}, the \tsc{nom}P, the lower right circled portion in the structure, moves to the specifier of \tsc{acc}P. The strikethrough of the lower \tsc{nom}P indicates that the complement of \tsc{f}2 disappears.
 
 \begin{forest} boom
-[\ac{acc}P,name=accp2
-   [\tsc{nomP},name=nomp
+[\ac{acc}P
+   [\tsc{nomP},name=tgt
        [\tit{luw}, roof]
    ]
-   [\ac{acc}P,name=accp
-        [\ac{acc},name=acc]
-        [\sout{\tsc{nomP}},name=nomp1,
-         tikz={
-         \node[label=below:\tit{luw},
-         draw,circle,
-         fit=(nomp1)(nom1)(3sg1)(np1)]{};
-         }
-       [\ac{nom},name=nom1]
-       [NP,name=np1
-           [\tsc{3sg},name=3sg1, roof],baseline
+   [\ac{acc}P
+        [\tsc{f2}]
+            [\sout{\tsc{nomP}}1,name=src,
+             tikz={
+             \node[label=below:\tit{luw},
+             draw,circle,
+             scale=0.8,
+             fit to=tree]{};
+             }
+           [\ac{nom}1]
+           [3\tsc{sg}P
+               [\phantom{xxx}, roof]
+           ]
        ]
    ]
-   ]
 ]
-\draw[->,dashed] (nomp1) to[out=south west,in=east] (nomp);
+\draw[->,dashed] (src) to[out=south west,in=east] (tgt);
 \end{forest}
 \label{ex:khanty-luw-el-movement}
 
 The result of the movement is given in \ref{ex:khanty-luw-el-spellout}. Now the syntactic structre in \ref{ex:khanty-el-lexicon} matches the syntactic structure, and \tsc{acc}P is spelled out as \tit{e:l}.
 
 \ex. \begin{forest} boom
-[\ac{acc}P,name=accp2
-    [\tsc{nomP},name=nomp
+[\ac{acc}P
+    [\tsc{nomP}
         [\tit{luw}, roof]
     ]
-    [\ac{acc}P,name=accp, s sep=20mm,
+    [\ac{acc}P,
     tikz={
     \node[label={below:\tit{-e:l}},
     draw,circle,
-    fit=(acc)(accp)]{};
+    scale=0.775,
+    fit to=tree]{};
     }
-     [\ac{acc},name=acc]
+     [\tsc{f2}]
     ]
 ]
 \end{forest}
@@ -723,7 +750,7 @@ Just as the accusative, the dative also has its own realization. The lexical ent
 
 \ex. \begin{forest} boom
   [\ac{dat}P
-      [\ac{dat}]
+      [\tsc{f3}]
   ]
   {\draw (.east) node[right]{⇔ \tit{-na}}; }
 \end{forest}
@@ -733,19 +760,20 @@ Again, because the spellout only targets constituents, it cannot be spelled out 
 
 \ex.
 \begin{forest} boom
-[\tsc{datP},name=datp
-    [\ac{dat},name=dat]
-    [\ac{acc}P,name=accp2
-        [\tsc{nomP},name=nomp
+[\tsc{datP}
+    [\tsc{f3}]
+    [\ac{acc}P
+        [\tsc{nomP}
             [\tit{luw}, roof]
         ]
-        [\ac{acc}P,name=accp, s sep=20mm,
+        [\ac{acc}P,
         tikz={
         \node[label={below:\tit{-e:l}},
         draw,circle,
-        fit=(acc)(accp)]{};
+        scale=0.775,
+        fit to=tree]{};
         }
-         [\ac{acc},name=acc]
+         [\tsc{f2}]
         ]
     ]
 ]
@@ -757,7 +785,7 @@ so we are going to do the movement again
 \ex.
 \begin{forest} boom
 [\tsc{datP}
-    [\ac{acc}P,name=accp
+    [\ac{acc}P,name=tgt
         [\tsc{nomP}
             [\tit{luw}, roof]
         ]
@@ -765,23 +793,24 @@ so we are going to do the movement again
             [\tit{-e:l}, roof]
         ]
     ]
-    [\tsc{datP},name=datp
-        [\ac{dat},name=dat]
-        [\sout{\ac{acc}P},name=accp2,
+    [\tsc{datP}
+        [\tsc{f3}]
+        [\sout{\ac{acc}P},name=src,
          tikz={
          \node[draw,circle,
-         fit=(accp2)(luw)(el)]{};
+         scale=0.8,
+         fit to=tree]{};
          }
-            [\tsc{nomP},name=nomp
-                [\tit{luw},name=luw, roof]
+            [\tsc{nomP}
+                [\tit{luw}, roof]
             ]
-            [\ac{acc}P,name=acc
-                [\tit{-e:l},name=el, roof]
+            [\ac{acc}P
+                [\tit{-e:l}, roof]
             ]
         ]
     ]
 ]
-\draw[->,dashed] (accp2) to[out=south west,in=east] (accp);
+\draw[->,dashed] (src) to[out=south west,in=east] (tgt);
 \end{forest}
 \label{ex:khanty-luw-el-na-spellout}
 
@@ -792,21 +821,22 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 \ex.
 \begin{forest} boom
 [\tsc{datP}
-    [\ac{acc}P,name=accp2
-        [\tsc{nomP},name=nomp
+    [\ac{acc}P
+        [\tsc{nomP}
             [\tit{luw}, roof]
         ]
-        [\ac{acc}P,name=accp
+        [\ac{acc}P
             [\tit{-e:l}, roof]
         ]
     ]
-    [\tsc{datP},name=datp, s sep=20mm,
+    [\tsc{datP},
     tikz={
     \node[label={below:\tit{-na}},
     draw,circle,
-    fit=(dat)(datp)]{};
+    scale=0.775,
+    fit to=tree]{};
     }
-        [\ac{dat},name=dat]
+        [\tsc{f3}]
     ]
 ]
 \end{forest}
@@ -818,30 +848,44 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 
 \section{Deriving the case scale in headless relatives}
 
-\ac{nom} < \ac{acc} < \ac{dat} scale.
+Start with the observation in terms of the case scale: \ac{nom} < \ac{acc} < \ac{dat}
+
+In this section I show how case competition in headless relatives can be derived from the case decomposition in Table \ref{tbl:case-decomposed}. I repeat the summary of the data pattern in Gothic in Table \ref{tbl:summary-gothic-deriving}.
+
+\begin{table}[ht]
+  \center
+  \caption {Summary of Gothic matching headless relative data}
+    \input{tables/gothic-summary.tex}
+    \label{tbl:summary-gothic-deriving}
+\end{table}
+
+%make the cells in the table different shades of grey, depending on case competition that's going on.
+%let this correspond to the cells below?
 
 \ex.
 \begin{forest} boom
-  [\tsc{datP},name=datp,
+  [\tsc{datP},
   tikz={
-  \node[draw,circle,LG,
+  \node[draw,circle,
   fill opacity=0.2,
   fill=LG,
-  fit=(datp)(dat)(nom)(x)]{};
+  scale=0.85,
+  fit to=tree]{};
   }
-      [\ac{dat},name=dat]
-        [\ac{acc}P,name=accp,
+      [\tsc{f3}]
+        [\ac{acc}P,
         tikz={
         \node[draw,circle,
         fill opacity=0.2,
         fill=DG,DG,
-        fit=(accp)(acc)(nom)(np)(x)]{};
+        scale=0.825,
+        fit to=tree]{};
         }
-          [\ac{acc},name=acc]
-          [\tsc{nomP},name=nomp
-              [\ac{nom},name=nom]
-              [NP,name=np
-                  [...,name=x, roof]
+          [\tsc{f2}]
+          [\tsc{nomP}
+              [\tsc{f1}]
+              [NP
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -851,26 +895,28 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 
 \ex.
 \begin{forest} boom
-  [\tsc{datP},name=datp,
+  [\tsc{datP},
   tikz={
-  \node[draw,circle,LG,
+  \node[draw,circle,
   fill opacity=0.2,
   fill=LG,
-  fit=(datp)(dat)(nom)(x)]{};
+  scale=0.85,
+  fit to=tree]{};
   }
-      [\ac{dat},name=dat]
-      [\ac{acc}P,name=accp
-          [\ac{acc},name=acc]
-          [\tsc{nomP},name=nomp,
+      [\tsc{f3}]
+      [\ac{acc}P
+          [\tsc{f2}]
+          [\tsc{nomP},
           tikz={
-          \node[draw,circle,DG,
+          \node[draw,circle,
           fill opacity=0.2,
           fill=DG,
-          fit=(nomp)(nom)(np)(x)]{};
+          scale=0.8,
+          fit to=tree]{};
           }
-              [\ac{nom},name=nom]
-              [NP,name=np
-                  [...,name=x, roof]
+              [\tsc{f1}]
+              [NP
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -881,24 +927,26 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 
 \ex.
 \begin{forest} boom
-      [\ac{acc}P,name=accp,
+      [\ac{acc}P,
       tikz={
       \node[draw,circle,
       fill opacity=0.2,
       fill=LG,LG,
-      fit=(accp)(acc)(nom)(x)]{};
+      scale=0.825,
+      fit to=tree]{};
       }
-          [\ac{acc},name=acc]
-          [\tsc{nomP},name=nomp,
+          [\tsc{f2}]
+          [\tsc{nomP},
           tikz={
-          \node[draw,circle,DG,
+          \node[draw,circle,
           fill opacity=0.2,
           fill=DG,
-          fit=(nomp)(nom)(x)]{};
+          scale=0.8,
+          fit to=tree]{};
           }
-              [\ac{nom},name=nom]
-              [NP,name=np
-                  [...,name=x, roof]
+              [\tsc{f1}]
+              [NP
+                  [\phantom{xxx}, roof]
               ]
           ]
       ]
@@ -907,7 +955,7 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 
 
 
-\subsection{Syntax}
+so one can delete the other
 
 \begin{table}[H]
   \center
@@ -915,17 +963,18 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 		\begin{tabular}[b]{c c}
       \begin{forest} boom
         [\tsc{datP}
-            [\ac{dat}]
-              [\ac{acc}P,name=accp,
+            [\tsc{f3}]
+              [\ac{acc}P,
               tikz={
               \node[draw,circle,
-              fit=(accp)(acc)(nom)(x)]{};
+              scale=0.825,
+              fit to=tree]{};
               }
-                [\ac{acc},name=acc]
-                [\tsc{nomP},name=nomp
-                    [\ac{nom},name=nom]
-                    [NP,name=np
-                        [...,name=x, roof ,baseline]
+                [\tsc{f2}]
+                [\tsc{nomP}
+                    [\tsc{f1}]
+                    [NP
+                        [\phantom{xxx}, roof, baseline]
                     ]
                 ]
             ]
@@ -933,16 +982,17 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
       \end{forest}
       &
       \begin{forest} boom
-        [\textcolor{LG}{\tsc{accP}},name=accp,
+        [\textcolor{LG}{\tsc{accP}},
         tikz={
         \node[draw,circle,
-        fit=(accp)(acc)(nom)(x)]{};
+        scale=0.825,
+        fit to=tree]{};
         }
-            [\textcolor{LG}{\ac{acc}},name=acc,edge=LG]
-            [\textcolor{LG}{\tsc{nomP}},name=nomp,edge=LG
-                [\textcolor{LG}{\ac{nom}},name=nom,edge=LG]
-                [\textcolor{LG}{NP},name=np,edge=LG
-                    [\textcolor{LG}{...},name=x,
+            [\textcolor{LG}{\ac{acc}},edge=LG]
+            [\textcolor{LG}{\tsc{nomP}},edge=LG
+                [\textcolor{LG}{\ac{nom}},edge=LG]
+                [\textcolor{LG}{NP},edge=LG
+                    [\textcolor{LG}{\phantom{xxx}},
                     roof, baseline, edge=LG
                     ]
                 ]
@@ -958,17 +1008,18 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 		\begin{tabular}[b]{cc}
       \begin{forest} boom
         [\tsc{datP}
-            [\ac{dat}]
-              [\ac{acc}P,name=accp
-                [\ac{acc},name=acc]
-                [\tsc{nomP},name=nomp,
+            [\tsc{f3}]
+              [\ac{acc}P
+                [\tsc{f2}]
+                [\tsc{nomP},
                 tikz={
                 \node[draw,circle,
-                fit=(nomp)(nom)(x)]{};
+                scale=0.8,
+                fit to=tree]{};
                 }
-                    [\ac{nom},name=nom]
-                    [NP,name=np
-                        [...,name=x, roof, baseline]
+                    [\tsc{f1}]
+                    [NP
+                        [\phantom{xxx}, roof, baseline]
                     ]
                 ]
             ]
@@ -976,15 +1027,16 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
       \end{forest}
       &
       \begin{forest} boom
-        [\textcolor{LG}{\tsc{nomP}},name=nomp,
+        [\textcolor{LG}{\tsc{nomP}},
         tikz={
         \node[draw,circle,
-        fit=(nomp)(nom)(x)]{};
+        scale=0.8,
+        fit to=tree]{};
         }
-            [\textcolor{LG}{\ac{nom}},name=nom,edge=LG]
-            [\textcolor{LG}{NP},name=np,baseline,edge=LG
-                [\textcolor{LG}{...},name=x,
-                roof,baseline,edge=LG
+            [\textcolor{LG}{\ac{nom}},edge=LG]
+            [\textcolor{LG}{NP},baseline,edge=LG
+                [\textcolor{LG}{\phantom{xxx}},
+                roof, baseline, edge=LG
                 ]
             ]
         ]
@@ -997,38 +1049,42 @@ Instead, the whole complement needs to be moved out of the \tsc{dat}P. Now the l
 	\caption {\ac{acc}P deletes \ac{nom}P}
 		\begin{tabular}[b]{cc}
       \begin{forest} boom
-          [\ac{acc}P,name=accp
-              [\ac{acc},name=acc]
-              [\tsc{nomP},name=nomp,
+          [\ac{acc}P
+              [\tsc{f2}]
+              [\tsc{nomP},
               tikz={
               \node[draw,circle,
-              fit=(nomp)(nom)(x)]{};
+              scale=0.8,
+              fit to=tree]{};
               }
-                  [\ac{nom},name=nom]
-                  [NP,name=np
-                      [...,name=x,
-                      roof,baseline
-                      ]
+                  [\tsc{f1}]
+                  [NP
+                      [\phantom{xxx}, roof, baseline]
                   ]
               ]
           ]
       \end{forest}
       &
       \begin{forest} boom
-        [\textcolor{LG}{\tsc{nomP}},name=nomp,
+        [\textcolor{LG}{\tsc{nomP}},
         tikz={
         \node[draw,circle,
-        fit=(nomp)(nom)(x)]{};
+        scale=0.8,
+        fit to=tree]{};
         }
-            [\textcolor{LG}{\ac{nom}},name=nom,
+            [\textcolor{LG}{\ac{nom}},
             edge=LG]
-            [\textcolor{LG}{NP},name=np,
+            [\textcolor{LG}{NP},
             edge=LG
-                [\textcolor{LG}{...},name=x,
-                roof,baseline,edge=LG
+                [\textcolor{LG}{\phantom{xxx}},
+                roof, baseline, edge=LG
                 ]
             ]
         ]
       \end{forest}\\
   \end{tabular}
 \end{table}
+
+\section{Summary}
+
+Case can be decomposed as cumulatively. Then in a nanosyntax fashion: each feature is a syntactic head. This can derive syncretism facts and formal containment fact. Also: case scale in headless relatives: a case more to the right on the scale contains the case more to the left on the scale, and it can be licensed in that way. The question: is it deleted or was it there never to begin with will be addressed later.
