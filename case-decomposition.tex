@@ -293,7 +293,7 @@ I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-ac
       [\tsc{f3}]
       [\tsc{acc}P,
       tikz={
-      \node[draw,circle,
+      \node[draw,circle,transparent,
       fill=DG,fill opacity=0.2,
       scale=0.825,
       fit to=tree]{};
@@ -321,7 +321,7 @@ draw,circle,
 scale=0.825,
 fit to=tree]{};
 }
-    [\tsc{acc}]
+    [\tsc{f2}]
     [\tsc{nom}P
         [\tsc{f1}]
         [2\tsc{pl}P
@@ -339,12 +339,12 @@ I repeated the lexical entry for \tit{jullie} in \ref{ex:dutch-jullie-lexicon-no
 
  \ex. \begin{forest} boom
    [\tsc{datP}
-       [\tsc{dat}]
+       [\tsc{f3}]
        [\tsc{acc}P
-           [\tsc{acc}]
+           [\tsc{f2}]
            [\tsc{nom}P,
            tikz={
-           \node[draw,circle,
+           \node[draw,circle,transparent,
            fill=DG,fill opacity=0.2,
            scale=0.8,
            fit to=tree]{};
@@ -440,9 +440,9 @@ draw,circle,
 scale=0.85,
 fit to=tree]{};
 }
-    [\tsc{dat}]
+    [\tsc{f3}]
     [\tsc{acc}P
-        [\tsc{acc}]
+        [\tsc{f2}]
         [\tsc{nom}P
             [\tsc{f1}]
             [3\tsc{sg}P
@@ -464,7 +464,7 @@ draw,circle,
 scale=0.825,
 fit to=tree]{};
 }
-    [\tsc{acc}]
+    [\tsc{f2}]
     [\tsc{nom}P
         [\tsc{f1}]
         [3\tsc{sg}P
@@ -544,9 +544,9 @@ draw,circle,
 scale=0.85,
 fit to=tree]{};
 }
-    [\tsc{dat}]
+    [\tsc{f3}]
     [\tsc{acc}P
-        [\tsc{acc}]
+        [\tsc{f2}]
         [\tsc{nom}P
             [\tsc{f1}]
             [3\tsc{sg}.\tsc{f}P
@@ -570,7 +570,7 @@ draw,circle,
 scale=0.825,
 fit to=tree]{};
 }
-    [\tsc{acc}]
+    [\tsc{f2}]
     [\tsc{nom}P
         [\tsc{f1}]
         [3\tsc{sg}.\tsc{f}P
@@ -592,7 +592,7 @@ draw,circle,
 scale=0.8,
 fit to=tree]{};
 }
-    [\ac{nom},]
+    [\tsc{f1}]
     [3\tsc{sg}.\tsc{f}P
         [\phantom{xxx}, roof]
     ]
@@ -669,12 +669,11 @@ Spellout in Nanosyntax only targets constituents. So, it is impossible to let \t
 \ex. \begin{forest} boom
 [\ac{acc}P,name=accp, s sep=20mm,
 tikz={
-\node[label={below:\tit{-e:l}},
-draw,circle,
-scale=0.8,
-fit=(acc)(accp)]{};
+\node[draw,ellipse,rotate=45,yscale=0.4,
+fit=(acc)(accp),
+label={below left:\tit{-e:l}}]{};
 }
-    [\ac{acc},name=acc]
+    [\tsc{f2},name=acc]
     [\tsc{nomP},
     tikz={
     \node[label=below:\tit{luw},
@@ -708,14 +707,14 @@ This is exactly the type of movement I described necessary for the Khanty pronou
    ]
    [\ac{acc}P
         [\tsc{f2}]
-            [\sout{\tsc{nomP}}1,name=src,
+            [\sout{\tsc{nomP}},name=src,
              tikz={
              \node[label=below:\tit{luw},
              draw,circle,
              scale=0.8,
              fit to=tree]{};
              }
-           [\ac{nom}1]
+           [\tsc{f1}]
            [3\tsc{sg}P
                [\phantom{xxx}, roof]
            ]
@@ -852,10 +851,37 @@ Start with the observation in terms of the case scale: \ac{nom} < \ac{acc} < \ac
 
 In this section I show how case competition in headless relatives can be derived from the case decomposition in Table \ref{tbl:case-decomposed}. I repeat the summary of the data pattern in Gothic in Table \ref{tbl:summary-gothic-deriving}.
 
+
+
+
+
 \begin{table}[ht]
   \center
   \caption {Summary of Gothic matching headless relative data}
-    \input{tables/gothic-summary.tex}
+  \begin{tabular}{c|c|c|c}
+    \toprule
+        \textsubscript{\ac{int}} \textsuperscript{\ac{ext}}
+          & [\ac{nom}]
+          & [\ac{acc}]
+          & [\ac{dat}]
+          \\ \cmidrule{1-4}
+      [\ac{nom}]
+          &
+          & \ac{acc}
+          & \cellcolor{LG}\ac{dat}
+          \\ \cmidrule{1-4}
+      [\ac{acc}]
+          & \ac{acc}
+          &
+          & \cellcolor{DG}\ac{dat}
+          \\ \cmidrule{1-4}
+      [\ac{dat}]
+          & \cellcolor{LG}\ac{dat}
+          & \cellcolor{DG}\ac{dat}
+          &
+          \\
+    \bottomrule
+  \end{tabular}
     \label{tbl:summary-gothic-deriving}
 \end{table}
 
@@ -864,20 +890,12 @@ In this section I show how case competition in headless relatives can be derived
 
 \ex.
 \begin{forest} boom
-  [\tsc{datP},
-  tikz={
-  \node[draw,circle,
-  fill opacity=0.2,
-  fill=LG,
-  scale=0.85,
-  fit to=tree]{};
-  }
+  [\tsc{datP}
       [\tsc{f3}]
         [\ac{acc}P,
         tikz={
-        \node[draw,circle,
-        fill opacity=0.2,
-        fill=DG,DG,
+        \node[draw,circle,transparent,
+        fill=DG,fill opacity=0.2,
         scale=0.825,
         fit to=tree]{};
         }
@@ -895,22 +913,14 @@ In this section I show how case competition in headless relatives can be derived
 
 \ex.
 \begin{forest} boom
-  [\tsc{datP},
-  tikz={
-  \node[draw,circle,
-  fill opacity=0.2,
-  fill=LG,
-  scale=0.85,
-  fit to=tree]{};
-  }
+  [\tsc{datP}
       [\tsc{f3}]
       [\ac{acc}P
           [\tsc{f2}]
           [\tsc{nomP},
           tikz={
-          \node[draw,circle,
-          fill opacity=0.2,
-          fill=DG,
+          \node[draw,circle,transparent,
+          fill=DG,fill opacity=0.2,
           scale=0.8,
           fit to=tree]{};
           }
@@ -927,20 +937,12 @@ In this section I show how case competition in headless relatives can be derived
 
 \ex.
 \begin{forest} boom
-      [\ac{acc}P,
-      tikz={
-      \node[draw,circle,
-      fill opacity=0.2,
-      fill=LG,LG,
-      scale=0.825,
-      fit to=tree]{};
-      }
+      [\ac{acc}P
           [\tsc{f2}]
           [\tsc{nomP},
           tikz={
-          \node[draw,circle,
-          fill opacity=0.2,
-          fill=DG,
+          \node[draw,circle,transparent,
+          fill=DG,fill opacity=0.2,
           scale=0.8,
           fit to=tree]{};
           }
