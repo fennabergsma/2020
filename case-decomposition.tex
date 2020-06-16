@@ -416,7 +416,7 @@ fit to=tree]{};
 A question arises at this point. Why are the accusative and nominative in Faroese not spelled out by the lexical entry for the dative (and why is the nominative not spelled out by the lexical entry for the accusative)? These syntactic structures are namely contained in the lexical entry for the dative (and the accusative).
 The reason for that comes from how competition between lexical entries is regulated in Nanosyntax. When two lexical entries compete, the best fit wins. The best fit is the lexical entry with the least unused features. This is formalized as in \ref{ex:elsewhere-condition}.
 
-\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2020a}):\\
+\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
 When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
 \label{ex:elsewhere-condition}
 
@@ -568,7 +568,7 @@ The second one is given in \ref{ex:german-ihr-lexicon}. It contains in addition 
 \label{ex:german-ihr-lexicon}
 
 The syntactic structure for the dative is given in \ref{ex:german-ihr-spellout}. It is contained in the syntactic structure of the lexical entry \ref{ex:german-ihr-lexicon}, and therefore, spelled out as \tit{ihr}.
-The lexical entry in \ref{ex:icelandic-sie-lexicon} is not considered, because it does not contain \tsc{f3}.
+The lexical entry in \ref{ex:german-sie-lexicon} is not considered, because it does not contain \tsc{f3}.
 
 \ex. \begin{forest} boom
 [\tsc{datP},
@@ -782,7 +782,7 @@ The result of the movement is given in \ref{ex:khanty-luw-el-spellout}. The synt
 \end{forest}
 \label{ex:khanty-luw-el-spellout}
 
-Just as Khanty has a morpheme that shows up in the accusative, it also has a morpheme that shows up in the dative. This morpheme \tit{-na} combines with the phonological form for the accusative, which leads to the lexical entry given in \ref{ex:khanty-na-lexion}.
+Just as Khanty has an additional morpheme that shows up in the accusative, it also has a morpheme that shows up in the dative. This morpheme \tit{-na} combines with the phonological form for the accusative, which leads to the lexical entry given in \ref{ex:khanty-na-lexicon}.
 
 \ex. \begin{forest} boom
   [\ac{dat}P
@@ -790,31 +790,30 @@ Just as Khanty has a morpheme that shows up in the accusative, it also has a mor
   ]
   {\draw (.east) node[right]{⇔ \tit{-na}}; }
 \end{forest}
-\label{ex:khanty-na-lexion}
+\label{ex:khanty-na-lexicon}
 
 Again, because spellout only targets constituents, \tsc{f}3 cannot be spelled out right after it has been merged, as shown in \ref{ex:khanty-na-luw-el-spellout}.
 
 \ex.
 \begin{forest} boom
-[\tsc{datP}
-    [\tsc{f3}]
+[\tsc{datP},name=datp, s sep=20mm,
+tikz={
+\node[draw,ellipse,rotate=45,yscale=0.4,
+fit=(dat)(datp),
+label={below left:\tit{-na}}]{};
+}
+    [\tsc{f3},name=dat]
     [\ac{acc}P
         [\tsc{nomP}
             [\tit{luw}, roof]
         ]
-        [\ac{acc}P,
-        tikz={
-        \node[label={below:\tit{-e:l}},
-        draw,circle,
-        scale=0.775,
-        fit to=tree]{};
-        }
-         [\tsc{f2}]
+        [\ac{acc}P
+            [\tit{-e:l}, roof]
         ]
     ]
 ]
 \end{forest}
-\label{ex:khanty-luw-na-el-movement}
+\label{ex:khanty-na-luw-el-spellout}
 
 The same movement has to take place, which is shown in \ref{ex:khanty-luw-el-na-movement}. The complement of \tsc{f3}, the \tsc{acc}P, the lower right circled portion in the structure, moves to the specifier of \tsc{dat}P. In its landing position the internal structure of the \tsc{acc}P is no longer shown (taking away the necessity for the circle), and its phonological form is places under the triangle. The strikethrough of the lower \tsc{acc}P indicates that the complement of \tsc{f}3 disappears.
 
@@ -882,10 +881,9 @@ To summarize, xxxx
 
 \section{Deriving the case scale in headless relatives}
 
-Start with the observation in terms of the case scale: \ac{nom} < \ac{acc} < \ac{dat}
+In headless relatives, the internal case and the external case compete to surface on the relative pronoun. The two competing cases adhere to the case scale \tsc{nom} < \tsc{acc} < \tsc{dat}, in which cases more to the right always win over cases more to the left. In this section I show how case competition in headless relatives can be derived from the case decomposition in Table \ref{tbl:case-decomposed}.
 
-In this section I show how case competition in headless relatives can be derived from the case decomposition in Table \ref{tbl:case-decomposed}. I repeat the summary of the data pattern in Gothic in Table \ref{tbl:summary-gothic-deriving}.
-
+I repeat the summary of the data pattern for Gothic in Table \ref{tbl:summary-gothic-deriving}. I gave the cells different shadings depending on which cases compete. The dark gray cells are the ones in which dative and the accusative compete, and the dative wins. The light gray cells are the ones in which the dative and the nominative compete, and the dative again wins. The uncolored cells are the ones in which the accusative and the nominative compete, and the accusative wins.
 
 \begin{table}[ht]
   \center
@@ -917,9 +915,9 @@ In this section I show how case competition in headless relatives can be derived
     \label{tbl:summary-gothic-deriving}
 \end{table}
 
-So, dark gray is dative against accusative, and dative always wins. Dative actually contains accusative.
+The intuition is the following. The headless relatives reflect the cumulative feature decomposition given in Table \ref{tbl:case-decomposed}. A case wins the competition if it contains all features the other case has. So, the dative contains all features that the accusative has, so the dative surfaces. Similarly, the dative contains all features the nominative has, and again the dative surfaces. The same holds for the last pair: the accusative contains all features the nominative has, so the accusative surfaces. I illustrate this per case pair.
 
-%let this correspond to the cells below?
+I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronoun, \tsc{f1} and \tsc{f2}.
 
 \ex.
 \begin{forest} boom
@@ -935,62 +933,15 @@ So, dark gray is dative against accusative, and dative always wins. Dative actua
           [\tsc{f2}]
           [\tsc{nomP}
               [\tsc{f1}]
-              [NP
+              [\tsc{rel}
                   [\phantom{xxx}, roof]
               ]
           ]
       ]
   ]
-\end{forest}
+\end{forest}\label{ex:dat-contains-acc}
 
-Light gray is dative against nominative, and dative always wins. Dative actually contains nominative.
-
-\ex.
-\begin{forest} boom
-  [\tsc{datP}
-      [\tsc{f3}]
-      [\ac{acc}P
-          [\tsc{f2}]
-          [\tsc{nomP},
-          tikz={
-          \node[draw,circle,transparent,
-          fill=DG,fill opacity=0.2,
-          scale=0.8,
-          fit to=tree]{};
-          }
-              [\tsc{f1}]
-              [NP
-                  [\phantom{xxx}, roof]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-Colorless is accusative against nominative, and accusative always wins. Accusative actually contains nominative.
-
-\ex.
-\begin{forest} boom
-      [\ac{acc}P
-          [\tsc{f2}]
-          [\tsc{nomP},
-          tikz={
-          \node[draw,circle,transparent,
-          fill=DG,fill opacity=0.2,
-          scale=0.8,
-          fit to=tree]{};
-          }
-              [\tsc{f1}]
-              [NP
-                  [\phantom{xxx}, roof]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-What seems to happen is that the bigger one, that one that contains the other wins. It has the strength to delete the other. Here there is dative against accusative.
+So now, if there is a competition, and both of them are there, the bigger one can delete the smaller one. I am not talking about the exact deletion mechanism here, I will come back to that later.
 
 \begin{table}[H]
   \center
@@ -1008,7 +959,7 @@ What seems to happen is that the bigger one, that one that contains the other wi
                 [\tsc{f2}]
                 [\tsc{nomP}
                     [\tsc{f1}]
-                    [NP
+                    [\tsc{rel}
                         [\phantom{xxx}, roof, baseline]
                     ]
                 ]
@@ -1026,7 +977,7 @@ What seems to happen is that the bigger one, that one that contains the other wi
             [\textcolor{LG}{\ac{acc}},edge=LG]
             [\textcolor{LG}{\tsc{nomP}},edge=LG
                 [\textcolor{LG}{\ac{nom}},edge=LG]
-                [\textcolor{LG}{NP},edge=LG
+                [\textcolor{LG}{\tsc{rel}},edge=LG
                     [\textcolor{LG}{\phantom{xxx}},
                     roof, baseline, edge=LG
                     ]
@@ -1036,6 +987,33 @@ What seems to happen is that the bigger one, that one that contains the other wi
       \end{forest} \\
   \end{tabular}
 \end{table}
+
+
+Light gray is dative against nominative, and dative always wins. Dative actually contains nominative.
+
+I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronoun, \tsc{f1} and \tsc{f2}.
+
+\ex.
+\begin{forest} boom
+  [\tsc{datP}
+      [\tsc{f3}]
+      [\ac{acc}P
+          [\tsc{f2}]
+          [\tsc{nomP},
+          tikz={
+          \node[draw,circle,transparent,
+          fill=DG,fill opacity=0.2,
+          scale=0.8,
+          fit to=tree]{};
+          }
+              [\tsc{f1}]
+              [\tsc{rel}
+                  [\phantom{xxx}, roof]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
 
 This is dative against nominative.
 
@@ -1055,7 +1033,7 @@ This is dative against nominative.
                 fit to=tree]{};
                 }
                     [\tsc{f1}]
-                    [NP
+                    [\tsc{rel}
                         [\phantom{xxx}, roof, baseline]
                     ]
                 ]
@@ -1071,7 +1049,7 @@ This is dative against nominative.
         fit to=tree]{};
         }
             [\textcolor{LG}{\ac{nom}},edge=LG]
-            [\textcolor{LG}{NP},baseline,edge=LG
+            [\textcolor{LG}{\tsc{rel}},baseline,edge=LG
                 [\textcolor{LG}{\phantom{xxx}},
                 roof, baseline, edge=LG
                 ]
@@ -1080,6 +1058,30 @@ This is dative against nominative.
       \end{forest} \\
   \end{tabular}
 \end{table}
+
+Colorless is accusative against nominative, and accusative always wins. Accusative actually contains nominative.
+
+I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronoun, \tsc{f1} and \tsc{f2}.
+
+\ex.
+\begin{forest} boom
+      [\ac{acc}P
+          [\tsc{f2}]
+          [\tsc{nomP},
+          tikz={
+          \node[draw,circle,transparent,
+          fill=DG,fill opacity=0.2,
+          scale=0.8,
+          fit to=tree]{};
+          }
+              [\tsc{f1}]
+              [\tsc{rel}
+                  [\phantom{xxx}, roof]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
 
 And this is accusative against nominative.
 
@@ -1097,7 +1099,7 @@ And this is accusative against nominative.
               fit to=tree]{};
               }
                   [\tsc{f1}]
-                  [NP
+                  [\tsc{rel}
                       [\phantom{xxx}, roof, baseline]
                   ]
               ]
@@ -1113,7 +1115,7 @@ And this is accusative against nominative.
         }
             [\textcolor{LG}{\ac{nom}},
             edge=LG]
-            [\textcolor{LG}{NP},
+            [\textcolor{LG}{\tsc{rel}},
             edge=LG
                 [\textcolor{LG}{\phantom{xxx}},
                 roof, baseline, edge=LG
