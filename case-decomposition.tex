@@ -58,17 +58,7 @@ Case syncretism follows the ordering of the case scale in headless relatives: \a
 
 The syncretism facts follow in a system in which the case is decomposed as in Table \ref{tbl:case-decomposed} and in which lexicalization that relies on containment. That means that a phonological form is not only inserted if a particular feature specification matches, but also when the features form a subset of the particular feature set.
 
-The intuition is the following. Syncretic forms are realized by a single lexical entry from the lexicon. A lexical entry can be applied if it contains all features, as long as there is no more specific one. So, a lexical entry specified for [\tsc{f1}, \tsc{f2}, \tsc{f3}] can also apply to [\tsc{f1}], if there is no other lexical entry. Now, if there is an entry specific for only [\tsc{f1}, \tsc{f2}].
-
-GO TRHOUGH ALL POSSIBLITES?
-
-% If different cases in a paradigm are syncretic, they can be stored as a single form in the lexicon. That is, Dutch only has a single form in its lexicon for \tit{jullie}. This form is carries \tsc{f1}, \tsc{f2} and \tsc{f3} (see Table \ref{tbl:case-decomposed}). In the framework I will be using (Nanosyntax), lexical items apply to feature sets based on containment. \tsc{f1} and \tsc{f2} are contained in the set of \tsc{f1}, \tsc{f2} and \tsc{f3}.
-
-% This last example also illustrates that the laid out system is unable to derive an ABA pattern. The unability of the system to derive such a pattern is a welcome one, since the pattern is unattested cross-linguistically. In an ABA pattern, the nominative and the dative are syncretic, to the exclusion of the accusative. Staying close to the German example, in this hypothetical example, the dative would be \tit{ihr}, the accusative \tit{sie}, and the nominative \tit{ihr} again.
-% This result could never be derived with the lexical entries given in \ref{ex:german-sie-lexicon} and \ref{ex:german-ihr-lexicon}. \tit{Ihr} is inserted for the dative and the cases contained in it (so accusative and nominative), unless a more specific lexical entry is found. \tit{Sie} is the more specific lexical entry that is found from the accusative on. From the accusative on, \tit{sie} will be inserted until a more specific entry is found. If no entry is specified for nominative, \tit{sie} will surface. \tit{Ihr} will not resurface, because the lexical entry for \tit{sie} will remain to be more specific.
-
- % The morphological form of the pronouns mirror the cumulative feature decomposition given in Table \ref{tbl:case-decomposed}. That is, the accusative has the morphology that the nominative has (\tit{luw}) plus something extra (\tit{-e:l}). The dative has the morphology that the accusative has (\tit{luw-e:l}) plus something extra (\tit{luw-e:l}-na). In what follows I make it concrete how syntactic features translate to morphological form.
-
+The intuition is the following. Syncretic forms are realized by a single lexical entry from the lexicon. A lexical entry can be applied if it contains all features, as long as there is no more specific one. This system can generate the patterns ABC, AAA, ABB and AAB, but not ABA.
 
 The proposal in this dissertation is worked out in Nanosyntax. I provide background assumptions on the framework whenever necessary to follow the discussion as I proceed. At this point I discuss the general architecture of Nanosyntax, its lexicon, phrasal spellout and matching between syntax and the lexicon.
 
@@ -119,7 +109,6 @@ This structure leads to the concept of phrasal spellout: not terminals but multi
 Let me illustrate all of the above with the Faroese pronouns from Table \ref{tbl:syncretisms-derive}. I simplify the situation in two respects. First, I do not show the internal complexity of the pronouns, including person and number features. Instead, I give a triangle, indicating that this is a complex syntactic structure. I refer to is as the person-number phase it refers to, so e.g. \tsc{3sg}P. Second, in this simplified representation I consider the Faroese pronouns to be monomorphemic. I ignore the fact that all three pronouns clearly have the stem \tit{t} with a suffix on it.
 
 The lexical entry for \tit{tú} is given in \ref{ex:faroese-tu-lexicon}. The syntactic representation consists of the complex syntactic structure that corresponds to the third person singular pronoun (the \tsc{3sg}P), and \tsc{f}1, making it a \tsc{nom}P. The phonological representation that is linked to the syntactic representation in \tit{tú}. Throughout the dissertation, I use syntactic structures and phonological forms connected by a double arrow (⇔) to refer to a lexical entry.
-
 
 \ex.
 \begin{forest} boom
@@ -638,8 +627,6 @@ This last example also illustrates that the laid out system is unable to derive 
 
 This result could never be derived with the lexical entries given in \ref{ex:german-sie-lexicon} and \ref{ex:german-ihr-lexicon}. \tit{Ihr} is inserted for the dative and the cases contained in it (so accusative and nominative), unless a more specific lexical entry is found. \tit{Sie} is the more specific lexical entry that is found from the accusative on. From the accusative on, \tit{sie} will be inserted until a more specific entry is found. If no entry is specified for nominative, \tit{sie} will surface. \tit{Ihr} will not resurface, because the lexical entry for \tit{sie} will remain to be more specific.
 
-To summarize, xxxx
-
 
 \section{Deriving case containment}
 
@@ -875,9 +862,6 @@ The result of the movement is given in \ref{ex:khanty-luw-el-na-spellout}. The s
 \end{forest}
 \label{ex:khanty-luw-el-na-spellout}
 
-To summarize, xxxx
-
-
 
 \section{Deriving the case scale in headless relatives}
 
@@ -1058,7 +1042,7 @@ Table \ref{tbl:dat-against-nom} shows the situation in which the dative and the 
         ]
       \end{forest} \\
   \end{tabular}
-\end{table}\label{ex:dat-against-nom}
+\end{table}\label{tbl:dat-against-nom}
 
 Finally there is the competition between accusative and nominative, in which accusative wins. The corresponding cells are uncolored in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:acc-contains-nom} I show the syntactic structure of an accusative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1} and \tsc{f2}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronouna and \tsc{f1}.
 
@@ -1125,9 +1109,9 @@ Table \ref{tbl:acc-against-nom} shows the situation in which the accusative and 
   \end{tabular}
 \end{table}\label{tbl:acc-against-nom}
 
-In this section I discussed how the case scale in case competition of headless relative can be derived from a cumulative case decomposition. The idea is that a case wins the competition if it contains all features the other case has. As the dative is featurally the richest (it contains \tsc{f1}, \tsc{f2} and \tsc{3}), it wins over the accusative (which consists of \tsc{f1} and \tsc{f2}) and the nominative (which contains only \tsc{f1}). Finally, the accusative wins over the nominative, because the former is featurally richer than the latter.
+In this section I discussed how the case scale in case competition of headless relative can be derived from a cumulative case decomposition. The idea is that a case wins the competition if it contains all features the other case has. As the dative is the richest in features (it contains \tsc{f1}, \tsc{f2} and \tsc{3}), it wins over the accusative (which consists of \tsc{f1} and \tsc{f2}) and the nominative (which contains only \tsc{f1}). Finally, the accusative wins over the nominative, because the former is richer in features than the latter.
 
 
 \section{Summary}
 
-Case can be decomposed cumulatively. Then in a nanosyntax fashion: each feature is a syntactic head. This can derive syncretism facts and formal containment fact. Also: case scale in headless relatives: a case more to the right on the scale contains the case more to the left on the scale, and it can be licensed in that way. The question: is it deleted or was it there never to begin with will be addressed later.
+...
