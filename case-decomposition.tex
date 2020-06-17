@@ -123,13 +123,13 @@ The lexical entry for \tit{tú} is given in \ref{ex:faroese-tu-lexicon}. The syn
 
 \ex.
 \begin{forest} boom
-  [ [\ac{nom}P
+  [\ac{nom}P
       [\ac{f}1]
       [2\tsc{sg}P
           [\phantom{xxx}, roof]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{tú}}; } ]
+  {\draw (.east) node[right]{⇔ \tit{tú}}; }
 \end{forest}
 \label{ex:faroese-tu-lexicon}
 
@@ -941,7 +941,10 @@ I start with the competition between dative and accusative, in which dative wins
   ]
 \end{forest}\label{ex:dat-contains-acc}
 
-So now, if there is a competition, and both of them are there, the bigger one can delete the smaller one. I am not talking about the exact deletion mechanism here, I will come back to that later.
+Table \ref{tbl:dat-against-acc} shows the situation in which the dative and the accusative compete against each other. The bigger structure deletes the smaller structure: the dative wins.
+\footnote{
+I am not discussing the mechanics within a larger syntactic context here, but only the intuition.
+}
 
 \begin{table}[H]
   \center
@@ -986,12 +989,10 @@ So now, if there is a competition, and both of them are there, the bigger one ca
         ]
       \end{forest} \\
   \end{tabular}
-\end{table}
+\end{table}\label{tbl:dat-against-acc}
 
 
-Light gray is dative against nominative, and dative always wins. Dative actually contains nominative.
-
-I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronoun, \tsc{f1} and \tsc{f2}.
+Next is the competition between dative and nominative, in which dative wins. The corresponding cells are marked light gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-nom} I show the syntactic structure of a dative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is an nominative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronoun and \tsc{f1}.
 
 \ex.
 \begin{forest} boom
@@ -1013,9 +1014,9 @@ I start with the competition between dative and accusative, in which dative wins
           ]
       ]
   ]
-\end{forest}
+\end{forest}\label{ex:dat-contains-nom}
 
-This is dative against nominative.
+Table \ref{tbl:dat-against-nom} shows the situation in which the dative and the nominative compete against each other. The bigger structure deletes the smaller structure: the dative wins.
 
 \begin{table}[H]
   \center
@@ -1057,11 +1058,9 @@ This is dative against nominative.
         ]
       \end{forest} \\
   \end{tabular}
-\end{table}
+\end{table}\label{ex:dat-against-nom}
 
-Colorless is accusative against nominative, and accusative always wins. Accusative actually contains nominative.
-
-I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronoun, \tsc{f1} and \tsc{f2}.
+Finally there is the competition between accusative and nominative, in which accusative wins. The corresponding cells are uncolored in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:acc-contains-nom} I show the syntactic structure of an accusative relative pronoun. It contains the syntactic features for a relative pronoun, \tsc{f1} and \tsc{f2}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the syntactic features for the relative pronouna and \tsc{f1}.
 
 \ex.
 \begin{forest} boom
@@ -1081,9 +1080,9 @@ I start with the competition between dative and accusative, in which dative wins
           ]
       ]
   ]
-\end{forest}
+\end{forest}\label{ex:acc-contains-nom}
 
-And this is accusative against nominative.
+Table \ref{tbl:acc-against-nom} shows the situation in which the accusative and the nominative compete against each other. The bigger structure deletes the smaller structure: the accusative wins.
 
 \begin{table}[H]
   \center
@@ -1124,7 +1123,10 @@ And this is accusative against nominative.
         ]
       \end{forest}\\
   \end{tabular}
-\end{table}
+\end{table}\label{tbl:acc-against-nom}
+
+In this section I discussed how the case scale in case competition of headless relative can be derived from a cumulative case decomposition. The idea is that a case wins the competition if it contains all features the other case has. As the dative is featurally the richest (it contains \tsc{f1}, \tsc{f2} and \tsc{3}), it wins over the accusative (which consists of \tsc{f1} and \tsc{f2}) and the nominative (which contains only \tsc{f1}). Finally, the accusative wins over the nominative, because the former is featurally richer than the latter.
+
 
 \section{Summary}
 
