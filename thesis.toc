@@ -22,15 +22,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Agreement}{17}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Relativization}{23}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Relativization}{24}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}In morphology}{29}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Syncretism}{30}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Formal containment}{31}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Formal containment}{32}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{32}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Summary}{33}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition}{35}{chapter.3}%
 \defcounter {refsection}{0}\relax 

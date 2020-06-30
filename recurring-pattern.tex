@@ -227,9 +227,9 @@ Putting the languages in \posscitet{moravcsik1978} figure gives the following re
      \label{tbl:agr-typo}
  \end{table}
 
-It is often the case that subjects appear in nominative case, and that direct objects appear in accusative. However, this is not always the case. Subjects can be non-nominative and direct objects can be non-accusative. \citet{bobaljik2006} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. \citeauthor{bobaljik2006} gives examples of two types of situations in which grammatical function and morphological case do not match: non-nominative subjects in Icelandic and ergative-absolutive languages. In these situations, case seem to capture the facts for the implicational hierarchy, and grammatical function does not.
+It is often the case that subjects appear in nominative case, and that direct objects appear in accusative. However, this is not always the case. Subjects can be non-nominative and direct objects can be non-accusative. \citet{bobaljik2006} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. \citeauthor{bobaljik2006} gives examples of two types of situations in which grammatical function and morphological case do not match: non-nominative subjects in Icelandic and ergative-absolutive languages. In these situations, case seem to capture the facts for the implicational hierarchy, and grammatical function does not. I go through both situations \citeauthor{bobaljik2006} describes.
 
-Icelandic is a language that has dative subjects. If agreement takes place with the grammatical subject, it is expected that the dative subject agrees with the predicate. This is not what happens, as illustrated in \ref{ex:icelandic-dat-subj}. The dative subject \tit{morgum studentum} `many students' is plural. The sentence is ungrammatical with the predicate \tit{líka} `like' inflecting for plural as well. So, the dative subject does not agree in number with the predicate. In other words, it is not the grammatical subject that shows agreement.
+Icelandic is a language that has dative subjects. It is like German in that it only shows agreement with a single argument. If agreement takes place with the grammatical subject, it is expected that the dative subject agrees with the predicate. This is not what happens, as illustrated in \ref{ex:icelandic-dat-subj}. The dative subject \tit{morgum studentum} `many students' is plural. The sentence is ungrammatical with the predicate \tit{líka} `like' inflecting for plural as well. So, the dative subject does not agree in number with the predicate. In other words, it is not the grammatical subject that shows agreement.
 
 \exg. *Morgum studentum líka verkið.\\
  many students.\ac{dat} like.\ac{pl} job.\ac{nom} \\
@@ -241,7 +241,43 @@ Instead, it is the nominative object that agrees with the verb. This is illustra
 In the.winter were.\ac{pl} the.king.\ac{dat} given slaves.\ac{nom}\\
 `In the winter, the king was given (female) slaves.' \flushfill{\pgcitealt{zaenen1985}{112}}\label{ex:icelandic-nom-obj}
 
-The second type of evidence that \citeauthor{bobaljik2006} gives comes from ergative-absolutive languages. In these languages, absolutive marks the object of a transitive clause and it marks the subject in an intransitive clause.
+The second type of evidence that \citeauthor{bobaljik2006} gives comes from ergative-absolutive languages.
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \node[] at (0,1) {A};
+    \node[] at (1.5,1) {O};
+    \node[] at (0.75,0) {S};
+
+    \draw[rotate around={45:(0.375,0.5)}] (0.375,0.5) ellipse (0.5 and 1);
+  \end{tikzpicture}
+  \caption{}
+  \label{fig:agr-sub-do-io-lang}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \node[] at (0,1) {A};
+    \node[] at (1.5,1) {O};
+    \node[] at (0.75,0) {S};
+
+    \draw[rotate around={135:(0.875,0.5)}] (0.875,0.5) ellipse (0.5 and 1);
+  \end{tikzpicture}
+  \caption{}
+  \label{fig:agr-sub-do-io-lang}
+\end{figure}
+
+In these languages, ergative marks the subject of a transitive clause. Absolutive marks the object of a transitive clause and it marks the subject in an intransitive clause. Now imagine a language that only shows agreement with a single argument.
+If agreement takes place with the grammatical subject, it is expected that the absolutive subject in intrasitive clauses shows agreement and the ergative subject in transitive clauses. This is not what happens,
+
+
+
+
+If agreement takes place with the grammatical subject, it is expected that the dative subject agrees with the predicate.
+
+
 %look at bobaljik's argument there.
 
 
@@ -267,6 +303,7 @@ Reformulating Figure \ref{fig:agr-sub-do-io} in terms of case instead of grammat
   \label{fig:agr-def-dep-dat}
 \end{figure}
 
+This formulation in terms of case rather than grammatical function works as follows for the examples I gave earlier.
 First, Japanese is a language that does not show any agreement, as shown in \ref{ex:japanese-agr}. There is no agreement with the default case (here the nominative), not with the dependent case (here the accusative) and not with the dative case.
 Second, German is a language that shows agreement only with the default case, as shown in \ref{ex:german-agr}. The morpheme \tit{-st} on the predicate agrees with the element in default nominative case \tit{du} `you'. There is no agreement with the dependent accusative case or with the dative case.
 Third, Hungarian is a language that shows agreement with the default and the dependent case, as shown in \ref{ex:hungarian-agr}. The portmanteau morpheme \tit{-om} on the predicates agrees with the element in default nominative case \tit{én} `I' and the element in dependent accusative case \tit{a könyvet} `the book'.
