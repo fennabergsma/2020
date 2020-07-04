@@ -10,7 +10,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Introducing the title}{2}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}The content of this dissertation}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.2}The content of this dissertation}{7}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}The case facts}{9}{part.1}%
 \defcounter {refsection}{0}\relax 
@@ -18,150 +18,150 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}In headless relatives}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}In syntax}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.2}In syntax}{18}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Agreement}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Agreement}{18}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Relativization}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Relativization}{25}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{29}{section.2.3}%
+\contentsline {section}{\numberline {2.3}In morphology}{30}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism}{30}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Syncretism}{31}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Formal containment}{32}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Formal containment}{33}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{33}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Summary}{34}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{35}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Case decomposition}{37}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The basic idea}{36}{section.3.1}%
+\contentsline {section}{\numberline {3.1}The basic idea}{38}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{37}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Deriving syncretism}{39}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deriving case containment}{51}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Deriving case containment}{53}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Deriving the case scale in headless relatives}{56}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Deriving the case scale in headless relatives}{58}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Summary}{61}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Summary}{63}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}Different types of relative pronouns}{63}{part.2}%
+\contentsline {part}{\partnumberline {II}Different types of relative pronouns}{65}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}OHG}{65}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}OHG}{67}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Isidor}{65}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Isidor}{67}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}question mark}{65}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}question mark}{67}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}examples}{65}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}examples}{67}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Otfrid}{66}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Otfrid}{68}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Tatian}{68}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Tatian}{70}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}The variation}{71}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}The variation}{73}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Only internal}{72}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Only internal}{74}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Generalizations}{75}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Generalizations}{77}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Two \textsc {d}-examples}{75}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Two \textsc {d}-examples}{77}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}\textsc {d} in OHG}{75}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}\textsc {d} in OHG}{77}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}\textsc {d} in Gothic}{75}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.2}\textsc {d} in Gothic}{77}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}\textsc {wh} in German}{76}{section.5.4}%
+\contentsline {section}{\numberline {5.4}\textsc {wh} in German}{77}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}\ac {ohg} and \ac {mg} have the same winner}{77}{section.5.5}%
+\contentsline {section}{\numberline {5.5}\ac {ohg} and \ac {mg} have the same winner}{79}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}\ac {ohg}}{77}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.1}\ac {ohg}}{79}{subsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}The different patterns}{77}{section.5.6}%
+\contentsline {section}{\numberline {5.6}The different patterns}{79}{section.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.1}Both: Gothic}{78}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.1}Both: Gothic}{80}{subsection.5.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6.2}Only from external: Old High German}{78}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.2}Only from external: Old High German}{80}{subsection.5.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.2.1}external is grammatical}{78}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}external is grammatical}{80}{subsubsection.5.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.6.2.2}internal is ungrammatical}{79}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}internal is ungrammatical}{81}{subsubsection.5.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Relativization}{81}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}Relativization}{83}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Relativization in general}{81}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Relativization in general}{83}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Shape of relative pronoun}{81}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Shape of relative pronoun}{83}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Gothic}{81}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}Gothic}{83}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1.1}Headless relatives}{81}{subsubsection.6.2.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}Headless relatives}{83}{subsubsection.6.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1.2}Light-headed relatives}{84}{subsubsection.6.2.1.2}%
+\contentsline {subsubsection}{\numberline {6.2.1.2}Light-headed relatives}{86}{subsubsection.6.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Old High German}{84}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}Old High German}{86}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2.1}Headless relatives}{84}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Headless relatives}{86}{subsubsection.6.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.2.2}Light-headed relatives}{85}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}Light-headed relatives}{87}{subsubsection.6.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Modern German}{85}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}Modern German}{87}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.3.1}Headless relatives}{85}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}Headless relatives}{87}{subsubsection.6.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.3.2}Light-headed relatives}{86}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}Light-headed relatives}{88}{subsubsection.6.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Bringing this together}{86}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Bringing this together}{88}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Two points: all or nothing}{86}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Two points: all or nothing}{88}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}No matches work}{86}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.1}No matches work}{88}{subsection.6.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.2}All allow for matching ones (and syncretic ones! whuut)}{86}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.2}All allow for matching ones (and syncretic ones! whuut)}{88}{subsection.6.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Deriving the different languages}{88}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Deriving the different languages}{90}{section.6.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Old High German}{88}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.1}Old High German}{90}{subsection.6.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.2}Modern German}{89}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.2}Modern German}{91}{subsection.6.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.3}Gothic}{89}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.3}Gothic}{91}{subsection.6.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {III}Details}{91}{part.3}%
+\contentsline {part}{\partnumberline {III}Details}{93}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}Technical implementation}{93}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Technical implementation}{95}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Background}{93}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Background}{95}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Gothic vs. Modern German}{94}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Gothic vs. Modern German}{96}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Grafting story}{94}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.1}Grafting story}{96}{subsection.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Deleted head story}{94}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}Deleted head story}{96}{subsection.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Stuff}{95}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Stuff}{97}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Diachronic story}{95}{section.8.1}%
+\contentsline {section}{\numberline {8.1}Diachronic story}{97}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}D also in Modern German}{95}{section.8.2}%
+\contentsline {section}{\numberline {8.2}D also in Modern German}{97}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{95}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{97}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}syncretism}{95}{section.8.4}%
+\contentsline {section}{\numberline {8.4}syncretism}{97}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Polish etc}{95}{section.8.5}%
+\contentsline {section}{\numberline {8.5}Polish etc}{97}{section.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.6}Icelandic, Greek?}{95}{section.8.6}%
+\contentsline {section}{\numberline {8.6}Icelandic, Greek?}{97}{section.8.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {9}Conclusion}{97}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Conclusion}{99}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Coming back to the genitive}{97}{section.9.1}%
+\contentsline {section}{\numberline {9.1}Coming back to the genitive}{99}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Diachronic part}{98}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Diachronic part}{100}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix}{99}{chapter*.8}%
+\contentsline {chapter}{Appendix}{101}{chapter*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Ungrammatical examples against case scale in \ac {mg}}{99}{section*.9}%
+\contentsline {section}{Ungrammatical examples against case scale in \ac {mg}}{101}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{101}{table.9.1}%
+\contentsline {chapter}{Primary texts}{103}{table.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{103}{section*.12}%
+\contentsline {chapter}{Bibliography}{105}{section*.12}%
