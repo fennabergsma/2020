@@ -8,9 +8,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introducing the title}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Introducing the title}{1}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}The content of this dissertation}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.2}The content of this dissertation}{6}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}The case facts}{9}{part.1}%
 \defcounter {refsection}{0}\relax 
@@ -24,13 +24,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Relativization}{25}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{31}{section.2.3}%
+\contentsline {section}{\numberline {2.3}In morphology}{32}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Syncretism}{32}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Formal containment}{33}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{34}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Summary}{35}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {3}Case decomposition}{37}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -44,7 +44,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Summary}{63}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}Different types of relative pronouns}{65}{part.2}%
+\contentsline {part}{\partnumberline {II}``Relative'' pronouns}{65}{part.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {4}OHG}{67}{chapter.4}%
 \defcounter {refsection}{0}\relax 
