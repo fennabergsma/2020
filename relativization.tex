@@ -1,0 +1,81 @@
+% !TEX root = thesis.tex
+
+\chapter{Relativization}\label{ch:relativization}
+
+So, we have seen that relative pronouns are sensitive to the internal case and to the external case. In this chapter we go back to what this means for the `head' in headless relatives. In headless relatives this head is namely missing. Like I said in the introduction, there are several ways of interpreting that.
+
+The first way is to say that the head is really not there. There is only a single element that is part of the relative clause and of the main clause. I call this the single element option. The second way is to say that the head is actually there, but that the head is there (at least in some point in the derivation) but it is phonologically empty. I call this the double element option.
+
+I discuss both these options for Modern German, and I show that they in principle both work. However, with the single element option, there is no way to derive Modern German from languages that behave differently, such as Polish. Therefore, I argue for the double element option.
+
+With this in mind, I argue for a similar analysis for OHG and Gothic. OHG and Gothic also independently show that they can be derived from a double element structure. This additional evidence for the double-headed structure is also exactly the reason why Modern German behave differently from the other two languages with respect to its case facts.
+
+
+
+
+\section{Modern German}
+
+The basic pattern: a bigger internal case can license a smaller external case, not the other way around.
+
+For this pattern a single element analysis seems intuitive, if you assume that case is complex and that syntax works bottom-up. First you built the relative clause, with the big case in there. Then you build the main clause and you let the more complex case in the embedded clause license the main clause predicate.
+
+However, it is very much unclear how the difference between Polish and Modern German can be derived. Therefore I pursue an alternative, which is saying there is actually a second head. This second head surfaces in some languages, like Japanese(?). If we assume this head the be there in German and Polish as well, there is a way to model it.
+
+
+\subsection{Grafting story}
+
+
+
+
+put here trees from my Glossa paper
+
+
+
+hard to exclude Polish
+
+
+
+\subsection{Deleted head story}
+
+argument for this: languages like Polish do not have a morpheme like this that can be deleted.
+so first the morpheme has to be there and then it can be deleted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Background}
+
+\ex. \tbf{Spellout Algorithm:}\\
+Merge F and \label{ex:spellout}
+ \a. Spell out FP.
+ \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+ \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+When a new match is found, it overrides previous spellouts.
+
+\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
+Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+If backtracking also does not help, a specifier is constructed.
+
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\
+If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+\ex. Merge F, Move XP, Merge XP
+
+\phantom{hi}
