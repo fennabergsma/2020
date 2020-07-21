@@ -17,12 +17,92 @@ With this in mind, I argue for a similar analysis for OHG and Gothic. OHG and Go
 
 The basic pattern: a bigger internal case can license a smaller external case, not the other way around.
 
+\subsection{Grafting story}
+
 For this pattern a single element analysis seems intuitive, if you assume that case is complex and that syntax works bottom-up. First you built the relative clause, with the big case in there. Then you build the main clause and you let the more complex case in the embedded clause license the main clause predicate.
+
+Consider the example in \ref{ex:mg-nom-acc-grafting}. Here the internal case is accusative and the external one nominative.
+
+\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
+ `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-grafting}
+
+The relative clause is built, including the accusative relative pronoun. Now the main clause predicate can merge with the nominative that is contained within the accusative.
+
+ \ex.
+ \begin{forest} boom
+	 [,name=src
+			[VP
+			 		[\tit{besucht}, roof]
+			]
+		 	[,no edge
+	       [\ac{acc}P,
+				 tikz={
+				 \node[label=below:\tit{wen},
+				 draw,circle,
+				 scale=0.85,
+				 fit to=tree]{};
+				 }
+	           [\tsc{f2}]
+	           [\tsc{nomP},name=tgt
+	               [\tsc{f1}]
+	               [\tsc{rel}
+	                   [\phantom{xxx}, roof]
+	               ]
+	           ]
+	       ]
+				 [VP
+				 		 [\tit{Maria mag}, roof]
+				 ]
+			]
+	 ]
+	 \draw (src) to[out=south east,in=east] (tgt);
+ \end{forest}\label{ex:acc-nom-grafting}
+
+The other way around does not work. Consider \ref{ex:mg-acc-nom-grafting}. This is an example with nominative as internal case and accusative as external case.
+
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+I.\ac{nom} invite.1\ac{sg}\scsub{[acc]} \tsc{rel}.\ac{acc}.\tsc{an} I.\ac{dat} nice be.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-grafting}
+
+Now the relative clause is built first again, this time only including the nominative case. There is no accusative node to merge with for the external predicate.
+
+\ex.
+\begin{forest} boom
+	 [
+			[\tsc{nomP},
+			tikz={
+			\node[label=below:\tit{wer},
+			draw,circle,
+			scale=0.85,
+			fit to=tree]{};
+			}
+					[\tsc{f1}]
+					[\tsc{rel}
+							[\phantom{xxx}, roof]
+					]
+			]
+			[VP
+					[\tit{mir sympatisch ist}, roof]
+			]
+	 ]
+\end{forest}\label{ex:nom-acc-grafting}
+
+So, this seems to work fine. The assumptions you have to do in order to make this are the following. First, case is complex. Second, you can remerge an embedded node (grafting).
+
+
+
+
+
+
+
+
+
 
 However, it is very much unclear how the difference between Polish and Modern German can be derived. Therefore I pursue an alternative, which is saying there is actually a second head. This second head surfaces in some languages, like Japanese(?). If we assume this head the be there in German and Polish as well, there is a way to model it.
 
 
-\subsection{Grafting story}
+
 
 
 
