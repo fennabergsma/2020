@@ -31,11 +31,11 @@ The relative clause is built, including the accusative relative pronoun. Now the
 
  \ex.
  \begin{forest} boom
-	 [,name=src
+	 [,name=src, s sep=15mm
 			[VP
 			 		[\tit{besucht}, roof]
 			]
-		 	[,no edge
+		 	[,no edge, s sep=20mm
 	       [\ac{acc}P,
 				 tikz={
 				 \node[label=below:\tit{wen},
@@ -56,7 +56,7 @@ The relative clause is built, including the accusative relative pronoun. Now the
 				 ]
 			]
 	 ]
-	 \draw (src) to[out=south east,in=east] (tgt);
+	 \draw (src) to[out=south east,in=north east] (tgt);
  \end{forest}\label{ex:acc-nom-grafting}
 
 The other way around does not work. Consider \ref{ex:mg-acc-nom-grafting}. This is an example with nominative as internal case and accusative as external case.
@@ -65,60 +65,96 @@ The other way around does not work. Consider \ref{ex:mg-acc-nom-grafting}. This 
 I.\ac{nom} invite.1\ac{sg}\scsub{[acc]} \tsc{rel}.\ac{acc}.\tsc{an} I.\ac{dat} nice be.3\ac{sg}\scsub{[nom]}\\
 `I invite who I like.' \flushfill{adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-grafting}
 
-Now the relative clause is built first again, this time only including the nominative case. There is no accusative node to merge with for the external predicate.
+Now the relative clause is built first again, this time only including the nominative case. There is no accusative node to merge with for the external predicate. Instead, the relative pronoun would need to grow to accusative somehow and then the merge could take place. This is the desired result, because the sentence is ungrammatical.
 
 \ex.
 \begin{forest} boom
-	 [
-			[\tsc{nomP},
-			tikz={
-			\node[label=below:\tit{wer},
-			draw,circle,
-			scale=0.85,
-			fit to=tree]{};
-			}
-					[\tsc{f1}]
-					[\tsc{rel}
-							[\phantom{xxx}, roof]
-					]
-			]
-			[VP
-					[\tit{mir sympatisch ist}, roof]
-			]
-	 ]
+  [,name=src, s sep=15mm
+     [VP
+         [\tit{lade ein}, roof]
+     ]
+         [,no edge
+    			[\tsc{nomP},
+    			tikz={
+    			\node[label=below:\tit{wer},
+    			draw,circle,
+    			scale=0.85,
+    			fit to=tree]{};
+    			}
+    					[\tsc{f1}]
+    					[\tsc{rel}
+    							[\phantom{xxx}, roof]
+    					]
+    			]
+    			[VP
+    					[\tit{mir sympatisch ist}, roof]
+    			]
+    	 ]
+    ]
 \end{forest}\label{ex:nom-acc-grafting}
 
-So, this seems to work fine. The assumptions you have to do in order to make this are the following. First, case is complex. Second, you can remerge an embedded node (grafting).
+So, this seems to work fine. The assumptions you have to do in order to make this are the following. First, case is complex. Second, you can remerge an embedded node (grafting). For the first one I have argued in Chapter \ref{ch:decomposition}. The second one could use some additional argumentation. It is a mix between internal remerge (move) and external merge, namely external remerge. Other literature on multidominance and grafting, other phenomena. Problems: linearization, .. But even if fix all these theoretical problems, there is an empirical one.
 
+That is, I want to connect this behavior of Modern German headless relatives to the shape of its relative pronouns. These pronouns are \tsc{wh}-elements. The OHG and Gothic ones are not \tsc{wh}, they are \tsc{d}. Their relative pronouns look different, and so their headless relatives can also behave differently. In the next section I show how it follows that \tsc{d}-morphology gives both directions.
 
-
-
-
-
-
-
-
-
-However, it is very much unclear how the difference between Polish and Modern German can be derived. Therefore I pursue an alternative, which is saying there is actually a second head. This second head surfaces in some languages, like Japanese(?). If we assume this head the be there in German and Polish as well, there is a way to model it.
-
-
-
-
-
-
-
-put here trees from my Glossa paper
-
-
-
-hard to exclude Polish
+Q: can I already make sense of why \tsc{wh}-morphology gives `internal only' as pattern?
 
 
 
 \subsection{Deleted head story}
 
-argument for this: languages like Polish do not have a morpheme like this that can be deleted.
-so first the morpheme has to be there and then it can be deleted
+But if we follow the logic I just sketched, I expect all languages that have \tsc{wh}-pronouns as relative pronouns to allow for letting the internal case win in case competition. This prediction is incorrect. There are languages like Polish, which are so-called `strictly matching'. They always give an ungrammatical result when there is case competition (and not syncretism or two identical cases).
+
+\ex. give Polish examples
+\a.
+\b.
+
+Under the grafting analysis, there is nothing that distinguishes Polish from Modern German, so there is no reason for the Polish example in X to be incorrect. The other one is ungrammatical, just as the German one, but the first one is too, and that is unexpected.
+
+Now I do not want to say that Polish and German differ in that Polish is `strictly matching' and Modern German is `more relaxed', that this is something construction- and language-specific. Instead, I let the distinction in headless relatives follow from something within the language. This something is their light-headed relatives.
+
+\ex. Polish light-headed relative
+
+\ex. German light-headed relative
+\a. das was
+\b. das das
+
+In German a sense of definiteness is added, because of the \tsc{d} in \tit{das}. In Polish that is not the case, because \tit{to} in Polish does not necessarily have definiteness. Evidence for that for Czech comes from Radek. I take that to exist for Polish as well.
+
+So, Polish can involve a second head (the light head) without changing the meaning of the construction. German cannot. Now it is important to note the timing of this `repair' strategy. This has to namely be in the course of the derivation, it cannot be something that is inserted `afterwards'. What I mean with this is that there needs to be an element (which is going to become the light head in Polish but not in German) that is available during the derivation. Depending on what this element looks like, Polish shows the light head.
+
+\ex. Polish
+\a. rel clause with \tsc{acc}
+\b. other element: \tsc{nom}
+\b. t, c
+
+\ex. German
+\a. rel clause with \tsc{acc}
+\b. other element: \tsc{nom}
+\b. w (because d would change the meaning)
+
+So, Polish has an `out', which German does not have.
+
+What is this external element? This is the external head, that actually shows up in some languages: double-headed relative clauses.
+
+
+
+
+
+\tit{as} is deleted because it cannot surface on its own? why not?
+
+what is this deletion to begin with?
+
+Finnish is like German because its light-headed relatives also add some definiteness.
+
+
+
+
+\section{OHG and Gothic}
+
+relative clause more complex: second head like in MG, deletion there
+
+main clause more complex: full double-headed structure, deletion of element in speccp
 
 
 
@@ -129,9 +165,7 @@ so first the morpheme has to be there and then it can be deleted
 
 
 
-
-
-
+\chapter{Step by step derivations}
 
 \section{Background}
 
