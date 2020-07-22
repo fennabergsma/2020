@@ -56,9 +56,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Only internal}{74}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Other languages}{77}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Other languages}{76}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Generalizations}{77}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Generalizations}{76}{section.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Relative pronouns}{77}{section.4.5}%
 \defcounter {refsection}{0}\relax 
@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.2}Deleted head story}{82}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}OHG and Gothic}{83}{section.5.2}%
+\contentsline {section}{\numberline {5.2}OHG and Gothic}{84}{section.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {6}Step by step derivations}{85}{chapter.6}%
 \defcounter {refsection}{0}\relax 
