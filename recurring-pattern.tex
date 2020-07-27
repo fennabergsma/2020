@@ -157,7 +157,7 @@ The hierarchy is schematically represented in Figure \ref{fig:agr-sub-do-io}. It
     \node[] at (0,1.5) {direct object};
     \node[align=center] at (0,0) {indirect\\ object};
   \end{tikzpicture}
-  \caption{Agreement hierarchy (grammatical function) \citep{moravcsik1978}}
+  \caption{Agreement hierarchy}
   \label{fig:agr-sub-do-io}
 \end{figure}
 
@@ -189,7 +189,7 @@ Basque is an example of a language that shows agreement with the subject, the di
  you-\ac{erg} I-\ac{dat} book-\ac{def}.\ac{abs} given \ac{abs}.3\ac{sg} -\ac{aux} -\ac{dat}.1\ac{sg} -\ac{erg}.2\ac{sg}\\
  `You gave me the book.' \flushfill{Bizkaian Basque, adapted from \pgcitealt{arregi2004}{45}}\label{ex:basque-agr}
 
-Putting the languages in \posscitet{moravcsik1978} figure gives the following result.
+Putting the languages in \posscitet{moravcsik1978} schema gives the result as shown in Figure \ref{fig:agr-sub-do-io-lang}.
 
  \begin{figure}[ht]
    \centering
@@ -207,7 +207,7 @@ Putting the languages in \posscitet{moravcsik1978} figure gives the following re
      \node[] at (2,1) {\footnotesize{● Hungarian}};
      \node[] at (1.375,0) {\footnotesize{● Basque}};
    \end{tikzpicture}
-   \caption{Agreement hierarchy with languages \citep{moravcsik1978}}
+   \caption{Agreement hierarchy with languages}
    \label{fig:agr-sub-do-io-lang}
  \end{figure}
 
@@ -235,6 +235,8 @@ Putting the languages in \posscitet{moravcsik1978} figure gives the following re
      \end{tabular}
      \label{tbl:agr-typo}
  \end{table}
+
+So far I have discussed the implicational hierarchy in terms of grammatical function. In what follows, I discuss how it actually should be formalized in terms of the case scale that has also been observed for case competition in headless relatives.
 
 \citet{bobaljik2006} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. In these situations, case seem to capture the facts for the implicational hierarchy, and grammatical function does not. It is often the case that subjects appear in nominative case, and that direct objects appear in accusative. However, this is not always the case. Subjects can be non-nominative and direct objects can be non-accusative. \citeauthor{bobaljik2006} gives examples of two types of situations in which this is the case: non-nominative subjects in Icelandic and ergative-absolutive languages. In these situations, case seem to capture the facts for the implicational hierarchy, and grammatical function does not. I go through both situations \citeauthor{bobaljik2006} describes.
 
@@ -274,17 +276,17 @@ In ergative-absolutive languages, the alignment is different. The subject of an 
     \node[] at (1.5,1) {O};
     \node[] at (0.75,0) {S};
 
-    \draw[rotate around={135:(0.875,0.5)}] (0.875,0.5) ellipse (0.5 and 1);
+    \draw[rotate around={135:(1,0.5)}] (1,0.5) ellipse (0.5 and 1);
   \end{tikzpicture}
   \caption{Ergative-absolutive alignment}
   \label{fig:erg-abs-lang}
 \end{figure}
 
-Note here that nominative-accusative languages use the same case marking for the same grammatical function (nominative for subject accusative for object), but ergative-absolutive languages do not.
+Note here that nominative-accusative languages use the same case marking for the same grammatical function (nominative for subjects, accusative for objects), but ergative-absolutive languages do not (absolutive for objects in transitive clauses or subjects in intransitive clauses, ergative for subjects in transitive clauses).
 
-\citet{bobaljik2006} describes how absolutives and ergatives behave with respect to whether they show agreement. There are languages in which there is agreement with both absolutives and ergatives. Besides that, there are languages in which there is only agreement with absolutives. Crucially, there is no language in which there is only agreement with ergatives. Absolutives are a heterogenous set with respect to grammatical function, i.e. they are subjects of intransitive verbs and objects of transitive verbs. However, with respect to showing agreement absolutives behave the same, and this behaviors is different from ergatives. This indicates that it is morphological case and not grammatical function that is the decisive factor.
+\citet{bobaljik2006} describes how absolutives and ergatives behave with respect to whether they show agreement. There are languages that show agreement with both absolutives and ergatives. There are also languages that show only agreement with absolutives. Crucially, there is no language that shows only agreement with ergatives. Absolutives are a heterogenous set with respect to grammatical function, i.e. they are subjects of intransitive verbs and objects of transitive verbs. However, with respect to showing agreement absolutives behave the same, and this behavior is different from ergatives. This indicates that it is morphological case and not grammatical function that is the decisive factor.
 
-\citeauthor{bobaljik2006} (following \citealt{marantz2000}) combines nominative-accusative and ergative-absolutive languages in the following way: accusative and ergative are dependent cases, and nominative or absolutive are unmarked case. Reformulating Figure \ref{fig:agr-sub-do-io} in terms of case instead of grammatical function gives the schema in Figure \ref{fig:agr-nom-acc-dat}.
+\citeauthor{bobaljik2006} (following \citealt{marantz2000}) combines nominative-accusative and ergative-absolutive languages in the following way: accusative and ergative are dependent cases, and nominative or absolutive are unmarked case. Reformulating Figure \ref{fig:agr-sub-do-io-lang} in terms of case instead of grammatical function gives the schema in Figure \ref{fig:agr-def-dep-dat}.
 
 \begin{figure}[H]
   \centering
@@ -302,7 +304,7 @@ Note here that nominative-accusative languages use the same case marking for the
     \node[] at (2,1) {\footnotesize{● Hungarian}};
     \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
-  \caption{Agreement hierarchy (case) \citep{bobaljik2006}}
+  \caption{Agreement hierarchy (case)}
   \label{fig:agr-def-dep-dat}
 \end{figure}
 
@@ -326,7 +328,7 @@ In the languages I discuss in this dissertation, I focus on languages that have 
     \node[] at (0,0) {\ac{dat}};
   \end{tikzpicture}
   \label{fig:agr-nom-acc-dat}
-  \caption{Agreement hierarchy (case)}
+  \caption{Agreement hierarchy (\tsc{nom}/\tsc{acc/\tsc{dat}})}
 \end{figure}
 
 In sum, this section has shown that agreement follows the same implicational hierarchy as the case scale in headless relatives: \ac{nom} < \ac{acc} < \ac{dat}.
@@ -357,12 +359,8 @@ The implicational hierarchy is schematically represented in Figure \ref{fig:rel-
     \node[] at (0,2.75) {subject};
     \node[] at (0,1.5) {direct object};
     \node[align=center] at (0,0) {indirect\\ object};
-
-    \node[] at (2.25,2) {\footnotesize{● Malagasy/German}};
-    \node[] at (2,1) {\footnotesize{● Malay}};
-    \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
-  \caption{Relativization hierarchy (grammatical function)}
+  \caption{Relativization hierarchy}
   \label{fig:rel-sub-do-io}
 \end{figure}
 
@@ -430,15 +428,17 @@ Later in this section I draw the parallel between subject and nominative, direct
 
 Finnish is another example of a language that allows subjects and direct objects to be relativized using a particular strategy, but not indirect objects. This strategy places the relative clause prenominally, does not use a relativization marker, and puts the predicate in the relative clause in the non-finite form \citep{keenan1977}.
 
+\ref{ex:finnish-rel} shows how examples of relativized subjects and direct objects.
+\ref{ex:finnish-rel-sbj} is an example of a subject relative: \tit{poika} `boy' has been relativized from the clause in which it was the subject of \tit{tanssinut} `danced'. The head of the relative clause is \tit{poika} `boy', marked in bold, is preceded by the relative clause \tit{pöydällä tanssinut} `who had danced on the table'. The predicate of the relative clause appears in the non-finite form: \tit{tanssinut} `having danced'.
+\ref{ex:finnish-rel-obj} is an example of a subject relative: \tit{poika} `boy' has been relativized from the clause in which it was the subject of \tit{näkemäni} `saw'. The head of the relative clause is \tit{poika} `boy', marked in bold, is preceded by the relative clause \tit{näkemäni} `that I saw'. The predicate of the relative clause appears in the non-finite form: \tit{näkemäni} `having seen'.
+
 \ex.\label{ex:finnish-rel}
-\ag. Pöydällä tanssinut poika oli sairas.\\
+\ag. Pöydällä tanssinut \tbf{poika} oli sairas.\\
  on-table having-danced boy was sick\\
  `The boy who had danced on the table was sick.'\label{ex:finnish-rel-sbj}
-\bg. Näkemäni poika tanssi pöydällä.\\
+\bg. Näkemäni \tbf{poika} tanssi pöydällä.\\
  I-having-seen boy danced on-table\\
  `The boy that I saw danced on the table.'\label{ex:finnish-rel-obj}
-
-
 
 Basque is an example of a language that has a particular relativization strategy for subjects, direct objects and indirect objects. \ref{ex:basque-decl} is an example of a declarative ditransitive sentence in Basque. The sentence contains the subject \tit{gizonak} `the man', the direct object \tit{liburua} `the book' and the indirect object \tit{emakumeari} `the woman'.
 
@@ -480,7 +480,7 @@ In \ref{ex:basque-io}, the dative indirect object \tit{emakumeari} `the woman' f
      \node[align=center] at (0,0) {indirect\\ object};
 
      \node[] at (2.25,2) {\footnotesize{● Malagasy/German}};
-     \node[] at (2,1) {\footnotesize{● Malay}};
+     \node[] at (2,1) {\footnotesize{● Malay/Finnish}};
      \node[] at (1.375,0) {\footnotesize{● Basque}};
    \end{tikzpicture}
    \caption{Relativization hierarchy with languages}
@@ -489,29 +489,33 @@ In \ref{ex:basque-io}, the dative indirect object \tit{emakumeari} `the woman' f
 
 \citet{caha2009} argues that the implicational hierarchy is more accurate if it is stated in terms of case rather than grammatical function. The main argument comes from ergative-absolutive languages, which was also one of \posscitet{bobaljik2006} argument with the implicational hierarchy for agreement.
 
-\citet{keenan1977} point out that some ergative-absolutive languages form a counterexample to their hierarchy. One example comes from Dyirbal. Absolutive objects and absolutive subjects can be relativized. Ergative subjects, however, cannot.
+According to \citet{keenan1977}, ergative-absolutive languages form a counterexample to their hierarchy. It turns out that in some languages ergative subjects cannot be relativized, while absolutive subjects and absolutive objects can. This indicates that absolutive subjects and objects form a natural class to the exclusion of ergative subjects. In other words, it is not the grammatical function that is decisive, but morphological case. Dyirbal is an example of a language in which absolutive subjects and objects can be relativized, but ergative subjects cannot \pgcitep{dixon1972}{100}.
+
+\ref{ex:dyirbal-decl} shows an intransitive and transitive sentence in Dyirbal. In the intransitive sentence in \ref{ex:dyirbal-intra}, the subject \tit{balan d̦ugumbil} `the woman' is marked absolutive. In the transtive sentence in \ref{ex:dyirbal-tra}, the subject \tit{ŋad̦a} `I' is marked ergative, and the object \tit{balan d̦ugumbil} `the woman' is marked absolutive.
 
 \ex.\label{ex:dyirbal-decl}
 \ag. balan d̦ugumbil ɲina-ɲu\\
  \tsc{det}.\tsc{abs} woman.\tsc{abs} sit-\tsc{pass}\\
- `The woman is sitting down.'\label{ex:dyirbal-sub}
+ `The woman is sitting down.'\label{ex:dyirbal-intra}
 \bg. ŋad̦a balan d̦ugumbil buŗa-n\\
  I.\tsc{erg} \tsc{det}.\tsc{abs} woman.\tsc{abs} see-\tsc{pres/past}\\
- `I am watching the woman.'\flushfill{Dyirbal, \pgcitealt{dixon1972}{100}, my boldfacing}\label{ex:dyirbal-do}
+ `I am watching the woman.'\flushfill{Dyirbal, \pgcitealt{dixon1972}{100}, my boldfacing}\label{ex:dyirbal-tra}
 
-The embedded verb takes the marker -\tbf{ŋu} to indicate that there is a relative clause.
+A relative clause in Dyirbal follows its head, and marks the predicate of the relative clause with the relative suffix \tit{-ŋu}..
+In \ref{ex:dyirbal-abs-sub}, the absolutive subject \tit{d̦ugumbil} `woman' from \ref{ex:dyirbal-intra} is relativized. The head \tit{d̦ugumbil} `woman', marked in bold, precedes the relative clause \tit{ɲina-ŋu} `who is sitting down'. The predicate in the relative clause \tit{ɲina} `sit' is followed by the relative suffix \tit{-ŋu}.
+In \ref{ex:dyirbal-abs-do}, the absolutive object \tit{d̦ugumbil} `woman' from \ref{ex:dyirbal-tra} is relativized. The head \tit{d̦ugumbil} `woman', marked in bold, precedes the relative clause \tit{ŋad̦a buŗa-ŋu} `whom I am watching'. The predicate in the relative clause \tit{buŗa} `see' is followed by the relative suffix \tit{-ŋu}.
 
-\exg. balan \tbf{d̦ugumbil} ŋad̦a buŗa-\tbf{ŋu} ɲina-ɲu\\
- \tsc{det}.\tsc{abs} woman.\tsc{abs} I see-\tsc{rel} sit-\tsc{pass}\\
- `The woman whom I am watching is sitting down.'\flushfill{Dyirbal, \pgcitealt{dixon1972}{100}, my boldfacing}\label{ex:dyirbal-abs-sub}
-
-\exg. ŋad̦a balan \tbf{d̦ugumbil} ɲina-\tbf{ŋu} buŗa-n\\
+\ex.
+\ag. ŋad̦a balan \tbf{d̦ugumbil} ɲina-ŋu buŗa-n\\
  I.\tsc{erg} \tsc{det}.\tsc{abs} woman.\tsc{abs} sit-\tsc{rel} see-\tsc{pres/past}\\
- `I am watching the woman who is sitting down.'\flushfill{Dyirbal, \pgcitealt{dixon1972}{100}, my boldfacing}\label{ex:dyirbal-abs-do}
+ `I am watching the woman who is sitting down.'\flushfill{Dyirbal, \pgcitealt{dixon1972}{100}, my boldfacing}\label{ex:dyirbal-abs-sub}
+\bg. balan \tbf{d̦ugumbil} ŋad̦a buŗa-ŋu ɲina-ɲu\\
+ \tsc{det}.\tsc{abs} woman.\tsc{abs} I see-\tsc{rel} sit-\tsc{pass}\\
+ `The woman whom I am watching is sitting down.'\flushfill{Dyirbal, \pgcitealt{dixon1972}{100}, my boldfacing}\label{ex:dyirbal-abs-do}
 
-Ergatives need to first be promoted to absolutives, creating a passive-like structure, and then the absolutive can be relativized.
+Ergatives (for instance the ergative subject \tit{ŋad̦a} `I' in \ref{ex:dyirbal-tra}) cannot be directly relativized. They have to be promoted to absolutives first, creating a passive-like structure. In other words, only relativization of absolutives is possible, ergatives cannot be relativized.
 
-johnson abs/erg (keenan/comrie) already claimed the abs/erg absolutive relativization should be captured in terms of case and not grammatial function.
+%johnson abs/erg (keenan/comrie) already claimed the abs/erg absolutive relativization should be captured in terms of case and not grammatial function.
 
 \citet{caha2009} (which is also briefly mentioned in \citealt{bobaljik2006}) makes the more general claim, that also nom/acc should be formulized in terms of case, all of it together.
 
@@ -529,7 +533,7 @@ Reformulating Figure \ref{fig:agr-sub-do-io} in terms of case instead of grammat
     \node[align=center] at (0,0) {dative};
 
     \node[] at (2.25,2) {\footnotesize{● Malagasy/German}};
-    \node[] at (2,1) {\footnotesize{● Malay}};
+    \node[] at (2,1) {\footnotesize{● Malay/Finnish}};
     \node[] at (1.375,0) {\footnotesize{● Basque}};
   \end{tikzpicture}
   \caption{Relativization hierarchy (case)}
@@ -539,7 +543,7 @@ Reformulating Figure \ref{fig:agr-sub-do-io} in terms of case instead of grammat
 This formulation in terms of case rather than grammatical function works as follows for the examples I gave earlier.
 
 First, German is a language that has a particular relativization strategy for the unmarked case, as shown in \ref{ex:german-rel-subj}. The unmarked nominative case can be relativized with a reduced relative clause, but the dependent accusative case and the dative case cannot.
-Second, Finnish is a language that has a particular relativization strategy for unmarked and dependent case, as shown in X.
+Second, Finnish is a language that has a particular relativization strategy for unmarked and dependent case, as shown in \ref{ex:finnish-rel}. The unmarked nominative case and the dependent accusative case can be relativized with a reduced relative clause, but the dative case cannot.
 Last, Basque is a language that has a particular relativization strategy for unmarked, dependent and dative case, as shown in \ref{ex:basque-rel}. The unmarked ergative, dependent absolutive and dative case can be relativized by extraposing the head, and marking it with the invariable marker \tit{-n}.
 
 In the languages I discuss in this dissertation, I focus on languages that have nominative as unmarked case and accusative as dependent case, so Figure \ref{fig:rel-nom-acc-dat} suffices.
@@ -555,7 +559,7 @@ In the languages I discuss in this dissertation, I focus on languages that have 
     \node[] at (0,1.5) {accusative};
     \node[align=center] at (0,0) {dative};
   \end{tikzpicture}
-  \caption{Relativization hierarchy (case)}
+  \caption{Relativization hierarchy (\tsc{nom}/\tsc{acc}/\tsc{dat})}
   \label{fig:rel-nom-acc-dat}
 \end{figure}
 
