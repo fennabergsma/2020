@@ -911,10 +911,11 @@ I repeat the summary of the data pattern for Gothic in Table \ref{tbl:summary-go
 
 The intuition is the following. The headless relatives reflect the cumulative feature decomposition given in Table \ref{tbl:case-decomposed}. A case wins the competition if it contains all features the other case has. So, the dative contains all features that the accusative has, so the dative surfaces. Similarly, the dative contains all features the nominative has, and again the dative surfaces. The same holds for the last pair: the accusative contains all features the nominative has, so the accusative surfaces. I illustrate this per case pair.
 
-I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. It contains the features of the relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}.\footnote{
-Within the triangle, I assume there to be number and gender features and features having to do with deixis and definiteness.
-}
-Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the features of the relative pronoun, \tsc{f1} and \tsc{f2}.
+I start with the competition between dative and accusative, in which dative wins. The corresponding cells are marked dark gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-acc} I show the syntactic structure of a dative relative pronoun. For now I let syntactic structure that has to do with being a relative pronoun correspond to a complex XP.\footnote{
+Within the triangle, I assume there to be amongst others phi features and features having to do with deixis and definiteness.
+} I elaborate on the exact content of XP in Chapter .
+Following that, a dative relative pronoun contains the XP, \tsc{f1}, \tsc{f2} and \tsc{f3}.
+Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the XP, \tsc{f1} and \tsc{f2}.
 
 \ex.
 \begin{forest} boom
@@ -930,7 +931,7 @@ Contained in this structure is an accusative relative pronoun, marked in gray. T
           [\tsc{f2}]
           [\tsc{nomP}
               [\tsc{f1}]
-              [\tsc{rel}
+              [XP
                   [\phantom{xxx}, roof]
               ]
           ]
@@ -939,7 +940,8 @@ Contained in this structure is an accusative relative pronoun, marked in gray. T
 \end{forest}\label{ex:dat-contains-acc}
 
 Table \ref{tbl:dat-against-acc} shows the situation in which the dative and the accusative compete against each other. The bigger structure deletes the smaller structure it contains: the dative wins.\footnote{
-In Table \ref{tbl:dat-against-acc} there are two structures that both have a \tsc{rel} at their bottom. Actually, I am not assuming two relative pronouns to be present at any point in the derivation. I come back to the content of the second triangle in Chapter \ref{ch:relativization}. Whatever is in the triangle under \tsc{rel} does not influence the main point here: a bigger case wins over a smaller case.
+In Table \ref{tbl:dat-against-acc} there are two structures that both have a XP at their bottom.
+I come back to the exact content of these triangles in Chapter \ref{}. Whatever is in the triangle under XP does not influence the main point here: a bigger case wins over a smaller case.
 }
 
 \begin{table}[H]
@@ -958,7 +960,7 @@ In Table \ref{tbl:dat-against-acc} there are two structures that both have a \ts
                 [\tsc{f2}]
                 [\tsc{nomP}
                     [\tsc{f1}]
-                    [\tsc{rel}
+                    [XP
                         [\phantom{xxx}, roof, baseline]
                     ]
                 ]
@@ -976,7 +978,7 @@ In Table \ref{tbl:dat-against-acc} there are two structures that both have a \ts
             [\textcolor{LG}{\ac{acc}},edge=LG]
             [\textcolor{LG}{\tsc{nomP}},edge=LG
                 [\textcolor{LG}{\ac{nom}},edge=LG]
-                [\textcolor{LG}{\tsc{rel}},edge=LG
+                [\textcolor{LG}{XP},edge=LG
                     [\textcolor{LG}{\phantom{xxx}},
                     roof, baseline, edge=LG
                     ]
@@ -989,7 +991,7 @@ In Table \ref{tbl:dat-against-acc} there are two structures that both have a \ts
 \end{table}
 
 
-Next is the competition between dative and nominative, in which dative wins. The corresponding cells are marked light gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-nom} I show the syntactic structure of a dative relative pronoun. It contains the features of the relative pronoun, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the features for the relative pronoun and \tsc{f1}.
+Next is the competition between dative and nominative, in which dative wins. The corresponding cells are marked light gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-nom} I show the syntactic structure of a dative relative pronoun. It contains the XP, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the XP and \tsc{f1}.
 
 \ex.
 \begin{forest} boom
@@ -1005,7 +1007,7 @@ Next is the competition between dative and nominative, in which dative wins. The
           fit to=tree]{};
           }
               [\tsc{f1}]
-              [\tsc{rel}
+              [XP
                   [\phantom{xxx}, roof]
               ]
           ]
@@ -1031,7 +1033,7 @@ Table \ref{tbl:dat-against-nom} shows the situation in which the dative and the 
                 fit to=tree]{};
                 }
                     [\tsc{f1}]
-                    [\tsc{rel}
+                    [XP
                         [\phantom{xxx}, roof, baseline]
                     ]
                 ]
@@ -1047,7 +1049,7 @@ Table \ref{tbl:dat-against-nom} shows the situation in which the dative and the 
         fit to=tree]{};
         }
             [\textcolor{LG}{\ac{nom}},edge=LG]
-            [\textcolor{LG}{\tsc{rel}},baseline,edge=LG
+            [\textcolor{LG}{XP},baseline,edge=LG
                 [\textcolor{LG}{\phantom{xxx}},
                 roof, baseline, edge=LG
                 ]
@@ -1058,7 +1060,7 @@ Table \ref{tbl:dat-against-nom} shows the situation in which the dative and the 
   \label{tbl:dat-against-nom}
 \end{table}
 
-Finally there is the competition between accusative and nominative, in which accusative wins. The corresponding cells are uncolored in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:acc-contains-nom} I show the syntactic structure of an accusative relative pronoun. It contains the features of the relative pronoun, \tsc{f1} and \tsc{f2}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the features of the relative pronoun and \tsc{f1}.
+Finally there is the competition between accusative and nominative, in which accusative wins. The corresponding cells are uncolored in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:acc-contains-nom} I show the syntactic structure of an accusative relative pronoun. It contains the XP, \tsc{f1} and \tsc{f2}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the XP and \tsc{f1}.
 
 \ex.
 \begin{forest} boom
@@ -1072,7 +1074,7 @@ Finally there is the competition between accusative and nominative, in which acc
           fit to=tree]{};
           }
               [\tsc{f1}]
-              [\tsc{rel}
+              [XP
                   [\phantom{xxx}, roof]
               ]
           ]
@@ -1096,7 +1098,7 @@ Table \ref{tbl:acc-against-nom} shows the situation in which the accusative and 
               fit to=tree]{};
               }
                   [\tsc{f1}]
-                  [\tsc{rel}
+                  [XP
                       [\phantom{xxx}, roof, baseline]
                   ]
               ]
@@ -1112,7 +1114,7 @@ Table \ref{tbl:acc-against-nom} shows the situation in which the accusative and 
         }
             [\textcolor{LG}{\ac{nom}},
             edge=LG]
-            [\textcolor{LG}{\tsc{rel}},
+            [\textcolor{LG}{XP},
             edge=LG
                 [\textcolor{LG}{\phantom{xxx}},
                 roof, baseline, edge=LG
