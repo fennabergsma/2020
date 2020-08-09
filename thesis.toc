@@ -48,13 +48,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {4}The variation}{71}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Both directions}{73}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Internal and external case surface}{73}{section.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Gothic}{73}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Old High German}{73}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Only internal}{76}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Only internal}{77}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Other languages}{79}{section.4.3}%
 \defcounter {refsection}{0}\relax 
