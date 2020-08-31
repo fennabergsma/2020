@@ -1,0 +1,454 @@
+% !TEX root = thesis.tex
+
+\chapter{Step by step derivations}
+
+\section{Decomposing pronouns}
+
+d-pronouns, wh-pronouns
+
+give this big table and and show which features they express with gray
+
+\begin{table}[H]
+ \center
+ \caption {Relative pronouns in headless relatives in \ac{mg}}
+  \begin{tabular}{ccc}
+  \toprule
+       & \ac{inan} & \ac{an} \\
+        \cmidrule{2-3}
+    \ac{nom}  & w-as     & w-er    \\
+    \ac{acc}  & w-as     & w-en   \\
+    \ac{dat}  & -        & w-em    \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+first phi and case features that form a bundle
+then wh
+
+
+So we also have a plural there
+
+\begin{table}[H]\label{tbl:paradigmohg}
+ \center
+ \caption {Relative pronouns in headless relatives in \ac{ohg}}
+  \begin{tabular}{cccc}
+  \toprule
+       & \ac{n}.\ac{sg} & \ac{m}.\ac{sg}  & \ac{f}.\ac{sg} \\
+        \cmidrule{2-4}
+  \ac{nom} & d-aȥ           & d-ër          & d-iu      \\
+  \ac{acc} & d-aȥ        & d-ën      & d-ea/-ia/(-ie) \\
+  \ac{dat} & d-ëmu/-ëmo     & d-ëmu/-ëmo   & d-ëru/-ëro   \\
+  \bottomrule
+         & \ac{n}.\ac{pl} & \ac{m}.\ac{pl}   & \ac{f}.\ac{pl} \\
+          \cmidrule{2-4}
+    \ac{nom}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
+    \ac{acc}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
+    \ac{dat}  & d-ēm/-ēn      &  d-ēm/-ēn        & d-ēm/-ēn        \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+and here there is the complementizer extra
+
+\begin{table}[H]
+ \center
+ \caption {Relative pronouns in headless relatives in Gothic}
+  \begin{tabular}{cccc}
+  \toprule
+       & \ac{n}.\ac{sg}  & \ac{m}.\ac{sg} & \ac{f}.\ac{sg}  \\
+         \cmidrule{2-4}
+    \ac{nom}  & þ-at-ei      & s-a-ei      & s-ō-ei     \\
+    \ac{acc} & þ-at-ei       & þ-an-ei      & þ-ō-ei      \\
+    \ac{dat}  & þ-amm-ei     & þ-amm-ei    & þ-izái-ei    \\
+  \bottomrule
+         & \ac{n}.\ac{pl} & \ac{m}.\ac{pl} & \ac{f}.\ac{pl} \\
+          \cmidrule{2-4}
+    \ac{nom}  & þ-ō-ei     & þ-ái-ei     & þ-ōz-ei     \\
+    \ac{acc}  & þ-ō-ei      & þ-anz-ei    & þ-ōz-ei     \\
+    \ac{dat}  & þ-áim-ei    & þ-áim-ei     & þ-áim-ei     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+\section{Background}
+
+\ex. \tbf{Spellout Algorithm:}\\
+Merge F and \label{ex:spellout}
+ \a. Spell out FP.
+ \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+ \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+When a new match is found, it overrides previous spellouts.
+
+\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
+Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+If backtracking also does not help, a specifier is constructed.
+
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\
+If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+\ex. Merge F, Move XP, Merge XP
+
+
+illustrate this by building d and wh-pronouns
+
+
+
+
+\section{Light head}
+
+Which features are contained in the light head?
+
+German \tit{das, was} - \tit{an dem}
+\tit{as, was} - \tit{am}
+
+so d is lacking
+
+which feature is missing there?
+
+Jane?
+
+
+
+\subsection{German derivation}
+
+
+
+\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
+ `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}
+
+Internal structure of the relative clause.
+
+\tit{w} got merged as a complex spec. \tsc{f1} and \tsc{f2} ended up there via backtracking: taking \tit{w} off, spec to spec movement, and spelling it out with the suffix.
+
+\ex.
+\begin{forest} boom
+[, s sep=50mm
+    [\tsc{relP}, s sep=20mm
+        [\tit{w}, roof]
+        [, s sep=30mm
+            [\tsc{deix}P,
+            tikz={
+            \node[label=below:\tit{e},
+            draw,circle,
+            scale=0.875,
+            fit to=tree]{};
+            }
+                [\tsc{deix}]
+                [\tsc{refP}
+                    [\tsc{ref2}]
+                    [\tsc{ref1}]
+                ]
+            ]
+            [\tsc{acc}P,
+            tikz={
+            \node[label=below:\tit{n},
+            draw,circle,
+            scale=0.925,
+            fit to=tree]{};
+            }
+                [\tsc{f2}]
+                [\tsc{nom}P
+                    [\tsc{f1}]
+                    [\tsc{num}P
+                        [\tsc{num}]
+                        [\tsc{m}P
+                            [\tsc{m}]
+                            [\tsc{n}P
+                                [\tsc{n}]
+                                [\tsc{persP}
+                                    [\tsc{pers}]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    [VP
+       [\tit{Maria mag}, roof]
+    ]
+]
+\end{forest}
+
+Structure of the relative clause + the external head that is going to be deleted.
+
+Case is merged above the relative clause. Backtracking takes place, meaning that the relative clause and the head are going to be split up again. Then it can be spelled out with the suffix of the head after spec-to-spec movement.
+
+\ex.
+\begin{forest} boom
+[\tsc{nom}P
+    [\tsc{f1}]
+        [, s sep=15mm
+        [CP
+            [\tsc{relP}
+                [\tit{w}, roof]
+                [
+                    [\tit{e}, roof]
+                    [\tit{n}, roof]
+                ]
+            ]
+            [VP
+               [\tit{Maria mag}, roof]
+            ]
+        ]
+        [, s sep=30mm
+            [\tsc{deix}P,
+        	  tikz={
+        	  \node[label=below:\tit{e},
+        	  draw,circle,
+        	  scale=0.875,
+        	  fit to=tree]{};
+            }
+                [\tsc{deix}]
+                [\tsc{refP}
+                    [\tsc{ref2}]
+                    [\tsc{ref1}]
+                ]
+            ]
+            [\tsc{num}P,
+        	  tikz={
+        	  \node[label=below:\tit{r},
+        	  draw,circle,
+        	  scale=0.9,
+        	  fit to=tree]{};
+            }
+                [\tsc{num}]
+                [\tsc{m}P
+                    [\tsc{m}]
+                    [\tsc{n}P
+                        [\tsc{n}]
+                        [\tsc{persP}
+                            [\tsc{pers}]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+
+\phantom{x}
+
+\section{German deletion}
+
+
+So German relative pronoun:
+
+\begin{forest} boom
+[\tsc{relP}, s sep=20mm
+    [\tit{w}, roof]
+    [, s sep=30mm
+        [\tsc{deix}P,
+        tikz={
+        \node[label=below:\tit{e},
+        draw,circle,
+        scale=0.875,
+        fit to=tree]{};
+        }
+            [\tsc{deix}]
+            [\tsc{refP}
+                [\tsc{ref2}]
+                [\tsc{ref1}]
+            ]
+        ]
+        [\tsc{acc}P,
+        tikz={
+        \node[label=below:\tit{n},
+        draw,circle,
+        scale=0.925,
+        fit to=tree]{};
+        }
+            [\tsc{f2}]
+            [\tsc{nom}P
+                [\tsc{f1}]
+                [\tsc{num}P
+                    [\tsc{num}]
+                    [\tsc{m}P
+                        [\tsc{m}]
+                        [\tsc{n}P
+                            [\tsc{n}]
+                            [\tsc{persP}
+                                [\tsc{pers}]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+
+and German head:
+
+\begin{forest} boom
+[, s sep=30mm
+    [\tsc{deix}P,
+    tikz={
+    \node[label=below:\tit{e},
+    draw,circle,
+    scale=0.875,
+    fit to=tree]{};
+    }
+        [\tsc{deix}]
+        [\tsc{refP}
+            [\tsc{ref2}]
+            [\tsc{ref1}]
+        ]
+    ]
+    [\tsc{nom}P,
+    tikz={
+    \node[label=below:\tit{r},
+    draw,circle,
+    scale=0.9,
+    fit to=tree]{};
+    }
+        [\tsc{f1}]
+        [\tsc{num}P
+            [\tsc{num}]
+            [\tsc{m}P
+                [\tsc{m}]
+                [\tsc{n}P
+                    [\tsc{n}]
+                    [\tsc{persP}
+                        [\tsc{pers}]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+
+\section{Polish deletion}
+
+
+Polish relative pronoun
+
+\begin{forest} boom
+    [, s sep=40mm
+        [XP,
+        tikz={
+        \node[label=below:\tit{k},
+        draw,circle,
+        scale=0.875,
+        fit to=tree]{};
+        }
+            [XP]
+            [\tsc{persP}
+                [\tsc{pers}]
+                [\tsc{deix}P
+                    [\tsc{deix}]
+                    [\tsc{refP}
+                        [\tsc{ref2}]
+                        [\tsc{ref1}]
+                    ]
+                ]
+            ]
+        ]
+        [, s sep=30mm
+            [\tsc{m}P,
+            tikz={
+            \node[label=below:\tit{o},
+            draw,circle,
+            scale=0.925,
+            fit to=tree]{};
+            }
+                [\tsc{m}]
+                [\tsc{n}P
+                    [\tsc{n}]
+                ]
+            ]
+            [\tsc{dat}P,
+            tikz={
+            \node[label=below:\tit{mu},
+            draw,circle,
+            scale=0.925,
+            fit to=tree]{};
+            }
+                [\tsc{f3}]
+                    [\tsc{acc}P
+                    [\tsc{f2}]
+                    [\tsc{nom}P
+                        [\tsc{f1}]
+                        [\tsc{num}P
+                            [\tsc{num}]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+\end{forest}
+
+Polish head
+
+\begin{forest} boom
+    [, s sep=30mm
+        [\tsc{pers}P,
+        tikz={
+        \node[label=below:\tit{k},
+        draw,circle,
+        scale=0.875,
+        fit to=tree]{};
+        }
+            [\tsc{pers}]
+            [\tsc{deix}P
+                [\tsc{deix}]
+                [\tsc{refP}
+                    [\tsc{ref2}]
+                    [\tsc{ref1}]
+                ]
+            ]
+        ]
+        [, s sep=20mm
+            [\tsc{m}P,
+            tikz={
+            \node[label=below:\tit{o},
+            draw,circle,
+            scale=0.925,
+            fit to=tree]{};
+            }
+                [\tsc{m}]
+                [\tsc{n}P
+                    [\tsc{n}]
+                ]
+            ]
+            [\tsc{acc}P,
+            tikz={
+            \node[label=below:\tit{go},
+            draw,circle,
+            scale=0.925,
+            fit to=tree]{};
+            }
+                [\tsc{f2}]
+                [\tsc{nom}P
+                    [\tsc{f1}]
+                    [\tsc{num}P
+                        [\tsc{num}]
+                    ]
+                ]
+            ]
+        ]
+    ]
+\end{forest}
+
+\phantom{x}
+
+\subsection{Derivations for d}
+
+one like German
+other derived from d, d
