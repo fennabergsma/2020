@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.2}Excluding Polish}{90}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}\textsc {d}-relatives}{91}{section.5.2}%
+\contentsline {section}{\numberline {5.2}\textsc {d}-relatives}{92}{section.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Alternative analyses}{92}{section.5.3}%
 \defcounter {refsection}{0}\relax 
