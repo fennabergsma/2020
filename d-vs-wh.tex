@@ -31,26 +31,36 @@ This can be modelled as follows:
 
  \ex.
  \begin{forest} boom
-		 	[CP,no edge, s sep=20mm
-	       [\ac{acc}P,
-				 tikz={
-				 \node[label=below:\tit{wen},
-				 draw,circle,
-				 scale=0.85,
-				 fit to=tree]{};
-				 }
-	           [\tsc{f2}]
-	           [\tsc{nomP}
-	               [\tsc{f1}]
-	               [XP
-	                   [\phantom{xxx}, roof]
-	               ]
-	           ]
-	       ]
-				 [VP
-				 		 [\tit{Maria mag}, roof]
-				 ]
-			]
+[
+    [
+        [\tit{uns}, roof]
+    ]
+    [
+        [
+            [\tit{besucht}, roof]
+        ]
+  		 	[CP, s sep=20mm
+  	       [\ac{acc}P,
+  				 tikz={
+  				 \node[label=below:\tit{wen},
+  				 draw,circle,
+  				 scale=0.85,
+  				 fit to=tree]{};
+  				 }
+  	           [\tsc{f2}]
+  	           [\tsc{nomP}
+  	               [\tsc{f1}]
+  	               [XP
+  	                   [\phantom{xxx}, roof]
+  	               ]
+  	           ]
+  	       ]
+  				 [VP
+  				 		 [\tit{Maria mag}, roof]
+  				 ]
+  			]
+    ]
+]
  \end{forest}
 
 The structure shows an accusative in the relative clause. An \tsc{acc}P by definition contains a \tsc{nom}P, so the nominative is there.
@@ -60,11 +70,9 @@ We also understand that the other way around does not work: a nominative in the 
 
 \subsection{The relative pronoun in the relative clause}
 
-Independent from these case facts, I provide three arguments why the headless relative pronoun in Modern German is part of the relative clause. The first one is extraposition in headed relative clauses, the second one is from headless relatives, the last one is \tsc{wh}-elements in general.
+In this section I show that the relative pronoun in Modern German headless relatives is part of the relative clause. The evidence comes from extraposition. In Modern German, it is possible to extrapose a clause (a CP), but not a noun phrase (DP). The relative clause including the relative pronoun in a headless relative can be extraposed, which indicates that the relative pronoun is part of the relative clause. In what follows I show that CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs.
 
-The strongest argument for the headless relative pronoun being part of the relative clause comes from extraposition in headless relatives. In Modern German, it is possible to extrapose a clause (a CP), but not a noun phrase (DP). The relative clause including the relative pronoun in a headless relative can be extraposed, which indicates that the relative pronoun is part of the relative clause. In what follows I show that CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs.
-
-The sentence in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. This objects can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
+The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. This objects can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
 
 \ex.\label{ex:mg-extrapose-cp}
 \ag. Mir ist \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht} egal.\\
@@ -88,16 +96,16 @@ In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base
 So here we see that with an over head.
 
 
- \ex. \label{ex:extra-headed} adapted from Groos/v Riemsdijk
- \ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gestohlen} \tbf{hat}, zurückgegeben.\\
- Jan has the money which he stolen has returned\\
- \glt `Jan has returned the money that he has stolen.'\label{ex:extra-headed-base}
- \bg. Jan hat das zurückgegeben, \tbf{was} \tbf{er} \tbf{gestohlen} \tbf{hat}.\\
- the Hans has the money returned which he stolen has\\
- \glt `Jan has returned the money that he has stolen.'\label{ex:extra-headed-only-clause}
- \cg. *Jan hat zurückgegeben, das, \tbf{was} \tbf{er} \tbf{gestohlen} \tbf{hat}.\\
- Jan has returned the money which he stolen has\\
- \glt `Jan has returned the money that he has stolen.'\label{ex:extra-headed-head-clause}
+\ex. \label{ex:extra-headed} adapted from Groos/v Riemsdijk
+\ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gestohlen} \tbf{hat}, zurückgegeben.\\
+Jan has the money which he stolen has returned\\
+\glt `Jan has returned the money that he has stolen.'\label{ex:extra-headed-base}
+\bg. Jan hat das zurückgegeben, \tbf{was} \tbf{er} \tbf{gestohlen} \tbf{hat}.\\
+the Hans has the money returned which he stolen has\\
+\glt `Jan has returned the money that he has stolen.'\label{ex:extra-headed-only-clause}
+\cg. *Jan hat zurückgegeben, das, \tbf{was} \tbf{er} \tbf{gestohlen} \tbf{hat}.\\
+Jan has returned the money which he stolen has\\
+\glt `Jan has returned the money that he has stolen.'\label{ex:extra-headed-head-clause}
 
 Here without the head.
 \ref{ex:mg-extra} shows an example of a headless relative. The relative clause including the relative pronoun, marked in bold, appears in its base position in \ref{ex:mg-extra-no}. In \ref{ex:mg-extra-yes}, it is extraposed.
