@@ -1,16 +1,36 @@
 % !TEX root = thesis.tex
 
-\chapter{\tsc{d} vs. \tsc{wh}}\label{ch:relativization}
+\chapter{Excluding the third pattern}\label{ch:relativization}
 
-Proposal of wh in a nutshell: wh-relative is part of the relative clause. that's why it takes the internal case. I argue for an external head, that carries the external case. This head is also necessary to distinguish Modern German from languages like Polish. The relative pronoun deletes the external head.
+As I have shown in the previous chapter, there are two types of languages with case competition possible:
+(1) a language like Gothic or Old High German, in which the case competition always takes place
+(2) a language like Modern German, in which the case competition only takes place when the internal case can win. If not, there is no grammatical result
+
+Crucially, there exist no language in which case competition only takes place when the external case can win. This would be a language which is the opposite of Modern German.
+
+Schematically this can be shown like this:
+
+\begin{table}[H]
+ \center
+ \caption {Variation in case competition languages}
+  \begin{tabular}{ccc}
+  \toprule
+        & \ac{int}>\ac{ext}  & \ac{ext}>\ac{int} \\
+        \cmidrule{2-3}
+  Gothic, \ac{ohg} & ✔          & ✔         \\
+  \ac{mg}  & ✔           & *         \\
+  n.a.     & *          & ✔         \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+Proposal of wh in a nutshell: the wh-relative is part of the relative clause. that's why it takes the internal case. I argue for an external head, that carries the external case. This head is also necessary to distinguish Modern German from languages like Polish. The relative pronoun deletes the external head.
 
 Proposal of d in a nutshell: the analysis here is partly identical to the one for Modern German wh-relatives. d-relative is also part of the relative clause, and it can take the internal case, and it deletes the external head. Additionally, there can be a d, d-combination, and the relative pronoun is deleted under c-command under containment.
 
-In the next section I formulate the possibilities of the languages in terms of lexical entries. So all the behavior we see in this section is derived from how the relative pronouns and the external head is specified in the lexicon.
-
+From these two proposals follows that it is impossible to have third pattern, which is indeed also not attested. When the external case wins over the internal one, there is a situation in which the external case could delete the internal one. So, it is impossible to have the second option but not the first one.
 
 % Some intro about head of the relative clause and relative pronoun.
-
 
 % So, we have seen that relative pronouns are sensitive to the internal case and to the external case. In this chapter we go back to what this means for the `head' in headless relatives. In headless relatives this head is namely missing. Like I said in the introduction, there are several ways of interpreting that.
 
@@ -23,7 +43,7 @@ In the next section I formulate the possibilities of the languages in terms of l
 
 \section{\tsc{wh}-relatives}
 
-My claim: the behavior in Moden German headless relatives is a consequence of its \tsc{wh}-morphology.
+My claim: the behavior in Modern German headless relatives is a consequence of its \tsc{wh}-morphology.
 
 In this section I discuss headless relatives in Modern German. Modern German only allows the relative pronoun only to surface in the internal case, not in the external case. The relative pronoun used in headless relatives in this language is a \tsc{wh}-pronoun. I show in this section that syntactically it is part of the relative clause but that the relative pronoun is sensitive to both the internal and external case.
 
@@ -38,34 +58,26 @@ This can be modelled as follows:
  \ex.
  \begin{forest} boom
 [
-    [
-        [\tit{uns}, roof]
-    ]
-    [
-        [
-            [\tit{besucht}, roof]
-        ]
-  		 	[CP, s sep=20mm
-  	       [\ac{acc}P,
-  				 tikz={
-  				 \node[label=below:\tit{wen},
-  				 draw,circle,
-  				 scale=0.85,
-  				 fit to=tree]{};
-  				 }
-  	           [\tsc{f2}]
-  	           [\tsc{nomP}
-  	               [\tsc{f1}]
-  	               [XP
-  	                   [\phantom{xxx}, roof]
-  	               ]
-  	           ]
-  	       ]
-  				 [VP
-  				 		 [\tit{Maria mag}, roof]
-  				 ]
-  			]
-    ]
+	 	[CP, s sep=20mm
+       [\ac{acc}P,
+			 tikz={
+			 \node[label=below:\tit{wen},
+			 draw,circle,
+			 scale=0.85,
+			 fit to=tree]{};
+			 }
+           [\tsc{f2}]
+           [\tsc{nomP}
+               [\tsc{f1}]
+               [XP
+                   [\phantom{xxx}, roof]
+               ]
+           ]
+       ]
+			 [VP
+			 		 [\tit{Maria mag}, roof]
+			 ]
+		]
 ]
  \end{forest}
 
@@ -99,7 +111,7 @@ In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base
  1\tsc{sg}.\tsc{dat} is {the same} that matter\\
  `I don't care about that matter.' \flushfill{Modern German}\label{ex:mg-extrapose-dp-moved}
 
-The same CP-DP assymetry can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gestohlen hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
+The same CP-DP asymmetry can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gestohlen hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
 In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
 
 \ex. \label{ex:extra-headed} adapted from Groos/v Riemsdijk
@@ -128,28 +140,28 @@ Jan has returned what he stolen has\\
 Jan has what returned he stolen has\\
 `Hans has returned what he has stolen.' \citet[185]{groos1981}\label{ex:extra-headless-no-rel}
 
-%Here connect the placement of the relative pronoun to the case.
-%explain how to the other case configuration does not work
-
 In conclusion, extraposition facts show independently of the case facts that the relative pronoun in Modern German is syntactically part of the relative clause.
 
 
 \subsection{Two problems}
 
-The previous section showed that the relative pronoun in a Modern German headless relative is syntactically part of the relative clause. In this section I show that two problems arise after assuming that.
+The previous section showed that the relative pronoun in a Modern German headless relative is syntactically part of the relative clause. The analysis is as follows: the relative pronoun (part of the relative clause) takes the case of the predicate in the relative clause. The sentence is grammatical if the external case is contained in the relative clause case.
 
-The analysis is as follows: the relative pronoun takes the case of the predicate in the relative clause. The sentence is grammatical is the external case is contained in the relative clause case.
+The opposite does not work: if the external case is not contained in the relative clause, that case requirement cannot be satisfied. The external case cannot fly into the relative clause.
 
-First, normally there is a single DP connected to a predicate. Here there is a single DP, the relative pronoun, that is connected to both of the predicates. Or, it is first connected to the clause it is in, but then there is this `secondary' relationship.
+Now there are two problems, to subjects that need more said about them.
 
-Then there is a second problem.
-(2) if we follow this logic, to show this type of case competition? (OHG and Gothic also allow this one, so that is fine, they just allow something else in addition, and I'll get back to that later) But there are languages like Polish, which is so-called `strictly matching'. It always gives an ungrammatical result when there is case competition (and not syncretism or two identical cases).
+(1) we keep talking about this external case. Is this part of the derivation as well? Because it is clear that somehow reference needs to be made to it. So far we have this picture: no external case yet. %First, normally there is a single DP connected to a predicate. Here there is a single DP, the relative pronoun, that is connected to both of the predicates. Or, it is first connected to the clause it is in, but then there is this `secondary' relationship.
+
+(2) why do not all languages behave like Modern German? Where is place for differences between languages? For Gothic and Old High German we are still ok, because we also allow for this type of case attraction there. But how about a language like Polish, that does not allow for it? How can this type of case attraction be excluded?
+
+To solve both of these problems, I introduce an external head. %(2) if we follow this logic, to show this type of case competition? (OHG and Gothic also allow this one, so that is fine, they just allow something else in addition, and I'll get back to that later) But there are languages like Polish, which is so-called `strictly matching'. It always gives an ungrammatical result when there is case competition (and not syncretism or two identical cases).
 
 
 \subsubsection{Care about external case}
 
 %%relative pronoun cares about internal and external case
-However, just like in Gothic and Old High German, the Modern German relative pronoun is sensitive to the internal and external case.
+Just like in Gothic and Old High German, the Modern German relative pronoun is sensitive to the internal and external case.
 The internal case only surfaces when it is more complex than the external case.
 
 Consider the examples in \ref{ex:mg-internal}. In both sentences, the internal case is accusative, because the predicate in the relative clause \tit{mögen} `to like' takes accusative objects. The external case differs between the two sentences. In \ref{ex:mg-dat-acc-wen} the external case is dative, because the predicate \tit{vertrauen} `to trust' takes dative objects.  In \ref{ex:mg-nom-acc-wen}, the external case is nominative, because \tit{besuchen} `to visit' takes nominative subjects.
@@ -164,77 +176,67 @@ I.\ac{nom} trust.1\ac{sg}\scsub{[dat]} \tsc{rel}.\ac{acc}.\tsc{an} also Maria.\a
 
 The sentence in \ref{ex:mg-dat-acc-wen} is ungrammatical, and the one in \ref{ex:mg-nom-acc-wen} is not. The relative clauses in both sentences are identical case-wise, so the difference in ungrammaticality cannot lie there. The only observable differences are found in the main clause. The former sentence is ungrammatical, because the internal accusative case cannot win the case competition over the external dative. The latter sentence is grammatical, because the internal accusative case wins over the external nominative. The conclusion that can be drawn from this is that the relative pronoun in Modern German headless relatives cares about both the internal and the external case.
 
-In sum, even though the relative pronoun in Modern German headless relatives is always part of the relative clause, the relative pronoun also takes the external case into account. That means that the relative pronoun somehow needs to have access to the main clause case. I return to the matter of `somehow' later on in this section.
+In sum, even though the relative pronoun in Modern German headless relatives is always part of the relative clause, the relative pronoun also takes the external case into account. That means that the relative pronoun somehow needs to have access to the main clause case. In the next section I argue that this `somehow' can be done with an external head.
 
 
+\subsubsection{How to exclude this}
 
+Now I do not want to say that Polish and German differ in that Polish is `strictly matching' and Modern German is `more relaxed', that this is something construction- and language-specific. Instead, I let the distinction in headless relatives follow from something within the language. This something is their light-headed relatives.
 
-
-\subsubsection{Other \tsc{wh}-languages}
+Then there are languages like Polish. In Polish, case competition does not take place at all. All combinations are ungrammatical. Consider x.
 
 \ex.
-\ag. Jan lubi \tbf{komu} \tbf{(kolwiek)} \tbf{dokucza}.\\
+\ag. *Jan lubi \tbf{komu} \tbf{(kolwiek)} \tbf{dokucza}.\\
 Jan like.3\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{dat}.\tsc{sg}.\tsc{an} ever tease.3\tsc{sg}\scsub{[dat]}\\
 `Jan likes whoever he teases.'
-\bg. Jan ufa \tbf{komu} \tbf{(kolwiek)} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+\bg. *Jan ufa \tbf{komu} \tbf{(kolwiek)} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
  Jan trust.3\tsc{sg}\scsub{[dat]} \tsc{rel}.\tsc{dat}.\tsc{sg}.\tsc{an} ever let.3\tsc{sg}\scsub{[acc]} to home\\
  `Jan trusts whoever he let into the house.'
 
-
+Where does the difference between Modern German and Polish lie? Where can we model this difference? Polish and Modern German seem to be pretty similar here. Both have a \tsc{wh}-pronoun functioning as relative pronoun for instance. In Section X I show an external head can solve this problem too.
 
 
 
 \subsection{Solution: an external head}
 
-I propose a single answer to both of these questions: there is an external head. This is the head of the relative clause, and it is deleted in Modern German (as long as it is smaller than the relative pronoun). This external head in Polish is not deleted: it does not add any extra definiteness or indefiniteness. Before I show how this works exactly, I show some independent evidence for assuming that there is this head.
+I propose a single answer to both of these questions: there is an external head. So even though we say these relatives are headless relatives, at some point in the derivation there actually is a head of the relative clause.
+
+
+This is the head of the relative clause, and it is deleted in Modern German (as long as it contains all cases of the relative pronoun). This external head in Polish is not deleted, because it does not add any extra definiteness or indefiniteness. Before I show how this works exactly, I show some independent evidence for assuming that there is this head.
 
 
 \subsubsection{Languages with two heads}
 
-So there is wh, and another wh
-
 There is also independent evidence for this head, namely from languages that actually let the head surface.
 
-\exg. doü adiyano-no \tbf{doü} deyalukhe\\
+Here there are two identical copies of the head, one inside the relative clause, one outside of the relative clause.
+
+\exg. [\tbf{doü} adiyano-no] \tbf{doü} deyalukhe\\
  sago give.3\tsc{pl}.\tsc{nonfut}-\tsc{conn} sago finished.\tsc{ajd}\\
  `The sago that they gave is finished.' \flushfill{Kombai, Dryer 2005}
 
-\exg. gana gu fali-kha \tbf{ro} na-gana-y-a\\
- {bush knife} 2\tsc{sg} carry-go.\tsc{2sg}.\tsc{nonfut} my-{bush knife}-\tsc{tr-pred}\\
- `The bush knife that you took away, is my bush knife.'
+I give an example of a language in which the external head follows the relative clause. There are also languages in which the head precedes the relative clause, e.g. xx
 
-\exg. yare gamo khereja bogi-n-o \tbf{rumu} na-momof-a\\
+The external head is not always an exact copy of the head inside of the relative clause. An example from xx here shows that the head outside of the relative clause can also be a subset of what the element inside of the relative clause is. In this case, there is an \tit{old man} and a \tit{person}.
+
+\exg. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
  {old man} join.\tsc{ss} work \tsc{dur}.do.\tsc{3sg}.\tsc{nf}-\tsc{tr}-\tsc{conn} person my-uncle-\tsc{pred}\\
  `The old man who is joining the work is my uncle.'
 
-\ex.
-\ag. Junya-wa[Ayaka-gamui-taringo]-otabe-ta.\\
- Junya-topAyaka-nompeel-pastapple-acceat-past\\
- ‘Junya ate the apples that Ayaka peeled.’
-\bg. Junya-wa[Ayaka-garingo-omui-ta-no]-otabe-ta.\\
- Junya-topAyaka-nomapple-accpeel-past-no-acceat-past\\
- literally ‘Junya ate [that Ayaka peeled apples].’
-\bg. Junya-wa[Ayaka-garingo-omui-tasono-ringo]-otabe-ta.\\
- Junya-topAyaka-nomapple-accpeel-pastthat-apple-acceat-past\\
- literally ‘Junya ate [those apples that Ayaka peeled apples].’
+So, we have the head. Translating this to relative pronouns, there is the relative pronoun, and something identical or smaller than a relative pronoun outside of the relative clause. In Chapter X I show what the feature content of the head exactly is.
 
-So, we have the head.
+Let me now show how this solves the external case problems and how it helps exclude some languages.
 
 
 \subsubsection{Solving external case care}
 
---give here a table with on one side the tree repeated and on the other side the head, with XP at the bottom?-- %split the relative pronoun up in the w part and the other part?
+--give here a table with on one side the tree repeated and on the other side the head, with XP at the bottom?--
+split the relative pronoun up in the w part and the other part, because this is already the subset relation
 
 Now this accusative here can license an external nominative case. The idea is: it is inside this accusative already. We understand why it could not license a dative: \tsc{f3} is not contained in the accusative.
 
 
-\subsubsection{Solving other \tsc{wh}-languages}
-
-But if we follow the logic I just sketched, I expect all languages that have \tsc{wh}-pronouns as relative pronouns to allow for letting the internal case win in case competition. This prediction is incorrect.
-
-Under the grafting analysis, there is nothing that distinguishes Polish from Modern German, so there is no reason for the Polish example in X to be incorrect. The other one is ungrammatical, just as the German one, but the first one is too, and that is unexpected.
-
-Now I do not want to say that Polish and German differ in that Polish is `strictly matching' and Modern German is `more relaxed', that this is something construction- and language-specific. Instead, I let the distinction in headless relatives follow from something within the language. This something is their light-headed relatives.
+\subsubsection{Excluding some languages}
 
 \ex. Polish light-headed relative
 

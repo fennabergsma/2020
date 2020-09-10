@@ -60,47 +60,49 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Only internal}{77}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Other languages}{79}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Possible counterexamples}{79}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Relative pronouns}{79}{section.4.2}%
+\contentsline {subsection}{\numberline {4.1.4}No winner}{79}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}\textsc {d} vs. \textsc {wh}}{83}{chapter.5}%
+\contentsline {section}{\numberline {4.2}Relative pronouns}{80}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}\textsc {wh}-relatives}{83}{section.5.1}%
+\contentsline {chapter}{\chapternumberline {5}Excluding the third pattern}{83}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}\textsc {wh}-relatives}{84}{section.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}The relative pronoun in the relative clause}{85}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Two problems}{87}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Two problems}{88}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.1}Care about external case}{87}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Care about external case}{88}{subsubsection.5.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.2}Other \textsc {wh}-languages}{88}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}How to exclude this}{89}{subsubsection.5.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Solution: an external head}{89}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.3}Solution: an external head}{90}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{89}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{90}{subsubsection.5.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}Solving external case care}{90}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}Solving external case care}{91}{subsubsection.5.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.3}Solving other \textsc {wh}-languages}{90}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}Excluding some languages}{91}{subsubsection.5.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Syntactic position of external head}{91}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.4}Syntactic position of external head}{92}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}\textsc {d}-relatives}{93}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Like Modern German}{93}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Like Modern German}{94}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Derived from light-headed relatives}{93}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}Derived from light-headed relatives}{94}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2.1}Old High German}{93}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Old High German}{94}{subsubsection.5.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2.2}Gothic}{93}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Gothic}{94}{subsubsection.5.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Alternative analyses}{93}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Alternative analyses}{94}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Himmelreich}{93}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}Himmelreich}{94}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Grafting story}{93}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.2}Grafting story}{94}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {6}Step by step derivations}{97}{chapter.6}%
 \defcounter {refsection}{0}\relax 
