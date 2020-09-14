@@ -14,6 +14,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}The content of this dissertation}{6}{section.1.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}The scope of this dissertation}{7}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Case attraction}{7}{subsection.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Syncretism}{7}{subsection.1.3.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}The case facts}{9}{part.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}A recurring pattern}{11}{chapter.2}%
@@ -60,11 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Only internal}{77}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Possible counterexamples}{79}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Languages without case attraction}{79}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}No winner}{79}{subsection.4.1.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Relative pronouns}{80}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Relative pronouns}{79}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}Excluding the third pattern}{83}{chapter.5}%
 \defcounter {refsection}{0}\relax 
@@ -72,23 +76,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}The relative pronoun in the relative clause}{85}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Two problems}{88}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Two open issues}{88}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.1}Care about external case}{88}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}How to get access to external case}{88}{subsubsection.5.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.2}How to exclude this}{89}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}How to disallow the pattern}{89}{subsubsection.5.1.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.3}Solution: an external head}{90}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{90}{subsubsection.5.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}Solving external case care}{91}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}Getting access to external case}{91}{subsubsection.5.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.3}Excluding some languages}{91}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}Disallowing the pattern}{92}{subsubsection.5.1.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.4}Syntactic position of external head}{92}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}\textsc {d}-relatives}{93}{section.5.2}%
+\contentsline {section}{\numberline {5.2}\textsc {d}-relatives}{94}{section.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Like Modern German}{94}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
