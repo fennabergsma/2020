@@ -72,9 +72,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}Excluding the third pattern}{83}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}\textsc {wh}-relatives}{84}{section.5.1}%
+\contentsline {section}{\numberline {5.1}The Modern German pattern}{84}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}The relative pronoun in the relative clause}{85}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Relative pronouns in the relative clause}{85}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.2}Two open issues}{88}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
@@ -92,7 +92,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.4}Syntactic position of external head}{93}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}\textsc {d}-relatives}{94}{section.5.2}%
+\contentsline {section}{\numberline {5.2}The Gothic/OHG pattern}{94}{section.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Like Modern German}{94}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -102,11 +102,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.2.2.2}Gothic}{95}{subsubsection.5.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Alternative analyses}{95}{section.5.3}%
+\contentsline {section}{\numberline {5.3}No third pattern}{95}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Himmelreich}{95}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Alternative analyses}{95}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Grafting story}{95}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.4.1}Himmelreich}{95}{subsection.5.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Grafting story}{95}{subsection.5.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {6}Step by step derivations}{99}{chapter.6}%
 \defcounter {refsection}{0}\relax 
