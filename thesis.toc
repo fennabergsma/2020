@@ -60,17 +60,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Only internal case wins}{77}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}No only external case wins}{81}{section.4.3}%
+\contentsline {section}{\numberline {4.3}No only external case wins}{82}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Patterns without case competition}{81}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Patterns without case competition}{82}{section.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.1}No mismatch allowed}{82}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}External case surfaces}{82}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}External case surfaces}{83}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2.1}Greek}{82}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Greek}{83}{subsubsection.4.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2.2}Old English}{83}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Old English}{84}{subsubsection.4.4.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.3}No internal case surfaces}{84}{subsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
