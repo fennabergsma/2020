@@ -919,6 +919,7 @@ Within the triangle, I assume there to be amongst others phi features and featur
 } I elaborate on the exact content of XP in Chapter .
 Following that, a dative relative pronoun contains the XP, \tsc{f1}, \tsc{f2} and \tsc{f3}.
 Contained in this structure is an accusative relative pronoun, marked in gray. This consists of the XP, \tsc{f1} and \tsc{f2}.
+The bigger structure wins against the smaller structure it contains: the dative wins over the accusative.
 
 \ex.
 \begin{forest} boom
@@ -942,59 +943,8 @@ Contained in this structure is an accusative relative pronoun, marked in gray. T
   ]
 \end{forest}\label{ex:dat-contains-acc}
 
-Table \ref{tbl:dat-against-acc} shows the situation in which the dative and the accusative compete against each other. The bigger structure deletes the smaller structure it contains: the dative wins.\footnote{
-In Table \ref{tbl:dat-against-acc} there are two structures that both have a XP at their bottom.
-I come back to the exact content of these triangles in Chapter \ref{}. Whatever is in the triangle under XP does not influence the main point here: a bigger case wins over a smaller case.
-}
-
-\begin{table}[H]
-  \center
-	\caption {\ac{dat}P deletes \ac{acc}P}
-		\begin{tabular}[b]{c c}
-      \begin{forest} boom
-        [\tsc{datP}
-            [\tsc{f3}]
-              [\ac{acc}P,
-              tikz={
-              \node[draw,circle,
-              scale=0.825,
-              fit to=tree]{};
-              }
-                [\tsc{f2}]
-                [\tsc{nomP}
-                    [\tsc{f1}]
-                    [XP
-                        [\phantom{xxx}, roof, baseline]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      &
-      \begin{forest} boom
-        [\textcolor{LG}{\tsc{accP}},
-        tikz={
-        \node[draw,circle,
-        scale=0.825,
-        fit to=tree]{};
-        }
-            [\textcolor{LG}{\ac{acc}},edge=LG]
-            [\textcolor{LG}{\tsc{nomP}},edge=LG
-                [\textcolor{LG}{\ac{nom}},edge=LG]
-                [\textcolor{LG}{XP},edge=LG
-                    [\textcolor{LG}{\phantom{xxx}},
-                    roof, baseline, edge=LG
-                    ]
-                ]
-            ]
-        ]
-      \end{forest} \\
-  \end{tabular}
-  \label{tbl:dat-against-acc}
-\end{table}
-
-
 Next is the competition between dative and nominative, in which dative wins. The corresponding cells are marked light gray in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:dat-contains-nom} I show the syntactic structure of a dative relative pronoun. It contains the XP, \tsc{f1}, \tsc{f2} and \tsc{f3}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the XP and \tsc{f1}.
+The bigger structure wins against the smaller structure it contains: the dative wins over the nominative.
 
 \ex.
 \begin{forest} boom
@@ -1018,52 +968,8 @@ Next is the competition between dative and nominative, in which dative wins. The
   ]
 \end{forest}\label{ex:dat-contains-nom}
 
-Table \ref{tbl:dat-against-nom} shows the situation in which the dative and the nominative compete against each other. The bigger structure deletes the smaller structure it contains: the dative wins.
-
-\begin{table}[H]
-  \center
-	\caption {\ac{dat}P deletes \ac{nom}P}
-		\begin{tabular}[b]{cc}
-      \begin{forest} boom
-        [\tsc{datP}
-            [\tsc{f3}]
-              [\ac{acc}P
-                [\tsc{f2}]
-                [\tsc{nomP},
-                tikz={
-                \node[draw,circle,
-                scale=0.8,
-                fit to=tree]{};
-                }
-                    [\tsc{f1}]
-                    [XP
-                        [\phantom{xxx}, roof, baseline]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      &
-      \begin{forest} boom
-        [\textcolor{LG}{\tsc{nomP}},
-        tikz={
-        \node[draw,circle,
-        scale=0.8,
-        fit to=tree]{};
-        }
-            [\textcolor{LG}{\ac{nom}},edge=LG]
-            [\textcolor{LG}{XP},baseline,edge=LG
-                [\textcolor{LG}{\phantom{xxx}},
-                roof, baseline, edge=LG
-                ]
-            ]
-        ]
-      \end{forest} \\
-  \end{tabular}
-  \label{tbl:dat-against-nom}
-\end{table}
-
 Finally there is the competition between accusative and nominative, in which accusative wins. The corresponding cells are uncolored in Table \ref{tbl:summary-gothic-deriving}. In \ref{ex:acc-contains-nom} I show the syntactic structure of an accusative relative pronoun. It contains the XP, \tsc{f1} and \tsc{f2}. Contained in this structure is a nominative relative pronoun, marked in gray. This consists of the XP and \tsc{f1}.
+The bigger structure wins against the smaller structure it contains: the accusative wins over the nominative.
 
 \ex.
 \begin{forest} boom
@@ -1085,50 +991,6 @@ Finally there is the competition between accusative and nominative, in which acc
   ]
 \end{forest}\label{ex:acc-contains-nom}
 
-Table \ref{tbl:acc-against-nom} shows the situation in which the accusative and the nominative compete against each other. The bigger structure deletes the smaller structure it contains: the accusative wins.
-
-\begin{table}[H]
-  \center
-	\caption {\ac{acc}P deletes \ac{nom}P}
-		\begin{tabular}[b]{cc}
-      \begin{forest} boom
-          [\ac{acc}P
-              [\tsc{f2}]
-              [\tsc{nomP},
-              tikz={
-              \node[draw,circle,
-              scale=0.8,
-              fit to=tree]{};
-              }
-                  [\tsc{f1}]
-                  [XP
-                      [\phantom{xxx}, roof, baseline]
-                  ]
-              ]
-          ]
-      \end{forest}
-      &
-      \begin{forest} boom
-        [\textcolor{LG}{\tsc{nomP}},
-        tikz={
-        \node[draw,circle,
-        scale=0.8,
-        fit to=tree]{};
-        }
-            [\textcolor{LG}{\ac{nom}},
-            edge=LG]
-            [\textcolor{LG}{XP},
-            edge=LG
-                [\textcolor{LG}{\phantom{xxx}},
-                roof, baseline, edge=LG
-                ]
-            ]
-        ]
-      \end{forest}\\
-  \end{tabular}
-  \label{tbl:acc-against-nom}
-\end{table}
-
 In sum, the cumulative case decomposition from Table \ref{tbl:case-decomposed} can derive the case scale observed for case competition in headless relatives.
 
 \section{Summary}
@@ -1140,5 +1002,3 @@ Regarding syncretism, several patterns are attested crosslinguistically (ABC, AA
 Languages with morphological case containment show the cumulative case decomposition in their morphology. The phonological form of the accusative contains the form of the nominative plus an extra morpheme. The phonological form of the dative contains the form of the accusative plus an extra morpheme.
 
 For headless relatives, the idea is that a case wins the competition if it contains all features the other case has. As the dative is the richest in features (it contains \tsc{f1}, \tsc{f2} and \tsc{3}), it wins over the accusative (which consists of \tsc{f1} and \tsc{f2}) and the nominative (which contains only \tsc{f1}). Finally, the accusative wins over the nominative, because the former is richer in features than the latter.
-
-%formulized as: more complex case
