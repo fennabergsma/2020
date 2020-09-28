@@ -58,13 +58,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {4}Two attested patterns}{71}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Internal or external wins}{72}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Internal or external wins}{73}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Only internal case wins}{77}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Only internal case wins}{78}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}No only external case wins}{82}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Summary}{83}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Summary}{84}{section.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}The derivations of the patterns}{85}{chapter.5}%
 \defcounter {refsection}{0}\relax 
