@@ -64,7 +64,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}No only external case wins}{84}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Summary}{85}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Summary}{86}{section.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}The derivations of the patterns}{87}{chapter.5}%
 \defcounter {refsection}{0}\relax 
