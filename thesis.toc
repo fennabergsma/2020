@@ -86,9 +86,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.3.3}Disallowing the pattern}{98}{subsubsection.5.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Syntactic position of external head}{99}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.4}Featural content of the head}{99}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}The external wins pattern}{100}{section.5.2}%
+\contentsline {subsection}{\numberline {5.1.5}Syntactic position of external head}{99}{subsection.5.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}The external wins pattern}{101}{section.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Old High German}{101}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
