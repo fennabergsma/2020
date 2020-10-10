@@ -4,9 +4,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Contents}{i}{section*.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{iv}{section*.2}%
+\contentsline {chapter}{List of tables}{v}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{vi}{table.0.1}%
+\contentsline {chapter}{List of figures}{vi}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of abbreviations}{viii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -38,35 +40,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Syncretism}{37}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Formal containment}{39}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{39}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Summary}{40}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{43}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Case decomposition}{41}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The basic idea}{44}{section.3.1}%
+\contentsline {section}{\numberline {3.1}The basic idea}{42}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Deriving syncretism}{43}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deriving case containment}{60}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{58}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Deriving the case scale in headless relatives}{65}{section.3.4}%
+\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{63}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Summary}{68}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Summary}{66}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The variation}{69}{part.2}%
+\contentsline {part}{\partnumberline {II}The variation}{67}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}Two attested patterns}{71}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}Two attested patterns}{69}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Possible patterns with case competition}{72}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Three possible patterns}{70}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Pattern I: internal or external}{74}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Internal and external case allowed}{72}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Pattern II: only internal}{80}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Only internal case allowed}{78}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Pattern III: only external}{86}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Only external case allowed}{84}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Aside: languages without case competition}{87}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Aside: languages without case competition}{85}{section.4.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.6}Summary}{89}{section.4.6}%
 \defcounter {refsection}{0}\relax 
@@ -152,4 +154,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{123}{table.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{125}{section*.9}%
+\contentsline {chapter}{Bibliography}{125}{section*.10}%
