@@ -74,7 +74,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}The derivations of the patterns}{109}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}The internal wins pattern}{110}{section.5.1}%
+\contentsline {section}{\numberline {5.1}The internal wins pattern}{111}{section.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}Relative pronouns in the relative clause}{112}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -86,31 +86,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.3}Solution: an external head}{117}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{117}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{118}{subsubsection.5.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}Getting access to external case}{118}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}Getting access to external case}{119}{subsubsection.5.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.3}Disallowing the pattern}{118}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}Disallowing the pattern}{119}{subsubsection.5.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Featural content of the head}{119}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.4}Featural content of the head}{120}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Syntactic position of external head}{119}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.5}Syntactic position of external head}{120}{subsection.5.1.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}The external wins pattern}{121}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Old High German}{121}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Old High German}{122}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Gothic}{121}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}Gothic}{122}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Excluding the third pattern}{121}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Excluding the third pattern}{122}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Alternative analyses}{121}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Alternative analyses}{122}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Himmelreich}{121}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.1}Himmelreich}{122}{subsection.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Grafting story}{121}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.2}Grafting story}{122}{subsection.5.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Summary}{123}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Summary}{124}{section.5.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {III}Going into detail}{125}{part.3}%
 \defcounter {refsection}{0}\relax 
