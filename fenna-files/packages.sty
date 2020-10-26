@@ -9,6 +9,8 @@
 %%%FONTS%%%
 
 
+\usepackage{cancel}
+
 %%%SPACING/BREAKING%%%
 \OnehalfSpacing*
 \sloppy%%%overfull%%%
@@ -24,7 +26,13 @@
 boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 }
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,positioning}
+\usetikzlibrary{shapes,arrows,positioning,shapes.geometric}
+
+\tikzstyle{question} = [diamond, minimum width=1cm, minimum height=1cm, text centered, text width=2cm, draw=black]
+\tikzstyle{outcome} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black]
+\tikzstyle{example} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=white]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
 %%%TREES%%%
 
 
