@@ -30,136 +30,136 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}In headless relatives}{13}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}In syntax}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.2}In syntax}{22}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Agreement}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Agreement}{22}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Relativization}{28}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Relativization}{30}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{37}{section.2.3}%
+\contentsline {section}{\numberline {2.3}In morphology}{39}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism}{38}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Syncretism}{40}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{39}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{41}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{40}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Summary}{42}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{43}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Case decomposition}{45}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The basic idea}{44}{section.3.1}%
+\contentsline {section}{\numberline {3.1}The basic idea}{46}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Deriving syncretism}{47}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{66}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{68}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{71}{section.3.4}%
+\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{73}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Summary}{74}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Summary}{76}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The variation}{75}{part.2}%
+\contentsline {part}{\partnumberline {II}The variation}{77}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}A typology of headless relatives}{77}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}A typology of headless relatives}{79}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Four possible patterns}{78}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Four possible patterns}{80}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Internal and external case allowed}{82}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Internal and external case allowed}{84}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Only internal case allowed}{88}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Only internal case allowed}{91}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Only external case allowed}{94}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Only external case allowed}{98}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Internal and external case not allowed}{98}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Internal and external case not allowed}{102}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Summary}{99}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Summary}{105}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Aside: languages without case competition}{101}{section.4.7}%
+\contentsline {section}{\numberline {4.7}Aside: languages without case competition}{106}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}The derivations of the patterns}{113}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}The derivations of the patterns}{119}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Internal case wins}{115}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Internal case wins}{121}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Relative pronouns in the relative clause}{116}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Relative pronouns in the relative clause}{122}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Two open issues}{118}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Two open issues}{124}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.1}How to get access to external case}{119}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}How to get access to external case}{125}{subsubsection.5.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2.2}How to disallow the pattern}{120}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}How to disallow the pattern}{126}{subsubsection.5.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Solution: an external head}{122}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.3}Solution: an external head}{128}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{122}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}Languages with two heads}{128}{subsubsection.5.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}Getting access to external case}{123}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}Getting access to external case}{129}{subsubsection.5.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.3}Disallowing the pattern}{123}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}Disallowing the pattern}{129}{subsubsection.5.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Featural content of the head}{124}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.4}Featural content of the head}{130}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Syntactic position of external head}{124}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.5}Syntactic position of external head}{130}{subsection.5.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}The proposal}{125}{section.5.2}%
+\contentsline {section}{\numberline {5.2}The proposal}{131}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}External case wins}{126}{section.5.3}%
+\contentsline {section}{\numberline {5.3}External case wins}{132}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}German}{126}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}German}{132}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Old High German}{126}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.2}Old High German}{132}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Gothic}{126}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.3}Gothic}{132}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Excluding the third pattern}{126}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Excluding the third pattern}{132}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Alternative analyses}{126}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Alternative analyses}{132}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Himmelreich}{126}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.1}Himmelreich}{132}{subsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Grafting story}{126}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.2}Grafting story}{132}{subsection.5.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Summary}{128}{section.5.6}%
+\contentsline {section}{\numberline {5.6}Summary}{134}{section.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {III}Going into detail}{129}{part.3}%
+\contentsline {part}{\partnumberline {III}Going into detail}{135}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Decomposing relative pronouns}{131}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}Decomposing relative pronouns}{137}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}The lexical entries}{131}{section.6.1}%
+\contentsline {section}{\numberline {6.1}The lexical entries}{137}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}The paradigms}{131}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.1}The paradigms}{137}{subsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Morphemes}{133}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}Morphemes}{139}{subsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}The light head}{134}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.3}The light head}{140}{subsection.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.4}Features}{134}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.4}Features}{140}{subsection.6.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The spellout procedure}{134}{section.6.2}%
+\contentsline {section}{\numberline {6.2}The spellout procedure}{140}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}The deletion operation}{137}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}The deletion operation}{143}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Only the two heads}{137}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Only the two heads}{143}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}German deletion}{137}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.1}German deletion}{143}{subsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Polish deletion}{139}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.2}Polish deletion}{145}{subsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}In a larger syntactic context}{141}{section.7.2}%
+\contentsline {section}{\numberline {7.2}In a larger syntactic context}{147}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Internal deletes external}{141}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.1}Internal deletes external}{147}{subsection.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}External deletes internal}{142}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}External deletes internal}{148}{subsection.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Discussion}{143}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Discussion}{149}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Diachronic part}{143}{section.8.1}%
+\contentsline {section}{\numberline {8.1}Diachronic part}{149}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}D also in Modern German}{143}{section.8.2}%
+\contentsline {section}{\numberline {8.2}D also in Modern German}{149}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{143}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{149}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Relativization in general}{143}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Relativization in general}{149}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}The lack of internal dative and external accusative}{144}{section.8.5}%
+\contentsline {section}{\numberline {8.5}The lack of internal dative and external accusative}{150}{section.8.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{145}{table.8.1}%
+\contentsline {chapter}{Primary texts}{151}{table.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{147}{section*.10}%
+\contentsline {chapter}{Bibliography}{153}{section*.10}%
