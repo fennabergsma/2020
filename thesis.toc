@@ -78,44 +78,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.7.2}A typology of headless relatives}{127}{subsection.4.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}The committee}{131}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}The committee}{133}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}The idea}{133}{section.5.1}%
+\contentsline {section}{\numberline {5.1}The idea}{135}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}The internal and external element}{133}{section.5.2}%
+\contentsline {section}{\numberline {5.2}The internal and external element}{135}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}The relative pronoun = internal}{134}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}The relative pronoun = internal}{136}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}The other element = external}{136}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}The other element = external}{138}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Deriving the patterns}{138}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Deriving the patterns}{140}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Deriving internal-and-external}{138}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}Deriving internal-and-external}{140}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Deriving internal-only}{140}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.2}Deriving internal-only}{142}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Deriving neither}{144}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.3}Deriving neither}{146}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Excluding external-only}{146}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.4}Excluding external-only}{148}{subsection.5.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Alternative analyses}{146}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Alternative analyses}{148}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Himmelreich}{146}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.1}Himmelreich}{148}{subsection.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Grafting story}{146}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.2}Grafting story}{148}{subsection.5.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Summary}{148}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Summary}{150}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Discussion}{149}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}Discussion}{151}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Diachronic part}{149}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Diachronic part}{151}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}D also in Modern German}{149}{section.6.2}%
+\contentsline {section}{\numberline {6.2}D also in Modern German}{151}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{150}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{152}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Relativization in general}{150}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Relativization in general}{152}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{151}{table.6.1}%
+\contentsline {chapter}{Primary texts}{153}{table.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{153}{section*.9}%
+\contentsline {chapter}{Bibliography}{155}{section*.9}%
