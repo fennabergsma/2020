@@ -263,7 +263,7 @@ The relative pronoun \tit{them} `\ac{rel}.\ac{pl}.\ac{m}.\ac{dat}' appears in th
  say.\ac{pst}.3\ac{sg}\scsub{dat} \ac{rel}.\ac{pl}.\ac{m}.\ac{dat} 3\ac{sg}.\ac{f}.\ac{nom} wish.\ac{pst}.3\ac{sg}\scsub{dat}\\
  `she said to those, whom she wished for' \flushfill{Old Saxon, \ac{hel} 4:293}\label{ex:os-dat-dat}
 
-These findings can be summarized as in Table \ref{tbl:summary-ohg-matching}. The diagonal from the top left to the bottom right corresponds to the examples given so far in which the internal and external case match. The nominative marked in light gray corresponds to \ref{ex:ohg-nom-nom}, in which the internal nominative case competes with the external nominative case, and the relative pronoun surfaces in the nominative case. The accusative marked in dark gray corresponds to \ref{ex:ohg-acc-acc}, in which the internal accusative case competes with the external accusative case, and the relative pronoun surfaces in the accusative case. The unmarked dative corresponds to \ref{ex:ohg-dat-dat}, in which the internal dative case competes with the external dative case, and the relative pronoun surfaces in the dative case.
+These findings can be summarized as in Table \ref{tbl:summary-ohg-matching}. The diagonal from the top left to the bottom right corresponds to the examples given so far in which the internal and external case match. The nominative marked in light gray corresponds to \ref{ex:ohg-nom-nom}, in which the internal nominative case competes with the external nominative case, and the relative pronoun surfaces in the nominative case. The accusative marked in dark gray corresponds to \ref{ex:os-acc-acc}, in which the internal accusative case competes with the external accusative case, and the relative pronoun surfaces in the accusative case. The unmarked dative corresponds to \ref{ex:ohg-dat-dat}, in which the internal dative case competes with the external dative case, and the relative pronoun surfaces in the dative case.
 
 \begin{table}[H]
   \center
@@ -608,7 +608,15 @@ The example adheres to the case scale, but the most complex case (here the accus
 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
 `I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom}
 
-The example in \ref{ex:mg-acc-nom-u} is identical to \ref{ex:mg-acc-nom}, except for that the relative pronoun appears in the external less complex nominative case. This example is also ungrammatical: in addition to the most complex case not being the internal case, the relative pronoun also does not appear in the most complex case (the accusative) but in the less complex case (the nominative).
+The example in \ref{ex:mg-acc-nom-u} is identical to \ref{ex:mg-acc-nom}, except for that the relative pronoun appears in the external less complex nominative case. This example is also ungrammatical: in addition to the most complex case not being the internal case, the relative pronoun also does not appear in the most complex case (the accusative) but in the less complex case (the nominative).\footnote{There are actually people who accept this kind of example.
+
+\exg. Ich liebe wer gutes tut, und hasse, wer mich verletzt.\\
+1\ac{sg}.\ac{nom} love.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} good.\ac{nmlz} do.3\ac{sg}\scsub{[nom]}
+and hate.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} I\ac{sg}.\ac{acc} hurt.3\ac{sg}\scsub{[nom]}\\
+`I love who does good and hate who hurts me.' \flushfill{Modern German, adapted from \pgcitealt{groos1981}{206}}\label{ex:mg-acc-nom}
+
+There is no grammatical way of saying this, so people try to make it work one way or the other by somehow repairing it. There are two ways of doing that: (1) they can take \tit{wer gutes tut} and \tit{wer mich verletzt} as clauses objects, (2) they add \tit{den} as an object and drop it at the same time. Notice that this crucially differs from the Old High German example with Jezus. In that one, there was a grammatical option.
+}
 
 \exg. *Ich {lade ein}, wer \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
@@ -1102,7 +1110,7 @@ The darke gray marking corresponds to \ref{ex:mg-dat-acc}, in which the external
 
 In sum, Polish is an instance of a language that allows neither the internal case nor the external case to surface. When the internal and the external case differ in Polish, there is no way to form a grammatical headless relative construction.
 
-\section{Summary}\label{sec:summary-2-patterns}
+\section{Summary}\label{sec:summary-3-patterns}
 
 In case competition in headless relatives two aspects play a role. The first one is which case wins the case competition. It is a crosslinguistically stable fact that this is determined by the case scale in \ref{ex:case-scale-two-patterns-sum}, repeated from Chapter \ref{ch:recurring}. A case more to the right on the scale wins over a case more to the left on the scale.
 
@@ -1183,35 +1191,41 @@ The row numbered as 4 in Table \ref{tbl:possible-headless-relatives-case-competi
 There is no checkmark for this pattern, meaning that there is no grammatical result possible when the internal case is more complex than the external case or the other way around (i.e. when the internal case and the external case differ). This means that the light gray marked cells and the dark gray marked cells in Table \ref{tbl:case-competition-table} are ungrammatical in this pattern.
 In sum, only the cells in the diagonal are grammatical.
 
-
 It is impossible to prove that this pattern does not exist (or has not existed) in any natural language, and it could be an accidental gap. However, in line with the available data so far, I set up a system in the next section that derives the three attested patterns, and excludes the fourth one.
+
+I model the possibilities across the languages using two parameters: (1) does the language allow the internal case as a winner? and (2) does the language allow the external case as a winner? This gives me three possible language. The language that only allows the only external case to win is not generated.
+
+If the first question is answered with no, all non-matching headless relatives are ungrammatical. If the first question is answered with yes, then a second question comes. By setting it up like this, it is impossible to get a language that only allows the external question, because you never reach the question. If you answer the second question with no, then you only allow internal. If you answer the second question with yes, you allow both internal and external.
+
+You can see this flow chart as a committee that lets all the contesters go through two rounds. Round 1: int? if you are out then, you are not considered for the second question. if you get through the first round, then you get to the second question of the ext question.
 
 \begin{figure}[H]
   \centering
-    \begin{tikzpicture}[node distance=2.5cm]
-    \node (question2) [question, xshift=2.5cm]
-    {\ac{int} as winner?};
-        \node (outcome2) [outcome, below of=question2, xshift=-2.5cm]
-        {ungrammatical};
-            \node (example2) [example, below of=outcome2, yshift=1.4cm]
-            {\footnotesize{e.g. Polish}};
-        \node (question3) [question, below of=question2, xshift=2.5cm]
-        {\ac{ext} as winner?};
-            \node (outcome3) [outcome, below of=question3, xshift=-2.5cm]
-            {\ac{rel} = \ac{int} + complex};
-                \node (example3) [example, below of=outcome3, yshift=1.4cm]
-                {\footnotesize{e.g. Modern German}};
-            \node (outcome4) [outcome, below of=question3, xshift=2.5cm]
-            {\ac{rel} = complex};
-                \node (example3) [example, below of=outcome4, yshift=1cm]
-                {\footnotesize{e.g. Gothic, Old High German, Classical Greek}};
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {\ac{int} as winner?};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {*};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Polish\\\phantom{x}}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {\ac{ext} as winner?};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {\ac{int} + complex};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {complex};
+                  \node (example3) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
 
     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
     \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
     \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
     \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
     \end{tikzpicture}
-
+    }
     \caption{Overview attested headless relatives with case competition}
     \label{fig:attested-headless-relatives-case-competition}
 \end{figure}
@@ -1221,11 +1235,11 @@ It is impossible to prove that this pattern does not exist (or has not existed) 
 
 \section{Aside: languages without case competition}\label{sec:without-case-competition}
 
-Two languages that come close to being of the third type discussed in Section \ref{sec:pattern-iii} are Old English and Modern Greek. In this section I show that these two languages are actually languages that lack case competition.
+In this chapter so far, I discussed languages that show case competition. There are also languages that do not show any case competition. This section discusses them, and gives a typology of headless relatives.
 
-In this chapter so far, I discussed languages that show case competition. There are also languages that do not show any case competition. In these languages, the internal case and the external case do not compete to show their case on the relative pronoun. It is irrelevant how the two cases relate to each other on the case scale. Instead, it is fixed per language whether the relative pronoun appears in the external or the internal case. Logically, there are two possible languages: one that lets the relative pronoun appear in the internal case, and one that lets the relative pronoun appear in the external case.
+In languages without case competition, the internal case and the external case do not compete to show their case on the relative pronoun. It is irrelevant how the two cases relate to each other on the case scale. Instead, it is fixed per language whether the relative pronoun appears in the external or the internal case. Logically, there are two possible languages: one that lets the relative pronoun appear in the internal case, and one that lets the relative pronoun appear in the external case.
 
-Table \ref{tbl:no-case-competition-int} shows the pattern of a language in which the relative pronoun always appears in the internal case. In the second row, the internal case is nominative and the external case is either accusative or dative. The relative pronoun appears in the nominative. It is irrelevant here that the nominative is less complex than the accusative and the dative, because there is no case competition taking place. The third row shows that the relative pronoun always appears in the accusative when the internal case is the accusative, and the fourth row shows the same for the dative. To my knowledge, this type is not attested in any natural language.
+Table \ref{tbl:no-case-competition-int} shows the pattern of a language in which the relative pronoun always appears in the internal case. In the second row, the internal case is nominative and the external case is nominative, accusative or dative. The relative pronoun appears in the nominative. It is irrelevant here that the nominative is less complex than the accusative and the dative, because there is no case competition taking place. The third row shows that the relative pronoun always appears in the accusative when the internal case is the accusative, and the fourth row shows the same for the dative. To my knowledge, this type is not attested in any natural language.
 
 \begin{table}[H]
   \center
@@ -1257,7 +1271,7 @@ Table \ref{tbl:no-case-competition-int} shows the pattern of a language in which
   \label{tbl:no-case-competition-int}
 \end{table}
 
-Table \ref{tbl:no-case-competition-ext} shows the pattern of a language in which the relative pronoun always appears in the external case. In the second column, the external case is nominative and the internal case is either accusative or dative. The relative pronoun appears in the nominative. It is irrelevant here that the nominative is less complex than the accusative and the dative, because there is no case competition taking place. The third column shows that the relative pronoun always appears in the accusative when the external case is the accusative, and the fourth column shows the same for the dative.
+Table \ref{tbl:no-case-competition-ext} shows the pattern of a language in which the relative pronoun always appears in the external case. In the second column, the external case is nominative and the internal case is nominative, accusative or dative. The relative pronoun appears in the nominative. It is irrelevant here that the nominative is less complex than the accusative and the dative, because there is no case competition taking place. The third column shows that the relative pronoun always appears in the accusative when the external case is the accusative, and the fourth column shows the same for the dative.
 
 \begin{table}[H]
   \center
@@ -1289,10 +1303,47 @@ Table \ref{tbl:no-case-competition-ext} shows the pattern of a language in which
   \label{tbl:no-case-competition-ext}
 \end{table}
 
+Section \ref{sec:always-ext} discusses two languages that always let their relative pronouns in headless relatives surface in the external case: Old English and Modern Greek. In Section \ref{sec:typology} I extend the case competition typology from Section \ref{sec:summary-3-patterns} by adding the langauges without case competition. As I briefly mentioned, I do not know of any languages, whether extinct or alive, that lets the relative pronoun always surface in the internal case. I do not offer an explanation for why it is not attested, and I include this possibility in my typology.
 
-\subsection{Always external case}
+\subsection{Always external case}\label{sec:always-ext}
 
 In this section I discuss two languages in which the relative pronoun always appears in the external case. I show that these languages do not show any case competition. In other words, these languages are of the type shown in Table \ref{tbl:no-case-competition-ext} and not of the type I discussed in Section \ref{sec:pattern-iii} (or of the one in Section \ref{sec:pattern-i}).
+
+
+This section discusses the situation in which neither the internal nor the external case is allowed to surface when it wins the case competition. When the internal case or the external is more complex, it is not allowed to surface, and the headless relative construction is ungrammatical. In other words, when the internal and the external case differ, there is no grammatical headless relative construction possible. Only when the internal and external case are identical, it is possible to make headless relative. I repeat the pattern from Section \ref{sec:possible-patterns} in \ref{tbl:case-competition-none-repeated}.
+
+
+\begin{table}[H]
+  \center
+  \caption{Always external case}
+  \begin{tabular}{c|c|c|c}
+    \toprule
+   \textsubscript{\ac{int}} \textsuperscript{\ac{ext}}
+          & [\ac{nom}]
+          & [\ac{acc}]
+          & [\ac{dat}]
+          \\ \cmidrule{1-4}
+      [\ac{nom}]
+          & \ac{nom}
+          & \ac{acc}
+          & \ac{dat}
+          \\ \cmidrule{1-4}
+      [\ac{acc}]
+          & \ac{nom}
+          & \ac{acc}
+          & \ac{dat}
+          \\ \cmidrule{1-4}
+      [\ac{dat}]
+          & \ac{nom}
+          & \ac{acc}
+          & \ac{dat}
+          \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:no-case-competition-ext-repeated}
+\end{table}
+
+Two example of languages that shows this pattern are Old English and Modern Greek. In this section I discuss the Old English data with examples from \citet{harbert1983}. The Modern Greek data I discuss is taken from \cite{daskalaki2011}. For all examples holds that I made glosses more detailed, and I added and modified translations.
 
 I start with Old English. I give an example in which the external case is more complex than the internal case and the relative pronoun appears in the most complex external case.
 
@@ -1305,7 +1356,7 @@ The relative pronoun \tit{ðam} `\ac{rel}.\ac{dat}.\ac{pl}' appears in the exter
  that is that one forgive.\ac{subj}.\ac{sg}\scsub{[dat]} \ac{rel}.\ac{dat}.\ac{pl} \ac{comp} against 3\ac{sg}.\ac{m}.\ac{acc} sin.3\ac{sg}\scsub{[nom]}\\
  `that is, that one₂ forgive him₁, who sins against him₂' \flushfill{Old English, adapted from \pgcitealt{harbert1983}{549}} \label{ex:oe-dat-nom}
 
-This example is compatible with three patterns. First, Old English could be a case competition language that only allows the external case to surface. In Table \ref{tbl:oe-poss1}, I mark the example \ref{ex:oe-dat-nom} in gray in the external-only pattern taken from Section \ref{sec:pattern-iii}.
+This example is compatible with three patterns. First, Old English could be a case competition language that only allows the external case to surface. I repeat Table \ref{tbl:case-competition-only-ext-repeated} from Section \ref{sec:pattern-iii} as Table \ref{tbl:oe-poss1}, and I mark the cell that corresponds to the example in \ref{ex:oe-dat-nom} in gray.
 
  \begin{table}[H]
    \center
@@ -1337,7 +1388,7 @@ This example is compatible with three patterns. First, Old English could be a ca
      \label{tbl:oe-poss1}
  \end{table}
 
-Second, Old English could be a case competition language that allows the internal case and external case to surface. In Table \ref{tbl:oe-poss2}, I mark the example \ref{ex:oe-dat-nom} in gray in the internal-and-external pattern repeated from Section \ref{sec:pattern-i}.
+Second, Old English could be a case competition language that allows the internal case and external case to surface. I repeat Table \ref{tbl:case-competition-int-ext-repeated} from Section \ref{sec:pattern-i} as Table \ref{tbl:oe-poss2}, and I mark the cell that corresponds to the example in \ref{ex:oe-dat-nom} in gray.
 
   \begin{table}[H]
     \center
@@ -1369,7 +1420,7 @@ Second, Old English could be a case competition language that allows the interna
       \label{tbl:oe-poss2}
   \end{table}
 
-Third, Old English could be a language without case competition that lets the relative pronoun appear in the external case. In Table \ref{tbl:oe-poss3}, I mark the example \ref{ex:oe-dat-nom} in gray in the always-external pattern repeated from Table \ref{tbl:no-case-competition-ext}.
+Third, Old English could be a language without case competition that lets the relative pronoun appear in the external case. I repeat Table \ref{tbl:no-case-competition-ext-repeated} from the beginning of this section as Table \ref{tbl:oe-poss3}, and I mark the cell that corresponds to the example in \ref{ex:oe-dat-nom} in gray.
 
  \begin{table}[H]
    \center
@@ -1419,7 +1470,7 @@ The relative pronoun appears in the external case, although it is the less compl
  it pulverizes\scsub{[acc]} \ac{rel}.\ac{sg}.\ac{acc} \ac{comp} it upon\scsub{[dat]} falls\\
 `It pulverizes him whom it falls upon.' \flushfill{Old English, adapted from \pgcitealt{harbert1983}{550}} \label{ex:oe-acc-dat}
 
-This example shows that Old English is not an instance of the pattern in Section \ref{sec:pattern-iii}, in which only the external case is allowed to surface. Instead, as illustrated by Table \ref{tbl:no-case-competition-old-english}, the language does not have any case competition. The relative pronoun appears in the external case: the external case can be the most complex case, illustrated by the example in \ref{ex:oe-dat-nom}, marked here in light gray, or the external case can be the less complex case, illustrated by the example in \ref{ex:oe-acc-dat}, marked here in dark gray.
+This example shows that Old English is neither an instance of the pattern in Section \ref{sec:pattern-iii}, in which only the external case is allowed to surface, nor an instance an instance of the pattern in Section \ref{sec:pattern-i}, in which the internal case and external case are allowed to surface. Instead, as illustrated by Table \ref{tbl:no-case-competition-old-english}, the language does not have any case competition. The relative pronoun appears in the external case: the external case can be the most complex case, illustrated by the example in \ref{ex:oe-dat-nom}, marked here in light gray, or the external case can be the less complex case, illustrated by the example in \ref{ex:oe-acc-dat}, marked here in dark gray.
 
 \begin{table}[H]
   \center
@@ -1464,7 +1515,7 @@ The relative pronoun \tit{ópjus} `\ac{rel}.\ac{pl}.\ac{m}.\ac{acc}' appears in 
 thank.\ac{pst}.3\ac{pl}\scsub{[acc]} \ac{rel}.\ac{pl}.\ac{m}.\ac{acc} \ac{cl}.1\ac{sg}.\ac{acc} help.\ac{pst}.3\ac{pl}\scsub{[nom]}\\
 `I thanked whoever helped me.' \flushfill{Modern Greek, adapted from \pgcitealt{daskalaki2011}{80}}\label{ex:greek-acc-nom}
 
-This example is compatible with three patterns. First, Modern Greek could be a case competition language that only allows the external case to surface. In Table \ref{tbl:greek-poss1}, I mark the example \ref{ex:greek-acc-nom} in gray in the external-only pattern taken from Section \ref{sec:pattern-iii}.
+This example is compatible with three patterns. First, Modern Greek could be a case competition language that only allows the external case to surface. I repeat Table \ref{tbl:case-competition-only-ext-repeated} from Section \ref{sec:pattern-iii} as Table \ref{tbl:greek-poss1}, and I mark the cell that corresponds to the example in \ref{ex:greek-acc-nom} in gray.
 
  \begin{table}[H]
    \center
@@ -1496,7 +1547,7 @@ This example is compatible with three patterns. First, Modern Greek could be a c
      \label{tbl:greek-poss1}
  \end{table}
 
-Second, Modern Greek could be a case competition language that allows the internal case and external case to surface. In Table \ref{tbl:greek-poss2}, I mark the example \ref{ex:greek-acc-nom} in gray in the internal-and-external pattern repeated from Section \ref{sec:pattern-i}.
+Second, Modern Greek could be a case competition language that allows the internal case and external case to surface. I repeat Table \ref{tbl:case-competition-int-ext-repeated} from Section \ref{sec:pattern-i} as Table \ref{tbl:greek-poss2}, and I mark the cell that corresponds to the example in \ref{ex:greek-acc-nom} in gray.
 
   \begin{table}[H]
     \center
@@ -1528,7 +1579,7 @@ Second, Modern Greek could be a case competition language that allows the intern
       \label{tbl:greek-poss2}
   \end{table}
 
-Third, Modern Greek could be a language without case competition that lets the relative pronoun appear in the external case. In Table \ref{tbl:greek-poss3}, I mark the example \ref{ex:greek-acc-nom} in gray in the always-external pattern repeated from Table \ref{tbl:no-case-competition-ext}.
+Third, Modern Greek could be a language without case competition that lets the relative pronoun appear in the external case. I repeat Table \ref{tbl:no-case-competition-ext-repeated} from the beginning of this section as Table \ref{tbl:greek-poss3}, and I mark the cell that corresponds to the example in \ref{ex:greek-acc-nom} in gray.
 
  \begin{table}[H]
    \center
@@ -1584,7 +1635,7 @@ The example in \ref{ex:greek-nom-acc-u} is identical to \ref{ex:greek-nom-acc}, 
 come.\ac{pst}.3\ac{pl}\scsub{[nom]} \ac{rel}.\ac{pl}.\ac{m}.\ac{acc} invite.\ac{pst}.2\ac{sg}\scsub{[acc]}\\
 `Whoever you invited came.'\flushfill{Modern Greek, adapted from \pgcitealt{daskalaki2011}{79}}\label{ex:greek-nom-acc-u}
 
-This example shows that Modern Greek is not an instance of the pattern in Section \ref{sec:pattern-iii}, in which only the external case is allowed to surface. Instead, as illustrated by Table \ref{tbl:no-case-competition-greek}, the language does not have any case competition. The relative pronoun appears in the external case: the external case can be the most complex case, illustrated by the example in \ref{ex:greek-acc-nom}, marked here in light gray, or the external case can be the less complex case, illustrated by the example in \ref{ex:greek-nom-acc}, marked here in dark gray.
+This example shows that Modern Greek is neither an instance of the pattern in Section \ref{sec:pattern-iii}, in which only the external case is allowed to surface, nor an instance an instance of the pattern in Section \ref{sec:pattern-i}, in which the internal case and external case are allowed to surface. Instead, as illustrated by Table \ref{tbl:no-case-competition-greek}, the language does not have any case competition. The relative pronoun appears in the external case: the external case can be the most complex case, illustrated by the example in \ref{ex:greek-acc-nom}, marked here in light gray, or the external case can be the less complex case, illustrated by the example in \ref{ex:greek-nom-acc}, marked here in dark gray.
 
 \begin{table}[H]
   \center
@@ -1616,7 +1667,7 @@ This example shows that Modern Greek is not an instance of the pattern in Sectio
   \label{tbl:no-case-competition-greek}
 \end{table}
 
-There is something more to be said about the situation in Modern Greek. When the internal case is genitive instead of accusative, a clitic is added to the sentence to make it grammatical \citep{daskalaki2011}.
+There is something more to be said about the situation in Modern Greek. When the internal case is genitive instead of accusative, a clitic is added to the sentence to make it grammatical.
 
 Consider the example in \ref{ex:greek-nom-gen}.
 The internal case is genitive, as the predicate \tit{eðósó} `to give' takes genitive objects.
@@ -1630,20 +1681,22 @@ In Modern German, it is possible to insert a light head to resolve a situation w
  \ac{cl}.1\ac{sg}.\ac{acc} thank.\ac{pst}.3\ac{pl}\scsub{[nom]} \ac{rel}.\ac{pl}.\ac{m}.\ac{nom} \ac{cl}.3\ac{pl}.\ac{gen} have.\ac{pst}.1\ac{sg} give.\ac{ptcp}\scsub{[gen]} money\\
  `Whoever I had given money to, thanked me.'\flushfill{Modern Greek, adapted from \pgcitealt{daskalaki2011}{80}}\label{ex:greek-nom-gen}
 
-This once again confirms the picture of Modern Greek always letting the relative pronoun surface in the external case. Even if the internal case is clearly more complex, the relative pronoun surfaces in the external case. The internal case is taken care of by the clitic, which independent of the relative clause construction.
+This once again confirms the picture of Modern Greek always letting the relative pronoun surface in the external case. The internal case is taken care of by the clitic, which is independent of the relative clause construction.
 
 I do not discuss more examples from Modern Greek than I did until now. This does not change anything about the point I am making here: the only kind of system that is compatible with the examples given is the one in the relative pronoun always appears in the external case. For more examples that illustrate this pattern, I refer the reader to \pgcitet{daskalaki2011}{79-80}.
 
-Taking this all together, I have not encountered a language that only allows the external case to surface when it wins the case competition. Modern Greek and Old English come close, because they always let the relative pronoun surface in the external case. The crucial difference with the non-attested pattern is that they do not show any case competition.
+In sum, Old English and Modern Greek are two languages that do not show any case competition. The relative pronoun always appears in the external case.
 
 
-\subsection{A typology of headless relatives}
+\subsection{A typology of headless relatives}\label{sec:typology}
 
-I combine
+This section provides a typological overview of headless relatives. I give all logically possible patterns and show with a diagram to what extend I can exclude the non-attested patterns.
+
+In Section \ref{sec:pattern-i} to \ref{sec:pattern-iv} I four different patterns that are all derived from the same table. The relative pronoun that appears is the one that wins the case competition, as in Table \ref{tbl:case-competition-int-ext-typology}. The variation between the four arises from allowing either the internal case, the external care, both of them or neither of them to surface.
 
 \begin{table}[H]
   \center
-  \caption{Either internal or external case allowed}
+  \caption{Relative pronoun follows case competition}
   \begin{tabular}{c|c|c|c}
     \toprule
     \textsubscript{\ac{int}} \textsuperscript{\ac{ext}}
@@ -1671,9 +1724,11 @@ I combine
     \label{tbl:case-competition-int-ext-typology}
 \end{table}
 
+In this section I introduced two different ways of filling out the table. The first one is the one in which the relative pronoun appears in the internal case, as in Table \ref{tbl:no-case-competition-int-typology}
+
 \begin{table}[H]
   \center
-  \caption{Always internal case}
+  \caption{Relative pronoun is internal case}
   \begin{tabular}{c|c|c|c}
     \toprule
    \textsubscript{\ac{int}} \textsuperscript{\ac{ext}}
@@ -1698,12 +1753,14 @@ I combine
           \\
     \bottomrule
   \end{tabular}
-  \label{tbl:no-case-competition-int}
+  \label{tbl:no-case-competition-int-typology}
 \end{table}
+
+The second one is the one in which the relative pronoun appears in the external case, as in Table \ref{tbl:no-case-competition-ext-typology}
 
 \begin{table}[H]
   \center
-  \caption{Always external case}
+  \caption{Relative pronoun in external case}
   \begin{tabular}{c|c|c|c}
     \toprule
    \textsubscript{\ac{int}} \textsuperscript{\ac{ext}}
@@ -1728,10 +1785,61 @@ I combine
           \\
     \bottomrule
   \end{tabular}
-  \label{tbl:no-case-competition-ext}
+  \label{tbl:no-case-competition-ext-typology}
 \end{table}
 
+I incorporate the options to generate these different patterns into the diagram from Section \ref{sec:summary-3-patterns} in Figure
+\ref{fig:typology}. I added to parameters. First, a language can either have case competition or not. If the language does, Table \ref{tbl:case-competition-int-ext-typology} is generated. For what follows, see Section \ref{sec:summary-3-patterns}.
 
+If the language does not have case competition, the second parameter is whether the language lets the relative surface in the internal case or in the external case. Old English and Modern Greek are two examples of languages that let their relative pronouns in headless relatives appear in the external case. I am not aware of any language that lets its relative pronoun in headless relatives appear in the internal case. In this dissertation I do not offer an explanation for why this type of example should be absent. Future research should determine whether this pattern is actually attested, or whether this option should be excluded and how.
+
+\begin{figure}[H]
+  \centering
+    \begin{tikzpicture}[node distance=1.5cm]
+      \footnotesize{
+    \node (question1) [question]
+    {case\\ competition?};
+        \node (question4) [question, below of=question1, xshift=-2.5cm, yshift=-1cm]
+        {\ac{int}/\ac{ext}?};
+            \node (outcome5) [outcome, below of=question4, xshift=-1.5cm]
+            {\ac{int}};
+                \node (example5) [example, below of=outcome5, yshift=0.25cm]
+                {\scriptsize{n.a.\\\phantom{x}}};
+            \node (outcome1) [outcome, below of=question4, xshift=1.5cm]
+            {\ac{ext}};
+                \node (example1) [example, below of=outcome1, yshift=0.25cm]
+                {\scriptsize{e.g. Old English, Modern Greek}};
+        \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
+        {\ac{int} as winner?};
+            \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+            {*};
+                \node (example2) [example, below of=outcome2, yshift=0.25cm]
+                {\scriptsize{e.g. Polish\\\phantom{x}}};
+            \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+            {\ac{ext} as winner?};
+                \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+                {\ac{int} + complex};
+                    \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                    {\scriptsize{e.g. Modern German\\\phantom{x}}};
+                \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+                {complex};
+                    \node (example3) [example, below of=outcome4, yshift=0.25cm]
+                    {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+
+    \draw [arrow] (question1) -- node[anchor=west] {yes} (question2);
+    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+    \draw [arrow] (question1) -- node[anchor=east] {no} (question4);
+    \draw [arrow] (question4) -- node[anchor=east] {\tsc{int}} (outcome5);
+    \draw [arrow] (question4) -- node[anchor=west] {\tsc{ext}} (outcome1);
+    }
+    \end{tikzpicture}
+
+    \caption{Overview attested headless relatives}
+    \label{fig:typology}
+\end{figure}
 
 
 
@@ -1761,50 +1869,6 @@ I combine
     \label{tbl:possible-headless-relatives}
 \end{table}
 
-\begin{figure}[H]
-  \centering
-    \begin{tikzpicture}[node distance=2cm]
-    \node (question1) [question]
-    {case\\ competition?};
-        \node (question4) [question, below of=question1, xshift=-3cm, yshift=-1cm]
-        {\ac{int}/\ac{ext}?};
-            \node (outcome5) [outcome, below of=question4, xshift=-2cm]
-            {\ac{int}};
-                \node (example5) [example, below of=outcome5, yshift=0.5cm]
-                {\footnotesize{n.a.\\\phantom{x}\\\phantom{x}}};
-            \node (outcome1) [outcome, below of=question4, xshift=2cm]
-            {\ac{ext}};
-                \node (example1) [example, below of=outcome1, yshift=0.5cm]
-                {\footnotesize{e.g. Old English, Modern Greek\\\phantom{x}}};
-        \node (question2) [question, below of=question1, xshift=3cm, yshift=-1cm]
-        {\ac{int} as winner?};
-            \node (outcome2) [outcome, below of=question2, xshift=-2cm]
-            {*};
-                \node (example2) [example, below of=outcome2, yshift=0.5cm]
-                {\footnotesize{e.g. Polish\\\phantom{x}\\\phantom{x}}};
-            \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-0.5cm]
-            {\ac{ext} as winner?};
-                \node (outcome3) [outcome, below of=question3, xshift=-2cm]
-                {\ac{int} + complex};
-                    \node (example3) [example, below of=outcome3, yshift=0.5cm]
-                    {\footnotesize{e.g. Modern German\\\phantom{x}\\\phantom{x}}};
-                \node (outcome4) [outcome, below of=question3, xshift=2cm]
-                {complex};
-                    \node (example3) [example, below of=outcome4, yshift=0.5cm]
-                    {\footnotesize{e.g. Gothic, Old High German, Classical Greek}};
 
-    \draw [arrow] (question1) -- node[anchor=west] {yes} (question2);
-    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
-    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
-    \draw [arrow] (question1) -- node[anchor=east] {no} (question4);
-    \draw [arrow] (question4) -- node[anchor=east] {\tsc{int}} (outcome5);
-    \draw [arrow] (question4) -- node[anchor=west] {\tsc{ext}} (outcome1);
-    \end{tikzpicture}
-
-    \caption{Overview attested headless relatives}
-    \label{fig:typology1}
-\end{figure}
 
 hallo
