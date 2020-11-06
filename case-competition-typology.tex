@@ -28,7 +28,7 @@ Taking this all together, there are four patterns possible in languages. First, 
 
 The first possible pattern is that of a language that allows the internal case and the external case to surface when either of them wins the case competition. This pattern might look familiar, because it is the one that Gothic has, which I discussed in Chapter \ref{ch:recurring}. Table \ref{tbl:case-competition-int-ext} (repeated from Table \ref{tbl:summary-gothic-simple}) illustrates what the pattern for such a language looks like.
 
-The left column shows the internal case between square brackets. The upper row shows the external case between square brackets. The other cells indicate the case of the relative pronoun.
+The left column shows the internal case between square brackets. The top row shows the external case between square brackets. The other cells indicate the case of the relative pronoun.
 The top-left to bottom-right diagonal corresponds to the examples in which the internal and external case match. The three cells in the bottom-left corner, marked in light gray, are the situations in which the internal case surfaces when it wins the competition. The three cells in the top-right corner, marked in dark gray, are the situations in which the external case surfaces when it wins the competition.
 All these instances are grammatical.
 
@@ -1120,7 +1120,54 @@ In case competition in headless relatives two aspects play a role. The first one
 
 \ex. \ac{nom} < \ac{acc} < \ac{dat}\label{ex:case-scale-two-patterns-sum}
 
-This generates the pattern shown in Table \ref{tbl:case-competition-table}. The dative wins over the accusative and the nominative, and the accusative wins over the nominative.
+This generates the pattern shown in Table \ref{tbl:case-competition-table}. The left column shows the internal case between square brackets. The top row shows the external case between square brackets. The other cells indicate the case of the relative pronoun. When the dative wins over the accusative, the relative pronoun appears in the dative case. When the dative wins over the nominative, the relative pronoun appears in the nominative case. When the accusative wins over the nominative, the relative pronoun appears in the accusative case.
+
+\begin{table}[H]
+  \center
+  \caption{Relative pronoun follows case competition}
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\ac{int}} \textsuperscript{\ac{ext}}
+           & [\ac{nom}]
+           & [\ac{acc}]
+           & [\ac{dat}]
+           \\ \cmidrule{1-4}
+       [\ac{nom}]
+           & \ac{nom}
+           & \ac{acc}
+           & \ac{dat}
+           \\ \cmidrule{1-4}
+       [\ac{acc}]
+           & \ac{acc}
+           & \ac{acc}
+           & \ac{dat}
+           \\ \cmidrule{1-4}
+       [\ac{dat}]
+           & \ac{dat}
+           & \ac{dat}
+           & \ac{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-table}
+\end{table}
+
+The second aspect is whether the internal and the external case are allowed to surface when either of them wins the case competition. This differs across languages. There are four logical possibilities, listed in \ref{ex:logical-possibilities}.
+
+\ex. Logically possibile language types\label{ex:logical-possibilities}
+\let\oldalph=\alph\let\alph=\roman
+\a. The internal-and-internal type: the internal and the external case are allowed to surface when either of them wins the case competition\label{ex:int-ext}
+\b. The internal-only type: only the internal case is allowed to surface when it wins the case competition\label{ex:int-only}
+\b. The external-only type: only the external case is allowed to surface when it wins the case competition\label{ex:ext-only}
+\b. The matching type: the case is only allowed to surface when it is both the internal and external case (i.e. when the cases match)\label{ex:matching}
+\global\let\alph=\oldalph
+
+As far as I am aware, not all of these logical possibilities are attested in natural languages. I discuss the types one by one, and I give example when they are attested. In my description, I refer to the differ gray-marking in Table \ref{tbl:case-competition-table-marking}. The cells marked in light gray are the ones in which the internal case wins the case competition, the cells marked in dark gray are the ones in which the external case wins the case competition, and the unmarked cells are the ones in which the internal and external case match.
+
+Gothic, Old High German and Classical Greek are examples of the internal-and-external type in \ref{ex:int-ext}. In these languages, relative pronouns in the unmarked, light gray and dark gray cells are attested.
+Modern German is an example of the internal-only type in \ref{ex:int-only}. In this language, relative pronouns in the unmarked and light gray cells are grammatical.
+To my knowledge, the external-only type in \ref{ex:ext-only} is not attested. This would be a language in which relative pronouns in the unmarked and the dark gray cells are grammatical.
+Polish is an example of a language of the matching type in \ref{ex:matching}. In this language, relative pronoun in only in the unmarked cells are grammatical.
 
 \begin{table}[H]
   \center
@@ -1149,35 +1196,33 @@ This generates the pattern shown in Table \ref{tbl:case-competition-table}. The 
            \\
      \bottomrule
   \end{tabular}
-    \label{tbl:case-competition-table}
+    \label{tbl:case-competition-table-marking}
 \end{table}
 
-The second aspect is whether the internal and the external case are allowed to surface when either of them wins the case competition. This differs across languages. There are four logical possibilities: (1) the internal and the external case are allowed to surface when either of them wins, (2) only the internal case is allowed to surface when it wins, (3) only the external case is allowed to surface when it wins, and (4) neither the internal nor the external case is allowed to surface when either of them wins.
+Figure \ref{fig:attested-headless-relatives-case-competition} shows a diagram that generates the three attested patterns and not the unattested one. The diamonds stand for parameters that distinguish different types of languages. The texts along the arrows to the rectangles (and to a diamond) indicate how the different types of languages behave with respect to the parameters. The rectangles describe the form that the relative pronoun appears in. Below the rectangle I give examples of languages that are of this particular type.
 
-Gothic, Old High German and Classical Greek are examples of languages of the first type. In these languages, relative pronouns in the unmarked, light gray and dark gray cells in Table \ref{tbl:case-competition-table} are attested.
-Modern German is an example of a language of the second type. In this language, relative pronouns in the unmarked and light gray cells in Table \ref{tbl:case-competition-table} are grammatical.
-Polish is an example of a language of the fourth type. In this language, relative pronoun in only in the unmarked cells in Table \ref{tbl:case-competition-table} are grammatical.
-To my knowledge, the third pattern is not attested. This would be a language in which relative pronoun are grammatical in the unmarked and the dark gray cells in Table \ref{tbl:case-competition-table}.
-
-The crosslinguistically attested patterns can be generated by introducing two parameters, which is shown in Figure \ref{fig:attested-headless-relatives-case-competition}.
-The first parameter is whether a language allows the internal case to surface or whether it does not at `\ac{int} as winner?'.
-If a language does not allow the internal case to surface, the fourth pattern is generated. In this pattern, neither the internal nor the external case is allowed to surface when either of them wins, and only the the unmarked cells in Table \ref{tbl:case-competition-table} are grammatical.
-If a language allows the internal case to surface, the second parameter is whether a language allows the external case to surface or whether it does not at `\ac{ext} as winner?'.
-If a language does not allow the external case to surface, the second pattern is generated. In this pattern, only the internal case is allowed to surface when it wins, and the unmarked and light gray cells in Table \ref{tbl:case-competition-table} are grammatical.
-If a language allows the external case to surface, the first pattern is generated. In this pattern, the internal and the external case are allowed to surface when either of them wins, and the unmarked light gray and the dark gray cells in Table \ref{tbl:case-competition-table} are grammatical.
+The first parameter is whether or not a language allows for a mismatch between the internal and external case.
+If a language does not allow for a mismatch, the matching type of language \ref{ex:matching} is generated.
+If a language allows for a mismatch between the internal and external case, the second parameter comes into play. This one is concerned with the case the relative pronoun is allowed to surface when it wins the case competition. Here I give two options: (1) it is allowed to surface in only the internal case or (2) it is allowed to surface in the internal and the external case.\footnote{
+I do not introduce the option of allowing the relative pronoun to surface only in the external case. The reason for this is that this pattern is not attested crosslinguistically. If a language like this appears, this option could in principle be added. However, I predict that it will not appear. In Chapter \ref{ch:relativization}, I show how it follows from general properties of relative clauses that this type of language is excluded.
+}
+If a language allows the internal case to surface when it wins the case competition, the internal-only type is generated.
+If a language allows the internal and the external case to surface, the internal-and-external type is generated.\footnote{
+The matching type could also have been generated with the second parameter. The text along the arrow would have been \tit{none}. I choose to not do this, because in Chapter \ref{ch:relativization} I propose separate mechanisms for each of the parameters in Figure \ref{fig:attested-headless-relatives-case-competition}. The first one distinguishes matching languages from non-matching (i.e. internal-and-external and internal-only) languages, and the second one distinguishes internal-and-external from internal-only languages.
+}
 
 \begin{figure}[H]
   \centering
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
       \node (question2) [question]
-      {\ac{int} as winner?};
+      {allow mismatches?};
           \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
-          {*};
+          {matching};
               \node (example2) [example, below of=outcome2, yshift=0.25cm]
               {\scriptsize{e.g. Polish\\\phantom{x}}};
           \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
-          {\ac{ext} as winner?};
+          {cases allowed:};
               \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
               {\ac{int} + complex};
                   \node (example3) [example, below of=outcome3, yshift=0.25cm]
@@ -1189,15 +1234,16 @@ If a language allows the external case to surface, the first pattern is generate
 
     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
     \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
-    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+    \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
     \end{tikzpicture}
     }
     \caption{Attested patterns in headless relatives with case competition}
     \label{fig:attested-headless-relatives-case-competition}
 \end{figure}
 
-These parameters necessarily follow each other in the order specified: `\ac{int} as winner?' precedes `\ac{ext} as winner?'. If they were ordered the other way around, the third pattern in which only the external case is allowed to surface when it wins, would be generated. Moreover, the second pattern, in which only the internal case is allowed to surface when it wins, would not be generated. The ordering in Figure \ref{fig:attested-headless-relatives-case-competition} ensures that the internal-only pattern is generated and the external-only is not, which is in line with what is attested crosslinguistically. In Chapter \ref{ch:relativization}, I discusses the linguistic counterpart of this ordering.
+The main focus of Chapter \ref{ch:relativization} is the linguistic counterpart of the second parameter. I show with general properties of relative clauses how the difference between the internal-and-external and the internal-only type can be modeled, and how the exclusion of the external-only type follows from these particular properties. I also introduce a linguistic counterpart for the first parameter, which distinguishes matching from non-matching languages.
+
 
 
 \section{Aside: languages without case competition}\label{sec:without-case-competition}
@@ -1775,7 +1821,7 @@ If the language lets its relative pronouns appear in the external case, the patt
         \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
         {\ac{int} as winner?};
             \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
-            {*};
+            {matching};
                 \node (example2) [example, below of=outcome2, yshift=0.25cm]
                 {\scriptsize{e.g. Polish (9)\\\phantom{x}}};
             \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]

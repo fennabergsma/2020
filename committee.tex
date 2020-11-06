@@ -35,6 +35,9 @@ In Chapter \ref{ch:case-competition-typology} I introduced two parameters. In th
     \label{fig:two-parameters}
 \end{figure}
 
+Does the committee internal? What kind of info does the committee use? it compared the non-case part of the internal and external element.
+
+
 Let me now turn to the matter of crosslinguistic differences. Every speaker of a language needs to learn what the pattern for its language is. Headless relatives are infrequent, is what can be said about at least Modern German. Even though not everybody likes the construction to begin with (they prefer (light-)headed relatives), people seem to have the clear intuition that \tsc{int}>\tsc{ext} is much better than the other way around. It seems implausible that learners of German learn this pattern from the few examples they got (there are just too few to make a generalization). Still, the intuition exist. And it is very particular: more complex case wins over less complex case, but only if the internal case is more complex than the external case. This already sounds hard to learn from the input as a generalization. People have also been describing it like this: formulation from Cinque in his book. If it does not come from the input, where does it come from? I claim that it comes from other properties of the language. In Grosu's terminology: is it derived or basic? Ideally, we would want it to be derived.
 
 A similar avenue was pursued by \citealt{himmelreich2017}. She specific languages for having different types of agree (up, down) and different types of probes (active, non-active). Doing that, she successfully derived free relatives and parasitic gaps in different languages. Grosu 1994 linked richness of inflection to liberality. He actually talked about the richness of pro.
@@ -42,95 +45,28 @@ A similar avenue was pursued by \citealt{himmelreich2017}. She specific language
 The crucial difference with I'm doing is that I'm not relying on an arbitrary value I assigned to a language (say null head is active probe, probing only happens upwards). Like I briefly mentioned in Chapter \ref{ch:decomposition}, Nanosyntax models crosslinguistic variation as differences in the lexicon, how the features are packaged together differently. That means that I look for patterns within the languages themselves, and let the facts of the headless relatives follow from those. Specifically, I derive the different behaviors from relative pronouns and the external head that I introduce in this chapter.
 
 
-\section{The idea}
+\section{Four logical options}
 
 For `allowed to surface', I make use of the same principle as I did for the case competition: refer to containment. The dative wins over the accusative, because the dative contains all features the accusative contains.
-The internal wins over the external, when the internal contains all features the external contains. The next section discusses what these internal and external elements actually look like.
 
-Case differs per sentence, internal external is fixed per language.
+int is allows to surface when
+the non-case part of int contains all features the non-case part of ext contains
 
-\ex. int contains ext
-\a. \ac{int}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{c}]
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-  ]
-\end{forest}
-\b. \ac{ext}
-\begin{forest} boom
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-\end{forest}
+ext is allows to surface when
+the non-case part of ext contains all features the non-case part of int contains
 
-\ex. ext contains int
-\a. \ac{int}
-\begin{forest} boom
-  [\tsc{b}P
-      [\tsc{b}]
-      [\tsc{a}]
-  ]
-\end{forest}
-\b. \ac{int}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{c}]
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-  ]
-\end{forest}
 
-\ex. ext contains int and int contains ext
-\a. \ac{ext}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{c}]
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-  ]
-\end{forest}
-\b. \ac{int}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{c}]
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-  ]
-\end{forest}
+Case differs per sentence, non-case part of int and non-case part of ext is fixed per language. The next section discusses what they are.
 
-\ex.
-\a. \ac{ext}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{c}]
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-  ]
-\end{forest}
-\b. \ac{int}
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}]
-      [\tsc{b}P
-          [\tsc{b}]
-          [\tsc{a}]
-      ]
-  ]
-\end{forest}
-
+\begin{table}[]
+\begin{tabular}{ll}
+int & ext      \\
+abc & abc      \\
+abc & ab       \\
+abc & ab       \\
+abc & abd, xyz
+\end{tabular}
+\end{table}
 In the following section, I show that only 1 and 2 are actually attested, and 3 and 4 are not. This is a logical consequence of the fact that the external element is a subset of the internal element. I discuss this into depth in Section \ref{sec:external-element}. This excludes the third pattern, which is what we want, but it also excludes the fourth pattern, which is not what we want. I will introduce a different way to generate the fourth pattern.
 
 
@@ -346,6 +282,33 @@ But here it does not.
 \end{forest}
 
 x
+
+\section{The subset requirement}
+
+take a subset
+
+do not include D
+
+do not include wh
+
+in my case: number and gender
+
+and then you can merge some stuff on top of it later if you want
+
+can internal win?
+  not merge anything later
+    ab a and ab ab are still possibilities, but a ab and ab ac are excluded. it's good that ab a is excluded, because this is a pattern we never saw to begin with, but ab ac we somehow want.. I have an different way of excluding that
+  merge something later
+    ab ab can still happen, if you merge b later. ab a cannot happen, because there was nothing to merge later. a ab cannot delete, ab ad can
+
+can ext win?
+  not merge anything later
+
+  merge something later
+
+
+
+
 
 \section{Deriving the patterns}
 
