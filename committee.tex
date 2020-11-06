@@ -2,9 +2,38 @@
 
 \chapter{The committee}\label{ch:relativization}
 
-In the previous chapter I showed that languages with case competition come in two variants. First, there are languages that allow the internal and external case to surface when they win the competition, such as Gothic and Old High German. Second, there are languages that only allow the internal case to surface when it wins the competition, such as Modern German. Crucially, there is no language that only allows the external case to surface when it wins the competition.
+In Chapter \ref{ch:case-competition-typology} I introduced two parameters. In this chapter I identify linguistic counterparts of these parameters.
 
-The aim of this chapter is twofold. Third, I discuss how the difference between internal-and-external languages and internal-only languages can be derived. I introduce both matters a bit more in this introduction. Second, I discuss how the non-existence of the external-only pattern can be explained.
+\begin{figure}[H]
+  \centering
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {\ac{int} as winner?};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {*};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Polish\\\phantom{x}}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {\ac{ext} as winner?};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {\ac{int} + complex};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {complex};
+                  \node (example3) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+
+    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+    \end{tikzpicture}
+    }
+    \caption{Attested patterns in headless relatives with case competition}
+    \label{fig:two-parameters}
+\end{figure}
 
 Let me now turn to the matter of crosslinguistic differences. Every speaker of a language needs to learn what the pattern for its language is. Headless relatives are infrequent, is what can be said about at least Modern German. Even though not everybody likes the construction to begin with (they prefer (light-)headed relatives), people seem to have the clear intuition that \tsc{int}>\tsc{ext} is much better than the other way around. It seems implausible that learners of German learn this pattern from the few examples they got (there are just too few to make a generalization). Still, the intuition exist. And it is very particular: more complex case wins over less complex case, but only if the internal case is more complex than the external case. This already sounds hard to learn from the input as a generalization. People have also been describing it like this: formulation from Cinque in his book. If it does not come from the input, where does it come from? I claim that it comes from other properties of the language. In Grosu's terminology: is it derived or basic? Ideally, we would want it to be derived.
 
@@ -12,19 +41,97 @@ A similar avenue was pursued by \citealt{himmelreich2017}. She specific language
 
 The crucial difference with I'm doing is that I'm not relying on an arbitrary value I assigned to a language (say null head is active probe, probing only happens upwards). Like I briefly mentioned in Chapter \ref{ch:decomposition}, Nanosyntax models crosslinguistic variation as differences in the lexicon, how the features are packaged together differently. That means that I look for patterns within the languages themselves, and let the facts of the headless relatives follow from those. Specifically, I derive the different behaviors from relative pronouns and the external head that I introduce in this chapter.
 
-In Section  I discuss the situation in which the internal case wins the competition and the relative pronoun surfaces in the internal case. This situation is attested in all languages with case competition: the internal-only ones, such as Modern German, and the internal-and-external ones, such as Gothic and Old High German.
-
-In Section I discuss the situation in which the external case wins the case competition and the relative pronoun surfaces in the external case. This situation is not attested in all of the case competition languages. This situation arises if the external head contains all case features of the internal head. In addition, and this is what distinguishes the internal-and-external languages from the internal-only languages, the features of the relative pronoun are a subset of the features of the external head. So, \tit{em} cannot delete \tit{wen}, but \tit{dem} can delete \tit{den}.
-
-From these two proposals follows that it is impossible to have third pattern, which is indeed also not attested. When the external case wins over the internal one, there is a situation in which the external case could delete the internal one. So, it is impossible to have the second option but not the first one.
-
 
 \section{The idea}
 
-what criteria does the committee use? ideally, something independently observable within the language.
+For `allowed to surface', I make use of the same principle as I did for the case competition: refer to containment. The dative wins over the accusative, because the dative contains all features the accusative contains.
+The internal wins over the external, when the internal contains all features the external contains. The next section discusses what these internal and external elements actually look like.
 
-if int contains ext, int is approved
-if ext contains int, ext is approved
+Case differs per sentence, internal external is fixed per language.
+
+\ex. int contains ext
+\a. \ac{int}
+\begin{forest} boom
+  [\tsc{c}P
+      [\tsc{c}]
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+  ]
+\end{forest}
+\b. \ac{ext}
+\begin{forest} boom
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+\end{forest}
+
+\ex. ext contains int
+\a. \ac{int}
+\begin{forest} boom
+  [\tsc{b}P
+      [\tsc{b}]
+      [\tsc{a}]
+  ]
+\end{forest}
+\b. \ac{int}
+\begin{forest} boom
+  [\tsc{c}P
+      [\tsc{c}]
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+  ]
+\end{forest}
+
+\ex. ext contains int and int contains ext
+\a. \ac{ext}
+\begin{forest} boom
+  [\tsc{c}P
+      [\tsc{c}]
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+  ]
+\end{forest}
+\b. \ac{int}
+\begin{forest} boom
+  [\tsc{c}P
+      [\tsc{c}]
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+  ]
+\end{forest}
+
+\ex.
+\a. \ac{ext}
+\begin{forest} boom
+  [\tsc{c}P
+      [\tsc{c}]
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+  ]
+\end{forest}
+\b. \ac{int}
+\begin{forest} boom
+  [\tsc{d}P
+      [\tsc{d}]
+      [\tsc{b}P
+          [\tsc{b}]
+          [\tsc{a}]
+      ]
+  ]
+\end{forest}
+
+In the following section, I show that only 1 and 2 are actually attested, and 3 and 4 are not. This is a logical consequence of the fact that the external element is a subset of the internal element. I discuss this into depth in Section \ref{sec:external-element}. This excludes the third pattern, which is what we want, but it also excludes the fourth pattern, which is not what we want. I will introduce a different way to generate the fourth pattern.
 
 
 \section{The internal and external element}
@@ -55,7 +162,7 @@ I introduce two elements: the relative pronoun, which is always the internal ele
 
 
 
-\subsection{The relative pronoun = internal}
+\subsection{The relative pronoun = internal}\label{sec:internal-element}
 
 The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
 
@@ -110,7 +217,7 @@ Jan has what eaten he cooked has\\
 In conclusion, extraposition facts show, that the relative pronoun in Modern German is syntactically part of the relative clause.
 
 
-\subsection{The other element = external}
+\subsection{The other element = external}\label{sec:external-element}
 
 Like I said, we need an element here. But where and how? Well, there are actually languages that show we have it!
 The existence of this element is independently motivated by languages that overtly show it.
