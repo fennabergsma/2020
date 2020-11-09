@@ -2,56 +2,56 @@
 
 \chapter{The committee}\label{ch:relativization}
 
-In Chapter \ref{ch:case-competition-typology} I introduced two parameters. The main focus is the second parameter of the two, which is which cases are allowed to surface when they win the case competition.
+% In Chapter \ref{ch:case-competition-typology} I introduced two parameters that generates the attested languages, as shown in Table \ref{fig:two-parameters}. The first parameter is `allow mismatches?', which distinguishes between `matching' languages, as Polish, on the one hand, and `non-matching --- internal only' and `non-matching' languages as Modern German and Old High German. The second parameter is `cases considered', which distinguishes between `non-matching --- internal only' languages, as Modern German, on the one hand, and `non-matching' languages, as Old High German. This chapter gives the linguistic counterparts of these parameters.
+%
+% \begin{figure}[H]
+%   \centering
+%     \footnotesize{
+%     \begin{tikzpicture}[node distance=1.5cm]
+%       \node (question2) [question]
+%       {allow mismatches?};
+%           \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+%           {matching};
+%               \node (example2) [example, below of=outcome2, yshift=0.25cm]
+%               {\scriptsize{e.g. Polish\\\phantom{x}}};
+%           \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+%           {cases allowed:};
+%               \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+%               {\ac{int} + complex};
+%                   \node (example3) [example, below of=outcome3, yshift=0.25cm]
+%                   {\scriptsize{e.g. Modern German\\\phantom{x}}};
+%               \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+%               {complex};
+%                   \node (example4) [example, below of=outcome4, yshift=0.25cm]
+%                   {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+%
+%     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+%     \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+%     \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
+%     \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
+%
+%     % \node[fit=(question3)(outcome3)(outcome4)(example3)(example4),
+%     %       draw, circle, scale=0.7]
+%     %       {};
+%     \end{tikzpicture}
+%     }
+%     \caption{Attested patterns in headless relatives with case competition (repeated)}
+%     \label{fig:two-parameters}
+% \end{figure}
+%
+% So far, I have discussed three different concepts: the internal case, the external case and the relative pronoun. I said things like ``the relative pronoun is allowed to surface in the internal or in the external case''. I have not been explicit about where and how the competition between the internal and the external case takes place. In order to avoid introducing machinery just for case competition situations, I assume it takes place in syntax. I propose that headless relatives actually have an internal element and an external element at some point of the derivation. At the end of the derivation, only one of them surfaces as the relative pronoun.
+%
+% Section \ref{sec:int-ext-elements} discusses the internal and external case into detail. It shows syntactic evidence for the relative being the internal element. I argue that the external element is syntactically placed outside the relative clause. Independent evidence for the presence of this external element comes from double-headed languages. I also adopt another crucial property of the external heads in these double-headed relative clauses: the external head is always a subset of the internal head. This observation ultimately leads me to be able to exclude the `non-matching --- external-only' language type.
+%
+% However, before I go into detail about the specifics of the internal and the external element, I discuss in Section \ref{sec:containment-noncase} how the introduction of an internal and an external element helps to account for the difference between languages. I propose that both elements consists of part that concerns case, a case part, and a part that concerns other features than case, a non-case part. The latter parts, the non-case parts, are crucial in determining how the language behaves with the respect to the two parameters. Specifically, the comparison between the non-case part of the internal element and the non-case part of the external element decides whether the internal and elements are allowed to surface. Just as I did for the competition between case features, I rely on containment. When the internal non-case part contains the features that the external non-case part contains, the internal element is allowed to surface. When the external non-case part contains the features that the internal non-case part contains, the external element is allowed to surface.
+%
+% In Section \ref{sec:interim-summary-proposal} I combine the findings from the first two sections, and I formulate my proposal. The variation between language follows from the comparison between the internal and external element. In other words, the factor that decides on the parameter setting in Figure \ref{fig:two-parameters} can be observed within the language. Partly it surfaces as the relative pronoun, and partly it is derived from what the relative pronoun looks like. The consequence of that is that the variation between the languages boils down to something independently established in the language.
+%
+% In Section \ref{sec:deriving-languages}, I show how the proposal derives the different types of languages.
+%
+% In Section \ref{sec:alternative-analyses}, I compare my approach with previous accounts of \citet{himmelreich2017} and Grosu.
 
-\begin{figure}[H]
-  \centering
-    \footnotesize{
-    \begin{tikzpicture}[node distance=1.5cm]
-      \node (question2) [question]
-      {allow mismatches?};
-          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
-          {matching};
-              \node (example2) [example, below of=outcome2, yshift=0.25cm]
-              {\scriptsize{e.g. Polish\\\phantom{x}}};
-          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
-          {cases allowed:};
-              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
-              {\ac{int} + complex};
-                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
-                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
-              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
-              {complex};
-                  \node (example4) [example, below of=outcome4, yshift=0.25cm]
-                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
-
-    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-    \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
-    \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
-
-    \node[fit=(question3)(outcome3)(outcome4)(example3)(example4),
-          draw, circle, scale=0.7]
-          {};
-    \end{tikzpicture}
-    }
-    \caption{Attested patterns in headless relatives with case competition}
-    \label{fig:two-parameters}
-\end{figure}
-
-So far, I have discussed three different concepts: the internal case, the external case and the relative pronoun. I said things like ``the relative pronoun is allowed to surface in the internal or in the external case''. I have not been explicit about where the competition between the internal and the external case takes place: this could be either before on of them lands on the relative pronoun or they could land both on their separate elements and then a fight needs to be fought out. I argue for the latter. I say that there is actually an internal element that consists of a case-part and of a non-case part. There is also an external element that consists of a case-part and a non-case part. Headless relatives only have a single element, the headless relative, so one of them has to leave at the end. I set this up in this way because the non-case part of the internal and external element are crucial in determining whether the case is allowed to surface in the internal and external case.
-
-
-
-
-Let me now turn to the matter of crosslinguistic differences. Every speaker of a language needs to learn what the pattern for its language is. Headless relatives are infrequent, is what can be said about at least Modern German. Even though not everybody likes the construction to begin with (they prefer (light-)headed relatives), people seem to have the clear intuition that \tsc{int}>\tsc{ext} is much better than the other way around. It seems implausible that learners of German learn this pattern from the few examples they got (there are just too few to make a generalization). Still, the intuition exist. And it is very particular: more complex case wins over less complex case, but only if the internal case is more complex than the external case. This already sounds hard to learn from the input as a generalization. People have also been describing it like this: formulation from Cinque in his book. If it does not come from the input, where does it come from? I claim that it comes from other properties of the language. In Grosu's terminology: is it derived or basic? Ideally, we would want it to be derived.
-
-A similar avenue was pursued by \citealt{himmelreich2017}. She specific languages for having different types of agree (up, down) and different types of probes (active, non-active). Doing that, she successfully derived free relatives and parasitic gaps in different languages. Grosu 1994 linked richness of inflection to liberality. He actually talked about the richness of pro.
-
-The crucial difference with I'm doing is that I'm not relying on an arbitrary value I assigned to a language (say null head is active probe, probing only happens upwards). Like I briefly mentioned in Chapter \ref{ch:decomposition}, Nanosyntax models crosslinguistic variation as differences in the lexicon, how the features are packaged together differently. That means that I look for patterns within the languages themselves, and let the facts of the headless relatives follow from those. Specifically, I derive the different behaviors from relative pronouns and the external head that I introduce in this chapter.
-
-
-\section{Containment in non-case}
+\section{Containment in non-case}\label{sec:containment-noncase}
 
 The goal is to explain why there are languages that allow internal and external, languages that allow only internal, but no languages that only allow only external. I propose we do this by comparing the non-case parts of the internal and the external elements in headless relatives.
 
@@ -97,33 +97,11 @@ In this chapter, I introduce what the non-case part the internal and external el
 
 \section{The internal and external element}\label{sec:int-ext-elements}
 
-what are they? we see only one: the relative pronoun. however, we really need to elements! because we need to compare internal and external
-
-you can see this very very well in modern german: it does not suffice to let the relative pronoun surfaces in the internal case. we always need a way to refer to the more complex case.
-
-
-
-The relative pronoun in Modern German headless relatives is sensitive to both the internal and the external case. Consider the examples in \ref{ex:mg-internal}. In both sentences, the internal case is accusative, because the predicate in the relative clause \tit{mögen} `to like' takes accusative objects. The external case differs between the two sentences. In \ref{ex:mg-dat-acc-wen} the external case is dative, because the predicate \tit{vertrauen} `to trust' takes dative objects.  In xx the external case is nominative, because \tit{besuchen} `to visit' takes nominative subjects.
-
-\ex.\label{ex:mg-internal}
-\ag. *Ich vertraue wen \tbf{auch} \tbf{Maria} \tbf{mag}. \\
-I.\ac{nom} trust.1\ac{sg}\scsub{[dat]} \tsc{rel}.\ac{acc}.\tsc{an} also Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}.\\
-`I trust whoever Maria also likes.' \flushfill{adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-wen}
-\bg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
- `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-int-rep}
-
-The sentence in \ref{ex:mg-dat-acc-wen} is ungrammatical, and the one in \ref{ex:mg-int-rep} is not. The internal case cannot be the source of ungrammaticality, because the relative clauses are identical regarding case, i.e. they both take accusative. The external case differs, however. In Chapter \ref{sec:pattern-ii} I showed that headless relatives in Modern German are (just like e.g. Gothic) sensitive to the case scale: \tsc{nom} < \tsc{acc} < \tsc{dat}.
-
-\ref{ex:mg-dat-acc-wen} is grammatical, because the internal accusative case wins over the external nominative. \ref{ex:mg-int-rep} is ungrammatical, because the internal accusative case cannot win the case competition over the external dative. It can be concluded that the relative pronoun in Modern German headless relatives cares about both the internal and the external case.
-
-In sum, even though the relative pronoun in Modern German headless relatives is always part of the relative clause, the relative pronoun also takes the external case into account. That means that the relative pronoun needs to have access to the main clause case. I propose that this can be achieved by introducing an external head to the relative clause. In Section X I show how this solves the issue.
-
-I introduce two elements: the relative pronoun, which is always the internal element, and the external element, which contains a subset of the features of the internal element
-
-
+The comparison between the internal and external element is crucial in determining what the type of a language is. This section discusses the featural content and the syntactic positions of both elements. In Section \ref{sec:internal-element}, I show that the relative pronoun is the internal element, and that this is part of the relative clause. Section \ref{sec:external-element} discusses the external element. This element is syntactically places outside of the relative clause, and its features form a subset of the features of the relative pronoun.
 
 \subsection{The relative pronoun = internal}\label{sec:internal-element}
+
+In headless relative constructions, there is a single element that surfaces: the relative pronoun. In this section, I show that the relative pronoun is syntactically part of the relative clause. The evidence comes from extraposition data in Modern German. In Modern German, it is possible to extrapose a CP (a clause), but not a DP (a noun phrase). In this section I first show that Modern German CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs: they can be extraposed as well. I conclude that the relative pronoun is the internal element in the headless relative.
 
 The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
 
@@ -175,10 +153,12 @@ Jan has eaten what he cooked has\\
 Jan has what eaten he cooked has\\
 `Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}
 
-In conclusion, extraposition facts show, that the relative pronoun in Modern German is syntactically part of the relative clause.
+In conclusion, extraposition facts show that the relative pronoun in Modern German is syntactically part of the relative clause. Therefore, the relative pronoun is the internal element in headless relative construction.
 
 
 \subsection{The other element = external}\label{sec:external-element}
+
+In the previous section I
 
 Like I said, we need an element here. But where and how? First, it needs to be external, because it needs to get the case. And what is cool, there there are actually languages that show we have it!
 The existence of this element is independently motivated by languages that overtly show it.
@@ -214,101 +194,7 @@ Where is this head in the syntactic structure?
     \item Where it normally is in SOV languages (does the thing in Polish move because it is a svo language?)
   \end{itemize}
 
-x
-
-
-So this works.
-
-\ex.
-\begin{forest} boom
-[, s sep=20mm
-    [CP, s sep=20mm
-        [\ac{acc}P,
-        tikz={
-        \node[label=below:\tit{wen},
-        draw,circle,
-        scale=0.85,
-        fit to=tree]{};
-        }
-            [\tsc{f2}]
-            [\tsc{nomP},
-            tikz={
-            \node[draw,circle,transparent,
-            fill=DG,fill opacity=0.2,
-            scale=0.8,
-            fit to=tree]{};
-            }
-                [\tsc{f1}]
-                [XP
-                    [\phantom{xxx}, roof]
-                ]
-            ]
-        ]
-        [VP
-            [\tit{Maria mag}, roof]
-        ]
-    ]
-    [\textcolor{LG}{\tsc{nomP}},
-    tikz={
-    \node[draw,circle,
-    scale=0.8,
-    fit to=tree]{};
-    }
-        [\textcolor{LG}{\ac{nom}},edge=LG]
-        [\textcolor{LG}{XP},baseline,edge=LG
-            [\textcolor{LG}{\phantom{xxx}},
-            roof, baseline, edge=LG
-            ]
-        ]
-    ]
-]
-\end{forest}
-
-But here it does not.
-
-\ex.
-\begin{forest} boom
-[, s sep=20mm
-    [CP, s sep=20mm
-        [\ac{nom}P,
-        tikz={
-        \node[label=below:\tit{wer},
-        draw,circle,
-        fill=DG,fill opacity=0.2,
-        scale=0.85,
-        fit to=tree]{};
-        }
-            [\tsc{f1}]
-            [XP
-                [\phantom{xxx}, roof]
-            ]
-        ]
-        [VP
-            [\tit{mir sympatisch ist}, roof]
-        ]
-    ]
-    [\ac{acc}P
-        [\tsc{f2}]
-        [\textcolor{LG}{\tsc{nomP}},
-        tikz={
-        \node[draw,circle,
-        scale=0.8,
-        fit to=tree]{};
-        }
-            [\textcolor{LG}{\ac{nom}},edge=LG]
-            [\textcolor{LG}{XP},baseline,edge=LG
-                [\textcolor{LG}{\phantom{xxx}},
-                roof, baseline, edge=LG
-                ]
-            ]
-        ]
-    ]
-]
-\end{forest}
-
-x
-
-\section{The subset requirement}
+\section{Interim summary}\label{sec:interim-summary-proposal}
 
 take a subset
 
@@ -335,7 +221,7 @@ can ext win?
 
 
 
-\section{Deriving the patterns}
+\section{Deriving the patterns}\label{sec:deriving-languages}
 
 \subsection{Deriving internal-and-external}
 
@@ -867,11 +753,15 @@ x
 
 
 
-\section{Alternative analyses}
+\section{Alternative analyses}\label{sec:alternative-analyses}
 
 \subsection{Himmelreich}
 
+She specific languages for having different types of agree (up, down) and different types of probes (active, non-active). Doing that, she successfully derived free relatives and parasitic gaps in different languages.
 
+\subsection{Grosu}
+
+Grosu 1994 linked richness of inflection to liberality. He actually talked about the richness of pro.
 
 \subsection{Grafting story}
 
