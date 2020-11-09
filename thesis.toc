@@ -80,44 +80,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {5}The committee}{137}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Containment in non-case}{137}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Containment in non-case}{139}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}The internal and external element}{139}{section.5.2}%
+\contentsline {section}{\numberline {5.2}The internal and external element}{142}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}The relative pronoun = internal}{139}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}The relative pronoun = internal}{142}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}The other element = external}{142}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.2}The other element = external}{144}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Interim summary}{143}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Interim summary}{145}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Deriving the patterns}{144}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Deriving the patterns}{146}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Deriving internal-and-external}{144}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.1}Deriving internal-and-external}{146}{subsection.5.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Deriving internal-only}{147}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.2}Deriving internal-only}{149}{subsection.5.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Deriving `matching'}{150}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.3}Deriving `matching'}{152}{subsection.5.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.4}Excluding external-only}{151}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.4}Excluding external-only}{153}{subsection.5.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Alternative analyses}{151}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Alternative analyses}{153}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Himmelreich}{151}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.1}Himmelreich}{153}{subsection.5.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Grosu}{151}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.2}Grosu}{153}{subsection.5.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}Grafting story}{152}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.3}Grafting story}{154}{subsection.5.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Summary}{154}{section.5.6}%
+\contentsline {section}{\numberline {5.6}Summary}{156}{section.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Discussion}{155}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}Discussion}{157}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Diachronic part}{155}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Diachronic part}{157}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}D also in Modern German}{155}{section.6.2}%
+\contentsline {section}{\numberline {6.2}D also in Modern German}{157}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{156}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{158}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Relativization in general}{156}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Relativization in general}{158}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{157}{table.6.1}%
+\contentsline {chapter}{Primary texts}{159}{table.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{161}{section*.9}%

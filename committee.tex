@@ -2,54 +2,54 @@
 
 \chapter{The committee}\label{ch:relativization}
 
-% In Chapter \ref{ch:case-competition-typology} I introduced two parameters that generates the attested languages, as shown in Table \ref{fig:two-parameters}. The first parameter is `allow mismatches?', which distinguishes between `matching' languages, as Polish, on the one hand, and `non-matching --- internal only' and `non-matching' languages as Modern German and Old High German. The second parameter is `cases considered', which distinguishes between `non-matching --- internal only' languages, as Modern German, on the one hand, and `non-matching' languages, as Old High German. This chapter gives the linguistic counterparts of these parameters.
-%
-% \begin{figure}[H]
-%   \centering
-%     \footnotesize{
-%     \begin{tikzpicture}[node distance=1.5cm]
-%       \node (question2) [question]
-%       {allow mismatches?};
-%           \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
-%           {matching};
-%               \node (example2) [example, below of=outcome2, yshift=0.25cm]
-%               {\scriptsize{e.g. Polish\\\phantom{x}}};
-%           \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
-%           {cases allowed:};
-%               \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
-%               {\ac{int} + complex};
-%                   \node (example3) [example, below of=outcome3, yshift=0.25cm]
-%                   {\scriptsize{e.g. Modern German\\\phantom{x}}};
-%               \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
-%               {complex};
-%                   \node (example4) [example, below of=outcome4, yshift=0.25cm]
-%                   {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
-%
-%     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-%     \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-%     \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
-%     \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
-%
-%     % \node[fit=(question3)(outcome3)(outcome4)(example3)(example4),
-%     %       draw, circle, scale=0.7]
-%     %       {};
-%     \end{tikzpicture}
-%     }
-%     \caption{Attested patterns in headless relatives with case competition (repeated)}
-%     \label{fig:two-parameters}
-% \end{figure}
-%
-% So far, I have discussed three different concepts: the internal case, the external case and the relative pronoun. I said things like ``the relative pronoun is allowed to surface in the internal or in the external case''. I have not been explicit about where and how the competition between the internal and the external case takes place. In order to avoid introducing machinery just for case competition situations, I assume it takes place in syntax. I propose that headless relatives actually have an internal element and an external element at some point of the derivation. At the end of the derivation, only one of them surfaces as the relative pronoun.
-%
-% Section \ref{sec:int-ext-elements} discusses the internal and external case into detail. It shows syntactic evidence for the relative being the internal element. I argue that the external element is syntactically placed outside the relative clause. Independent evidence for the presence of this external element comes from double-headed languages. I also adopt another crucial property of the external heads in these double-headed relative clauses: the external head is always a subset of the internal head. This observation ultimately leads me to be able to exclude the `non-matching --- external-only' language type.
-%
-% However, before I go into detail about the specifics of the internal and the external element, I discuss in Section \ref{sec:containment-noncase} how the introduction of an internal and an external element helps to account for the difference between languages. I propose that both elements consists of part that concerns case, a case part, and a part that concerns other features than case, a non-case part. The latter parts, the non-case parts, are crucial in determining how the language behaves with the respect to the two parameters. Specifically, the comparison between the non-case part of the internal element and the non-case part of the external element decides whether the internal and elements are allowed to surface. Just as I did for the competition between case features, I rely on containment. When the internal non-case part contains the features that the external non-case part contains, the internal element is allowed to surface. When the external non-case part contains the features that the internal non-case part contains, the external element is allowed to surface.
-%
-% In Section \ref{sec:interim-summary-proposal} I combine the findings from the first two sections, and I formulate my proposal. The variation between language follows from the comparison between the internal and external element. In other words, the factor that decides on the parameter setting in Figure \ref{fig:two-parameters} can be observed within the language. Partly it surfaces as the relative pronoun, and partly it is derived from what the relative pronoun looks like. The consequence of that is that the variation between the languages boils down to something independently established in the language.
-%
-% In Section \ref{sec:deriving-languages}, I show how the proposal derives the different types of languages.
-%
-% In Section \ref{sec:alternative-analyses}, I compare my approach with previous accounts of \citet{himmelreich2017} and Grosu.
+In Chapter \ref{ch:case-competition-typology} I introduced two parameters that generates the attested languages, as shown in Table \ref{fig:two-parameters}. The first parameter is `allow mismatches?', which distinguishes between `matching' languages, as Polish, on the one hand, and `non-matching --- internal only' and `non-matching' languages as Modern German and Old High German. The second parameter is `cases considered', which distinguishes between `non-matching --- internal only' languages, as Modern German, on the one hand, and `non-matching' languages, as Old High German. This chapter gives the linguistic counterparts of these parameters.
+
+\begin{figure}[H]
+  \centering
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {allow mismatches?};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {matching};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Polish\\\phantom{x}}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {cases allowed:};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {\ac{int} + complex};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {complex};
+                  \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+
+    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
+
+    % \node[fit=(question3)(outcome3)(outcome4)(example3)(example4),
+    %       draw, circle, scale=0.7]
+    %       {};
+    \end{tikzpicture}
+    }
+    \caption{Attested patterns in headless relatives with case competition (repeated)}
+    \label{fig:two-parameters}
+\end{figure}
+
+So far, I have discussed three different concepts: the internal case, the external case and the relative pronoun. I said things like ``the relative pronoun is allowed to surface in the internal or in the external case''. I have not been explicit about where and how the competition between the internal and the external case takes place. In order to avoid introducing machinery just for case competition situations, I assume it takes place in syntax. I propose that headless relatives actually have an internal element and an external element at some point of the derivation. At the end of the derivation, only one of them surfaces as the relative pronoun.
+
+Section \ref{sec:int-ext-elements} discusses the internal and external case into detail. It shows syntactic evidence for the relative being the internal element. I argue that the external element is syntactically placed outside the relative clause. Independent evidence for the presence of this external element comes from double-headed languages. I also adopt another crucial property of the external heads in these double-headed relative clauses: the external head is always a subset of the internal head. This observation ultimately leads me to be able to exclude the `non-matching --- external-only' language type.
+
+However, before I go into detail about the specifics of the internal and the external element, I discuss in Section \ref{sec:containment-noncase} how the introduction of an internal and an external element helps to account for the difference between languages. I propose that both elements consists of part that concerns case, a case part, and a part that concerns other features than case, a non-case part. The latter parts, the non-case parts, are crucial in determining how the language behaves with the respect to the two parameters. Specifically, the comparison between the non-case part of the internal element and the non-case part of the external element decides whether the internal and elements are allowed to surface. Just as I did for the competition between case features, I rely on containment. When the internal non-case part contains the features that the external non-case part contains, the internal element is allowed to surface. When the external non-case part contains the features that the internal non-case part contains, the external element is allowed to surface.
+
+In Section \ref{sec:interim-summary-proposal} I combine the findings from the first two sections, and I formulate my proposal. The variation between language follows from the comparison between the internal and external element. In other words, the factor that decides on the parameter setting in Figure \ref{fig:two-parameters} can be observed within the language. Partly it surfaces as the relative pronoun, and partly it is derived from what the relative pronoun looks like. The consequence of that is that the variation between the languages boils down to something independently established in the language.
+
+In Section \ref{sec:deriving-languages}, I show how the proposal derives the different types of languages.
+
+In Section \ref{sec:alternative-analyses}, I compare my approach with previous accounts of \citet{himmelreich2017} and Grosu.
 
 \section{Containment in non-case}\label{sec:containment-noncase}
 
@@ -111,7 +111,7 @@ The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose 
  `I don't care how you are doing.'\label{ex:mg-extrapose-cp-base}
 \bg. Mir is egal \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht}.\\
  1\tsc{sg}.\tsc{dat} is {the same} how it 2\tsc{sg}.\tsc{dat} goes\\
- `I don't care how you are doing.' \flushfill{Modern German}\label{ex:mg-extrapose-cp-moved}
+ `I don't care how you are doing.' \label{ex:mg-extrapose-cp-moved}\flushfill{Modern German}
 
 \ref{ex:mg-extrapose-dp} illustrates that it is impossible to extrapose a DP. The clausal object of \ref{ex:mg-extrapose-cp} is replaced by the simplex noun phrase \tit{die Sache} `that matter'.
 In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base position. In \ref{ex:mg-extrapose-dp-moved} it is extraposed, and the sentence is no longer grammatical.
@@ -122,7 +122,7 @@ In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base
  `I don't care about that matter.'\label{ex:mg-extrapose-dp-base}
 \bg. *Mir ist egal \tbf{die} \tbf{Sache}.\\
  1\tsc{sg}.\tsc{dat} is {the same} that matter\\
- `I don't care about that matter.' \flushfill{Modern German}\label{ex:mg-extrapose-dp-moved}
+ `I don't care about that matter.' \label{ex:mg-extrapose-dp-moved}\flushfill{Modern German}
 
 The same asymmetry between CPs and DPs can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gekocht hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
 In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
@@ -136,7 +136,7 @@ In \ref{ex:extra-headed-base}, the relative clause and its head appear in base p
 `Jan has eaten what he cooked.'\label{ex:extra-headed-only-clause}
 \cg. *Jan hat aufgegessen, das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
  Jan has eaten that what he cooked has\\
-`Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause}
+`Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause} \flushfill{Modern German}
 
 The same can be observed in relative clauses without a head. \ref{ex:extra-headless} is the same sentence as in \ref{ex:extra-headed} only without the overt head. The relative clause is marked in bold again.
 In \ref{ex:extra-headless-base}, the relative clause appears in base position. In \ref{ex:extra-headless-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headless-no-rel}, the relative clause is extraposed without the relative pronouns. This is ungrammatical, because the relative pronoun is part of the CP.
@@ -151,58 +151,60 @@ Jan has eaten what he cooked has\\
 `Jan has eaten what he cooked.'\label{ex:extra-headless-clause}
 \bg. *Jan hat \tbf{was} aufgegessen \tbf{er} \tbf{gekocht} \tbf{hat}.\\
 Jan has what eaten he cooked has\\
-`Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}
+`Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
 
 In conclusion, extraposition facts show that the relative pronoun in Modern German is syntactically part of the relative clause. Therefore, the relative pronoun is the internal element in headless relative construction.
 
 
 \subsection{The other element = external}\label{sec:external-element}
 
-In the previous section I
-
-Like I said, we need an element here. But where and how? First, it needs to be external, because it needs to get the case. And what is cool, there there are actually languages that show we have it!
-The existence of this element is independently motivated by languages that overtly show it.
-I show that this element contains a subset of the features that the relative pronoun contains, so D and wh is never there.
-I placee the external head in a syntactic position from which it is c-commanded by the relative pronoun and it can receive case from the main clause predicate.
-
+In the previous section I introduced the relative pronoun as the internal element. This means that the other element is the external element. This section starts with the observation that there actually are languages in which two elements surface in so-called double-headed relative clauses. In these languages, the external head is always a subset of the internal head, and that some features like \tsc{d} are necessarily excluded in the external head. I adopt this insight, and I apply it to the headless relative situation. I propose that the external head in headless relatives is a copy of the ϕ-features of the relative pronoun.
 
 There is independent evidence for this head, namely from languages that actually let the head surface. Here there are two identical copies of the head, one inside the relative clause, one outside of the relative clause.
 
-\exg. [\tbf{doü} adiyano-no] \tbf{doü} deyalukhe\\
- sago give.3\tsc{pl}.\tsc{nonfut}-\tsc{conn} sago finished.\tsc{ajd}\\
- `The sago that they gave is finished.' \flushfill{Kombai, Dryer 2005}
+\exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
+ sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
+ `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt[78]{vries1993}}
 
 I give an example of a language in which the external head follows the relative clause. There are also languages in which the head precedes the relative clause, e.g. xx
 
-The external head is not always an exact copy of the head inside of the relative clause. An example from xx here shows that the head outside of the relative clause can also be a subset of what the element inside of the relative clause is. In this case, there is an \tit{old man} and a \tit{person}.
+The external head is not always an exact copy of the head inside of the relative clause. An example from xx here shows that the head outside of the relative clause can also be a subset of what the element inside of the relative clause is. In this case, there is an \tit{old man} and a \tit{person}. In that case, there is \tit{pig} and \tit{thing}.
 
-\exg. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
+\ex.
+\ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
  {old man} join.\tsc{ss} work \tsc{dur}.do.\tsc{3sg}.\tsc{nf}-\tsc{tr}-\tsc{conn} person my-uncle-\tsc{pred}\\
- `The old man who is joining the work is my uncle.'
+ `The old man, who is joining the work, is my uncle.' 77
+\bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
+ pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\tsc{pred}\\
+ `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt[77]{vries1993}}
 
-So, we have the head. Translating this to relative pronouns, there is the relative pronoun, and something identical or smaller than a relative pronoun outside of the relative clause. In Chapter X I show what the feature content of the head exactly is.
+So, we have the head. Translating this to headless relatives, there is no overt NP, so we only see the relative pronoun. The
 
-Let me now show how this solves the external case problems and how it helps exclude some languages.
+But, are there also some features that we can never copy, any restrictions? This copy is the portion of the nominal extended projection c-commanded by the RC. Therefore, it does not have D and no wh?
 
-indefinite noun, as cinque and the content of the external head visible in some languages
 
-Where is this head in the syntactic structure?
 
-  \begin{itemize}
-    \item Somewhere where the relative pronoun can delete it: where it is c-commanded by the relative pronoun
-    \item Somewhere where it can receive case from the main clause
-    \item Where it normally is in SOV languages (does the thing in Polish move because it is a svo language?)
-  \end{itemize}
+
+
+
+
+And what about the external head, does it need to remain the copy that I made it, or can other things be added to it?
+
+Erlewine \& Gould (2016: 2)
+Junya-wa [[ Ayaka-ga ringo-o mui-ta] sono ringo-o] tabe-ta.
+J.-TOP A.-NOM apple-ACC peel-PAST that apple-ACC eat-PAST
+‘J. ate the apples that A. peeled.’
+
+So, the external head in the headless relative can also get a \tsc{d} merged to it. This is what I will do for the Old High German example in which the external case wins.
+
+
+
 
 \section{Interim summary}\label{sec:interim-summary-proposal}
 
-take a subset
+The internal element is the relative pronoun.
 
-do not include D
-
-do not include wh
-
-in my case: number and gender
+The external element is a subset of the relative pronoun, it does not do not include D or wh, which leaves phi-features.
 
 and then you can merge some stuff on top of it later if you want
 
