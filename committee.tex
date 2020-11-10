@@ -164,7 +164,7 @@ There is independent evidence for this head, namely from languages that actually
 
 \exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
  sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
- `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt[78]{vries1993}}
+ `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}
 
 I give an example of a language in which the external head follows the relative clause. There are also languages in which the head precedes the relative clause, e.g. xx
 
@@ -172,11 +172,11 @@ The external head is not always an exact copy of the head inside of the relative
 
 \ex.
 \ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
- {old man} join.\tsc{ss} work \tsc{dur}.do.\tsc{3sg}.\tsc{nf}-\tsc{tr}-\tsc{conn} person my-uncle-\tsc{pred}\\
+ {old man} join.\ac{ss} work do.\ac{dur}.3\ac{sg}.\ac{nf}-\ac{tr}-\ac{conn} person my-uncle-\ac{pred}\\
  `The old man, who is joining the work, is my uncle.' 77
 \bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
- pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\tsc{pred}\\
- `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt[77]{vries1993}}
+ pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\ac{pred}\\
+ `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt{vries1993}{77}}
 
 So, we have the external head, which is a subset of whatever this is in the relative clause. Translating this to headless relatives, there is no overt NP, so we only see the relative pronoun. What features are in there? What is there to be copied? \tsc{rel}, phi features, and d/wh.
 
@@ -184,10 +184,10 @@ Can we copy it all, or are there also some features that we can never copy, any 
 
 And what about the external head, does it need to remain the copy that I made it, or can other things be added to it?
 
-Erlewine \& Gould (2016: 2)
-Junya-wa [[ Ayaka-ga ringo-o mui-ta] sono ringo-o] tabe-ta.
-J.-TOP A.-NOM apple-ACC peel-PAST that apple-ACC eat-PAST
-‘J. ate the apples that A. peeled.’
+\exg. Junya-wa [Ayaka-ga \tbf{ringo}-o mui-ta] sono \tbf{ringo}-o tabe-ta.\\
+Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} eat-\ac{pst}\\
+‘Junya ate the apples that Ayaka peeled.’ \flushfill{Japanese, \pgcitealt{erlewine2016}{2}}
+
 
 So, the external head in the headless relative can also get a \tsc{d} merged to it. This is what I will do for the Old High German example in which the external case wins.
 
@@ -214,37 +214,6 @@ can ext win?
   merge something later
 
 
-
-
-
-\section{Deriving the patterns}\label{sec:deriving-languages}
-
-\subsection{Deriving internal-and-external}
-
-Old High German relative pronouns consist of a morpheme \tit{d-} and a phi and case portmanteau.
-
-\begin{table}[H]\label{tbl:paradigmohg}
- \center
- \caption {Relative pronouns in headless relatives in Old High German}
-  \begin{tabular}{cccc}
-  \toprule
-       & \ac{n}.\ac{sg} & \ac{m}.\ac{sg}  & \ac{f}.\ac{sg} \\
-        \cmidrule{2-4}
-  \ac{nom} & d-aȥ           & d-ër          & d-iu      \\
-  \ac{acc} & d-aȥ        & d-ën      & d-ea/-ia/(-ie) \\
-  \ac{dat} & d-ëmu/-ëmo     & d-ëmu/-ëmo   & d-ëru/-ëro   \\
-  \bottomrule
-         & \ac{n}.\ac{pl} & \ac{m}.\ac{pl}   & \ac{f}.\ac{pl} \\
-          \cmidrule{2-4}
-    \ac{nom}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
-    \ac{acc}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
-    \ac{dat}  & d-ēm/-ēn      &  d-ēm/-ēn        & d-ēm/-ēn        \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-The external head is the phi features bundle.
-
 \ex.
 \begin{forest} boom
 [, s sep=20mm
@@ -262,7 +231,7 @@ The external head is the phi features bundle.
             tikz={
             \node[label=below:\tit{-en},
             draw,circle,
-            scale=0.8,
+            scale=0.85,
             fit to=tree]{};
             }
                 [\tsc{f2}]
@@ -280,8 +249,6 @@ The external head is the phi features bundle.
     ]
 ]
 \end{forest}
-
-merge \tsc{k} (and \tsc{d})? Here it looks like you could do it, or you could not do it, so I will not do it.
 
 \ex.
 \begin{forest} boom
@@ -316,127 +283,41 @@ merge \tsc{k} (and \tsc{d})? Here it looks like you could do it, or you could no
 ]
 \end{forest}
 
-Now if we compare the internal element to the external element, we see that the internal element contains the external element
+x
 
-\begin{table}[H]
-  \center
-	\caption {Old High German: \ac{int} > \ac{ext}}
-		\begin{tabular}[b]{cc}
-      \toprule
-      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-      \begin{forest} boom
-        [\tsc{rel}P
-            [DP
-                [\tit{d-}, roof]
-            ]
-            [\tsc{acc}P,
-            tikz={
-            \node[label=below:\tit{-en},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            }
-                [\tsc{f}2]
-                [\tsc{nom}P
-                    [\tsc{f1}]
-                    [ϕP
-                        [\phantom{xxx},
-                        roof, baseline
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      &
-      \begin{forest} boom
-        [\tsc{nom}P,
-        tikz={
-        \node[label=below:\tit{-er},
-        draw,circle,
-        scale=0.8,
-        fit to=tree]{};
-        }
-            [\tsc{f1}]
-            [ϕP
-                [\phantom{xxx},
-                roof, baseline
-                ]
-            ]
-        ]
-      \end{forest}\\
-      \bottomrule
+
+
+
+
+\section{Deriving the types}\label{sec:deriving-languages}
+
+\subsection{Deriving `non-matching'}
+
+Old High German relative pronouns consist of a morpheme \tit{d-} and a phi and case portmanteau.
+
+\begin{table}[H]\label{tbl:paradigmohg}
+ \center
+ \caption {Relative pronouns in headless relatives in Old High German}
+  \begin{tabular}{cccc}
+  \toprule
+       & \ac{n}.\ac{sg} & \ac{m}.\ac{sg}  & \ac{f}.\ac{sg} \\
+        \cmidrule{2-4}
+  \ac{nom} & d-aȥ           & d-ër          & d-iu      \\
+  \ac{acc} & d-aȥ        & d-ën      & d-ea/-ia/(-ie) \\
+  \ac{dat} & d-ëmu/-ëmo     & d-ëmu/-ëmo   & d-ëru/-ëro   \\
+  \bottomrule
+         & \ac{n}.\ac{pl} & \ac{m}.\ac{pl}   & \ac{f}.\ac{pl} \\
+          \cmidrule{2-4}
+    \ac{nom}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
+    \ac{acc}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
+    \ac{dat}  & d-ēm/-ēn      &  d-ēm/-ēn        & d-ēm/-ēn        \\
+    \bottomrule
   \end{tabular}
-  \label{tbl:ohg-int-wins}
 \end{table}
 
-There is structure with case and phi which contains
+Let me show you what the structure of this relative pronoun is, and how I get there.
 
-
-
-\begin{table}[H]
-  \center
-	\caption {Old High German: \ac{int} < \ac{ext}}
-		\begin{tabular}[b]{cc}
-      \toprule
-      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-      \begin{forest} boom
-        [\tsc{rel}P
-            [DP
-                [\tit{d-}, roof]
-            ]
-            [\tsc{acc}P,
-            tikz={
-            \node[label=below:\tit{-en},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            }
-                [\tsc{f}2]
-                [\tsc{nom}P
-                    [\tsc{f1}]
-                    [ϕP
-                        [\phantom{xxx},
-                        roof, baseline
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      &
-      \begin{forest} boom
-        [DP
-            [DP
-                [\tit{d-}, roof]
-            ]
-            [\tsc{dat}P,
-            tikz={
-            \node[label=below:\tit{-em},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            }
-                [\tsc{f}3]
-                [\tsc{acc}P
-                    [\tsc{f}2]
-                    [\tsc{nom}P
-                        [\tsc{f1}]
-                        [ϕP
-                            [\phantom{xxx},
-                            roof, baseline
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}\\
-      \bottomrule
-  \end{tabular}
-  \label{tbl:ohg-ext-wins}
-\end{table}
-
+The fseq:
 
 \ex. \tbf{Spellout Algorithm:}\\
 Merge F and \label{ex:spellout}
@@ -461,10 +342,175 @@ If Merge F has failed to spell out (even after backtracking), try to spawn a new
 
 \ex. Merge F, Move XP, Merge XP
 
-show how internal-wins works
-show how external-wins works
 
-\subsection{Deriving internal-only}
+
+
+
+The external head is the phi features bundle.
+
+merge \tsc{k} (and \tsc{d})? Here it looks like you could do it, or you could not do it, so I will not do it.
+
+Now if we compare the internal element to the external element, we see that the internal element contains the external element
+
+\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
+\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+`this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc}
+
+\begin{table}[H]
+  \center
+	\caption {Old High German: \ac{int} > \ac{ext}}
+		\begin{tabular}[b]{cc}
+      \toprule
+      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
+      \begin{forest} boom
+        [\tsc{rel}P, s sep=20mm
+            [DP
+                [\tit{d-}, roof]
+            ]
+            [\tsc{acc}P,
+            tikz={
+            \node[label=below:\tit{-en},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{f}2]
+                [\tsc{nom}P,
+                  tikz={
+                  \node[draw,circle,
+                  fill=DG,fill opacity=0.2,
+                  scale=0.8,
+                  DG,dashed,
+                  fit to=tree]{};
+                  }
+                    [\tsc{f1}]
+                    [ϕP
+                        [\phantom{xxx},
+                        roof, baseline
+                        ]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      &
+      \begin{forest} boom
+        [\textcolor{DG}{\ac{nom}},edge=DG,
+        tikz={
+        \node[label=below:\textcolor{DG}{\tit{-er}},
+        draw,circle,
+        scale=0.8,
+        DG,
+        fit to=tree]{};
+        \node[
+        draw,circle,
+        scale=0.75,
+        dashed,DG,
+        fit to=tree]{};
+        }
+            [\textcolor{DG}{\tsc{f1}},baseline,edge=DG]
+            [\textcolor{DG}{ϕP},edge=DG
+                [\phantom{xxx},
+                roof, baseline, edge=DG
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:ohg-int-wins}
+\end{table}
+
+\exg. ih bibringu fona iacobes samin endi fona iuda dhen \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
+1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom}
+
+\begin{table}[H]
+  \center
+	\caption {Old High German: \ac{int} < \ac{ext}}
+		\begin{tabular}[b]{cc}
+      \toprule
+      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
+      \begin{forest} boom
+        [\textcolor{DG}{\tsc{rel}P}, s sep=20mm
+            [\textcolor{DG}{DP},edge=DG,
+            tikz={
+            \node[draw,circle,
+            scale=0.75,
+            DG,dashed,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tit{d-}}, roof, edge=DG]
+            ]
+            [\textcolor{DG}{\ac{nom}},edge=DG,
+            tikz={
+            \node[label=below:\textcolor{DG}{\tit{-er}},
+            draw,circle,
+            scale=0.8,
+            DG,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=0.75,
+            dashed,DG,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tsc{f1}},baseline,edge=DG]
+                [\textcolor{DG}{ϕP},edge=DG
+                    [\phantom{xxx},
+                    roof, baseline, edge=DG
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      &
+      \begin{forest} boom
+        [DP, s sep=20mm
+            [DP,
+              tikz={
+              \node[draw,circle,
+              fill=DG,fill opacity=0.2,
+              scale=0.75,
+              DG,dashed,
+              fit to=tree]{};
+              }
+                [\tit{d-}, roof]
+            ]
+            [\tsc{acc}P,
+            tikz={
+            \node[label=below:\tit{-en},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{f}2]
+                [\tsc{nom}P,
+                  tikz={
+                  \node[draw,circle,
+                  fill=DG,fill opacity=0.2,
+                  DG,dashed,
+                  scale=0.8,
+                  fit to=tree]{};
+                  }
+                    [\tsc{f1}]
+                    [ϕP
+                        [\phantom{xxx},
+                        roof, baseline
+                        ]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:ohg-ext-wins}
+\end{table}
+
+
+
+\subsection{Deriving `non-matching --- only internal'}
 
 Modern German
 
@@ -507,7 +553,14 @@ featural content of relative pronoun
             fit to=tree]{};
             }
                 [\tsc{f}2]
-                [\tsc{nom}P
+                [\tsc{nom}P,
+                tikz={
+                \node[draw,circle,
+                fill=DG,fill opacity=0.2,
+                DG,dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
                     [\tsc{f1}]
                     [ϕP
                         [\phantom{xxx},
@@ -520,17 +573,23 @@ featural content of relative pronoun
       \end{forest}
       &
       \begin{forest} boom
-        [\tsc{nom}P,
+        [\textcolor{DG}{\ac{nom}},edge=DG,
         tikz={
-        \node[label=below:\tit{-er},
+        \node[label=below:\textcolor{DG}{\tit{-er}},
         draw,circle,
         scale=0.8,
+        DG,
+        fit to=tree]{};
+        \node[
+        draw,circle,
+        scale=0.75,
+        dashed,DG,
         fit to=tree]{};
         }
-            [\tsc{f1}]
-                [ϕP
+            [\textcolor{DG}{\tsc{f1}},edge=DG]
+            [\textcolor{DG}{ϕP,edge=DG}
                 [\phantom{xxx},
-                roof, baseline
+                roof, baseline,edge=DG
                 ]
             ]
         ]
@@ -540,6 +599,9 @@ featural content of relative pronoun
   \label{tbl:mg-int-wins}
 \end{table}
 
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom}
 
 \begin{table}[H]
   \center
@@ -552,23 +614,23 @@ featural content of relative pronoun
             [DP
                 [\tit{w-}, roof]
             ]
-            [\tsc{acc}P,
+            [\textcolor{DG}{\ac{nom}},edge=DG,
             tikz={
-            \node[label=below:\tit{-en},
+            \node[label=below:\textcolor{DG}{\tit{-er}},
             draw,circle,
-            scale=0.85,
+            scale=0.8,
+            DG,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=0.75,
+            dashed,DG,
             fit to=tree]{};
             }
-                [\tsc{f}2]
-                [\tsc{nom}P
-                    [\tsc{f1}]
-                    [\tsc{dP}
-                        [\tsc{d}]
-                        [ϕP
-                            [\phantom{xxx},
-                            roof, baseline
-                            ]
-                        ]
+                [\textcolor{DG}{\tsc{f1}},edge=DG]
+                [\textcolor{DG}{ϕP},edge=DG
+                    [\phantom{xxx},
+                    roof, baseline,edge=DG
                     ]
                 ]
             ]
@@ -576,29 +638,30 @@ featural content of relative pronoun
       \end{forest}
       &
       \begin{forest} boom
-        [\tsc{dat}P,
-        tikz={
-        \node[label=below:\tit{-em},
-        draw,circle,
-        scale=0.85,
-        fit to=tree]{};
-        }
-            [\tsc{f}3]
-            [\tsc{acc}P
-                [\tsc{f}2]
-                [\tsc{nom}P
-                    [\tsc{f1}]
-                    [\tsc{dP}
-                        [\tsc{d}]
-                        [ϕP
-                            [\phantom{xxx},
-                            roof, baseline
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{-en},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P,
+          tikz={
+          \node[draw,circle,
+          fill=DG,fill opacity=0.2,
+          DG,dashed,
+          scale=0.8,
+          fit to=tree]{};
+          }
+              [\tsc{f1}]
+              [ϕP
+                  [\phantom{xxx},
+                  roof, baseline
+                  ]
+              ]
+          ]
+      ]
       \end{forest}\\
       \bottomrule
   \end{tabular}
@@ -606,10 +669,41 @@ featural content of relative pronoun
 \end{table}
 
 
-Florian with his \tit{am Main}
+The strong article is used when there is an anaphoric relation. It is often the case that there is a linguistic antecedent that is referred back to.
+
+\exg. Hans hat heute \tbf{einen} \tbf{Freund} zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto \tbf{*vom}/ \tbf{von} \tbf{dem} \tbf{Freund} gezeigt.\\
+Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo {of the\scsub{weak}} of the\scsub{strong} friend shown\\
+`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'
 
 
 
+
+Weak articles are used when situational uniqueness is involved. Uniqueness can be globally or within a restricted domain. The discourse participants mutually shared knowledge that uniqueness holds.
+
+\exg. Armstrong flog als erster zum Mond.\\
+Armstrong flew as {first one} {to the\scsub{weak}} moon\\
+`Armstrong was the first one to fly to the moon.'
+
+Weak articles are used when strong articles cannot be used (because there is no antecedent), and an indefinite is not appropriate in the situation (Hawkins 1991, Heim1991), but there is still uniqueness.
+
+
+
+
+
+are free relatives restrictive or non-restrictive? > restrictive, and restrictive and weak are incompatible :)  >> this is why we have deletion!
+
+Sie ist vom Mann, mit dem sie gestern ausgegangen ist, versetzt worden.
+
+soooo, this 'm that I have here needs to go :) a relative clause cannot modify a weak thing?
+
+
+
+
+Restrictive relative clauses only work with d-, non-restrictive can also work with contracted form.
+
+\exg. Ich habe 's Fahrrad vergessen.\\
+ I have the\scsub{weak} bike forgotten\\
+ `I forgot the bike.'
 
 \subsection{Deriving `matching'}
 
@@ -738,7 +832,7 @@ Florian with his \tit{am Main}
 Radek with his definitnessless of Czech demonstratives
 
 
-\subsection{Excluding external-only}
+\subsection{Excluding `non-matching --- external-only'}
 
 
 x
