@@ -418,6 +418,8 @@ Examples in which the internal case is accusative, the external case is dative a
 know.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{sg}.\ac{m}.\ac{dat} also better manage.\ac{pst}.3\ac{sg}\scsub{[dat]}\\
 `I know the one who also managed it better' \flushfill{Old High German, \ac{otfrid} V 5:5}\label{ex:ohg-acc-dat}
 
+%sunta	ni	furliez	themo	ih	mit	rehtu	scolta (ext:dat, int:nom)
+
 Consider the example in \ref{ex:ohg-dat-acc}. In this example, the internal accusative case competes against the external dative case.
 The internal case is accusative, as the predicate \tit{zellen} `to tell' takes accusative objects.
 The external case is dative, as the comparative of the adjective \tit{furiro} `great' takes dative objects.
@@ -427,6 +429,8 @@ Examples in which the internal case is accusative, the external case is dative a
 \exg. bis -tú nu {zi wáre} furira Ábrahame? ouh thén \tbf{man} \tbf{hiar} \tbf{nu} \tbf{zálta}\\
 be.\ac{pres}.2\ac{sg} -2\ac{sg}.\ac{nom} now truly {great}.\ac{cmpr}\scsub{[dat]} Abraham.\ac{dat} and \ac{rel}.\ac{pl}.\ac{m}.\ac{dat} one.\ac{nom}.\ac{m}.\ac{sg} here now tell.\ac{pst}.3\ac{sg}\scsub{[acc]}\\
 `are you now truly greater than Abraham? and than those, who one talked about here now' \flushfill{Old High German, \ac{otfrid} III 18:33}\label{ex:ohg-dat-acc}
+
+%sagda them siu welda = she said to whom she wished
 
 The two examples in which the accusative and the dative compete are highlighted in Table \ref{tbl:summary-old-high-german-acc-dat}. The light gray marking corresponds to \ref{ex:ohg-acc-dat}, in which the internal dative wins over the external accusative, and the relative pronoun surfaces in the dative case. The dark gray marking corresponds to \ref{ex:ohg-dat-acc}, in which the external dative wins over the internal accusative, and the relative pronoun surfaces in the dative case.
 
@@ -1689,7 +1693,20 @@ In Modern German, it is possible to insert a light head to resolve a situation w
 
 This once again confirms the picture of Modern Greek always letting the relative pronoun surface in the external case. The internal case is taken care of by the clitic, which is independent of the relative clause construction.
 
-I do not discuss more examples from Modern Greek than I did until now. This does not change anything about the point I am making here: the only kind of system that is compatible with the examples given is the one in the relative pronoun always appears in the external case. For more examples that illustrate this pattern, I refer the reader to \pgcitet{daskalaki2011}{79-80}.
+I do not discuss more examples from Modern Greek than I did until now. This does not change anything about the point I am making here: the only kind of system that is compatible with the examples given is the one in the relative pronoun always appears in the external case. For more examples that illustrate this pattern, I refer the reader to \pgcitet{daskalaki2011}{79-80} and \pgcitet{spyropoulos2011}{31-34}.\footnote{
+When the relative clause is dislocated, both the internal and the external case can be used. In \ref{ex:greek-dislocated-acc-nom}, the internal case is accusative, and the external case is nominative. Normally the relative pronoun should appear in the external case, so the nominative. However, the accusative is also grammatical here. \citet{spyropoulos2011} argues that in these left-dislocated structure, there is a silent \tit{pro} or a clitic (\tit{ton} in \ref{ex:greek-dislocated-nom-acc}) that satisfies the external case. This allows the relative pronoun to take the internal case. This makes this construction more of a correlative.
+
+\ex.
+\ag. ópjos/ ópjon epiléksume θa pári to vravío\\
+\ac{rel}.\ac{sg}.\ac{m}.\ac{nom}/\ac{rel}.\ac{sg}.\ac{m}.\ac{acc} choose.1\tsc{pl}\scsub{[acc]} \tsc{fut} take.3\tsc{sg}\scsub{[nom]} the price.\tsc{acc}\\
+`Whoever we may choose, he will get the price.'\label{ex:greek-dislocated-acc-nom}
+\bg. ópjos/ ópjon me aɣapá ton aɣapó\\
+\ac{rel}.\ac{sg}.\ac{m}.\ac{nom}/\ac{rel}.\ac{sg}.\ac{m}.\ac{acc} \ac{cl}.1\ac{sg}.\ac{acc} love.3\tsc{sg}\scsub{[nom]}
+\ac{cl}.3\ac{sg}.\ac{m}.\ac{acc} love.1\tsc{sg}\scsub{[acc]}\\
+`Whoever loves me, I love him.'\label{ex:greek-dislocated-nom-acc}
+
+\phantom{x}
+}
 
 In sum, Old English and Modern Greek are languages without case competition in their headless relatives. The relative pronoun always appears in the external case.
 
@@ -1813,28 +1830,28 @@ If the language lets its relative pronouns appear in the external case, the patt
             \node (example1) [example, below of=outcome1, yshift=0.25cm]
             {\scriptsize{e.g. Old English, Modern Greek (5)}};
     \node (question2) [question, below of=question1, xshift=2cm, yshift=-0.5cm]
-    {allow mismatches?};
+    {allow \tsc{ext}?};
         \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
-        {matching};
+        {complex};
             \node (example2) [example, below of=outcome2, yshift=0.25cm]
-            {\scriptsize{e.g. Polish\\\phantom{x}}};
+            {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
         \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
-        {cases allowed:};
+        {allow \tsc{int}?};
             \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
             {\ac{int} + complex};
                 \node (example3) [example, below of=outcome3, yshift=0.25cm]
                 {\scriptsize{e.g. Modern German\\\phantom{x}}};
             \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
-            {complex};
+            {matching};
                 \node (example4) [example, below of=outcome4, yshift=0.25cm]
-                {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+                {\scriptsize{e.g. Polish\\\phantom{x}}};
 
     \draw [arrow] (question1) -- node[anchor=north west] {\ac{int} + \ac{ext}} (question2);
     \draw [arrow] (question1) -- node[anchor=east] {\ac{ext}} (outcome1);
-    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-    \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
-    \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
+    \draw [arrow] (question2) -- node[anchor=east] {yes} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {no} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {yes} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {no} (outcome4);
     }
     \end{tikzpicture}
     \caption{Attested patterns in headless relatives}

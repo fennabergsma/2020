@@ -4,35 +4,31 @@
 
 In Chapter \ref{ch:case-competition-typology} I introduced two parameters that generates the attested languages, as shown in Table \ref{fig:two-parameters}. The first parameter is `allow mismatches?', which distinguishes between `matching' languages, as Polish, on the one hand, and `non-matching --- internal only' and `non-matching' languages as Modern German and Old High German. The second parameter is `cases considered', which distinguishes between `non-matching --- internal only' languages, as Modern German, on the one hand, and `non-matching' languages, as Old High German.
 
-This chapter gives the linguistic counterparts of these parameters.
-The linguistic counterpart of `allow mismatches' is: ???
-The linguistic counterpart of `cases considered' is: if \tsc{dem} and \tsc{rel} are syncretic, you consider \tsc{int} and \tsc{ext}. If not, you consider only \tsc{int}.
-
 \begin{figure}[H]
   \centering
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
       \node (question2) [question]
-      {allow mismatches?};
+      {allow \tsc{int} + \tsc{ext}?};
           \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
-          {matching};
+          {complex};
               \node (example2) [example, below of=outcome2, yshift=0.25cm]
-              {\scriptsize{e.g. Polish\\\phantom{x}}};
+              {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
           \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
-          {cases allowed:};
+          {allow \tsc{int}?};
               \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
               {\ac{int} + complex};
                   \node (example3) [example, below of=outcome3, yshift=0.25cm]
                   {\scriptsize{e.g. Modern German\\\phantom{x}}};
               \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
-              {complex};
+              {matching};
                   \node (example4) [example, below of=outcome4, yshift=0.25cm]
-                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+                  {\scriptsize{e.g. Polish\\\phantom{x}}};
 
-    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-    \draw [arrow] (question3) -- node[anchor=east] {\ac{int}} (outcome3);
-    \draw [arrow] (question3) -- node[anchor=west] {\ac{int} + \ac{ext}} (outcome4);
+    \draw [arrow] (question2) -- node[anchor=east] {yes} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {no} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {yes} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {no} (outcome4);
 
     % \node[fit=(question3)(outcome3)(outcome4)(example3)(example4),
     %       draw, circle, scale=0.7]
@@ -43,28 +39,96 @@ The linguistic counterpart of `cases considered' is: if \tsc{dem} and \tsc{rel} 
     \label{fig:two-parameters}
 \end{figure}
 
+This chapter gives the linguistic counterparts of these parameters.
+The linguistic counterpart of `allow mismatches' is: ???
+The linguistic counterpart of `cases considered' is: if \tsc{dem} and \tsc{rel} are syncretic, you consider \tsc{int} and \tsc{ext}. If not, you consider only \tsc{int}.
+
+\begin{figure}[H]
+  \centering
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {\tsc{rel} = \tsc{dem}?};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {complex};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {\tsc{dem}\scsub{weak} = ok as head?};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {\ac{int} + complex};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {matching};
+                  \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Polish\\\phantom{x}}};
+
+    \draw [arrow] (question2) -- node[anchor=east] {yes} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {no} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+
+    % \node[fit=(question3)(outcome3)(outcome4)(example3)(example4),
+    %       draw, circle, scale=0.7]
+    %       {};
+    \end{tikzpicture}
+    }
+    \caption{Attested patterns in headless relatives with case competition (repeated)}
+    \label{fig:formal-parameters}
+\end{figure}
+
+
+\begin{table}[H]
+  \center
+  \caption{Overview of languages}
+\begin{tabular}{c|ccc}
+  \toprule
+                      & Old High German & Modern German & Polish  \\
+                      \cmidrule{1-4}
+\tit{int} = \tit{ext} & ✔               & ✔             & ✔       \\
+\tit{int} > \tit{ext} & ✔               & ✔             & *       \\
+\tit{int} < \tit{ext} & ✔               & *             & *       \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 So far, I have discussed three different concepts: the internal case, the external case and the relative pronoun. I said things like ``the relative pronoun is allowed to surface in the internal or in the external case''. I have not been explicit about where and how the competition between the internal and the external case takes place. In order to avoid introducing machinery just for case competition situations, I assume it takes place in syntax. I propose that headless relatives actually have an internal element and an external element at some point of the derivation. At the end of the derivation, only one of them surfaces as the relative pronoun.
 
 Section \ref{sec:int-ext-elements} discusses the internal and external case into detail. It shows syntactic evidence for the relative being the internal element. I argue that the external element is syntactically placed outside the relative clause. Independent evidence for the presence of this external element comes from double-headed languages. I also adopt another crucial property of the external heads in these double-headed relative clauses: the external head is always a subset of the internal head. This observation ultimately leads me to be able to exclude the `non-matching --- external-only' language type.
 
-However, before I go into detail about the specifics of the internal and the external element, I discuss in Section \ref{sec:containment-noncase} how the introduction of an internal and an external element helps to account for the difference between languages. I propose that both elements consists of part that concerns case, a case part, and a part that concerns other features than case, a non-case part. The latter parts, the non-case parts, are crucial in determining how the language behaves with the respect to the two parameters. Specifically, the comparison between the non-case part of the internal element and the non-case part of the external element decides whether the internal and elements are allowed to surface. Just as I did for the competition between case features, I rely on containment. When the internal non-case part contains the features that the external non-case part contains, the internal element is allowed to surface. When the external non-case part contains the features that the internal non-case part contains, the external element is allowed to surface.
+However, before I go into detail about the specifics of the internal and the external element, I discuss in Section \ref{sec:containment-noncase} how the introduction of an internal and an external element helps to account for the difference between languages. I propose that both elements consists of part that concerns case, a case part, and a part that concerns other features than case, a base part. The latter parts, the base parts, are crucial in determining how the language behaves with the respect to the two parameters. Specifically, the comparison between the base part of the internal element and the base part of the external element decides whether the internal and elements are allowed to surface. Just as I did for the competition between case features, I rely on containment. When the internal base part contains the features that the external base part contains, the internal element is allowed to surface. When the external base part contains the features that the internal base part contains, the external element is allowed to surface.
 
 In Section \ref{sec:deriving-languages}, I give per language (Old High German, Modern German and Polish) the internal structure of the internal element and the external element. I compare them to each other and show how the grammatical patterns are generated and the ungrammatical ones are not.
 
 In Section \ref{sec:alternative-analyses}, I compare my approach with previous accounts of \citet{himmelreich2017} and Grosu.
 
-\section{Containment in non-case}\label{sec:containment-noncase}
+\section{Base containment}\label{sec:containment-noncase}
 
-The goal is to explain why there are languages that allow internal and external, languages that allow only internal, but no languages that only allow only external. I propose we do this by comparing the non-case parts of the internal and the external elements in headless relatives.
+The goal is to explain why there are languages that allow internal and external, languages that allow only internal, but no languages that only allow only external. I propose we do this by comparing the base parts of the internal and the external elements in headless relatives.
 
-Headless relatives have an internal element and an external element. Both elements consist of two parts: the case part and a non-case part. Part \ref{part:case-facts} was about the case part of the elements. A more complex case wins over a less complex case because the former contains all features the latter contains. Concretely, the dative wins over the accusative because the dative contains all features the accusative contains, the dative wins over the nominative because the dative contains all features the nominative contains, and the accusative wins over the nominative because the accusative contains all features the nominative contains.
+Headless relatives have an internal element and an external element. Both elements consist of two parts: the case part and a base part. Part \ref{part:case-facts} was about the case part of the elements. A more complex case wins over a less complex case because the former contains all features the latter contains. Concretely, the dative wins over the accusative because the dative contains all features the accusative contains, the dative wins over the nominative because the dative contains all features the nominative contains, and the accusative wins over the nominative because the accusative contains all features the nominative contains.
 
-I propose that a containment relation is also the crucial factor that determines in whether a particular language allows the internal and external case to surface. It is not the containment relationship having to do with case, but the one that has to do with the non-case part. I propose that a language allows the internal case to surface when it wins the case competition, if the non-case part of the internal element contains all features that the non-case part of the external element contains. The other way around works the same way: a language allows the external case to surface when it wins the case competition, if the non-case part of the external element contains all features that the non-case part of the internal element contains.
+I propose that a containment relation is also the crucial factor that determines in whether a particular language allows the internal and external case to surface. It is not the containment relationship having to do with case, but the one that has to do with the base part. I propose that a language allows the internal case to surface when it wins the case competition, if the base part of the internal element contains all features that the base part of the external element contains. The other way around works the same way: a language allows the external case to surface when it wins the case competition, if the base part of the external element contains all features that the base part of the internal element contains.
 
-Table \ref{tbl:non-case} gives a table that resembles the case tables I discussed in Chapter \ref{ch:case-competition-typology}. The left column shows the features of the internal non-case part. The top row shows the features of the internal non-case part. The other cells indicate the features of the winning non-case part.
-If the internal non-case part contains the features [\tsc{a}] or [\tsc{a}, \tsc{b}], and the external non-case part contains only the features [\tsc{a}] or [\tsc{a}, \tsc{b}], the internal and the external are allowed to surface in the language. This is the pattern that corresponds to the `non-matching' type of language like Old High German.
-If the internal non-case part contains the feature [\tsc{a}], and the external non-case part contains only the features [\tsc{a}, \tsc{b}], the external is allowed to surface in the language and the internal is not. This is the pattern that is crosslinguistically not attested. In Section \ref{sec:int-ext-elements} I show why this is the case.
-If the internal non-case part contains the features [\tsc{a}, \tsc{b}], and the external non-case part contains only the feature [\tsc{a}], the internal is allowed to surface in the language and the external is not. This is the pattern that corresponds to the `non-matching --- internal only' type of language like Modern German.
+\begin{table}[H]
+  \center
+  \caption{Old High German}
+\begin{tabular}{c|ccc}
+  \toprule
+                      & \tsc{int}         & \tsc{ext}         & ✔/* \\
+                      \cmidrule{1-4}
+\tit{int} = \tit{ext} & \tbf{d}-\tbf{e}-r & \tbf{d}-\tbf{e}-r & ✔   \\
+\tit{int} > \tit{ext} & \tbf{d}-\tbf{e}-n & \tbf{d}-\tbf{e}-r & ✔   \\
+\tit{int} < \tit{ext} & \tbf{d}-\tbf{e}-r & \tbf{d}-\tbf{e}-n & ✔   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tbl:base} gives a table that resembles the case tables I discussed in Chapter \ref{ch:case-competition-typology}. The left column shows the features of the internal base part. The top row shows the features of the internal base part. The other cells indicate the features of the winning base part.
+If the internal base part contains the features [\tsc{a}] or [\tsc{a}, \tsc{b}], and the external base part contains only the features [\tsc{a}] or [\tsc{a}, \tsc{b}], the internal and the external are allowed to surface in the language. This is the pattern that corresponds to the `non-matching' type of language like Old High German.
+If the internal base part contains the feature [\tsc{a}], and the external base part contains only the features [\tsc{a}, \tsc{b}], the external is allowed to surface in the language and the internal is not. This is the pattern that is crosslinguistically not attested. In Section \ref{sec:int-ext-elements} I show why this is the case.
+If the internal base part contains the features [\tsc{a}, \tsc{b}], and the external base part contains only the feature [\tsc{a}], the internal is allowed to surface in the language and the external is not. This is the pattern that corresponds to the `non-matching --- internal only' type of language like Modern German.
 
 \begin{table}[H]
   \center
@@ -85,16 +149,16 @@ If the internal non-case part contains the features [\tsc{a}, \tsc{b}], and the 
           \\
     \bottomrule
   \end{tabular}
-  \label{tbl:non-case}
+  \label{tbl:base}
 \end{table}
 
-There is a crucial difference between the Table \ref{tbl:non-case} and the case tables in Chapter \ref{ch:case-competition-typology}. The case tables described different situations that are attested within a single language, as I illustrated by going through  examples that correspond to different cells in the tables. Case differs from sentence to sentence: in one sentence the internal case is the dative, in the other it is the accusative or the nominative. The non-case table is not like that: only a single cell in the table corresponds to a particular language. The non-case parts of the internal and external elements are namely stable per language. The relative pronoun has namely a single form, and so does the external element.
+There is a crucial difference between the Table \ref{tbl:base} and the case tables in Chapter \ref{ch:case-competition-typology}. The case tables described different situations that are attested within a single language, as I illustrated by going through  examples that correspond to different cells in the tables. Case differs from sentence to sentence: in one sentence the internal case is the dative, in the other it is the accusative or the nominative. The base table is not like that: only a single cell in the table corresponds to a particular language. The base parts of the internal and external elements are namely stable per language. The relative pronoun has namely a single form, and so does the external element.
 
-Taking this all together, there are two competitions taking place in headless relatives: case competition and non-case competition. Case competition decides which case wins the sentence and non-case competition decides whether the result can go through. Let me put this in the metaphor with the committee I introduced in Section \ref{sec:possible-patterns}. The committee learns who wins the case competition. It can either approve this case or not approve it. The information that the committee uses for their decision is the comparison between the internal and the external element. More specifically, it compares the non-case parts of the internal and external element. The committee approves the winning case if the non-case part of its element contains the non-case part of the element of the losing case.
+Taking this all together, there are two competitions taking place in headless relatives: case competition and base competition. Case competition decides which case wins the sentence and base competition decides whether the result can go through. Let me put this in the metaphor with the committee I introduced in Section \ref{sec:possible-patterns}. The committee learns who wins the case competition. It can either approve this case or not approve it. The information that the committee uses for their decision is the comparison between the internal and the external element. More specifically, it compares the base parts of the internal and external element. The committee approves the winning case if the base part of its element contains the base part of the element of the losing case.
 
-In sum, a relative pronoun can surface in the internal case if both the non-case and the case part of the internal element contain non-case and case part of the external element. It works the same way the other way around: a relative pronoun can surface in the external case if both the non-case and the case part of the external element contain the non-case and case part of the internal element.
+In sum, a relative pronoun can surface in the internal case if both the base and the case part of the internal element contain base and case part of the external element. It works the same way the other way around: a relative pronoun can surface in the external case if both the base and the case part of the external element contain the base and case part of the internal element.
 
-In this chapter, I introduce what the non-case part the internal and external element looks like, and I argue per language what they look like.
+In this chapter, I introduce what the base part the internal and external element looks like, and I argue per language what they look like.
 
 
 \section{The internal and external element}\label{sec:int-ext-elements}
@@ -193,31 +257,41 @@ In sum, the external element is a copy of a subset of the features of the relati
 
 I am not going to give a whole sentence. I only talk about the internal and external element in there. I also do not talk about the nature of the deletion process.
 
+
+
+
+
 \begin{table}[H]
-  \caption{\tsc{int} < \tsc{ext}}
+  \center
+  \caption{Modern German}
 \begin{tabular}{c|ccc}
   \toprule
-                & yes/no & \tsc{int}   & \tsc{ext}   \\
-                \cmidrule{1-4}
-Old High German & yes    & d-e-n & d-e-r \\
-Modern German   & yes    & w-e-n & r     \\
-Polish          & no     & komu  & tego \\
+                      & \tsc{int}         & \tsc{ext} & ✔/* \\
+                      \cmidrule{1-4}
+\tit{int} = \tit{ext} & \tbf{w}-\tbf{e}-r & r         & ✔   \\
+\tit{int} > \tit{ext} & \tbf{w}-\tbf{e}-n & r         & ✔   \\
+\tit{int} < \tit{ext} & \tbf{w}-\tbf{e}-r & n         & *   \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+
 \begin{table}[H]
-  \caption{\tsc{ext} < \tsc{int}}
+  \center
+  \caption{Polish}
 \begin{tabular}{c|ccc}
   \toprule
-                & yes/no  & \tsc{int}  & \tsc{ext}  \\
-                \cmidrule{1-4}
-Old High German & yes     & d-e-r      & d-e-n      \\
-Modern German   & no     & w-e-r      & n          \\
-Polish          & no      & temu       & kogo       \\
+                      & \tsc{int}   & \tsc{ext}   & ✔/* \\
+                      \cmidrule{1-4}
+\tit{int} = \tit{ext} & \tbf{ko}-go & \tbf{te}-go & ✔   \\
+\tit{int} > \tit{ext} & \tbf{ko}-mu & \tbf{te}-go & *   \\
+\tit{int} < \tit{ext} & \tbf{ko}-go & \tbf{te}-mo & *   \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+
+
 
 
 
@@ -779,7 +853,7 @@ fit to=tree]{};
  we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
  `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}
 
-the internal case is more complex than the external case, and the internal non-case part is more complex than the external non-cas part
+the internal case is more complex than the external case, and the internal base part is more complex than the external non-cas part
 
 \begin{table}[H]
   \center
@@ -855,7 +929,7 @@ the internal case is more complex than the external case, and the internal non-c
 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
 `I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep}
 
-the external case is more complex than the internal case, but the external non-case part is not more complex than the internal non-case part
+the external case is more complex than the internal case, but the external base part is not more complex than the internal base part
 
 \begin{table}[H]
   \center
