@@ -86,9 +86,9 @@ The linguistic counterpart of `cases considered' is: if \tsc{dem} and \tsc{rel} 
   \toprule
                       & Old High German & Modern German & Polish  \\
                       \cmidrule{1-4}
-\tit{int} = \tit{ext} & ✔               & ✔             & ✔       \\
-\tit{int} > \tit{ext} & ✔               & ✔             & *       \\
-\tit{int} < \tit{ext} & ✔               & *             & *       \\
+\tsc{int} = \tsc{ext} & ✔               & ✔             & ✔       \\
+\tsc{int} > \tsc{ext} & ✔               & ✔             & *       \\
+\tsc{int} < \t{ext} & ✔               & *             & *       \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -102,6 +102,11 @@ However, before I go into detail about the specifics of the internal and the ext
 In Section \ref{sec:deriving-languages}, I give per language (Old High German, Modern German and Polish) the internal structure of the internal element and the external element. I compare them to each other and show how the grammatical patterns are generated and the ungrammatical ones are not.
 
 In Section \ref{sec:alternative-analyses}, I compare my approach with previous accounts of \citet{himmelreich2017} and Grosu.
+
+
+
+
+
 
 \section{Base containment}\label{sec:containment-noncase}
 
@@ -118,9 +123,38 @@ I propose that a containment relation is also the crucial factor that determines
   \toprule
                       & \tsc{int}         & \tsc{ext}         & ✔/* \\
                       \cmidrule{1-4}
-\tit{int} = \tit{ext} & \tbf{d}-\tbf{e}-r & \tbf{d}-\tbf{e}-r & ✔   \\
-\tit{int} > \tit{ext} & \tbf{d}-\tbf{e}-n & \tbf{d}-\tbf{e}-r & ✔   \\
-\tit{int} < \tit{ext} & \tbf{d}-\tbf{e}-r & \tbf{d}-\tbf{e}-n & ✔   \\
+\tsc{int} = \tsc{ext} & \tbf{d}-\tbf{e}-r & \tbf{d}-\tbf{e}-r & ✔   \\
+\tsc{int} > \tsc{ext} & \tbf{d}-\tbf{e}-n & \tbf{d}-\tbf{e}-r & ✔   \\
+\tsc{int} < \tsc{ext} & \tbf{d}-\tbf{e}-r & \tbf{d}-\tbf{e}-n & ✔   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \center
+  \caption{Modern German}
+\begin{tabular}{c|ccc}
+  \toprule
+                      & \tsc{int}         & \tsc{ext} & ✔/* \\
+                      \cmidrule{1-4}
+\tsc{int} = \tsc{ext} & \tbf{w}-\tbf{e}-r & r         & ✔   \\
+\tsc{int} > \tsc{ext} & \tbf{w}-\tbf{e}-n & r         & ✔   \\
+\tsc{int} < \tsc{ext} & \tbf{w}-\tbf{e}-r & n         & *   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+  \center
+  \caption{Polish}
+\begin{tabular}{c|ccc}
+  \toprule
+                      & \tsc{int}   & \tsc{ext}   & ✔/* \\
+                      \cmidrule{1-4}
+\tsc{int} = \tsc{ext} & \tbf{ko}-go & \tbf{te}-go & ✔   \\
+\tsc{int} > \tsc{ext} & \tbf{ko}-mu & \tbf{te}-go & *   \\
+\tsc{int} < \tsc{ext} & \tbf{ko}-go & \tbf{te}-mo & *   \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -161,99 +195,7 @@ In sum, a relative pronoun can surface in the internal case if both the base and
 In this chapter, I introduce what the base part the internal and external element looks like, and I argue per language what they look like.
 
 
-\section{The internal and external element}\label{sec:int-ext-elements}
 
-The comparison between the internal and external element is crucial in determining what the type of a language is. This section discusses both elements. In Section \ref{sec:internal-element}, I show that the relative pronoun is the internal element, and that this is part of the relative clause. Section \ref{sec:external-element} discusses the external element. This element is syntactically places outside of the relative clause, and its features form a subset of the features of the relative pronoun.
-
-\subsection{The relative pronoun = internal}\label{sec:internal-element}
-
-In headless relative constructions, there is a single element that surfaces: the relative pronoun. In this section, I show that the relative pronoun is syntactically part of the relative clause. The evidence comes from extraposition data in Modern German. In Modern German, it is possible to extrapose a CP (a clause), but not a DP (a noun phrase). In this section I first show that Modern German CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs: they can be extraposed as well. I conclude that the relative pronoun is the internal element in the headless relative.
-
-The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
-
-\ex.\label{ex:mg-extrapose-cp}
-\ag. Mir ist \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht} egal.\\
- 1\tsc{sg}.\tsc{dat} is how it 2\tsc{sg}.\tsc{dat} goes {the same}\\
- `I don't care how you are doing.'\label{ex:mg-extrapose-cp-base}
-\bg. Mir is egal \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht}.\\
- 1\tsc{sg}.\tsc{dat} is {the same} how it 2\tsc{sg}.\tsc{dat} goes\\
- `I don't care how you are doing.' \label{ex:mg-extrapose-cp-moved}\flushfill{Modern German}
-
-\ref{ex:mg-extrapose-dp} illustrates that it is impossible to extrapose a DP. The clausal object of \ref{ex:mg-extrapose-cp} is replaced by the simplex noun phrase \tit{die Sache} `that matter'.
-In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base position. In \ref{ex:mg-extrapose-dp-moved} it is extraposed, and the sentence is no longer grammatical.
-
-\ex.\label{ex:mg-extrapose-dp}
-\ag. Mir ist \tbf{die} \tbf{Sache} egal.\\
- 1\tsc{sg}.\tsc{dat} is that matter {the same}\\
- `I don't care about that matter.'\label{ex:mg-extrapose-dp-base}
-\bg. *Mir ist egal \tbf{die} \tbf{Sache}.\\
- 1\tsc{sg}.\tsc{dat} is {the same} that matter\\
- `I don't care about that matter.' \label{ex:mg-extrapose-dp-moved}\flushfill{Modern German}
-
-The same asymmetry between CPs and DPs can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gekocht hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
-In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
-
-\ex.\label{ex:extra-headed}
-\ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}, aufgegessen.\\
- Jan has that what he cooked has eaten\\
-`Jan has eaten what he cooked.'\label{ex:extra-headed-base}
-\bg. Jan hat das aufgegessen, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
- Jan has that eaten what he cooked has\\
-`Jan has eaten what he cooked.'\label{ex:extra-headed-only-clause}
-\cg. *Jan hat aufgegessen, das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
- Jan has eaten that what he cooked has\\
-`Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause} \flushfill{Modern German}
-
-The same can be observed in relative clauses without a head. \ref{ex:extra-headless} is the same sentence as in \ref{ex:extra-headed} only without the overt head. The relative clause is marked in bold again.
-In \ref{ex:extra-headless-base}, the relative clause appears in base position. In \ref{ex:extra-headless-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headless-no-rel}, the relative clause is extraposed without the relative pronouns. This is ungrammatical, because the relative pronoun is part of the CP.
-This shows that the relative pronoun in headless relatives in Modern German are necessarily part of a CP, which is here a relative clause.
-
-\ex.\label{ex:extra-headless}
-\ag. Jan hat \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat} aufgegessen.\\
-Jan has what he cooked has eaten\\
-`Jan has eaten what he cooked.'\label{ex:extra-headless-base}
-\bg. Jan hat aufgegessen \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
-Jan has eaten what he cooked has\\
-`Jan has eaten what he cooked.'\label{ex:extra-headless-clause}
-\bg. *Jan hat \tbf{was} aufgegessen \tbf{er} \tbf{gekocht} \tbf{hat}.\\
-Jan has what eaten he cooked has\\
-`Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
-
-In conclusion, extraposition facts show that the relative pronoun in Modern German is syntactically part of the relative clause. Therefore, the relative pronoun is the internal element in headless relative construction.
-
-
-\subsection{The other element = external}\label{sec:external-element}
-
-In the previous section I introduced the relative pronoun as the internal element. This means that the other element is the external element. This section starts with the observation that there actually are languages in which two elements surface in so-called double-headed relative clauses. In these languages, the external head is a subset of the internal head, and that some features like \tsc{d} and case are necessarily excluded in the external head. I adopt this insight, and I apply it to the headless relative situation. I propose that the external head in headless relatives is a copy of a specific part of the relative pronoun.%cinque: headless relatives, what is the subset?
-
-As I said earlier, I need two elements to do case competition with. In headless relatives, I only see a single one surfacing. However, some languages actually show two elements surfacing. Here there are two copies of the element, one inside the relative clause, one outside of the relative clause.
-
-\exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
- sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
- `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}
-
-The external element is not always an exact copy of the element inside of the relative clause. An example from Kombai shows that the element outside of the relative clause can also be a subset of what the element inside of the relative clause is. Here I give two examples, there is an \tit{old man} and a \tit{person}, and there is \tit{pig} and a \tit{thing}.
-
-\ex.
-\ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
- {old man} join.\ac{ss} work do.\ac{dur}.3\ac{sg}.\ac{nf}-\ac{tr}-\ac{conn} person my-uncle-\ac{pred}\\
- `The old man, who is joining the work, is my uncle.' 77
-\bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
- pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\ac{pred}\\
- `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt{vries1993}{77}}
-
-Let me now apply what we have seen so far to headless relatives. Headless relatives do not have an overt NP, so this cannot be copied. However, there is the relative pronoun which is specified for number, gender, case, etc. Are all of these features copied onto the external element? The copy is the portion of the nominal extended projection c-commanded by the relative clause. A headless relative is a restrictive relative clause. Therefore, there is no \tsc{d} and no case.
-
-Is it possible to add features onto the external head after it has been copied? Yes, for example D, as the example shows, but also case.
-
-\exg. Junya-wa [Ayaka-ga \tbf{ringo}-o mui-ta] sono \tbf{ringo}-o tabe-ta.\\
-Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} eat-\ac{pst}\\
-‘Junya ate the apples that Ayaka peeled.’ \flushfill{Japanese, \pgcitealt{erlewine2016}{2}}
-
-In sum, the external element is a copy of a subset of the features of the relative pronoun. Definiteness and case are not copied. New features can be merged onto the external element.
-
-
-\section{Deriving the types}\label{sec:deriving-languages}
 
 I am not going to give a whole sentence. I only talk about the internal and external element in there. I also do not talk about the nature of the deletion process.
 
@@ -261,44 +203,16 @@ I am not going to give a whole sentence. I only talk about the internal and exte
 
 
 
-\begin{table}[H]
-  \center
-  \caption{Modern German}
-\begin{tabular}{c|ccc}
-  \toprule
-                      & \tsc{int}         & \tsc{ext} & ✔/* \\
-                      \cmidrule{1-4}
-\tit{int} = \tit{ext} & \tbf{w}-\tbf{e}-r & r         & ✔   \\
-\tit{int} > \tit{ext} & \tbf{w}-\tbf{e}-n & r         & ✔   \\
-\tit{int} < \tit{ext} & \tbf{w}-\tbf{e}-r & n         & *   \\
-\bottomrule
-\end{tabular}
-\end{table}
+\section{Deriving `non-matching'}
 
+Old High German allows both internal and external to win. I propose headless relatives are derived from light-headed relatives. Internal elemnt is relative pronoun, external element is demonstrative.
 
-\begin{table}[H]
-  \center
-  \caption{Polish}
-\begin{tabular}{c|ccc}
-  \toprule
-                      & \tsc{int}   & \tsc{ext}   & ✔/* \\
-                      \cmidrule{1-4}
-\tit{int} = \tit{ext} & \tbf{ko}-go & \tbf{te}-go & ✔   \\
-\tit{int} > \tit{ext} & \tbf{ko}-mu & \tbf{te}-go & *   \\
-\tit{int} < \tit{ext} & \tbf{ko}-go & \tbf{te}-mo & *   \\
-\bottomrule
-\end{tabular}
-\end{table}
+\exg. eno	nist	thiz	thér	then	ir	suochet	zi	arslahanne	?\\
+ etwa, nun; wohl; nicht wahr	nicht	sein	dieser, diese, dieses	der, die, das	der, die, das, wer, was	ihr	suchen	zu	erschlagen, töten\\
+ `'
 
 
 
-
-
-
-
-
-
-\subsection{Deriving `non-matching'}
 
 \ex.
 \ag. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
@@ -309,7 +223,7 @@ I am not going to give a whole sentence. I only talk about the internal and exte
 \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
 `I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-intro-rep}
 
-\subsubsection{Relative pronoun}
+\subsection{Relative pronoun}
 
 I give an overview of Old High German relative pronouns. I only give the neuter and masculine gender, because I do not have any examples with the feminine. Relative pronouns consist of three morphemes: a \tit{d}, a vowel (\tit{a}, \tit{e} or \tit{i}) and suffix that differs per number, gender and case.\footnote{
 \tit{d} can also be \tit{dh} and \tit{th}, \tit{ë} and \tit{ē} can also be \tit{e} and \tit{é}.
@@ -446,7 +360,7 @@ give relative pronoun here
 \end{forest}
 
 
-\subsubsection{External element}
+\subsection{External element}
 
 I copy the \tsc{ind}P, and then I merge the external \tsc{ana}, \tsc{d} and cases.
 
@@ -683,7 +597,7 @@ There are three independent containment relations. Problem?
 
 
 
-\subsection{Deriving `non-matching --- only internal'}
+\section{Deriving `non-matching --- only internal'}
 
 Only internal wins, external cannot. I illustrate this with nominative and accusative.
 
@@ -695,8 +609,97 @@ Only internal wins, external cannot. I illustrate this with nominative and accus
  1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
  `I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-intro}
 
+ \subsection{The relative pronoun = internal}\label{sec:internal-element}
 
-\subsubsection{Relative pronoun}
+ In headless relative constructions, there is a single element that surfaces: the relative pronoun. In this section, I show that the relative pronoun is syntactically part of the relative clause. The evidence comes from extraposition data in Modern German. In Modern German, it is possible to extrapose a CP (a clause), but not a DP (a noun phrase). In this section I first show that Modern German CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs: they can be extraposed as well. I conclude that the relative pronoun is the internal element in the headless relative.
+
+ The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
+
+ \ex.\label{ex:mg-extrapose-cp}
+ \ag. Mir ist \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht} egal.\\
+  1\tsc{sg}.\tsc{dat} is how it 2\tsc{sg}.\tsc{dat} goes {the same}\\
+  `I don't care how you are doing.'\label{ex:mg-extrapose-cp-base}
+ \bg. Mir is egal \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht}.\\
+  1\tsc{sg}.\tsc{dat} is {the same} how it 2\tsc{sg}.\tsc{dat} goes\\
+  `I don't care how you are doing.' \label{ex:mg-extrapose-cp-moved}\flushfill{Modern German}
+
+ \ref{ex:mg-extrapose-dp} illustrates that it is impossible to extrapose a DP. The clausal object of \ref{ex:mg-extrapose-cp} is replaced by the simplex noun phrase \tit{die Sache} `that matter'.
+ In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base position. In \ref{ex:mg-extrapose-dp-moved} it is extraposed, and the sentence is no longer grammatical.
+
+ \ex.\label{ex:mg-extrapose-dp}
+ \ag. Mir ist \tbf{die} \tbf{Sache} egal.\\
+  1\tsc{sg}.\tsc{dat} is that matter {the same}\\
+  `I don't care about that matter.'\label{ex:mg-extrapose-dp-base}
+ \bg. *Mir ist egal \tbf{die} \tbf{Sache}.\\
+  1\tsc{sg}.\tsc{dat} is {the same} that matter\\
+  `I don't care about that matter.' \label{ex:mg-extrapose-dp-moved}\flushfill{Modern German}
+
+ The same asymmetry between CPs and DPs can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gekocht hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
+ In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
+
+ \ex.\label{ex:extra-headed}
+ \ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}, aufgegessen.\\
+  Jan has that what he cooked has eaten\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headed-base}
+ \bg. Jan hat das aufgegessen, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+  Jan has that eaten what he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headed-only-clause}
+ \cg. *Jan hat aufgegessen, das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+  Jan has eaten that what he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause} \flushfill{Modern German}
+
+ The same can be observed in relative clauses without a head. \ref{ex:extra-headless} is the same sentence as in \ref{ex:extra-headed} only without the overt head. The relative clause is marked in bold again.
+ In \ref{ex:extra-headless-base}, the relative clause appears in base position. In \ref{ex:extra-headless-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headless-no-rel}, the relative clause is extraposed without the relative pronouns. This is ungrammatical, because the relative pronoun is part of the CP.
+ This shows that the relative pronoun in headless relatives in Modern German are necessarily part of a CP, which is here a relative clause.
+
+ \ex.\label{ex:extra-headless}
+ \ag. Jan hat \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat} aufgegessen.\\
+ Jan has what he cooked has eaten\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headless-base}
+ \bg. Jan hat aufgegessen \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+ Jan has eaten what he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headless-clause}
+ \bg. *Jan hat \tbf{was} aufgegessen \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+ Jan has what eaten he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
+
+ In conclusion, extraposition facts show that the relative pronoun in Modern German is syntactically part of the relative clause. Therefore, the relative pronoun is the internal element in headless relative construction.
+
+
+ \subsection{The other element = external}\label{sec:external-element}
+
+ In the previous section I introduced the relative pronoun as the internal element. This means that the other element is the external element. This section starts with the observation that there actually are languages in which two elements surface in so-called double-headed relative clauses. In these languages, the external head is a subset of the internal head, and that some features like \tsc{d} and case are necessarily excluded in the external head. I adopt this insight, and I apply it to the headless relative situation. I propose that the external head in headless relatives is a copy of a specific part of the relative pronoun.%cinque: headless relatives, what is the subset?
+
+ As I said earlier, I need two elements to do case competition with. In headless relatives, I only see a single one surfacing. However, some languages actually show two elements surfacing. Here there are two copies of the element, one inside the relative clause, one outside of the relative clause.
+
+ \exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
+  sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
+  `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}
+
+ The external element is not always an exact copy of the element inside of the relative clause. An example from Kombai shows that the element outside of the relative clause can also be a subset of what the element inside of the relative clause is. Here I give two examples, there is an \tit{old man} and a \tit{person}, and there is \tit{pig} and a \tit{thing}.
+
+ \ex.
+ \ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
+  {old man} join.\ac{ss} work do.\ac{dur}.3\ac{sg}.\ac{nf}-\ac{tr}-\ac{conn} person my-uncle-\ac{pred}\\
+  `The old man, who is joining the work, is my uncle.' 77
+ \bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
+  pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\ac{pred}\\
+  `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt{vries1993}{77}}
+
+ Let me now apply what we have seen so far to headless relatives. Headless relatives do not have an overt NP, so this cannot be copied. However, there is the relative pronoun which is specified for number, gender, case, etc. Are all of these features copied onto the external element? The copy is the portion of the nominal extended projection c-commanded by the relative clause. A headless relative is a restrictive relative clause. Therefore, there is no \tsc{d} and no case.
+
+ Is it possible to add features onto the external head after it has been copied? Yes, for example D, as the example shows, but also case.
+
+ \exg. Junya-wa [Ayaka-ga \tbf{ringo}-o mui-ta] sono \tbf{ringo}-o tabe-ta.\\
+ Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} eat-\ac{pst}\\
+ ‘Junya ate the apples that Ayaka peeled.’ \flushfill{Japanese, \pgcitealt{erlewine2016}{2}}
+
+ In sum, the external element is a copy of a subset of the features of the relative pronoun. Definiteness and case are not copied. New features can be merged onto the external element.
+
+
+
+
+\subsection{Relative pronoun}
 
 \begin{table}[H]
  \center
@@ -778,7 +781,7 @@ nominative relative pronoun
 \end{forest}
 
 
-\subsubsection{External element}
+\subsection{External element}
 
 I copy the \tsc{ind} and I only merge the cases.
 
@@ -847,7 +850,7 @@ fit to=tree]{};
 ]
 \end{forest}
 
-\subsubsection{Comparison}
+\subsection{Comparison}
 
 \exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
  we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
@@ -1003,7 +1006,7 @@ the external case is more complex than the internal case, but the external base 
 
 
 
-\subsection{Deriving `matching'}
+\section{Deriving `matching'}
 
 Radek: Czech distinguishes between accidental uniqueness and inherent uniqueness. Accidental uniqueness: with \tsc{dem}, inherent uniqueness: without \tsc{dem}.
 
