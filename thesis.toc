@@ -34,46 +34,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Deriving `non-matching'}{21}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Relative pronoun}{21}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Relative pronoun}{22}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}External element}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}External element}{25}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2.1}Comparison}{24}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Comparison}{25}{subsubsection.2.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Deriving `non-matching --- only internal'}{26}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Deriving `non-matching --- only internal'}{27}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}The relative pronoun = internal}{27}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}The relative pronoun = internal}{28}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}The other element = external}{29}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}The other element = external}{30}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Relative pronoun}{30}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Relative pronoun}{31}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}External element}{31}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}External element}{32}{subsection.2.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.5}Comparison}{33}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.5}Comparison}{34}{subsection.2.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Deriving `matching'}{35}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Deriving `matching'}{36}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Excluding `non-matching --- external-only'}{36}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Excluding `non-matching --- external-only'}{37}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Alternative analyses}{36}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Summary}{37}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Himmelreich}{36}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.7}Alternative analyses}{38}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Grosu}{36}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.7.1}Himmelreich}{38}{subsection.2.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Grafting story}{36}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.7.2}Grosu}{38}{subsection.2.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Summary}{38}{section.2.6}%
+\contentsline {subsection}{\numberline {2.7.3}Grafting story}{38}{subsection.2.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Discussion}{39}{chapter.3}%
+\contentsline {section}{\numberline {2.8}Summary}{40}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Optionality}{39}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {3}Discussion}{41}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Diachronic part}{40}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Optionality}{41}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{40}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Diachronic part}{42}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{43}{table.3.1}%
+\contentsline {section}{\numberline {3.3}Why \textsc {fem} does not have \textsc {wh}-pronouns}{42}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{45}{section*.10}%
+\contentsline {chapter}{Primary texts}{45}{table.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{47}{section*.10}%
