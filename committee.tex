@@ -42,26 +42,29 @@ The goal of this chapter is to give the theoretical counterparts of these descri
 This chapter is structured as follows.
 
 
-\section{The basic idea}
+\section{The basic idea}\label{sec:basic-idea}
 
-The goal of this chapter is to explain why languages differ in whether they allow the internal case and the external case to surface when either of them wins the case competition. In other words, the chapter gives the theoretical counterparts of the descriptive parameters given in Figure \ref{fig:two-parameters}. Before I can describe these theoretical counterparts, I need to introduce some concepts: the internal element, the external element and the base of these elements.
+The goal of this chapter is to give a theoretical account for the crosslinguistic variation found in headless relatives. It should derive how languages differ in whether they allow the internal case and the external case to surface when either of them wins the case competition. In other words, the chapter gives the theoretical counterparts of the descriptive parameters given in Figure \ref{fig:two-parameters}. This section gives the basic idea behind my proposal. Throughout the rest of the chapter I illustrate and motivate my proposal. Before I can describe these theoretical counterparts, I need to introduce some concepts: the internal element and external element and the base of these elements.
 
 I start with the internal and external element. In the thesis so far, I stated that the relative pronoun appears in the case that wins the case competition. I have not been explicit about where the case competition takes place. In order to avoid introducing theoretical machinery just for case competition situations, I assume it takes place in syntax. I propose that at some point in the derivation headless relatives have an internal and an external element.\footnote{
 I am far from the only one that assumes this. Himmelreich, Hanink, but also Bresnan/Grimshaw, Groos/Riemsdijk, Harbert..
-} The internal element bears the internal case, and the external element bears the external case. At the end of the derivation, the element bearing the more complex case surfaces as the relative pronoun, if it is allowed to.
+} The internal element bears the internal case, and the external element bears the external case. At the end of the derivation, the element bearing the more complex case surfaces as the relative pronoun, at least if there is a grammatical option.
 
 Now I turn to the so-called base of the internal and external element. The internal and the external element do not only consist of case features. They also contain other features. These other features have to do with referentiality, number, gender, uniqueness and definiteness. I call the part of the internal and external element that corresponds to these features the base part. I refer to the part that corresponds to the case features as the case part.
 
-Table \ref{tbl:component-elements} summarizes what I just laid out. At some point in the derivation, headless relatives contain an internal and an external element. The internal element consists of an internal base part and an internal case part. The external element also consists of an external base part and an external case part. The internal and the external base are the main focus of this chapter.
+Table \ref{tbl:component-elements} summarizes what I just laid out. At some point in the derivation, headless relatives contain an internal and an external element. The internal element consists of an internal base part and an internal case part. The external element consists of an external base part and an external case part.
+There are three options for the relative pronoun. First, it can appear as the internal element, so as the internal base and case. Second, it can appear as the external element, so as the external base and case. Third, both the internal and the external might be ungrammatical.
 
 \begin{table}[H]
   \center
   \caption{Components of the internal and external element}
-\begin{tabular}{cccc}
+\begin{tabular}{cccccc}
   \toprule
-\multicolumn{2}{c}{\tsc{int} element}  & \multicolumn{2}{c}{\tsc{ext} element} \\
-\cmidrule(lr){1-2}                        \cmidrule(lr){3-4}
-base\scsub{int} & case\scsub{int}       & base\scsub{ext} & case\scsub{ext}     \\
+\multicolumn{2}{c}{\tsc{int} element} & \multicolumn{2}{c}{\tsc{ext} element} & \multicolumn{2}{c}{\tsc{rel} pronoun} \\
+\cmidrule(lr){1-2}                      \cmidrule(lr){3-4}                    \cmidrule(lr){5-6}
+base\scsub{int} & case\scsub{int}     & base\scsub{ext} & case\scsub{ext}     & base\scsub{int} & case\scsub{int}     \\
+                &                     &                 &                     & base\scsub{ext} & case\scsub{ext}     \\
+                &                     &                 &                     & \multicolumn{2}{c}{*}                 \\
 \bottomrule
 \end{tabular}
 \label{tbl:component-elements}
@@ -73,10 +76,11 @@ To make this concrete, consider the example in \ref{ex:ohg-nom-nom-rep}, repeate
  come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
  `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep}
 
-The relative pronoun in this sentence is \tit{dher} `\ac{rel}.\ac{sg}.\ac{m}.\ac{nom}'. In my proposal, the internal element for this sentence is \tit{dher} and the external element is \tit{dher} too. The base part of \tit{dher} is the morpheme \tit{dhe}, and the case part of \tit{dher} is the morpheme \tit{r}. This is schematically shown in Table \ref{tbl:component-dhen}.
-In Section \ref{sec:deriving-non-matching} I motivate the featural content and phonological form of the internal and external element.\footnote{
+The situation is schematically shown in Table \ref{tbl:component-dhen}.
+In my proposal, the internal element for this sentence is \tit{dher} and the external element is \tit{dher} too. In Section \ref{sec:deriving-non-matching} I motivate the featural content and phonological form of the internal and external element.\footnote{
 This is a simplification of the reality. The morpheme \tit{r} realizes besides case features also non-case features, such as gender and number. This simplification can be made, because the non-case features that are present in the internal element are also present in the external element.
-}
+\label{fn:base}}
+The base part of \tit{dher} is the morpheme \tit{dhe}, and the case part of \tit{dher} is the morpheme \tit{r}. The relative pronoun in this sentence is \tit{dher}. It is impossible to see whether this is the internal or the external element, because they are identical.
 
 \begin{table}[H]
   \center
@@ -93,14 +97,16 @@ dhe & r                                 & dhe & r                               
 \label{tbl:component-dhen}
 \end{table}
 
-Now I have introduced the concepts internal and external element and their bases, I turn to the basic idea behind my proposal. The goal is to give a theoretical explanation for why a language allows the internal or external case to surface when it wins the case competition or why it does not. I propose that this follows from the comparison between the internal and external base within a language.
+Now I have introduced the concepts internal and external element and their bases, I turn to the basic idea behind my proposal. The goal is to give a theoretical account that derives whether a language allows the internal or external case to surface when it wins the case competition or whether it does not. I propose that this follows from the comparison between the internal and external base within a language.
 In the comparison, I rely on containment, just as I did in Chapter \ref{ch:decomposition} when comparing cases. I went with the following reasoning. A more complex case wins over a less complex case because the former contains all features that the latter contains. Concretely, the dative wins over the accusative because the dative contains all features that the accusative contains, the dative wins over the nominative because the dative contains all features that the nominative contains, and the accusative wins over the nominative because the accusative contains all features that the nominative contains.
 I apply the same reasoning in comparing the internal and external base. When the internal base contains the features that the external base contains, the internal element is allowed to surface. When the external base contains the features that the internal base contains, the external element is allowed to surface.
 
 I illustrate this proposal by showing how this plays out in three different languages.
-In Old High German, the internal base contains the external base, and the external base contains the internal base. Therefore, Old High German allows for matching cases, it allows the internal to win, and it allows the external to win.
-In Modern German, the internal base contains the external base, but the external base does not contain the internal base. Therefore, Modern German allows for matching cases, and it allows the internal to win.
-In Polish, the internal base does not contain the external base, and the external base does not contain the internal base. Therefore, Polish only allows for matching cases.
+In Old High German, the internal base contains the external base, and the external base contains the internal base. Therefore, Old High German allows for matching cases, it allows the internal case to win, and it allows the external case to win.
+In Modern German, the internal base contains the external base, but the external base does not contain the internal base. Therefore, Modern German allows for matching cases, and it allows the internal case to win.
+In Polish, the internal base does not contain the external base, and the external base does not contain the internal base. Still, Polish only allows for matching cases.\footnote{
+Later I explain how this is possible.
+}
 
 \begin{table}[H]
   \center
@@ -116,13 +122,18 @@ Polish          & ✔                     & *                     & *           
 \end{tabular}
 \end{table}
 
+In what follows I discuss these three situations in all three languages.
+In the first situation (\tsc{int} = \tsc{ext}), the internal and external case match.
+In the second situation (\tsc{int} > \tsc{ext}), the internal case is more complex than the external case.
+In the third situation (\tsc{int} < \tsc{ext}), the internal case is more complex than the external case.
 
+Table \ref{tbl:basic-ohg} shows the three situation for Old High German. In Old High German, the internal base consists of features that correspond to the morpheme \tit{dhe}, and so does the external base. The nominative case consists of features that correspond to the morpheme \tit{r}, and the accusative case consists of features that correspond to the morpheme \tit{n}. I motivate this in Section \ref{sec:deriving-only-internal}.
 
+The first row shows the situation in which the internal nominative case matches the external nominative case (\tsc{int} = \tsc{ext}). The internal case part, which corresponds to the nominative \tit{r} morpheme, contains the external case part, which corresponds to the nominative \tit{r} morpheme. The internal base part, which corresponds to the morpheme \tit{dhe}, contains the external base part, which corresponds to the morpheme \tit{dhe} too. The relative pronoun that surfaces is the internal element with its internal base and its internal case: \tit{dher}.
 
+The second row shows the situation in which internal accusative case is more complex than the external nominative case (\tsc{int} > \tsc{ext}). The internal case part, which corresponds to the accusative \tit{n} morpheme, contains the external case part, which corresponds to the nominative \tit{r} morpheme. The internal base part, which corresponds to the morpheme \tit{dhe}, contains the external base part, which corresponds to the morpheme \tit{dhe} too. The relative pronoun that surfaces is the internal element with its internal base and its internal case: \tit{dher}.
 
-Consider Old High German. First there is a tie, \tsc{int} = \tsc{ext}, and everything is grammatical.
-If \tsc{int} > \tsc{ext}, we have a competition and a winner: internal \tsc{acc}. The bases are compared. (How to get from forms to features?) They are identical, so the internal base contains all features the external base contains.
-If \tsc{int} > \tsc{ext}, we have a competition and a winner: external \tsc{acc}. The bases are compared. They are identical, so the external base contains all features the internal base contains.
+The third row shows the situation in which external accusative case is more complex than the internal nominative case (\tsc{int} < \tsc{ext}). The external case part, which corresponds to the accusative \tit{n} morpheme, contains the internal case part, which corresponds to the nominative \tit{r} morpheme. The external base part, which corresponds to the morpheme \tit{dhe}, contains the internal base part, which corresponds to the morpheme \tit{dhe} too. The relative pronoun that surfaces is the external element with its external base and its external case: \tit{dhen}.
 
 \begin{table}[H]
   \center
@@ -138,14 +149,19 @@ If \tsc{int} > \tsc{ext}, we have a competition and a winner: external \tsc{acc}
 \tsc{int} < \tsc{ext} & dhe & r                                 & dhe & n                               & dhe & n                           \\
 \bottomrule
 \end{tabular}
-\label{tbl:component-dhen}
+\label{tbl:basic-ohg}
 \end{table}
 
-The first row shows the situation in which internal case matches the internal case (\tsc{int} = \tsc{ext}). The relative pronoun surfaces in the 
+Table \ref{tbl:basic-mg} shows the three situation for Modern German. In Modern German, the internal base consists of features that correspond to the morpheme \tit{we}. The external base does not consist of any features, so there is no morpheme that corresponds to it.\footnote{
+Actually, not entirely, see \ref{fn:base}.
+} The nominative case consists of features that correspond to the morpheme \tit{r}, and the accusative case consists of features that correspond to the morpheme \tit{n}.
+I motivate this in Section \ref{sec:deriving-only-internal}.
 
-The second row shows the situation in which internal case is more complex than the external case (\tsc{int} > \tsc{ext}). The internal case part, which corresponds to the accusative \tit{n} morpheme, contains the external case part, which corresponds to the nominative \tit{r} morpheme. The internal base part, the features that corresponds to the morpheme \tit{we}, contains the external base part, because there are no external base features. The element that surfaces is the internal element with the internal base and the internal case.
+The first row shows the situation in which the internal nominative case matches the external nominative case (\tsc{int} = \tsc{ext}). The internal case part, which corresponds to the nominative \tit{r} morpheme, contains the external case part, which corresponds to the nominative \tit{r} morpheme. The internal base part, which corresponds to the morpheme \tit{we}, contains the external base part, because there is no morpheme. The relative pronoun that surfaces is the internal element with its internal base and its internal case: \tit{wer}.
 
-The third row shows the situation in which external case is more complex than the internal case (\tsc{int} < \tsc{ext}). The external case part, which corresponds to the accusative \tit{n} morpheme, contains the internal case part, which corresponds to the nominative \tit{r} morpheme. The external base part, which does not contain any features, does not contain the internal case part, the features that corresponds to the morpheme \tit{we}. The winner of the case competition is the external case, but the external base does not contain the internal base, so there is no grammatical relative pronoun.
+The second row shows the situation in which internal accusative case is more complex than the external nominative case (\tsc{int} > \tsc{ext}). The internal case part, which corresponds to the accusative \tit{n} morpheme, contains the external case part, which corresponds to the nominative \tit{r} morpheme. The internal base part, which corresponds to the morpheme \tit{we}, contains the external base part, because there is no morpheme. The relative pronoun that surfaces is the internal element with its internal base and its internal case: \tit{wer}.
+
+The third row shows the situation in which external accusative case is more complex than the internal nominative case (\tsc{int} < \tsc{ext}). The external case part, which corresponds to the accusative \tit{n} morpheme, contains the internal case part, which corresponds to the nominative \tit{r} morpheme. The external base part, which is empty, does not contain the internal base part, which corresponds to the morpheme \tit{we}. The winner of the case competition is the external case, but the external base does not contain the internal base, so there is no grammatical relative pronoun.
 
 \begin{table}[H]
   \center
@@ -161,10 +177,20 @@ The third row shows the situation in which external case is more complex than th
 \tsc{int} < \tsc{ext} & we & r                                  &  & n                                  & \multicolumn{2}{c}{\tsc{*}}      \\
 \bottomrule
 \end{tabular}
-\label{tbl:component-dhen}
+\label{tbl:basic-mg}
 \end{table}
 
+Table \ref{tbl:basic-polish} shows the three situation for Polish. In Polish, the internal base consists of features that correspond to the morpheme \tit{ko}. The external base consists of features that correspond to the morpheme \tit{te}.
+The accusative case consists of features that correspond to the morpheme \tit{go}, and the dative case consists of features that correspond to the morpheme \tit{mu}.
+I motivate this in Section \ref{sec:deriving-matching}.
 
+The first row shows the situation in which the internal nominative case matches the external nominative case (\tsc{int} = \tsc{ext}). The internal case part, which corresponds to the accusative \tit{go} morpheme, contains the external case part, which corresponds to the accusative \tit{go} morpheme. The internal base part, which corresponds to the morpheme \tit{ko}, does not contain the internal base part, which corresponds to the morpheme \tit{te}. Still, the relative pronoun that surfaces is the internal element with its internal base and its internal case: \tit{kogo}.\footnote{
+This is unexpected, and I talk about that later.
+}
+
+The second row shows the situation in which internal dative case is more complex than the external accusative case (\tsc{int} > \tsc{ext}). The internal case part, which corresponds to the dative \tit{mu} morpheme, contains the external case part, which corresponds to the accusative \tit{go} morpheme. The internal base part, which corresponds to the morpheme \tit{ko}, does not contain the internal base part, which corresponds to the morpheme \tit{te}. The winner of the case competition is the internal case, but the internal base does not contain the external base, so there is no grammatical relative pronoun.
+
+The third row shows the situation in which external dative case is more complex than the internal accusative case (\tsc{int} > \tsc{ext}). The external case part, which corresponds to the dative \tit{mu} morpheme, contains the internal case part, which corresponds to the accusative \tit{go} morpheme. The external base part, which corresponds to the morpheme \tit{te}, does not contain the internal base part, which corresponds to the morpheme \tit{ko}. The winner of the case competition is the external case, but the external base does not contain the internal base, so there is no grammatical relative pronoun.
 
 \begin{table}[H]
   \center
@@ -180,7 +206,7 @@ The third row shows the situation in which external case is more complex than th
 \tsc{int} < \tsc{ext} & ko & go                                  & te & mu                              & \multicolumn{2}{c}{\tsc{*}}       \\
 \bottomrule
 \end{tabular}
-\label{tbl:component-dhen}
+\label{tbl:basic-polish}
 \end{table}
 
 Taking this all together, there are two competitions taking place in headless relatives: case competition and base competition. Case competition determines which case wins and base competition determines whether this case is allowed to surface.
@@ -192,76 +218,98 @@ Notice that there is a crucial difference between comparing the cases and compar
 
 
 
-\section{Deriving `non-matching'}\label{deriving non-matching}
+\section{Deriving the non-matching type}\label{sec:deriving-nonmatching}
 
-I am not going to give a whole sentence. I only talk about the internal and external element in there. I also do not talk about the nature of the deletion process.
+The non-matching type of language allows for matching cases, it allows the internal case to win, and it allows the external case to win. I have been describing Old High German as an example of the non-matching type. In this section, I describe what it is about Old High German that causes the language to be of this type.
 
-Old High German allows both internal and external to win. I propose headless relatives are derived from light-headed relatives. Internal element is relative pronoun, external element is demonstrative.
+I propose that the crucial factor is that Old High German has a syncretic internal and external base. Since they are syncretic, the features in the internal base contain the features in the external base, and the features in the external base contain just as well the features in the internal base. The internal base containing the external base causes that the internal case is allowed to surface when it wins the case competition. The external base containing the internal base causes the external case is allowed to surface when it wins the case competition.
+
+This section is structured as follows. First, I argue that Old High German headless relatives are derived from relative clauses headed by a demonstrative, i.e. light-headed relatives. In this analysis, the internal element is the relative pronoun, and the external element is the demonstrative. Then I show the syntactic structure within the internal and external element. This allows me to show that the internal and external element consist of two parts: the base part and the case part.
+
+I go through all examples in Table \ref{tbl:forms-ohg}.
+
+\begin{table}[H]
+  \center
+  \caption{Base comparison in Old High German}
+\begin{tabular}{ccccccc}
+  \toprule
+                      & \multicolumn{2}{c}{\tsc{int} element}  & \multicolumn{2}{c}{\tsc{ext} element}  & \multicolumn{2}{c}{\tsc{rel} pronoun} \\
+                        \cmidrule(lr){2-3}                        \cmidrule(lr){4-5}                      \cmidrule(lr){6-7}
+                      & base\scsub{int} & case\scsub{int}       & base\scsub{ext} & case\scsub{ext}     & base\scsub{rel} & case\scsub{rel} \\
+                        \cmidrule(lr){2-2}    \cmidrule(lr){3-3}  \cmidrule(lr){4-4} \cmidrule(lr){5-5}   \cmidrule(lr){6-6} \cmidrule(lr){7-7}
+\tsc{int} = \tsc{ext} & dhe & r                                 & dhe & r                               & dhe & r                           \\
+\tsc{int} > \tsc{ext} & dhe & n                                 & dhe & r                               & dhe & n                           \\
+\tsc{int} < \tsc{ext} & dhe & r                                 & dhe & n                               & dhe & n                           \\
+\bottomrule
+\end{tabular}
+\label{tbl:forms-ohg}
+\end{table}
+
+I propose headless relatives are derived from light-headed relatives. Internal element is relative pronoun, external element is demonstrative. Fuß: d-pronouns introduce individuating headless relatives.
 
 \exg. eno nist thiz thér then ir suochet zi arslahanne?\\
  now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
- \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
+ \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
  `Isn't this now the one, who you seek to kill?'
 
 
 
 
-\ex.
-\ag. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
-\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
-`this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-intro-rep}
-\bg. ih bibringu fona iacobes samin endi fona iuda dhen \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
-1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat}
+
+
+
+\exg. quham dher chisendit scolda uuerdhan\\
+ come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
+ `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep2}
+
+
+
+\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
+ \ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+ `this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-rep}
+
+\exg. ih bibringu fona iacobes samin endi fona iuda dhen \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
+ 1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat}
 \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-intro-rep}
+ `I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-rep}
 
-\subsection{Relative pronoun}
-
-I give an overview of Old High German relative pronouns. I only give the neuter and masculine gender, because I do not have any examples with the feminine. Relative pronouns consist of three morphemes: a \tit{d}, a vowel (\tit{a}, \tit{e} or \tit{i}) and suffix that differs per number, gender and case.\footnote{
-\tit{d} can also be \tit{dh} and \tit{th}, \tit{ë} and \tit{ē} can also be \tit{e} and \tit{é}.
+I show the internal structure of the internal and external element, so the relative pronoun and the demonstrative pronoun. The two forms under discussion in this section are the masculine singular nominative and masculine singular accusative. The pronouns consist of two morphemes: \tit{de} and suffix that differs per number, gender and case.\footnote{
+\tit{d} can also be written as \tit{dh} and \tit{th}, \tit{ë} can also be \tit{e} and \tit{é}.
 }
 
+give whole paradigm here, show which morphemes these pronouns consist of. Highlight the two forms I talk about it, and say I simplify it.
 
 \begin{table}[H]\label{tbl:paradigmohg}
  \center
- \caption {Relative pronouns in headless relatives in Old High German \pgcitealt{braune2018}{339}}
-  \begin{tabular}{ccc}
+ \caption {Relative pronouns in headless relatives in Old High German}
+  \begin{tabular}{cccc}
   \toprule
-              & \ac{n}.\ac{sg}  & \ac{m}.\ac{sg} \\
-        \cmidrule{2-3}
-    \ac{nom}  & d-a-ȥ           & d-ë-r          \\
-    \ac{acc}  & d-a-ȥ           & d-ë-n          \\
-    \ac{dat}  & d-ë-mo          & d-ë-mo         \\
+       & \ac{n}.\ac{sg} & \ac{m}.\ac{sg}  & \ac{f}.\ac{sg} \\
+        \cmidrule{2-4}
+  \ac{nom} & d-aȥ             & d-ër               & d-iu      \\
+  \ac{acc} & d-aȥ             & d-ën               & d-ea/-ia/(-ie) \\
+  \ac{dat} & d-ëmu/-ëmo       & d-ëmu/-ëmo         & d-ëru/-ëro   \\
+  \bottomrule
+         & \ac{n}.\ac{pl} & \ac{m}.\ac{pl}   & \ac{f}.\ac{pl} \\
+          \cmidrule{2-4}
+    \ac{nom}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
+    \ac{acc}  & d-iu/-ei      &  d-ē/-ea/-ia/-ie & d-eo/-io        \\
+    \ac{dat}  & d-ēm/-ēn      &  d-ēm/-ēn        & d-ēm/-ēn        \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-
-
-
-The \tit{d} morpheme corresponds to \tsc{def}.
+The \tit{d} morpheme corresponds to \tsc{def}. The vowel corresponds to anaphoricity. Do they also not appear in adjectives? Is there any anaphoricity?
 
 The ending corresponds to number, gender and case: \tsc{ref}, \tsc{class}, \tsc{masc}, \tsc{ind}, \tsc{group} and \tsc{f1}, \tsc{f2}, \tsc{f3}. Illustrate this with nouns and adjectives.
 
-The vowel corresponds to anaphoricity.
-Do they also not appear in adjectives? Is there any anaphoricity?
-
 Now I can specify the lexical entries.
+\tsc{masc} thing + cases separately in the lexical entry
+then the \tit{de} morpheme, that corresponds to anaphoricity and uniqueness.
 
-The case etc. morpheme has a binary bottom, because it does not always surface as a suffix (at least in Modern German).
 
-\exg. Ich habe 's Fahrrad vergessen.\\
- I have the\scsub{weak} bike forgotten\\
- `I forgot the bike.'
-
-give nominative singular masculine r
-give nominative singular masculine n
-
-give anaphoricity e
-
-give definiteness D How does this relate to being a relative pronoun?
-
-I illustrate how this relative pronoun is built, using the spellout algorithm.
+How can cases and number/gender be packaged together, to the exclusion of D? D is actually merged below K. Let me illustrate this.
+How it came to exist was merging the features one by one. According to the spellout algorithm.
 
 \ex. \tbf{Spellout Algorithm:}\\
 Merge F and \label{ex:spellout}
@@ -273,6 +321,15 @@ When a new match is found, it overrides previous spellouts.
 
 \ex. \tbf{Cyclic Override} \citep{starke2018}:\\
 Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+
+
+How does this relate to being a relative pronoun?
+
+
+
+
+
 
 build build, until we reach anaphoricity
 
@@ -351,6 +408,9 @@ give relative pronoun here
 
 
 \subsection{External element}
+
+
+I am not going to give a whole sentence. I only talk about the internal and external element in there. I also do not talk about the nature of the deletion process.
 
 I copy the \tsc{ind}P, and then I merge the external \tsc{ana}, \tsc{d} and cases.
 
@@ -587,7 +647,7 @@ There are three independent containment relations. Problem?
 
 
 
-\section{Deriving `non-matching --- only internal'}
+\section{Deriving only internal}\label{sec:deriving-only-internal}
 
 Only internal wins, external cannot. I illustrate this with nominative and accusative.
 
@@ -996,7 +1056,7 @@ the external case is more complex than the internal case, but the external base 
 
 
 
-\section{Deriving `matching'}
+\section{Deriving matching}\label{sec:deriving-matching}
 
 Radek: Czech distinguishes between accidental uniqueness and inherent uniqueness. Accidental uniqueness: with \tsc{dem}, inherent uniqueness: without \tsc{dem}.
 
@@ -1032,7 +1092,7 @@ German & \tsc{dem}\scsub{strong}  & \cellcolor{LG}\tsc{dem}\scsub{weak} & \cellc
 \tit{to} is incompatible with \tit{ever}, because \tit{to} makes it accidentally uniqueness and \tit{ever} requires inherent uniqueness
 
 
-\section{Excluding `non-matching --- external-only'}
+\section{Excluding external-only}
 
 
 
@@ -1164,7 +1224,3 @@ Now the relative clause is built first again, this time only including the nomin
 So, this seems to work fine. The assumptions you have to do in order to make this are the following. First, case is complex. Second, you can remerge an embedded node (grafting). For the first one I have argued in Chapter \ref{ch:decomposition}. The second one could use some additional argumentation. It is a mix between internal remerge (move) and external merge, namely external remerge. Other literature on multidominance and grafting, other phenomena. Problems: linearization, .. But even if fix all these theoretical problems, there is an empirical one.
 
 That is, I want to connect this behavior of Modern German headless relatives to the shape of its relative pronouns. These pronouns are \tsc{wh}-elements. The OHG and Gothic ones are not \tsc{wh}, they are \tsc{d}. Their relative pronouns look different, and so their headless relatives can also behave differently.
-
-\section{Summary}
-
-here
