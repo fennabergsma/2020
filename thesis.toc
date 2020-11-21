@@ -4,11 +4,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Contents}{ii}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{v}{section*.3}%
+\contentsline {chapter}{List of tables}{iv}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{viii}{section*.4}%
+\contentsline {chapter}{List of figures}{v}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{x}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{viii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -26,86 +26,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}The case}{11}{part.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {2}A recurring pattern}{15}{chapter.2}%
+\contentsline {part}{\partnumberline {II}The base}{13}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}In headless relatives}{15}{section.2.1}%
+\contentsline {section}{\numberline {1.4}Old High German}{15}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}In syntax}{25}{section.2.2}%
+\contentsline {section}{\numberline {1.5}Polish}{20}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Agreement}{26}{subsection.2.2.1}%
+\contentsline {chapter}{\chapternumberline {2}Base comparison}{23}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Relativization}{34}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.1}The basic idea}{24}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{43}{section.2.3}%
+\contentsline {section}{\numberline {2.2}Deriving the non-matching type}{32}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism}{44}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.3}Deriving the internal-only type}{41}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{45}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Deriving the matching type}{50}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{46}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Excluding the external-only type}{51}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{49}{chapter.3}%
+\contentsline {section}{\numberline {2.6}Summary}{51}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The basic idea}{50}{section.3.1}%
+\contentsline {section}{\numberline {2.7}Aside: a larger syntactic context}{52}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{51}{section.3.2}%
+\contentsline {section}{\numberline {2.8}Aside: D between ϕ and K}{57}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{72}{section.3.3}%
+\contentsline {chapter}{\chapternumberline {3}Discussion}{61}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{77}{section.3.4}%
+\contentsline {section}{\numberline {3.1}Diachronic part}{61}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Summary}{80}{section.3.5}%
+\contentsline {section}{\numberline {3.2}Suppletive nominatives in Gothic}{62}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The base}{81}{part.2}%
+\contentsline {section}{\numberline {3.3}Towards deriving the always-external pattern}{62}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}A typology}{83}{chapter.4}%
+\contentsline {section}{\numberline {3.4}More languages}{62}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Four possible patterns}{84}{section.4.1}%
+\contentsline {chapter}{Primary texts}{63}{table.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Internal and external case allowed}{89}{section.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Only internal case allowed}{99}{section.4.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Only external case allowed}{109}{section.4.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Only matching allowed}{113}{section.4.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Summary}{117}{section.4.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Aside: languages without case competition}{121}{section.4.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}Always external case}{122}{subsection.4.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}A typology of headless relatives}{131}{subsection.4.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}Base comparison}{137}{chapter.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}The basic idea}{138}{section.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Deriving the non-matching type}{146}{section.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Deriving the internal-only type}{155}{section.5.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Deriving the matching type}{164}{section.5.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Excluding the external-only type}{165}{section.5.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Summary}{165}{section.5.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Aside: a larger syntactic context}{166}{section.5.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Aside: D between ϕ and K}{171}{section.5.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Discussion}{175}{chapter.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Diachronic part}{175}{section.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Suppletive nominatives in Gothic}{176}{section.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Towards deriving the always-external pattern}{176}{section.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}More languages}{176}{section.6.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{177}{table.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{179}{section*.10}%
+\contentsline {chapter}{Bibliography}{65}{section*.10}%
