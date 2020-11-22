@@ -2,477 +2,14 @@
 
 % all subconstituents need to contain other constituents
 
-\section{option 1}
-
-fseq: \tsc{ref} --- (\tsc{wh}) --- (\tsc{ana}) --- \tsc{class} --- \tsc{masc} --- \tsc{ind} --- (\tsc{d}) --- \tsc{f1} --- \tsc{f2} --- \tsc{f3}
-
-\begin{itemize}
-  \item I need to have the \tsc{wh} right after the \tsc{ref}, because otherwise I don't know how to get \tit{k} to overwrite \tit{t}. This means that \tsc{d} and \tsc{wh} are at quite different places. I don't have any idea about how acceptable my fseq is like this.
-  \item I need a feature for the difference between \tsc{dem} and \tsc{wh}s in Polish: \tsc{ana}. I did not want to put it right below \tsc{k}, because then I don't have space anymore to let the \tit{mu} backtrack into the vowel. However, it needs to be there if I want to let the \tit{o} contain the \tit{e}. I don't see how I can have them both. Now I put it under \tsc{class}, which already causes \tit{o} not to contain \tit{e}. That means that I also exclude the situations in which there are matching cases. Another reason for not letting \tit{mu} backtrack into the vowel is that it is syncretic between neuter and masculine, which can be captured by letting \tsc{masc} be the highest features (that's how I have it for \tsc{dat}) below now.
-  \item I don't see of a way of make the Polish non-matching ones ungrammatical but making the matching ones grammatical. I can exclude them all, and find a different reason for why the matching ones are ok.
-  \item For Modern German, I now let \tsc{wh} form a complex spec. When \tsc{ana} is merged, backtracking opens the two structures up, and \tsc{ana} merges with \tsc{wh}. It's not necessary important here, but I do not see how I could ever get \tsc{wa} for for instance \tit{was}. How do I let gender play a role here? I need them all in my structure on the right.
-  \item Old High German differs from the two other languages in that it has a more complex light head, and that it has \tsc{d} instead of \tsc{wh}. You could see \tsc{d} and \tsc{wh} as two instances of \tsc{rel}.
-\end{itemize}
-
-
-\begin{table}[H]
-\begin{tabular}{lll}
-                & light head
-                & relative pronoun                                                                    \\
-Polish          & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{wh}} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s  \\
-Modern German   & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{wh}} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s  \\
-Old High German & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{\tbf{d}} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{\tbf{d}} \tsc{f}s   \\
-\end{tabular}
-\end{table}
-
-\clearpage
-
-\ex. Polish: \tsc{ext} \tsc{dat}\\
-\begin{forest} boom
-  [\tsc{ref}P, s sep=30mm
-      [\tsc{ref}P, s sep=20mm
-          [\tsc{ref}P,
-          tikz={
-          \node[label=below:\tit{t},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ref}, roof]
-          ]
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-              ]
-          ]
-      ]
-      [\tsc{dat}P,
-      tikz={
-      \node[label=below:\tit{mu},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}4]
-          [\tsc{gen}P
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{ref}P, s sep=40mm
-      [\tsc{ref}P, s sep=20mm
-          [\tsc{ref}P,
-          tikz={
-          \node[label=below:\tit{t},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ref}, roof]
-          ]
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{go},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-
-\ex. Polish: \tsc{int} \tsc{dat}\\
-\begin{forest} boom
-  [\tsc{wh}P, s sep=40mm
-      [\tsc{wh}P, s sep=20mm
-          [\tsc{wh}P,
-          tikz={
-          \node[label=below:\tit{k},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{wh}]
-              [\tsc{ref}P,
-                  [\tsc{ref}, roof]
-              ]
-          ]
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ana}P
-                      [\tsc{ana}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{dat}P,
-      tikz={
-      \node[label=below:\tit{mu},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}4]
-          [\tsc{gen}P
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{wh}P, s sep=40mm
-      [\tsc{wh}P, s sep=20mm
-          [\tsc{wh}P,
-          tikz={
-          \node[label=below:\tit{k},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{wh}]
-              [\tsc{ref}P,
-                  [\tsc{ref}, roof]
-              ]
-          ]
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ana}P
-                          [\tsc{ana}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{go},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\ex. Modern German: \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{acc}P,
-  tikz={
-  \node[label=below:\tit{n},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{nom}P,
-  tikz={
-  \node[label=below:\tit{r},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}1]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{masc}P
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref}P,
-                      [\tsc{ref}, roof]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{we},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{ana}]
-          [\tsc{wh}]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{n},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
-                      [\tsc{class}P
-                          [\tsc{class}]
-                          [\tsc{ref}P,
-                              [\tsc{ref}, roof]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{int} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{we},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{ana}]
-          [\tsc{wh}]
-      ]
-      [\tsc{nom}P,
-      tikz={
-      \node[label=below:\tit{r},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-
-
-\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{n},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
-                          [\tsc{class}P
-                              [\tsc{class}]
-                              [\tsc{ref}P,
-                                  [\tsc{ref}, roof]
-                              ]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[label=below:\tit{r},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
-                      [\tsc{class}P
-                          [\tsc{class}]
-                          [\tsc{ref}P,
-                              [\tsc{ref}, roof]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
 \clearpage
 
 \section{option 2}
 
 fseq: \tsc{ref} --- (\tsc{ana}) --- \tsc{class} --- \tsc{masc} --- \tsc{ind} --- \tsc{x} --- (\tsc{wh}) --- (\tsc{d}) --- \tsc{f1} --- \tsc{f2} --- \tsc{f3}
 
-\begin{itemize}
-  \item I introduced an \tsc{x} that corresponds to Polish \tit{t}. That way, \tit{t} corresponds to features that form a complex spec, and I can merge it with features later (like \tsc{wh}/\tsc{d}). \tsc{ana} is still low, because it needs to change the vowel in Polish, but it can't be at the top, because the shrinking of \tit{e}/\tit{o} needs to take place there.
-\end{itemize}
+I introduced an \tsc{x} that corresponds to Polish \tit{t}. That way, \tit{t} corresponds to features that form a complex spec, and I can merge it with features later (like \tsc{wh}/\tsc{d}). \tsc{ana} is still low, because it needs to change the vowel in Polish, but it can't be at the top, because the shrinking of \tit{e}/\tit{o} needs to take place there. There is space for the intrumental to spel out less features than \tit{o}/\tit{e}, namely only \tsc{class}.
+
 
 \begin{table}[H]
 \begin{tabular}{lll}
@@ -489,9 +26,11 @@ Old High German & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \ts
 
 \begin{itemize}
   \item Polish: \tit{t} is whatever features \tsc{x} corresponds to, some kind of indefinite demonstrative. When \tsc{x} is merged, it forms a complex spec. Features merged after \tsc{x} get into the right tree via backtracking and \tsc{x} and the rest up. \tsc{ana} is merged low, so the right vowel is already chosen quite early. The switch between \tit{mu} and \tit{go} is an interesting one: it happens when some case features are already merged, and then backtracking takes place all the way back until before the complex spec was merged.
-  \item
-
+  \item The Germans: \tsc{ana} and \tsc{wh}/\tsc{d} are complex specs. A different vowel can arise when \tsc{ana} combines with different features instead of being merged on \tsc{ref}, but that's not something I'll discuss in the thesis.
 \end{itemize}
+
+\clearpage
+
 
 \ex. Polish: \tsc{ext} \tsc{dat}\\
 \begin{forest} boom
@@ -971,6 +510,471 @@ Old High German & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \ts
   ]
 \end{forest}
 
+
+\clearpage
+
+\section{option 1}
+
+fseq: \tsc{ref} --- (\tsc{wh}) --- (\tsc{ana}) --- \tsc{class} --- \tsc{masc} --- \tsc{ind} --- (\tsc{d}) --- \tsc{f1} --- \tsc{f2} --- \tsc{f3}
+
+\begin{itemize}
+  \item I need to have the \tsc{wh} right after the \tsc{ref}, because otherwise I don't know how to get \tit{k} to overwrite \tit{t}. This means that \tsc{d} and \tsc{wh} are at quite different places. I don't have any idea about how acceptable my fseq is like this.
+  \item I need a feature for the difference between \tsc{dem} and \tsc{wh}s in Polish: \tsc{ana}. I did not want to put it right below \tsc{k}, because then I don't have space anymore to let the \tit{mu} backtrack into the vowel. However, it needs to be there if I want to let the \tit{o} contain the \tit{e}. I don't see how I can have them both. Now I put it under \tsc{class}, which already causes \tit{o} not to contain \tit{e}. That means that I also exclude the situations in which there are matching cases. Another reason for not letting \tit{mu} backtrack into the vowel is that it is syncretic between neuter and masculine, which can be captured by letting \tsc{masc} be the highest features (that's how I have it for \tsc{dat}) below now.
+  \item I don't see of a way of make the Polish non-matching ones ungrammatical but making the matching ones grammatical. I can exclude them all, and find a different reason for why the matching ones are ok.
+  \item For Modern German, I now let \tsc{wh} form a complex spec. When \tsc{ana} is merged, backtracking opens the two structures up, and \tsc{ana} merges with \tsc{wh}. It's not necessary important here, but I do not see how I could ever get \tsc{wa} for for instance \tit{was}. How do I let gender play a role here? I need them all in my structure on the right.
+  \item Old High German differs from the two other languages in that it has a more complex light head, and that it has \tsc{d} instead of \tsc{wh}. You could see \tsc{d} and \tsc{wh} as two instances of \tsc{rel}.
+\end{itemize}
+
+
+\begin{table}[H]
+\begin{tabular}{lll}
+                & light head
+                & relative pronoun                                                                    \\
+Polish          & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s
+                & \tsc{ref} \tsc{\tbf{wh}} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s  \\
+Modern German   & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s
+                & \tsc{ref} \tsc{\tbf{wh}} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s  \\
+Old High German & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{\tbf{d}} \tsc{f}s
+                & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{\tbf{d}} \tsc{f}s   \\
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\ex. Polish: \tsc{ext} \tsc{dat}\\
+\begin{forest} boom
+  [\tsc{ref}P, s sep=30mm
+      [\tsc{ref}P, s sep=20mm
+          [\tsc{ref}P,
+          tikz={
+          \node[label=below:\tit{t},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{ref}, roof]
+          ]
+          [\tsc{masc}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+              ]
+          ]
+      ]
+      [\tsc{dat}P,
+      tikz={
+      \node[label=below:\tit{mu},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}4]
+          [\tsc{gen}P
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. Polish: \tsc{ext} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{ref}P, s sep=40mm
+      [\tsc{ref}P, s sep=20mm
+          [\tsc{ref}P,
+          tikz={
+          \node[label=below:\tit{t},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{ref}, roof]
+          ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{go},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+
+\ex. Polish: \tsc{int} \tsc{dat}\\
+\begin{forest} boom
+  [\tsc{wh}P, s sep=40mm
+      [\tsc{wh}P, s sep=20mm
+          [\tsc{wh}P,
+          tikz={
+          \node[label=below:\tit{k},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{wh}]
+              [\tsc{ref}P,
+                  [\tsc{ref}, roof]
+              ]
+          ]
+          [\tsc{masc}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+                  [\tsc{ana}P
+                      [\tsc{ana}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{dat}P,
+      tikz={
+      \node[label=below:\tit{mu},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}4]
+          [\tsc{gen}P
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. Polish: \tsc{int} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{wh}P, s sep=40mm
+      [\tsc{wh}P, s sep=20mm
+          [\tsc{wh}P,
+          tikz={
+          \node[label=below:\tit{k},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{wh}]
+              [\tsc{ref}P,
+                  [\tsc{ref}, roof]
+              ]
+          ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ana}P
+                          [\tsc{ana}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{go},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+\ex. Modern German: \tsc{ext} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{acc}P,
+  tikz={
+  \node[label=below:\tit{n},
+  draw,circle,
+  scale=0.85,
+  fit to=tree]{};
+  }
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\tsc{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ref}P,
+                          [\tsc{ref}, roof]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. Modern German: \tsc{ext} \tsc{nom}\\
+\begin{forest} boom
+  [\tsc{nom}P,
+  tikz={
+  \node[label=below:\tit{r},
+  draw,circle,
+  scale=0.85,
+  fit to=tree]{};
+  }
+      [\tsc{f}1]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{masc}P
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+                  [\tsc{ref}P,
+                      [\tsc{ref}, roof]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. Modern German: \tsc{int} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{wh}P
+      [\tsc{wh}P,
+      tikz={
+      \node[label=below:\tit{we},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{ana}]
+          [\tsc{wh}]
+      ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{n},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                          [\tsc{ref}P,
+                              [\tsc{ref}, roof]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. Modern German: \tsc{int} \tsc{nom}\\
+\begin{forest} boom
+  [\tsc{wh}P
+      [\tsc{wh}P,
+      tikz={
+      \node[label=below:\tit{we},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{ana}]
+          [\tsc{wh}]
+      ]
+      [\tsc{nom}P,
+      tikz={
+      \node[label=below:\tit{r},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ref}P,
+                          [\tsc{ref}, roof]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+
+
+\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{d}P
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{ana}P
+          [\tsc{ana}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{ana}, roof]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{masc}P
+                          [\tsc{masc}]
+                          [\tsc{class}P
+                              [\tsc{class}]
+                              [\tsc{ref}P,
+                                  [\tsc{ref}, roof]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{nom}\\
+\begin{forest} boom
+  [\tsc{d}P
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{ana}P
+          [\tsc{ana}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{ana}, roof]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                          [\tsc{ref}P,
+                              [\tsc{ref}, roof]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
 \chapter{Constituent containment}\label{ch:relativization}
 
 In Chapter \ref{ch:case-competition-typology} I introduced two descriptive parameters that generate the attested languages, as shown in Figure \ref{fig:two-parameters}.
@@ -1043,35 +1047,69 @@ base\scsub{int} & case\scsub{int}     & base\scsub{ext} & case\scsub{ext}     & 
 \label{tbl:component-elements}
 \end{table}
 
-To make this concrete, consider the example in \ref{ex:ohg-nom-nom-rep}, repeated from Chapter \ref{ch:case-competition-typology}. In this example, the internal nominative case competes against the external nominative case. The relative pronoun surfaces in the nominative case.
 
-\exg. quham dher chisendit scolda uuerdhan\\
- come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
- `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep}
+Now I have introduced the concepts internal and external element and their bases, I turn to the basic idea behind my proposal. The goal is to give a theoretical account that derives whether a language allows the internal or external case to surface when it wins the case competition or whether it does not.
 
-The situation is schematically shown in Table \ref{tbl:component-dhen}.
-In my proposal, the internal element for this sentence is \tit{dher} and the external element is \tit{dher} too. In Section \ref{sec:deriving-nonmatching} I motivate the featural content and phonological form of the internal and external element.
-The base part of \tit{dher} is the morpheme \tit{dh}, and the case part of \tit{dher} is the morpheme \tit{r}.\footnote{
-This is a simplification of the reality. The morpheme \tit{er} realizes besides case features also non-case features, such as gender and number. This simplification can be made, because the non-case features that are present in the internal element are also present in the external element.
-\label{fn:base}}
-The relative pronoun in this sentence is \tit{dher}. It is impossible to see whether this is the internal or the external element, because they are identical.
+Every constituent of the element that bears the winning case needs to contain every constituent of the element that bears the losing case.
 
-\begin{table}[H]
-  \center
-  \caption{The internal and external element of \ref{ex:ohg-nom-nom-rep}}
-\begin{tabular}{cccccc}
-  \toprule
-\multicolumn{2}{c}{\tsc{int} element}   & \multicolumn{2}{c}{\tsc{ext} element}   & \multicolumn{2}{c}{\tsc{ext} element} \\
-\cmidrule(lr){1-2}                        \cmidrule(lr){3-4}                        \cmidrule(lr){5-6}
-base\scsub{int} & case\scsub{int}       & base\scsub{ext} & case\scsub{ext}       & base\scsub{rel} & case\scsub{rel}     \\
-\cmidrule(lr){1-1}  \cmidrule(lr){2-2}    \cmidrule(lr){3-3}  \cmidrule(lr){4-4}    \cmidrule(lr){5-5}  \cmidrule(lr){6-6}
-dh & er                                 & dh & er                                 & dh & er                               \\
-\bottomrule
-\end{tabular}
-\label{tbl:component-dhen}
-\end{table}
 
-Now I have introduced the concepts internal and external element and their bases, I turn to the basic idea behind my proposal. The goal is to give a theoretical account that derives whether a language allows the internal or external case to surface when it wins the case competition or whether it does not. I propose that this follows from the comparison between the internal and external base within a language.
+\ex. \tsc{int} \tsc{nom}\\
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}P
+          [\tsc{rel}, roof]
+      ]
+      [\tsc{nom}P,
+          [\tsc{f}1]
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. \tsc{int} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}P
+          [\tsc{rel}, roof]
+      ]
+      [\tsc{acc}P,
+          [\tsc{f}2]
+          [\tsc{nom}P,
+              [\tsc{f}1]
+              [ϕP
+                  [\phantom{x}ϕ\phantom{x}, roof]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. \tsc{ext} \tsc{acc}\\
+\begin{forest} boom
+  [\tsc{acc}P,
+      [\tsc{f}2]
+      [\tsc{nom}P,
+          [\tsc{f}1]
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof]
+          ]
+      ]
+  ]
+\end{forest}
+
+\ex. \tsc{ext} \tsc{nom}\\
+\begin{forest} boom
+  [\tsc{nom}P,
+      [\tsc{f}1]
+      [ϕP
+          [\phantom{x}ϕ\phantom{x}, roof]
+      ]
+  ]
+\end{forest}
+
+I propose that this follows from the comparison between the internal and external base within a language.
 In the comparison, I rely on containment, just as I did in Chapter \ref{ch:decomposition} when comparing cases. I went with the following reasoning. A more complex case wins over a less complex case because the former contains all features that the latter contains. Concretely, the dative wins over the accusative because the dative contains all features that the accusative contains, the dative wins over the nominative because the dative contains all features that the nominative contains, and the accusative wins over the nominative because the accusative contains all features that the nominative contains.
 I apply the same reasoning in comparing the internal and external base. When the internal base contains the features of the external base, the internal element is allowed to surface. When the external base contains the features of the internal base, the external element is allowed to surface.
 %at first sight this seems very much related to what Hanink proposes for Modern German. Something is non-pronounced if it contains the features. A crucial difference here is that she formulates it in terms of context sensitive rules, but she does not motivate where these rules come from. I do not have language-specific rules.

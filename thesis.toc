@@ -28,9 +28,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {II}The base}{13}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}option 1}{15}{section.1.4}%
+\contentsline {section}{\numberline {1.4}option 2}{15}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}option 2}{24}{section.1.5}%
+\contentsline {section}{\numberline {1.5}option 1}{26}{section.1.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}Constituent containment}{35}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -38,26 +38,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Deriving the non-matching type}{44}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Deriving the internal-only type}{53}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Deriving the internal-only type}{54}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Deriving the matching type}{62}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Deriving the matching type}{63}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Excluding the external-only type}{63}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Excluding the external-only type}{64}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Summary}{63}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Summary}{64}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Aside: a larger syntactic context}{64}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Aside: a larger syntactic context}{65}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Aside: D between ϕ and K}{69}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Aside: D between ϕ and K}{70}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Discussion}{73}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Discussion}{75}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Diachronic part}{73}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Diachronic part}{75}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Suppletive nominatives in Gothic}{74}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Suppletive nominatives in Gothic}{76}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Towards deriving the always-external pattern}{74}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Towards deriving the always-external pattern}{76}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}More languages}{74}{section.3.4}%
+\contentsline {section}{\numberline {3.4}More languages}{76}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{75}{table.3.1}%
+\contentsline {chapter}{Primary texts}{77}{table.3.1}%
