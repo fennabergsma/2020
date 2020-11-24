@@ -1,979 +1,11 @@
 % !TEX root = thesis.tex
 
-% all subconstituents need to contain other constituents
-
-\clearpage
-
-\section{option 2}
-
-fseq: \tsc{ref} --- (\tsc{ana}) --- \tsc{class} --- \tsc{masc} --- \tsc{ind} --- \tsc{x} --- (\tsc{wh}) --- (\tsc{d}) --- \tsc{f1} --- \tsc{f2} --- \tsc{f3}
-
-I introduced an \tsc{x} that corresponds to Polish \tit{t}. That way, \tit{t} corresponds to features that form a complex spec, and I can merge it with features later (like \tsc{wh}/\tsc{d}). \tsc{ana} is still low, because it needs to change the vowel in Polish, but it can't be at the top, because the shrinking of \tit{e}/\tit{o} needs to take place there. There is space for the intrumental to spel out less features than \tit{o}/\tit{e}, namely only \tsc{class}.
-
-
-\begin{table}[H]
-\begin{tabular}{lll}
-                & light head
-                & relative pronoun                                                                    \\
-Polish          & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{x} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{x} \tsc{\tbf{wh}} \tsc{f}s  \\
-Modern German   & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{x} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{x} \tsc{\tbf{wh}} \tsc{f}s  \\
-Old High German & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{x} \tsc{\tbf{d}} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{x} \tsc{\tbf{d}} \tsc{f}s  \\
-\end{tabular}
-\end{table}
-
-\begin{itemize}
-  \item Polish: \tit{t} is whatever features \tsc{x} corresponds to, some kind of indefinite demonstrative. When \tsc{x} is merged, it forms a complex spec. Features merged after \tsc{x} get into the right tree via backtracking and \tsc{x} and the rest up. \tsc{ana} is merged low, so the right vowel is already chosen quite early. The switch between \tit{mu} and \tit{go} is an interesting one: it happens when some case features are already merged, and then backtracking takes place all the way back until before the complex spec was merged.
-  \item The Germans: \tsc{ana} and \tsc{wh}/\tsc{d} are complex specs. A different vowel can arise when \tsc{ana} combines with different features instead of being merged on \tsc{ref}, but that's not something I'll discuss in the thesis.
-\end{itemize}
-
-\clearpage
-
-
-\ex. Polish: \tsc{ext} \tsc{dat}\\
-\begin{forest} boom
-  [\tsc{x}P, s sep=20mm
-      [\tsc{x}P,
-      tikz={
-      \node[label=below:\tit{t},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{x}, roof]
-      ]
-      [\tsc{dat}P, s sep=40mm
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref}P,
-                      [\tsc{ref}, roof]
-                  ]
-              ]
-          ]
-          [\tsc{dat}P,
-          tikz={
-          \node[label=below:\tit{mu},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}4]
-              [\tsc{gen}P
-                  [\tsc{f}3]
-                  [\tsc{acc}P
-                      [\tsc{f}2]
-                      [\tsc{nom}P
-                          [\tsc{f}1]
-                          [\tsc{ind}P
-                              [\tsc{ind}]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{x}P, s sep=20mm
-      [\tsc{x}P,
-      tikz={
-      \node[label=below:\tit{t},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{x}, roof]
-      ]
-      [\tsc{acc}P, s sep=40mm
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-              [\tsc{mascP}
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{go},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{int} \tsc{dat}\\
-\begin{forest} boom
-  [\tsc{x}P, s sep=20mm
-      [\tsc{x}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{wh}]
-          [\tsc{x}P,
-              [\tsc{x}, roof]
-          ]
-      ]
-      [\tsc{dat}P, s sep=40mm
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ana}P
-                      [\tsc{ana}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-          [\tsc{dat}P,
-          tikz={
-          \node[label=below:\tit{mu},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}4]
-              [\tsc{gen}P
-                  [\tsc{f}3]
-                  [\tsc{acc}P
-                      [\tsc{f}2]
-                      [\tsc{nom}P
-                          [\tsc{f}1]
-                          [\tsc{ind}P
-                              [\tsc{ind}]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{x}P, s sep=20mm
-      [\tsc{x}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{wh}]
-          [\tsc{x}P,
-              [\tsc{x}, roof]
-          ]
-      ]
-      [\tsc{acc}P, s sep=40mm
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ana}P
-                      [\tsc{ana}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{go},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
+schwa r is really the proximal and medial.
+dieser and der
+so the promximal and medial just never appears without the emphasizer
 
 
 
-\ex. Modern German: \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{acc}P,
-  tikz={
-  \node[label=below:\tit{n},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
-          [\tsc{x}
-              [\tsc{xp}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
-                      [\tsc{class}P
-                          [\tsc{class}]
-                          [\tsc{ref}P,
-                              [\tsc{ref}, roof]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{nom}P,
-  tikz={
-  \node[label=below:\tit{r},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}1]
-      [\tsc{x}
-          [\tsc{xp}]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{w},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{wh}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{n},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{x}P
-                      [\tsc{x}]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                          [\tsc{masc}P
-                              [\tsc{masc}]
-                              [\tsc{class}P
-                                  [\tsc{class}]
-                                  [\tsc{ref}P,
-                                      [\tsc{ref}, roof]
-                                  ]
-                              ]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{int} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{w},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{wh}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[label=below:\tit{r},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-              [\tsc{x}
-                  [\tsc{xp}]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
-                          [\tsc{class}P
-                              [\tsc{class}]
-                              [\tsc{ref}P,
-                                  [\tsc{ref}, roof]
-                              ]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{n},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{x}P
-                      [\tsc{x}]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                          [\tsc{masc}P
-                              [\tsc{masc}]
-                              [\tsc{class}P
-                                  [\tsc{class}]
-                                  [\tsc{ref}P,
-                                      [\tsc{ref}, roof]
-                                  ]
-                              ]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[label=below:\tit{r},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-              [\tsc{x}P
-                  [\tsc{x}]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
-                          [\tsc{class}P
-                              [\tsc{class}]
-                              [\tsc{ref}P,
-                                  [\tsc{ref}, roof]
-                              ]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\clearpage
-
-\section{option 1}
-
-fseq: \tsc{ref} --- (\tsc{wh}) --- (\tsc{ana}) --- \tsc{class} --- \tsc{masc} --- \tsc{ind} --- (\tsc{d}) --- \tsc{f1} --- \tsc{f2} --- \tsc{f3}
-
-\begin{itemize}
-  \item I need to have the \tsc{wh} right after the \tsc{ref}, because otherwise I don't know how to get \tit{k} to overwrite \tit{t}. This means that \tsc{d} and \tsc{wh} are at quite different places. I don't have any idea about how acceptable my fseq is like this.
-  \item I need a feature for the difference between \tsc{dem} and \tsc{wh}s in Polish: \tsc{ana}. I did not want to put it right below \tsc{k}, because then I don't have space anymore to let the \tit{mu} backtrack into the vowel. However, it needs to be there if I want to let the \tit{o} contain the \tit{e}. I don't see how I can have them both. Now I put it under \tsc{class}, which already causes \tit{o} not to contain \tit{e}. That means that I also exclude the situations in which there are matching cases. Another reason for not letting \tit{mu} backtrack into the vowel is that it is syncretic between neuter and masculine, which can be captured by letting \tsc{masc} be the highest features (that's how I have it for \tsc{dat}) below now.
-  \item I don't see of a way of make the Polish non-matching ones ungrammatical but making the matching ones grammatical. I can exclude them all, and find a different reason for why the matching ones are ok.
-  \item For Modern German, I now let \tsc{wh} form a complex spec. When \tsc{ana} is merged, backtracking opens the two structures up, and \tsc{ana} merges with \tsc{wh}. It's not necessary important here, but I do not see how I could ever get \tsc{wa} for for instance \tit{was}. How do I let gender play a role here? I need them all in my structure on the right.
-  \item Old High German differs from the two other languages in that it has a more complex light head, and that it has \tsc{d} instead of \tsc{wh}. You could see \tsc{d} and \tsc{wh} as two instances of \tsc{rel}.
-\end{itemize}
-
-
-\begin{table}[H]
-\begin{tabular}{lll}
-                & light head
-                & relative pronoun                                                                    \\
-Polish          & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{wh}} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s  \\
-Modern German   & \tsc{ref} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{wh}} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{f}s  \\
-Old High German & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{\tbf{d}} \tsc{f}s
-                & \tsc{ref} \tsc{\tbf{ana}} \tsc{class} \tsc{masc} \tsc{ind} \tsc{\tbf{d}} \tsc{f}s   \\
-\end{tabular}
-\end{table}
-
-\clearpage
-
-\ex. Polish: \tsc{ext} \tsc{dat}\\
-\begin{forest} boom
-  [\tsc{ref}P, s sep=30mm
-      [\tsc{ref}P, s sep=20mm
-          [\tsc{ref}P,
-          tikz={
-          \node[label=below:\tit{t},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ref}, roof]
-          ]
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-              ]
-          ]
-      ]
-      [\tsc{dat}P,
-      tikz={
-      \node[label=below:\tit{mu},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}4]
-          [\tsc{gen}P
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{ref}P, s sep=40mm
-      [\tsc{ref}P, s sep=20mm
-          [\tsc{ref}P,
-          tikz={
-          \node[label=below:\tit{t},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ref}, roof]
-          ]
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{go},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-
-\ex. Polish: \tsc{int} \tsc{dat}\\
-\begin{forest} boom
-  [\tsc{wh}P, s sep=40mm
-      [\tsc{wh}P, s sep=20mm
-          [\tsc{wh}P,
-          tikz={
-          \node[label=below:\tit{k},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{wh}]
-              [\tsc{ref}P,
-                  [\tsc{ref}, roof]
-              ]
-          ]
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ana}P
-                      [\tsc{ana}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{dat}P,
-      tikz={
-      \node[label=below:\tit{mu},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}4]
-          [\tsc{gen}P
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Polish: \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{wh}P, s sep=40mm
-      [\tsc{wh}P, s sep=20mm
-          [\tsc{wh}P,
-          tikz={
-          \node[label=below:\tit{k},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{wh}]
-              [\tsc{ref}P,
-                  [\tsc{ref}, roof]
-              ]
-          ]
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ana}P
-                          [\tsc{ana}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{go},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\ex. Modern German: \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{acc}P,
-  tikz={
-  \node[label=below:\tit{n},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{nom}P,
-  tikz={
-  \node[label=below:\tit{r},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}1]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{masc}P
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref}P,
-                      [\tsc{ref}, roof]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{we},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{ana}]
-          [\tsc{wh}]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{n},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
-                      [\tsc{class}P
-                          [\tsc{class}]
-                          [\tsc{ref}P,
-                              [\tsc{ref}, roof]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-\ex. Modern German: \tsc{int} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{we},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{ana}]
-          [\tsc{wh}]
-      ]
-      [\tsc{nom}P,
-      tikz={
-      \node[label=below:\tit{r},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}P,
-                          [\tsc{ref}, roof]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-
-
-\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{n},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
-                          [\tsc{class}P
-                              [\tsc{class}]
-                              [\tsc{ref}P,
-                                  [\tsc{ref}, roof]
-                              ]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-\ex. Old High German: \tsc{int}/\tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{ana}, roof]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[label=below:\tit{r},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
-                      [\tsc{class}P
-                          [\tsc{class}]
-                          [\tsc{ref}P,
-                              [\tsc{ref}, roof]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
 
 \chapter{Constituent containment}\label{ch:relativization}
 
@@ -1284,9 +316,1474 @@ I put this in the metaphor with the committee that I introduced in Section \ref{
 % It works the same the other way around: a relative pronoun can surface in the external case if the external case and base contain the internal case and base.
 % Notice that there is a crucial difference between comparing the cases and comparing the bases. The internal and external case can differ from sentence to sentence. The internal and external base remain stable throughout the language.
 
+In the previous section I introduced the relative pronoun as the internal element. This means that the other element is the external element. This section starts with the observation that there actually are languages in which two elements surface in so-called double-headed relative clauses. In these languages, the external head is a subset of the internal head, and that some features like \tsc{d} and case are necessarily excluded in the external head. I adopt this insight, and I apply it to the headless relative situation. I propose that the external head in headless relatives is a copy of a specific part of the relative pronoun.
+
+As I said earlier, I need two elements to do case competition with. In headless relatives, I only see a single one surfacing. However, some languages actually show two elements surfacing. Here there are two copies of the element, one inside the relative clause, one outside of the relative clause.
+
+\exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
+ sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
+ `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}
+
+The external element is not always an exact copy of the element inside of the relative clause. An example from Kombai shows that the element outside of the relative clause can also be a subset of what the element inside of the relative clause is. Here I give two examples, there is an \tit{old man} and a \tit{person}, and there is \tit{pig} and a \tit{thing}.
+
+\ex.
+\ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
+ {old man} join.\ac{ss} work do.\ac{dur}.3\ac{sg}.\ac{nf}-\ac{tr}-\ac{conn} person my-uncle-\ac{pred}\\
+ `The old man, who is joining the work, is my uncle.' 77
+\bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
+ pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\ac{pred}\\
+ `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt{vries1993}{77}}
+
+Let me now apply what we have seen so far to headless relatives. Headless relatives do not have an overt NP, so this cannot be copied. However, there is the relative pronoun which is specified for number, gender, case, etc. Are all of these features copied onto the external element? The copy is the portion of the nominal extended projection c-commanded by the relative clause. A headless relative is a restrictive relative clause. Therefore, there is no \tsc{d} and no case.
+
+Is it possible to add features onto the external head after it has been copied? Yes, for example D, as the example shows, but also case.
+
+\exg. Junya-wa [Ayaka-ga \tbf{ringo}-o mui-ta] sono \tbf{ringo}-o tabe-ta.\\
+Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} eat-\ac{pst}\\
+‘Junya ate the apples that Ayaka peeled.’ \flushfill{Japanese, \pgcitealt{erlewine2016}{2}}
+
+In sum, the external element is a copy of a subset of the features of the relative pronoun. Definiteness and case are not copied. New features can be merged onto the external element.
+
+
+\section{Deriving the internal-only type}\label{sec:deriving-only-internal}
+
+Only internal wins, external cannot. I illustrate this with nominative and accusative.
+
+\ex.
+\ag. Uns besucht, wer Maria mag.\\
+ 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{an}.\ac{nom} Maria.\ac{acc} like.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+ `Who visits us likes Maria.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-nom-rep-intro}
+\bg. Uns besucht, \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{an}.\ac{acc} Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
+ `Who visits us, Maria likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-rep-intro}
+\bg. *Ich {lade ein}, wen/wer \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+ 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc}/\ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+ `I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-intro}
+
+
+
+ In headless relative constructions, there is a single element that surfaces: the relative pronoun. In this section, I show that the relative pronoun is syntactically part of the relative clause. The evidence comes from extraposition data in Modern German. In Modern German, it is possible to extrapose a CP (a clause), but not a DP (a noun phrase). In this section I first show that Modern German CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs: they can be extraposed as well. I conclude that the relative pronoun is the internal element in the headless relative.
+
+ The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
+
+ \ex.\label{ex:mg-extrapose-cp}
+ \ag. Mir ist \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht} egal.\\
+  1\tsc{sg}.\tsc{dat} is how it 2\tsc{sg}.\tsc{dat} goes {the same}\\
+  `I don't care how you are doing.'\label{ex:mg-extrapose-cp-base}
+ \bg. Mir is egal \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht}.\\
+  1\tsc{sg}.\tsc{dat} is {the same} how it 2\tsc{sg}.\tsc{dat} goes\\
+  `I don't care how you are doing.' \label{ex:mg-extrapose-cp-moved}\flushfill{Modern German}
+
+ \ref{ex:mg-extrapose-dp} illustrates that it is impossible to extrapose a DP. The clausal object of \ref{ex:mg-extrapose-cp} is replaced by the simplex noun phrase \tit{die Sache} `that matter'.
+ In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base position. In \ref{ex:mg-extrapose-dp-moved} it is extraposed, and the sentence is no longer grammatical.
+
+ \ex.\label{ex:mg-extrapose-dp}
+ \ag. Mir ist \tbf{die} \tbf{Sache} egal.\\
+  1\tsc{sg}.\tsc{dat} is that matter {the same}\\
+  `I don't care about that matter.'\label{ex:mg-extrapose-dp-base}
+ \bg. *Mir ist egal \tbf{die} \tbf{Sache}.\\
+  1\tsc{sg}.\tsc{dat} is {the same} that matter\\
+  `I don't care about that matter.' \label{ex:mg-extrapose-dp-moved}\flushfill{Modern German}
+
+ The same asymmetry between CPs and DPs can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gekocht hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
+ In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
+
+ \ex.\label{ex:extra-headed}
+ \ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}, aufgegessen.\\
+  Jan has that what he cooked has eaten\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headed-base}
+ \bg. Jan hat das aufgegessen, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+  Jan has that eaten what he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headed-only-clause}
+ \cg. *Jan hat aufgegessen, das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+  Jan has eaten that what he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause} \flushfill{Modern German}
+
+ The same can be observed in relative clauses without a head. \ref{ex:extra-headless} is the same sentence as in \ref{ex:extra-headed} only without the overt head. The relative clause is marked in bold again.
+ In \ref{ex:extra-headless-base}, the relative clause appears in base position. In \ref{ex:extra-headless-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headless-no-rel}, the relative clause is extraposed without the relative pronouns. This is ungrammatical, because the relative pronoun is part of the CP.
+ This shows that the relative pronoun in headless relatives in Modern German are necessarily part of a CP, which is here a relative clause.
+
+ \ex.\label{ex:extra-headless}
+ \ag. Jan hat \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat} aufgegessen.\\
+ Jan has what he cooked has eaten\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headless-base}
+ \bg. Jan hat aufgegessen \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+ Jan has eaten what he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headless-clause}
+ \bg. *Jan hat \tbf{was} aufgegessen \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+ Jan has what eaten he cooked has\\
+ `Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
+
+ In conclusion, extraposition facts show that the relative pronoun in Modern German is syntactically part of the relative clause. Therefore, the relative pronoun is the internal element in headless relative construction.
+
+
+ The deletion in Modern German is not optional, but obligatory. The reason for that is that the weak demonstrative is phonologically(?) not heavy enough to be the head of a relative clause. Maybe not only phonologically, because \tit{vom} also does not work..
+
+ are free relatives restrictive or non-restrictive? > restrictive, and restrictive and weak are incompatible :)  >> this is why we have deletion!
+
+ \ex. Sie ist vom Mann, mit dem sie gestern ausgegangen ist, versetzt worden.
+
+
+
+
+\begin{table}[H]
+ \center
+ \caption {Relative pronouns in headless relatives in Modern German}
+  \begin{tabular}{cc}
+  \toprule
+              & \ac{an} \\
+    \cmidrule{2-2}
+    \ac{nom}  & w-e-r  \\
+    \ac{acc}  & w-e-n  \\
+    \ac{dat}  & w-e-m  \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+Modern German relative pronoun in accusative case
+
+\ex. \begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{w}}; }
+\end{forest}
+
+\ex. \begin{forest} boom
+  [\tsc{dist}P
+      [\tsc{deix}\scsub{3}]
+      [\tsc{med}P
+          [\tsc{deix}\scsub{2}]
+          [\tsc{prox}P
+              [\tsc{deix}\tsc{1}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{e}}; }
+\end{forest}
+
+\ex. \begin{forest} boom
+  [\tsc{acc}P
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\tsc{f}1]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{n}}; }
+\end{forest}
+
+\ex. \begin{forest} boom
+  [\tsc{nom}P
+      [\tsc{f}1]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{r}}; }
+\end{forest}
+
+
+\ex.
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=15mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}]
+      ]
+      [\tsc{acc}P, s sep=50mm
+          [\tsc{dist}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{deix}\scsub{3}]
+              [\tsc{med}P
+                  [\tsc{deix}\scsub{2}]
+                  [\tsc{prox}P
+                      [\tsc{deix}\tsc{1}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{masc}P
+                              [\tsc{masc}]
+                              [\tsc{class}P
+                                  [\tsc{class}]
+                                  [\tsc{ref}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+Modern German relative pronoun in nominative case
+
+\ex.
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=15mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}]
+      ]
+      [\tsc{nom}P, s sep=50mm
+          [\tsc{dist}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{deix}\scsub{3}]
+              [\tsc{med}P
+                  [\tsc{deix}\scsub{2}]
+                  [\tsc{prox}P
+                      [\tsc{deix}\tsc{1}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{masc}P
+                              [\tsc{masc}]
+                              [\tsc{class}P
+                                  [\tsc{class}]
+                                  [\tsc{ref}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+Ich habe n gesehen.
+
+Ich habe m geholfen.
+
+Hat r nen Motorrad?
+
+
+I copy the \tsc{ind} and I only merge the cases.
+
+Modern German has two types of demonstratives: the strong one and the weak one.
+
+The strong article is used when there is an anaphoric relation. Often there is a linguistic antecedent that is referred back to.
+
+\exg. Hans hat heute \tbf{einen} \tbf{Freund} zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto \tbf{vom}/ \tbf{von} \tbf{dem} \tbf{Freund} gezeigt.\\
+Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo {of the\scsub{weak}} of the\scsub{strong} friend shown\\
+`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'
+
+Weak articles are used when situational uniqueness is involved. Uniqueness can be global or within a restricted domain. The discourse participants mutually shared knowledge that uniqueness holds.
+
+\ex.
+\ag. Der Einbrecher ist {zum Glück} vom /von dem Hund verjagt worden.\\
+the burglar is luckily {by the\scsub{weak}} by the\scsub{strong} dog {chased away} been\\
+`Luckily, the burglar was chased away by the dog.'
+\bg. Armstrong flog als erster zum Mond.\\
+Armstrong flew as {first one} {to the\scsub{weak}} moon\\
+`Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}
+
+In the headless relatives, there is uniqueness. Show?
+
+The strong article cannot be used because it does not go together with the free choice interpretation of \tsc{wh}-relatives (say something about Hanink).
+
+Modern German light head in accusative case
+
+\ex. \begin{forest} boom
+  [\tsc{med}P
+      [\tsc{deix}\scsub{2}]
+      [\tsc{prox}P
+          [\tsc{deix}\tsc{1}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{ə}}; }
+\end{forest}
+
+\ex.
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{acc}P, s sep=40mm
+      [\tsc{med}P,
+      tikz={
+      \node[label=below:\tit{ə},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{deix}\scsub{2}]
+          [\tsc{prox}P
+              [\tsc{deix}\tsc{1}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{n},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+Modern German light head in nominative case
+
+\ex.
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{nom}P, s sep=40mm
+      [\tsc{med}P,
+      tikz={
+      \node[label=below:\tit{ə},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{deix}\scsub{2}]
+          [\tsc{prox}P
+              [\tsc{deix}\tsc{1}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{nom}P,
+      tikz={
+      \node[label=below:\tit{r},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}1]
+      ]
+  ]
+\end{forest}
+}
+
+
+
+\exg. Uns besucht, wer Maria mag.\\
+ 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{an}.\ac{nom} Maria.\ac{acc} like.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+ `Who visits us likes Maria.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-nom-rep}
+
+\begin{table}[H]
+  \center
+ \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{nom} = \tit{wer}}
+  \begin{tabular}[b]{c}
+      \toprule
+      \scriptsize{
+          \begin{forest} boompje
+          [\tsc{rel}P, s sep=15mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{w},
+              draw,circle,
+              scale=0.9,
+              fit to=tree]{};
+              }
+                  [\tsc{rel}]
+                  [\tsc{wh}]
+              ]
+              [\tsc{nom}P, s sep=50mm
+                  [\tsc{dist}P,
+                  tikz={
+                  \node[label=below:\tit{e},
+                  draw,circle,
+                  scale=0.95,
+                  fit to=tree]{};
+                  }
+                      [\tsc{deix}\scsub{3}]
+                      [\tsc{med}P,
+                      tikz={
+                      \node[draw,circle,
+                      fill=DG,fill opacity=0.2,
+                      DG,dashed,
+                      scale=0.95,
+                      fit to=tree]{};
+                      }
+                          [\tsc{deix}\scsub{2}]
+                          [\tsc{prox}P
+                              [\tsc{deix}\tsc{1}]
+                              [\tsc{ind}P
+                                  [\tsc{ind}]
+                                  [\tsc{masc}P
+                                      [\tsc{masc}]
+                                      [\tsc{class}P
+                                          [\tsc{class}]
+                                          [\tsc{ref}]
+                                      ]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+                  [\tsc{nom}P,
+                  tikz={
+                  \node[label=below:\tit{r},
+                  draw,circle,
+                  scale=0.9,
+                  fit to=tree]{};
+                  \node[draw,circle,
+                  fill=DG,fill opacity=0.2,
+                  DG,dashed,
+                  scale=0.8,
+                  fit to=tree]{};
+                  }
+                      [\tsc{f}1]
+                  ]
+              ]
+          ]
+        \end{forest}
+        }
+        \\
+        \cmidrule{1-1}
+        \tsc{nom} relative pronoun \tit{w-e-r}
+        \\
+        \toprule
+      \scriptsize{
+      \begin{forest} boompje
+        [\textcolor{DG}{\tsc{nom}P},edge=DG, s sep=40mm
+            [\textcolor{DG}{\tsc{med}P},edge=DG,
+            tikz={
+            \node[label=below:\textcolor{DG}{\tit{ə}},
+            draw,circle,DG,
+            scale=0.95,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=1,
+            dashed,DG,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
+                [\textcolor{DG}{\tsc{prox}P},edge=DG
+                    [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
+                    [\textcolor{DG}{\tsc{ind}P},edge=DG
+                        [\textcolor{DG}{\tsc{ind}},edge=DG]
+                        [\textcolor{DG}{\tsc{masc}P},edge=DG
+                            [\textcolor{DG}{\tsc{masc}},edge=DG]
+                            [\textcolor{DG}{\tsc{class}P},edge=DG
+                                [\textcolor{DG}{\tsc{class}},edge=DG]
+                                [\textcolor{DG}{\tsc{ref}},edge=DG]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+            [\textcolor{DG}{\tsc{nom}P},edge=DG,
+            tikz={
+            \node[label=below:\textcolor{DG}{\tit{r}},
+            draw,circle,DG,
+            scale=0.8,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=0.9,
+            dashed,DG,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tsc{f}1},edge=DG]
+            ]
+        ]
+      \end{forest}
+      }
+      \\
+      \cmidrule{1-1}
+      \tsc{nom} light head \tit{ə-r}\\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:mg-int=ext}
+\end{table}
+
+
+\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
+ `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}
+
+the internal case is more complex than the external case, and the internal base part is more complex than the external non-cas part
+
+\begin{table}[H]
+  \center
+ \caption {Modern German \tsc{int}\scsub{acc} vs. \tsc{ext}\scsub{nom} = \tit{wen}}
+  \begin{tabular}[b]{c}
+      \toprule
+      \tiny{
+      \begin{forest} boompje
+        [\tsc{rel}P, s sep=15mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{w},
+            draw,circle,
+            scale=0.9,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [\tsc{wh}]
+            ]
+            [\tsc{acc}P, s sep=50mm
+                [\tsc{dist}P,
+                tikz={
+                \node[label=below:\tit{e},
+                draw,circle,
+                scale=0.95,
+                fit to=tree]{};
+                }
+                    [\tsc{deix}\scsub{3}]
+                    [\tsc{med}P,
+                    tikz={
+                    \node[draw,circle,
+                    fill=DG,fill opacity=0.2,
+                    DG,dashed,
+                    scale=0.95,
+                    fit to=tree]{};
+                    }
+                        [\tsc{deix}\scsub{2}]
+                        [\tsc{prox}P
+                            [\tsc{deix}\tsc{1}]
+                            [\tsc{ind}P
+                                [\tsc{ind}]
+                                [\tsc{masc}P
+                                    [\tsc{masc}]
+                                    [\tsc{class}P
+                                        [\tsc{class}]
+                                        [\tsc{ref}]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+                [\tsc{acc}P,
+                tikz={
+                \node[label=below:\tit{n},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\tsc{f}2]
+                    [\tsc{nom}P,
+                    tikz={
+                    \node[draw,circle,
+                    fill=DG,fill opacity=0.2,
+                    DG,dashed,
+                    scale=0.8,
+                    fit to=tree]{};
+                    }
+                        [\tsc{f}1]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      }
+      \\
+      \cmidrule{1-1}
+      \tsc{acc} relative pronoun \tit{w-e-n}
+      \\
+      \toprule
+      \scriptsize{
+      \begin{forest} boompje
+        [\textcolor{DG}{\tsc{nom}P},edge=DG, s sep=40mm
+            [\textcolor{DG}{\tsc{med}P},edge=DG,
+            tikz={
+            \node[label=below:\textcolor{DG}{\tit{ə}},
+            draw,circle,DG,
+            scale=0.95,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=1,
+            dashed,DG,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
+                [\textcolor{DG}{\tsc{prox}P},edge=DG
+                    [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
+                    [\textcolor{DG}{\tsc{ind}P},edge=DG
+                        [\textcolor{DG}{\tsc{ind}},edge=DG]
+                        [\textcolor{DG}{\tsc{masc}P},edge=DG
+                            [\textcolor{DG}{\tsc{masc}},edge=DG]
+                            [\textcolor{DG}{\tsc{class}P},edge=DG
+                                [\textcolor{DG}{\tsc{class}},edge=DG]
+                                [\textcolor{DG}{\tsc{ref}},edge=DG]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+            [\textcolor{DG}{\tsc{nom}P},edge=DG,
+            tikz={
+            \node[label=below:\textcolor{DG}{\tit{r}},
+            draw,circle,DG,
+            scale=0.8,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=0.9,
+            dashed,DG,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tsc{f}1},edge=DG]
+            ]
+        ]
+      \end{forest}
+      }
+      \\
+      \cmidrule{1-1}
+      \tsc{nom} light head \tit{ə-r}
+      \\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:mg-int-wins}
+\end{table}
+
+\exg. *Ich {lade ein}, wer \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-u-rep}
+
+the external case is more complex than the internal case, but the external base part is not more complex than the internal base part
+
+\begin{table}[H]
+  \center
+ \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{acc} ≠ \tit{wer}}
+  \begin{tabular}[b]{c}
+      \toprule
+      \scriptsize{
+          \begin{forest} boompje
+          [\tsc{rel}P, s sep=15mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{w},
+              draw,circle,
+              scale=0.9,
+              fit to=tree]{};
+              }
+                  [\tsc{rel}]
+                  [\tsc{wh}]
+              ]
+              [\tsc{nom}P, s sep=50mm
+                  [\tsc{dist}P,
+                  tikz={
+                  \node[label=below:\tit{e},
+                  draw,circle,
+                  scale=0.95,
+                  fit to=tree]{};
+                  }
+                      [\tsc{deix}\scsub{3}]
+                      [\tsc{med}P,
+                      tikz={
+                      \node[draw,circle,
+                      fill=DG,fill opacity=0.2,
+                      DG,dashed,
+                      scale=0.95,
+                      fit to=tree]{};
+                      }
+                          [\tsc{deix}\scsub{2}]
+                          [\tsc{prox}P
+                              [\tsc{deix}\tsc{1}]
+                              [\tsc{ind}P
+                                  [\tsc{ind}]
+                                  [\tsc{masc}P
+                                      [\tsc{masc}]
+                                      [\tsc{class}P
+                                          [\tsc{class}]
+                                          [\tsc{ref}]
+                                      ]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+                  [\tsc{nom}P,
+                  tikz={
+                  \node[label=below:\tit{r},
+                  draw,circle,
+                  scale=0.9,
+                  fit to=tree]{};
+                  \node[draw,circle,
+                  fill=DG,fill opacity=0.2,
+                  DG,dashed,
+                  scale=0.8,
+                  fit to=tree]{};
+                  }
+                      [\tsc{f}1]
+                  ]
+              ]
+          ]
+        \end{forest}
+        }
+        \\
+        \cmidrule{1-1}
+        \tsc{nom} relative pronoun \tit{w-e-r}
+        \\
+        \toprule
+      \scriptsize{
+      \begin{forest} boompje
+        [\textcolor{DG}{\tsc{acc}P},edge=DG, s sep=40mm
+            [\textcolor{DG}{\tsc{med}P},edge=DG,
+            tikz={
+            \node[label=below:\textcolor{DG}{\tit{ə}},
+            draw,circle,DG,
+            scale=0.95,
+            fit to=tree]{};
+            \node[
+            draw,circle,
+            scale=1,
+            dashed,DG,
+            fit to=tree]{};
+            }
+                [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
+                [\textcolor{DG}{\tsc{prox}P},edge=DG
+                    [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
+                    [\textcolor{DG}{\tsc{ind}P},edge=DG
+                        [\textcolor{DG}{\tsc{ind}},edge=DG]
+                        [\textcolor{DG}{\tsc{masc}P},edge=DG
+                            [\textcolor{DG}{\tsc{masc}},edge=DG]
+                            [\textcolor{DG}{\tsc{class}P},edge=DG
+                                [\textcolor{DG}{\tsc{class}},edge=DG]
+                                [\textcolor{DG}{\tsc{ref}},edge=DG]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+            [\tsc{acc}P,edge=DG,
+            tikz={
+            \node[label=below:\tit{n},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{f}2]
+                [\textcolor{DG}{\tsc{nom}P},edge=DG,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.9,
+                dashed,DG,
+                fit to=tree]{};
+                }
+                    [\textcolor{DG}{\tsc{f}1},edge=DG]
+                ]
+            ]
+        ]
+      \end{forest}
+      }
+      \\
+      \cmidrule{1-1}
+      \tsc{acc} light head \tit{ə-n} \\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:mg-ext-wins-1}
+\end{table}
+
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep}
+
+\exg. *Ich {lade ein}, ən \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{dem}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-lh}
+
+\begin{table}[H]
+  \center
+ \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{acc} ≠ \tit{ən}}
+  \begin{tabular}[b]{c}
+      \toprule
+      \scriptsize{
+          \begin{forest} boompje
+          [\tsc{rel}P, s sep=15mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{w},
+              draw,circle,
+              scale=0.9,
+              fit to=tree]{};
+              }
+                  [\tsc{rel}]
+                  [\tsc{wh}]
+              ]
+              [\tsc{nom}P, s sep=50mm
+                  [\tsc{dist}P,
+                  tikz={
+                  \node[label=below:\tit{e},
+                  draw,circle,
+                  scale=0.95,
+                  fit to=tree]{};
+                  }
+                      [\tsc{deix}\scsub{3}]
+                      [\textcolor{DG}{\tsc{med}P},edge=DG,
+                      tikz={
+                      \node[
+                      draw,circle,
+                      scale=0.9,
+                      dashed,DG,
+                      fit to=tree]{};
+                      }
+                          [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
+                          [\textcolor{DG}{\tsc{prox}P},edge=DG
+                              [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
+                              [\textcolor{DG}{\tsc{ind}P},edge=DG
+                                  [\textcolor{DG}{\tsc{ind}},edge=DG]
+                                  [\textcolor{DG}{\tsc{masc}P},edge=DG
+                                      [\textcolor{DG}{\tsc{masc}},edge=DG]
+                                      [\textcolor{DG}{\tsc{class}P},edge=DG
+                                          [\textcolor{DG}{\tsc{class}},edge=DG]
+                                          [\textcolor{DG}{\tsc{ref}},edge=DG]
+                                      ]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+                  [\textcolor{DG}{\tsc{nom}P},edge=DG,
+                  tikz={
+                  \node[label=below:\textcolor{DG}{\tit{r}},
+                  draw,circle,DG,
+                  scale=0.8,
+                  fit to=tree]{};
+                  \node[
+                  draw,circle,
+                  scale=0.9,
+                  dashed,DG,
+                  fit to=tree]{};
+                  }
+                      [\textcolor{DG}{\tsc{f}1},edge=DG]
+                  ]
+              ]
+          ]
+        \end{forest}
+        }
+        \\
+        \cmidrule{1-1}
+        \tsc{nom} relative pronoun \tit{w-e-r}
+        \\
+        \toprule
+      \scriptsize{
+      \begin{forest} boompje
+        [\tsc{acc}P, s sep=40mm
+            [\tsc{med}P,
+            tikz={
+            \node[label=below:\tit{ə},
+            draw,circle,
+            scale=1,
+            fit to=tree]{};
+            \node[draw,circle,
+            fill=DG,fill opacity=0.2,
+            DG,dashed,
+            scale=0.95,
+            fit to=tree]{};
+            }
+                [\tsc{deix}\scsub{2}]
+                [\tsc{prox}P
+                    [\tsc{deix}\tsc{1}]
+                    [\tsc{ind}P
+                        [\tsc{ind}]
+                        [\tsc{masc}P
+                            [\tsc{masc}]
+                            [\tsc{class}P
+                                [\tsc{class}]
+                                [\tsc{ref}]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+            [\tsc{acc}P
+                [\tsc{f}2]
+                [\tsc{nom}P,
+                tikz={
+                \node[label=below:\tit{n},
+                draw,circle,
+                scale=0.9,
+                fit to=tree]{};
+                \node[draw,circle,
+                fill=DG,fill opacity=0.2,
+                DG,dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\tsc{f}1]
+                ]
+            ]
+        ]
+      \end{forest}
+      }
+      \\
+      \cmidrule{1-1}
+      \tsc{acc} light head \tit{ə-n} \\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:mg-ext-wins-2}
+\end{table}
+
+
+\section{Deriving the matching type}\label{sec:deriving-matching}
+
+\ex. Polish: \tsc{ext} \tsc{dat}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{Med}P, s sep=10mm
+      [\tsc{Med}P,
+      tikz={
+      \node[label=below:\tit{t},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{deix\scsub{2}}]
+          [\tsc{deix\scsub{1}}]
+      ]
+      [\tsc{dat}P, s sep=20mm
+          [\tsc{masc}P,
+          tikz={
+          \node[label=below:\tit{e/o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+                  [\tsc{ref}]
+              ]
+          ]
+          [\tsc{dat}P,
+          tikz={
+          \node[label=below:\tit{mu},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Polish: \tsc{ext} \tsc{acc}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{Med}P, s sep=10mm
+      [\tsc{Med}P,
+      tikz={
+      \node[label=below:\tit{t},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{deix\scsub{2}}]
+          [\tsc{deix\scsub{1}}]
+      ]
+      [\tsc{dat}P, s sep=25mm
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{e/o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{mascP}
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ref}]
+                  ]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{go},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Polish: \tsc{int} \tsc{dat}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=27mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.925,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{dist}P
+                  [\tsc{deix\scsub{3}}]
+                  [\tsc{med}P,
+                      [\tsc{deix\scsub{2}}]
+                      [\tsc{deix\scsub{1}}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{dat}P, s sep=20mm
+          [\tsc{masc}P,
+          tikz={
+          \node[label=below:\tit{e/o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+                  [\tsc{ref}]
+              ]
+          ]
+          [\tsc{dat}P,
+          tikz={
+          \node[label=below:\tit{mu},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Polish: \tsc{int} \tsc{acc}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=27mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.925,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{dist}P
+                  [\tsc{deix\scsub{3}}]
+                  [\tsc{med}P,
+                      [\tsc{deix\scsub{2}}]
+                      [\tsc{deix\scsub{1}}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P, s sep=25mm
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{e/o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ref}]
+                  ]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{go},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+
+
+Polish only allows the deletion of the light head in the matching situation. It is not obligatory there, you can just as well have a light-headed relative. The deletion is possible, because you have two elements that are pretty similar?
+
+\exg. Jan czyta to, co Maria czyta.\\
+ Jan read this what Maria reads\\
+ `Jan reads what Maria reads.' \flushfill{Polish, \pgcitealt{citko2004}{96}}
+
+
+Radek: Czech distinguishes between accidental uniqueness and inherent uniqueness. Accidental uniqueness: with \tsc{dem}, inherent uniqueness: without \tsc{dem}.
+
+Radek's situation:
+
+Two student assistants A and B are at their shared workdesk, which they share with other student assistants and where there’s a computer and a couple of other things, including a book (it doesn’t really matter to whom the book belongs). A is looking for a pencil, B says
+
+\exg. Nějaká tužka je vedle {počítače /\#toho počítače}.\\
+some pencil is {next to} computer \tsc{dem} computer\\
+`There’s a pencil next to the computer.'
+
+All situations like the topic situation – A and B’s shared office (desk)– have exactly one computer in it.
+
+\exg. Nějaká tužka je vedle {té knížky /\#knížky}\\
+some pencil is {next to} \tsc{dem} book book\\
+`There’s a pencil next to the book.'
+
+There is exactly one book in the topic situation – A and B’s shared office (desk) – and it does not hold that all situation like the topic situation have exactly one book in it
+
+Florian showed that this is different for Modern German:
+
+\begin{table}[H]
+\begin{tabular}{c|ccc}
+\toprule
+       & anaphoric                & situational uniqueness              & inherent uniqueness                 \\
+       \cmidrule{2-4}
+Polish & \tsc{dem}  & \cellcolor{DG}\tsc{dem}             & ∅                                   \\
+German & \tsc{dem}\scsub{strong}  & \cellcolor{LG}\tsc{dem}\scsub{weak} & \cellcolor{LG}\tsc{dem}\scsub{weak} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\tit{to} is incompatible with \tit{ever}, because \tit{to} makes it accidentally uniqueness and \tit{ever} requires inherent uniqueness
+
 
 
 \section{Deriving the non-matching type}\label{sec:deriving-nonmatching}
+
+
+
+\ex. Old High German: \tsc{ext} \tsc{acc}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{d}P, s sep=15mm
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{acc}P, s sep=50mm
+          [\tsc{dist}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{deix}\scsub{3}]
+              [\tsc{med}P
+                  [\tsc{deix}\scsub{2}]
+                  [\tsc{prox}P
+                      [\tsc{deix}\tsc{1}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{masc}P
+                              [\tsc{masc}]
+                              [\tsc{class}P
+                                  [\tsc{class}]
+                                  [\tsc{ref}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Old High German: \tsc{ext} \tsc{nom}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{d}P, s sep=15mm
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{acc}P, s sep=50mm
+          [\tsc{dist}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{deix}\scsub{3}]
+              [\tsc{med}P
+                  [\tsc{deix}\scsub{2}]
+                  [\tsc{prox}P
+                      [\tsc{deix}\tsc{1}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{masc}P
+                              [\tsc{masc}]
+                              [\tsc{class}P
+                                  [\tsc{class}]
+                                  [\tsc{ref}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Old High German: \tsc{int} \tsc{acc}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=15mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{d}]
+      ]
+      [\tsc{acc}P, s sep=50mm
+          [\tsc{dist}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{deix}\scsub{3}]
+              [\tsc{med}P
+                  [\tsc{deix}\scsub{2}]
+                  [\tsc{prox}P
+                      [\tsc{deix}\tsc{1}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{masc}P
+                              [\tsc{masc}]
+                              [\tsc{class}P
+                                  [\tsc{class}]
+                                  [\tsc{ref}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Old High German: \tsc{int} \tsc{acc}\\
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=15mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{d}]
+      ]
+      [\tsc{acc}P, s sep=50mm
+          [\tsc{dist}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{deix}\scsub{3}]
+              [\tsc{med}P
+                  [\tsc{deix}\scsub{2}]
+                  [\tsc{prox}P
+                      [\tsc{deix}\tsc{1}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{masc}P
+                              [\tsc{masc}]
+                              [\tsc{class}P
+                                  [\tsc{class}]
+                                  [\tsc{ref}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
 
 The non-matching type of language allows for matching cases, it allows the internal case to win, and it allows the external case to win. I have been describing Old High German as an example of this type. In this section, I show what it is about Old High German that causes the language to be of the non-matching type. I propose that the crucial factor is that Old High German has a syncretic internal and external base. Since they are syncretic, the features in the internal base contain the features in the external base, and the features in the external base contain just as well the features in the internal base. The internal base containing the external base causes the internal case to be allowed to surface when it wins the case competition. The external base containing the internal base causes the external case to be allowed to surface when it wins the case competition.
 
@@ -1879,464 +2376,12 @@ I start with the first example from Table \ref{tbl:forms-ohg}, in which the inte
 To sum up, Old High German allows the internal and the external case to surface when either of them wins the case competition. This is due to the fact that the bases of the internal and the external element are syncretic. Because of that, the internal base contains the external base, which allows the internal case to surface, and the external base contains the internal base, which allows the external case to surface.
 
 
-\section{Deriving the internal-only type}\label{sec:deriving-only-internal}
 
-Ich habe n gesehen.
 
-Ich habe m geholfen.
 
-Hat r nen Motorrad?
 
-Only internal wins, external cannot. I illustrate this with nominative and accusative.
 
-\ex.
-\ag. Uns besucht, \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{an}.\ac{acc} Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
- `Who visits us, Maria likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-rep-intro}
-\bg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
- 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
- `I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-intro}
-
- In headless relative constructions, there is a single element that surfaces: the relative pronoun. In this section, I show that the relative pronoun is syntactically part of the relative clause. The evidence comes from extraposition data in Modern German. In Modern German, it is possible to extrapose a CP (a clause), but not a DP (a noun phrase). In this section I first show that Modern German CPs can be extraposed and DPs cannot. Then I illustrate how relative clauses including the relative pronoun in headless relatives pattern with CPs: they can be extraposed as well. I conclude that the relative pronoun is the internal element in the headless relative.
-
- The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
-
- \ex.\label{ex:mg-extrapose-cp}
- \ag. Mir ist \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht} egal.\\
-  1\tsc{sg}.\tsc{dat} is how it 2\tsc{sg}.\tsc{dat} goes {the same}\\
-  `I don't care how you are doing.'\label{ex:mg-extrapose-cp-base}
- \bg. Mir is egal \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht}.\\
-  1\tsc{sg}.\tsc{dat} is {the same} how it 2\tsc{sg}.\tsc{dat} goes\\
-  `I don't care how you are doing.' \label{ex:mg-extrapose-cp-moved}\flushfill{Modern German}
-
- \ref{ex:mg-extrapose-dp} illustrates that it is impossible to extrapose a DP. The clausal object of \ref{ex:mg-extrapose-cp} is replaced by the simplex noun phrase \tit{die Sache} `that matter'.
- In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base position. In \ref{ex:mg-extrapose-dp-moved} it is extraposed, and the sentence is no longer grammatical.
-
- \ex.\label{ex:mg-extrapose-dp}
- \ag. Mir ist \tbf{die} \tbf{Sache} egal.\\
-  1\tsc{sg}.\tsc{dat} is that matter {the same}\\
-  `I don't care about that matter.'\label{ex:mg-extrapose-dp-base}
- \bg. *Mir ist egal \tbf{die} \tbf{Sache}.\\
-  1\tsc{sg}.\tsc{dat} is {the same} that matter\\
-  `I don't care about that matter.' \label{ex:mg-extrapose-dp-moved}\flushfill{Modern German}
-
- The same asymmetry between CPs and DPs can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gekocht hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.
- In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
-
- \ex.\label{ex:extra-headed}
- \ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}, aufgegessen.\\
-  Jan has that what he cooked has eaten\\
- `Jan has eaten what he cooked.'\label{ex:extra-headed-base}
- \bg. Jan hat das aufgegessen, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
-  Jan has that eaten what he cooked has\\
- `Jan has eaten what he cooked.'\label{ex:extra-headed-only-clause}
- \cg. *Jan hat aufgegessen, das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
-  Jan has eaten that what he cooked has\\
- `Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause} \flushfill{Modern German}
-
- The same can be observed in relative clauses without a head. \ref{ex:extra-headless} is the same sentence as in \ref{ex:extra-headed} only without the overt head. The relative clause is marked in bold again.
- In \ref{ex:extra-headless-base}, the relative clause appears in base position. In \ref{ex:extra-headless-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headless-no-rel}, the relative clause is extraposed without the relative pronouns. This is ungrammatical, because the relative pronoun is part of the CP.
- This shows that the relative pronoun in headless relatives in Modern German are necessarily part of a CP, which is here a relative clause.
-
- \ex.\label{ex:extra-headless}
- \ag. Jan hat \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat} aufgegessen.\\
- Jan has what he cooked has eaten\\
- `Jan has eaten what he cooked.'\label{ex:extra-headless-base}
- \bg. Jan hat aufgegessen \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
- Jan has eaten what he cooked has\\
- `Jan has eaten what he cooked.'\label{ex:extra-headless-clause}
- \bg. *Jan hat \tbf{was} aufgegessen \tbf{er} \tbf{gekocht} \tbf{hat}.\\
- Jan has what eaten he cooked has\\
- `Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
-
- In conclusion, extraposition facts show that the relative pronoun in Modern German is syntactically part of the relative clause. Therefore, the relative pronoun is the internal element in headless relative construction.
-
-
- The deletion in Modern German is not optional, but obligatory. The reason for that is that the weak demonstrative is phonologically(?) not heavy enough to be the head of a relative clause. Maybe not only phonologically, because \tit{vom} also does not work..
-
- are free relatives restrictive or non-restrictive? > restrictive, and restrictive and weak are incompatible :)  >> this is why we have deletion!
-
- \ex. Sie ist vom Mann, mit dem sie gestern ausgegangen ist, versetzt worden.
-
-
-
-
- In the previous section I introduced the relative pronoun as the internal element. This means that the other element is the external element. This section starts with the observation that there actually are languages in which two elements surface in so-called double-headed relative clauses. In these languages, the external head is a subset of the internal head, and that some features like \tsc{d} and case are necessarily excluded in the external head. I adopt this insight, and I apply it to the headless relative situation. I propose that the external head in headless relatives is a copy of a specific part of the relative pronoun.
-
- As I said earlier, I need two elements to do case competition with. In headless relatives, I only see a single one surfacing. However, some languages actually show two elements surfacing. Here there are two copies of the element, one inside the relative clause, one outside of the relative clause.
-
- \exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
-  sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
-  `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}
-
- The external element is not always an exact copy of the element inside of the relative clause. An example from Kombai shows that the element outside of the relative clause can also be a subset of what the element inside of the relative clause is. Here I give two examples, there is an \tit{old man} and a \tit{person}, and there is \tit{pig} and a \tit{thing}.
-
- \ex.
- \ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
-  {old man} join.\ac{ss} work do.\ac{dur}.3\ac{sg}.\ac{nf}-\ac{tr}-\ac{conn} person my-uncle-\ac{pred}\\
-  `The old man, who is joining the work, is my uncle.' 77
- \bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
-  pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\ac{pred}\\
-  `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt{vries1993}{77}}
-
- Let me now apply what we have seen so far to headless relatives. Headless relatives do not have an overt NP, so this cannot be copied. However, there is the relative pronoun which is specified for number, gender, case, etc. Are all of these features copied onto the external element? The copy is the portion of the nominal extended projection c-commanded by the relative clause. A headless relative is a restrictive relative clause. Therefore, there is no \tsc{d} and no case.
-
- Is it possible to add features onto the external head after it has been copied? Yes, for example D, as the example shows, but also case.
-
- \exg. Junya-wa [Ayaka-ga \tbf{ringo}-o mui-ta] sono \tbf{ringo}-o tabe-ta.\\
- Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} eat-\ac{pst}\\
- ‘Junya ate the apples that Ayaka peeled.’ \flushfill{Japanese, \pgcitealt{erlewine2016}{2}}
-
- In sum, the external element is a copy of a subset of the features of the relative pronoun. Definiteness and case are not copied. New features can be merged onto the external element.
-
-
-
-\begin{table}[H]
- \center
- \caption {Relative pronouns in headless relatives in Modern German}
-  \begin{tabular}{cc}
-  \toprule
-              & \ac{an} \\
-    \cmidrule{2-2}
-    \ac{nom}  & w-e-r  \\
-    \ac{acc}  & w-e-n  \\
-    \ac{dat}  & w-e-m  \\
-  \bottomrule
-  \end{tabular}
-\end{table}
-
-three morphemes: \tsc{wh}, \tsc{ana}, number+gender+case
-
-accusative relative pronoun
-
-\ex.
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P
-          [\tit{w}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P
-              [\tit{e}, roof]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{n},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f1}]
-                  [\tsc{ind}P
-                      [\phantom{xxx},
-                      roof
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-nominative relative pronoun
-
-\ex.
-\begin{forest} boom
-  [\tsc{wh}P
-      [\tsc{wh}P
-          [\tit{w}, roof]
-      ]
-      [\tsc{ana}P
-          [\tsc{ana}P
-              [\tit{e}, roof]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[label=below:\tit{r},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\phantom{xxx},
-                  roof
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-I copy the \tsc{ind} and I only merge the cases.
-
-Modern German has two types of demonstratives: the strong one and the weak one.
-
-The strong article is used when there is an anaphoric relation. Often there is a linguistic antecedent that is referred back to.
-
-\exg. Hans hat heute \tbf{einen} \tbf{Freund} zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto \tbf{vom}/ \tbf{von} \tbf{dem} \tbf{Freund} gezeigt.\\
-Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo {of the\scsub{weak}} of the\scsub{strong} friend shown\\
-`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'
-
-Weak articles are used when situational uniqueness is involved. Uniqueness can be global or within a restricted domain. The discourse participants mutually shared knowledge that uniqueness holds.
-
-\ex.
-\ag. Der Einbrecher ist {zum Glück} vom /von dem Hund verjagt worden.\\
-the burglar is luckily {by the\scsub{weak}} by the\scsub{strong} dog {chased away} been\\
-`Luckily, the burglar was chased away by the dog.'
-\bg. Armstrong flog als erster zum Mond.\\
-Armstrong flew as {first one} {to the\scsub{weak}} moon\\
-`Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}
-
-In the headless relatives, there is uniqueness. Show?
-
-The strong article cannot be used because it does not go together with the free choice interpretation of \tsc{wh}-relatives (say something about Hanink).
-
-The weak article is used. accusative:
-
-\ex.
-\begin{forest} boom
-[\tsc{acc}P,
-tikz={
-\node[label=below:\tit{n},
-draw,circle,
-scale=0.85,
-fit to=tree]{};
-}
-    [\tsc{f}2]
-    [\tsc{nom}P
-        [\tsc{f1}]
-        [\tsc{ind}P
-            [\phantom{xxx},
-            roof
-            ]
-        ]
-    ]
-]
-\end{forest}
-
-nominative:
-
-\ex.
-\begin{forest} boom
-[\tsc{nom}P,
-tikz={
-\node[label=below:\tit{r},
-draw,circle,
-scale=0.85,
-fit to=tree]{};
-}
-    [\tsc{f1}]
-    [\tsc{ind}P
-        [\phantom{xxx},
-        roof
-        ]
-    ]
-]
-\end{forest}
-
-\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
- `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}
-
-the internal case is more complex than the external case, and the internal base part is more complex than the external non-cas part
-
-\begin{table}[H]
-  \center
- \caption {Modern German: \ac{int} > \ac{ext}}
-  \begin{tabular}[b]{cc}
-      \toprule
-      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-      \begin{forest} boom
-        [\tsc{wh}P
-            [\tsc{wh}P
-                [\tit{w}, roof]
-            ]
-            [\tsc{ana}P
-                [\tsc{ana}P
-                    [\tit{e}, roof]
-                ]
-                [\tsc{acc}P,
-                tikz={
-                \node[label=below:\tit{n},
-                draw,circle,
-                scale=0.85,
-                fit to=tree]{};
-                }
-                    [\tsc{f}2]
-                    [\tsc{nom}P,
-                    tikz={
-                    \node[draw,circle,
-                    fill=DG,fill opacity=0.2,
-                    DG,dashed,
-                    scale=0.8,
-                    fit to=tree]{};
-                    }
-                        [\tsc{f1}]
-                        [\tsc{ind}P
-                            [\phantom{xxx},
-                            roof, baseline
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      &
-      \begin{forest} boom
-        [\textcolor{DG}{\ac{nom}},edge=DG,
-        tikz={
-        \node[label=below:\textcolor{DG}{\tit{r}},
-        draw,circle,
-        scale=0.75,
-        DG,
-        fit to=tree]{};
-        \node[
-        draw,circle,
-        scale=0.8,
-        dashed,DG,
-        fit to=tree]{};
-        }
-            [\textcolor{DG}{\tsc{f1}},edge=DG]
-            [\textcolor{DG}{\tsc{ind}P},edge=DG
-                [\phantom{xxx},
-                roof, baseline,edge=DG
-                ]
-            ]
-        ]
-      \end{forest}\\
-      \bottomrule
-  \end{tabular}
-  \label{tbl:mg-int-wins}
-\end{table}
-
-\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
-1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep}
-
-the external case is more complex than the internal case, but the external base part is not more complex than the internal base part
-
-\begin{table}[H]
-  \center
- \caption {Modern German: \ac{int} > \ac{ext}}
-  \begin{tabular}[b]{cc}
-      \toprule
-      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-      \begin{forest} boom
-        [\tsc{wh}P
-            [\tsc{wh}P
-                [\tit{w}, roof]
-            ]
-            [\tsc{ana}P
-                [\tsc{ana}P
-                    [\tit{e}, roof]
-                ]
-                [\textcolor{DG}{\ac{nom}},edge=DG,
-                tikz={
-                \node[label=below:\textcolor{DG}{\tit{r}},
-                draw,circle,
-                scale=0.75,
-                DG,
-                fit to=tree]{};
-                \node[
-                draw,circle,
-                scale=0.8,
-                dashed,DG,
-                fit to=tree]{};
-                }
-                    [\textcolor{DG}{\tsc{f1}},edge=DG]
-                    [\textcolor{DG}{\tsc{ind}P},edge=DG
-                        [\phantom{xxx},
-                        roof, baseline,edge=DG
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      &
-      \begin{forest} boom
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{n},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P,
-          tikz={
-          \node[draw,circle,
-          fill=DG,fill opacity=0.2,
-          DG,dashed,
-          scale=0.8,
-          fit to=tree]{};
-          }
-              [\tsc{f1}]
-              [\tsc{ind}P
-                  [\phantom{xxx},
-                  roof, baseline
-                  ]
-              ]
-          ]
-      ]
-      \end{forest}\\
-      \bottomrule
-  \end{tabular}
-  \label{tbl:mg-ext-wins}
-\end{table}
-
-
-
-\section{Deriving the matching type}\label{sec:deriving-matching}
-
-
-Polish only allows the deletion of the light head in the matching situation. It is not obligatory there, you can just as well have a light-headed relative. The deletion is possible, because you have two elements that are pretty similar?
-
-\exg. Jan czyta to, co Maria czyta.\\
- Jan read this what Maria reads\\
- `Jan reads what Maria reads.' \flushfill{Polish, \pgcitealt{citko2004}{96}}
-
-
-Radek: Czech distinguishes between accidental uniqueness and inherent uniqueness. Accidental uniqueness: with \tsc{dem}, inherent uniqueness: without \tsc{dem}.
-
-Radek's situation:
-
-Two student assistants A and B are at their shared workdesk, which they share with other student assistants and where there’s a computer and a couple of other things, including a book (it doesn’t really matter to whom the book belongs). A is looking for a pencil, B says
-
-\exg. Nějaká tužka je vedle {počítače /\#toho počítače}.\\
-some pencil is {next to} computer \tsc{dem} computer\\
-`There’s a pencil next to the computer.'
-
-All situations like the topic situation – A and B’s shared office (desk)– have exactly one computer in it.
-
-\exg. Nějaká tužka je vedle {té knížky /\#knížky}\\
-some pencil is {next to} \tsc{dem} book book\\
-`There’s a pencil next to the book.'
-
-There is exactly one book in the topic situation – A and B’s shared office (desk) – and it does not hold that all situation like the topic situation have exactly one book in it
-
-Florian showed that this is different for Modern German:
-
-\begin{table}[H]
-\begin{tabular}{c|ccc}
-\toprule
-       & anaphoric                & situational uniqueness              & inherent uniqueness                 \\
-       \cmidrule{2-4}
-Polish & \tsc{dem}  & \cellcolor{DG}\tsc{dem}             & ∅                                   \\
-German & \tsc{dem}\scsub{strong}  & \cellcolor{LG}\tsc{dem}\scsub{weak} & \cellcolor{LG}\tsc{dem}\scsub{weak} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\tit{to} is incompatible with \tit{ever}, because \tit{to} makes it accidentally uniqueness and \tit{ever} requires inherent uniqueness
-
-
-\section{Excluding the external-only type}
+\section{Technical details}
 
 
 
