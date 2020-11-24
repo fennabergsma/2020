@@ -986,7 +986,7 @@ The second parameter concerns whether the internal case is allowed to surface wh
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
       \node (question2) [question]
-      {allow \tsc{ext}?};
+      {allow \tsc{ext} + \tsc{int}?};
           \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
           {non-matching};
               \node (example2) [example, below of=outcome2, yshift=0.25cm]
@@ -1041,7 +1041,7 @@ Consider the light-headed relative in \ref{ex:ohg-double}.
 
 In my proposal, the difference between a light headed relative and a headless relative is that in a headless relative either the light head or the relative pronoun does not surface. The surfacing element is the one that bears the winning case, and the absent element is the one that bears the losing case. This means that what I have been glossing as and calling the relative pronoun, so far, is sometimes actually the light head. To reflect that, I call the surfacing element from now on the surface pronoun.
 
-This is more or less what is going on in a non-matching type language as Old High German. However, more needs to be said about other types of languages. As I showed in Chapter \ref{ch:typlogy}, other languages types do not allow the internal or external case to surface when either of them wins the case competition. In an internal-only type language as Modern German, the more complex case is only allowed to surface when it is the internal case, and it is not allowed to surface when it is the external case. In a matching type language as Polish allows neither the internal nor the external case to surface. In these cases, it is neither the light head nor the relative pronoun that surfaces, but the construction is simply ungrammatical.
+This is more or less what is going on in a non-matching type language as Old High German. However, more needs to be said about other types of languages. As I showed in Chapter \ref{ch:typology}, other languages types do not allow the internal or external case to surface when either of them wins the case competition. In an internal-only type language as Modern German, the more complex case is only allowed to surface when it is the internal case, and it is not allowed to surface when it is the external case. In a matching type language as Polish allows neither the internal nor the external case to surface. In these cases, it is neither the light head nor the relative pronoun that surfaces, but the construction is simply ungrammatical.
 
 Table \ref{tbl:options-surface-pronoun} summarizes what I just laid out.
 There are three options for the surface pronoun. First, the surface pronoun can appear as the relative pronoun and bear the internal case. Second, the surface pronoun can appear as the light head and bear external case. Third, there is no grammatical form for the surface pronoun.
@@ -1061,47 +1061,66 @@ light head\scsub{ext}       \\
 \label{tbl:options-surface-pronoun}
 \end{table}
 
-The second column shows the situation in which the internal case is the most complex, and the surface pronoun is the relative pronoun that bears the internal case. The third column shows the situation in which the external case is the most complex, and the surface pronoun is the light head that bears the external case.
-Old High German allows both the internal case and the external case to surface when either of them wins the case competition. The surface pronoun can be either the relative pronoun or the light head.
-Modern German allows only the internal case to surface when it wins the case competition, and it does not allow the external case to do so. The surface pronoun can only be the relative pronoun and not the light head.
-Polish allows neither the internal nor the external case to surface when either of them wins the case competition. The surface pronoun can neither be the relative pronoun nor the light head.
+Table \ref{tbl:overview-rel-light} shows per language type whether it allows the relative pronoun and light head to surface.
+The first column lists the types of language and an example of language. The second column shows the situation in which the internal case is the most complex. The surface pronoun is the relative pronoun that bears the internal case. The third column shows the situation in which the external case is the most complex. The surface pronoun is the light head that bears the external case. The checkmark (✔) and asterix (*) indicate whether this is grammatical in the language.
+The non-matching type of language, as Old High German, allows both the internal case and the external case to surface when either of them wins the case competition. The surface pronoun can be either the relative pronoun or the light head.
+The internal-only type of language, as Modern German, allows only the internal case to surface when it wins the case competition, and it does not allow the external case to do so. The surface pronoun can only be the relative pronoun and not the light head.
+The matching type of language, as Polish, allows neither the internal nor the external case to surface when either of them wins the case competition. The surface pronoun can neither be the relative pronoun nor the light head.
+The language type that is not attested is the external-only type. That means that there is no language that allows only the external case to surface when it wins the case competition, and it does not allow the internal case to do so. In other words, there exist no language, in which the surface pronoun can only be the light head and not the relative pronoun.
 
 \begin{table}[H]
   \center
-  \caption{Overview of languages}
+  \caption{Relative pronoun and light head per language}
 \begin{tabular}{ccc}
   \toprule
-                 & \tsc{int} > \tsc{ext}        & \tsc{int} < \tsc{ext} \\
-                 & relative pronoun\scsub{int}  & light head\scsub{ext} \\
-                      \cmidrule{1-3}
-Old High German  & ✔                            & ✔                   \\
-Modern German    & ✔                            & *                   \\
-Polish           & *                            & *                   \\
+                                & \tsc{int} > \tsc{ext}        & \tsc{int} < \tsc{ext} \\
+                                & relative pronoun\scsub{int}  & light head\scsub{ext} \\
+                                  \cmidrule{2-3}
+Non-matching (Old High German)  & ✔                            & ✔                   \\
+Internal-only (Modern German)   & ✔                            & *                   \\
+Matching (Polish)               & *                            & *                   \\
+External-only (not attested)    & *                            & ✔                   \\
 \bottomrule
 \end{tabular}
-\label{tbl:overview}
+\label{tbl:overview-rel-light}
 \end{table}
 
+What I have done so far is reformulate the two descriptive parameters from Figure \ref{fig:two-parameters} into two different descriptive parameters. Whether the internal and external case are allowed to surface corresponds to whether the relative and light head are allowed to surface. Whether the the internal case is allowed to surface corresponds to whether the relative pronoun is allowed to surface. I show this in Figure \ref{fig:two-parameters-different}.
 
+\begin{figure}[H]
+  \centering
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {allow relative pronoun and light head?};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {non-matching};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {allow relative pronoun?};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {internal-only};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {matching};
+                  \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Polish\\\phantom{x}}};
 
+    \draw [arrow] (question2) -- node[anchor=east] {yes} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {no} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {yes} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {no} (outcome4);
+    \end{tikzpicture}
+    }
+    \caption{Two descriptive parameters generate three language types (light head/relative)}
+    \label{fig:two-parameters-different}
+\end{figure}
 
-% (\citealt{fuss2014,hanink2018} argue the same but for Modern German).\footnote{
-% A difference with Modern German is that there can only be a single element when the cases match. In Section \ref{ch:discussion} I return to the point why Modern German does not have non-matching headless relatives that look like Old High German, although it still has syncretic relative pronouns and light heads.
-% }).
-%
-% \footnote{
-% I am far from the only one that assumes this. Himmelreich, Hanink, but also Bresnan/Grimshaw, Groos/Riemsdijk, Harbert..
-% }
+Reformulating these parameters is not just restating the generalization in different terms. I identified the hosts for the cases, and not just whether they come from inside or outside of the relative clause. These hosts do not only correspond to case features, but also to other features that have to do with referentiality, number, gender, definiteness, etc. I propose that the difference between languages come from the comparison between the relative pronoun and the light head. For that reason, I need to look into the syntactic structure of the relative pronouns an light heads.
 
-Now I turn to the so-called base of the internal and external element. The internal and the external element do not only consist of case features. They also contain other features. These other features have to do with referentiality, number, gender, definiteness, etc. I call the part of the internal and external element that corresponds to these features the base part. I refer to the part that corresponds to the case features as the case part.
-
-
-
-
-Now I have introduced the concepts internal and external element and their bases, I turn to the basic idea behind my proposal. The goal is to give a theoretical account that derives whether a language allows the internal or external case to surface when it wins the case competition or whether it does not.
-
-Every constituent of the element that bears the winning case needs to contain every constituent of the element that bears the losing case.
-
+Table \ref{tbl:rel-lh-structure} gives a simplified representation of a relative pronoun and a light head. I start from the assumption that the relative pronoun and the light head partly contain the same syntactic features. In this simplified representation, the features they have in common are phi-features (ϕ) and case features (\tsc{k}). The relative pronoun and the light head differ from each other in that the relative pronoun in addition contains a relative feature (\tsc{rel}).
 
 \begin{table}[H]
   \center
@@ -1110,9 +1129,7 @@ Every constituent of the element that bears the winning case needs to contain ev
       \toprule
       \begin{forest} boom
         [\tsc{rel}P
-            [\tsc{rel}P
-                [\tsc{rel}, roof]
-            ]
+            [\tsc{rel}]
             [\tsc{k}P,
                 [\tsc{k}]
                 [ϕP
@@ -1134,67 +1151,126 @@ Every constituent of the element that bears the winning case needs to contain ev
       relative pronoun & & light head \\
       \bottomrule
   \end{tabular}
+  \label{tbl:rel-lh-structure}
 \end{table}
 
+Now the time has come that I can introduce my proposal.
+
+\ex. An element (i.e. the relative pronoun or the light head) is able to surface when it contains all features the other element (i.e. the relative pronoun or the light head) contains. (to be revised)\label{ex:my-proposal}
+
+From Table \ref{tbl:rel-lh-structure} it is immediately clear that the relative pronoun contains the light head, but not the other way around. The relative pronoun contains ϕ and \tsc{k} that the light head also contains. The light head does not contain \tsc{rel}. The pattern that I describe here is the internal-only pattern, the one that Modern German shows. However, not all language are of the internal-only pattern.
+
+I do not derive the difference between the languages from changing the feature content of the relative pronoun and light head per language.\footnote{
+The feature content of the non-matching languages differs slightly from that of the internal-only and matching languages. This is due to the fact that this language type uses a different type of relative pronoun. The basic idea of the relative pronoun having at least one more feature than the light head remains the same.
+}
+Instead, the difference comes from how the relative pronouns and light heads are spelled out. In Sections \ref{sec:deriving-only-internal} to Section \ref{sec:deriving-nonmatching}, I show how I implement this idea. In a nutshell, the idea is that matching languages like Polish package their features together differently in such a way that the constituents of the relative pronoun do not contain the constituents of the light head. Non-matching languages like Old High German have a syncretism between relative pronouns and light heads, and therefore allow also allow the light head to surface.
+What is clear, however, is that there is no way that all constituents of the light head contains the constituents of the relative pronoun.
+
+\ex. An element (i.e. the relative pronoun or the light head) is able to surface when it contains all constituent the other element (i.e. the relative pronoun or the light head) contains.\label{ex:my-proposal}
+
+% The idea that a different constituency leads to the absence of different syntactic structured is illustrated by Cinque with nouns and adjectives. > move this the polish part
+% This syncretism idea also works for different
 
 
+% \begin{table}[H]
+%   \center
+%   \caption{Combinations of allowing the relative pronoun and light head}
+% \begin{tabular}{ccc}
+%   \toprule
+%                           & allow light head    & disallow light head \\
+%                           \cmidrule{2-3}
+% allow relative pronoun    & ✔ (non-matching)    & ✔ (internal-only)   \\
+% disallow relative pronoun & * (external-only)   & ✔ (matching)        \\
+% \bottomrule
+% \end{tabular}
+% \label{tbl:overview-rel-light}
+% \end{table}
 
+% (\citealt{fuss2014,hanink2018} argue the same but for Modern German).\footnote{
+% A difference with Modern German is that there can only be a single element when the cases match. In Section \ref{ch:discussion} I return to the point why Modern German does not have non-matching headless relatives that look like Old High German, although it still has syncretic relative pronouns and light heads.
+% }).
+%
+% \footnote{
+% I am far from the only one that assumes this. Himmelreich, Hanink, but also Bresnan/Grimshaw, Groos/Riemsdijk, Harbert..
+% }
 
-\ex. \tsc{int} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}P
-          [\tsc{rel}, roof]
-      ]
-      [\tsc{nom}P,
-          [\tsc{f}1]
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof]
-          ]
-      ]
-  ]
-\end{forest}
+Let me now show how different cases play a role in this picture.
 
-\ex. \tsc{int} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}P
-          [\tsc{rel}, roof]
-      ]
-      [\tsc{acc}P,
-          [\tsc{f}2]
-          [\tsc{nom}P,
-              [\tsc{f}1]
-              [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
+\begin{table}[H]
+  \center
+ \caption {Relative pronoun with most complex case}
+  \begin{tabular}[b]{ccc}
+      \toprule
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P
+                [\tsc{rel}, roof]
+            ]
+            [\tsc{acc}P,
+                [\tsc{f}2]
+                [\tsc{nom}P,
+                    [\tsc{f}1]
+                    [ϕP
+                        [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{nom}P,
+            [\tsc{f}1]
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
+            ]
+        ]
+      \end{forest}\\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      relative pronoun & & light head \\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:rel-most-complex}
+\end{table}
 
-\ex. \tsc{ext} \tsc{acc}\\
-\begin{forest} boom
-  [\tsc{acc}P,
-      [\tsc{f}2]
-      [\tsc{nom}P,
-          [\tsc{f}1]
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof]
-          ]
-      ]
-  ]
-\end{forest}
+\begin{table}[H]
+  \center
+ \caption {Light head with most complex case}
+  \begin{tabular}[b]{ccc}
+      \toprule
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P
+                [\tsc{rel}, roof]
+            ]
+            [\tsc{nom}P,
+                [\tsc{f}1]
+                [ϕP
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                ]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{acc}P,
+            [\tsc{f}2]
+            [\tsc{nom}P,
+                [\tsc{f}1]
+                [ϕP
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      relative pronoun & & light head \\
+      \bottomrule
+  \end{tabular}
+  \label{tbl:lh-most-complex}
+\end{table}
 
-\ex. \tsc{ext} \tsc{nom}\\
-\begin{forest} boom
-  [\tsc{nom}P,
-      [\tsc{f}1]
-      [ϕP
-          [\phantom{x}ϕ\phantom{x}, roof]
-      ]
-  ]
-\end{forest}
+Actually, case comparison is not necessary anymore..
 
 I propose that this follows from the comparison between the internal and external base within a language.
 In the comparison, I rely on containment, just as I did in Chapter \ref{ch:decomposition} when comparing cases. I went with the following reasoning. A more complex case wins over a less complex case because the former contains all features that the latter contains. Concretely, the dative wins over the accusative because the dative contains all features that the accusative contains, the dative wins over the nominative because the dative contains all features that the nominative contains, and the accusative wins over the nominative because the accusative contains all features that the nominative contains.
@@ -1804,6 +1880,12 @@ To sum up, Old High German allows the internal and the external case to surface 
 
 
 \section{Deriving the internal-only type}\label{sec:deriving-only-internal}
+
+Ich habe n gesehen.
+
+Ich habe m geholfen.
+
+Hat r nen Motorrad?
 
 Only internal wins, external cannot. I illustrate this with nominative and accusative.
 
