@@ -344,7 +344,6 @@ Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} e
 
 In sum, the external element is a copy of a subset of the features of the relative pronoun. Definiteness and case are not copied. New features can be merged onto the external element.
 
-
 \section{Deriving the internal-only type}\label{sec:deriving-only-internal}
 
 Only internal wins, external cannot. I illustrate this with nominative and accusative.
@@ -1562,7 +1561,17 @@ German & \tsc{dem}\scsub{strong}  & \cellcolor{LG}\tsc{dem}\scsub{weak} & \cellc
 
 \section{Deriving the non-matching type}\label{sec:deriving-nonmatching}
 
+\exg. quham dher chisendit scolda uuerdhan\\
+ come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
+ `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep-workout}
 
+\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
+\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+`this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-rep}
+
+\exg. ih bibringu fona iacobes samin endi fona iuda dhen \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
+1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-rep}
 
 \ex. Old High German: \tsc{ext} \tsc{acc}\\
 \scriptsize{
@@ -1944,7 +1953,6 @@ This allows me to propose the following lexical entries for the two suffixes.
 \label{ex:ohg-en-lexicon}
 
 The \tit{d} morpheme corresponds to definiteness and anaphoricity. Anaphoricity establishes a relation with another element in the (linguistic) discourse. Definiteness encodes that the referent is specific.
-%what can I say about the difference between REL and DEM? Should I include some features REL that causes to movement to the left periphery?
 
 \ex.
 \begin{forest} boom
@@ -2031,358 +2039,33 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
   ]
 \end{forest}
 
-So, there is a base part and a case part. Actually, the case part also has some case in it, but that does not matter because they are identical in both case parts.
-
-I start with the first example from Table \ref{tbl:forms-ohg}, in which the internal and external case match (\tsc{int} = \tsc{ext}). The example that corresponds to this example is given in \ref{ex:ohg-nom-nom-rep}.
-
-\exg. quham dher chisendit scolda uuerdhan\\
- come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
- `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep-workout}
-
- \begin{table}[H]
-   \center
-  \caption {Old High German: \ac{int} = \ac{ext}}
-   \begin{tabular}[b]{cc}
-       \toprule
-       \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-       \footnotesize{
-       \begin{forest} boom
-         [DP
-             [DP,
-               tikz={
-               \node[draw,circle,
-               fill=DG,fill opacity=0.2,
-               scale=0.75,
-               DG,dashed,
-               fit to=tree]{};
-               }
-                 [\tit{d}, roof]
-             ]
-             [\tsc{d}P, s sep=20mm
-                 [\tsc{d}P,
-                 tikz={
-                 \node[draw,circle,
-                 fill=DG,fill opacity=0.2,
-                 scale=0.75,
-                 DG,dashed,
-                 fit to=tree]{};
-                 }
-                     [\tit{e}, roof]
-                 ]
-                 [\tsc{nom}P,
-                 tikz={
-                 \node[label=below:\tit{er},
-                 draw,circle,
-                 scale=0.85,
-                 fit to=tree]{};
-                 \node[draw,circle,
-                 fill=DG,fill opacity=0.2,
-                 DG,dashed,
-                 scale=0.8,
-                 fit to=tree]{};
-                 }
-                     [\tsc{f1}]
-                     [\tsc{ind}P
-                         [\phantom{xxx},
-                         roof, baseline
-                         ]
-                     ]
-                 ]
-             ]
-         ]
-       \end{forest}
-       }
-       &
-       \footnotesize{
-       \begin{forest} boom
-         [\textcolor{DG}{DP}
-             [\textcolor{DG}{DP},edge=DG,
-             tikz={
-             \node[draw,circle,
-             scale=0.75,
-             DG,dashed,
-             fit to=tree]{};
-             }
-                 [\textcolor{DG}{\tit{d}}, roof, edge=DG]
-             ]
-             [\textcolor{DG}{\tsc{ana}P},edge=DG, s sep=20mm
-                 [\textcolor{DG}{\tsc{ana}P},edge=DG,
-                 tikz={
-                 \node[draw,circle,
-                 scale=0.75,
-                 DG,dashed,
-                 fit to=tree]{};
-                 }
-                     [\textcolor{DG}{\tit{e}}, roof, edge=DG]
-                 ]
-                 [\textcolor{DG}{\ac{nom}},edge=DG,
-                 tikz={
-                 \node[label=below:\textcolor{DG}{\tit{r}},
-                 draw,circle,
-                 scale=0.8,
-                 DG,
-                 fit to=tree]{};
-                 \node[
-                 draw,circle,
-                 scale=0.75,
-                 dashed,DG,
-                 fit to=tree]{};
-                 }
-                     [\textcolor{DG}{\tsc{f1}},baseline,edge=DG]
-                     [\textcolor{DG}{\tsc{ind}P},edge=DG
-                         [\phantom{xxx},
-                         roof, baseline, edge=DG
-                         ]
-                     ]
-                 ]
-             ]
-         ]
-       \end{forest}
-       }\\
-       \bottomrule
-   \end{tabular}
-   \label{tbl:ohg-match}
- \end{table}
-
-% There are two independent containment relations. Problem?
-
-\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
-\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
-`this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-rep}
-
-\begin{table}[H]
-  \center
- \caption {Old High German: \ac{int} > \ac{ext}}
-  \begin{tabular}[b]{cc}
-      \toprule
-      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-      \footnotesize{
-      \begin{forest} boom
-        [DP
-            [DP,
-              tikz={
-              \node[draw,circle,
-              fill=DG,fill opacity=0.2,
-              scale=0.75,
-              DG,dashed,
-              fit to=tree]{};
-              }
-                [\tit{d}, roof]
-            ]
-            [\tsc{ana}P, s sep=20mm
-                [\tsc{ana}P,
-                tikz={
-                \node[draw,circle,
-                fill=DG,fill opacity=0.2,
-                scale=0.75,
-                DG,dashed,
-                fit to=tree]{};
-                }
-                    [\tit{e}, roof]
-                ]
-                [\tsc{acc}P,
-                tikz={
-                \node[label=below:\tit{n},
-                draw,circle,
-                scale=0.85,
-                fit to=tree]{};
-                }
-                    [\tsc{f}2]
-                    [\tsc{nom}P,
-                      tikz={
-                      \node[draw,circle,
-                      fill=DG,fill opacity=0.2,
-                      DG,dashed,
-                      scale=0.8,
-                      fit to=tree]{};
-                      }
-                        [\tsc{f1}]
-                        [\tsc{ind}P
-                            [\phantom{xxx},
-                            roof, baseline
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      }
-      &
-      \footnotesize{
-      \begin{forest} boom
-        [\textcolor{DG}{DP}
-            [\textcolor{DG}{DP},edge=DG,
-            tikz={
-            \node[draw,circle,
-            scale=0.75,
-            DG,dashed,
-            fit to=tree]{};
-            }
-                [\textcolor{DG}{\tit{d}}, roof, edge=DG]
-            ]
-            [\textcolor{DG}{\tsc{ana}P},edge=DG, s sep=20mm
-                [\textcolor{DG}{\tsc{ana}P},edge=DG,
-                tikz={
-                \node[draw,circle,
-                scale=0.75,
-                DG,dashed,
-                fit to=tree]{};
-                }
-                    [\textcolor{DG}{\tit{e}}, roof, edge=DG]
-                ]
-                [\textcolor{DG}{\ac{nom}},edge=DG,
-                tikz={
-                \node[label=below:\textcolor{DG}{\tit{r}},
-                draw,circle,
-                scale=0.75,
-                DG,
-                fit to=tree]{};
-                \node[
-                draw,circle,
-                scale=0.8,
-                dashed,DG,
-                fit to=tree]{};
-                }
-                    [\textcolor{DG}{\tsc{f1}},baseline,edge=DG]
-                    [\textcolor{DG}{\tsc{ind}P},edge=DG
-                        [\phantom{xxx},
-                        roof, baseline, edge=DG
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      }\\
-      \bottomrule
-  \end{tabular}
-  \label{tbl:ohg-int-wins}
-\end{table}
-
-\exg. ih bibringu fona iacobes samin endi fona iuda dhen \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
-1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-rep}
-
-\begin{table}[H]
-  \center
- \caption {Old High German: \ac{int} < \ac{ext}}
-  \begin{tabular}[b]{cc}
-      \toprule
-      \ac{int}  &   \ac{ext} \\ \cmidrule{1-2}
-      \footnotesize{
-      \begin{forest} boom
-        [\textcolor{DG}{DP}
-            [\textcolor{DG}{DP},edge=DG,
-            tikz={
-            \node[draw,circle,
-            scale=0.75,
-            DG,dashed,
-            fit to=tree]{};
-            }
-                [\textcolor{DG}{\tit{d}}, roof, edge=DG]
-            ]
-            [\textcolor{DG}{\tsc{ana}P},edge=DG
-                [\textcolor{DG}{\tsc{ana}P},edge=DG,
-                tikz={
-                \node[draw,circle,
-                scale=0.75,
-                DG,dashed,
-                fit to=tree]{};
-                }
-                    [\textcolor{DG}{\tit{e}}, roof, edge=DG]
-                ]
-                [\textcolor{DG}{\ac{nom}},edge=DG,
-                tikz={
-                \node[label=below:\textcolor{DG}{\tit{r}},
-                draw,circle,
-                scale=0.75,
-                DG,
-                fit to=tree]{};
-                \node[
-                draw,circle,
-                scale=0.8,
-                dashed,DG,
-                fit to=tree]{};
-                }
-                    [\textcolor{DG}{\tsc{f1}},baseline,edge=DG]
-                    [\textcolor{DG}{\tsc{ind}P},edge=DG
-                        [\phantom{xxx},
-                        roof, baseline, edge=DG
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest}
-      }
-      &
-      \footnotesize{
-      \begin{forest} boom
-        [DP
-            [DP,
-              tikz={
-              \node[draw,circle,
-              fill=DG,fill opacity=0.2,
-              scale=0.75,
-              DG,dashed,
-              fit to=tree]{};
-              }
-                [\tit{d}, roof]
-            ]
-            [\tsc{ana}P
-                [\tsc{ana}P,
-                tikz={
-                \node[draw,circle,
-                fill=DG,fill opacity=0.2,
-                scale=0.75,
-                DG,dashed,
-                fit to=tree]{};
-                }
-                    [\tit{e}, roof]
-                ]
-                [\tsc{acc}P,
-                tikz={
-                \node[label=below:\tit{n},
-                draw,circle,
-                scale=0.85,
-                fit to=tree]{};
-                }
-                    [\tsc{f}2]
-                    [\tsc{nom}P,
-                      tikz={
-                      \node[draw,circle,
-                      fill=DG,fill opacity=0.2,
-                      DG,dashed,
-                      scale=0.8,
-                      fit to=tree]{};
-                      }
-                        [\tsc{f1}]
-                        [\tsc{ind}P
-                            [\phantom{xxx},
-                            roof, baseline
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-      \end{forest} }\\
-      \bottomrule
-  \end{tabular}
-  \label{tbl:ohg-ext-wins}
-\end{table}
-
 To sum up, Old High German allows the internal and the external case to surface when either of them wins the case competition. This is due to the fact that the bases of the internal and the external element are syncretic. Because of that, the internal base contains the external base, which allows the internal case to surface, and the external base contains the internal base, which allows the external case to surface.
-
-
-
 
 
 
 
 \section{Technical details}
 
+\ex. \tbf{Spellout Algorithm:}\\
+Merge F and \label{ex:spellout}
+ \a. Spell out FP.
+ \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+ \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+When a new match is found, it overrides previous spellouts.
+
+\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
+Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\
+If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+\phantom{x}
 
 
 
@@ -2610,236 +2293,3 @@ three parameters:
 3 if \tsc{ext} --- \tsc{int} is asymmetric, \tsc{ext} or \tsc{int} probes
 
 I keep the parameters she has stable, the bigger syntactic context is the same everywhere. I vary the content of \tsc{ext}
-
-\section{Aside: D between ϕ and K}
-
-How can cases and number/gender be packaged together to the exclusion of D? Because D is actually merged below K. Let me illustrate this.
-
-\ex. \tbf{Spellout Algorithm:}\\
-Merge F and \label{ex:spellout}
- \a. Spell out FP.
- \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
- \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
-
-\ex.
-\begin{forest} boom
-  [\tsc{class}P,
-  tikz={
-  \node[label=below:\tit{er},
-  draw,circle,
-  scale=0.80,
-  fit to=tree]{};
-  }
-      [\tsc{class}]
-      [\tsc{ref}]
-  ]
-\end{forest}
-
-When a new match is found, it overrides previous spellouts.
-
-\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
-Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
-
-\ex.
-\begin{forest} boom
-  [\tsc{masc}P,
-  tikz={
-  \node[label=below:\tit{er},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{masc}]
-      [\tsc{class}P
-          [\tsc{class}]
-          [\tsc{ref}]
-      ]
-  ]
-\end{forest}
-
-\ex.
-\begin{forest} boom
-  [\tsc{ind}P,
-  tikz={
-  \node[label=below:\tit{er},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{ind}]
-      [\tsc{masc}P
-          [\tsc{masc}]
-          [\tsc{class}P
-              [\tsc{class}]
-              [\tsc{ref}]
-          ]
-      ]
-  ]
-\end{forest}
-
-\tsc{ana} cannot be spelled out together with what has been spelled out so far. Try the movements, which is not helping. I need to make a left branch.
-
-\ex.
-\begin{forest} boom
-  [\tsc{ana}P
-      [\tsc{ana}]
-      [\tsc{ind}P,
-      tikz={
-      \node[label=below:\tit{er},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{ind}]
-          [\tsc{masc}P
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref}]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-A specifier is constructed.
-
-\ex. \tbf{Spec Formation} \citep{starke2018}:\\
-If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
-
-\ex.
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{ana}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.80,
-      fit to=tree]{};
-      }
-          [\tsc{d}]
-          [\tsc{ana}]
-      ]
-      [\tsc{ind}P,
-      tikz={
-      \node[label=below:\tit{er},
-      draw,circle,
-      scale=0.85,
-      fit to=tree]{};
-      }
-          [\tsc{ind}]
-          [\tsc{masc}P
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref}]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
-
-\ex. \tbf{Backtracking} \citep{starke2018}:\\
-When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
-
-\ex.
-\a.
-\begin{forest} boom
-  [\tsc{nom}P,
-  tikz={
-  \node[label=below:\tit{er},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}1]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{masc}P
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref}]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\b.
-\begin{forest} boom
-[\tsc{d}P,
-tikz={
-\node[label=below:\tit{d},
-draw,circle,
-scale=0.80,
-fit to=tree]{};
-}
-    [\tsc{d}]
-    [\tsc{ana}]
-]
-\end{forest}
-
-\ex.
-\begin{forest} boom
-  [\tsc{acc}P,
-  tikz={
-  \node[label=below:\tit{er},
-  draw,circle,
-  scale=0.85,
-  fit to=tree]{};
-  }
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref}]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-
-\begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.80,
-      fit to=tree]{};
-      }
-          [\tsc{d}]
-          [\tsc{ana}]
-      ]
-      [\tsc{nom}P,
-      tikz={
-      \node[label=below:\tit{er},
-      draw,circle,
-      scale=0.80,
-      fit to=tree]{};
-      }
-          [\tsc{f1}]
-          [\tsc{ind}P
-              [\phantom{xxx},
-              roof, baseline
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-
-
-
-\phantom{x}
