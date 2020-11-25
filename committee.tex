@@ -739,17 +739,33 @@ Modern German light head in nominative case
 \end{forest}
 }
 
+Consider the example in \ref{ex:mg-nom-nom-rep}, in which the internal nominative case competes against the external nominative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
+The internal case is nominative, as the predicate \tit{mögen} `to like' takes nominative subjects. The relative pronoun \tit{wer} `\ac{rel}.\ac{an}.\ac{nom}' appears in the nominative case. This is the element that surfaces.
+The external case is nominative as well, as the predicate \tit{besuchen} `to visit' also takes nominative subjects. The light head \tit{ər} `\ac{dem}.\ac{an}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
 
-
-\exg. Uns besucht, wer Maria mag.\\
- 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{an}.\ac{nom} Maria.\ac{acc} like.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+\exg. Uns besucht [\underline{ər}], \underline{\tbf{wer}} \tbf{Maria} \tbf{mag}.\\
+ 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{dem}.\ac{an}.\ac{nom} \ac{rel}.\ac{an}.\ac{nom} Maria.\ac{acc} like.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
  `Who visits us likes Maria.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-nom-rep}
 
-\begin{table}[H]
+In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the relative pronoun at the top and the syntactic structure of the light head at the bottom.
+The relative pronoun consists of three morphemes: \tit{w}, \tit{e} and \tit{r}.
+The light head consists of two morphemes: \tit{ə} and \tit{r}.
+As usual, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is both a constituent in the relative pronoun and in the light head.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles in the light head gray.
+
+I explain this constituent by constituent.
+I start with the right-most constituent of the light head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the relative pronoun.
+I continue with the left-most constituent of the light head that spells out as \tit{ə} (\tsc{med}P). This constituent is also a constituent in the relative pronoun, contained in \tsc{dist}P.
+Both constituent of the light head is also a constituent within the relative pronoun, and the light head can be absent.
+
+\begin{figure}[H]
   \center
- \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{nom} = \tit{wer}}
   \begin{tabular}[b]{c}
       \toprule
+      \tsc{nom} relative pronoun \tit{w-e-r}
+      \\
+      \cmidrule{1-1}
       \scriptsize{
           \begin{forest} boompje
           [\tsc{rel}P, s sep=15mm
@@ -775,9 +791,8 @@ Modern German light head in nominative case
                       [\tsc{med}P,
                       tikz={
                       \node[draw,circle,
-                      fill=DG,fill opacity=0.2,
-                      DG,dashed,
-                      scale=0.95,
+                      dashed,
+                      scale=0.9,
                       fit to=tree]{};
                       }
                           [\tsc{deix}\scsub{2}]
@@ -803,9 +818,8 @@ Modern German light head in nominative case
                   scale=0.9,
                   fit to=tree]{};
                   \node[draw,circle,
-                  fill=DG,fill opacity=0.2,
-                  DG,dashed,
-                  scale=0.8,
+                  dashed,
+                  scale=0.95,
                   fit to=tree]{};
                   }
                       [\tsc{f}1]
@@ -815,78 +829,94 @@ Modern German light head in nominative case
         \end{forest}
         }
         \\
-        \cmidrule{1-1}
-        \tsc{nom} relative pronoun \tit{w-e-r}
-        \\
         \toprule
+        \tsc{nom} light head \tit{ə-r}\\
+        \cmidrule{1-1}
       \scriptsize{
       \begin{forest} boompje
-        [\textcolor{DG}{\tsc{nom}P},edge=DG, s sep=40mm
-            [\textcolor{DG}{\tsc{med}P},edge=DG,
+        [{\tsc{nom}P}, s sep=45mm
+            [{\tsc{med}P},
             tikz={
-            \node[label=below:\textcolor{DG}{\tit{ə}},
-            draw,circle,DG,
+            \node[label=below:{\tit{ə}},
+            draw,circle,
             scale=0.95,
             fit to=tree]{};
             \node[
             draw,circle,
             scale=1,
-            dashed,DG,
+            fill=DG,fill opacity=0.2,
+            dashed,
             fit to=tree]{};
             }
-                [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
-                [\textcolor{DG}{\tsc{prox}P},edge=DG
-                    [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
-                    [\textcolor{DG}{\tsc{ind}P},edge=DG
-                        [\textcolor{DG}{\tsc{ind}},edge=DG]
-                        [\textcolor{DG}{\tsc{masc}P},edge=DG
-                            [\textcolor{DG}{\tsc{masc}},edge=DG]
-                            [\textcolor{DG}{\tsc{class}P},edge=DG
-                                [\textcolor{DG}{\tsc{class}},edge=DG]
-                                [\textcolor{DG}{\tsc{ref}},edge=DG]
+                [{\tsc{deix}\scsub{2}}]
+                [{\tsc{prox}P}
+                    [{\tsc{deix}\tsc{1}}]
+                    [{\tsc{ind}P}
+                        [{\tsc{ind}}]
+                        [{\tsc{masc}P}
+                            [{\tsc{masc}}]
+                            [{\tsc{class}P}
+                                [{\tsc{class}}]
+                                [{\tsc{ref}}]
                             ]
                         ]
                     ]
                 ]
             ]
-            [\textcolor{DG}{\tsc{nom}P},edge=DG,
+            [{\tsc{nom}P},
             tikz={
-            \node[label=below:\textcolor{DG}{\tit{r}},
-            draw,circle,DG,
+            \node[label=below:{\tit{r}},
+            draw,circle,
             scale=0.8,
             fit to=tree]{};
             \node[
             draw,circle,
+            fill=DG,fill opacity=0.2,
             scale=0.9,
-            dashed,DG,
+            dashed,
             fit to=tree]{};
             }
-                [\textcolor{DG}{\tsc{f}1},edge=DG]
+                [{\tsc{f}1}]
             ]
         ]
       \end{forest}
       }
       \\
-      \cmidrule{1-1}
-      \tsc{nom} light head \tit{ə-r}\\
       \bottomrule
   \end{tabular}
-  \label{tbl:mg-int=ext}
-\end{table}
+  \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{nom} = \tit{wer}}
+  \label{fig:mg-int=ext}
+\end{figure}
 
+Consider the example in \ref{ex:mg-nom-acc-rep}, in which the internal accusative case competes against the external nominative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
+The internal case is accusative, as the predicate \tit{mögen} `to like' takes accusative objects. The relative pronoun \tit{wen} `\ac{rel}.\ac{an}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
+The external case is nominative, as the predicate \tit{besuchen} `to visit' takes nominative subjects. The light head \tit{ər} `\ac{dem}.\ac{an}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
 
-\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
- `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}
+\exg. Uns besucht [\underline{ər}] \underline{\tbf{wen}} \tbf{Maria} \tbf{mag}.\\
+ we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{dem}.\ac{nom}.\tsc{an} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
+ `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-rep}
 
-the internal case is more complex than the external case, and the internal base part is more complex than the external non-cas part
+In Figure \ref{fig:mg-int>ext}, I give the syntactic structure of the relative pronoun at the top and the syntactic structure of the light head at the bottom.
+The relative pronoun consists of three morphemes: \tit{w}, \tit{e} and \tit{n}.
+The light head consists of two morphemes: \tit{ə} and \tit{r}.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is both a constituent in the relative pronoun and in the light head.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles in the light head gray.
 
-\begin{table}[H]
+I explain this constituent by constituent.
+I start with the right-most constituent of the light head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the relative pronoun, contained in \tsc{acc}P.
+I continue with the left-most constituent of the light head that spells out as \tit{ə} (\tsc{med}P). This constituent is also a constituent in the relative pronoun, contained in \tsc{dist}P.
+Both constituent of the light head is also a constituent within the relative pronoun, and the light head can be absent.
+
+\begin{figure}[H]
   \center
  \caption {Modern German \tsc{int}\scsub{acc} vs. \tsc{ext}\scsub{nom} = \tit{wen}}
   \begin{tabular}[b]{c}
       \toprule
-      \tiny{
+      \tsc{acc} relative pronoun \tit{w-e-n}
+      \\
+      \cmidrule{1-1}
+      \scriptsize{
       \begin{forest} boompje
         [\tsc{rel}P, s sep=15mm
             [\tsc{rel}P,
@@ -911,8 +941,7 @@ the internal case is more complex than the external case, and the internal base 
                     [\tsc{med}P,
                     tikz={
                     \node[draw,circle,
-                    fill=DG,fill opacity=0.2,
-                    DG,dashed,
+                    dashed,
                     scale=0.95,
                     fit to=tree]{};
                     }
@@ -943,8 +972,7 @@ the internal case is more complex than the external case, and the internal base 
                     [\tsc{nom}P,
                     tikz={
                     \node[draw,circle,
-                    fill=DG,fill opacity=0.2,
-                    DG,dashed,
+                    dashed,
                     scale=0.8,
                     fit to=tree]{};
                     }
@@ -956,77 +984,106 @@ the internal case is more complex than the external case, and the internal base 
       \end{forest}
       }
       \\
-      \cmidrule{1-1}
-      \tsc{acc} relative pronoun \tit{w-e-n}
-      \\
       \toprule
+      \tsc{nom} light head \tit{ə-r}
+      \\
+      \cmidrule{1-1}
       \scriptsize{
       \begin{forest} boompje
-        [\textcolor{DG}{\tsc{nom}P},edge=DG, s sep=40mm
-            [\textcolor{DG}{\tsc{med}P},edge=DG,
+        [{\tsc{nom}P}, s sep=45mm
+            [{\tsc{med}P},
             tikz={
-            \node[label=below:\textcolor{DG}{\tit{ə}},
-            draw,circle,DG,
+            \node[label=below:{\tit{ə}},
+            draw,circle,
             scale=0.95,
             fit to=tree]{};
             \node[
             draw,circle,
             scale=1,
-            dashed,DG,
+            dashed,
+            fill=DG,fill opacity=0.2,
             fit to=tree]{};
             }
-                [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
-                [\textcolor{DG}{\tsc{prox}P},edge=DG
-                    [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
-                    [\textcolor{DG}{\tsc{ind}P},edge=DG
-                        [\textcolor{DG}{\tsc{ind}},edge=DG]
-                        [\textcolor{DG}{\tsc{masc}P},edge=DG
-                            [\textcolor{DG}{\tsc{masc}},edge=DG]
-                            [\textcolor{DG}{\tsc{class}P},edge=DG
-                                [\textcolor{DG}{\tsc{class}},edge=DG]
-                                [\textcolor{DG}{\tsc{ref}},edge=DG]
+                [{\tsc{deix}\scsub{2}}]
+                [{\tsc{prox}P}
+                    [{\tsc{deix}\tsc{1}}]
+                    [{\tsc{ind}P}
+                        [{\tsc{ind}}]
+                        [{\tsc{masc}P}
+                            [{\tsc{masc}}]
+                            [{\tsc{class}P}
+                                [{\tsc{class}}]
+                                [{\tsc{ref}}]
                             ]
                         ]
                     ]
                 ]
             ]
-            [\textcolor{DG}{\tsc{nom}P},edge=DG,
+            [{\tsc{nom}P},
             tikz={
-            \node[label=below:\textcolor{DG}{\tit{r}},
-            draw,circle,DG,
+            \node[label=below:{\tit{r}},
+            draw,circle,
             scale=0.8,
             fit to=tree]{};
             \node[
             draw,circle,
             scale=0.9,
-            dashed,DG,
+            dashed,
+            fill=DG,fill opacity=0.2,
             fit to=tree]{};
             }
-                [\textcolor{DG}{\tsc{f}1},edge=DG]
+                [{\tsc{f}1}]
             ]
         ]
       \end{forest}
       }
       \\
-      \cmidrule{1-1}
-      \tsc{nom} light head \tit{ə-r}
-      \\
       \bottomrule
   \end{tabular}
-  \label{tbl:mg-int-wins}
-\end{table}
+  \label{fig:mg-int-wins}
+\end{figure}
 
-\exg. *Ich {lade ein}, wer \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+Consider the examples in \ref{ex:mg-acc-nom-rep}, in which the internal nominative case competes against the external accusative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined. It is not possible to make a grammatical headless relative in this situation.
+The internal case is nominative, as the predicate \tit{sein} `to be' takes nominative subjects. The relative pronoun \tit{wer} `\ac{rel}.\ac{an}.\ac{nom}' appears in the nominative case.
+The external case is accusative, as the predicate \tit{einladen} `to invite' takes accusative objects. The light head \tit{ən} `\ac{dem}.\ac{an}.\ac{acc}' appears in the accusative case.
+\ref{ex:mg-acc-nom-rep-rel} is the variant of the sentence in which the light head is absent and the relative pronoun surfaces, and it is ungrammatical.
+\ref{ex:mg-acc-nom-rep-lh} is the variant of the sentence in which the relative pronoun is absent and the light head surfaces, and it is ungrammatical too.
+
+\ex.\label{ex:mg-acc-nom-rep}
+\ag. *Ich {lade ein}, [\underline{ən}] \underline{\tbf{wer}} \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-u-rep}
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-rel}
+\bg. *Ich {lade ein}, \underline{ən} [\underline{\tbf{wer}}] \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-lh}
 
-the external case is more complex than the internal case, but the external base part is not more complex than the internal base part
+In Figure \ref{fig:mg-ext>int}, I give the syntactic structure of the relative pronoun at the top and the syntactic structure of the light head at the bottom.
+The relative pronoun consists of three morphemes: \tit{w}, \tit{e} and \tit{r}.
+The light head consists of two morphemes: \tit{ə} and \tit{n}.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is both a constituent in the relative pronoun and in the light head.
+Neither of the elements contains all constituents that the other contains. The relative pronoun does not contain all constituents that the light head contains, and the light head does not contain all constituents that the relative pronoun contains. As a result, none of the elements can be absent. \footnote{
+Why do we not see this result surface? Very good question.
+}
 
-\begin{table}[H]
+I explain this constituent by constituent.
+I start by showing that the light head cannot be absent.
+Consider the right-most constituent of the light head that spells out as \tit{n} (\tsc{acc}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{nom}P, but it does not contain \tsc{f}2 to make it an \tsc{acc}P.
+The light head has a constituent that is not a constituent in the relative pronoun, so the light head cannot be absent.
+However, the relative pronoun can also not be absent.
+Consider the middle constituent of the relative pronoun that spells out as \tit{e} (\tsc{dist}P). This constituent is not a constituent in the light head: the light head has a constituent \tsc{med}P, but it does not contain \tsc{deix}\scsub{3} to make it an \tsc{dist}P.
+The same hold for the right-most constituent of the relative pronoun that spells out as \tit{w} (\tsc{rel}P). The light head lacks the features \tsc{wh} and \tsc{rel} that form the \tsc{rel}P.
+The relative pronoun has constituents that are not constituents in the light head, so the relative pronoun cannot be absent.
+In sum, neither of the elements contains all constituents that the other contains, none of the elements can be absent.
+
+\begin{figure}[H]
   \center
- \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{acc} ≠ \tit{wer}}
+ \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{acc} ≠ \tit{wer}/\tit{ən}}
   \begin{tabular}[b]{c}
       \toprule
+      \tsc{nom} relative pronoun \tit{w-e-r}
+      \\
+      \cmidrule{1-1}
       \scriptsize{
           \begin{forest} boompje
           [\tsc{rel}P, s sep=15mm
@@ -1052,8 +1109,7 @@ the external case is more complex than the internal case, but the external base 
                       [\tsc{med}P,
                       tikz={
                       \node[draw,circle,
-                      fill=DG,fill opacity=0.2,
-                      DG,dashed,
+                      dashed,
                       scale=0.95,
                       fit to=tree]{};
                       }
@@ -1080,8 +1136,7 @@ the external case is more complex than the internal case, but the external base 
                   scale=0.9,
                   fit to=tree]{};
                   \node[draw,circle,
-                  fill=DG,fill opacity=0.2,
-                  DG,dashed,
+                  dashed,
                   scale=0.8,
                   fit to=tree]{};
                   }
@@ -1092,41 +1147,40 @@ the external case is more complex than the internal case, but the external base 
         \end{forest}
         }
         \\
-        \cmidrule{1-1}
-        \tsc{nom} relative pronoun \tit{w-e-r}
-        \\
         \toprule
+        \tsc{acc} light head \tit{ə-n} \\
+        \cmidrule{1-1}
       \scriptsize{
       \begin{forest} boompje
-        [\textcolor{DG}{\tsc{acc}P},edge=DG, s sep=40mm
-            [\textcolor{DG}{\tsc{med}P},edge=DG,
+        [{\tsc{acc}P}, s sep=45mm
+            [{\tsc{med}P},
             tikz={
-            \node[label=below:\textcolor{DG}{\tit{ə}},
-            draw,circle,DG,
+            \node[label=below:{\tit{ə}},
+            draw,circle,
             scale=0.95,
             fit to=tree]{};
             \node[
             draw,circle,
             scale=1,
-            dashed,DG,
+            dashed,
             fit to=tree]{};
             }
-                [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
-                [\textcolor{DG}{\tsc{prox}P},edge=DG
-                    [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
-                    [\textcolor{DG}{\tsc{ind}P},edge=DG
-                        [\textcolor{DG}{\tsc{ind}},edge=DG]
-                        [\textcolor{DG}{\tsc{masc}P},edge=DG
-                            [\textcolor{DG}{\tsc{masc}},edge=DG]
-                            [\textcolor{DG}{\tsc{class}P},edge=DG
-                                [\textcolor{DG}{\tsc{class}},edge=DG]
-                                [\textcolor{DG}{\tsc{ref}},edge=DG]
+                [{\tsc{deix}\scsub{2}}]
+                [{\tsc{prox}P}
+                    [{\tsc{deix}\tsc{1}}]
+                    [{\tsc{ind}P}
+                        [{\tsc{ind}}]
+                        [{\tsc{masc}P}
+                            [{\tsc{masc}}]
+                            [{\tsc{class}P}
+                                [{\tsc{class}}]
+                                [{\tsc{ref}}]
                             ]
                         ]
                     ]
                 ]
             ]
-            [\tsc{acc}P,edge=DG,
+            [\tsc{acc}P,
             tikz={
             \node[label=below:\tit{n},
             draw,circle,
@@ -1134,167 +1188,27 @@ the external case is more complex than the internal case, but the external base 
             fit to=tree]{};
             }
                 [\tsc{f}2]
-                [\textcolor{DG}{\tsc{nom}P},edge=DG,
+                [{\tsc{nom}P},
                 tikz={
                 \node[
                 draw,circle,
                 scale=0.9,
-                dashed,DG,
+                dashed,
                 fit to=tree]{};
                 }
-                    [\textcolor{DG}{\tsc{f}1},edge=DG]
+                    [{\tsc{f}1}]
                 ]
             ]
         ]
       \end{forest}
       }
       \\
-      \cmidrule{1-1}
-      \tsc{acc} light head \tit{ə-n} \\
       \bottomrule
   \end{tabular}
-  \label{tbl:mg-ext-wins-1}
-\end{table}
+  \label{fig:mg-ext-wins-1}
+\end{figure}
 
-\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
-1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep}
 
-\exg. *Ich {lade ein}, ən \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
-1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{dem}.\ac{an}.\ac{acc} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-lh}
-
-\begin{table}[H]
-  \center
- \caption {Modern German \tsc{int}\scsub{nom} vs. \tsc{ext}\scsub{acc} ≠ \tit{ən}}
-  \begin{tabular}[b]{c}
-      \toprule
-      \scriptsize{
-          \begin{forest} boompje
-          [\tsc{rel}P, s sep=15mm
-              [\tsc{rel}P,
-              tikz={
-              \node[label=below:\tit{w},
-              draw,circle,
-              scale=0.9,
-              fit to=tree]{};
-              }
-                  [\tsc{rel}]
-                  [\tsc{wh}]
-              ]
-              [\tsc{nom}P, s sep=50mm
-                  [\tsc{dist}P,
-                  tikz={
-                  \node[label=below:\tit{e},
-                  draw,circle,
-                  scale=0.95,
-                  fit to=tree]{};
-                  }
-                      [\tsc{deix}\scsub{3}]
-                      [\textcolor{DG}{\tsc{med}P},edge=DG,
-                      tikz={
-                      \node[
-                      draw,circle,
-                      scale=0.9,
-                      dashed,DG,
-                      fit to=tree]{};
-                      }
-                          [\textcolor{DG}{\tsc{deix}\scsub{2}},edge=DG]
-                          [\textcolor{DG}{\tsc{prox}P},edge=DG
-                              [\textcolor{DG}{\tsc{deix}\tsc{1}},edge=DG]
-                              [\textcolor{DG}{\tsc{ind}P},edge=DG
-                                  [\textcolor{DG}{\tsc{ind}},edge=DG]
-                                  [\textcolor{DG}{\tsc{masc}P},edge=DG
-                                      [\textcolor{DG}{\tsc{masc}},edge=DG]
-                                      [\textcolor{DG}{\tsc{class}P},edge=DG
-                                          [\textcolor{DG}{\tsc{class}},edge=DG]
-                                          [\textcolor{DG}{\tsc{ref}},edge=DG]
-                                      ]
-                                  ]
-                              ]
-                          ]
-                      ]
-                  ]
-                  [\textcolor{DG}{\tsc{nom}P},edge=DG,
-                  tikz={
-                  \node[label=below:\textcolor{DG}{\tit{r}},
-                  draw,circle,DG,
-                  scale=0.8,
-                  fit to=tree]{};
-                  \node[
-                  draw,circle,
-                  scale=0.9,
-                  dashed,DG,
-                  fit to=tree]{};
-                  }
-                      [\textcolor{DG}{\tsc{f}1},edge=DG]
-                  ]
-              ]
-          ]
-        \end{forest}
-        }
-        \\
-        \cmidrule{1-1}
-        \tsc{nom} relative pronoun \tit{w-e-r}
-        \\
-        \toprule
-      \scriptsize{
-      \begin{forest} boompje
-        [\tsc{acc}P, s sep=40mm
-            [\tsc{med}P,
-            tikz={
-            \node[label=below:\tit{ə},
-            draw,circle,
-            scale=1,
-            fit to=tree]{};
-            \node[draw,circle,
-            fill=DG,fill opacity=0.2,
-            DG,dashed,
-            scale=0.95,
-            fit to=tree]{};
-            }
-                [\tsc{deix}\scsub{2}]
-                [\tsc{prox}P
-                    [\tsc{deix}\tsc{1}]
-                    [\tsc{ind}P
-                        [\tsc{ind}]
-                        [\tsc{masc}P
-                            [\tsc{masc}]
-                            [\tsc{class}P
-                                [\tsc{class}]
-                                [\tsc{ref}]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-            [\tsc{acc}P
-                [\tsc{f}2]
-                [\tsc{nom}P,
-                tikz={
-                \node[label=below:\tit{n},
-                draw,circle,
-                scale=0.9,
-                fit to=tree]{};
-                \node[draw,circle,
-                fill=DG,fill opacity=0.2,
-                DG,dashed,
-                scale=0.8,
-                fit to=tree]{};
-                }
-                    [\tsc{f}1]
-                ]
-            ]
-        ]
-      \end{forest}
-      }
-      \\
-      \cmidrule{1-1}
-      \tsc{acc} light head \tit{ə-n} \\
-      \bottomrule
-  \end{tabular}
-  \label{tbl:mg-ext-wins-2}
-\end{table}
 
 
 \section{Deriving the matching type}\label{sec:deriving-matching}
