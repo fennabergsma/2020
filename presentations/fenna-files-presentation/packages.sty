@@ -16,17 +16,22 @@
 boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 }
 
-%%%tables%%%
+%%%TABLES%%%
 \usepackage{diagbox}%diagonals
-\usepackage{tabularx,booktabs}%pretty tables
-\newcolumntype{Y}{>{\centering\arraybackslash}X}
 \usepackage{color, colortbl}
-\definecolor{Gray}{gray}{0.9}
+\definecolor{LG}{gray}{0.85}
+\definecolor{DG}{gray}{0.6}
+\newcommand{\tcol}[2]{\textcolor{#1}{#2}}%shorter italics
 \usepackage{multirow}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{booktabs}
+%%%TABLES%%%
 
 %%%examples%%%
 \usepackage{linguex}
 \renewcommand{\firstrefdash}{}
+\newcommand{\flushfill}[1]{\hspace{\fill}\mbox{}\linebreak[0]\hspace*{\fill}(\mbox{#1})}%%%hfill on the next line if too long%%%
+% \renewenvironment{flushleft}{\raggedright}{}%make sure ex + gll also works
 
 %%%bibliography%%%
 \usepackage[backend=biber,style=authoryear,natbib=true]{biblatex}

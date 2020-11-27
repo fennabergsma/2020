@@ -2,7 +2,7 @@
 
 \usepackage{../fenna-files-presentation/packages}
 \usepackage{../fenna-files-presentation/commands}
-\bibliography{fenna-files/references}{}
+\addbibresource{fenna-files/references.bib}
 
 \usepackage{multicol}
 
@@ -43,7 +43,7 @@
 }
 
 
-\title{The \tsc{r}-pronoun and postposition \tit{waar-mee} in Dutch}
+\title{A typology of case competition in headless relatives}
 \author{Fenna Bergsma}
 \date{Syntax colloquium\\ \today}
 \institute{Goethe-Universität Frankfurt}
@@ -58,1459 +58,643 @@
 \centering{
 \includegraphics[width=0.4\textwidth]{../fenna-files-presentation/dfg-logo}
 \hspace{2cm}
-\includegraphics[width=0.3\textwidth]{../fenna-files-presentation/goethe-logo}}
+\includegraphics[width=0.3\textwidth]{../fenna-files-presentation/goethe-logo}
+}
 \end{frame}
 
 % \section{Introduction}
 
-\begin{frame}
+\begin{frame}{Introduction --- case}
 
-\exg. Jij schildert \tbf{met} \tbf{een} \tbf{kwast}.\\
- you paint with a brush\\
- `You are painting with a brush.'\label{ex:metwat}
-
-\pause
-
-\exg. \tbf{Wat} zie jij?\\
- what see you\\
- `What do you see?'\label{ex:wat}
+\exg. Der Lehrer mag den Schüler.\\
+ the.\tsc{nom} teacher likes the.\tsc{acc} student\\
+ `The teacher likes the pupil.'\label{ex:german-case-1}
 
 \pause
 
-\exg. *\tbf{Met} \tbf{wat} schilder jij?\\
- with what paint you\\
- `What are you painting with?'\label{ex:metwat}
+\exg. Der Schüler mag den Lehrer.\\
+ the.\tsc{nom} student likes the.\tsc{acc} teacher\\
+ `The pupil likes the teacher.'\label{ex:german-case-2}
+
+\end{frame}
+
+
+\begin{frame}{Introduction --- (headless) relative clauses}
+
+\exg. Der Lehrer mag den Schüler, der nach draußen guckt.\\
+the.\tsc{nom} teacher likes the.\tsc{acc} student \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{nom} to outside looks\\
+`The teacher likes the pupil that is looking outside.'\label{ex:german-relative-1}
 
 \pause
 
-\exg. \tbf{Waarmee} schilder jij?\\
- {where with} paint you with\\
- `What are you painting with?'\label{ex:waar-mee}
-
-\end{frame}
-
-
-\begin{frame}
-
-\exg. Womit malst du?\\
- {where with} paint you\\
- `What are you painting with?'
+\exg. Der Lehrer mag den Schüler, den er beim Versteckspiel sucht.\\
+the.\tsc{nom} teacher likes the.\tsc{acc} student \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} he {at the} {hide-and-seek game} searches\\
+`The teacher likes the pupil that he is searching for playing hide-and-seek.'\label{ex:german-relative-2}
 
 \pause
 
-\exg. Waa\tbf{r}mee schilder jij?\\
- {where with} paint you with\\
- `What are you painting with?'\label{ex:waar-mee}
+\exg. Der Lehrer mag, wen er beim Versteckspiel sucht.\\
+the.\tsc{nom} teacher likes \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} he {at the} {hide-and-seek game} searches\\
+`The teacher likes the pupil that he is searching for playing hide-and-seek.'\label{ex:german-relative-2}
 
 \end{frame}
 
+\begin{frame}{Introduction --- case competition}
 
-
-
-\begin{frame}
-
-\exg. Worauf kletterst du?\\
- {where on} climb you\\
- `What are you climbing onto?'
-
-\exg. Wo bist du \tbf{(d)r}auf geklettert?\\
- where are you on climbed\\
- `What did you climb on?'
+\exg. gaarma þan -ei arma\\
+ pity.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} -\tsc{comp} pity.\tsc{pres}.1\tsc{sg}\scsub{[acc]}\\
+ `I pity him whom I pity' \flushfill{Gothic, \tsc{rom} 9:15, adapted from \pgcitealt{harbert1978}{339}}\label{ex:gothic-acc-acc}
 
 \pause
 
-\exg. Waa\tbf{r} ben jij op geklommen?\\
- where are you on climbed\\
- `What did you climb on?'
-
+\exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
+ \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} -\tsc{comp} love.\tsc{pres}.2\tsc{sg}.\scsub{[acc]} sick be.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+ `the one whom you love is sick' \flushfill{Gothic, \tsc{john} 11:3, adapted from \pgcitealt{harbert1978}{342}}\label{ex:gothic-acc-nom}
 
 \end{frame}
 
 
-\begin{frame}
 
-\exg. *Ik schilder \tbf{met} \tbf{t}.\\
- I paint with it\\
- `I am painting with it.'
+
+\begin{frame}{Matching cases}
+
+\exg. ei \tbf{sa} \tbf{-ei} \tbf{þis} \tbf{matjai}, ni gadauþnai\\
+\tsc{comp} \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{nom} -\tsc{comp} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{gen} eat.\tsc{opt}.3\tsc{sg}\scsub{[nom]} not die.\tsc{opt}.3\tsc{sg}\scsub{[nom]}\\
+`that the one, who eats of this may not die' \flushfill{Gothic, \tsc{john} 6:50, after \pgcitealt{harbert1978}{337}}\label{ex:gothic-nom-nom}
 
 \pause
 
-\exg. Ik schilder \tbf{r} \tbf{-mee}.\\
- I paint \tsc{r} -with\\
- `I am painting with it.'\label{ex:jarmee}
-
-\end{frame}
-
-
-\begin{frame}
-
-\centering{\Large{Why *\tit{met wat}?}}
-
-\vspace{3em} \citep{riemsdijk1978}
-
-
-\end{frame}
-
-
-\begin{frame}
-
-\centering{
-*\tit{met wat} \hspace{1em} | \hspace{1em} \tit{waar-mee}}
-
-\vspace{1em}
+\exg. gaarma \tbf{þan} \tbf{-ei} \tbf{arma}\\
+ pity.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} -\tsc{comp} pity.1\tsc{sg}\scsub{[acc]}\\
+ `I pity him, whom I pity' \flushfill{Gothic, \tsc{rom} 9:15, after \pgcitealt{harbert1978}{339}}\label{ex:gothic-acc-acc-rep}
 
 \pause
 
-\begin{itemize}
-\item positions are reversed \pause
-\item \tit{met} becomes \tit{mee} \pause
-\item \tit{wat} becomes \tit{waar}, which is syncretic with locative \citep{koopman1994}
-\end{itemize}
+\exg. nist mein du giban, alja \tbf{þaim} \tbf{-ei} \tbf{manwiþ} \tbf{was}\\
+{is not} 1\tsc{sg}.\tsc{poss}.\tsc{nom} to give.\tsc{inf}\scsub{[dat]} {except for} \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{dat} -\tsc{comp} prepare.\tsc{ptcp} be.\tsc{pret}.3\tsc{sg}\scsub{[dat]}\\
+`it is not mine to give except for to the one, for whom it was prepared'\flushfill{Gothic, \tsc{mark} 10:49, after \pgcitealt{harbert1978}{339}}\label{ex:gothic-dat-dat}
 
-\vspace{1em}\pause
+\end{frame}
 
-\tsc{r}-pronouns are the result of regular spellout mechanisms
+
+\begin{frame}{Gothic headless relatives (matching)}
+
+  \begin{table}
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \colorbox{LG}{\tsc{nom}}
+           &
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           &
+           & \colorbox{DG}{\tsc{acc}}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           &
+           &
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+  \end{table}
+
+\end{frame}
+
+
+
+
+\begin{frame}{\tsc{nom} vs. \tsc{acc}}
+
+\exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
+ \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} -\tsc{comp} love.\tsc{pres}.2\tsc{sg}.\scsub{[acc]} sick be.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+ `the one whom you love is sick' \flushfill{Gothic, \tsc{john} 11:3, adapted from \pgcitealt{harbert1978}{342}}\label{ex:gothic-nom-acc-rep}
 
 \pause
 
-as long as all features form a proper constituent
+\exg. jah þo \tbf{-ei} \tbf{ist} \tbf{us} \tbf{Laudeikaion} jus ussiggwaid\\
+ and \tsc{rel}.\tsc{sg}.\tsc{n}.\tsc{acc} -\tsc{comp} be.\tsc{pres}.3\tsc{sg}\scsub{[nom]} from Laodicea 2.\tsc{pl}.\tsc{nom} read.\scsub{[acc]}\\
+ `and you read the one which is from Laodicea' \flushfill{Gothic, \tsc{col} 4:16, adapted from \pgcitealt{harbert1978}{357}}\label{ex:gothic-acc-nom-rep}
+
 
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Gothic headless relatives (\tsc{nom} --- \tsc{acc})}
 
-\ex.\label{ex:headed}
-\ag. Ik koop de kwast \tbf{waar} \tbf{-mee} jij schildert.\\
- I buy the brush where with you paint\\
- `I buy the brush that you are painting with.'
-\bg. *Ik koop de kwast \tbf{met} \tbf{wat} jij schildert.\\
- I koop the brush with what you paint\\
- `I buy the brush that you are painting with.'
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+       \diagbox[linecolor=white]{\phantom{xxx}}{\phantom{xxx}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{\colorbox{DG}{\tsc{acc}}}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \diagbox[linecolor=white]{\colorbox{LG}{\tsc{acc}}}{*\tsc{nom}}
+           & \tsc{acc}
+           & \diagbox[linecolor=white]{\phantom{{\tsc{xxx}}}}{\phantom{*\tsc{xxx}}}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           &
+           & \diagbox[linecolor=white]{\phantom{{\tsc{xxx}}}}{\phantom{*\tsc{xxx}}}
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+     \label{tbl:summary-gothic-nom-acc}
+  \end{table}
+
 
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{\tsc{nom} vs. \tsc{dat}}
 
-\ex.
-\ag. \tbf{Waar} \tbf{-mee} schilder jij?\\
- where with paint you with\\
- `What are you painting with?'\label{ex:const2}
-\bg. Ik koop de kwast [\tbf{waar} \tbf{-mee} jij schildert].\\
- I buy the brush where with you paint\\
- `I koop the brush that you are painting with.'\label{ex:const3}
+\exg. iþ \tbf{þamm} \tbf{-ei} \tbf{leitil} \tbf{fraletada} leitil frijod\\
+ but \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{dat} -\tsc{comp} little {forgive}.\tsc{pass}.\tsc{pres}.3\tsc{sg}\scsub{[dat]} little love.\scsub{[nom]}\\
+ `but the one whom little is forgiven loves little' \flushfill{Gothic, \tsc{luke} 7:47, adapted from \pgcitealt{harbert1978}{342}}\label{ex:gothic-nom-dat}
 
 \pause
 
-\ex. [[jij] [[schilder] [\tbf{waar-mee}]]]\label{ex:const2stage}
-
+\exg. þaim \tbf{-ei} \tbf{iupa} \tbf{sind} fraþjaiþ \\
+ \tsc{rel}.\tsc{pl}.\tsc{n}.\tsc{dat} -\tsc{comp} above be.\tsc{pres}.3\tsc{pl}\scsub{[nom]} {think about}.\tsc{opt}.\tsc{pres}.2\tsc{pl}\scsub{[dat]}\\
+ `think about those which are above' \flushfill{Gothic, \tsc{col} 3:2, adapted from \pgcitealt{harbert1978}{339}}\label{ex:gothic-dat-nom}
 
 \end{frame}
 
 
+\begin{frame}{Gothic headless relatives (\tsc{nom} --- \tsc{dat})}
 
-\begin{frame}
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+       \diagbox[linecolor=white]{\phantom{xxx}}{\phantom{xxx}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{\tsc{acc}}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{\colorbox{DG}{\tsc{dat}}}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \diagbox[linecolor=white]{\tsc{acc}}{*\tsc{nom}}
+           & \tsc{acc}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \diagbox[linecolor=white]{\colorbox{LG}{\tsc{dat}}}{*\tsc{nom}}
+           &
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+     \label{tbl:summary-gothic-nom-dat}
+  \end{table}
 
-\ex.
-\ag. Ik heb gekocht \tbf{waar} \tbf{-mee} jij schildert.\\
- I have bought where with you paint\\
- `I bought what you are painting with.'\label{ex:gekochtwaar-mee}
-\bg. *Ik heb gekocht \tbf{met} \tbf{wat} jij schildert.\\
- I have bought with what you paint\\
- `I bought what you are painting with.'\label{ex:gekochtmetwat}
+\end{frame}
+
+
+\begin{frame}{\tsc{acc} vs. \tsc{dat}}
+
+\exg. ushafjands \tbf{ana} \tbf{þamm} \tbf{-ei} \tbf{lag}\\
+{pick up}.\tsc{pres}.\tsc{ptcp}\scsub{[acc]} on\scsub{[dat]} \tsc{rel}.\tsc{sg}.\tsc{n}.\tsc{dat} -\tsc{comp} lie.\tsc{pret}.3\tsc{sg}\\
+`picking up that what he lay on' \flushfill{Gothic, \tsc{luke} 5:25, adapted from \pgcitealt{harbert1978}{343}}\label{ex:gothic-acc-dat}
 
 \pause
 
-\ex.\label{ex:schildermet}
-\ag. *Ik schilder \tbf{waar} \tbf{-mee} jij hebt gekocht.\\
- I paint where with you have bought\\
- `I paint with what you bought.'\label{ex:schilderwaar-mee}
-\bg. Ik schilder \tbf{met} \tbf{wat} jij hebt gekocht.\\
- I paint with what you have bought\\
- `I paint with what you bought.'\label{ex:schildermetwat}
-
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex.
-\ag. Ik koop \tbf{het} \tbf{schilderij}.\\
- I buy the painting\\
- `I am buying the painting.'\label{ex:kopen}
-\bg. Ik schilder \tbf{met} \tbf{een} \tbf{kwast}.\\
- I paint with a brush\\
- `I am painting with a brush.'\label{ex:schilderen}
-
- \pause
-
-\exg. Ik heb gekocht [\tbf{waar} \tbf{-mee} jij schildert].\\
- I have bought where with you paint\\
- `I bought what you are painting with.'\label{ex:mismatchwaar-mee}
-
- \pause
-
-\exg. Ik schilder \tbf{met} [\tbf{wat} jij hebt gekocht].\\
- I paint with what you have bought\\
- `I paint with what you bought.'\label{ex:mismatchmetwat}
+\exg. ei galaubjaiþ þamm \tbf{-ei} \tbf{insandida} \tbf{jains}\\
+that believe.\tsc{opt}.\tsc{pres}.2\tsc{pl}\scsub{[dat]} \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{dat} -\tsc{comp} {send}.\tsc{pret}.3\tsc{sg}\scsub{[acc]} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}\\
+`that you believe in him whom he sent' \flushfill{Gothic, \tsc{john} 6:29}\label{ex:gothic-dat-acc}
 
 \end{frame}
 
 
 
-\begin{frame}
+\begin{frame}{Gothic headless relatives (\tsc{acc} --- \tsc{dat})}
 
-\exg. [\tbf{Met} [\tbf{wat} [voor [potloden]]] teken jij?\\
- with what for pencils draw you\\
- `What kind of pencils are you drawing with?'\label{ex:watwasfur}
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+       \diagbox[linecolor=white]{\phantom{xxx}}{\phantom{xxx}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{{\tsc{acc}}}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{{\tsc{dat}}}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \diagbox[linecolor=white]{{\tsc{acc}}}{*\tsc{nom}}
+           & \tsc{acc}
+           & \diagbox[linecolor=white]{*\tsc{acc}}{\colorbox{DG}{\tsc{dat}}}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \diagbox[linecolor=white]{{\tsc{dat}}}{*\tsc{nom}}
+           & \diagbox[linecolor=white]{\colorbox{LG}{(\tsc{dat})}}{*\tsc{acc}}
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+     \label{tbl:summary-gothic-acc-dat}
+  \end{table}
+\end{frame}
+
+
+
+
+\begin{frame}{Internal and external case allowed}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{DG}\tsc{acc}
+             & \cellcolor{DG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{LG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{DG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{LG}\tsc{dat}
+             & \cellcolor{LG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}{Only internal case allowed}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{LG}\tsc{acc}
+           & \tsc{acc}
+           & \cellcolor{DG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{LG}\tsc{dat}
+           & \cellcolor{LG}\tsc{dat}
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-int}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{Only external case allowed}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{DG}\tsc{acc}
+           & \cellcolor{DG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{LG}*
+           & \tsc{acc}
+           & \cellcolor{DG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-ext}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Only matching allowed: Modern German}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{LG}*
+           & \tsc{acc}
+           & \cellcolor{DG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-none}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{Modern German: matching}
+
+\exg. Uns besucht, \tbf{wer} \tbf{Maria} \tbf{mag}.\\
+ 2\tsc{pl}.\tsc{acc} visit.\tsc{pres}.3\tsc{sg}\scsub{[nom]} \tsc{rel}.\tsc{an}.\tsc{nom} Maria.\tsc{acc} like.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+ `Who visits us likes Maria.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-nom}
 
 \pause
 
-\exg. Ik wil graag thee [\tbf{met} [\tbf{wat} [suiker]]].\\
- I want please tea with some sugar\\
- `I would like to have tea with some sugar.'\label{ex:watindef}
+\exg. Ich {lade ein}, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{an}.\tsc{acc} Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}\\
+`I invite who Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-acc}
 
 \pause
 
-\ex.\label{ex:summaryconst}
-\a. [[met] [wat]] → [waar-mee]\label{ex:waar-meefr}
-\b. [met [wat [X]]]\label{ex:metwatx}
-\b. [met [[wat] [X]]]\label{ex:metwatfr}
+\exg. Ich folge, \tbf{wem} \tbf{immer} \tbf{ich} \tbf{vertraue}.\\
+ 1\tsc{sg}.\tsc{nom} folge.\tsc{pres}.1\tsc{sg}\scsub{[dat]} \tsc{rel}.\tsc{an}.\tsc{dat} ever 1\tsc{sg}.\tsc{nom} vertraue.\tsc{pres}.3\tsc{sg}\scsub{[dat]}.\\
+ `I follow whoever I trust.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{342}}\label{ex:mg-dat-dat}
 
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Modern German headless relatives (matching)}
 
-\ex. w -aa \tbf{-r} \tbf{-mee}
+\begin{table}[H]
+ \center
+ \begin{tabular}{c|c|c|c}
+   \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+         & [\tsc{nom}]
+         & [\tsc{acc}]
+         & [\tsc{dat}]
+         \\ \cmidrule{1-4}
+     [\tsc{nom}]
+         & \colorbox{LG}{\tsc{nom}}
+         &
+         &
+         \\ \cmidrule{1-4}
+     [\tsc{acc}]
+         &
+         & \colorbox{DG}{\tsc{acc}}
+         &
+         \\ \cmidrule{1-4}
+     [\tsc{dat}]
+         &
+         &
+         & \tsc{dat}
+         \\
+   \bottomrule
+ \end{tabular}
+   \label{tbl:summary-mg-matching}
+\end{table}
 
-\ex. \tbf{met} w -a \tbf{-t}
+\end{frame}
+
+
+\begin{frame}{Modern German: \tsc{nom} vs. \tsc{acc}}
+
+\exg. Uns besucht, \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+2\tsc{pl}.\tsc{acc} visit.\tsc{pres}.3\tsc{sg}\scsub{[nom]} \tsc{rel}.\tsc{an}.\tsc{acc} Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}\\
+`Who visits us, Maria likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc}
 
 \pause
 
-\begin{itemize}
-\item late insertion (phonology after syntax)\pause
-\item individual features (no feature bundles)
-\end{itemize}
-
-
-\end{frame}
-
-\begin{frame}
-
-\ex. \begin{forest}
-[\tsc{wP}
-    [W, roof]
-]
-{\draw (.east) node[right]{⇔ \tit{w}}; }
-\end{forest}\label{ex:entryw}
-
-\citep{hachem2015}
+\exg. *Uns besucht, \tbf{wer} \tbf{Maria} \tbf{mag}.\\
+2\tsc{pl}.\tsc{acc} visit.\tsc{pres}.3\tsc{sg}\scsub{[nom]} \tsc{rel}.\tsc{an}.\tsc{nom} Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}\\
+`Who visits us, Maria likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-u}
 
 \pause
 
-
-\ex. \begin{forest}
-[\tsc{deixP}
-    [\tsc{deix}, roof]
-]
-{\draw (.east) node[right]{⇔ \tit{a}}; }
-\end{forest}\label{ex:entrya}
-
-\citep[cf.][]{lander2016}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex.\label{ex:tsubobj}
-\ag. T staat in de hal.\\
- \tsc{3sg.n.nom} stands in the hallway\\
- `It is standing in the hallway.'\label{ex:tnoclitic}
-\bg. Ik zie t.\\
- I see \tsc{3sg.n.acc}\\
- `I see it.'
-\bg. Ik heb t een klap gegeven.\\
- I have \tsc{3sg.n.dat} a hit given\\
- `I gave it a hit.'
-
-\end{frame}
-
-\begin{frame}
-
-\label{ex:casetree}
-\ex. \begin{forest} boom
-	[\tsc{insP}
-			[\tsc{f4}]
-			[\tsc{datP}
-					[\tsc{f3}]
-					[\tsc{accP}
-							[\tsc{f2}]
-							[\tsc{nomP}
-									[\tsc{f1}]
-									[X
-											[..,roof]
-									]
-							]
-					]
-			]
-	]
-\end{forest}
-
-\citep{caha2009}
-
-\end{frame}
-
-
-
-\begin{frame}
-
-\ex.
-\ag. *Hij en t staan in de hoek.\\
- he and it stand in the corner\\
- `He and it are standing in the corner.'\label{ex:tcoordinated}
-\bg. Hij en dit/dat staan in de hoek.\\
- he and this/that stand in the corner\\
- `He and it are standing in the corner.'\label{ex:datcoordinated}
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{an}.\tsc{acc} 1\tsc{sg}.\tsc{dat} nice be.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom}
 
 \pause
 
-\exg. T staat in de hal.\\
- \tsc{3sg.n.nom} stands in the hallway\\
- `It is standing in the hallway.'\label{ex:tnoclitic}
+\exg. *Ich {lade ein}, wer \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{an}.\tsc{nom} 1\tsc{sg}.\tsc{dat} nice be.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-u}
 
 \end{frame}
 
+\begin{frame}{Modern German headless relatives (\tsc{nom} --- \tsc{acc})}
 
-
-\begin{frame}
-
-\label{ex:strengthtree}
-\ex. \begin{forest} boom
-			[CP
-					[C]
-					[ΣP
-							[Σ]
-							[IP
-									[I]
-									[X
-											[..,roof]
-									]
-							]
-					]
-			]
-\end{forest}
-
-\citep{cardinaletti1996}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
- [\tsc{datP}
-     [\tsc{f3}]
-     [\tsc{accP}
-         [\tsc{f2}]
-         [\tsc{nomP}
-             [\tsc{f1}]
-             [ΣP
-                 [Σ]
-								 [IP
-								 		[I]
-		                 [\tsc{thingP}
-		                     [\tsc{thing}, roof]
-										]
-                 ]
-             ]
-         ]
-     ]
- ]
- {\draw (.east) node[right]{⇔ \tit{t}}; }
- \end{forest}\label{ex:entryt}
-
-
-\citep{cardinaletti1996,kayne2005,caha2009}
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{DG}*
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{LG}\tsc{acc}
+           & \tsc{acc}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           &
+           &
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-mg-nom-acc}
+\end{table}
 
 \end{frame}
 
+\begin{frame}{Modern German: \tsc{nom} vs. \tsc{dat}}
 
-\begin{frame}
-
-\ex. \tbf{The Superset Principle} \citep{starke2009}: \\
-	A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
-
-\begin{multicols}{2}
-
-\ex. \begin{forest} boom
-	[\tsc{accP}
-			[\tsc{f2}]
-			[\tsc{nomP}
-					[\tsc{f1}]
-					[ΣP
-							[Σ]
-							[IP
-									[I]
-									[\tsc{thingP}
-											[\tsc{thing}, roof]
-									]
-							]
-					]
-			]
-	]
-\end{forest}\label{ex:tacc}
-
-\ex. \begin{forest} boom
-	[\tsc{nomP}
-			[\tsc{f1}]
-			[ΣP
-					[Σ]
-					[IP
-							[I]
-							[\tsc{thingP}
-									[\tsc{thing}, roof]
-							]
-					]
-			]
-	]
-\end{forest}\label{ex:tnom}
-
-\end{multicols}
-
-\end{frame}
-
-
-
-
-\begin{frame}
-
-\exg. Ik ben r al geweest.\\
- I am there already been\\
- `I have already been there.'
+\exg. Uns besucht, \tbf{wem} \tbf{Maria} \tbf{vertraut}.\\
+2\tsc{pl}.\tsc{acc} visit.\tsc{pres}.3\tsc{sg}\scsub{[nom]} \tsc{rel}.\tsc{an}.\tsc{dat} Maria.\tsc{nom} trust.\tsc{pres}.3\tsc{sg}\scsub{[dat]}\\
+`Who visits us, Maria trusts.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-dat}
 
 \pause
 
-\ex. \begin{forest} boom
-[\tsc{loc}P
-   [\tsc{location}]
-   [\tsc{thingP}
-       [\tsc{thing}, roof]
-   ]
-]
-{\draw (.east) node[right]{⇔ \tit{r}}; }
-\end{forest}\label{ex:entryr}
-
-\citep{baunaz2018}
+\exg. *Uns besucht, \tbf{wer} \tbf{Maria} \tbf{vertraut}.\\
+2\tsc{pl}.\tsc{acc} visit.\tsc{pres}.3\tsc{sg}\scsub{[nom]} \tsc{rel}.\tsc{an}.\tsc{nom} Maria.\tsc{nom} trust.\tsc{pres}.3\tsc{sg}\scsub{[dat]}\\
+`Who visits us, Maria trusts.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-dat-u}
 
 \pause
 
-\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
-When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
+\exg. *Ich vertraue, wem \tbf{Hitchcock} \tbf{mag}.\\
+1\tsc{sg}.\tsc{nom} trust.\tsc{pres}.1\tsc{sg}\scsub{[dat]} \tsc{rel}.\tsc{an}.\tsc{dat} Hitchcock.\tsc{acc} like.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+`I trust who likes Hitchcock.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-nom}
 
 \pause
 
-\ex. \begin{forest} boom
- [\tsc{thingP}
-     [\tsc{thing}, roof]
- ]
-{\draw (.east) node[right]{⇒ \tit{r}}; }
-\end{forest}
+\exg. *Ich vertraue, wer \tbf{Hitchcock} \tbf{mag}.\\
+1\tsc{sg}.\tsc{nom} trust.\tsc{pres}.1\tsc{sg}\scsub{[dat]} \tsc{rel}.\tsc{an}.\tsc{nom} Hitchcock.\tsc{acc} like.\tsc{pres}.3\tsc{sg}\scsub{[nom]}\\
+`I trust who likes Hitchcock.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-nom-u}
 
 \end{frame}
 
+\begin{frame}{Modern German headless relatives (\tsc{nom} --- \tsc{dat})}
 
-\begin{frame}
-
-\centering{
-\begin{tabular}{cc}
-\toprule
-						& \tsc{n.sg} \\
-\midrule
-\tsc{nom} & t         \\
-\tsc{acc} & t         \\
-\tsc{dat} & t         \\
-\tsc{ins} & r -mee    \\
-\bottomrule
-\end{tabular}
-}
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & *
+             & \cellcolor{DG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \tsc{acc}
+             &
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{LG}\tsc{dat}
+             &
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-mg-nom-dat}
+  \end{table}
 
 \end{frame}
 
+\begin{frame}{Modern German: \tsc{acc} vs. \tsc{dat}}
 
-\begin{frame}
-
-\ex. \begin{forest} boom
-[\tsc{insP}
-    [\tsc{f4}]
-    [\tsc{datP}
-        [\tsc{f3}]
-        [\tsc{accP}
-            [\tsc{f2}]
-            [\tsc{nomP}
-                [\tsc{f1}]
-                [ΣP
-                    [Σ]
-										[IP
-												[I]
-										]
-                ]
-            ]
-        ]
-    ]
-]
-{\draw (.east) node[right]{⇔ \tit{-mee}}; }
-\end{forest}\label{ex:entrymee}
+\exg. Ich {lade ein}, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{an}.\tsc{dat} also Maria.\tsc{nom} trust.\tsc{pres}.3\tsc{sg}\scsub{[dat]}.\\
+`I invite whoever Maria also trusts.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat}
 
 \pause
 
-
-\ex. \begin{forest} boom
-[\tsc{insP}
-    [\tsc{f4},roof]
-]
-{\draw (.east) node[right]{⇔ \tit{met}}; }
-\end{forest}\label{ex:entrymet}
-
-\end{frame}
-
-
-\begin{frame}
-
-[W [\tsc{deix} [\tsc{f4} [\tsc{f3} [\tsc{f2} [\tsc{f1} [Σ [I [\tsc{thing}] ] ] ] ] ] ] ] ]
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. Merge F and \label{ex:spellout}
-	 \a. Spell out FP.
-	 \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
-	 \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+\exg. *Ich {lade ein}, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{rel}.\tsc{an}.\tsc{acc} also Maria.\tsc{nom} trust.\tsc{pres}.3\tsc{sg}\scsub{[dat]}.\\
+`I invite whoever Maria also trusts.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat-u}
 
 \pause
 
-\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
-	Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+\exg. *Ich vertraue, wem \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+1\tsc{sg}.\tsc{nom} trust.\tsc{pres}.1\tsc{sg}\scsub{[dat]} \tsc{rel}.\tsc{an}.\tsc{dat} also Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}.\\
+`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc}
 
 \pause
 
-\ex. \tbf{Backtracking} \citep{starke2018}:\\
-	When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
-
-\pause
-
-\ex. \tbf{Spec Formation} \citep{starke2018}:\\
-	If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+\exg. *Ich vertraue, wen \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+1\tsc{sg}.\tsc{nom} trust.\tsc{pres}.1\tsc{sg}\scsub{[dat]} \tsc{rel}.\tsc{an}.\tsc{acc} also Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}.\\
+`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-u}
 
 \end{frame}
 
 
-\begin{frame}
-
-\ex. \begin{forest} boom
- [\tsc{thingP}
-     [\tsc{thing}, roof]
- ]
-{\draw (.east) node[right]{⇒ \tit{r}}; }
-\end{forest}\label{ex:thingspellout}
-
-\pause
-
-\ex. \begin{forest} boom
-[IP
-   [I]
-   [\tsc{thingP}
-       [\tsc{thing}, roof]
-   ]
-]
-{\draw (.east) node[right]{⇒ \tit{t}}; }
-\end{forest}\label{ex:thingf1}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-	   [ΣP
-	       [Σ]
-				 [IP
-				 		[I]
-			       [\tsc{thingP}
-			           [\tsc{thing}, roof]
-			       ]
-					]
-	   ]
-	{\draw (.east) node[right]{⇒ \tit{t}}; }
-\end{forest}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-	[\tsc{nomP}
-	   [\tsc{f1}]
-	   [ΣP
-	       [Σ]
-				 [IP
-				 		[I]
-			       [\tsc{thingP}
-			           [\tsc{thing}, roof]
-			       ]
-					]
-	   ]
-	]
-	{\draw (.east) node[right]{⇒ \tit{t}}; }
-\end{forest}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[\tsc{datP}
-    [\tsc{f3}]
-    [\tsc{accP}
-       [\tsc{f2}]
-       [\tsc{nomP}
-           [\tsc{f1}]
-           [ΣP
-               [Σ]
-							 [IP
-							 		[I]
-		               [\tsc{thingP}
-		                   [\tsc{thing}, roof]
-		               ]
-							 ]
-           ]
-       ]
-    ]
-]
-{\draw (.east) node[right]{⇒ \tit{t}}; }
-\end{forest}
-
-\end{frame}
-
-
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[\tsc{insP}
-    [\tsc{f4}]
-    [\tsc{datP}
-        [\tsc{f3}]
-        [\tsc{accP}
-           [\tsc{f2}]
-           [\tsc{nomP}
-               [\tsc{f1}]
-               [ΣP
-                   [Σ]
-									 [IP
-									 		[I]
-		                   [\tsc{thingP}
-		                       [\tsc{thing}, roof]
-		                   ]
-										]
-               ]
-           ]
-        ]
-    ]
-]
-{\draw (.east) node[right]{⇒ }; }
-\end{forest}\label{ex:f4no}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-	[\tsc{datP}
-	    [\tsc{datP}
-	        [\tsc{f3}]
-	        [\tsc{accP}
-	           [\tsc{f2}]
-	           [\tsc{nomP}
-	               [\tsc{f1}]
-	               [ΣP
-	                   [Σ]
-										 [IP
-										 		[I]
-			                   [\tsc{thingP}
-			                       [\tsc{thing}, roof]
-												 ]
-	                   ]
-	               ]
-	           ]
-	        ]
-	    ]
-	    {\draw (.east) node[right]{⇒ \tit{'t}}; }
-	    [\tsc{insP}
-	        [\tsc{f4}]
-	    ]
-	    {\draw (.east) node[right]{⇒ }; }
-	]
-\end{forest}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[IP
-	 [\tsc{thingP}
-			 [\tsc{thing}, roof]
-	 ]
-	 {\draw (.east) node[right]{⇒ \tit{r}}; }
-	 [IP
-			 [I]
-	 ]
-	 {\draw (.east) node[right]{⇒ \tit{-mee}}; }
-]
-\end{forest}
-
-\pause
-
-\citep{abels2003diss}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[ΣP
-    [Σ]
-    [IP
-       [\tsc{thingP}
-           [\tsc{thing}, roof]
-       ]
-       [IP
-           [I]
-       ]
-    ]
-]
-{\draw (.east) node[right]{⇒}; }
-\end{forest}\label{ex:f1again}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[ΣP
-   [\tsc{thingP}
-       [\tsc{thing}, roof]
-   ]
-   {\draw (.east) node[right]{⇒ \tit{r}}; }
-   [ΣP
-       [Σ]
-       [IP
-           [I]
-       ]
-   ]
-   {\draw (.east) node[right]{⇒ \tit{-mee}}; }
- ]
-\end{forest}\label{ex:f1spec}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[\tsc{insP}
-    [\tsc{thingP}
-       [\tsc{thing}, roof]
-    ]
-    {\draw (.east) node[right]{⇒ \tit{r}}; }
-    [\tsc{insP}
-       [\tsc{f4}]
-       [\tsc{datP}
-           [\tsc{f3}]
-           [\tsc{accP}
-               [\tsc{f2}]
-               [\tsc{nomP}
-                   [\tsc{f1}]
-									 [ΣP
-									 		[Σ]
-		                   [IP
-		                       [I]
-											]
-                   ]
-               ]
-           ]
-       ]
-    ]
-    {\draw (.east) node[right]{⇒ \tit{-mee}}; }
-]
-\end{forest}\label{ex:spelloutrmee}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[\tsc{\tsc{wP}}
-		[\tsc{\tsc{wP}}
-				[\tsc{w}, roof]
-		]
-		{\draw (.east) node[right]{⇒ \tit{w}}; }
-		[\tsc{deixP}
-				[\tsc{deixP}
-						[\tsc{deix}, roof]
-				]
-				{\draw (.east) node[right]{⇒ \tit{a}}; }
-				[\tsc{insP}
-						[\tsc{thingP}
-							 [\tsc{thing}, roof]
-						]
-						{\draw (.east) node[right]{⇒ \tit{r}}; }
-						[\tsc{insP}
-							 [\tsc{f4}]
-							 [\tsc{datP}
-									 [\tsc{f3}]
-									 [\tsc{accP}
-											 [\tsc{f2}]
-											 [\tsc{nomP}
-													 [\tsc{f1}]
-													 [ΣP
-													 		 [Σ]
-															 [IP
-																	 [I]
-															 ]
-													 ]
-											 ]
-									 ]
-							 ]
-						]
-						{\draw (.east) node[right]{⇒ \tit{-mee}}; }
-				]
-		]
-]
-\end{forest}\label{ex:spelloutwaar-mee}
-
-\end{frame}
-
-
-
-\begin{frame}
-
-\ex. \begin{forest} boom
-[CP
-    [\tsc{\tsc{wP}}
-        [\tsc{\tsc{wP}}
-            [\tsc{w}, roof]
-        ]
-        {\draw (.east) node[right]{⇒ \tit{w}}; }
-        [\tsc{deixP}
-            [\tsc{deixP}
-                [\tsc{deix}, roof]
-            ]
-            {\draw (.east) node[right]{⇒ \tit{a}}; }
-            [\tsc{datP}
-                [\tsc{f3}]
-                [\tsc{accP}
-                   [\tsc{f2}]
-                   [\tsc{nomP}
-                       [\tsc{f1}]
-                       [ΣP
-                           [Σ]
-													 [IP
-													 		[I]
-		                           [\tsc{thingP}
-		                               [\tsc{thing}, roof]
-		                           ]
-														]
-                       ]
-                   ]
-                ]
-            ]
-            {\draw (.east) node[right]{⇒ \tit{t}}; }
-        ]
-    ]
-    [CP
-        [..,roof]
-    ]
-]
-\end{forest}
-
-\end{frame}
-
-
-\begin{frame}
-
-\begin{itemize}
-	\item \tsc{r}-pronouns are nothing special, but just a result of regular spellout \pause
-	\item \tit{r} is ambiguous between location and (caseless) thing \pause
-	\item \tit{met} and \tit{mee} are separate lexical entries
-		\begin{itemize}
-			\item so their phonological realization can differ
-			\item so they can differ between between being pre and post
-		\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-\begin{frame}
-
-\exg. Ik zie \tbf{t}.\\
- I see it\\
- `I see it.'\label{ex:inaniobj}
-
-\exg. *Ik schilder \tbf{met} \tbf{t}.\\
- I paint with it\\
- `I am painting with it.'\label{ex:prephet}
-
-\exg. Ik schilder \tbf{r} \tbf{-mee}.\\
- I paint where -with\\
- `I am painting with it.'\label{ex:preper}
-
-\pause
-
-\exg. Ik zie \tbf{haar/hem}.\\
- I see her/him\\
- `I see her/him.'\label{ex:aniobj}
-
-\exg. Ik schilder samen \tbf{met} \tbf{haar/hem}.\\
-I paint together with her/him\\
-`I am painting together with her/him.'\label{ex:prepani}
-
-\pause
-
-\ex. [\tsc{f4} [\tsc{f3} [\tsc{f2} [\tsc{f1} [\tbf{phi} [Σ [I [\tsc{thing}] ] ] ] ] ] ] ]
-
-\end{frame}
-
-
-
-\begin{frame}
-
-\exg. Ik heb gekocht waar mee jij schildert.\\
- I have bought where with you paint\\
- `I bought what you are painting with.'\label{ex:meestranded}
-
-\pause
-
-\exg. Ik heb gekocht waar jij mee schildert.\\
- I have bought where you paint\\
- `I bought what you are painting with.'\label{ex:meestranded}
-
-\pause
-
-\ex. \begin{forest} boom
-[\tsc{insP}
-    [\tsc{thingP}
-       [\tsc{thing}, roof]
-    ]
-    {\draw (.east) node[right]{⇒ \tit{r}}; }
-    [\tsc{\tbf{insP}}
-       [\tsc{f4}]
-       [\tsc{datP}
-           [\tsc{f3}]
-           [\tsc{accP}
-               [\tsc{f2}]
-               [\tsc{nomP}
-                   [\tsc{f1}]
-									 [ΣP
-									 		[Σ]
-			                   [IP
-			                       [I]
-			                   ]
-			               ]
-								]
-           ]
-       ]
-    ]
-    {\draw (.east) node[right]{⇒ \tit{-mee}}; }
-]
-\end{forest}
-
-\citep{noonan2017dutch}
-
-\end{frame}
-
-
-\begin{frame}
-
-\begin{tabular}{ l | l | l }
-\textsc{prep} \textit{what} & \textit{where} \tsc{post} & translation \\
-\hline
- aan wat & waar\textbf{aan} & `on whom/what' \\
- achter wat & waar\textbf{achter} & `behind whom/what' \\
- bij wat & waar\textbf{bij} & `at whom/what' \\
- door wat & waar\textbf{door} & `by whom/what' \\
- langs wat & waar\textbf{langs} & `alongside whom/what \\
- met wat & waar\underline{\textbf{mee}} & `with whom/what' \\
- naar wat & waar\textbf{naar} & `to whom/what' \\
- op wat & waar\textbf{op} & `on whom/what' \\
- over wat & waar\textbf{over} & `about whom/what' \\
- tot wat & waar\underline{\textbf{toe}} & `to whom/what' \\
- uit wat & waar\textbf{uit} & `out of whom/what' \\
- van wat & waar\textbf{van} & `of whom/what' \\
- voor wat & waar\textbf{voor} & `for whom/what' \\
-\end{tabular}
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex.\label{ex:dutchin}
-\ag. Ik dans in het bos.\\
- I dance in the forest\\
- `I am dancing in the forest.'
-\bg. Ik dans het bos in.\\
- I dance the forest in\\
- `I am dancing into the forest.'
-
-\pause
-
-\exg. Ik dans r -in.\\
- I dance \tsc{r} in\\
- `I dance it in.'\\
-  *`I dance into it.'
-
-\pause
-
-\exg. *Ik ben r -in gedanst.\\
- I am \tsc{r} in danced\\
- `I dancing into it.'
-
-\pause
-
-\exg. Ik heb r -in gedanst.\\
- I have \tsc{r} in danced\\
- `I dancing in it.'
-
+\begin{frame}{Modern German headless relatives (\tsc{acc} --- \tsc{dat})}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & *
+             & *
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{DG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \tsc{dat}
+             & \cellcolor{LG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-mg-acc-dat}
+  \end{table}
 
 \end{frame}
 
 \begin{frame}
 
-\centering{
-	\begin{tabular}{ccc}
-	\toprule
-					& DP				& \tsc{r}	\\
-	\midrule
-		pre		& \tsc{loc} & *     	\\
-		post	& \tsc{dir}	& \tsc{loc} \\
-	\bottomrule
-\end{tabular}
-		}
-
-\vspace{1em}
-\pause
-
-verbal particles in e.g. \tbf{mee}lopen `walk along', \tbf{mee}zingen `sing along'
-
-\vspace{1em}
-	\pause
-
-\centering{
-	\begin{tabular}{ccc}
-	\toprule
-					& \tit{mee}	& \tit{met}	\\
-	\midrule
-		pre		& verb		 	& noun     	\\
-		post	& noun			& *					 \\
-	\bottomrule
-	\end{tabular}
-	}
-
+\printbibliography
 
 \end{frame}
-
-
-
-
-\begin{frame}{The data}
-
-\exg. Zij schrijft de brief \tbf{met} een potlood.\\
- she writes the letter with a pencil\\
- `She writes the letter with a pencil.'
-
-\pause
-
-\exg. Zij koopt \tbf{dat}.\\
- she buys that\\
- `She buys that.'
-
-\pause
-
-\exg. * Zij schrijft de brief \tbf{met} \tbf{dat}.\\
- she writes the letter with that\\
- `She writes the letter with that.'
-
-\pause
-
-\exg. Zij schrijft de brief \tbf{daar} \tbf{mee}.\\
- she writes the letter there with\\
- `She writes the letter with that.'
-
-\end{frame}
-
-
-
-\begin{frame}{Questions and answers}
-
-\centering{
-\tbf{met dat} | \tbf{daar mee} \pause
-}
-
-\vspace{1em}
-
-\begin{enumerate}
-  \item Q: why *\tit{met dat} (but \tit{daar mee})? \pause\\
-  A: \tit{daar mee} is the default, \tit{met dat} only appears under special circumstances (morphological derivation, cf. \tit{mice} and not \tit{mouse-s})\pause
-  \item Q: why does the adposition change form? \pause\\
-  A: \tit{mee} and \tit{met} are stored as different forms in the lexicon \pause
-  \item Q: why does the adposition change position? \pause\\
-  A: \tit{mee} and \tit{met} are stored as preposition or postposition in the lexicon \pause
-  \item Q: why is there an \tit{r}, even though there is no location involved? \pause\\
-  A: \tit{r} is ambiguous between \tsc{thing} and \tsc{location}
-\end{enumerate}
-
-\end{frame}
-
-
-\begin{frame}{Nanosyntax}
-
-\begin{itemize}
-  \item functional sequence is constant\pause
-  \item spellout algorithm is constant\pause
-  \item a single place for cross-linguistic differences: the postsyntactic lexicon\pause
-\end{itemize}
-
-\vspace{1em}
-
-\begin{enumerate}
-  \item spellout happens feature by feature and targets phrases
-  \item phonological forms are stored in the postsyntactic lexicon
-  \item postpositions are candidates for spellout before prepositions are
-  \item ambiguity comes from containment relations
-\end{enumerate}
-
-\end{frame}
-
-
-
-\begin{frame}{differing phonological forms}
-
-\begin{itemize}
-  \item \tit{mee} and \tit{met} are stored as different forms in the lexicon
-  \item phonological forms are stored in the lexicon \pause
-\end{itemize}
-
-  \ex. \begin{forest} boom
-  [\tsc{insP}
-      [\tsc{f4}]
-      [\tsc{datP}
-          [\tsc{f3}]
-          [\tsc{accP}
-              [\tsc{f2}]
-              [\tsc{nomP}
-                  [\tsc{f1}]
-                  [ΣP
-                      [Σ]
-  										[IP
-  												[I]
-  										]
-                  ]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{-mee}}; }
-  \end{forest}\label{ex:entrymee}
-
-  \pause
-
-  \ex. \begin{forest} boom
-  [\tsc{insP}
-      [\tsc{f4},roof]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{met}}; }
-  \end{forest}\label{ex:entrymet}
-
-\end{frame}
-
-
-
-
-\begin{frame}{pre vs. post}
-
-\begin{itemize}
-  \item \tit{mee} and \tit{met} are stored as preposition or postposition in the lexicon \pause
-  \item postpositions are candidates for spellout before prepositions are \pause
-\end{itemize}
-
-  \ex. \begin{forest} boom
-  [\tsc{insP}
-      [\tsc{f4}]
-      [\tsc{datP}
-          [\tsc{f3}]
-          [\tsc{accP}
-              [\tsc{f2}]
-              [\tsc{nomP}
-                  [\tsc{f1}]
-                  [ΣP
-                      [Σ]
-  										[IP
-  												[I]
-  										]
-                  ]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{-mee}}; }
-  \end{forest}\label{ex:entrymee}
-
-  \pause
-
-  \ex. \begin{forest} boom
-  [\tsc{insP}
-      [\tsc{f4},roof]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{met}}; }
-  \end{forest}\label{ex:entrymet}
-
-\end{frame}
-
-
-
-\begin{frame}{pre vs. post}
-
-  \ex. Merge F and \label{ex:spellout}
-  	 \a. Spell out FP.
-  	 \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
-  	 \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
-
-  \ex. \tbf{Backtracking} \citep{starke2018}:\\
-  	When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
-
-  \ex. \tbf{Spec Formation} \citep{starke2018}:\\
-  	If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
-
-\end{frame}
-
-
-\begin{frame}{\tit{r} without location}
-
-  \begin{itemize}
-    \item \tit{r} is ambiguous between \tsc{thing} and \tsc{location}
-    \item ambiguity comes from containment relations
-  \end{itemize}
-
-\pause
-
-\ex. \tbf{The Superset Principle} \citep{starke2009}: \\
-	A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
-
-\ex. \begin{forest} boom
-[\tsc{loc}P
-   [\tsc{location}]
-   [\tsc{thingP}
-       [\tsc{thing}, roof]
-   ]
-]
-{\draw (.east) node[right]{⇔ \tit{r}}; }
-\end{forest}\label{ex:entryr}
-
-\end{frame}
-
-
-\begin{frame}{Derivational system}
-
-\begin{itemize}
-  \item \tit{daar mee} is the default, \tit{met dat} only appears under special circumstances (morphological derivation, cf. \tit{mice} and not \tit{mouse-s}) \pause
-  \item spellout happens feature by feature and targets constituents
-\end{itemize}
-
-
-
-\pause
-
-\ex.
-\ag. Ze heeft de brief \tbf{daar} \tbf{mee} geschreven.\\
- she has the letter there with written\\
- `She wrote the letter with that.'
-\bg. Zij heeft de brief \tbf{met} \tbf{dat} potlood geschreven.\\
- she has the letter with that pencil written\\
- `She wrote the letter with that potlood.'
-
-\end{frame}
-
-
-\begin{frame}{\tit{daar mee} in a proper constituent}
-
-\exg. Ze heeft de brief \tbf{daar} \tbf{mee} geschreven.\\
- she has the letter there with written\\
- `She wrote (the letter) with that.'
-
-\pause
-
-\exg. \tbf{Daar} \tbf{mee} heeft ze de brief geschreven.\\
- there with has she the letter written\\
- `With that she has written the letter.' \hfill topicalization
-
-\pause
-
-\exg. Ze heeft de brief \tbf{hier} \tbf{mee} en \tbf{daar} \tbf{mee} geschreven.\\
- she has the letter here with and there with written\\
- `She has written the letter with this and with that' \hfill coordination
-
-\pause
-
-\ex.
-\a. With what did she write the letter?
-\bg. \tbf{daar} \tbf{mee}\\
- there with\\
- `with that' \hfill fragment answer
-
-\end{frame}
-
-
-
-\begin{frame}
-
-  \ex. \begin{forest} boom
-  [\tsc{insP}
-      [\tsc{f4}]
-  	    [\tsc{datP}
-  	        [\tsc{f3}]
-  	        [\tsc{accP}
-  	           [\tsc{f2}]
-  	           [\tsc{nomP}
-  	               [\tsc{f1}]
-  	               [ΣP
-  	                   [Σ]
-  										 [IP
-  										 		[I]
-  			                   [\tsc{thingP}
-  			                       [\tsc{thing}, roof]
-  												 ]
-  	                   ]
-  	               ]
-  	           ]
-  	        ]
-  	    ]
-  	    {\draw (.east) node[right]{⇒ \tit{'t}}; }
-    ]
-  \end{forest}
-
-
-\end{frame}
-
-
-
-
-
-
-\begin{frame}{\tit{met dat} in a non-constituent}
-
-
-\exg. Ze heeft de brief \tbf{met} \tbf{dat} potlood geschreven.\\
-she has the letter with the pencil written\\
-`She has written the letter with that pencil.'
-
-\pause
-
-\ex.
-\ag. *\tbf{Met} \tbf{dat} heeft ze de brief \tbf{potlood} geschreven.\\
- with that has she the letter pencil written\\
- `With that pencil she has written the letter.'
-\bg. \tbf{Met} \tbf{dat} \tbf{potlood} heeft ze de brief geschreven.\\
- with that pencil has she the letter written\\
- `With that pencil she has written the letter.' \hfill topicalization
-
-\pause
-
-% \ex.
-% \ag. *Ze heeft de brief met die en met dat potlood geschreven.\\
-%  she has the letter with this and with that pencil written\\
-%  `She has written the letter with this pencil and with that marker.' \hfill coordination
-% \bg. Ze heeft de brief met die pen en en dat potlood geschreven.\\
-%  she has the letter with this marker and with that pencil written\\
-%  `She has written the letter with this pencil and with that marker.' \hfill coordination
-%
-% \pause
-
-\ex.
-\a. With what did she write the letter?
-\bg. *\tbf{met} \tbf{dat}\\
- with that\\
- `with that'
-\bg. \tbf{met} \tbf{dat} \tbf{potlood}\\
- with that pancil\\
- `with that pencil'\hfill fragment answer
-
-\end{frame}
-
-\begin{frame}
-
-  \ex. \begin{forest} boom
-[\tsc{insP}
-    [\tsc{f4}]
-    [\tsc{datP}
-        [\tsc{datP}
-            [\tsc{f3}]
-            [\tsc{accP}
-               [\tsc{f2}]
-               [\tsc{nomP}
-                   [\tsc{f1}]
-                   [ΣP
-                       [Σ]
-  										 [IP
-  										 		[I]
-                           [\tsc{thingP}
-                               [\tsc{thing}, roof]
-                           ]
-  											]
-                   ]
-               ]
-            ]
-        ]
-        {\draw (.east) node[right]{⇒ \tit{t}}; }
-        [NP
-            [\tsc{pencil}, roof]
-        ]
-        {\draw (.east) node[right]{⇒ \tit{potlood}}; }
-    ]
-]
-    \end{forest}
-
-\end{frame}
-
-\begin{frame}{Summary}
-
-    \begin{enumerate}
-      \item Q: why *\tit{met dat} (but \tit{daar mee})? \pause\\
-      A: \tit{daar mee} is the default, \tit{met dat} only appears under special circumstances (morphological derivation, cf. \tit{mice} and not \tit{mouse-s})\pause
-      \item Q: why does the adposition change form? \pause\\
-      A: \tit{mee} and \tit{met} are stored as different forms in the lexicon \pause
-      \item Q: why does the adposition change position? \pause\\
-      A: \tit{mee} and \tit{met} are stored as preposition or postposition in the lexicon \pause
-      \item Q: why is there an \tit{r}, even though there is no location involved? \pause\\
-      A: \tit{r} is ambiguous between \tsc{thing} and \tsc{location}
-    \end{enumerate}
-
-\end{frame}
-
 
 \end{document}
