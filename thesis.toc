@@ -18,14 +18,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Deriving the matching type}{38}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Deriving the non-matching type}{41}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{45}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Technical details}{53}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Technical details}{57}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Summary}{53}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Summary}{57}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Aside: a larger syntactic context}{53}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Aside: a larger syntactic context}{58}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{59}{table.1.1}%
+\contentsline {chapter}{Primary texts}{63}{table.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{61}{section*.8}%
+\contentsline {chapter}{Bibliography}{65}{section*.8}%
