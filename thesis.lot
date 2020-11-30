@@ -4,24 +4,104 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Options for the surface pronoun}}{6}{table.1.1}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Internal and external case allowed}}{4}{table.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.2}{\ignorespaces Light head and relative pronoun per language}}{6}{table.1.2}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Only internal case allowed}}{5}{table.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.3}{\ignorespaces Light head and relative pronoun per language}}{17}{table.1.3}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Only external case allowed}}{6}{table.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.4}{\ignorespaces Modern German relative pronouns}}{19}{table.1.4}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Only matching allowed}}{7}{table.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.5}{\ignorespaces Modern German demonstrative pronouns}}{19}{table.1.5}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Internal and external case allowed (repeated)}}{8}{table.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.6}{\ignorespaces Modern German relative pronouns}}{20}{table.1.6}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces Summary of Gothic headless relatives (repeated)}}{8}{table.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.7}{\ignorespaces Modern German strong adjectives}}{20}{table.1.7}%
+\contentsline {table}{\numberline {1.7}{\ignorespaces Old High German headless relatives (matching)}}{11}{table.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.8}{\ignorespaces Modern German personal pronouns}}{21}{table.1.8}%
+\contentsline {table}{\numberline {1.8}{\ignorespaces Old High German headless relatives (\ac {nom} --- \ac {acc})}}{12}{table.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.9}{\ignorespaces Base comparison in Old High German}}{54}{table.1.9}%
+\contentsline {table}{\numberline {1.9}{\ignorespaces Old High German headless relatives (\ac {nom} --- \ac {dat})}}{14}{table.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.10}{\ignorespaces Relative/demonstrative pronouns in Old High German (\citealt {braune2018}:\nobreakspace {}339)}}{57}{table.1.10}%
+\contentsline {table}{\numberline {1.10}{\ignorespaces Old High German headless relatives (\ac {acc} --- \ac {dat})}}{15}{table.1.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.11}{\ignorespaces Adjectives on \textit {-a-/-ō-} in Old High German \citealt {braune2018}:\nobreakspace {}300}}{57}{table.1.11}%
+\contentsline {table}{\numberline {1.11}{\ignorespaces Only internal case allowed (repeated)}}{17}{table.1.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.12}{\ignorespaces Modern German headless relatives (matching)}}{19}{table.1.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.13}{\ignorespaces Modern German headless relatives (\ac {nom} --- \ac {acc})}}{22}{table.1.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.14}{\ignorespaces Modern German headless relatives (\ac {nom} --- \ac {dat})}}{24}{table.1.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.15}{\ignorespaces Modern German headless relatives (\ac {acc} --- \ac {dat})}}{27}{table.1.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.16}{\ignorespaces Only external case allowed (repeated)}}{27}{table.1.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.17}{\ignorespaces Classical Greek headless relatives possibility 1}}{29}{table.1.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.18}{\ignorespaces Classical Greek headless relatives possibility 2}}{29}{table.1.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.19}{\ignorespaces Summary of Classical Greek headless relatives}}{30}{table.1.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.20}{\ignorespaces The matching type (repeated)}}{31}{table.1.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.21}{\ignorespaces Polish headless relatives (matching)}}{33}{table.1.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.22}{\ignorespaces Polish headless relatives (\ac {acc} --- \ac {dat})}}{35}{table.1.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.23}{\ignorespaces Relative pronoun follows case competition}}{36}{table.1.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.24}{\ignorespaces Relative pronoun follows case competition}}{37}{table.1.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.25}{\ignorespaces Always internal case}}{39}{table.1.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.26}{\ignorespaces Always external case}}{40}{table.1.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.27}{\ignorespaces Always external case (repeated)}}{41}{table.1.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.28}{\ignorespaces Old English headless relatives possibility 1}}{42}{table.1.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.29}{\ignorespaces Old English headless relatives possibility 2}}{42}{table.1.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.30}{\ignorespaces Old English headless relatives possibility 3}}{43}{table.1.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.31}{\ignorespaces Summary of Old English headless relatives}}{44}{table.1.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.32}{\ignorespaces Modern Greek headless relatives possibility 1}}{45}{table.1.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.33}{\ignorespaces Modern Greek headless relatives possibility 2}}{45}{table.1.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.34}{\ignorespaces Modern Greek headless relatives possibility 3}}{46}{table.1.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.35}{\ignorespaces Summary of Modern Greek headless relatives}}{48}{table.1.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.36}{\ignorespaces Relative pronoun follows case competition}}{50}{table.1.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.37}{\ignorespaces Relative pronoun in internal case}}{50}{table.1.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.38}{\ignorespaces Relative pronoun in external case}}{51}{table.1.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1.39}{\ignorespaces Possible patterns for headless relatives}}{53}{table.1.39}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10pt}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Options for the surface pronoun}}{60}{table.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.2}{\ignorespaces Light head and relative pronoun per language}}{60}{table.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.3}{\ignorespaces Light head and relative pronoun per language}}{71}{table.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.4}{\ignorespaces Modern German relative pronouns}}{73}{table.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.5}{\ignorespaces Modern German demonstrative pronouns}}{73}{table.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.6}{\ignorespaces Modern German relative pronouns}}{74}{table.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.7}{\ignorespaces Modern German strong adjectives}}{74}{table.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.8}{\ignorespaces Modern German personal pronouns}}{75}{table.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.9}{\ignorespaces Base comparison in Old High German}}{108}{table.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.10}{\ignorespaces Relative/demonstrative pronouns in Old High German (\citealt {braune2018}:\nobreakspace {}339)}}{111}{table.2.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.11}{\ignorespaces Adjectives on \textit {-a-/-ō-} in Old High German \citealt {braune2018}:\nobreakspace {}300}}{111}{table.2.11}%

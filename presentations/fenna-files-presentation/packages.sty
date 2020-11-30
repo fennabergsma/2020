@@ -19,6 +19,7 @@ boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 %%%TABLES%%%
 \usepackage{diagbox}%diagonals
 \usepackage{color, colortbl}
+\usepackage[dvipsnames]{xcolor}
 \definecolor{LG}{gray}{0.85}
 \definecolor{DG}{gray}{0.6}
 \newcommand{\tcol}[2]{\textcolor{#1}{#2}}%shorter italics
@@ -34,3 +35,13 @@ boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
 % \renewenvironment{flushleft}{\raggedright}{}%make sure ex + gll also works
 
 \usepackage[backend=biber,style=authoryear-comp,natbib=true,dashed=false,sorting=ynt]{biblatex}
+
+
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\usetikzlibrary{shapes,arrows,positioning,shapes.geometric}
+
+\tikzstyle{question} = [diamond, minimum width=1cm, minimum height=1cm, text centered, text width=1.5cm, draw=black]
+\tikzstyle{outcome} = [rectangle, minimum width=1.2cm, minimum height=1.2cm, text centered, text width=1.2cm, draw=black]
+\tikzstyle{example} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=white]
+\tikzstyle{arrow} = [thick,->,>=stealth]
