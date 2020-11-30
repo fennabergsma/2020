@@ -1925,12 +1925,12 @@ In sum, neither of the elements contains all constituents that the other element
 \end{forest}
 }
 
-Consider the example in \ref{ex:mg-acc-acc-rep}, in which the internal accusative case competes against the external accusative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
+Consider the example in \ref{ex:polish-acc-acc-rep}, in which the internal accusative case competes against the external accusative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
 The internal case is accusative, as the predicate \tit{lubić} `to like' takes accusative objects. The relative pronoun \tit{kogo} `\ac{rel}.\ac{an}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
 The external case is accusative as well, as the predicate \tit{lubić} `to like' also takes accusative objects. The light head \tit{tego} `\ac{dem}.\ac{an}.\ac{acc}' appears in the accusative case. It is placed between square brackets because it does not surface.
 
 \exg. Jan lubi \underline{[tego]} \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
- Jan like.\tsc{3sg}\scsub{[acc]} \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+ Jan like.\tsc{3sg}\scsub{[acc]}\tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
  `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
 
 In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
@@ -2100,6 +2100,40 @@ All three constituent of the light head are also a constituent within the relati
   \label{fig:polish-int-ext}
 \end{figure}
 
+Consider the examples in \ref{ex:polish-dat-acc-rep}, in which the internal dative case competes against the external accusative case. The relative clauses are marked in bold, and the light heads and the relative pronouns are underlined. It is not possible to make a grammatical headless relative in this situation.
+The internal case is dative, as the predicate \tit{dokuczać} `to tease' takes dative objects. The relative pronoun \tit{komu} `\ac{rel}.\ac{an}.\ac{dat}' appears in the nominative case.
+The external case is accusative, as the predicate \tit{lubić} `to like' takes accusative objects. The light head \tit{tego} `\ac{dem}.\ac{an}.\ac{acc}' appears in the accusative case.
+\ref{ex:polish-dat-acc-rep-rel} is the variant of the sentence in which the light head is absent (indicated by the square brackets) and the relative pronoun surfaces, and it is ungrammatical.
+\ref{ex:polish-dat-acc-rep-lh} is the variant of the sentence in which the relative pronoun is absent (indicated by the square brackets) and the light head surfaces, and it is ungrammatical too.
+
+\ex.
+\ag. *Jan lubi [\underline{tego}] \underline{\tbf{komu}} \tbf{-kolkwiek} \tbf{dokucza}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\scsub{[dat]}\\
+`Jan likes whoever he teases.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-dat-rep-rel}
+\bg. *Jan lubi \underline{tego} [\underline{\tbf{komu}}] \tbf{-kolkwiek} \tbf{dokucza}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\scsub{[dat]}\\
+`Jan likes whoever he teases.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-dat-rep-lh}
+
+In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
+The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{mu}.
+The light head consists of three morphemes: \tit{t}, \tit{e} and \tit{go}.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+Neither of the elements contains all constituents that the other element contains. The relative pronoun does not contain all constituents that the light head contains, and the light head does not contain all constituents that the relative pronoun contains. As a result, none of the elements can be absent.
+
+I explain this constituent by constituent.
+I start by showing that the light head cannot be absent.
+Consider the right-most constituent of the light head that spells out as \tit{go} (\tsc{acc}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{acc}P, contained in \tsc{dat}P, but that constituent also contains \tit{ind}P.
+Consider the middle constituent of the light head that spells out as \tit{e} (\tsc{ind}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{ind}P, contained in \tsc{dat}P, but that constituent does not contain \tsc{ref}, \tsc{class} and \tsc{masc}.
+Note here that there is feature containment: the relative pronoun contains all features that the light head contains. It is here crucial to use the stronger constituent containment requirement.
+The light head has a constituent that is not a constituent in the relative pronoun, so the light head cannot be absent.
+
+The relative pronoun can also not be absent.
+Consider the right-most constituent of the relative pronoun that spells out as \tit{mu} (\tsc{dat}P). This constituent is not a constituent in the light head: the light head has a constituent \tsc{acc}P, but it does not contain \tsc{ind}P and also not \tsc{f}3 to make it a \tsc{dat}P.
+The same hold for the left-most constituent of the relative pronoun that spells out as \tit{k} (\tsc{rel}P). The light head lacks the features \tsc{dist}, \tsc{wh} and \tsc{rel} that form the \tsc{rel}P.
+The relative pronoun has constituents that are not constituents in the light head, so the relative pronoun cannot be absent.
+In sum, neither of the elements contains all constituents that the other element contains, and none of the elements can be absent, so none of them is marked gray.
+
 
 \begin{figure}[H]
   \center
@@ -2247,6 +2281,38 @@ All three constituent of the light head are also a constituent within the relati
   \label{fig:polish-int-wins}
 \end{figure}
 
+Consider the examples in \ref{ex:polish-dat-acc-rep}, in which the internal dative case competes against the external accusative case. The relative clauses are marked in bold, and the light heads and the relative pronouns are underlined. It is not possible to make a grammatical headless relative in this situation.
+The internal case is accusative, as the predicate \tit{wpuścić} `to let' takes accusative objects. The relative pronoun \tit{kogo} `\ac{rel}.\ac{an}.\ac{acc}' appears in the nominative case.
+The external case is dative, as the predicate \tit{ufać} `to trust' takes dative objects. The light head \tit{temu} `\ac{dem}.\ac{an}.\ac{dat}' appears in the accusative case.
+\ref{ex:polish-dat-acc-rep-rel} is the variant of the sentence in which the light head is absent (indicated by the square brackets) and the relative pronoun surfaces, and it is ungrammatical.
+\ref{ex:polish-dat-acc-rep-lh} is the variant of the sentence in which the relative pronoun is absent (indicated by the square brackets) and the light head surfaces, and it is ungrammatical too.
+
+\ex.
+\ag. *Jan ufa [\underline{temu}] \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+Jan trust.\tsc{3sg}\scsub{[dat]} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever let.\tsc{3sg}\scsub{[acc]} to home\\
+`Jan trusts whoever he let into the house.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-dat-acc-rel}
+\bg. Jan ufa \underline{temu} [\underline{\tbf{kogo}}] \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+Jan trust.\tsc{3sg}\scsub{[dat]} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever let.\tsc{3sg}\scsub{[acc]} to home\\
+`Jan trusts whoever he let into the house.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-dat-acc-lh}
+
+In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
+The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{go}.
+The light head consists of three morphemes: \tit{t}, \tit{e} and \tit{mu}.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+Neither of the elements contains all constituents that the other element contains. The relative pronoun does not contain all constituents that the light head contains, and the light head does not contain all constituents that the relative pronoun contains. As a result, none of the elements can be absent.
+
+I explain this constituent by constituent.
+I start by showing that the light head cannot be absent.
+Consider the right-most constituent of the light head that spells out as \tit{mu} (\tsc{dat}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{acc}P, but it does not contain \tsc{ind}P and also not \tsc{f}3 to make it a \tsc{dat}P.
+Consider the middle constituent of the light head that spells out as \tit{e} (\tsc{ind}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{ind}P, contained in \tsc{dat}P, but that constituent does not contain \tsc{ref}, \tsc{class} and \tsc{masc}.
+The light head has a constituent that is not a constituent in the relative pronoun, so the light head cannot be absent.
+
+The relative pronoun can also not be absent.
+Consider the right-most constituent of the relative pronoun that spells out as \tit{go} (\tsc{acc}P). This constituent is not a constituent in the light head: the light head has a constituent \tsc{acc}P, contained in \tsc{dat}P, but that constituent also contains \tit{ind}P.
+Consider left-most constituent of the relative pronoun that spells out as \tit{k} (\tsc{rel}P). The light head lacks the features \tsc{dist}, \tsc{wh} and \tsc{rel} that form the \tsc{rel}P.
+The relative pronoun has constituents that are not constituents in the light head, so the relative pronoun cannot be absent.
+In sum, neither of the elements contains all constituents that the other element contains, and none of the elements can be absent, so none of them is marked gray.
 
 \begin{figure}[H]
   \center
