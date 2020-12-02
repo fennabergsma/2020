@@ -6,7 +6,7 @@ In Chapter \ref{ch:typology} I introduced two descriptive parameters that genera
 The first parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes between unrestricted languages (e.g. Old High German) on the one hand and internal-only languages (e.g. Modern German) and matching languages (e.g. Polish) on the other hand.
 The second parameter concerns whether the internal case is allowed to surface when it wins the case competition (allow \tsc{int?}). This parameter distinguishes between internal-only languages (e.g. as Modern German) on the one hand and unrestricted languages (e.g. Polish) on the other hand.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \centering
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
@@ -72,7 +72,7 @@ The surfacing element is the one that bears the winning case, and the absent ele
 Table \ref{tbl:options-surface-pronoun} lists the two options that I just laid out plus an additional one.
 The first option is that the relative pronoun, which bears the internal case, can appear as the surface pronoun. The second option is that the light head, which bears the external case, can appear as the surface pronoun. The third option is that there is no grammatical form for the surface pronoun.
 
-\begin{table}[H]
+\begin{table}[ht]
   \center
   \caption{Options for the surface pronoun}
 \begin{tabular}{ccc}
@@ -89,7 +89,7 @@ relative pronoun\scsub{int} \\
 
 Table \ref{tbl:overview-rel-light} shows per language type which of the three options in Table \ref{tbl:options-surface-pronoun} is chosen when the internal and external case differ.
 
-\begin{table}[H]
+\begin{table}[ht]
   \center
   \caption{Light head and relative pronoun per language}
 \begin{tabular}{cccc}
@@ -122,7 +122,7 @@ Whether the internal case is allowed to surface corresponds to whether the relat
 Similarly, whether the external case is allowed to surface corresponds to whether the light head surfaces. That implicates that the relative pronoun is absent, so it has been deleted.
 I show this in Figure \ref{fig:two-parameters-different}.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \centering
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
@@ -163,7 +163,7 @@ Figure \ref{fig:acc-nom-structure} illustrates this for the accusative and the n
 I draw a dashed circle around the features that are features in both the accusative and the nominative.
 As each feature of the accusative is also a feature within the nominative, the accusative wins the case competition. I illustrate this by marking the content of the dashed circle for the nominative gray.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -215,7 +215,7 @@ In Figure \ref{fig:acc-nom-structure-moved-out} I show the same picture as in Fi
 I draw a dashed circle around the constituent that is a constituent in both the accusative and the nominative.
 There is still feature containment: the nominative contains \tsc{f}1 and XP and so does the accusative. However, there is no longer constituent containment: the \tsc{nom}P constituent containing \tsc{f}1 and XP is no longer a constituent in the \tsc{acc}P.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -295,7 +295,7 @@ In Section \ref{sec:deriving-only-internal} I show how I reach the derived struc
 }
 The light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun in addition has a relative feature (\tsc{rel}).
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -335,7 +335,7 @@ I compare the light head and the relative pronoun in terms of constituent contai
 I illustrate this in Figure \ref{fig:rel-lh-structure-containment}. I draw a dashed circle around the constituent that is a constituent in both the light head and the relative pronoun.
 The \tsc{rel}P contains the \tsc{k}P, so the relative pronoun can delete the light head. I illustrate this by marking the content of the dashed circle for the \tsc{k}P gray.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -346,7 +346,8 @@ The \tsc{rel}P contains the \tsc{k}P, so the relative pronoun can delete the lig
         tikz={
         \node[draw,circle,
         dashed,
-        scale=0.8,
+        scale=0.85,
+        fill=DG,fill opacity=0.2,
         fit to=tree]{};
         }
             [ϕP
@@ -359,14 +360,13 @@ The \tsc{rel}P contains the \tsc{k}P, so the relative pronoun can delete the lig
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{rel}P
+        [\tsc{rel}P, s sep=15mm
             [\tsc{rel}]
             [\tsc{k}P,
             tikz={
             \node[draw,circle,
             dashed,
-            scale=0.8,
-            fill=DG,fill opacity=0.2,
+            scale=0.85,
             fit to=tree]{};
             }
                 [ϕP
@@ -390,7 +390,7 @@ I assume that the feature content of light heads and relative pronouns is stable
 
 I start with an example with matching cases in Figure \ref{fig:rel-lh-nom-structure}. The relative pronoun appears in the nominative, and the light head does too.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -401,7 +401,7 @@ I start with an example with matching cases in Figure \ref{fig:rel-lh-nom-struct
         tikz={
         \node[draw,circle,
         dashed,
-        scale=0.9,
+        scale=0.85,
         fill=DG,fill opacity=0.2,
         fit to=tree]{};
         }
@@ -415,13 +415,13 @@ I start with an example with matching cases in Figure \ref{fig:rel-lh-nom-struct
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{rel}P
+        [\tsc{rel}P, s sep=15mm
             [\tsc{rel}]
             [\tsc{nom}P,
             tikz={
             \node[draw,circle,
             dashed,
-            scale=0.9,
+            scale=0.85,
             fit to=tree]{};
             }
                 [ϕP
@@ -445,7 +445,7 @@ As the constituent of the light head is also a constituent within the relative p
 
 I continue with the example in Figure \ref{fig:rel-acc-lh-nom-structure}, in which the relative pronoun bears a more complex case than the light head.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -517,7 +517,7 @@ As each constituent of the light head is also a constituent within the relative 
 
 I end with the example in Figure \ref{fig:rel-nom-lh-acc-structure}, in which the light head bears a more complex case than the relative pronoun.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
   \begin{tabular}[b]{ccc}
       \toprule
@@ -595,20 +595,188 @@ Now I return to the point of crosslinguistic differences.
 I do not derive the differences between the languages from changing the feature content of the light head and relative pronoun per language.\footnote{
 The feature content of the unrestricted languages differs slightly from that of the internal-only and matching languages. This is due to the fact that this language type uses a different type of relative pronoun. The basic idea of the relative pronoun having at least one more feature than the light head remains the same.
 }
-Instead, the differences come from how the light heads and relative pronouns are spelled out. In Sections \ref{sec:deriving-only-internal} to Section \ref{sec:deriving-nonmatching}, I show how I implement this idea. For matching languages like Polish the intuition is that they package their features together differently in such a way that the constituents of the relative pronoun do not contain the constituents of the light head.
+Instead, the differences come from how the light heads and relative pronouns are spelled out. In Sections \ref{sec:deriving-only-internal} to Section \ref{sec:deriving-nonmatching}, I show how I implement this idea.
 
-unrestricted languages like Old High German have a syncretism between light heads and relative pronouns. It seems that syncretism can fix that. I draw a parallel with case syncretism in headless relatives, but also syncretism outside of case and headless relatives.
+For matching languages like Polish the intuition is that they package their features together differently from internal-only languages like Modern German. The packaging happens in such a way that the constituents of the relative pronoun do not contain the constituents of the light head. As a result, the relative pronoun cannot delete the light head anymore. In Section \ref{sec:deriving-matching}, I show that the different packaging of the features is a consequence of how the lexical entries for Polish light head and relative pronoun are specified in the lexicon.
 
-The structures in Figures \ref{fig:rel-lh-nom-structure} to \ref{fig:rel-nom-lh-acc-structure} exclude the external-only pattern. There is no way that each constituent of the light head contains a constituent of the relative pronoun but not the other way around.
+What is special about unrestricted languages like Old High German is that their light heads and relative pronouns are syncretic. If there is no constituent containment, but the two forms are syncretic, one element can still delete the other. This means that the relative pronoun can not only delete the light head, but the light head can also delete the relative pronoun.
+Consider Figure \ref{fig:rel-lh-syncretism1}, in which the relative pronoun deletes the light head.\footnote{
+These structures cannot be derived from the base structures in \ref{ex:base-light-head} and \ref{ex:base-relative-pronoun}. The structures I give here are simplifications of a more complex situation for which I give the intuition here.
+}
 
-I return to the metaphor with the committee that I introduced in Section \ref{sec:possible-patterns}. I wrote that first case competition takes place, in which a more complex case wins over a less complex case. This case competition can now be reformulated into a more general mechanism, namely constituent comparison. A more complex case corresponds to a constituent that contains the constituent that corresponds to a less complex case.
-Subsequently, I noted that there is a committee it can either approve this case or not approve it. The approval happens based on where the winning case comes from: from inside to the relative clause (internal) or from outside to the relative clause (external). The information that the committee uses for the approval of the case relies on the same mechanism as case competition, namely constituent comparison. A relative pronoun corresponds to a constituent that contains the constituent that corresponds to a light head.
-In other words, the grammaticality of a headless relative depends on several instances of constituent comparison. The constituents that are compared are those of the light head and the relative pronoun, which both elements bear their own case. Case is special in that it can differ from sentence to sentence within a language. Therefore, its effect can be observed within a particular language. The part of the light head and relative pronoun that does not involve case features is stable within a language.
+\begin{figure}[ht]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [ϕP,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            \node[draw,circle,
+            dashed,
+            scale=0.9,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.95,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [ϕP,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                ]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Syncretism: relative pronoun deletes light head}
+  \label{fig:rel-lh-syncretism1}
+\end{figure}
+
+The ϕP in the light head is spelled out as \tit{α}, illustrated by the circle around the ϕP and the \tit{α} under it. The \tsc{rel}P in the relative pronoun is spelled out as \tit{α} too, illustrated in the same way. I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+
+I start with the right-most constituent of the light head: \tsc{k}P. This constituent is also a constituent in the relative pronoun.
+I continue with the left-most constituent of the light head: the ϕP. This constituent is also a constituent in the relative pronoun, contained in the \tsc{rel}P.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles for the light head gray.
+
+Consider Figure \ref{fig:rel-lh-syncretism2}, in which the light head deletes the relative pronoun.
+
+\begin{figure}[ht]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [ϕP,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            \node[draw,circle,
+            dashed,
+            scale=0.9,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.95,
+            fill=DG,fill opacity=0.1,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [ϕP,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fill=DG,fill opacity=0.2,
+                fit to=tree]{};
+                }
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                ]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Syncretism: light head deletes relative pronoun}
+  \label{fig:rel-lh-syncretism2}
+\end{figure}
+
+Just as in Figure \ref{fig:rel-lh-syncretism1}, the ϕP in the light head is spelled out as \tit{α} and the \tsc{rel}P in the relative pronoun is spelled out as \tit{α} too. I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+
+I start with the right-most constituent of the relative pronoun: \tsc{k}P. This constituent is also a constituent in the relative pronoun.
+I continue with the left-most constituent of the relative pronoun: the \tsc{rel}P. This constituent is not contained in the light head, but it is syncretic with it. The ϕP is also spelled out as \tit{α}.
+Each constituent of the relative pronoun is either also a constituent within the light head or it is syncretic with a constituent within the light head. Therefore, the relative pronoun can be absent. I illustrate this by marking the content of the dashed circles for the relative pronoun gray and the portion that is deleted by syncretism in a lighter shade of gray.
+
+The fact that syncretism also licenses deletion is not specific to the portion of the structure corresponding to ϕ and \tsc{rel}. Syncretic cases can have the same effect, for instance inanimate nominatives and accusatives in Modern German. In Section \ref{sec:deriving-nonmatching} I give examples from that, and I show the detailed derivations for unrestrictive languages like Old High German.
+
+The system I set up excludes the external-only type of language. An external-only type of language would be one in which the light head can delete the relative pronoun, but the relative pronoun cannot delete the light head. In my proposal, an element can the delete the other one if it contains all of the other's constituents. Relative pronouns always contain one more feature than light heads: \tsc{rel}. Therefore, it is impossible for a light head to contain all constituents of the relative pronoun. The light head namely does not even contain all features that the relative pronoun contains. If it does not meet the weaker requirement of feature containment, it is not possible to meet the stronger requirement of constituent containment.
+
+I return to the metaphor with the committee that I introduced in Chapter \ref{ch:typology}. I wrote that first case competition takes place, in which a more complex case wins over a less complex case. This case competition can now be reformulated into a more general mechanism, namely constituent comparison. A more complex case corresponds to a constituent that contains the constituent that corresponds to a less complex case.
+
+Subsequently, I noted that there is a committee that can either approve the winning case or not approve it. How I formulated it in Chapter \ref{ch:typology} is that the approval happens based on where the winning case comes from: from inside to the relative clause (internal) or from outside to the relative clause (external). I showed in this section that the approval relies on the same mechanism as case competition, namely constituent comparison. A relative pronoun corresponds to a particular set of constituents and so does the light head. If one contains all constituents the other contains, the former can delete the latter. When the element can delete the other element it is `allowed to surface'.
+
+In other words, the grammaticality of a headless relative depends on several instances of constituent comparison. The constituents that are compared are those of the light head and the relative pronoun, which both elements bear their own case. Case is special in that it can differ from sentence to sentence within a language. Therefore, the grammaticality of a sentence can differ within a language depending on the internal and external case. The part of the light head and relative pronoun that does not involve case features is stable within a language. Therefore, whether the internal or external case is `allowed to surface' cannot differ within a language.
 
 In this dissertation I describe different language types in case competition in headless relatives. In my account, the different language types are a result of a comparison of the light head and the relative pronoun in the language.
 The larger syntactic context in which this takes place should be kept stable. The operation that deletes the light head or the relative pronoun is the same for all language types. In this work, I do not specify on which larger syntactic structure and which deletion operation should be used. In Section \ref{sec:larger-syntax} I discuss existing proposals on these topics and to what extend they are compatible with my account.
 
-To summarize, in this section I introduced the assumptions that headless relatives are derived from light-headed relatives and that relative pronouns contain at least one more feature than light heads. A headless relative is grammatical when either the light head or the relative pronoun contains all features of the other element. This set of assumptions derives that only a more complex case can surface and that there is no language of the external-only type.
+To summarize, in this section I introduced the assumptions that headless relatives are derived from light-headed relatives and that relative pronouns contain at least one more feature than light heads. A headless relative is grammatical when either the light head or the relative pronoun contains all constituents of the other element. This set of assumptions derives that only the most complex case can surface and that there is no language of the external-only type.
 
 % (\citealt{fuss2014,hanink2018} argue the same but for Modern German).\footnote{
 % A difference with Modern German is that there can only be a single element when the cases match. In Section \ref{ch:discussion} I return to the point why Modern German does not have unrestricted headless relatives that look like Old High German, although it still has syncretic light heads and relative pronouns.
@@ -625,7 +793,7 @@ To summarize, in this section I introduced the assumptions that headless relativ
 
 In the internal-only pattern..
 
-\begin{table}[H]
+\begin{table}[ht]
   \center
   \caption{Light head and relative pronoun in Modern German}
 \begin{tabular}{cccc}
@@ -696,24 +864,130 @@ Jan has eaten what he cooked has\\
 Jan has what eaten he cooked has\\
 `Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
 
-In conclusion, extraposition facts show that the surface pronoun in Modern German is the relative pronoun.
+In conclusion, extraposition facts show that the surface pronoun in Modern German headless relatives corresponds to the relative pronoun.
 
 
-\begin{table}[H]
+
+
+I give the light head - relative pronoun combination.
+
+Modern German has two types of relative pronouns: \tsc{wh}-pronouns that appear in headless relatives and \tsc{d}-pronous that appear in headed relatives.\footnote{
+At first sight it seems like \citet{fuss2014} discuss a counterexample to this generalization, namely headless relatives with \tsc{d}-pronouns. However, they claim that these headless relatives are actually light-headed relatives in which one of two syncretic elements is deleted by haplology.
+}
+\ref{ex:mg-wh-for-headless} is an example of a \tsc{wh}-pronoun in a headless relative, and \ref{ex:mg-d-for-headed} is an example of a \tsc{d}-pronoun in a headed relative.
+
+\ex.
+\ag. Jan umarmt \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'\label{ex:mg-wh-for-headless}
+\bg. Jan umarmt den Mann \tbf{den} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} man \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+`Jan hugs the man that he likes.'\label{ex:mg-d-for-headed}
+
+Both of these relative pronouns seem to be compatible with light-headed relatives.
+
+\ex.
+\ag. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+`Jan hugs the man that he likes.'\label{ex:mg-wh-for-light-headed}
+\bg. Jan umarmt den \tbf{den} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+`Jan hugs the man that he likes.'\label{ex:mg-d-for-light-headed}
+
+At first sight, it seems like a possibility to assume that headless relatives are derived from the light-headed relative in \ref{ex:mg-wh-for-light-headed}. This is also exactly what \citet{hanink2018} does. In what follows, I motivate why I do not follow this proposal. The motivation comes from the interpretation of headless relatives.
+
+Headless relatives differ from headed relatives in that they can be combined with the the particle \tit{auch immer} `ever'.
+
+\ex.
+\ag. Jan unarmt \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} ever he likes\\
+`Jan hugs whoever he likes.'\label{ex:mg-wh-for-headless-ever}
+\bg. *Jan unarmt den Mann \tbf{den} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} man \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} ever he likes\\
+intended: `Jan hugs the man whoever he likes.'\label{ex:mg-d-for-headed-ever}
+
+The sentence in \ref{ex:mg-wh-for-headless-ever} has two main interpretations (see \citet{s̆imík2020} for a recent elaborate overview on the semantics of free relatives). The first interpretation is described as universal-like and the second is described as definite-like. The universal-like interpretation corresponds to a universal quantifier: Jan hugs everybody that he likes. The definite-like interpretation corresponds to a definite description: Jan hugs the person that he likes.
+
+\citet{s̆imík2020}{4} notes that some languages do not readily allow for the definite-like interpretation of headless relatives with an \tit{ever}-morpheme. There is no language documented that does not allow for the universal-like interpretation, but it does allow the definite-like interpretation. Along the same lines, informants have reported to me headless relatives with case mismatches seem to become more acceptable in the universal-like interpretation compared to the definite-like interpretation.
+What I take away from that, is that the universal-like interpretation of headless relatives is the main interpretation to account for.
+
+The headed relative in \ref{ex:mg-wh-for-light-headed} has as its light head \tit{den}. This is what \citet{schwarz2009} calls a strong demonstrative, which is used when there is an anaphoric relation. Often there is a linguistic antecedent that is referred back to. I give an example in \ref{ex:mg-florian-strong}. The strong demonstrative is \tit{dem} that precedes \tit{Freund}, which refers back to the linguistic antecedent \tit{einen Freund}.
+
+\exg. Hans hat heute einen Freund zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto von dem Freund gezeigt.\\
+Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo of the\scsub{strong} friend shown\\
+`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'\label{ex:mg-florian-strong}
+
+In headless relatives, there is no anaphoric relation or linguistic antecedent to refer back to.
+
+What \citet{schwarz2009} calls a weak demonstrative is more compatible with the light head in headless relatives. Weak articles are used when situational uniqueness is involved. Uniqueness can be global or within a restricted domain. I give two examples in \ref{ex:mg-florian-weak}. In \ref{ex:mg-florian-weak-hund}, the dog is unique in this specific situation of the break-in, but it has not been mentioned in the discourse before, so it is not referred back to. In \ref{ex:mg-florian-weak-mond}, the moon is unique for us people on the planet.
+
+\ex.\label{ex:mg-florian-weak}
+\ag. Der Einbrecher ist {zum Glück} vom Hund verjagt worden.\\
+the burglar is luckily {by the\scsub{weak}} dog {chased away} been\\
+`Luckily, the burglar was chased away by the dog.'\label{ex:mg-florian-weak-hund}
+\bg. Armstrong flog als erster zum Mond.\\
+Armstrong flew as {first one} {to the\scsub{weak}} moon\\
+`Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}\label{ex:mg-florian-weak-mond}
+
+So how does this apply to headless relatives?
+
+So, I propose that headless relatives in Modern German are derived from the light-headed relatives as in \ref{ex:mg-base-headless-rels}.
+
+\exg. Jan umarmt [ən] \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{dem}.\tsc{an}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'\label{ex:mg-base-headless-rels}
+
+The deletion of the light head is obligatory. Why?
+
+So, this element does not surface as light head, but it does surface somewhere else, namely as clitic. I assume that the clitic is syncretic with the light head in Modern German. In Section \ref{sec:deriving-matching} I come back to how they differ from each other.
+
+\ex.
+\ag. Hat r einen Motorrad?\\
+ has \tsc{dem}.\tsc{nom}\scsub{weak} a motor bike\\
+ `Does he have a motorbike?'
+\bg. Ich habe n gesehen.\\
+ I have \tsc{dem}.\tsc{acc}\scsub{weak} seen\\
+ `I have been him.'
+\bg. Ich folge m nach Hause.\\
+ I follow \tsc{dem}.\tsc{dat}\scsub{weak} to house\\
+ `I follow him home.'
+
+
+
+
+
+
+Now I turn to Modern German relative pronouns. Table \ref{tbl:mg-paradigm-wh-rels} gives the animate and inanimate forms in three cases: nominative, accusative and dative. I decompose them in three morphemes: a \tit{w}, a vowel and a final consonant. For each morpheme I show which syntactic features they correspond to. Then I form the complete relative pronouns with them.
+
+\begin{table}[ht]
  \center
  \caption {Modern German relative pronouns}
   \begin{tabular}{ccc}
   \toprule
               & \ac{an}  & \tsc{inan}\\
     \cmidrule{2-3}
-    \ac{nom}  & w-er    & w-as     \\
-    \ac{acc}  & w-en    & w-as     \\
-    \ac{dat}  & w-em    & (w-em)   \\
+    \ac{nom}  & w-e-r    & w-a-s     \\
+    \ac{acc}  & w-e-n    & w-a-s     \\
+    \ac{dat}  & w-e-m    & (w-e-m)   \\
   \bottomrule
   \end{tabular}
+  \label{tbl:mg-paradigm-wh-rels}
 \end{table}
 
-\begin{table}[H]
+
+
+
+
+I start with the morpheme \tit{w}.
+
+
+The \tit{w} combines with the same endings as the \tit{d} does in demonstratives in Modern German. Table \ref{tbl:mg-paradigm-dems} gives the singular forms in three gender and three cases.\footnote{
+These demonstratives are also used as relative pronouns of headed or regular light-headed relative clauses. To keep them apart, I keep referring to the \tsc{d}-pronouns as demonstratives and only to the \tsc{wh}-pronouns as relative pronouns.
+}\footnote{
+Note here that the relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels}. Demonstratives also have plural forms (which are not given here), and relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it has lots of morphology) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
+}
+
+\begin{table}[ht]
  \center
  \caption {Modern German demonstrative pronouns}
   \begin{tabular}{cccc}
@@ -725,15 +999,14 @@ In conclusion, extraposition facts show that the surface pronoun in Modern Germa
     \ac{dat}  & d-em   & d-em   & d-er    \\
   \bottomrule
   \end{tabular}
+  \label{tbl:mg-paradigm-dem}
 \end{table}
 
-Interesting that there is no feminine headless relative pronoun. This happens more often btw.
-
-The wh is used as interrogative and as relative pronoun.
+This identifies the \tit{d} and, more importantly for the discussion here, the \tit{w} as morpheme. The morpheme \tit{w} appears besides in headless relatives, also as interrogative pronouns. An example is given in \ref{ex:mg-interrogative}.
 
 \exg. Wer ist da?\\
 who is there\\
-`Who is there?'
+`Who is there?'\label{ex:mg-interrogative}
 
 Hachem describes it as set of alternatives etc. etc. Lander and Baunaz have this containment between \tsc{rel}, \tsc{wh}, \tsc{dem} etc. I adopt the \tsc{rel}/\tsc{wh} part.
 
@@ -747,7 +1020,7 @@ Hachem describes it as set of alternatives etc. etc. Lander and Baunaz have this
 
 This leaves the suffix. I split this up in two parts. I see the final consonant in different places.
 
-\begin{table}[H]
+\begin{table}[ht]
  \center
  \caption {Modern German relative pronouns}
   \begin{tabular}{ccc}
@@ -763,7 +1036,7 @@ This leaves the suffix. I split this up in two parts. I see the final consonant 
 
 In strong adjectives.
 
-\begin{table}[H]
+\begin{table}[ht]
  \center
  \caption {Modern German strong adjectives}
   \begin{tabular}{cccc}
@@ -779,7 +1052,7 @@ In strong adjectives.
 
 In pronouns, in the non-suppletives.
 
-\begin{table}[H]
+\begin{table}[ht]
  \center
  \caption {Modern German personal pronouns}
   \begin{tabular}{cccc}
@@ -832,7 +1105,7 @@ I use the case features introduced by \citet{caha2009}, which I already discusse
   {\draw (.east) node[right]{⇔ \tit{r}}; }
 \end{forest}
 
-For now, this leaves the vowel to express features having to do with referentiality, gender, number and deixis.
+For now, this leaves the vowel to express features having to do with referentiality and deixis.
 
 I use pronominal features that are distinguished by \citet{harley2002}: \tsc{class}, \tsc{masc} and \tsc{ind}. \tsc{ref} refers to a referring expression, which all pronouns contain. The feature \tsc{class} refers to gender features, which is neuter if it is not combined with any other features. Combining \tsc{class} with the feature \tsc{masc} gives a masculine gender. \tsc{ind} refer to number, which is singular if it is not combined with any other features.
 
@@ -894,6 +1167,23 @@ Now I come back to the interaction between gender and case. For the neuter relat
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{s}}; }
+\end{forest}
+
+\ex.
+\ag. d-er Baum dort/\#hier\\
+ \tsc{d}-\tsc{dem}\scsub{strong} tree there/here\\
+ `that tree there'
+\bg. d-ies-ər Baum hier/\#dort\\
+ \tsc{d}-\tsc{emph}-\tsc{dem}\scsub{weak} tree here/there\\
+ `this tree here'
+
+\ex.
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{deix}\scsub{1}]
+      [\tsc{ref} [\phantom{xxx}, roof]]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{ə}}; }
 \end{forest}
 
 
@@ -1006,127 +1296,6 @@ Now I show how the relative pronoun are built.
 \end{forest}
 }
 
-But how are these relative pronouns formed, how are the features packaged together the way they are? The basis of these relative pronouns are a functional sequence, and there is a spellout algorithm that drives the moving around of elements.
-
-The functional sequence is this:
-
-\ex. \begin{forest} boom
-[\tsc{acc}P
-    [\tsc{f}2]
-    [\tsc{nom}P
-        [\tsc{f}1]
-        [\tsc{rel}P
-            [\tsc{rel}]
-            [\tsc{wh}P
-                [\tsc{wh}]
-                [\tsc{ind}P
-                    [\tsc{ind}]
-                    [\tsc{masc}P
-                        [\tsc{masc}]
-                        [\tsc{class}P
-                            [\tsc{class}]
-                            [\tsc{med}P
-                                [\tsc{deix}\scsub{2}]
-                                [\tsc{prox}P
-                                    [\tsc{deix}\scsub{1}]
-                                    [\tsc{ref} [\phantom{xxx}, roof]]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
-]
-\end{forest}
-
-The spellout algorithm is this.
-
-\ex. \tbf{Spellout Algorithm:}\\
-Merge F and \label{ex:spellout}
- \a. Spell out FP.
- \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
- \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
-
-When a new match is found, it overrides previous spellouts.
-
-\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
-Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
-
-If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
-
-\ex. \tbf{Backtracking} \citep{starke2018}:\\
-When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
-
-\ex. \tbf{Spec Formation} \citep{starke2018}:\\
-If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
-
-difference between suffix and prefix
-
-Note here that the functional sequence is identical for all languages. The spellout algorithm is also the same for all languages. It is only the lexical entries that differ per language. It is these lexical entries that lead to different constituents within the relative pronoun, which in turn lead to different grammaticality patterns in headless relatives.
-
-The different constituency, that is crucial for my proposal, is driven by the lexical entries. Features are merged one by one and they are attempted to be realized. If that does not work phrasally, we do the first movement, the second movement, we try backtracking or we build a complex spec.
-
-The constituent for \tit{w} in Modern German arises because a complex spec was created. The constituent with \tit{r}/\tit{n} arises because they are suffixes onto the whole structure.
-
-
-
-
-
-Modern German has two types of demonstratives: the strong one and the weak one
-
-The strong article is used when there is an anaphoric relation. Often there is a linguistic antecedent that is referred back to.
-
-\exg. Hans hat heute \tbf{einen} \tbf{Freund} zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto \tbf{vom}/ \tbf{von} \tbf{dem} \tbf{Freund} gezeigt.\\
-Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo {of the\scsub{weak}} of the\scsub{strong} friend shown\\
-`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'
-
-Weak articles are used when situational uniqueness is involved. Uniqueness can be global or within a restricted domain. The discourse participants mutually shared knowledge that uniqueness holds.
-
-\ex.
-\ag. Der Einbrecher ist {zum Glück} vom /von dem Hund verjagt worden.\\
-the burglar is luckily {by the\scsub{weak}} by the\scsub{strong} dog {chased away} been\\
-`Luckily, the burglar was chased away by the dog.'
-\bg. Armstrong flog als erster zum Mond.\\
-Armstrong flew as {first one} {to the\scsub{weak}} moon\\
-`Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}
-
-
-
-I propose that it is the weak one that is the head of the relative clause. Give reasons from Schwarz?cThe strong article cannot be used because it does not go together with the free choice interpretation of \tsc{wh}-relatives
-
-\footnote{
-Hanink says it is actually the strong one that is the head of the relative clause. My informants claim that the interpretation of \tit{der} \tit{wer} is very different from \tit{wer}. although she does say that the feature specification of d is exactly the same as that of w..
-}
-
-The deletion in Modern German is not optional, but obligatory. The reason for that is that the weak demonstrative is phonologically(?) not heavy enough to be the head of a relative clause. Maybe not only phonologically, because \tit{vom} also does not work..
-
-
-but why not in Polish? It then cannot be because of some feature.. or ə cannot realize a focus feature while the Polish counterpart can..
-
-\ex. *Sie ist vom Mann, mit dem sie gestern ausgegangen ist, versetzt worden.
-
-
-Lexical entry for the light head
-
-\ex.
-\ag. d-er Baum dort/\#hier\\
- \tsc{d}-\tsc{dem}\scsub{strong} tree there/here\\
- `that tree there'
-\bg. d-ies-ər Baum hier/\#dort\\
- \tsc{d}-\tsc{emph}-\tsc{dem}\scsub{weak} tree here/there\\
- `this tree here'
-
-\ex.
-\begin{forest} boom
-  [\tsc{prox}P
-      [\tsc{deix}\scsub{1}]
-      [\tsc{ref} [\phantom{xxx}, roof]]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{ə}}; }
-\end{forest}
-
 I show how the light heads are built.
 
 \ex.
@@ -1203,6 +1372,75 @@ I show how the light heads are built.
   ]
 \end{forest}
 }
+
+
+But how are these relative pronouns formed, how are the features packaged together the way they are? The basis of these relative pronouns are a functional sequence, and there is a spellout algorithm that drives the moving around of elements.
+
+The functional sequence is this:
+
+\ex. \begin{forest} boom
+[\tsc{acc}P
+    [\tsc{f}2]
+    [\tsc{nom}P
+        [\tsc{f}1]
+        [\tsc{rel}P
+            [\tsc{rel}]
+            [\tsc{wh}P
+                [\tsc{wh}]
+                [\tsc{ind}P
+                    [\tsc{ind}]
+                    [\tsc{masc}P
+                        [\tsc{masc}]
+                        [\tsc{class}P
+                            [\tsc{class}]
+                            [\tsc{med}P
+                                [\tsc{deix}\scsub{2}]
+                                [\tsc{prox}P
+                                    [\tsc{deix}\scsub{1}]
+                                    [\tsc{ref} [\phantom{xxx}, roof]]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+
+The spellout algorithm is this.
+
+\ex. \tbf{Spellout Algorithm:}\\
+Merge F and \label{ex:spellout}
+ \a. Spell out FP.
+ \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+ \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+When a new match is found, it overrides previous spellouts.
+
+\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
+Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\
+If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+difference between suffix and prefix
+
+Note here that the functional sequence is identical for all languages. The spellout algorithm is also the same for all languages. It is only the lexical entries that differ per language. It is these lexical entries that lead to different constituents within the relative pronoun, which in turn lead to different grammaticality patterns in headless relatives.
+
+The different constituency, that is crucial for my proposal, is driven by the lexical entries. Features are merged one by one and they are attempted to be realized. If that does not work phrasally, we do the first movement, the second movement, we try backtracking or we build a complex spec.
+
+The constituent for \tit{w} in Modern German arises because a complex spec was created. The constituent with \tit{r}/\tit{n} arises because they are suffixes onto the whole structure.
+
+
+
+
 
 Consider the example in \ref{ex:mg-nom-nom-rep}, in which the internal nominative case competes against the external nominative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
 The internal case is nominative, as the predicate \tit{mögen} `to like' takes nominative subjects. The relative pronoun \tit{wer} `\ac{rel}.\ac{an}.\ac{nom}' appears in the nominative case. This is the element that surfaces.
@@ -1662,7 +1900,7 @@ In sum, neither of the elements contains all constituents that the other element
 
 \section{Deriving the matching type}\label{sec:deriving-matching}
 
-\begin{table}[H]
+\begin{table}[ht]
   \center
   \caption{Light head and relative pronoun in Polish}
 \begin{tabular}{cccc}
@@ -1896,7 +2134,7 @@ The external case is accusative as well, as the predicate \tit{lubić} `to like'
 
 In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
  \caption {Polish \tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{acc} = \tit{kogo}}
   \begin{tabular}[b]{c}
@@ -2076,7 +2314,7 @@ Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg} \tsc{rel}.
 
 In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
  \caption {Polish \tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{dat} ≠ \tit{tego}/\tit{komu}}
   \begin{tabular}[b]{c}
@@ -2255,7 +2493,7 @@ Jan trust.\tsc{3sg}\scsub{[dat]} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever let.
 
 In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \center
  \caption {Polish \tsc{ext}\scsub{dat} vs. \tsc{int}\scsub{acc} ≠ \tit{temu}/\tit{kogo}}
   \begin{tabular}[b]{c}
@@ -2448,7 +2686,7 @@ There is exactly one book in the topic situation – A and B’s shared office (
 
 Florian showed that this is different for Modern German:
 
-\begin{table}[H]
+\begin{table}[ht]
 \begin{tabular}{c|ccc}
 \toprule
        & anaphoric                & situational uniqueness              & inherent uniqueness                 \\
@@ -2465,7 +2703,7 @@ German & \tsc{dem}\scsub{strong}  & \cellcolor{LG}\tsc{dem}\scsub{weak} & \cellc
 
 \section{Deriving the unrestricted type}\label{sec:deriving-nonmatching}
 
-\begin{table}[H]
+\begin{table}[ht]
   \center
   \caption{Light head and relative pronoun in Old High German}
 \begin{tabular}{cccc}
@@ -2695,7 +2933,7 @@ The unrestricted type of language allows for matching cases, it allows the inter
 
 This section is structured as follows. First, I argue that Old High German headless relatives are derived from relative clauses headed by a light head, i.e. light-headed relatives. In this analysis, the internal element is what can descriptively be called the relative pronoun, and the external element is what can descriptively be called the light head. The internal element surfaces as the relative pronoun when the internal case is more complex, and the external element surfaces as the relative pronoun when the external case is more complex. In this section, I decompose the internal and external element, and I show which morpheme corresponds to which features. Both elements consist of two morphemes: a base part and a case part. I go through the examples in Table \ref{tbl:forms-ohg}, showing per situation how the base and case parts syntactically contain the other base and case parts. This containment is crucial.
 
-\begin{table}[H]
+\begin{table}[ht]
   \center
   \caption{Base comparison in Old High German}
 \begin{tabular}{ccccccc}
@@ -2755,7 +2993,7 @@ The light head in a light-headed relative is a demonstrative pronoun. Relative a
 The suffix could also be further divided into a vowel and a suffix. As this is not relevant for the discussion here, I refrain from doing that.
 }
 
-\begin{table}[H]
+\begin{table}[ht]
  \center
  \caption {Relative/demonstrative pronouns in Old High German \pgcitep{braune2018}{339}}
   \begin{tabular}{cccc}
@@ -2778,7 +3016,7 @@ The suffix could also be further divided into a vowel and a suffix. As this is n
 
 The suffixes that combine with the \tit{d} in demonstrative and relative pronouns also appear on adjectives. This is illustrated in Table \ref{tbl:adj-ohg}.
 
-\begin{table}[H]
+\begin{table}[ht]
  \center
  \caption {Adjectives on \tit{-a-/-ō-} in Old High German \pgcitealt{braune2018}{300}}
   \begin{tabular}{cccc}
@@ -3269,6 +3507,7 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
                   \node[label=below:\tit{dh},
                   draw,circle,
                   scale=0.95,
+                  fill=DG,fill opacity=0.1,
                   fit to=tree]{};
                   }
                       [\tsc{rel}]
@@ -3374,7 +3613,7 @@ Then feature \tsc{f}1 is merged. Whole tree, spellout driven movement: yes! it i
 The linguistic counterpart of `allow \tsc{ext}?' is whether the internal base and the external base are syncretic (base\scsub{int} = base\scsub{ext}?).
 The linguistic counterpart of `allow \tsc{int}?' is whether the external base is a clitic (base\scsub{ext} = clitic?).
 
-\begin{figure}[H]
+\begin{figure}[ht]
   \centering
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
