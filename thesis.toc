@@ -4,106 +4,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Contents}{ii}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{v}{section*.3}%
+\contentsline {chapter}{List of tables}{iv}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{viii}{section*.4}%
+\contentsline {chapter}{List of figures}{v}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{vii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
+\contentsline {part}{\partnumberline {I}The case}{1}{part.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Decomposing the title}{1}{section.1.1}%
+\contentsline {part}{\partnumberline {II}The base}{3}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}The content of this dissertation}{6}{section.1.2}%
+\contentsline {chapter}{\chapternumberline {1}Constituent containment}{5}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}The scope of this dissertation}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.1}The basic idea}{5}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Case attraction}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.1.1}Underlying assumptions}{6}{subsection.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Syncretism}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.1.2}The internal-only type}{10}{subsection.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}The genitive}{8}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.1.3}The matching type}{12}{subsection.1.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {I}The case}{11}{part.1}%
+\contentsline {subsection}{\numberline {1.1.4}The unrestricted type}{14}{subsection.1.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {2}A recurring pattern}{13}{chapter.2}%
+\contentsline {subsection}{\numberline {1.1.5}Everything is constituent containment}{16}{subsection.1.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}In headless relatives}{13}{section.2.1}%
+\contentsline {section}{\numberline {1.2}Deriving the internal-only type}{18}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}In syntax}{23}{section.2.2}%
+\contentsline {subsection}{\numberline {1.2.1}The relative pronoun is the surface pronoun}{19}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Agreement}{23}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}The light-headed relative clause}{21}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Relativization}{31}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Decomposing light heads and relative pronouns}{24}{subsection.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{40}{section.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Recomposing light heads and relative pronouns}{30}{subsection.1.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism}{40}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {1.2.5}Comparing constituents}{34}{subsection.1.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{42}{subsection.2.3.2}%
+\contentsline {section}{\numberline {1.3}Deriving the matching type}{41}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{43}{section.2.4}%
+\contentsline {subsection}{\numberline {1.3.1}The light-headed relative clause}{42}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{45}{chapter.3}%
+\contentsline {subsection}{\numberline {1.3.2}Decomposing light heads and relative pronouns}{42}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The basic idea}{46}{section.3.1}%
+\contentsline {subsection}{\numberline {1.3.3}Recomposing light heads and relative pronouns}{42}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{47}{section.3.2}%
+\contentsline {subsection}{\numberline {1.3.4}Comparing consituents}{44}{subsection.1.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{68}{section.3.3}%
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{52}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{73}{section.3.4}%
+\contentsline {subsection}{\numberline {1.4.1}The light-headed relative clause}{53}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Summary}{76}{section.3.5}%
+\contentsline {subsection}{\numberline {1.4.2}Decomposing light heads and relative pronouns}{55}{subsection.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The base}{77}{part.2}%
+\contentsline {subsection}{\numberline {1.4.3}Recomposing light heads and relative pronouns}{57}{subsection.1.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}A typology}{79}{chapter.4}%
+\contentsline {subsection}{\numberline {1.4.4}Comparing constituents}{59}{subsection.1.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Four possible patterns}{80}{section.4.1}%
+\contentsline {section}{\numberline {1.5}Technical details}{65}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Internal and external case allowed}{85}{section.4.2}%
+\contentsline {section}{\numberline {1.6}Summary}{66}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Only internal case allowed}{94}{section.4.3}%
+\contentsline {section}{\numberline {1.7}Aside: a larger syntactic context}{68}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Only external case allowed}{104}{section.4.4}%
+\contentsline {chapter}{Primary texts}{73}{table.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Only matching allowed}{108}{section.4.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Summary}{112}{section.4.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Aside: languages without case competition}{116}{section.4.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}Always external case}{117}{subsection.4.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}A typology of headless relatives}{126}{subsection.4.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}Constituent containment}{131}{chapter.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}The basic idea}{131}{section.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Deriving the internal-only type}{145}{section.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Deriving the matching type}{167}{section.5.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Deriving the unrestricted type}{174}{section.5.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Technical details}{184}{section.5.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Summary}{185}{section.5.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Aside: a larger syntactic context}{185}{section.5.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Discussion}{199}{chapter.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Diachronic part}{199}{section.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Suppletive nominatives in Gothic}{200}{section.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Towards deriving the always-external pattern}{200}{section.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}More languages}{200}{section.6.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{201}{table.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{203}{section*.106}%
+\contentsline {chapter}{Bibliography}{75}{section*.41}%
