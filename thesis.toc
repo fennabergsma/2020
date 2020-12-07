@@ -38,34 +38,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.4}Recomposing light heads and relative pronouns}{33}{subsection.1.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.5}Comparing constituents}{36}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.5}Comparing constituents}{38}{subsection.1.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Deriving the matching type}{43}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Deriving the matching type}{45}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}The light-headed relative clause}{44}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}The light-headed relative clause}{46}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Decomposing light heads and relative pronouns}{44}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.2}Decomposing light heads and relative pronouns}{46}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Recomposing light heads and relative pronouns}{44}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}Recomposing light heads and relative pronouns}{46}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.4}Comparing consituents}{46}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.4}Comparing consituents}{48}{subsection.1.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{54}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{56}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}The light-headed relative clause}{55}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}The light-headed relative clause}{58}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Decomposing light heads and relative pronouns}{57}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.2}Decomposing light heads and relative pronouns}{59}{subsection.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Recomposing light heads and relative pronouns}{59}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.3}Recomposing light heads and relative pronouns}{61}{subsection.1.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.4}Comparing constituents}{61}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.4}Comparing constituents}{63}{subsection.1.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Technical details}{67}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Technical details}{69}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Summary}{68}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Summary}{70}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Aside: a larger syntactic context}{70}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Aside: a larger syntactic context}{72}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{75}{table.1.1}%
+\contentsline {chapter}{Primary texts}{77}{table.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{77}{section*.43}%
+\contentsline {chapter}{Bibliography}{79}{section*.43}%
