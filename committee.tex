@@ -769,17 +769,18 @@ internal-only   & relative pronoun\scsub{int} & *  & Modern German    \\
 
 A language of the internal-only type (like Modern German) allows only the internal case to surface when it wins the case competition, and it does not allow the external case to do so. The relative pronoun with its internal case can be the surface pronoun and the light head with its external case cannot. The goal of this section is to derive this from the way light heads and relative pronouns are spelled out in Modern German.
 
-The section is structured as follows. According to my assumptions in Section \ref{sec:basic-idea}, the relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition.
-Then I argue that Modern German headless relatives are derived from light-headed relatives with as a light head the weak demonstrative in the sense of \citealt{schwarz2009}.
-I decompose the light heads and relative pronouns intro smaller morphemes, and I show which features each of the morphemes corresponds to.
+The section is structured as follows.
+First, I discuss the relative pronoun. According to my assumptions in Section \ref{sec:basic-idea}, relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition. I decompose the relative pronouns into morphemes, and I show which features each of the morphemes corresponds to.
+Then I discuss the light head. I argue that Modern German headless relatives are derived from a light-headed relative clause that never surfaces in the language. I decompose the light heads into morphemes, and I show which features each of the morphemes corresponds to.
 Finally, I compare the constituents of the light head and the relative pronoun.
 When the internal and the external case match, the relative pronoun can delete the light head, because it contains all its constituents.
 When the internal case is more complex than the external case, the relative pronoun can still delete the light head, for the same reason: the relative pronoun contains all constituents of the light head.
 This is no longer the case when the external case is more complex than the internal case. The light head does not contain all constituents of the relative pronoun, and the relative pronoun does not contain all constituents of the light head. As a result, there is no grammatical form to surface when the external case is more complex.
 
-\subsection{The relative pronoun is the surface pronoun}
+\subsection{The relative pronoun}
 
-In this section I show that the relative pronoun in Modern German headless relatives is the surface pronoun. The evidence comes from extraposition data.
+In this section I discuss the relative pronoun in Modern German headless relatives.
+First, I show that the relative pronoun is the surface pronoun, independent from case facts. The evidence comes from extraposition data.
 
 The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
 
@@ -836,149 +837,120 @@ Jan has what eaten he cooked has\\
 
 In conclusion, extraposition facts show that the surface pronoun in Modern German headless relatives corresponds to the relative pronoun.
 
-\subsection{The light-headed relative clause}
+In Section \ref{sec:basic-idea} I gave the structure in \ref{ex:mg-simplified-rel} as a simplified representation of the relative pronoun.
 
-In this section, I discuss from which light-headed relatives Modern German headless relatives are derived. This is not easy to determine, because the light head in headless relative is always obligatorily deleted, so it never surfaces.
+\ex.\label{ex:mg-simplified-rel}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{k}P
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof]
+          ]
+          [\tsc{k}P,
+              [\tsc{k}]
+          ]
+      ]
+  ]
+\end{forest}
 
-In \ref{ex:mg-light-headed}, I give the two types of light-headed relatives that Modern German has. They differ in their choice of relative pronoun.
+In what follows, I argue that structure of the relative pronoun actually looks as in \ref{ex:mg-structure-rel}.
 
-\ex.\label{ex:mg-light-headed}
-\ag. Jan umarmt den \tbf{den} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
-`Jan hugs the man that he likes.'\label{ex:mg-d-for-light-headed}
-\bg. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
-`Jan hugs the man that he likes.'\label{ex:mg-wh-for-light-headed}
-
-In \ref{ex:mg-d-for-light-headed}, the relative pronoun is the \tsc{d}-pronoun which generally appears in headed relatives. An example of a headed relative is given in \ref{ex:mg-d-for-headed}.
-
-\exg. Jan umarmt den Mann \tbf{den} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} man \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
-`Jan hugs the man that he likes.'\label{ex:mg-d-for-headed}
-
-I exclude the possibility that Modern German headless relatives are derived from these light-headed relatives, because they appear with the incorrect relative pronoun.
-
-In \ref{ex:mg-wh-for-light-headed}, the relative pronoun is the \tsc{wh}-pronoun which generally appears in headed relatives. An example of a headless relative is given in \ref{ex:mg-wh-for-headless}.
-
-\exg. Jan umarmt \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
-`Jan hugs who he likes.'\label{ex:mg-wh-for-headless}
-
-At first sight, it looks like headless relatives can be derived from this light-headed relative.\footnote{
-This is exactly what \citet{hanink2018} does. She argues that the feature content of the light head matches the feature content of the relative pronoun. Therefore, the light head is by default deleted. Only if the light head carries an extra focus feature it surfaces.
+\ex.\label{ex:mg-structure-rel}
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=12mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}]
+      ]
+      [\tsc{nom}P, s sep=21mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                [\tsc{dx}\scsub{1}]
+                [\tsc{ref} [\phantom{xxx}, roof]
+                ]
+            ]
+        ]
+          [\tsc{k}P,
+          tikz={
+          \node[label=below:\tit{r/n},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{k}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
 }
-I argue that this is not the case. I already briefly noted in footnote \ref{ftn:das-was} that not all speakers of Modern German allow for the combination of a \tsc{d}-pronoun as light head and a \tsc{wh}-pronoun as relative pronoun. Some of my informants reported that the meaning of these two elements are incompatible for them. They prefer the \tsc{d}-pronoun as relative pronoun instead.
-I assume that the demonstrative \tit{den} spells out features having to do with definiteness. The relative pronoun \tit{wen} in \ref{ex:mg-wh-for-light-headed} spells out features having to do with sets of alternatives. The combination of this two does not match. A better match for the demonstrative is the relative pronoun \tit{den} in \ref{ex:mg-d-for-light-headed}, which also spells out features having to do with definiteness.
+\label{ex:mg-spellout-rel-nom}
 
-The definite aspect of the demonstrative as a light head is even more problematic in the context of a headless relative. The main interpretation of headless relatives is namely not a definite one. Consider the headless relative in \ref{ex:mg-wh-for-headless-ever} that is combined with the the particle \tit{auch immer} `ever'. Light-headed relatives do not allow for this particle to be inserted.
+I discuss two relative pronouns. These are the two elements that I compare the constituents of at the end of this section. The two forms are the animate singulars in nominative and accusative case, given in \ref{ex:mg-rels}.
 
-\exg. Jan unarmt \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} ever he likes\\
-`Jan hugs whoever he likes.'\label{ex:mg-wh-for-headless-ever}
-
-The sentence in \ref{ex:mg-wh-for-headless-ever} has two interpretations (see \citealt{s̆imík2020} for a recent elaborate overview on the semantics of free relatives). The first interpretation is described as universal-like and the second as definite-like. The universal-like interpretation corresponds to a universal quantifier: Jan hugs everybody that he likes. The definite-like interpretation corresponds to a definite description: Jan hugs the person that he likes. The latter interpretation is compatible with the light-headed relative in \ref{ex:mg-wh-for-light-headed}.
-
-\pgcitet{s̆imík2020}{4} notes that some languages do not easily allow for the definite-like interpretation of headless relatives with an \tit{ever}-morpheme. There is no language documented that does not allow for the universal-like interpretation, but does allow the definite-like interpretation.
-In the same spirit, informants have reported to me that headless relatives with case mismatches become more acceptable in the universal-like interpretation compared to the definite-like interpretation.
-What I take away from that, is that the universal-like interpretation of headless relatives is the main interpretation that should be accounted for. This is not the interpretation that the light-headed relative in \ref{ex:mg-d-for-light-headed} provides.
-
-I suggest that the light head is a form that shows resemblance to the weak definite of \citet{schwarz2009}. \citet{schwarz2009} distinguishes strong and weak definites in Modern German. The strong definite is anaphoric in nature, and the weak definite encodes uniqueness. First I give an example of a strong definite in \ref{ex:mg-florian-strong}. The strong definite is \tit{dem} that precedes \tit{Freund} `friend'. It refers back to the linguistic antecedent \tit{einen Freund} `a friend'.
-
-\exg. Hans hat heute einen Freund zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto von dem Freund gezeigt.\\
-Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo of the\scsub{strong} friend shown\\
-`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'\label{ex:mg-florian-strong}
-
-In a light-headed relative, this is appropriate when the light head refers back to something or someone introduced earlier in the discourse. An example of such a context is given \ref{ex:mg-context-strong}.
-
-\ex. Yesterday Jan met with two friends. He likes one of them. The other one he does not like so much.\label{ex:mg-context-strong}
-
-Following this context, the light head \tit{den}, so the strong definite, is appropriate. This, however, is not the universal-like interpretation I discussed is the main interpretation that should be accounted for in headless relatives.
-
-Weak definites are used when situational uniqueness is involved. This uniqueness can be global or within a restricted domain. I give two examples in \ref{ex:mg-florian-weak}. In \ref{ex:mg-florian-weak-hund}, the dog is unique in this specific situation of the break-in. In \ref{ex:mg-florian-weak-mond}, the moon is unique for us people on the planet.
-
-\ex.\label{ex:mg-florian-weak}
-\ag. Der Einbrecher ist {zum Glück} vom Hund verjagt worden.\\
-the burglar is luckily {by the\scsub{weak}} dog {chased away} been\\
-`Luckily, the burglar was chased away by the dog.'\label{ex:mg-florian-weak-hund}
-\bg. Armstrong flog als erster zum Mond.\\
-Armstrong flew as {first one} {to the\scsub{weak}} moon\\
-`Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}\label{ex:mg-florian-weak-mond}
-
-% question:
-
-In line with this, I propose that headless relatives in Modern German are derived from the light-headed relatives as in \ref{ex:mg-base-headless-rels}. The brackets around the light head indicate that it is obligatorily deleted.
-
-\exg. Jan umarmt [ən] \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{lh}.\tsc{an}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
-`Jan hugs who he likes.'\label{ex:mg-base-headless-rels}
-
-% question:
-
-\ex.
-\ag. Hat ər einen Motorrad?\\
- has \tsc{dem}.\tsc{nom}\scsub{weak} a motor bike\\
- `Does he have a motorbike?'
-\bg. Ich habe ən gesehen.\\
- I have \tsc{dem}.\tsc{acc}\scsub{weak} seen\\
- `I have been him.'
-\bg. Ich folge əm nach Hause.\\
- I follow \tsc{dem}.\tsc{dat}\scsub{weak} to house\\
- `I follow him home.'
-
-%
-
-\subsection{Decomposing light heads and relative pronouns}
-
-%
-
-In this section I discuss two light heads and two relative pronouns. These are the two element that I compare the constituents of at the end of this section. The forms are the animate singulars in nominative and accusative case, given in \ref{ex:mg-lhs-rels}.
-
-\ex.\label{ex:mg-lhs-rels}
+\ex.\label{ex:mg-rels}
 \ag. w-e-r\\
  `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
 \bg. w-e-n\\
  `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
-\bg. ə-r\\
- `\tsc{lh}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
-\bg. ə-n\\
- `\tsc{lh}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
 
-I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant. I splits the light heads up into two morphemes: \tit{ə} and the final consonant. For each morpheme, I discuss which features they spell out. Then I give the feature content of light heads and relative pronouns as a whole. Finally, I give the lexical entries for each of the morphemes.
+I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant. For each morpheme, I discuss which features they spell out and what their lexical entries look like. Then I give the feature content of relative pronouns as a whole. Finally, I show how relative pronouns are derived.
 
-I start with the morpheme \tit{w} of the relative pronoun. Table \ref{tbl:mg-paradigm-wh-rels} gives the animate and inanimate forms of the relative pronouns in three cases: nominative, accusative and dative.
-
-\begin{table}[htbp]
- \center
- \caption {Modern German relative pronouns}
-  \begin{tabular}{ccc}
-  \toprule
-              & \ac{an}  & \tsc{inan}\\
-    \cmidrule{2-3}
-    \ac{nom}  & w-er    & w-as     \\
-    \ac{acc}  & w-en    & w-as     \\
-    \ac{dat}  & w-em    & (w-em)   \\
-  \bottomrule
-  \end{tabular}
-  \label{tbl:mg-paradigm-wh-rels}
-\end{table}
-
-The \tit{w} combines with the same endings as the \tit{d} does in demonstratives (or relative pronouns in headed relatives). Table \ref{tbl:mg-paradigm-dem} gives the singular forms in three gender and three cases.\footnote{
+I start with the morpheme \tit{w} of the relative pronoun. Compare Table \ref{tbl:mg-paradigm-wh-rels} and Table \ref{tbl:mg-paradigm-wh-dem}. The \tit{w} combines with the same endings as the \tit{d} does in demonstratives (or relative pronouns in headed relatives).\footnote{
 Note here that the relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels}. Demonstratives also have plural forms (which are not given here), and relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
 }
 
-\begin{table}[htbp]
- \center
- \caption {Modern German demonstrative pronouns} %dieser source
-  \begin{tabular}{cccc}
-  \toprule
-              & \ac{m}  & \tsc{n} & \tsc{f} \\
-    \cmidrule{2-4}
-    \ac{nom}  & d-er   & d-as   & d-ie    \\
-    \ac{acc}  & d-en   & d-as   & d-ie    \\
-    \ac{dat}  & d-em   & d-em   & d-er    \\
-  \bottomrule
-  \end{tabular}
-  \label{tbl:mg-paradigm-dem}
+\begin{table}[H]
+\center
+\caption {Modern German relative pronouns}
+ \begin{tabular}{ccc}
+ \toprule
+             & \ac{an}  & \tsc{inan}\\
+   \cmidrule{2-3}
+   \ac{nom}  & w-er    & w-as     \\
+   \ac{acc}  & w-en    & w-as     \\
+   \ac{dat}  & w-em    & (w-em)   \\
+ \bottomrule
+ \end{tabular}
+ \label{tbl:mg-paradigm-wh-rels}
+\end{table}
+
+\begin{table}[H]
+\center
+\caption {Modern German demonstrative pronouns} %dieser source
+ \begin{tabular}{cccc}
+ \toprule
+             & \ac{m}  & \tsc{n} & \tsc{f} \\
+   \cmidrule{2-4}
+   \ac{nom}  & d-er   & d-as   & d-ie    \\
+   \ac{acc}  & d-en   & d-as   & d-ie    \\
+   \ac{dat}  & d-em   & d-em   & d-er    \\
+ \bottomrule
+ \end{tabular}
+ \label{tbl:mg-paradigm-dem}
 \end{table}
 
 This identifies the \tit{d} and, more importantly for the discussion here, the \tit{w} as a separate morpheme. The morpheme \tit{w} appears besides in headless relatives clauses also in different contexts, such as interrogative pronouns. I give an example in \ref{ex:mg-interrogative}.
@@ -993,42 +965,46 @@ This contrasts with the \tsc{d}, which is responsible for establishing a definit
 The second relevant feature is \tsc{rel}, which establishes a relation.
 In sum, the \tit{w} spells out the features \tsc{wh} and \tsc{rel}, shown in \ref{ex:mg-w-features}. This is not a lexical entry, but only a notation that sums of which features the \tit{w} spells out. I give lexical entries at the end of this section.
 
-\ex. [\tsc{wh} + \tsc{rel}] = \tit{w}\label{ex:mg-w-features}
+\ex. \begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{w}}; }
+\end{forest}\label{ex:mg-entry-w}
 
-I continue with the final consonants (\tit{r} and \tit{n} ), which is present in the relative pronoun and in the light head. The final consonant can be observed in several contexts besides light heads and relative pronouns. Table \ref{tbl:mg-str-adj} gives an overview of strong adjective \tit{neu} `new' in Modern German in two numbers, three genders and three cases.\footnote{
+I continue with the final consonants (\tit{r} and \tit{n}). They can be observed in several contexts besides relative pronouns. Table \ref{tbl:mg-str-adj} gives an overview of strong adjective \tit{neu} `new' in Modern German in two numbers, three genders and three cases.\footnote{
 The vowel preceding the final consonant is written as \tit{e}. I write it as \tit{ə}, because this is how it is pronounced. I make this distinction to emphasize that this differs from the vowel used in the relative pronouns. It might be the same as the \tit{ə} in the light head.
-}
+} Compare
 
 \begin{table}[htbp]
- \center
- \caption {Modern German strong adjective \tit{neu} `new'}
-  \begin{tabular}{ccccc}
-  \toprule
-              & \ac{m}.\tsc{sg}    & \tsc{n}.\tsc{sg}   & \tsc{f}.\tsc{sg}  & \tsc{pl} \\
-    \cmidrule{2-5}
-    \ac{nom}  & neu-ə-r   & neu-ə-s   & neu-ə    & neu-ə    \\
-    \ac{acc}  & neu-ə-n   & neu-ə-s   & neu-ə    & neu-ə    \\
-    \ac{dat}  & neu-ə-m   & neu-ə-m   & neu-ə-r  & neu-ə-n  \\
-  \bottomrule
-  \end{tabular}
-  \label{tbl:mg-str-adj}
+\center
+\caption {Modern German relative pronouns (repeated)}
+\begin{tabular}{ccc}
+\toprule
+            & \ac{an}  & \tsc{inan}\\
+  \cmidrule{2-3}
+  \ac{nom}  & w-e-r    & w-a-s     \\
+  \ac{acc}  & w-e-n    & w-a-s     \\
+  \ac{dat}  & w-e-m    & (w-e-m)   \\
+\bottomrule
+\end{tabular}
+\label{tbl:mg-paradigm-wh-rels}
 \end{table}
 
-Table \ref{tbl:mg-pers-pron} gives an overview of the third person pronouns in Modern German in two numbers, three genders and three cases. I divided the non-suppletive forms in separate morphemes.
-
 \begin{table}[htbp]
- \center
- \caption {Modern German third person pronouns}
-  \begin{tabular}{ccccc}
-  \toprule
-              & \ac{m}.\tsc{sg} & \tsc{n}.\tsc{sg} & \tsc{f}.\tsc{sg} & \tsc{pl} \\
-    \cmidrule{2-5}
-    \ac{nom}  & er     & es      & sie     & sie      \\
-    \ac{acc}  & ih-n   & es      & sie     & sie      \\
-    \ac{dat}  & ih-m   & ih-m    & ih-r    & ih-nen   \\
-  \bottomrule
-  \end{tabular}
-  \label{tbl:mg-pers-pron}
+\center
+\caption {Modern German strong adjective \tit{neu} `new'}
+ \begin{tabular}{ccccc}
+ \toprule
+             & \ac{m}.\tsc{sg}    & \tsc{n}.\tsc{sg}   & \tsc{f}.\tsc{sg}  & \tsc{pl} \\
+   \cmidrule{2-5}
+   \ac{nom}  & neu-ə-r   & neu-ə-s   & neu-ə    & neu-ə    \\
+   \ac{acc}  & neu-ə-n   & neu-ə-s   & neu-ə    & neu-ə    \\
+   \ac{dat}  & neu-ə-m   & neu-ə-m   & neu-ə-r  & neu-ə-n  \\
+ \bottomrule
+ \end{tabular}
+ \label{tbl:mg-str-adj}
 \end{table}
 
 Table \ref{tbl:mg-str-adj} and \ref{tbl:mg-pers-pron} show that the final consonants take different shapes depending on gender, number and case. I conclude from that that the consonant realizes features having to do with these three aspects.
@@ -1038,146 +1014,6 @@ For case, I adopt the features of \citet{caha2009}, already introduced in Chapte
 For number and gender, I adopt the features that are distinguished by \citet{harley2002} for pronouns. The feature \tsc{class} refers to gender features, which is neuter if it is not combined with any other features. Combining \tsc{class} with the feature \tsc{masc} gives a masculine gender. The feature \tsc{ind} refers to number, which is singular if it is not combined with any other features.
 
 The \tit{r} is the nominative masculine singular, so it spells out the features \tsc{class}, \tsc{masc}, \tsc{ind} and \tsc{f}1. The \tit{n} is the accusative masculine singular, so it spells out the features that the \tit{r} spells out plus \tsc{f}2. I summarizes this in \ref{ex:r/n-features}.
-
-\ex.\label{ex:r/n-features}
-\a. [\tsc{class} + \tsc{masc} + \tsc{ind} + \tsc{f}1] = \tit{r}
-\b. [\tsc{class} + \tsc{masc} + \tsc{ind} + \tsc{f}1 + \tsc{f}2] = \tit{n}
-
-At this point, only the \tit{e} in the relative pronoun and the \tit{ə} in the light head are left. About the \tit{ə} I can be brief. I assume that the vowel corresponds to the feature \tsc{ref}, which \citet{harley2002} claim all pronouns contain.
-
-\ex. [\tsc{ref}] = \tit{ə}
-
-%
-
-This leaves the \tit{e} in the relative pronoun. I assume that, just like \tit{ə}, it contains \tsc{ref}. Besides that, it expresses features involving deixis. Modern German has a syncretic form for the proximal, the medial and the distal \pgcitep{lander2018}{387}. Therefore, it is impossible to tell which of the three a \tsc{wh}-pronoun expresses. Demonstratives in English are informative here, since they distinguishes between proximal on the one hand and medial and distal on the other hand, shown in \ref{ex:english-deixis}.
-
-\ex.\label{ex:english-deixis}
-\ag. th-is\\
-`close to speaker'\\
-\bg. th-at\\
-`not close to speaker'\\
-
-The English \tsc{wh}-pronoun combines with the medial/distal marker, and not with the proximal, shown in \ref{ex:english-wh}.
-
-\ex.\label{ex:english-wh}
-\a. *wh-is
-\b. wh-at
-
-% Ewondo
-%
-% class 2 pl
-% mī `near S'
-% mīlí `near H'
-% mīlíí `away from S + H'
-
-I conclude from this that the \tsc{wh}-pronoun in Modern German combines with at least the medial.
-
-\footnote{
-Conceptually, this can be made sense of if you see distal as something far away from you as a speaker, because it is unknown to you. Something that is known to you is expressed with a proximal.
-
-\ex.
-\a. Yesterday I talked to this woman, and she told me all I needed to know.
-\b. Please tell me about that thing later.
-
-cite Wiltschko.
-}
-
-\citet{lander2018} propose that a \tsc{dx}\scsub{1} corresponds to a proximal, \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2} corresponds to a medial.
-
-In sum, the \tit{e} spells out the features \tsc{ref}, \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}.
-
-\ex. [\tsc{ref} + \tsc{dx}\scsub{1} + \tsc{dx}\scsub{2}] = \tit{e}
-
-Taking this all together, I propose that the structure in \ref{ex:fseq-wh-rel} is the functional sequence for the relative pronoun. It consists of referential features at the bottom (\tsc{ref},) features having to do with deixis (\tsc{dx}\scsub{1} and \tsc{dx}\tsc{2}), with gender (\tsc{class} and \tsc{masc}) and number (\tsc{ind}), with the relative pronoun (\tsc{wh} and \tsc{rel}) and with case (\tsc{f}1 and \tsc{f}2).
-
-\ex. \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
-[\tsc{acc}P
-    [\tsc{f}2]
-    [\tsc{nom}P
-        [\tsc{f}1]
-        [\tsc{rel}P
-            [\tsc{rel}]
-            [\tsc{wh}P
-                [\tsc{wh}]
-                [\tsc{ind}P
-                    [\tsc{ind}]
-                    [\tsc{masc}P
-                        [\tsc{masc}]
-                        [\tsc{class}P
-                            [\tsc{class}]
-                            [\tsc{med}P
-                                [\tsc{dx}\scsub{2}]
-                                [\tsc{prox}P
-                                    [\tsc{dx}\scsub{1}]
-                                    [\tsc{ref} [\phantom{xxx}, roof]]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
-]
-\end{forest}
-\label{ex:fseq-wh-rel}
-
-This order is independently supported by work in the literature. .. %The ordering: picallo, kramer, bittner hale, bayer
-
-
-The functional sequence for the light heads:
-
-\ex. \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
-[(\tsc{acc}P)
-    [(\tsc{f}2)]
-    [\tsc{nom}P
-        [\tsc{f}1]
-        [\tsc{ind}P
-            [\tsc{ind}]
-            [\tsc{masc}P
-                [\tsc{masc}]
-                [\tsc{class}P
-                    [\tsc{class}]
-                    [\tsc{prox}P
-                        [\tsc{dx}\scsub{1}]
-                        [\tsc{ref} [\phantom{xxx}, roof]]
-                    ]
-                ]
-            ]
-        ]
-    ]
-]
-\end{forest}
-\label{ex:fseq-wh-lh}
-
-Now I give the lexical entries.
-
-\ex.
-\begin{forest} boom
-  [\tsc{ref} [\phantom{xxx}, roof]]
-  {\draw (.east) node[right]{⇔ \tit{ə}}; }
-\end{forest}
-\label{ex:mg-entry-schwa}
-
-
-\ex.
-\begin{forest} boom
-  [\tsc{dist}P
-      [\tsc{dx}\scsub{3}]
-      [\tsc{med}P
-          [\tsc{dx}\scsub{2}]
-          [\tsc{prox}P
-              [\tsc{dx}\scsub{1}]
-              [\tsc{ref} [\phantom{xxx}, roof]]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{e}}; }
-  \label{ex:mg-entry-e}
-\end{forest}
-
-
-suffixes are the ones that have a unary bottom. In the next section..
 
 \ex. \begin{forest} boom
   [\tsc{nom}P
@@ -1216,64 +1052,57 @@ suffixes are the ones that have a unary bottom. In the next section..
 \end{forest}
 \label{ex:mg-entry-n}
 
+This leaves the \tit{e} in the relative pronoun. I assume that, \tit{e} contains \tsc{ref}, which \citet{harley2002} claim all pronouns contain. Besides that, it expresses features involving deixis. Modern German has a syncretic form for the proximal, the medial and the distal \pgcitep{lander2018}{387}.
 
-Prefix has a binary bottom
-
-\ex. \begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}]
-      [\tsc{wh}]
+\ex.
+\begin{forest} boom
+  [\tsc{dx}P
+      [\tsc{dx}\scsub{1}]
+      [\tsc{ref} [\phantom{xxx}, roof]]
   ]
-  {\draw (.east) node[right]{⇔ \tit{w}}; }
-\end{forest}\label{ex:mg-entry-w}
+  {\draw (.east) node[right]{⇔ \tit{e}}; }
+  \label{ex:mg-entry-e}
+\end{forest}
+
+Taking this all together, I propose that the structure in \ref{ex:fseq-wh-rel} is the functional sequence for the relative pronoun. It consists of referential features at the bottom (\tsc{ref},) features having to do with deixis (\tsc{dx}\scsub{1} and \tsc{dx}\tsc{2}), with gender (\tsc{class} and \tsc{masc}) and number (\tsc{ind}), with the relative pronoun (\tsc{wh} and \tsc{rel}) and with case (\tsc{f}1 and \tsc{f}2).
+
+\ex. \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
+[\tsc{acc}P
+   [\tsc{f}2]
+   [\tsc{nom}P
+       [\tsc{f}1]
+       [\tsc{rel}P
+           [\tsc{rel}]
+           [\tsc{wh}P
+               [\tsc{wh}]
+               [\tsc{ind}P
+                   [\tsc{ind}]
+                   [\tsc{masc}P
+                       [\tsc{masc}]
+                       [\tsc{class}P
+                           [\tsc{class}]
+                           [\tsc{med}P
+                               [\tsc{dx}\scsub{2}]
+                               [\tsc{prox}P
+                                   [\tsc{dx}\scsub{1}]
+                                   [\tsc{ref} [\phantom{xxx}, roof]]
+                               ]
+                           ]
+                       ]
+                   ]
+               ]
+           ]
+       ]
+   ]
+]
+\end{forest}
+\label{ex:fseq-wh-rel}
+
+This order is independently supported by work in the literature. .. %The ordering: picallo, kramer, bittner hale, bayer
 
 
-% At first sight it seems like \citet{fuss2014} discuss a exception to this claim, namely headless relatives with \tsc{d}-pronouns. However, they claim that these headless relatives are actually light-headed relatives in which one of two syncretic elements is deleted by haplology.
 
-% I argue that there is a different form for the proximal that appears in combination with a reinforcer (Lander). ``As a determiner and a pronoun \tit{dieser} typically refers to something near at hand'' \pgcitep{durrell2011}{5.1.2(a)}
-% The \tit{e} `\tsc{med}/\tsc{dist}' can be used for distal, medial and proximal. The \tit{ə} is typically only compatible with proximal references.
-%
-% \ex.
-% \ag. d-e-r dort/ hier\\
-%  \tsc{d}-\tsc{med}/\tsc{dist}-\tsc{m.sg.nom} there/ here\\
-%  `that one there'
-% \bg. d-ies-ə-r hier/ \#dort\\
-%  \tsc{d}-\tsc{reinf}-\tsc{prox}-\tsc{m.sg.nom} here/ there\\
-%  `this one here'
-
-
-
-
-
-% Now I come back to the interaction between gender and case. For the neuter relative pronoun the vowel is different: \tit{a}. So, this needs to be reflected in the features: I left out \tsc{masc}. However, there also needs to be a difference in lexical entries between the final consonant for the neuter and for the masculine. Therefore, I let the \tit{s} spell out the \tsc{ind} feature.
-%
-% \ex. \begin{forest} boom
-%   [\tsc{class}P
-%       [\tsc{class}]
-%       [\tsc{med}P
-%           [\tsc{dx}\scsub{2}]
-%           [\tsc{prox}P
-%               [\tsc{dx}\scsub{1}]
-%               [\tsc{ref} [\phantom{xxx}, roof]]
-%           ]
-%       ]
-%   ]
-% {\draw (.east) node[right]{⇔ \tit{a}}; }
-% \end{forest}
-%
-% \ex. \begin{forest} boom
-%   [\tsc{nom}P
-%       [\tsc{f}1]
-%       [\tsc{ind}P
-%           [\tsc{ind}]
-%       ]
-%   ]
-%   {\draw (.east) node[right]{⇔ \tit{s}}; }
-% \end{forest}
-
-\subsection{Recomposing light heads and relative pronouns}
-
-In Nanosyntax, lexical entries are not stuck together directly from the lexicon. Instead, spellout happens in a cyclic derivation.
+In Nanosyntax, lexical entries are not glued together directly from the lexicon. Instead, spellout happens in a cyclic derivation.
 
 The features are merged one by one, and the constituency is the consequence of the spellout algorithm.
 
@@ -1313,7 +1142,7 @@ The morphemes for gender, number and case (\tit{r}/\tit{n}) appear as a suffix b
 %
 
 The nominative masculine singular relative pronoun is built as follows.
-The \tsc{ref}P is spelled out as \tit{ə}.
+The \tsc{ref}P is spelled out as \tit{e}.
 The \tsc{ref}P is merged with \tsc{dx}\scsub{1}, and the whole phrase (\tsc{prox}P) is spelled out as \tit{e}.
 The \tsc{prox}P is merged with \tsc{dx}\scsub{2}, and the whole phrase (\tsc{med}P) is spelled out as \tit{e}.
 
@@ -1442,6 +1271,162 @@ The final result is given in \ref{ex:mg-spellout-rel-acc}.
 \end{forest}
 }
 \label{ex:mg-spellout-rel-acc}
+
+
+
+\subsection{The light head}
+
+In this section, I discuss from which light-headed relatives Modern German headless relatives are derived. This is not easy to determine, because the light head in headless relative is always obligatorily deleted, so it never surfaces.
+
+In \ref{ex:mg-light-headed}, I give the two types of light-headed relatives that Modern German has. They differ in their choice of relative pronoun.
+
+\ex.\label{ex:mg-light-headed}
+\ag. Jan umarmt den \tbf{den} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+`Jan hugs the man that he likes.'\label{ex:mg-d-for-light-headed}
+\bg. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+`Jan hugs the man that he likes.'\label{ex:mg-wh-for-light-headed}
+
+In \ref{ex:mg-d-for-light-headed}, the relative pronoun is the \tsc{d}-pronoun which generally appears in headed relatives. An example of a headed relative is given in \ref{ex:mg-d-for-headed}.
+
+\exg. Jan umarmt den Mann \tbf{den} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} man \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+`Jan hugs the man that he likes.'\label{ex:mg-d-for-headed}
+
+I exclude the possibility that Modern German headless relatives are derived from these light-headed relatives, because they appear with the incorrect relative pronoun.
+
+In \ref{ex:mg-wh-for-light-headed}, the relative pronoun is the \tsc{wh}-pronoun which generally appears in headed relatives. An example of a headless relative is given in \ref{ex:mg-wh-for-headless}.
+
+\exg. Jan umarmt \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'\label{ex:mg-wh-for-headless}
+
+At first sight, it looks like headless relatives can be derived from this light-headed relative.\footnote{
+This is exactly what \citet{hanink2018} does. She argues that the feature content of the light head matches the feature content of the relative pronoun. Therefore, the light head is by default deleted. Only if the light head carries an extra focus feature it surfaces.
+}
+I argue that this is not the case. I already briefly noted in footnote \ref{ftn:das-was} that not all speakers of Modern German allow for the combination of a \tsc{d}-pronoun as light head and a \tsc{wh}-pronoun as relative pronoun. Some of my informants reported that the meaning of these two elements are incompatible for them. They prefer the \tsc{d}-pronoun as relative pronoun instead.
+I assume that the demonstrative \tit{den} spells out features having to do with definiteness. The relative pronoun \tit{wen} in \ref{ex:mg-wh-for-light-headed} spells out features having to do with sets of alternatives. The combination of this two does not match. A better match for the demonstrative is the relative pronoun \tit{den} in \ref{ex:mg-d-for-light-headed}, which also spells out features having to do with definiteness.
+
+The definite aspect of the demonstrative as a light head is even more problematic in the context of a headless relative. The main interpretation of headless relatives is namely not a definite one. Consider the headless relative in \ref{ex:mg-wh-for-headless-ever} that is combined with the the particle \tit{auch immer} `ever'. Light-headed relatives do not allow for this particle to be inserted.
+
+\exg. Jan unarmt \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} ever he likes\\
+`Jan hugs whoever he likes.'\label{ex:mg-wh-for-headless-ever}
+
+The sentence in \ref{ex:mg-wh-for-headless-ever} has two interpretations (see \citealt{s̆imík2020} for a recent elaborate overview on the semantics of free relatives). The first interpretation is described as universal-like and the second as definite-like. The universal-like interpretation corresponds to a universal quantifier: Jan hugs everybody that he likes. The definite-like interpretation corresponds to a definite description: Jan hugs the person that he likes. The latter interpretation is compatible with the light-headed relative in \ref{ex:mg-wh-for-light-headed}.
+
+\pgcitet{s̆imík2020}{4} notes that some languages do not easily allow for the definite-like interpretation of headless relatives with an \tit{ever}-morpheme. There is no language documented that does not allow for the universal-like interpretation, but does allow the definite-like interpretation.
+In the same spirit, informants have reported to me that headless relatives with case mismatches become more acceptable in the universal-like interpretation compared to the definite-like interpretation.
+What I take away from that, is that the universal-like interpretation of headless relatives is the main interpretation that should be accounted for. This is not the interpretation that the light-headed relative in \ref{ex:mg-d-for-light-headed} provides.
+
+I suggest that the light head is a form that shows resemblance to the weak definite of \citet{schwarz2009}. \citet{schwarz2009} distinguishes strong and weak definites in Modern German. The strong definite is anaphoric in nature, and the weak definite encodes uniqueness. First I give an example of a strong definite in \ref{ex:mg-florian-strong}. The strong definite is \tit{dem} that precedes \tit{Freund} `friend'. It refers back to the linguistic antecedent \tit{einen Freund} `a friend'.
+
+\exg. Hans hat heute einen Freund zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto von dem Freund gezeigt.\\
+Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo of the\scsub{strong} friend shown\\
+`Hans brought a friend home for dinner today. He had shown us a photo of the friend beforehand.'\label{ex:mg-florian-strong}
+
+In a light-headed relative, this is appropriate when the light head refers back to something or someone introduced earlier in the discourse. An example of such a context is given \ref{ex:mg-context-strong}.
+
+\ex. Yesterday Jan met with two friends. He likes one of them. The other one he does not like so much.\label{ex:mg-context-strong}
+
+Following this context, the light head \tit{den}, so the strong definite, is appropriate. This, however, is not the universal-like interpretation I discussed is the main interpretation that should be accounted for in headless relatives.
+
+Weak definites are used when situational uniqueness is involved. This uniqueness can be global or within a restricted domain. I give two examples in \ref{ex:mg-florian-weak}. In \ref{ex:mg-florian-weak-hund}, the dog is unique in this specific situation of the break-in. In \ref{ex:mg-florian-weak-mond}, the moon is unique for us people on the planet.
+
+\ex.\label{ex:mg-florian-weak}
+\ag. Der Einbrecher ist {zum Glück} vom Hund verjagt worden.\\
+the burglar is luckily {by the\scsub{weak}} dog {chased away} been\\
+`Luckily, the burglar was chased away by the dog.'\label{ex:mg-florian-weak-hund}
+\bg. Armstrong flog als erster zum Mond.\\
+Armstrong flew as {first one} {to the\scsub{weak}} moon\\
+`Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}\label{ex:mg-florian-weak-mond}
+
+% question:
+
+In line with this, I propose that headless relatives in Modern German are derived from the light-headed relatives as in \ref{ex:mg-base-headless-rels}. The brackets around the light head indicate that it is obligatorily deleted.
+
+\exg. Jan umarmt [ən] \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{lh}.\tsc{an}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'\label{ex:mg-base-headless-rels}
+
+
+\ex.
+\ag. Hat ər einen Motorrad?\\
+ has \tsc{dem}.\tsc{nom}\scsub{weak} a motor bike\\
+ `Does he have a motorbike?'
+\bg. Ich habe ən gesehen.\\
+ I have \tsc{dem}.\tsc{acc}\scsub{weak} seen\\
+ `I have been him.'
+\bg. Ich folge əm nach Hause.\\
+ I follow \tsc{dem}.\tsc{dat}\scsub{weak} to house\\
+ `I follow him home.'
+
+
+
+The light head is a subset of the relative pronoun, lacking the feature \tsc{rel}.
+
+\ex.
+\begin{forest} boom
+[\tsc{k}P
+    [ϕP
+        [\phantom{x}ϕ\phantom{x}, roof]
+    ]
+    [\tsc{k}P,
+        [\tsc{k}]
+    ]
+]
+\end{forest}
+
+
+
+I discuss two light heads. These are the two elements that I compare the constituents of at the end of this section. The forms are the animate singulars in nominative and accusative case, given in \ref{ex:mg-lhs}.
+
+\ex.\label{ex:mg-lhs}
+\ag. ə-r\\
+ `\tsc{lh}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
+\bg. ə-n\\
+ `\tsc{lh}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
+
+
+\ex.
+\begin{forest} boom
+ [\tsc{ref} [\phantom{xxx}, roof]]
+ {\draw (.east) node[right]{⇔ \tit{ə}}; }
+\end{forest}
+\label{ex:mg-entry-schwa}
+
+
+
+The functional sequence for the light heads:
+
+\ex. \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
+[(\tsc{acc}P)
+    [(\tsc{f}2)]
+    [\tsc{nom}P
+        [\tsc{f}1]
+        [\tsc{ind}P
+            [\tsc{ind}]
+            [\tsc{masc}P
+                [\tsc{masc}]
+                [\tsc{class}P
+                    [\tsc{class}]
+                    [\tsc{prox}P
+                        [\tsc{dx}\scsub{1}]
+                        [\tsc{ref} [\phantom{xxx}, roof]]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+\label{ex:fseq-wh-lh}
+
+Now I give the lexical entries.
+
+
+% At first sight it seems like \citet{fuss2014} discuss a exception to this claim, namely headless relatives with \tsc{d}-pronouns. However, they claim that these headless relatives are actually light-headed relatives in which one of two syncretic elements is deleted by haplology.
 
 The nominative masculine singular light head is built as follows.
 The \tsc{ref}P is spelled out as \tit{ə}.
@@ -2025,129 +2010,30 @@ The same holds when when the external case is more complex than the internal cas
 
 
 
-\subsection{The light-headed relative clause}
+\subsection{The relative pronoun}
 
 % The idea that a different constituency leads to the absence of different syntactic structured is illustrated by Cinque with nouns and adjectives. > move this the polish part
 
+In Section \ref{sec:basic-idea} I gave the structure in \ref{ex:mg-simplified-rel} as a simplified representation of the relative pronoun.
+
+\ex.\label{ex:mg-simplified-rel}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{k}P
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof]
+          ]
+          [\tsc{k}P,
+              [\tsc{k}]
+          ]
+      ]
+  ]
+\end{forest}
+
+I explained that matching languages like Polish package their languages together differently than internal-only languages like Modern German. That is why I cannot give a single structure for different cases. \tit{mu} starts at \tsc{ind} and \tit{go} starts at \tit{f}1. This is going to be crucial in deriving the difference between Polish and Modern German. I this section I decompose the morphemes of the relative pronoun, and connect lexical entries to them.
+
 \ex.
-\ag. Jan lubi \underline{tego} \underline{\tbf{kogo}} \tbf{Maria} \tbf{lubi}.\\
- Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} Maria like.\tsc{3sg}\scsub{[acc]}\\
- `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
-\bg. *Jan lubi \underline{tego} \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
- Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
- `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
-\bg. Jan lubi [\underline{ego}] \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
-Jan like.\tsc{3sg}\scsub{[acc]} \tsc{lh}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
-`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
-
-here:
-Alternative account for why the demonstrative and \tsc{ever} are incompatible: it is the same syntactic position
-
-\subsection{Decomposing light heads and relative pronouns}
-
-\subsection{Recomposing light heads and relative pronouns}
-
-\ex. \tbf{Backtracking} \citep{starke2018}:\\
-When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
-
-\ex. Polish: \tsc{ext} \tsc{dat}\\
-\tiny{
-\begin{forest} boompje
-  [\tsc{prox}P, s sep=15mm
-      [\tsc{prox}P,
-      tikz={
-      \node[label=below:\tit{t},
-      draw,circle,
-      scale=0.9,
-      fit to=tree]{};
-      }
-          [\tsc{deix\scsub{1}}, roof]
-      ]
-      [\tsc{dat}P, s sep=20mm
-          [\tsc{masc}P,
-          tikz={
-          \node[label=below:\tit{e/o},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{masc}]
-              [\tsc{class}P
-                  [\tsc{class}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
-              ]
-          ]
-          [\tsc{dat}P,
-          tikz={
-          \node[label=below:\tit{mu},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-}
-
-\ex. Polish: \tsc{ext} \tsc{acc}\\
-\tiny{
-\begin{forest} boompje
-  [\tsc{prox}P, s sep=15mm
-      [\tsc{prox}P,
-      tikz={
-      \node[label=below:\tit{t},
-      draw,circle,
-      scale=0.9,
-      fit to=tree]{};
-      }
-          [\tsc{deix\scsub{1}}, roof]
-      ]
-      [\tsc{dat}P, s sep=25mm
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{e/o},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-              [\tsc{mascP}
-                  [\tsc{masc}]
-                  [\tsc{class}P
-                      [\tsc{class}]
-                      [\tsc{ref} [\phantom{xxx}, roof]]
-                  ]
-              ]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{go},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-}
-
-\ex. Polish: \tsc{int} \tsc{dat}\\
 \tiny{
 \begin{forest} boompje
   [\tsc{rel}P, s sep=17mm
@@ -2204,7 +2090,7 @@ When spellout fails, go back to the previous cycle, and try the next option for 
 \end{forest}
 }
 
-\ex. Polish: \tsc{int} \tsc{acc}\\
+\ex.
 \tiny{
 \begin{forest} boompje
   [\tsc{rel}P, s sep=17mm
@@ -2257,6 +2143,218 @@ When spellout fails, go back to the previous cycle, and try the next option for 
   ]
 \end{forest}
 }
+
+Important is here, the fseq is identical to Modern German!
+
+\tit{mu}, \tit{go}, \tit{e/o}, \tit{k}
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=17mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.925,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{med}P,
+                  [\tsc{deix\scsub{2}}]
+                  [\tsc{deix\scsub{1}}]
+              ]
+          ]
+      ]
+      [\tsc{dat}P, s sep=17.5mm
+          [\tsc{masc}P,
+          tikz={
+          \node[label=below:\tit{e/o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+                  [\tsc{ref} [\phantom{xxx}, roof]]
+              ]
+          ]
+          [\tsc{dat}P,
+          tikz={
+          \node[label=below:\tit{mu},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=17mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.925,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{med}P,
+                  [\tsc{deix\scsub{2}}]
+                  [\tsc{deix\scsub{1}}]
+              ]
+          ]
+      ]
+      [\tsc{acc}P, s sep=24mm
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{e/o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{masc}P
+                  [\tsc{masc}]
+                  [\tsc{class}P
+                      [\tsc{class}]
+                      [\tsc{ref} [\phantom{xxx}, roof]]
+                  ]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{go},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\subsection{The light head}
+
+\ex.
+\ag. Jan lubi \underline{tego} \underline{\tbf{kogo}} \tbf{Maria} \tbf{lubi}.\\
+ Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} Maria like.\tsc{3sg}\scsub{[acc]}\\
+ `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
+\bg. *Jan lubi \underline{tego} \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+ Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+ `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
+\bg. Jan lubi [\underline{ego}] \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{lh}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
+
+Same fseq as Modern German
+
+Difference between \tit{ego} and \tit{tego} is only the feature \tsc{dx}, so that's why people say it has the same meaning.
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{dat}P, s sep=20mm
+      [\tsc{masc}P,
+      tikz={
+      \node[label=below:\tit{e/o},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{masc}]
+          [\tsc{class}P
+              [\tsc{class}]
+              [\tsc{ref} [\phantom{xxx}, roof]]
+          ]
+      ]
+      [\tsc{dat}P,
+      tikz={
+      \node[label=below:\tit{mu},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{f}3]
+          [\tsc{acc}P
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{dat}P, s sep=25mm
+      [\tsc{ind}P,
+      tikz={
+      \node[label=below:\tit{e/o},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{ind}]
+          [\tsc{mascP}
+              [\tsc{masc}]
+              [\tsc{class}P
+                  [\tsc{class}]
+                  [\tsc{ref} [\phantom{xxx}, roof]]
+              ]
+          ]
+      ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{go},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+
 
 \subsection{Comparing consituents}
 
@@ -2794,49 +2892,6 @@ Consider left-most constituent of the relative pronoun that spells out as \tit{k
 The relative pronoun has constituents that are not constituents in the light head, so the relative pronoun cannot be absent.
 In sum, neither of the elements contains all constituents that the other element contains, and none of the elements can be absent, so none of them is marked gray.
 
-
-Polish only allows the deletion of the light head in the matching situation. It is not obligatory there, you can just as well have a light-headed relative. The deletion is possible, because you have two elements that are pretty similar?
-
-\exg. Jan czyta to, co Maria czyta.\\
- Jan read this what Maria reads\\
- `Jan reads what Maria reads.' \flushfill{Polish, \pgcitealt{citko2004}{96}}
-
-
-Radek: Czech distinguishes between accidental uniqueness and inherent uniqueness. Accidental uniqueness: with \tsc{dem}, inherent uniqueness: without \tsc{dem}.
-
-Radek's situation:
-
-Two student assistants A and B are at their shared workdesk, which they share with other student assistants and where there’s a computer and a couple of other things, including a book (it doesn’t really matter to whom the book belongs). A is looking for a pencil, B says
-
-\exg. Nějaká tužka je vedle {počítače /\#toho počítače}.\\
-some pencil is {next to} computer \tsc{dem} computer\\
-`There’s a pencil next to the computer.'
-
-All situations like the topic situation – A and B’s shared office (desk)– have exactly one computer in it.
-
-\exg. Nějaká tužka je vedle {té knížky /\#knížky}\\
-some pencil is {next to} \tsc{dem} book book\\
-`There’s a pencil next to the book.'
-
-There is exactly one book in the topic situation – A and B’s shared office (desk) – and it does not hold that all situation like the topic situation have exactly one book in it
-
-Florian showed that this is different for Modern German:
-
-\begin{table}[htbp]
-\begin{tabular}{c|ccc}
-\toprule
-       & anaphoric                & situational uniqueness              & inherent uniqueness                 \\
-       \cmidrule{2-4}
-Polish & \tsc{dem}  & \cellcolor{DG}\tsc{dem}             & ∅                                   \\
-German & \tsc{dem}\scsub{strong}  & \cellcolor{LG}\tsc{dem}\scsub{weak} & \cellcolor{LG}\tsc{dem}\scsub{weak} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\tit{to} is incompatible with \tit{ever}, because \tit{to} makes it accidentally uniqueness and \tit{ever} requires inherent uniqueness
-
-
-
 \section{Deriving the unrestricted type}\label{sec:deriving-nonmatching}
 
 Internal-only languages can be summarizes as in Table \ref{tbl:overview-rel-light-ohg}.
@@ -2868,95 +2923,63 @@ Finally, I show that the effect of syncretism is not limited to Old High German 
 
 
 
-\subsection{The light-headed relative clause}
+\subsection{The relative pronoun}
 
-Headless relatives in which the relative pronoun starts with a \tit{d}, such as in Old High German, seem to be linked to individuating or definite readings and not to generalizing or indefinite readings \citep[cf.][]{fuss2017}. I illustrate this with the two examples I repeat from Chapter  \ref{ch:typology}.
-
-Consider the example in \ref{ex:ohg-nom-acc-interpretation}, repeated from Chapter \ref{ch:typology}.
-In this example, the author refers to the specific person which was talked about, and not to any or every person that was talked about.
-
-\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
-\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc}
-3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
-`this is the one whom they talk about'\\
-not: `this is whoever they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-interpretation}
-
-Consider also the example in \ref{ex:ohg-nom-acc-interpretation}, repeated from Chapter \ref{ch:typology}.
-In this example, the author refers to the specific person who spoke to someone, and not to any or every person who spoke to someone.
-
-\exg. enti aer {ant uurta} demo \tbf{zaimo} \tbf{sprah}\\
-and 3\ac{sg}.\ac{m}.\ac{nom} reply.\ac{pst}.3\ac{sg}\scsub{[dat]} \ac{rel}.\ac{sg}.\ac{m}.\ac{dat} {to 3\ac{sg}.\ac{m}.\ac{dat}} speak.\ac{pst}.3\ac{sg}\scsub{[nom]}\\
-`and he replied to the one who spoke to him'\\
-not: `and he replied to whoever spoke to him'
- \flushfill{Old High German, \ac{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom-rep}
-
- Consider the light-headed relative in \ref{ex:ohg-double}. \tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the head of the relative clause, which is the external element. \tit{Then} `\tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause, which is the internal element.
-
- \exg. eno nist thiz thér then ir suochet zi arslahanne?\\
-  now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
-  \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
-  `Isn't this now the one, who you seek to kill?'\label{ex:ohg-double}
-
- The difference between a light-headed relative and a headless relative is that in headless relatives, either the internal or the external is absent. The absent element is the one that has the least complex case. This shows the presence of two elements in Old High German is optional.\footnote{
- This sharply contrasts with headless relatives in Modern German, which are always ungrammatical when both the internal and external elements surface. I come back to this in Section \ref{sec:deriving-only-internal}.
- }
- In Old High German, there are three possible constructions: the internal and external element can both surface, only the internal element can surface and only the external element can surface. If only one of the two elements surfaces, this is the element that bears the most complex case, which is either the internal or the external one, as I have shown in Chapter \ref{ch:typology}. I assume that whether both or only one of the elements surfaces is determined by information structure. In \ref{ex:ohg-double}, the external element \tit{thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the candidate to be absent. However, it seems plausible that this is emphasized in this sentence and that it, therefore, cannot be absent.
+What is different here, is that the relative pronoun is a \tsc{d}-pronoun instead of a \tsc{wh}.
 
 
-\subsection{Decomposing light heads and relative pronouns}
+Relative and demonstrative pronouns are syncretic in Old High German \pgcitep{braune2018}{338}. Table \ref{tbl:rel-dem-ohg} gives an overview of the forms in singular and plural, neuter, masculine and feminine and nominative, accusative and dative. The pronouns consist of two morphemes: a \tit{d} and suffix that differs per number, gender and case.\footnote{
+\tit{d} can also be written as \tit{dh} and \tit{th}, \tit{ë} and \tit{ē} can also be \tit{e} and \tit{é} \pgcitep{braune2018}{339}.
+}\footnote{
+The suffix could also be further divided into a vowel and a suffix. As this is not relevant for the discussion here, I refrain from doing that.
+}
 
- The light head in a light-headed relative is a demonstrative pronoun. Relative and demonstrative pronouns are syncretic in Old High German \pgcitep{braune2018}{338}. Table \ref{tbl:rel-dem-ohg} gives an overview of the forms in singular and plural, neuter, masculine and feminine and nominative, accusative and dative. The pronouns consist of two morphemes: a \tit{d} and suffix that differs per number, gender and case.\footnote{
- \tit{d} can also be written as \tit{dh} and \tit{th}, \tit{ë} and \tit{ē} can also be \tit{e} and \tit{é} \pgcitep{braune2018}{339}.
- }\footnote{
- The suffix could also be further divided into a vowel and a suffix. As this is not relevant for the discussion here, I refrain from doing that.
- }
-
- \begin{table}[htbp]
-  \center
-  \caption {Relative/demonstrative pronouns in Old High German \pgcitep{braune2018}{339}}
-   \begin{tabular}{cccc}
-   \toprule
-             & \ac{n}.\ac{sg}  & \ac{m}.\ac{sg}      & \ac{f}.\ac{sg}    \\
-         \cmidrule{2-4}
-   \ac{nom}  & d-aȥ            & d-ër                & d-iu               \\
-   \ac{acc}  & d-aȥ            & d-ën                & d-ea/d-ia         \\
-   \ac{dat}  & d-ëmu/d-ëmo     & d-ëmu/d-ëmo         & d-ëru/d-ëro       \\
-   \bottomrule
-             & \ac{n}.\ac{pl}  & \ac{m}.\ac{pl}      &  \ac{f}.\ac{pl}  \\
-         \cmidrule{2-4}
-   \ac{nom}  & d-iu            &  d-ē/d-ea/d-ia/d-ie & d-eo/-io         \\
-   \ac{acc}  & d-iu            &  d-ē/d-ea/d-ia/d-ie & d-eo/-io         \\
-   \ac{dat}  & d-ēm/d-ēn       &  d-ēm/d-ēn          & d-ēm/d-ēn        \\
-     \bottomrule
-   \end{tabular}
-   \label{tbl:rel-dem-ohg}
- \end{table}
+\begin{table}[htbp]
+ \center
+ \caption {Relative/demonstrative pronouns in Old High German \pgcitep{braune2018}{339}}
+  \begin{tabular}{cccc}
+  \toprule
+            & \ac{n}.\ac{sg}  & \ac{m}.\ac{sg}      & \ac{f}.\ac{sg}    \\
+        \cmidrule{2-4}
+  \ac{nom}  & d-aȥ            & d-ër                & d-iu               \\
+  \ac{acc}  & d-aȥ            & d-ën                & d-ea/d-ia         \\
+  \ac{dat}  & d-ëmu/d-ëmo     & d-ëmu/d-ëmo         & d-ëru/d-ëro       \\
+  \bottomrule
+            & \ac{n}.\ac{pl}  & \ac{m}.\ac{pl}      &  \ac{f}.\ac{pl}  \\
+        \cmidrule{2-4}
+  \ac{nom}  & d-iu            &  d-ē/d-ea/d-ia/d-ie & d-eo/-io         \\
+  \ac{acc}  & d-iu            &  d-ē/d-ea/d-ia/d-ie & d-eo/-io         \\
+  \ac{dat}  & d-ēm/d-ēn       &  d-ēm/d-ēn          & d-ēm/d-ēn        \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:rel-dem-ohg}
+\end{table}
 
 
- The suffixes that combine with the \tit{d} in demonstrative and relative pronouns also appear on adjectives. This is illustrated in Table \ref{tbl:adj-ohg}.
+The suffixes that combine with the \tit{d} in demonstrative and relative pronouns also appear on adjectives. This is illustrated in Table \ref{tbl:adj-ohg}.
 
- \begin{table}[htbp]
-  \center
-  \caption {Adjectives on \tit{-a-/-ō-} in Old High German \pgcitealt{braune2018}{300}}
-   \begin{tabular}{cccc}
-   \toprule
-             & \ac{n}.\ac{sg}    & \ac{m}.\ac{sg}      & \ac{f}.\ac{sg}    \\
-     \cmidrule{2-4}
-   \ac{nom}  & jung, jung-aȥ     & jung, jung-ēr       & jung, jung-iu     \\
-   \ac{acc}  & jung, jung-aȥ     & jung-an             & jung-a            \\
-   \ac{dat}  & jung-emu/jung-emo & jung-emu/jung-emo   & jung-eru/jung-ero \\
-   \bottomrule
-             & \ac{n}.\ac{pl}    & \ac{m}.\ac{pl}      &  \ac{f}.\ac{pl}   \\
-       \cmidrule{2-4}
-   \ac{nom}  & jung-iu           &  jung-e             & jung-o            \\
-   \ac{acc}  & jung-iu           &  jung-e             & jung-o            \\
-   \ac{dat}  & jung-ēm/jung-ēn   &  jung-ēm/jung-ēn    & jung-ēm/jung-ēn   \\
-     \bottomrule
-   \end{tabular}
-   \label{tbl:adj-ohg}
- \end{table}
+\begin{table}[htbp]
+ \center
+ \caption {Adjectives on \tit{-a-/-ō-} in Old High German \pgcitealt{braune2018}{300}}
+  \begin{tabular}{cccc}
+  \toprule
+            & \ac{n}.\ac{sg}    & \ac{m}.\ac{sg}      & \ac{f}.\ac{sg}    \\
+    \cmidrule{2-4}
+  \ac{nom}  & jung, jung-aȥ     & jung, jung-ēr       & jung, jung-iu     \\
+  \ac{acc}  & jung, jung-aȥ     & jung-an             & jung-a            \\
+  \ac{dat}  & jung-emu/jung-emo & jung-emu/jung-emo   & jung-eru/jung-ero \\
+  \bottomrule
+            & \ac{n}.\ac{pl}    & \ac{m}.\ac{pl}      &  \ac{f}.\ac{pl}   \\
+      \cmidrule{2-4}
+  \ac{nom}  & jung-iu           &  jung-e             & jung-o            \\
+  \ac{acc}  & jung-iu           &  jung-e             & jung-o            \\
+  \ac{dat}  & jung-ēm/jung-ēn   &  jung-ēm/jung-ēn    & jung-ēm/jung-ēn   \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:adj-ohg}
+\end{table}
 
- I conclude from this that the suffix expresses features that are specific to being nominal, like number, gender and case. Not part of the suffix are features that are specific to being a demonstrative or relative pronoun, like anaphoricity and definiteness. I assume that these are expressed by the morpheme \tit{d}.
+I conclude from this that the suffix expresses features that are specific to being nominal, like number, gender and case. Not part of the suffix are features that are specific to being a demonstrative or relative pronoun, like anaphoricity and definiteness. I assume that these are expressed by the morpheme \tit{d}.
 
 split the suffix up in two morphemes
 
@@ -2971,128 +2994,17 @@ The \tit{d} morpheme corresponds to definiteness and anaphoricity. Anaphoricity 
 
 \ex.
 \begin{forest} boom
-  [\tsc{d}P
-      [\tsc{d}]
-      [\tsc{ana}]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{d}}; }
+ [\tsc{d}P
+     [\tsc{d}]
+     [\tsc{ana}]
+ ]
+ {\draw (.east) node[right]{⇔ \tit{d}}; }
 \end{forest}
 \label{ex:ohg-d-lexicon}
 
 So, the two relative pronouns look like this.\footnote{A question that arises here is how the case features can form a constituent to the exclusion of definiteness and anaphoricity. I come back to this issue in Chapter \ref{ch:discussion}.}
 
-
-
-
-
-
-
-\subsection{Recomposing light heads and relative pronouns}
-
-\ex. Old High German: \tsc{ext} \tsc{acc}\\
-\tiny{
-\begin{forest} boompje
-  [\tsc{d}P, s sep=15mm
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.8,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{acc}P, s sep=20mm
-          [\tsc{med}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{dx}\scsub{2}]
-              [\tsc{prox}P
-                  [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
-              ]
-          ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{n},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
-                          [\tsc{class}P
-                              [\tsc{class}]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-}
-
-\ex. Old High German: \tsc{ext} \tsc{nom}\\
-\tiny{
-\begin{forest} boompje
-  [\tsc{d}P, s sep=15mm
-      [\tsc{d}P,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.8,
-      fit to=tree]{};
-      }
-          [\tsc{d}, roof]
-      ]
-      [\tsc{nom}P, s sep=20mm
-          [\tsc{med}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{dx}\scsub{2}]
-              [\tsc{prox}P
-                  [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
-              ]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[label=below:\tit{r},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
-                      [\tsc{class}P
-                          [\tsc{class}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-}
-
-\ex. Old High German: \tsc{int} \tsc{acc}\\
+\ex.
 \tiny{
 \begin{forest} boompje
   [\tsc{rel}P, s sep=10mm
@@ -3202,6 +3114,148 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
 }
 
 
+
+
+
+\subsection{The light head}
+
+Headless relatives in which the relative pronoun starts with a \tit{d}, such as in Old High German, seem to be linked to individuating or definite readings and not to generalizing or indefinite readings \citep[cf.][]{fuss2017}. I illustrate this with the two examples I repeat from Chapter  \ref{ch:typology}.
+
+Consider the example in \ref{ex:ohg-nom-acc-interpretation}, repeated from Chapter \ref{ch:typology}.
+In this example, the author refers to the specific person which was talked about, and not to any or every person that was talked about.
+
+\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
+\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc}
+3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+`this is the one whom they talk about'\\
+not: `this is whoever they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-interpretation}
+
+Consider also the example in \ref{ex:ohg-nom-acc-interpretation}, repeated from Chapter \ref{ch:typology}.
+In this example, the author refers to the specific person who spoke to someone, and not to any or every person who spoke to someone.
+
+\exg. enti aer {ant uurta} demo \tbf{zaimo} \tbf{sprah}\\
+and 3\ac{sg}.\ac{m}.\ac{nom} reply.\ac{pst}.3\ac{sg}\scsub{[dat]} \ac{rel}.\ac{sg}.\ac{m}.\ac{dat} {to 3\ac{sg}.\ac{m}.\ac{dat}} speak.\ac{pst}.3\ac{sg}\scsub{[nom]}\\
+`and he replied to the one who spoke to him'\\
+not: `and he replied to whoever spoke to him'
+ \flushfill{Old High German, \ac{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom-rep}
+
+ Consider the light-headed relative in \ref{ex:ohg-double}. \tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the head of the relative clause, which is the external element. \tit{Then} `\tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause, which is the internal element.
+
+ \exg. eno nist thiz thér then ir suochet zi arslahanne?\\
+  now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
+  \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
+  `Isn't this now the one, who you seek to kill?'\label{ex:ohg-double}
+
+ The difference between a light-headed relative and a headless relative is that in headless relatives, either the internal or the external is absent. The absent element is the one that has the least complex case. This shows the presence of two elements in Old High German is optional.\footnote{
+ This sharply contrasts with headless relatives in Modern German, which are always ungrammatical when both the internal and external elements surface. I come back to this in Section \ref{sec:deriving-only-internal}.
+ }
+ In Old High German, there are three possible constructions: the internal and external element can both surface, only the internal element can surface and only the external element can surface. If only one of the two elements surfaces, this is the element that bears the most complex case, which is either the internal or the external one, as I have shown in Chapter \ref{ch:typology}. I assume that whether both or only one of the elements surfaces is determined by information structure. In \ref{ex:ohg-double}, the external element \tit{thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the candidate to be absent. However, it seems plausible that this is emphasized in this sentence and that it, therefore, cannot be absent.
+
+
+ The light head in a light-headed relative is a demonstrative pronoun.
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{d}P, s sep=15mm
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.8,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{acc}P, s sep=20mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref} [\phantom{xxx}, roof]]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{masc}P
+                          [\tsc{masc}]
+                          [\tsc{class}P
+                              [\tsc{class}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Old High German: \tsc{ext} \tsc{nom}\\
+\tiny{
+\begin{forest} boompje
+  [\tsc{d}P, s sep=15mm
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.8,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{nom}P, s sep=20mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref} [\phantom{xxx}, roof]]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{masc}P
+                      [\tsc{masc}]
+                      [\tsc{class}P
+                          [\tsc{class}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
 
 
 
