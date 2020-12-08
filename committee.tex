@@ -771,7 +771,7 @@ A language of the internal-only type (like Modern German) allows only the intern
 
 The section is structured as follows.
 First, I discuss the relative pronoun. According to my assumptions in Section \ref{sec:basic-idea}, relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition. I decompose the relative pronouns into morphemes, and I show which features each of the morphemes corresponds to.
-Then I discuss the light head. I argue that Modern German headless relatives are derived from a light-headed relative clause that never surfaces in the language. I decompose the light heads into morphemes, and I show which features each of the morphemes corresponds to.
+Then I discuss the light head. I argue that Modern German headless relatives are derived from a light-headed relative clause that does not surface in the language. I decompose the light heads into morphemes, and I show which features each of the morphemes corresponds to.
 Finally, I compare the constituents of the light head and the relative pronoun.
 When the internal and the external case match, the relative pronoun can delete the light head, because it contains all its constituents.
 When the internal case is more complex than the external case, the relative pronoun can still delete the light head, for the same reason: the relative pronoun contains all constituents of the light head.
@@ -854,9 +854,17 @@ In Section \ref{sec:basic-idea} I gave the structure in \ref{ex:mg-simplified-re
   ]
 \end{forest}
 
-In what follows, I argue that structure of the relative pronoun actually looks as in \ref{ex:mg-structure-rel}.
+In this section I give the non-simplified structure of the relative pronoun. I discuss the relative pronoun in the nominative animate singular and in the accusative animate singular. These are the two forms that I compare the constituents of at the end of this section. I show them in \ref{ex:mg-rels}.
 
-\ex.\label{ex:mg-structure-rel}
+\ex.\label{ex:mg-rels}
+\ag. w-e-r\\
+ `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
+\bg. w-e-n\\
+ `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
+
+In what follows, I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant. For each morpheme, I discuss which features they spell out, and I give their lexical entries. Finally, I show how relative pronouns are derived into the structures in \ref{ex:mg-structure-rel-nom} and \ref{ex:mg-structure-rel-nom}. I pay particular attention to what drives the observed consituency.
+
+\ex.
 \scriptsize{
 \begin{forest} boompje
   [\tsc{rel}P, s sep=12mm
@@ -881,22 +889,22 @@ In what follows, I argue that structure of the relative pronoun actually looks a
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                 [\tsc{dx}\scsub{1}]
-                [\tsc{ref} [\phantom{xxx}, roof]
+                [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]
                 ]
             ]
         ]
-          [\tsc{k}P,
+          [\tsc{nom}P,
           tikz={
-          \node[label=below:\tit{r/n},
+          \node[label=below:\tit{r},
           draw,circle,
           scale=0.95,
           fit to=tree]{};
           }
-              [\tsc{k}]
+              [\tsc{f}1]
               [\tsc{ind}P
                   [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
+                  [\tsc{anim}P
+                      [\tsc{anim}]
                       [\tsc{class}P
                           [\tsc{class}]
                       ]
@@ -909,23 +917,68 @@ In what follows, I argue that structure of the relative pronoun actually looks a
 }
 \label{ex:mg-spellout-rel-nom}
 
-I discuss two relative pronouns. These are the two elements that I compare the constituents of at the end of this section. The two forms are the animate singulars in nominative and accusative case, given in \ref{ex:mg-rels}.
+\ex.
+\scriptsize{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=12mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}]
+      ]
+      [\tsc{acc}P, s sep=23mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{anim}P
+                          [\tsc{anim}]
+                          [\tsc{class}P
+                              [\tsc{class}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+\label{ex:mg-spellout-rel-acc}
 
-\ex.\label{ex:mg-rels}
-\ag. w-e-r\\
- `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
-\bg. w-e-n\\
- `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
-
-I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant. For each morpheme, I discuss which features they spell out and what their lexical entries look like. Then I give the feature content of relative pronouns as a whole. Finally, I show how relative pronouns are derived.
-
-I start with the morpheme \tit{w} of the relative pronoun. Compare Table \ref{tbl:mg-paradigm-wh-rels} and Table \ref{tbl:mg-paradigm-wh-dem}. The \tit{w} combines with the same endings as the \tit{d} does in demonstratives (or relative pronouns in headed relatives).\footnote{
+I start with the morpheme \tit{w} of the relative pronoun. Compare Table \ref{tbl:mg-paradigm-wh-rels} and Table \ref{tbl:mg-paradigm-dem}. The \tit{w} combines with the same endings as the \tit{d} does in demonstratives (or relative pronouns in headed relatives).\footnote{
 Note here that the relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels}. Demonstratives also have plural forms (which are not given here), and relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
 }
 
 \begin{table}[H]
 \center
-\caption {Modern German relative pronouns}
+\caption {Modern German relative pronouns \pgcitep{durrell2011}{5.3.3}}
  \begin{tabular}{ccc}
  \toprule
              & \ac{an}  & \tsc{inan}\\
@@ -940,7 +993,7 @@ Note here that the relative pronouns, unlike the demonstratives, do not have a f
 
 \begin{table}[H]
 \center
-\caption {Modern German demonstrative pronouns} %dieser source
+\caption {Modern German demonstrative pronouns \pgcitep{durrell2011}{5.4.1}} %dieser source
  \begin{tabular}{cccc}
  \toprule
              & \ac{m}  & \tsc{n} & \tsc{f} \\
@@ -953,17 +1006,11 @@ Note here that the relative pronouns, unlike the demonstratives, do not have a f
  \label{tbl:mg-paradigm-dem}
 \end{table}
 
-This identifies the \tit{d} and, more importantly for the discussion here, the \tit{w} as a separate morpheme. The morpheme \tit{w} appears besides in headless relatives clauses also in different contexts, such as interrogative pronouns. I give an example in \ref{ex:mg-interrogative}.
-
-\exg. Wer ist da?\\
-who is there\\
-`Who is there?'\label{ex:mg-interrogative}
-
-Two features that \tit{w} spells out are important for the discussion here. The first one I refer to as \tsc{wh}. This is the meaning part that relative pronouns and interrogatives share: the \tsc{wh}-element triggers the construction of a set of alternatives in the sense of Rooth (1985; 1992).\footnote{
-This contrasts with the \tsc{d}, which is responsible for establishing a definite reference. I return to the \tsc{d} in Section \ref{sec:deriving-nonmatching}
-}
+This identifies the \tit{d} and, more importantly for the discussion here, the \tit{w} as a separate morpheme. Two features that \tit{w} spells out are important for the discussion here.
+The first feature I refer to as \tsc{wh}. This is a feature that \tsc{wh}-pronouns, such as \tsc{wh}-relative pronouns and interrogatives, share. This is the meaning part that relative pronouns and interrogatives share: the \tsc{wh}-element triggers the construction of a set of alternatives in the sense of \citet{rooth1985,rooth1992} \citep{hachem2015}. This contrasts with the \tsc{d} in Table \ref{tbl:mg-paradigm-dem}, which is responsible for establishing a definite reference.
 The second relevant feature is \tsc{rel}, which establishes a relation.
-In sum, the \tit{w} spells out the features \tsc{wh} and \tsc{rel}, shown in \ref{ex:mg-w-features}. This is not a lexical entry, but only a notation that sums of which features the \tit{w} spells out. I give lexical entries at the end of this section.
+
+In sum, the \tit{w} spells out the features \tsc{wh} and \tsc{rel}, shown in \ref{ex:mg-entry-w}.
 
 \ex. \begin{forest} boom
   [\tsc{rel}P
@@ -973,28 +1020,13 @@ In sum, the \tit{w} spells out the features \tsc{wh} and \tsc{rel}, shown in \re
   {\draw (.east) node[right]{⇔ \tit{w}}; }
 \end{forest}\label{ex:mg-entry-w}
 
-I continue with the final consonants (\tit{r} and \tit{n}). They can be observed in several contexts besides relative pronouns. Table \ref{tbl:mg-str-adj} gives an overview of strong adjective \tit{neu} `new' in Modern German in two numbers, three genders and three cases.\footnote{
+I continue with the final consonants (\tit{r} and \tit{n}). They can be observed in several contexts besides relative pronouns. Table \ref{tbl:mg-str-adj} gives an overview of the strong adjective \tit{neu} `new' in Modern German in two numbers, three genders and three cases.\footnote{
 The vowel preceding the final consonant is written as \tit{e}. I write it as \tit{ə}, because this is how it is pronounced. I make this distinction to emphasize that this differs from the vowel used in the relative pronouns. It might be the same as the \tit{ə} in the light head.
-} Compare
+} Compare the final consonants in Table \ref{tbl:mg-paradigm-wh-rels-rep} and Table \ref{tbl:mg-str-adj} (repeated from Table \ref{tbl:mg-paradigm-wh-rels}).
 
 \begin{table}[htbp]
 \center
-\caption {Modern German relative pronouns (repeated)}
-\begin{tabular}{ccc}
-\toprule
-            & \ac{an}  & \tsc{inan}\\
-  \cmidrule{2-3}
-  \ac{nom}  & w-e-r    & w-a-s     \\
-  \ac{acc}  & w-e-n    & w-a-s     \\
-  \ac{dat}  & w-e-m    & (w-e-m)   \\
-\bottomrule
-\end{tabular}
-\label{tbl:mg-paradigm-wh-rels}
-\end{table}
-
-\begin{table}[htbp]
-\center
-\caption {Modern German strong adjective \tit{neu} `new'}
+\caption {Modern German strong adjective \tit{neu} `new' \pgcitep{durrell2011}{6.1.2}}
  \begin{tabular}{ccccc}
  \toprule
              & \ac{m}.\tsc{sg}    & \tsc{n}.\tsc{sg}   & \tsc{f}.\tsc{sg}  & \tsc{pl} \\
@@ -1007,21 +1039,41 @@ The vowel preceding the final consonant is written as \tit{e}. I write it as \ti
  \label{tbl:mg-str-adj}
 \end{table}
 
+\begin{table}[htbp]
+\center
+\caption {Modern German relative pronouns \pgcitep{durrell2011}{5.3.3} (repeated)}
+\begin{tabular}{ccc}
+\toprule
+            & \ac{an}  & \tsc{inan}\\
+  \cmidrule{2-3}
+  \ac{nom}  & w-e-r    & w-a-s     \\
+  \ac{acc}  & w-e-n    & w-a-s     \\
+  \ac{dat}  & w-e-m    & (w-e-m)   \\
+\bottomrule
+\end{tabular}
+\label{tbl:mg-paradigm-wh-rels-rep}
+\end{table}
+
 Table \ref{tbl:mg-str-adj} and \ref{tbl:mg-pers-pron} show that the final consonants take different shapes depending on gender, number and case. I conclude from that that the consonant realizes features having to do with these three aspects.
 
-Since I only discuss singular masculine forms in nominative and accusative case, I only introduce features that are realized by these morphemes.
+Since I discuss singular masculine forms in nominative and accusative case, I only introduce features that are realized by these morphemes.
 For case, I adopt the features of \citet{caha2009}, already introduced in Chapter \ref{ch:decomposition}. \tsc{f}1 refers to a nominative, and \tsc{f}1 and \tsc{f}2 refers to an accusative.
-For number and gender, I adopt the features that are distinguished by \citet{harley2002} for pronouns. The feature \tsc{class} refers to gender features, which is neuter if it is not combined with any other features. Combining \tsc{class} with the feature \tsc{masc} gives a masculine gender. The feature \tsc{ind} refers to number, which is singular if it is not combined with any other features.
+For number and gender, I adopt the features that are distinguished by \citet{harley2002} for pronouns. The feature \tsc{class} refers to gender features, which is inanimate or neuter if it is not combined with any other features. Combining \tsc{class} with the feature \tsc{inam} gives an animate or masculine gender.\footnote{
+If \tsc{class} and \tsc{anim} is combined with \tsc{fem}, it becomes feminine gender.
+}
+The feature \tsc{ind} refers to number, which is singular if it is not combined with any other features.
 
-The \tit{r} is the nominative masculine singular, so it spells out the features \tsc{class}, \tsc{masc}, \tsc{ind} and \tsc{f}1. The \tit{n} is the accusative masculine singular, so it spells out the features that the \tit{r} spells out plus \tsc{f}2. I summarizes this in \ref{ex:r/n-features}.
+I give the lexical entries in \ref{ex:mg-entry-r} and \ref{ex:mg-entry-n}.
+The \tit{r} is the nominative masculine singular, so it spells out the features \tsc{class}, \tsc{anim}, \tsc{ind} and \tsc{f}1. The \tit{n} is the accusative masculine singular, so it spells out the features that the \tit{r} spells out plus \tsc{f}2.
 
-\ex. \begin{forest} boom
+\ex.\label{ex:mg-entries-rn}
+\a.\begin{forest} boom
   [\tsc{nom}P
       [\tsc{f}1]
       [\tsc{ind}P
           [\tsc{ind}]
-          [\tsc{masc}P
-              [\tsc{masc}]
+          [\tsc{anim}P
+              [\tsc{anim}]
               [\tsc{class}P
                   [\tsc{class}]
               ]
@@ -1031,16 +1083,15 @@ The \tit{r} is the nominative masculine singular, so it spells out the features 
   {\draw (.east) node[right]{⇔ \tit{r}}; }
 \end{forest}
 \label{ex:mg-entry-r}
-
-\ex. \begin{forest} boom
+\b. \begin{forest} boom
   [\tsc{acc}P
       [\tsc{f}2]
       [\tsc{nom}P
           [\tsc{f}1]
           [\tsc{ind}P
               [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
+              [\tsc{anim}P
+                  [\tsc{anim}]
                   [\tsc{class}P
                       [\tsc{class}]
                   ]
@@ -1052,23 +1103,44 @@ The \tit{r} is the nominative masculine singular, so it spells out the features 
 \end{forest}
 \label{ex:mg-entry-n}
 
-This leaves the \tit{e} in the relative pronoun. I assume that, \tit{e} contains \tsc{ref}, which \citet{harley2002} claim all pronouns contain. Besides that, it expresses features involving deixis. Modern German has a syncretic form for the proximal, the medial and the distal \pgcitep{lander2018}{387}.
+Two things should be noted here. First, the ordering of the features is not random. I motivate it later on in this section.
+
+Second, the lexical entries in \ref{ex:mg-entries-rn} differ from the one in \ref{ex:mg-entry-w} regarding their bottom. \ref{ex:mg-entry-w} has two features at the bottom, and \ref{ex:mg-entries-rn} have only one.
+This is how Nanosyntax whether a lexical entry is a suffix or a prefix. Lexical entries with unary bottoms are suffixes, so they can only appear as the result of movement. Lexical entries with binary bottoms are prefixes, so they cannot appear as the result of movement \citep{starke2018}.\footnote{
+This movement is the same one that I mentioned in the discussion on Khanty pronouns in Chapter \ref{ch:decomposition}. Later in this section I illustrate how lexical entries and movement interact.
+}
+
+This leaves the \tit{e} in the relative pronoun. I assume that this morphemes spells out two features. The first one is \tsc{ref}. \citet{harley2002} claim that all pronouns contain this feature, because they are referential expressions. \citet{baker2003} claims that it also present in nouns, and that this feature distinguishes nouns from other categories.
+The second feature I call \tsc{dx}. This refers to discourse deixis here.
+It expresses deixis in that it establishes a relation with an antecedent.
+This feature is present in \tsc{wh}-pronouns and demonstratives as in \ref{tbl:mg-paradigm-dem}. \footnote{
+I do not decompose the deixis any further in the main text. For completeness, I assume that the \tsc{wh}-relative pronoun combines with a the medial (when distinguishing between proximal, medial and distal). Morphological evidence from English shows that it has to be medial or the distal. Demonstratives in English can combine with either the proximal (\tit{this}) or this medial/distal (\tit{that}). \tsc{wh}-pronouns combine with the medial/distal (\tit{what}) and are ungrammatical when combined with the proximal (*\tit{whis}).
+
+Conceptually it can be made sense of if one connects spatial deixis to discourse deixis \citep{colasanti2019}. The proximal is spatially near speaker, and it refers to knowledge that the speaker possesses. The medial is spatially near the hearer, and it refers to knowledge that the hearer possesses. The distal is spatially away from the speaker and the hearer, and refers to knowledge that neither of the possess. In interrogatives, the speaker asks the hearer a question, probably assuming that the hearer has the information.
+
+The difference between these distinctions cannot be observed in Modern German, because a syncretic form for the proximal, the medial and the distal \pgcitep{lander2018}{387}, see Table \ref{tbl:mg-paradigm-dem}.
+}
 
 \ex.
 \begin{forest} boom
   [\tsc{dx}P
-      [\tsc{dx}\scsub{1}]
-      [\tsc{ref} [\phantom{xxx}, roof]]
+      [\tsc{dx}]
+      [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
   ]
   {\draw (.east) node[right]{⇔ \tit{e}}; }
   \label{ex:mg-entry-e}
 \end{forest}
 
-Taking this all together, I propose that the structure in \ref{ex:fseq-wh-rel} is the functional sequence for the relative pronoun. It consists of referential features at the bottom (\tsc{ref},) features having to do with deixis (\tsc{dx}\scsub{1} and \tsc{dx}\tsc{2}), with gender (\tsc{class} and \tsc{masc}) and number (\tsc{ind}), with the relative pronoun (\tsc{wh} and \tsc{rel}) and with case (\tsc{f}1 and \tsc{f}2).
+At this point, I gave the lexical entries and what the relative pronouns as a whole look like. In principle, I could combine the lexical entries and move on to the light head. One would only need a theory for combining morphemes. This theory should determine which morphemes should be combined with each other and in which order this happens. Ideally, this theory for combining morphemes is not language-specific, but the same for all languages.
+
+The way Nanosyntax accomplishes this is via a functional sequence and the spellout algorithm. In Nanosyntax, lexical entries are not combined directly from the lexicon. Instead, spellout happens in a cyclic derivation, in which features are merged one by one.
+Two components are needed for this: (1) a functional sequence, in which the features that need to be merged and their order in which they are merged are specified, and (2) the spellout algorithm, which describes the spelled procedure. These two components are stable across languages. The differences between languages only comes from their lexical entries.
+
+\ref{ex:fseq-wh-rel} shows the functional sequence for relative pronouns. It gives all features it contains and their hierarchical ordering.
 
 \ex. \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
-[\tsc{acc}P
-   [\tsc{f}2]
+[(\tsc{acc}P)
+   [(\tsc{f}2])
    [\tsc{nom}P
        [\tsc{f}1]
        [\tsc{rel}P
@@ -1077,15 +1149,15 @@ Taking this all together, I propose that the structure in \ref{ex:fseq-wh-rel} i
                [\tsc{wh}]
                [\tsc{ind}P
                    [\tsc{ind}]
-                   [\tsc{masc}P
-                       [\tsc{masc}]
+                   [\tsc{anim}P
+                       [\tsc{anim}]
                        [\tsc{class}P
                            [\tsc{class}]
                            [\tsc{med}P
                                [\tsc{dx}\scsub{2}]
                                [\tsc{prox}P
                                    [\tsc{dx}\scsub{1}]
-                                   [\tsc{ref} [\phantom{xxx}, roof]]
+                                   [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                                ]
                            ]
                        ]
@@ -1098,23 +1170,128 @@ Taking this all together, I propose that the structure in \ref{ex:fseq-wh-rel} i
 \end{forest}
 \label{ex:fseq-wh-rel}
 
-This order is independently supported by work in the literature. .. %The ordering: picallo, kramer, bittner hale, bayer
+Starting from the bottom, these are referential features (\tsc{ref}) and features having to do with deixis, gender features (\tsc{class} and \tsc{anim}), number features (\tsc{ind}), ?? features (\tsc{wh} and \tsc{rel}) and case features (\tsc{f}1 and \tsc{f}2). This order is independently supported by work in the literature. This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
 
+\tsc{ref}, \tsc{deix}, \tsc{wh/rel}?
 
-
-In Nanosyntax, lexical entries are not glued together directly from the lexicon. Instead, spellout happens in a cyclic derivation.
-
-The features are merged one by one, and the constituency is the consequence of the spellout algorithm.
+The features from the functional sequence are merged one by one, starting from the bottom. Spellout is cyclic, as stated in \ref{ex:cyclic-phrasal-spellout}.
 
 \ex. Cyclic phrasal spellout. Caha:declension\\
-Spellout must successfully apply to the output of every Merge F operation. After successfull spellout, the derivation may terminate, or proceed to another round of Merge F.
+Spellout must successfully apply to the output of every Merge F operation. After successfull spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
+
+After each instance of merge, the constructed phrase must be spelled out. I illustrate this by merging \tsc{ref}1 and \tsc{ref}2, creating a \tsc{ref}P.
+
+\ex.
+\begin{forest} boom
+  [\tsc{ref}P
+      [\tsc{ref}2]
+      [\tsc{ref}1]
+  ]
+\end{forest}
+
+This syntactic structure is contained in the lexical tree in \ref{ex:mg-entry-e-rep}, repeated from \ref{ex:mg-entry-e}, which spells out as \tit{e}.
+
+\ex.
+\begin{forest} boom
+  [\tsc{dx}P
+      [\tsc{dx}]
+      [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{e}}; }
+\end{forest}
+\label{ex:mg-spellout-e-rep}
+
+Therefore, the \tsc{ref}P is spelled out as \tit{e}. As usual, I mark this by circling the part of the structure that corresponds to the lexical entry, and placing the corresponding phonology under it.
+
+\ex.
+\begin{forest} boom
+  [\tsc{ref},
+  tikz={
+  \node[label=below:\tit{e},
+  draw,circle,
+  scale=0.85,
+  fit to=tree]{};
+  }
+      [\tsc{ref}2]
+      [\tsc{ref}1]
+  ]
+\end{forest}
+\label{ex:mg-spellout-e-refs}
+
+The next step in the derivation is to merge the following feature in the functional sequnce in \ref{ex:fseq-wh-rel}. This is the featrure \tsc{dx}, which creates the \tsc{dx}P.
+
+\ex.
+\begin{forest} boom
+  [\tsc{dx}P
+      [\tsc{dx}]
+      [\tsc{ref},
+      tikz={
+      \node[label=below:\tit{e},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{ref}2]
+          [\tsc{ref}1]
+      ]
+  ]
+\end{forest}
+\label{ex:mg-spellout-e-refs}
+
+The \tsc{dx}P is also contained in the lexical tree in \ref{ex:mg-entry-e-rep}. Therefore, the \tsc{dx}P spells out as \tit{e}, illustrated in \ref{ex:mg-spellout-e-dx}.
+
+\ex.
+\begin{forest} boom
+  [\tsc{dx}P,
+  tikz={
+  \node[label=below:\tit{e},
+  draw,circle,
+  scale=0.85,
+  fit to=tree]{};
+  }
+      [\tsc{dx}]
+      [\tsc{ref}
+          [\tsc{ref}2]
+          [\tsc{ref}1]
+      ]
+  ]
+\end{forest}
+\label{ex:mg-spellout-e-dx}
+
+Note here that the result of our derivation so far is not \tit{e}-\tit{e}. This is stated in \ref{ex:cyclic-override}.
 
 \ex. \tbf{Cyclic Override} \citep{starke2018}:\\
 Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+\label{ex:cyclic-override}
 
-Compare \tit{ə} and \tit{e}, show cyclic override.
+I reformulate this informally. If a lexical tree matches a syntactic structure, the lower matching items are replaced. This holds when the structure matches twice with the same lexical entry, and also when it matches with different lexical entries.
 
-Now merge next feature \tsc{class}, which cannot be spelled out anymore. How do we reach the different constituents? Spellout algorithm.
+The next feature in the functional sequence is \tsc{class}, and a \tsc{class}P is created.
+
+\ex.
+\begin{forest} boom
+  [\tsc{class}{}
+      [\tsc{class}]
+      [\tsc{dx}P,
+      tikz={
+      \node[label=below:\tit{e},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{dx}]
+          [\tsc{ref}
+              [\tsc{ref}2]
+              [\tsc{ref}1]
+          ]
+      ]
+  ]
+\end{forest}
+\label{ex:mg-spellout-e-class}
+
+Here a problem arises. The lexical entry for \tit{e} does not contain the feature \tsc{class} to make it a \tsc{class}P.
+
+This brings me to the spellout algorithm used in Nanosyntax, given in \ref{ex:spellout-algorithm}.
 
 \ex. \tbf{Spellout Algorithm:}\label{ex:spellout-algorithm}
  \a. Merge F and spell out.\label{ex:spellout-algorithm-phrasal}
@@ -1124,22 +1301,109 @@ Now merge next feature \tsc{class}, which cannot be spelled out anymore. How do 
 I informally reformulate what is in \ref{ex:spellout-algorithm}. I start with the first line in \ref{ex:spellout-algorithm-phrasal}. This says that a feature F is merged, and the newly created phrase FP is attempted to spell out.
 The next two lines, \ref{ex:spellout-algorithm-spec} and \ref{ex:spellout-algorithm-comp}, describe two types of rescue movements that take place when the spellout in \ref{ex:spellout-algorithm-phrasal} fails (i.e. when there is no match in the lexicon).
 
-So show this movement, it's a result of the lexical entries, nothing else.
+The first step of the spellout algorithm (\ref{ex:spellout-algorithm-phrasal}) succeeded after creating the \tsc{ref}P and the \tsc{dx}P, as shown in \ref{ex:mg-spellout-e-refs} and \ref{ex:mg-spellout-e-dx}.
+\ref{ex:spellout-algorithm-phrasal} fails after creating the \tsc{class}P. Following the spellout algorithm, the option in \ref{ex:spellout-algorithm-spec} is considered. In this structure the complement does not have a specifier, so this step is irrelevant and leads to no movement.
+Following the spellout algorithm further, the option in \ref{ex:spellout-algorithm-comp} is considered. In this step, the \tsc{dx}P moves away, leaving the \tsc{class}P containing \tsc{class}. I show this situation in \ref{ex:mg-spellout-e-r}.
 
-Next problem arises at \tsc{wh}. No suffix, because no unary bottom.
+\ex.
+\begin{forest} boom
+  [\tsc{dx}P
+      [\tsc{dx}P,name=tgt
+          [\tit{e}, roof]
+      ]
+      [\tsc{class}P
+          [\tsc{class}]
+          [\tsc{dx}P,name=src,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}]
+              [\tsc{ref}
+                  [\tsc{ref}2]
+                  [\tsc{ref}1]
+              ]
+          ]
+      ]
+  ]
+  \draw[->,dashed] (src) to[out=south west,in=east] (tgt);
+\end{forest}
+\label{ex:mg-spellout-e-r}
+
+There are two other lexical entry that contains the feature \tsc{class}, namely the one in \ref{ex:mg-entry-r} which spells out as \tit{r} and the one in \ref{ex:mg-entry-r} which spells out as \tit{n}. I repeat the one in \ref{ex:mg-entry-r} here as \ref{ex:mg-entry-r-rep}, because it has the least amount of unused features. Following the Elsewhere Principle, which says that a lexical tree with the least amount of unused features wins, this is the lexical entry that wins.
+
+\ex.\begin{forest} boom
+  [\tsc{nom}P
+      [\tsc{f}1]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{anim}P
+              [\tsc{anim}]
+              [\tsc{class}P
+                  [\tsc{class}]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{r}}; }
+\end{forest}
+\label{ex:mg-entry-r-rep}
+
+As a result, the \tsc{class}P spells out as \tit{r}.
+
+\ex.
+\begin{forest} boom
+  [\tsc{dx}P
+      [\tsc{dx}P,name=tgt
+          [\tit{e}, roof]
+      ]
+      [\tsc{class}P,
+      tikz={
+      \node[label=below:\tit{r},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{class}]
+      ]
+  ]
+\end{forest}
+\label{ex:mg-spellout-e-r}
+
+Note here that it is crucial that the lexical entry for \tit{r} in \ref{ex:mg-entry-r-rep} has a unary bottom. Therefore, it can be inserted as the result of movement. What follows is that the lexical entry follows the existing structure and is spelled out as a suffix.
+
+The spellout proceeds by merging one by one the features \tsc{anim} and \tsc{ind} (see the functional sequence in \ref{ex:fseq-wh-rel}), and spelling them out using the spellout algorithm.
+
+The next point of interest arises when the feature \tsc{wh} is merged.
+This feature cannot spell out together with all features merged so far (as the option in \ref{ex:spellout-algorithm-phrasal}).
+It can also not be spelled out by the lexical entry corresponding to the \tit{r} (as the option in \ref{ex:spellout-algorithm-spec}).
+Finally, it is impossible for \tsc{wh} to be spelled out as part of a suffix (as the option in \ref{ex:spellout-algorithm-spec}). This last option is impossible, because the lexical entry that contains the feature \tsc{wh} has a binary bottom. I repeat the lexical entry from \ref{ex:mg-entry-w} in \ref{ex:mg-entry-w-rep}.
+
+\ex. \begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{w}}; }
+\end{forest}\label{ex:mg-entry-w-rep}
+
+The derivation turns to the last resort option, which is to build a complex left branch.
 
 \ex. \tbf{Spec Formation} \citep{starke2018}:\\
 If Merge F has failed to spell out, try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+.. but the \tsc{wh} is on its own.. is \tsc{rel} merged right away?
+
+
+
 
 The last problem is the case feature. What happens then is backtracking + elements are split up, merged onto both of them, case can be spelled out with suffix.
 
 
 
-Note here that the functional sequence is identical for all languages. The same holds for the spellout algorithm. It is only the lexical entries that differ per language. It is these lexical entries that cause the different constituency within the light head and the relative pronoun. If a feature is merged, it follows the procedure in the spellout algorithm to be realized. In some cases that means that it is spelled out on top of the other features, and in other cases it means that it is spelled out after one of the movements has taken place.
 
-The morphemes for gender, number and case (\tit{r}/\tit{n}) appear as a suffix because the feature \tsc{class} cannot be spelled out together with the morpheme for referentiality and deixis (\tit{e}/ə). Therefore, a movement operation takes place, and the feature \tsc{class} can be spelled out on its own. The constituent for \tit{w} in Modern German arises because a complex spec was created.
-
-%
 
 The nominative masculine singular relative pronoun is built as follows.
 The \tsc{ref}P is spelled out as \tit{e}.
@@ -1147,12 +1411,12 @@ The \tsc{ref}P is merged with \tsc{dx}\scsub{1}, and the whole phrase (\tsc{prox
 The \tsc{prox}P is merged with \tsc{dx}\scsub{2}, and the whole phrase (\tsc{med}P) is spelled out as \tit{e}.
 
 The \tsc{med}P is merged with \tsc{class}. There is no lexical entry that matches the whole phrase. There is no specifier to move, so this movement is irrelevant. The complement of \tsc{class}, the \tsc{med}P, is moved to the specifier of \tsc{class}P, and the \tsc{class}P is spelled out as \tit{r}.
-The \tsc{class}P is merged with \tsc{masc}. There is no lexical entry that matches the whole phrase. The specifier of \tsc{class}P, the \tsc{med}P, is moved to the specifier of \tsc{masc}P, and the \tsc{masc}P is spelled out as \tit{r}.
-The \tsc{masc}P is merged with \tsc{ind}. There is no lexical entry that matched the whole phrase. The specifier of \tsc{masc}P, the \tsc{med}P, is moved to the specifier of \tsc{ind}P, and the \tsc{ind}P is spelled out as \tit{r}.
+The \tsc{class}P is merged with \tsc{anim}. There is no lexical entry that matches the whole phrase. The specifier of \tsc{class}P, the \tsc{med}P, is moved to the specifier of \tsc{anim}P, and the \tsc{anim}P is spelled out as \tit{r}.
+The \tsc{anim}P is merged with \tsc{ind}. There is no lexical entry that matched the whole phrase. The specifier of \tsc{anim}P, the \tsc{med}P, is moved to the specifier of \tsc{ind}P, and the \tsc{ind}P is spelled out as \tit{r}.
 
 The \tsc{ind}P is merged with \tit{wh}. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. Backtracking also does not lead to a matching lexical entry. A complex specifier is created.
 
-The \tsc{wh}P is merged with \tsc{rel}. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. The first step of backtracking is that the two branches, the \tsc{wh}P and the \tsc{ind}P are separated. The \tsc{rel} is merged with the \tsc{wh}P (that only contains the \tsc{wh}) in the left branch and with the \tsc{ind}P in the right branch. In the left branch, the whole phrase (\tsc{rel}P) is spelled out as \tit{w}. In the right branch, there is no spellout. %
+The \tsc{wh}P is merged with \tsc{rel}. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. The first step of backtracking is that the two branches, the \tsc{wh}P and the \tsc{ind}P are separated. The \tsc{rel} is merged with the \tsc{wh}P (that only contains the \tsc{wh}) in the left branch and with the \tsc{ind}P in the right branch. In the left branch, the whole phrase (\tsc{rel}P) is spelled out as \tit{w}. In the right branch, there is no spellout.
 
 The \tsc{rel}P is merged with \tsc{f}1. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. The first step of backtracking is that the two branches, the \tsc{rel}P and the \tsc{ind}P are separated. The \tsc{f}1 is merged with the \tsc{rel}P in the left branch and with the \tsc{ind}P in the right branch. In both branches, there is no lexical entry that matches the whole phrase. In the left branch, there is no specifier to move, so this movement is irrelevant. In the right branch, the specifier of \tsc{ind}P, the \tsc{med}P, is moved to the specifier of \tsc{nom}P, and the \tsc{nom}P is spelled out as \tit{r}.
 
@@ -1183,7 +1447,7 @@ The final result is given in \ref{ex:mg-spellout-rel-nom}.
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                 [\tsc{dx}\scsub{1}]
-                [\tsc{ref} [\phantom{xxx}, roof]
+                [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]
                 ]
             ]
         ]
@@ -1197,8 +1461,8 @@ The final result is given in \ref{ex:mg-spellout-rel-nom}.
               [\tsc{f}1]
               [\tsc{ind}P
                   [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
+                  [\tsc{anim}P
+                      [\tsc{anim}]
                       [\tsc{class}P
                           [\tsc{class}]
                       ]
@@ -1242,7 +1506,7 @@ The final result is given in \ref{ex:mg-spellout-rel-acc}.
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{acc}P,
@@ -1257,8 +1521,8 @@ The final result is given in \ref{ex:mg-spellout-rel-acc}.
                   [\tsc{f}1]
                   [\tsc{ind}P
                       [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
+                      [\tsc{anim}P
+                          [\tsc{anim}]
                           [\tsc{class}P
                               [\tsc{class}]
                           ]
@@ -1271,6 +1535,11 @@ The final result is given in \ref{ex:mg-spellout-rel-acc}.
 \end{forest}
 }
 \label{ex:mg-spellout-rel-acc}
+
+second, this is how two morphemes are combined. you follow the fseq, the spellout algorithm, and the lexical entries.
+
+Note here that the functional sequence is identical for all languages. The same holds for the spellout algorithm. It is only the lexical entries that differ per language. It is these lexical entries that cause the different constituency within the light head and the relative pronoun. If a feature is merged, it follows the procedure in the spellout algorithm to be realized. In some cases that means that it is spelled out on top of the other features, and in other cases it means that it is spelled out after one of the movements has taken place.
+
 
 
 
@@ -1391,12 +1660,12 @@ I discuss two light heads. These are the two elements that I compare the constit
 
 \ex.
 \begin{forest} boom
- [\tsc{ref} [\phantom{xxx}, roof]]
+ [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
  {\draw (.east) node[right]{⇔ \tit{ə}}; }
 \end{forest}
 \label{ex:mg-entry-schwa}
 
-
+The feature is absent in definite determines and adjectival inflection. In these determiners and adjectives, phonologically reduced forms are the norm \pgcitep{durrell2011}{4.1.1 (a)}.
 
 The functional sequence for the light heads:
 
@@ -1407,13 +1676,13 @@ The functional sequence for the light heads:
         [\tsc{f}1]
         [\tsc{ind}P
             [\tsc{ind}]
-            [\tsc{masc}P
-                [\tsc{masc}]
+            [\tsc{anim}P
+                [\tsc{anim}]
                 [\tsc{class}P
                     [\tsc{class}]
                     [\tsc{prox}P
                         [\tsc{dx}\scsub{1}]
-                        [\tsc{ref} [\phantom{xxx}, roof]]
+                        [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                     ]
                 ]
             ]
@@ -1432,8 +1701,8 @@ The nominative masculine singular light head is built as follows.
 The \tsc{ref}P is spelled out as \tit{ə}.
 
 The \tsc{ref}P is merged with \tsc{class}. There is no lexical entry that matches the whole phrase. There is no specifier to move, so this movement is irrelevant. The complement of \tsc{class}, the \tsc{ref}P, is moved to the specifier of \tsc{class}P, and the \tsc{class}P is spelled out as \tit{r}.
-The \tsc{class}P is merged with \tsc{masc}. There is no lexical entry that matches the whole phrase. The specifier of \tsc{class}P, the \tsc{ref}P, is moved to the specifier of \tsc{masc}P, and the \tsc{masc}P is spelled out as \tit{r}.
-The \tsc{masc}P is merged with \tsc{ind}. There is no lexical entry that matched the whole phrase. The specifier of \tsc{masc}P, the \tsc{ref}P, is moved to the specifier of \tsc{ind}P, and the \tsc{ind}P is spelled out as \tit{r}.
+The \tsc{class}P is merged with \tsc{anim}. There is no lexical entry that matches the whole phrase. The specifier of \tsc{class}P, the \tsc{ref}P, is moved to the specifier of \tsc{anim}P, and the \tsc{anim}P is spelled out as \tit{r}.
+The \tsc{anim}P is merged with \tsc{ind}. There is no lexical entry that matched the whole phrase. The specifier of \tsc{anim}P, the \tsc{ref}P, is moved to the specifier of \tsc{ind}P, and the \tsc{ind}P is spelled out as \tit{r}.
 The \tsc{ind}P is merged with \tsc{f}1. There is no lexical entry that matched the whole phrase. The specifier of \tsc{ind}P, the \tsc{ref}P, is moved to the specifier of \tsc{nom}P, and the \tsc{nom}P is spelled out as \tit{r}.
 
 The final result is given in \ref{ex:mg-spellout-lh-nom}.
@@ -1450,7 +1719,7 @@ The final result is given in \ref{ex:mg-spellout-lh-nom}.
       fit to=tree]{};
       }
           [\tsc{dx}\scsub{2}]
-          [\tsc{ref} [\phantom{xxx}, roof]]
+          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
       ]
       [\tsc{nom}P,
       tikz={
@@ -1462,8 +1731,8 @@ The final result is given in \ref{ex:mg-spellout-lh-nom}.
           [\tsc{f}1]
           [\tsc{ind}P
               [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
+              [\tsc{anim}P
+                  [\tsc{anim}]
                   [\tsc{class}P
                       [\tsc{class}]
                   ]
@@ -1493,7 +1762,7 @@ The final result is given in \ref{ex:mg-spellout-lh-acc}.
       fit to=tree]{};
       }
           [\tsc{dx}\scsub{1}]
-          [\tsc{ref} [\phantom{xxx}, roof]]
+          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
       ]
       [\tsc{acc}P,
       tikz={
@@ -1507,8 +1776,8 @@ The final result is given in \ref{ex:mg-spellout-lh-acc}.
               [\tsc{f}1]
               [\tsc{ind}P
                   [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
+                  [\tsc{anim}P
+                      [\tsc{anim}]
                       [\tsc{class}P
                           [\tsc{class}]
                       ]
@@ -1559,7 +1828,7 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the light head
             fit to=tree]{};
             }
                 [{\tsc{dx}\scsub{1}}]
-                [\tsc{ref} [\phantom{xxx}, roof]]
+                [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
             ]
             [{\tsc{nom}P},
             tikz={
@@ -1577,8 +1846,8 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the light head
                 [{\tsc{f}1}]
                 [{\tsc{ind}P}
                     [{\tsc{ind}}]
-                    [{\tsc{masc}P}
-                        [{\tsc{masc}}]
+                    [{\tsc{anim}P}
+                        [{\tsc{anim}}]
                         [{\tsc{class}P}
                             [{\tsc{class}}]
                         ]
@@ -1623,7 +1892,7 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the light head
                       fit to=tree]{};
                       }
                           [\tsc{dx}\scsub{1}]
-                          [\tsc{ref} [\phantom{xxx}, roof]]
+                          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                       ]
                   ]
                   [\tsc{nom}P,
@@ -1640,8 +1909,8 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the light head
                       [\tsc{f}1]
                       [\tsc{ind}P
                           [\tsc{ind}]
-                          [\tsc{masc}P
-                              [\tsc{masc}]
+                          [\tsc{anim}P
+                              [\tsc{anim}]
                               [\tsc{class}P
                                   [\tsc{class}]
                               ]
@@ -1704,7 +1973,7 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the light hea
             fit to=tree]{};
             }
                 [{\tsc{dx}\scsub{1}}]
-                [\tsc{ref} [\phantom{xxx}, roof]]
+                [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
             ]
             [{\tsc{nom}P},
             tikz={
@@ -1722,8 +1991,8 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the light hea
                 [{\tsc{f}1}]
                 [{\tsc{ind}P}
                     [{\tsc{ind}}]
-                    [{\tsc{masc}P}
-                        [{\tsc{masc}}]
+                    [{\tsc{anim}P}
+                        [{\tsc{anim}}]
                         [{\tsc{class}P}
                             [{\tsc{class}}]
                         ]
@@ -1768,7 +2037,7 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the light hea
                       fit to=tree]{};
                       }
                           [\tsc{dx}\scsub{1}]
-                          [\tsc{ref} [\phantom{xxx}, roof]]
+                          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                       ]
                   ]
                   [\tsc{acc}P,
@@ -1789,8 +2058,8 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the light hea
                           [\tsc{f}1]
                           [\tsc{ind}P
                               [\tsc{ind}]
-                              [\tsc{masc}P
-                                  [\tsc{masc}]
+                              [\tsc{anim}P
+                                  [\tsc{anim}]
                                   [\tsc{class}P
                                       [\tsc{class}]
                                   ]
@@ -1858,7 +2127,7 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the light hea
             fit to=tree]{};
             }
                 [{\tsc{dx}\scsub{1}}]
-                [\tsc{ref} [\phantom{xxx}, roof]]
+                [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
             ]
             [{\tsc{acc}P},
             tikz={
@@ -1879,8 +2148,8 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the light hea
                     [{\tsc{f}1}]
                     [{\tsc{ind}P}
                         [{\tsc{ind}}]
-                        [{\tsc{masc}P}
-                            [{\tsc{masc}}]
+                        [{\tsc{anim}P}
+                            [{\tsc{anim}}]
                             [{\tsc{class}P}
                                 [{\tsc{class}}]
                             ]
@@ -1926,7 +2195,7 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the light hea
                   fit to=tree]{};
                   }
                       [\tsc{dx}\scsub{1}]
-                      [\tsc{ref} [\phantom{xxx}, roof]]
+                      [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                   ]
               ]
               [\tsc{nom}P,
@@ -1943,8 +2212,8 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the light hea
                   [\tsc{f}1]
                   [\tsc{ind}P
                       [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
+                      [\tsc{anim}P
+                          [\tsc{anim}]
                           [\tsc{class}P
                               [\tsc{class}]
                           ]
@@ -2054,17 +2323,17 @@ I explained that matching languages like Polish package their languages together
           ]
       ]
       [\tsc{dat}P, s sep=17.5mm
-          [\tsc{masc}P,
+          [\tsc{anim}P,
           tikz={
           \node[label=below:\tit{e/o},
           draw,circle,
           scale=0.9,
           fit to=tree]{};
           }
-              [\tsc{masc}]
+              [\tsc{anim}]
               [\tsc{class}P
                   [\tsc{class}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{dat}P,
@@ -2119,11 +2388,11 @@ I explained that matching languages like Polish package their languages together
           fit to=tree]{};
           }
               [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
+              [\tsc{anim}P
+                  [\tsc{anim}]
                   [\tsc{class}P
                       [\tsc{class}]
-                      [\tsc{ref} [\phantom{xxx}, roof]]
+                      [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                   ]
               ]
           ]
@@ -2172,17 +2441,17 @@ When spellout fails, go back to the previous cycle, and try the next option for 
           ]
       ]
       [\tsc{dat}P, s sep=17.5mm
-          [\tsc{masc}P,
+          [\tsc{anim}P,
           tikz={
           \node[label=below:\tit{e/o},
           draw,circle,
           scale=0.9,
           fit to=tree]{};
           }
-              [\tsc{masc}]
+              [\tsc{anim}]
               [\tsc{class}P
                   [\tsc{class}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{dat}P,
@@ -2237,11 +2506,11 @@ When spellout fails, go back to the previous cycle, and try the next option for 
           fit to=tree]{};
           }
               [\tsc{ind}]
-              [\tsc{masc}P
-                  [\tsc{masc}]
+              [\tsc{anim}P
+                  [\tsc{anim}]
                   [\tsc{class}P
                       [\tsc{class}]
-                      [\tsc{ref} [\phantom{xxx}, roof]]
+                      [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                   ]
               ]
           ]
@@ -2283,17 +2552,17 @@ Difference between \tit{ego} and \tit{tego} is only the feature \tsc{dx}, so tha
 \tiny{
 \begin{forest} boompje
   [\tsc{dat}P, s sep=20mm
-      [\tsc{masc}P,
+      [\tsc{anim}P,
       tikz={
       \node[label=below:\tit{e/o},
       draw,circle,
       scale=0.85,
       fit to=tree]{};
       }
-          [\tsc{masc}]
+          [\tsc{anim}]
           [\tsc{class}P
               [\tsc{class}]
-              [\tsc{ref} [\phantom{xxx}, roof]]
+              [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
           ]
       ]
       [\tsc{dat}P,
@@ -2331,10 +2600,10 @@ Difference between \tit{ego} and \tit{tego} is only the feature \tsc{dx}, so tha
       }
           [\tsc{ind}]
           [\tsc{mascP}
-              [\tsc{masc}]
+              [\tsc{anim}]
               [\tsc{class}P
                   [\tsc{class}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
       ]
@@ -2408,10 +2677,10 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the light 
                   }
                       [\tsc{ind}]
                       [\tsc{mascP}
-                          [\tsc{masc}]
+                          [\tsc{anim}]
                           [\tsc{class}P
                               [\tsc{class}]
-                              [\tsc{ref} [\phantom{xxx}, roof]]
+                              [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                           ]
                       ]
                   ]
@@ -2484,11 +2753,11 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the light 
                 fit to=tree]{};
                 }
                     [\tsc{ind}]
-                    [\tsc{masc}P
-                        [\tsc{masc}]
+                    [\tsc{anim}P
+                        [\tsc{anim}]
                         [\tsc{class}P
                             [\tsc{class}]
-                            [\tsc{ref} [\phantom{xxx}, roof]]
+                            [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                         ]
                     ]
                 ]
@@ -2588,10 +2857,10 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the light
                       dashed,
                       fit to=tree]{};
                       }
-                          [\tsc{masc}]
+                          [\tsc{anim}]
                           [\tsc{class}P
                               [\tsc{class}]
-                              [\tsc{ref} [\phantom{xxx}, roof]]
+                              [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                           ]
                       ]
                   ]
@@ -2645,7 +2914,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the light
                 ]
             ]
             [\tsc{dat}P, s sep=18mm
-                [\tsc{masc}P,
+                [\tsc{anim}P,
                 tikz={
                 \node[label=below:\tit{e/o},
                 draw,circle,
@@ -2657,10 +2926,10 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the light
                 dashed,
                 fit to=tree]{};
                 }
-                    [\tsc{masc}]
+                    [\tsc{anim}]
                     [\tsc{class}P
                         [\tsc{class}]
-                        [\tsc{ref} [\phantom{xxx}, roof]]
+                        [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                     ]
                 ]
                 [\tsc{dat}P,
@@ -2701,7 +2970,7 @@ Neither of the elements contains all constituents that the other element contain
 I explain this constituent by constituent.
 I start by showing that the light head cannot be absent.
 Consider the right-most constituent of the light head that spells out as \tit{go} (\tsc{acc}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{acc}P, contained in \tsc{dat}P, but that constituent also contains \tit{ind}P.
-Consider the middle constituent of the light head that spells out as \tit{e} (\tsc{ind}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{ind}P, contained in \tsc{dat}P, but that constituent does not contain \tsc{ref}, \tsc{class} and \tsc{masc}.
+Consider the middle constituent of the light head that spells out as \tit{e} (\tsc{ind}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{ind}P, contained in \tsc{dat}P, but that constituent does not contain \tsc{ref}, \tsc{class} and \tsc{anim}.
 Note here that there is feature containment: the relative pronoun contains all features that the light head contains. It is here crucial to use the stronger constituent containment requirement.
 The light head has a constituent that is not a constituent in the relative pronoun, so the light head cannot be absent.
 
@@ -2751,7 +3020,7 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the light
                   [\tsc{deix\scsub{1}}, roof]
               ]
               [\tsc{dat}P, s sep=20mm
-                  [\tsc{masc}P,
+                  [\tsc{anim}P,
                   tikz={
                   \node[label=below:\tit{e/o},
                   draw,circle,
@@ -2763,10 +3032,10 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the light
                   dashed,
                   fit to=tree]{};
                   }
-                      [\tsc{masc}]
+                      [\tsc{anim}]
                       [\tsc{class}P
                           [\tsc{class}]
-                          [\tsc{ref} [\phantom{xxx}, roof]]
+                          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                       ]
                   ]
                   [\tsc{dat}P,
@@ -2838,11 +3107,11 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the light
                 fit to=tree]{};
                 }
                     [\tsc{ind}]
-                    [\tsc{masc}P
-                        [\tsc{masc}]
+                    [\tsc{anim}P
+                        [\tsc{anim}]
                         [\tsc{class}P
                             [\tsc{class}]
-                            [\tsc{ref} [\phantom{xxx}, roof]]
+                            [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                         ]
                     ]
                 ]
@@ -2883,7 +3152,7 @@ Neither of the elements contains all constituents that the other element contain
 I explain this constituent by constituent.
 I start by showing that the light head cannot be absent.
 Consider the right-most constituent of the light head that spells out as \tit{mu} (\tsc{dat}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{acc}P, but it does not contain \tsc{ind}P and also not \tsc{f}3 to make it a \tsc{dat}P.
-Consider the middle constituent of the light head that spells out as \tit{e} (\tsc{ind}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{ind}P, contained in \tsc{dat}P, but that constituent does not contain \tsc{ref}, \tsc{class} and \tsc{masc}.
+Consider the middle constituent of the light head that spells out as \tit{e} (\tsc{ind}P). This constituent is not a constituent in the relative pronoun: the relative pronoun has a constituent \tsc{ind}P, contained in \tsc{dat}P, but that constituent does not contain \tsc{ref}, \tsc{class} and \tsc{anim}.
 The light head has a constituent that is not a constituent in the relative pronoun, so the light head cannot be absent.
 
 The relative pronoun can also not be absent.
@@ -3031,7 +3300,7 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{acc}P,
@@ -3046,8 +3315,8 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
                   [\tsc{f}1]
                   [\tsc{ind}P
                       [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
+                      [\tsc{anim}P
+                          [\tsc{anim}]
                           [\tsc{class}P
                               [\tsc{class}]
                           ]
@@ -3087,7 +3356,7 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{nom}P,
@@ -3100,8 +3369,8 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
               [\tsc{f}1]
               [\tsc{ind}P
                   [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
+                  [\tsc{anim}P
+                      [\tsc{anim}]
                       [\tsc{class}P
                           [\tsc{class}]
                       ]
@@ -3178,7 +3447,7 @@ not: `and he replied to whoever spoke to him'
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{acc}P,
@@ -3193,8 +3462,8 @@ not: `and he replied to whoever spoke to him'
                   [\tsc{f}1]
                   [\tsc{ind}P
                       [\tsc{ind}]
-                      [\tsc{masc}P
-                          [\tsc{masc}]
+                      [\tsc{anim}P
+                          [\tsc{anim}]
                           [\tsc{class}P
                               [\tsc{class}]
                           ]
@@ -3231,7 +3500,7 @@ not: `and he replied to whoever spoke to him'
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ref} [\phantom{xxx}, roof]]
+                  [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
               ]
           ]
           [\tsc{nom}P,
@@ -3244,8 +3513,8 @@ not: `and he replied to whoever spoke to him'
               [\tsc{f}1]
               [\tsc{ind}P
                   [\tsc{ind}]
-                  [\tsc{masc}P
-                      [\tsc{masc}]
+                  [\tsc{anim}P
+                      [\tsc{anim}]
                       [\tsc{class}P
                           [\tsc{class}]
                       ]
@@ -3317,7 +3586,7 @@ In Figure \ref{fig:ohg-int=ext}, I give the syntactic structure of the light hea
                       [\tsc{dx}\scsub{2}]
                       [\tsc{prox}P
                           [\tsc{dx}\scsub{1}]
-                          [\tsc{ref} [\phantom{xxx}, roof]]
+                          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                       ]
                   ]
                   [\tsc{nom}P,
@@ -3335,8 +3604,8 @@ In Figure \ref{fig:ohg-int=ext}, I give the syntactic structure of the light hea
                       [\tsc{f}1]
                       [\tsc{ind}P
                           [\tsc{ind}]
-                          [\tsc{masc}P
-                              [\tsc{masc}]
+                          [\tsc{anim}P
+                              [\tsc{anim}]
                               [\tsc{class}P
                                   [\tsc{class}]
                               ]
@@ -3388,7 +3657,7 @@ In Figure \ref{fig:ohg-int=ext}, I give the syntactic structure of the light hea
                     [\tsc{dx}\scsub{2}]
                     [\tsc{prox}P
                         [\tsc{dx}\scsub{1}]
-                        [\tsc{ref} [\phantom{xxx}, roof]]
+                        [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                     ]
                 ]
                 [\tsc{nom}P,
@@ -3405,8 +3674,8 @@ In Figure \ref{fig:ohg-int=ext}, I give the syntactic structure of the light hea
                     [\tsc{f}1]
                     [\tsc{ind}P
                         [\tsc{ind}]
-                        [\tsc{masc}P
-                            [\tsc{masc}]
+                        [\tsc{anim}P
+                            [\tsc{anim}]
                             [\tsc{class}P
                                 [\tsc{class}]
                             ]
@@ -3486,7 +3755,7 @@ In Figure \ref{fig:ohg-int-wins}, I give the syntactic structure of the light he
                     [\tsc{dx}\scsub{2}]
                     [\tsc{prox}P
                         [\tsc{dx}\scsub{1}]
-                        [\tsc{ref} [\phantom{xxx}, roof]]
+                        [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                     ]
                 ]
                 [\tsc{nom}P,
@@ -3504,8 +3773,8 @@ In Figure \ref{fig:ohg-int-wins}, I give the syntactic structure of the light he
                     [\tsc{f}1]
                     [\tsc{ind}P
                         [\tsc{ind}]
-                        [\tsc{masc}P
-                            [\tsc{masc}]
+                        [\tsc{anim}P
+                            [\tsc{anim}]
                             [\tsc{class}P
                                 [\tsc{class}]
                             ]
@@ -3557,7 +3826,7 @@ In Figure \ref{fig:ohg-int-wins}, I give the syntactic structure of the light he
                       [\tsc{dx}\scsub{2}]
                       [\tsc{prox}P
                           [\tsc{dx}\scsub{1}]
-                          [\tsc{ref} [\phantom{xxx}, roof]]
+                          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                       ]
                   ]
                   [\tsc{acc}P,
@@ -3578,8 +3847,8 @@ In Figure \ref{fig:ohg-int-wins}, I give the syntactic structure of the light he
                           [\tsc{f}1]
                           [\tsc{ind}P
                               [\tsc{ind}]
-                              [\tsc{masc}P
-                                  [\tsc{masc}]
+                              [\tsc{anim}P
+                                  [\tsc{anim}]
                                   [\tsc{class}P
                                       [\tsc{class}]
                                   ]
@@ -3657,7 +3926,7 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
                       [\tsc{dx}\scsub{2}]
                       [\tsc{prox}P
                           [\tsc{dx}\scsub{1}]
-                          [\tsc{ref} [\phantom{xxx}, roof]]
+                          [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                       ]
                   ]
                   [\tsc{acc}P,
@@ -3678,8 +3947,8 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
                           [\tsc{f}1]
                           [\tsc{ind}P
                               [\tsc{ind}]
-                              [\tsc{masc}P
-                                  [\tsc{masc}]
+                              [\tsc{anim}P
+                                  [\tsc{anim}]
                                   [\tsc{class}P
                                       [\tsc{class}]
                                   ]
@@ -3735,7 +4004,7 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
                           [\tsc{dx}\scsub{2}]
                           [\tsc{prox}P
                               [\tsc{dx}\scsub{1}]
-                              [\tsc{ref} [\phantom{xxx}, roof]]
+                              [\tsc{ref} [\tsc{ref}2] [\tsc{ref}1]]
                           ]
                       ]
                       [\tsc{nom}P,
@@ -3753,8 +4022,8 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
                           [\tsc{f}1]
                           [\tsc{ind}P
                               [\tsc{ind}]
-                              [\tsc{masc}P
-                                  [\tsc{masc}]
+                              [\tsc{anim}P
+                                  [\tsc{anim}]
                                   [\tsc{class}P
                                       [\tsc{class}]
                                   ]
