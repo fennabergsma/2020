@@ -40,22 +40,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}The relative pronoun}{50}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}The light head}{53}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.2}The light head}{56}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Comparing consituents}{55}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}Comparing consituents}{58}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{62}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{65}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}The relative pronoun}{63}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}The relative pronoun}{66}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}The light head}{66}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.2}The light head}{69}{subsection.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Comparing constituents}{68}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.3}Comparing constituents}{71}{subsection.1.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Summary}{75}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Summary}{78}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Aside: a larger syntactic context}{76}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Aside: a larger syntactic context}{79}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{83}{table.1.1}%
+\contentsline {chapter}{Primary texts}{85}{table.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{85}{section*.44}%
+\contentsline {chapter}{Bibliography}{87}{section*.46}%
