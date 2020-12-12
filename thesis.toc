@@ -1,0 +1,61 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\acswitchoff 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Contents}{ii}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of tables}{iv}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of figures}{v}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of abbreviations}{vii}{table.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {I}The case}{1}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {II}The base}{3}{part.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Constituent containment}{5}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}The basic idea}{5}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Underlying assumptions}{6}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}The internal-only type}{10}{subsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.3}The matching type}{12}{subsection.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.4}The unrestricted type}{15}{subsection.1.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.5}Everything is constituent containment}{17}{subsection.1.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Deriving the internal-only type}{19}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}The relative pronoun}{20}{subsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}The light head}{35}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Comparing constituents}{42}{subsection.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Deriving the matching type}{49}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}The relative pronoun}{50}{subsection.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}The light head}{61}{subsection.1.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.3}Comparing consituents}{63}{subsection.1.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{70}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}The relative pronoun}{71}{subsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}The light head}{74}{subsection.1.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.3}Comparing constituents}{76}{subsection.1.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Summary}{82}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Aside: a larger syntactic context}{84}{section.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Primary texts}{89}{table.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{91}{section*.46}%
