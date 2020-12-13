@@ -1631,7 +1631,7 @@ To summarize, I showed independent evidence that the surface pronoun in Modern G
 In Section \ref{sec:basic-idea}, I argued that headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains all constituents of the light head. I suggested that this holds in Modern German, as long as the external case is not more complex than the internal case. In the previous section, I gave the internal structure of the relative pronoun, i.e. which constituents the relative pronoun consists of. In this section, I first need to identify the light head, as it does not surface in headless relatives. Then I show what its internal structure looks like: it is a constituent within the relative pronoun.
 
 In this section, I consider two kinds of light-headed relatives as the source of the headless relative.
-There are two options. First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
+First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
 I consider the first option first, and I give two reasons against it. I take the light head from the existing light-headed relative as a point of departure, and I modify it in such a way that it is appropriate as a light head for a headless relative.
 
 I give an example of a Modern German light-headed relative in \ref{ex:mg-den-wen}.\footnote{
@@ -1801,15 +1801,9 @@ I give the structures of the animate nominative singular light head in \ref{ex:f
                 [\tsc{an}]
                 [\tsc{cl}P
                     [\tsc{cl}]
-                    [\tsc{med}P
-                        [\tsc{dx}\scsub{2}]
-                        [\tsc{prox}P
-                            [\tsc{dx}\scsub{1}]
-                            [ΣP
-                                [Σ]
-                                [\tsc{ref}]
-                            ]
-                        ]
+                    [ΣP
+                        [Σ]
+                        [\tsc{ref}]
                     ]
                 ]
             ]
@@ -1837,15 +1831,9 @@ fit to=tree]{};
                 [\tsc{an}]
                 [\tsc{cl}P
                     [\tsc{cl}]
-                    [\tsc{med}P
-                        [\tsc{dx}\scsub{2}]
-                        [\tsc{prox}P
-                            [\tsc{dx}\scsub{1}]
-                            [ΣP
-                                [Σ]
-                                [\tsc{ref}]
-                            ]
-                        ]
+                    [ΣP
+                        [Σ]
+                        [\tsc{ref}]
                     ]
                 ]
             ]
@@ -2362,37 +2350,34 @@ Now I turn to the internal structure of the Polish relative pronoun. In Section 
 
 \ex.\label{ex:pol-fseq-rel}
 \begin{forest} boom
-[(\tsc{acc}P)
-   [(\tsc{f}2)]
-   [\tsc{nom}P
-       [\tsc{f}1]
-       [\tsc{rel}P
-           [\tsc{rel}]
-           [\tsc{wh}P
-               [\tsc{wh}]
-               [\tsc{med}P
-                   [\tsc{dx}\scsub{2}]
-                   [\tsc{prox}P
-                       [\tsc{dx}\scsub{1}]
-                       [\tsc{ind}P
-                           [\tsc{ind}]
-                           [\tsc{an}P
-                               [\tsc{an}]
-                               [\tsc{cl}P
-                                   [\tsc{cl}]
-                                   [ΣP
-                                        [Σ]
-                                        [\tsc{ref}]
-                                   ]
-                               ]
-                           ]
-                       ]
-                   ]
-               ]
-           ]
-       ]
-   ]
-]
+ [\tsc{k}P
+     [\tsc{k}]
+     [\tsc{rel}P
+         [\tsc{rel}]
+         [\tsc{wh}P
+             [\tsc{wh}]
+             [\tsc{ind}P
+                 [\tsc{ind}]
+                 [\tsc{med}P
+                     [\tsc{dx}\scsub{2}]
+                     [\tsc{prox}P
+                         [\tsc{dx}\scsub{1}]
+                         [\tsc{an}P
+                             [\tsc{an}]
+                             [\tsc{cl}P
+                                 [\tsc{cl}]
+                                 [ΣP
+                                      [Σ]
+                                      [\tsc{ref}]
+                                 ]
+                             ]
+                         ]
+                     ]
+                 ]
+             ]
+         ]
+     ]
+ ]
 \end{forest}
 
 As I pointed out in Section \ref{sec:basic-idea}, I propose that the difference between Modern German and Polish headless relatives comes from whether the relative pronoun can delete the light head. This depends on whether the light head forms a constituent within the relative pronoun. That, in turn, depends on which constituents are formed in the spellout of the relative pronoun and the light head. The difference in spellout is the only difference between Modern German and Polish: the features that are spelled out are the same ones.
@@ -2425,27 +2410,21 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
                   [\tsc{deix\scsub{2}}]
                   [\tsc{prox}P
                       [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}]
+                      [\tsc{an}]
                   ]
               ]
           ]
       ]
       [\tsc{acc}P, s sep=24mm
-          [\tsc{an}P,
+          [ΣP,
           tikz={
           \node[label=below:\tit{o},
           draw,circle,
           scale=0.95,
           fit to=tree]{};
           }
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [ΣP
-                      [Σ]
-                      [\tsc{ref}]
-                  ]
-              ]
+              [Σ]
+              [\tsc{ref}]
           ]
           [\tsc{acc}P,
           tikz={
@@ -2459,6 +2438,12 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
                   [\tsc{f}1]
                   [\tsc{ind}P
                       [\tsc{ind}]
+                      [\tsc{an}P
+                          [\tsc{an}P]
+                          [\tsc{cl}P
+                              [\tsc{cl}]
+                          ]
+                      ]
                   ]
               ]
           ]
@@ -2491,27 +2476,21 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
           ]
       ]
       [\tsc{dat}P, s sep=17.5mm
-          [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [ΣP
-                      [Σ]
-                      [\tsc{ref}]
-                  ]
-              ]
-          ]
+      [ΣP,
+      tikz={
+      \node[label=below:\tit{o},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [Σ]
+          [\tsc{ref}]
+      ]
           [\tsc{dat}P,
           tikz={
-          \node[label=below:\tit{mu},
+          \node[label=below:\tit{go},
           draw,circle,
-          scale=0.95,
+          scale=0.9,
           fit to=tree]{};
           }
               [\tsc{f}3]
@@ -2521,6 +2500,12 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
                       [\tsc{f}1]
                       [\tsc{ind}P
                           [\tsc{ind}]
+                          [\tsc{an}P
+                              [\tsc{an}P]
+                              [\tsc{cl}P
+                                  [\tsc{cl}]
+                              ]
+                          ]
                       ]
                   ]
               ]
@@ -2530,21 +2515,140 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
 \end{forest}
 }
 
-I start with the morphemes \tit{go} and \tit{mu}. Table \ref{tbl:pol-dem-rel} shows that they does not only appear in relative pronouns, but also in masculine demonstratives.
+I start with the morpheme \tit{k}. Consider Table \ref{tbl:pol-rel-dem}. Leaving the vowel that follows the initial consonant aside (which I return to shortly), the \tit{k} and the \tit{t} combine with the same endings, which identifies both of them as a morpheme.
 
 \begin{table}[htbp]
   \center
-  \caption{Polish \tit{go}/\tit{mu} in demonstratives and relative pronouns Swan, p. 171/}
+  \caption{Polish relative pronoun Swan, p. 171}
   \begin{tabular}[b]{ccc}
     \toprule
-              & \tsc{dem}.\tsc{masc}  & \tsc{rel}.\tsc{an} \\
+              & \tsc{rel}.\tsc{an} & \tsc{dem}.\tsc{m} \\
     \cmidrule{2-3}
-    \tsc{acc} & te-go                 & ko-go              \\
-    \tsc{dat} & te-mu                 & ko-mu              \\
+    \tsc{nom} & kto               & t-en               \\
+    \tsc{acc} & k-ogo             & t-ego              \\
+    \tsc{dat} & k-omu             & t-emu              \\
+    \tsc{ins} & k-im              & t-ym               \\
     \bottomrule
   \end{tabular}
-  \label{tbl:pol-dem-rel}
+  \label{tbl:pol-rel-dem}
 \end{table}
+
+I argue that \tit{k} spells out six features: \tsc{wh}, \tsc{rel}, \tsc{ind}, \tsc{masc} \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}. I go through them one by one.
+
+The relative pronouns listed in Table \ref{tbl:pol-rel-dem} are \tsc{wh}-pronouns, and they are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
+
+Before I continue with the other four features, I briefly return to the change in the vowel in Table \ref{tbl:pol-rel-dem}. The \tit{k} combines with the \tit{o} and \tit{i}, and the \tit{t} combines with the \tit{e} and \tit{y}. The \tit{e} and \tit{y} can also be found in another paradigm, namely following the \tit{cz} in inanimate relative pronouns. I put them besides the animate relative pronouns in Table \ref{ex:pol-rels}.
+
+\begin{table}[htbp]
+  \center
+  \caption{Polish relative pronoun Swan, p. 171}
+  \begin{tabular}[b]{ccc}
+    \toprule
+              & \tsc{rel}.\tsc{an} & \tsc{rel}.\tsc{n} \\
+    \cmidrule{2-3}
+    \tsc{nom} & kto               & c-o                \\
+    \tsc{acc} & k-ogo             & c-o                \\
+    \tsc{dat} & k-omu             & cz-emu             \\
+    \tsc{ins} & k-im              & cz-ym              \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:pol-rels}
+\end{table}
+
+In my analysis, this change in a phonological process.
+
+\ex.
+\a. /k/ (voiceless velar plosive) /ɔ/ (open-mid back)
+\b. /t/ (voiceless denti-alveolar plosive) /t͡ʂ/ (voiceless retroflex affricate) ɛ (open-mid front unrounded)
+
+\ex.
+\a. /k/ (voiceless velar plosive) /i/ (close front unrounded)
+\b. /t/ (voiceless denti-alveolar plosive) /t͡ʂ/ (voiceless retroflex affricate) ɨ (close-mid advanced central unrounded)
+
+\footnote{
+Logically, there are a few more possibilities.
+The first possible option is that different vowels have a different feature content, and that the consonant alternates as a phonological reflex. The idea is then that the masculine demonstrative and the inanimate relative pronoun pattern together to the exclusion of the animate relative pronoun. At first sight, this might seem counterintuitive. This changes when zooming in on the difference between \tsc{wh}-pronouns and demonstratives regarding the concept of gender. Demonstratives get their gender from the (possibly phonologically empty) head noun, and the gender is syntactic (i.e. it depends on the grammatical gender of the head noun). \tsc{wh}-pronouns (at least the ones in Table \ref{tbl:pol-rel-dem}) do not combine with a noun, so they get their gender from themselves, and their gender is semantic. Possibly, syntactic masculine gender contains one feature less than semantic animate gender: \tsc{masc} vs. \tsc{masc} + \tsc{an}. If the inanimate lacks both of these features, it can pattern with the masculine demonstrative to the exclusion of the animate relative pronoun.
+The second possible option is that both the vowels (\tit{o} and \tit{e}) and the consonants (\tsc{k} and \tsc{t}) have a different feature content.
+I leave investigating these options further for future research.
+} I come back to the feature content of the vowel later. First I continue with the feature specification of \tit{k}.
+
+Table \ref{tbl:pol-rels} shows that the first consonant (cluster) alternates depending on gender: the animates start with a \tit{k} /k/ and the inanimates start with a \tit{cz) /t͡ʂ/ or \tit{c} /t͡s/. I conclude from this that the \tit{k} contains the feature \tsc{an} (and the \tit{cz}/\tit{c} the feature \tsc{cl}). Additionally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
+
+Finally for the morpheme \tit{k}, I turn to the deixis features. Unlike Modern German, Polish demonstratives are not marked for definiteness.
+The demonstratives I gave in Table \ref{tbl:pol-rel-dem} are used as proximal and medial. There is a separate marker for the distal. The \tit{t} in Table \ref{tbl:pol-rel-dem} spells out these \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2} features. As the \tit{t} is not present in the relative pronoun (compare e.g. \tit{temu} and \tit{komu}), I assume that \tit{k} spells out the deixis features itself.\footnote{
+\citet{wiland2019} actually proposes that \tit{t} spells out a nominal base. I do not discuss the demonstrative any further, but I assume that the morpheme \tit{t} only corresponds to the feature \tsc{ind} in addition to \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}.
+}
+
+In sum, the morpheme \tit{k} realizes the features \tsc{ind}, \tsc{an}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2}, \tsc{wh} and \tsc{rel}.
+
+\ex.
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P
+          [\tsc{wh}]
+          [\tsc{med}P
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{ind}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+
+I continue with the morphemes \tit{go} and \tit{mu}. These morphemes contain at least case features.
+
+Consider Polish \tit{je}-pronouns and \tit{ni}-pronouns. \tit{Je}-pronouns are used in emphatic or contrastive contexts and clause-initially. \tit{Ni}-pronouns are used after prepositions \pgcitep{swan2002}{156-157}. In unstressed situations, clitics, if available, can be used.
+
+\begin{table}[htbp]
+  \center
+  \caption{Polish \tit{je}-pronouns}
+\begin{tabular}{cccc}
+  \toprule
+          & \tsc{m} & \tsc{n} & \tsc{f} \\
+          \cmidrule{2-4}
+\tsc{acc} & j-e-go  & j-e     & j-ą     \\
+\tsc{dat} & j-e-mu  & j-e-mu  & j-e-j   \\
+  \bottomrule
+\end{tabular}
+  \label{tbl:pol-je-pronouns}
+\end{table}
+
+
+\begin{table}[htbp]
+  \center
+    \caption{Polish \tit{ni}-pronouns}
+\begin{tabular}{cccc}
+  \toprule
+          & \tsc{m} & \tsc{n} & \tsc{f} \\
+          \cmidrule{2-4}
+\tsc{acc} & ni-e-go & ni-e    & ni-ą    \\
+\tsc{dat} & ni-e-mu & ni-e-mu & ni-e-j  \\
+  \bottomrule
+\end{tabular}
+  \label{tbl:pol-ni-pronouns}
+\end{table}
+
+Two observations can be made here. First, the suffix changes depending on the case. This indicates that the suffix spells out case features.
+Second, the vowel does not change. This indicates--
+
+
+
+This is a situation that can be achieved with the spellout algorithm.
+
+
+
+
+Demonstratives and \tsc{wh}-pronouns differ independently with respect to gender.
+
+
+
 
 First, I zoom in on \tit{mu}. Consider Table \ref{tbl:pol-mu-s}, which shows the morpheme \tit{mu} appears in the masculine and neuter gender on demonstratives and relative pronouns.
 
@@ -2654,8 +2758,6 @@ The other problem that still remains is that \tit{temu} is still analyzed as a s
 
 Both of these problems can be solved by letting the constituent has the feature \tsc{an} as its topmost feature (\tsc{an}P) move away. Both constituents then can receive their own spellout.
 
-hoi
-
 \ex.
 \a.\label{ex:pol-entry-te}
 \begin{forest} boom
@@ -2712,24 +2814,6 @@ mu
 
 notice something special about \tit{mu}. it has a unary bottom.
 
-
-This is a situation that can be achieved with the spellout algorithm.
-
-
-
-
-Demonstratives and \tsc{wh}-pronouns differ independently with respect to gender.
-
-
-Demonstratives agree in gender (and number and case) with their head noun (which can be phonologically absent). Thus, demonstratives refer to syntactic gender.
-
-\ex.
-\ag. ten człowiek\\
-this-MASC.SG man-MASC\\
-\bg. ta kobieta\\
-this-FEM.SG woman-FEM.SG\\
-\bg. To dziecko\\
-this-NEUTER.SG,child-NEUTER.SG\\ \pgcitep{citko2004}{109}
 
 
 
@@ -2797,6 +2881,30 @@ The morpheme \tit{go} combines with \tit{te} and \tit{go}, and I assume it to st
 
 
 modelled by letting \tit{te} spell out until masc so that it can shrink and become a neuter one
+
+
+
+
+
+Consider the neuter and masculine
+
+
+
+
+\begin{table}[htbp]
+  \center
+  \caption{Polish relative pronouns}
+\begin{tabular}{ccc}
+  \toprule
+          & \tsc{m} & \tsc{n} \\
+          \cmidrule{2-3}
+\tsc{acc} & k-o-go  & cz-e-go \\
+\tsc{dat} & k-o-mu  & cz-e-mu \\
+  \bottomrule
+\end{tabular}
+  \label{tbl:pol-je-pronouns}
+\end{table}
+
 
 
 
@@ -2955,67 +3063,73 @@ When spellout fails, go back to the previous cycle, and try the next option for 
 \end{forest}
 }
 
-\subsection{The light head}
+\subsection{The (extra) light head}
+
+In my proposal, headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains the light head as a single constituent. I suggest that this only holds for Polish when the internal and the external case match.
+In the previous section, I gave the internal structure of the Polish relative pronoun, i.e. which constituents the relative pronoun consists of.
+In this section, I show the internal structure of the Polish light head.
+
+I take the functional sequence of the extra light head in Modern German, and I show how these features are spelled out in Polish. In Modern German the extra light head spells out as a single constituent, in Polish it consists of two constituents. This is what leads Polish to be of a different language type than Modern German.
+Just like for Modern German, the extra light head is not attested in existing light-headed relatives in Polish.
+For Modern German, I gave two reasons for not taking the existing light-headed relative as source of the headless relative. I show that only one of them holds for Polish, and I discuss why the other one does not hold in the same way.
+
+In Section \ref{sec:light-mg}, I argued for a particular feature content of the extra light head in Modern German. In my proposal, the difference in spellout is the only difference between Modern German and Polish: the features that are spelled out are the same ones. Therefore, I assume that the extra light head in Polish spells out the same features as the extra light head in Modern German.
+I give the functional sequence for the extra light head in \ref{ex:fseq-wh-lh-pol}.
+
+\ex. \begin{forest} boom
+  [\tsc{k}P
+      [\tsc{k}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                      [Σ]
+                      [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\label{ex:fseq-wh-lh-pol}
+
+The \tsc{dat}P and the \tsc{f}3 are placed between brackets. This is what distinguishes the dative extra light head from the accusative one. In the discussion that follows, I focus on the accusative extra light head. The same applies to the dative light head.
+
+I need two lexical entries to spell out the accusative extra light head.
 
 \ex.
-\ag. Jan lubi \underline{tego} \underline{\tbf{kogo}} \tbf{Maria} \tbf{lubi}.\\
- Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an} Maria like.\tsc{3sg}\scsub{[acc]}\\
- `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
-\bg. *Jan lubi \underline{tego} \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
- Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
- `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
-\bg. Jan lubi [\underline{ego}] \underline{\tbf{kogo}} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
-Jan like.\tsc{3sg}\scsub{[acc]} \tsc{lh}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
-`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
+\a.
+\begin{forest} boom
+  [\tsc{an}P
+      [\tsc{an}]
+      [\tsc{cl}P
+          [\tsc{cl}]
+          [ΣP
+              [Σ]
+              [\tsc{ref}]
+          ]
+      ]
+  ]
+{\draw (.east) node[right]{⇔ \tit{e}}; }
+\end{forest}
+\b.
+\begin{forest} boom
+  [\tsc{acc}P
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\tsc{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+{\draw (.east) node[right]{⇔ \tit{go}}; }
+\end{forest}
 
-The Polish to describes closeness
-to speaker and hearer, while tamto univocally describes remoteness from
-both speaker and hearer, as seen in (26).
-
-to / tamto
-prox/med dist auto
-car.neu.nom bartosz,p.93
-
-
-\tsc{masc}
-t-e-n
-t-e-go
-t-e-mu
-t-y-m
-
-\tsc{an}
-kto
-k-o-go
-k-o-mu
-k-i-m
-
-\tit{ni}-forms follow prepositions
-
-\begin{table}[htbp]
-  \begin{tabular}[b]{ccc}
-    \toprule
-    clitics   & \tit{je}-form & \tit{n}-form \\
-    \cmidrule{1-3}
-    go        & je-go         & ni-e-go \\
-    mu        & je-mu         & ni-e-mu \\
-    -         & -             & ni-m \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-
-
-Jego jednego nie widzȩ.
-Him, alone I don’t see.
-
-\tit{je} makes something a strong pronoun.
-
-
-Same fseq as Modern German
-
-Difference between \tit{ego} and \tit{tego} is only the feature \tsc{dx}, so that's why people say it has the same meaning.
-
-when je combines with c, we get cz
+This can be derived by..
 
 \ex.
 \small{
@@ -3056,6 +3170,7 @@ when je combines with c, we get cz
 \end{forest}
 }
 
+I give the dative light head for completeness.
 
 \ex.
 \small{
@@ -3099,6 +3214,45 @@ when je combines with c, we get cz
 \end{forest}
 }
 
+So, the light-headed relative that headless relatives are derived from is:
+
+\exg. Jan lubi [ego] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rel}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
+
+For Modern German, I considered two kinds of light-headed relatives as the source of the headless relative.
+First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
+For Modern German I concluded it was the second, and I proposed which features should be in there. Taking these features, I observe that the same holds for Polish: the extra light head is not attested as a light head in an existing light-headed relative in Polish.
+
+For Modern German, I gave two reasons for not taking the existing light-headed relative as source of the headless relative. I show that only one of them holds for Polish, and I discuss why the other one does not hold in the same way.
+
+to co cannot combine with \tit{kolwiek} `ever'.
+
+\ex.
+\ag. Jan śpiewa co -kolwiek Maria śpiewa.\\
+Jan sings what ever Maria sings\\
+`Jan sings everything Maria sings.'
+\bg. Jan śpiewa to, co -kolwiek Maria śpiewa.\\
+Jan sings \tsc{dem} what ever Maria sings\\
+`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}
+
+% the  incompatibility  of  light-headed  relatives  witheverfollowsfrom the fact thateverand the demonstrative are competing for the sameposition, namely the D0position
+
+Going after citko's translation, one would assume that the meaning is also slightly different, just like it is in Modern German.
+
+however, for a closely related language, Czech,
+
+
+
+
+
+
+
+
+Difference between \tit{ego} and \tit{tego} is only the feature \tsc{dx}, so that's why people say it has the same meaning.
+
+
+
 
 
 \subsection{Comparing consituents}\label{sec:comparing-polish}
@@ -3114,7 +3268,7 @@ Consider the example in \ref{ex:polish-acc-acc-rep}, in which the internal accus
 The internal case is accusative, as the predicate \tit{lubić} `to like' takes accusative objects. The relative pronoun \tit{kogo} `\ac{rel}.\ac{an}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
 The external case is accusative as well, as the predicate \tit{lubić} `to like' also takes accusative objects. The extra light head \tit{ego} `\ac{elh}.\ac{an}.\ac{acc}' appears in the accusative case. It is placed between square brackets because it does not surface.
 
-\exg. Jan lubi [tego] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+\exg. Jan lubi [ego] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
  Jan like.\tsc{3sg}\scsub{[acc]} \tsc{dem}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rel}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
  `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
 
@@ -3251,7 +3405,7 @@ The external case is accusative, as the predicate \tit{lubić} `to like' takes a
 \ag. *Jan lubi [ego] \tbf{komu} \tbf{-kolkwiek} \tbf{dokucza}.\\
 Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\scsub{[dat]}\\
 `Jan likes whoever he teases.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-dat-rel}
-\bg. *Jan lubi \underline{tego} [\underline{\tbf{komu}}] \tbf{-kolkwiek} \tbf{dokucza}.\\
+\bg. *Jan lubi ego [\tbf{komu}] \tbf{-kolkwiek} \tbf{dokucza}.\\
 Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rel}.\tsc{dat}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\scsub{[dat]}\\
 `Jan likes whoever he teases.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-dat-lh}
 
