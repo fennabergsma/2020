@@ -40,13 +40,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}The relative pronoun}{50}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}The (extra) light head}{62}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.2}The (extra) light head}{61}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Comparing consituents}{65}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}Comparing consituents}{66}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{71}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{73}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}The relative pronoun}{73}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}The relative pronoun}{74}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4.2}The light head}{76}{subsection.1.4.2}%
 \defcounter {refsection}{0}\relax 
