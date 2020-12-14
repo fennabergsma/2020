@@ -2324,7 +2324,7 @@ matching        & *                            & *                     & Polish 
 \end{table}
 
 
-A language of the internal-only type (like Polish) allows neither the internal nor the external case to surface when either of them wins the case competition. This means that neither the relative pronoun with its internal case nor the light head with its external case can be the surface pronoun. The goal of this section is to derive these properties from the way light heads and relative pronouns are spelled out in Polish.
+A language of the matching type (like Polish) allows neither the internal nor the external case to surface when either of them wins the case competition. This means that neither the relative pronoun with its internal case nor the light head with its external case can be the surface pronoun. The goal of this section is to derive these properties from the way light heads and relative pronouns are spelled out in Polish.
 
 The section is structured as follows.
 First, I discuss the relative pronoun. I decompose the relative pronouns into three morphemes, and I show which features each of the morphemes corresponds to.
@@ -2356,12 +2356,12 @@ Now I turn to the internal structure of the Polish relative pronoun. In Section 
          [\tsc{rel}]
          [\tsc{wh}P
              [\tsc{wh}]
-             [\tsc{ind}P
-                 [\tsc{ind}]
-                 [\tsc{med}P
-                     [\tsc{dx}\scsub{2}]
-                     [\tsc{prox}P
-                         [\tsc{dx}\scsub{1}]
+             [\tsc{med}P
+                 [\tsc{dx}\scsub{2}]
+                 [\tsc{prox}P
+                     [\tsc{dx}\scsub{1}]
+                     [\tsc{ind}P
+                         [\tsc{ind}]
                          [\tsc{an}P
                              [\tsc{an}]
                              [\tsc{cl}P
@@ -2410,7 +2410,10 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
                   [\tsc{deix\scsub{2}}]
                   [\tsc{prox}P
                       [\tsc{deix\scsub{1}}]
-                      [\tsc{an}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
                   ]
               ]
           ]
@@ -2470,7 +2473,10 @@ I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} a
                   [\tsc{deix\scsub{2}}]
                   [\tsc{prox}P
                       [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
                   ]
               ]
           ]
@@ -2526,8 +2532,8 @@ I start with the morpheme \tit{k}. Consider Table \ref{tbl:pol-rel-dem}. Leaving
     \cmidrule{2-3}
     \tsc{nom} & kto               & t-en               \\
     \tsc{acc} & k-ogo             & t-ego              \\
+    \tsc{gen} & k-ogo             & t-ego              \\
     \tsc{dat} & k-omu             & t-emu              \\
-    \tsc{ins} & k-im              & t-ym               \\
     \bottomrule
   \end{tabular}
   \label{tbl:pol-rel-dem}
@@ -2537,7 +2543,49 @@ I argue that \tit{k} spells out six features: \tsc{wh}, \tsc{rel}, \tsc{ind}, \t
 
 The relative pronouns listed in Table \ref{tbl:pol-rel-dem} are \tsc{wh}-pronouns, and they are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
 
-Before I continue with the other four features, I briefly return to the change in the vowel in Table \ref{tbl:pol-rel-dem}. The \tit{k} combines with the \tit{o} and \tit{i}, and the \tit{t} combines with the \tit{e} and \tit{y}. The \tit{e} and \tit{y} can also be found in another paradigm, namely following the \tit{cz} in inanimate relative pronouns. I put them besides the animate relative pronouns in Table \ref{ex:pol-rels}.
+Before I continue with the other four features, I briefly return to the change in the vowel in Table \ref{tbl:pol-rel-dem}. The \tit{k} /k/ combines with the \tit{o} /ɔ/, and the \tit{t} /t/ combines with the \tit{e} /ɛ/. I analyze this change as a phonological process, in which the vowel changes depending on the consonant (cluster).
+
+specifically, I argue that there is an underlying /ɛ/ changes into a /ɔ/ when it combines with the \tit{k}.
+
+\footnote{
+The phonological conditioning could also be the other way around: the vowel differs and as a reflex, the initial consonant changes with it. Then it is the masculine demonstrative and the inanimate relative pronoun patterning together to the exclusion of the animate relative pronoun. At first sight, this might seem counterintuitive. This changes when zooming in on the difference between \tsc{wh}-pronouns and demonstratives regarding the concept of gender. Demonstratives get their gender from the (possibly phonologically empty) head noun, and the gender is syntactic (i.e. it depends on the grammatical gender of the head noun). \tsc{wh}-pronouns (at least the ones in Table \ref{tbl:pol-rel-dem}) do not combine with a noun, so they get their gender from themselves, and their gender is semantic. Possibly, syntactic masculine gender contains one feature less than semantic animate gender: \tsc{masc} vs. \tsc{masc} + \tsc{an}. If the inanimate lacks both of these features, it can pattern with the masculine demonstrative to the exclusion of the animate relative pronoun.
+
+An indication into the direction of letting the \tit{k} be conditioned by the vowel comes from the fact that \tsc{wh}-pronouns in Polish often start with a \tit{k}.
+
+\ex.
+\a. g-dzie = where at (g is the result of voicing)
+\b. k-iedy = when
+\b. k-tory = which one
+
+Another instance of \tit{k} to \tit{cz} could be:
+
+\ex.
+\b. cz-yj = k-jyj 'whose'
+\a. czyjego
+
+Or this latter is another example of a \tsc{wh}-pronoun that is does not have a \tit{k} but \tit{cz}. There is also a \tsc{wh}-pronoun that starts with a \tit{j}:
+
+j-ak = how
+
+Since this type of analysis requires a throrough investiation into gender systems, I leave investigating this options further for future research.
+}
+\footnote{
+A third logical option is that both the vowels (\tit{o} and \tit{e}) and the consonants (\tsc{k} and \tsc{t}) have a different feature content.
+}
+
+I describe the situation in \ref{ex:e-o-phon-kt}.
+
+% \ex.\label{ex:e-o-phon-kt}
+% \a. \tsc{v} ⇔ ɔ k{$_$}
+% \b. \tsc{v} ⇔ ɛ t{$_$}
+
+The vowel is an /o/ when it follows the /k/, and it is an /ɛ/ when it follows the /t/. In phonological terms, back vowel /ɔ/ follows a the dorsal /k/, which is both back. The front vowel /ɛ/ follows the coronal /t/, which are both front.
+
+% \ex.\label{ex:e-o-phon-feat}
+% \a. \tsc{v} ⇔ ɔ [\tsc{dors}]{$_$}
+% \b. \tsc{v} ⇔ ɛ [\tsc{cor}]{$_$}
+
+The vowel /ɛ/ is attested in another paradigm, namely in the gentive and dative of the inanimate relative pronouns. I put them besides the animate relative pronouns in Table \ref{ex:pol-rels}.
 
 \begin{table}[htbp]
   \center
@@ -2548,35 +2596,40 @@ Before I continue with the other four features, I briefly return to the change i
     \cmidrule{2-3}
     \tsc{nom} & kto               & c-o                \\
     \tsc{acc} & k-ogo             & c-o                \\
+    \tsc{gen} & k-ogo             & cz-ego             \\
     \tsc{dat} & k-omu             & cz-emu             \\
-    \tsc{ins} & k-im              & cz-ym              \\
     \bottomrule
   \end{tabular}
   \label{tbl:pol-rels}
 \end{table}
 
-In my analysis, this change in a phonological process.
+Here the /ɛ/ follows the /t͡ʂ/, which is also a coronal consonant, confirming my hypothesis. However, in the nominative and the accusative, the vowel does not comply with the preceding consonant. The coronal /t͡s/ precedes the back vowel /ɔ/.\footnote{
+I assume that the palatalization is a consequence of the combination of /t͡s/ and /ɛ/.
+}
+What sets this instance apart is that nothing follows this vowel, where there is always a consonant following in the other instances. I summarize the phonological process I propose in \ref{ex:e-o-phon-feat-c}. When there is a closed syllable, the vowel is /ɔ/ following a dorsal and it is /ɛ/ following a coronal.\footnote{
+Another possibility is that the /ɔ/ in \tit{co} is a `different /ɔ/'. It namely spells out case features, which I argue later in this section the other vowel does not do.
+}
+%
+% \ex.\label{ex:e-o-phon-feat-c}
+% \a. \tsc{v} ⇔ ɔ [\tsc{dors}]{$_$}\tsc{c}
+% \b. \tsc{v} ⇔ ɛ [\tsc{cor}]{$_$}\tsc{c}
+
+I come back to the feature content of the vowel later. First I continue with the feature specification of \tit{k}.
+
+Table \ref{tbl:pol-rels} shows that the first consonant (cluster) alternates depending on gender: the animates start with a \tit{k} and the inanimates start with a \tit{c(z)}. I conclude from this that the \tit{k} contains the feature \tsc{an} (and the \tit{c(z)} the feature \tsc{cl}). Additionally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
+
+This leaves the deixis features to be connected to \tit{k}. Unlike Modern German, Polish demonstratives are not marked for definiteness (evidence?).
+The demonstratives I gave in Table \ref{tbl:pol-rel-dem} are used as proximal and medial. I give an example in \ref{ex:pol-prox-med}. There is a separate marker for the distal, as shown in \ref{ex:pol-dist}.
 
 \ex.
-\a. /k/ (voiceless velar plosive) /ɔ/ (open-mid back)
-\b. /t/ (voiceless denti-alveolar plosive) /t͡ʂ/ (voiceless retroflex affricate) ɛ (open-mid front unrounded)
+\ag. to auto\\
+ \tsc{dem}.\tsc{prox}/\tsc{med} car.\tsc{n}.\tsc{nom}\\\label{ex:pol-prox-med}
+\bg. tam-to auto\\
+ \tsc{dem}.\tsc{dist} car.\tsc{n}.\tsc{nom}\\\label{ex:pol-dist}
+ \flushfill{Polish, \pgcitealt{wiland2019}{93}}
 
-\ex.
-\a. /k/ (voiceless velar plosive) /i/ (close front unrounded)
-\b. /t/ (voiceless denti-alveolar plosive) /t͡ʂ/ (voiceless retroflex affricate) ɨ (close-mid advanced central unrounded)
-
-\footnote{
-Logically, there are a few more possibilities.
-The first possible option is that different vowels have a different feature content, and that the consonant alternates as a phonological reflex. The idea is then that the masculine demonstrative and the inanimate relative pronoun pattern together to the exclusion of the animate relative pronoun. At first sight, this might seem counterintuitive. This changes when zooming in on the difference between \tsc{wh}-pronouns and demonstratives regarding the concept of gender. Demonstratives get their gender from the (possibly phonologically empty) head noun, and the gender is syntactic (i.e. it depends on the grammatical gender of the head noun). \tsc{wh}-pronouns (at least the ones in Table \ref{tbl:pol-rel-dem}) do not combine with a noun, so they get their gender from themselves, and their gender is semantic. Possibly, syntactic masculine gender contains one feature less than semantic animate gender: \tsc{masc} vs. \tsc{masc} + \tsc{an}. If the inanimate lacks both of these features, it can pattern with the masculine demonstrative to the exclusion of the animate relative pronoun.
-The second possible option is that both the vowels (\tit{o} and \tit{e}) and the consonants (\tsc{k} and \tsc{t}) have a different feature content.
-I leave investigating these options further for future research.
-} I come back to the feature content of the vowel later. First I continue with the feature specification of \tit{k}.
-
-Table \ref{tbl:pol-rels} shows that the first consonant (cluster) alternates depending on gender: the animates start with a \tit{k} /k/ and the inanimates start with a \tit{cz) /t͡ʂ/ or \tit{c} /t͡s/. I conclude from this that the \tit{k} contains the feature \tsc{an} (and the \tit{cz}/\tit{c} the feature \tsc{cl}). Additionally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
-
-Finally for the morpheme \tit{k}, I turn to the deixis features. Unlike Modern German, Polish demonstratives are not marked for definiteness.
-The demonstratives I gave in Table \ref{tbl:pol-rel-dem} are used as proximal and medial. There is a separate marker for the distal. The \tit{t} in Table \ref{tbl:pol-rel-dem} spells out these \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2} features. As the \tit{t} is not present in the relative pronoun (compare e.g. \tit{temu} and \tit{komu}), I assume that \tit{k} spells out the deixis features itself.\footnote{
-\citet{wiland2019} actually proposes that \tit{t} spells out a nominal base. I do not discuss the demonstrative any further, but I assume that the morpheme \tit{t} only corresponds to the feature \tsc{ind} in addition to \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}.
+The \tit{t} in \ref{ex:pol-prox-med} spells out deixis features: \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2} features. As the \tit{t} is not present in the relative pronoun (compare e.g. \tit{temu} and \tit{komu} in Table \ref{tbl:pol-rel-dem}), I assume that \tit{k} spells out the deixis features itself.\footnote{
+\citet{wiland2019} proposes that \tit{t} spells out a nominal base. I do not discuss the demonstrative any further, but I assume that the morpheme \tit{t} only corresponds to the feature \tsc{ind} (and possibly \tsc{pl}) in addition to \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}.
 }
 
 In sum, the morpheme \tit{k} realizes the features \tsc{ind}, \tsc{an}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2}, \tsc{wh} and \tsc{rel}.
@@ -2601,72 +2654,44 @@ In sum, the morpheme \tit{k} realizes the features \tsc{ind}, \tsc{an}, \tsc{dx}
   ]
 \end{forest}
 
+I continue with the vowel, which is e. Another place for the e is jego.
 
-I continue with the morphemes \tit{go} and \tit{mu}. These morphemes contain at least case features.
 
-Consider Polish \tit{je}-pronouns and \tit{ni}-pronouns. \tit{Je}-pronouns are used in emphatic or contrastive contexts and clause-initially. \tit{Ni}-pronouns are used after prepositions \pgcitep{swan2002}{156-157}. In unstressed situations, clitics, if available, can be used.
-
-\begin{table}[htbp]
-  \center
-  \caption{Polish \tit{je}-pronouns}
-\begin{tabular}{cccc}
-  \toprule
-          & \tsc{m} & \tsc{n} & \tsc{f} \\
-          \cmidrule{2-4}
-\tsc{acc} & j-e-go  & j-e     & j-ą     \\
-\tsc{dat} & j-e-mu  & j-e-mu  & j-e-j   \\
-  \bottomrule
-\end{tabular}
-  \label{tbl:pol-je-pronouns}
-\end{table}
-
+I continue with the morphemes \tit{go} and \tit{mu}. Consider the Polish demonstratives and relative pronouns in Table x and y.
 
 \begin{table}[htbp]
   \center
-    \caption{Polish \tit{ni}-pronouns}
-\begin{tabular}{cccc}
-  \toprule
-          & \tsc{m} & \tsc{n} & \tsc{f} \\
-          \cmidrule{2-4}
-\tsc{acc} & ni-e-go & ni-e    & ni-ą    \\
-\tsc{dat} & ni-e-mu & ni-e-mu & ni-e-j  \\
-  \bottomrule
-\end{tabular}
-  \label{tbl:pol-ni-pronouns}
-\end{table}
-
-Two observations can be made here. First, the suffix changes depending on the case. This indicates that the suffix spells out case features.
-Second, the vowel does not change. This indicates--
-
-
-
-This is a situation that can be achieved with the spellout algorithm.
-
-
-
-
-Demonstratives and \tsc{wh}-pronouns differ independently with respect to gender.
-
-
-
-
-First, I zoom in on \tit{mu}. Consider Table \ref{tbl:pol-mu-s}, which shows the morpheme \tit{mu} appears in the masculine and neuter gender on demonstratives and relative pronouns.
-
-\begin{table}[htbp]
-  \center
-  \caption{Polish \tit{mu} in four contexts Swan, p. 171/}
+  \caption{Polish relative pronoun Swan, p. 171}
   \begin{tabular}[b]{ccc}
     \toprule
-                          & \tsc{dem} & \tsc{rel} \\
+              & \tsc{rel}.\tsc{an} & \tsc{rel}.\tsc{inan} \\
     \cmidrule{2-3}
-    \tsc{an}/\tsc{masc}   & te-mu     & ko-mu     \\
-    \tsc{inam}/\tsc{neut} & te-mu     & cze-mu    \\
+    \tsc{nom} & kto               & c-o                \\
+    \tsc{acc} & k-o-go            & c-o                \\
+    \tsc{gen} & k-o-go            & cz-e-go             \\
+    \tsc{dat} & k-o-mu            & cz-e-mu             \\
     \bottomrule
   \end{tabular}
-  \label{tbl:pol-mu-s}
+  \label{tbl:pol-rels}
 \end{table}
 
-For the demonstrative, not only the final marker is identical between the two genders, but the stem is the same too: \tit{te}. In other words, the demonstrative has a syncretic form for the neuter dative singular and the masculine dative singular. The forms for the relative pronoun are not syncretic here. I come back to this later in this section. What is important here is that the system is to be set up in such a way that it allows for this kind of syncretism. This allows me to establish which features \tit{mu} spells out.
+\begin{table}[htbp]
+  \center
+  \caption{Polish demonstratives Swan, p. 171}
+  \begin{tabular}[b]{ccc}
+    \toprule
+              & \tsc{dem}.\tsc{m} & \tsc{dem}.\tsc{n} \\
+    \cmidrule{2-3}
+    \tsc{nom} & t-e-n             & t-o               \\
+    \tsc{acc} & t-e-go            & t-o               \\
+    \tsc{gen} & t-e-go            & t-e-go            \\
+    \tsc{dat} & t-e-mu            & t-e-mu            \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:pol-dems}
+\end{table}
+
+Notice that the morpheme \tit{mu} does not only appear as the dative suffix in the masculine, but also in the neuter. The morpheme \tit{go} appears as the accusative and genitive suffix in the masculine and as the genitive suffix in the neuter. Moreover, the vowel preceding the suffixes is identical too, as can be observed in Table \ref{tbl:pol-dems} and is what I argued for earlier in this section. I leave the initial consonants \tit{k}/\tit{cz}/\tit{t} aside for now, and only work with the vowel and the suffixes. I set up a system that can derive the syncretism between the two genders. Doing this allows me to establish which features the morphemes \tit{go} and \tit{mu} spell out.
 
 I discussed in Chapter \ref{ch:decomposition} that syncretisms can be derived in Nanosyntax via the Superset Principle. The lexicon contains a lexical entry that is specified for the form that corresponds to the most features. To illustrate this, I repeat the lexical entry for the Dutch \tit{jullie} `you' in \ref{ex:dutch-jullie-lexicon-rep}.
 
@@ -2688,45 +2713,28 @@ I discussed in Chapter \ref{ch:decomposition} that syncretisms can be derived in
 \end{forest}
 \label{ex:dutch-jullie-lexicon-rep}
 
-\tit{Jullie} is syncretic between nominative, accusative and dative. It is specified for dative in the lexicon, because the dative contains the accusative and the nominative. The accusative second person plural in Dutch is spelled out as \tit{jullie} as well, because the \tsc{dat}P contains the \tsc{acc}P (Superset Principle), and there is no more specific lexical entry available in Dutch (Elsewhere Condition). It is important that the potentially unused features (so the \tsc{f}3 in case of the accusative) are at the top, so that the constituent that needs to be spelled out is still contained in the lexical tree.
+\tit{Jullie} is syncretic between nominative, accusative and dative. It is specified for dative in the lexicon, because the dative contains the accusative and the nominative. The nominative and accusative second person plural in Dutch is spelled out as \tit{jullie} as well, because the \tsc{dat}P contains the \tsc{acc}P which contains \tsc{nom}P (Superset Principle), and there is no more specific lexical entry available in Dutch (Elsewhere Condition). It is important that the potentially unused features (so the \tsc{f}3 or \tsc{f}3 and \tsc{f2}) are at the top, so that the constituent that needs to be spelled out is still contained in the lexical tree.
 
-I apply this reasoning to \tit{temu}, which is syncretic between the neuter and the masculine. First I consider the option that \tit{temu} is a single morpheme to illustrate the point about syncretism clearly. This means that the masculine feature needs to be the topmost feature, such that the constituent for the neuter is contained in the masculine. I give the lexical entry in \ref{ex:pol-entry-temu}.
+Here we have a lexical entry syncretic between the neuter and the masculine, so these features need to be ones at the top.
 
-\ex.
+\ex. \label{ex:pol:entry-te}
 \begin{forest} boom
   [\tsc{an}P
       [\tsc{an}]
       [\tsc{cl}P
           [\tsc{cl}]
-          [\ac{dat}P
-              [\ac{f}3]
-              [\ac{acc}P
-                  [\ac{f}2]
-                  [\ac{nom}P
-                      [\ac{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                          [\tsc{dem}
-                              [\phantom{xxx}, roof]
-                          ]
-                      ]
-                  ]
-              ]
+          [..
+              [\phantom{xxx}, roof]
           ]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{temu}}; }
+  {\draw (.east) node[right]{⇔ \tit{e/o}}; }
 \end{forest}
-\label{ex:pol-entry-temu}
 
-\tit{Temu} corresponds to demonstrative features, the number feature \tsc{ind}, case features up to the dative, the \tsc{cl} feature that makes it a neuter and the \tsc{masc} feature that makes it a masculine. This lexical entry can be used for a dative masculine and a dative neuter: both correspond to a constituent contained in \ref{ex:pol-entry-temu}.
-
-However, there are two problems with the structure in \ref{ex:pol-entry-temu}. The first problem is that considering \tit{temu} as a single lexical entry misses the point that \tit{mu} and \tit{te} also appears in other contexts. \tit{Mu} namely also appears in the dative relative pronoun, as shown in Table \ref{tbl:pol-mu-s}. \tit{Te} also appears in other forms of the demonstrative, e.g. the accusative masculine \tit{tego}, as shown in \ref{ex:pol-dem-rel}.
-The second problem is that case features appear higher in the structure than gender features, as shown in the functional sequence in \ref{ex:pol-fseq-rel}.
-
-In \ref{ex:pol-entry-temu-case-high} I solve the second problem by reversing the order of the case features and the gender features.
+This fseqs for a dative animate singular and a dative inanimate singular are:
 
 \ex.
+\a.
 \begin{forest} boom
   [\ac{dat}P
       [\ac{f}3]
@@ -2740,7 +2748,7 @@ In \ref{ex:pol-entry-temu-case-high} I solve the second problem by reversing the
                       [\tsc{an}]
                       [\tsc{cl}P
                           [\tsc{cl}]
-                          [\tsc{dem}
+                          [..
                               [\phantom{xxx}, roof]
                           ]
                       ]
@@ -2749,97 +2757,30 @@ In \ref{ex:pol-entry-temu-case-high} I solve the second problem by reversing the
           ]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{temu}}; }
 \end{forest}
-\label{ex:pol-entry-temu-case-high}
-
-This solves the problem of going against the functional sequence, but it creates a new one: the lexical entry is not syncretic between the masculine and the neuter anymore. That is, there is no constituent contained in \ref{ex:pol-entry-temu-case-high} that contains the case features up to the dative but does not contain the \tsc{an} feature. The features that are in the way are the number and case features.
-The other problem that still remains is that \tit{temu} is still analyzed as a single morpheme and it is not recognized that it consists of (at least) two: \tit{te} and \tit{mu}.
-
-Both of these problems can be solved by letting the constituent has the feature \tsc{an} as its topmost feature (\tsc{an}P) move away. Both constituents then can receive their own spellout.
-
-\ex.
-\a.\label{ex:pol-entry-te}
+\b.
 \begin{forest} boom
-  [
-      [\tsc{an}P,name=tgt
-          [\tsc{an}]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{dem}
-                  [\phantom{xxx}, roof]
-              ]
-          ]
-      ]
-      [\ac{dat}P
-          [\ac{f}3]
-          [\ac{acc}P
-              [\ac{f}2]
-              [\ac{nom}P
-                  [\ac{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\sout{\tsc{an}P},name=src,
-                      tikz={
-                      \node[
-                      draw,circle,
-                      scale=0.9,
-                      fit to=tree]{};
-                      }
-                          [\tsc{an}]
-                          [\tsc{cl}P
-                              [\tsc{cl}]
-                              [\tsc{dem}
-                                  [\phantom{xxx}, roof]
-                              ]
-                          ]
+  [\ac{dat}P
+      [\ac{f}3]
+      [\ac{acc}P
+          [\ac{f}2]
+          [\ac{nom}P
+              [\ac{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [..
+                          [\phantom{xxx}, roof]
                       ]
                   ]
               ]
           ]
       ]
   ]
-  \draw[->,dashed] (src) to[out=south west,in=east] (tgt);
 \end{forest}
 
-
-
-There are two constituents. The first constituent contains a number feature and case features up to the dative and corresponds to the morpheme \tit{mu}. The second constituent contains demonstrative features, gender features up to the
-The animate feature is the highest feature, so that there is a constituent that spells out
-
-
-So what needs to be in the lexicon is two lexical entries:
-te
-mu
-
-notice something special about \tit{mu}. it has a unary bottom.
-
-
-
-
-
-Both these problems can be solved by splitting \tit{temu} up in two morphemes: \tit{te} and \tit{mu}. I start with the lexical entry for \tit{te}.
-
-
-
-
-This can be modeled in Nanosyntax by letting top-most feature of \tit{te} correspond be the feature \tsc{masc}.
-
-\ex. \label{ex:pol:entry-te}
-\begin{forest} boom
-  [\tsc{an}P
-      [\tsc{an}]
-      [\tsc{cl}P
-          [\tsc{cl}]
-          [\tsc{dem}
-              [\phantom{xxx}, roof]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{te}}; }
-\end{forest}
-
-
+This means that the morpheme \tit{mu} spells out case features up to the dative and \tsc{ind}.
 
 \ex. \label{ex:pol:entry-mu}
 \begin{forest} boom
@@ -2858,10 +2799,40 @@ This can be modeled in Nanosyntax by letting top-most feature of \tit{te} corres
   {\draw (.east) node[right]{⇔ \tit{mu}}; }
 \end{forest}
 
+Notice here that \tit{mu} has a unary bottom. this is how we get the right order between the vowel and \tit{mu}
 
+The syntactic structure of a dative animate singular:
 
+\ex.
+\begin{forest} boom
+  [
+      [\tsc{an}P
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [..
+                  [\phantom{xxx}, roof]
+              ]
+          ]
+      ]
+      [\ac{dat}P
+          [\ac{f}3]
+          [\ac{acc}P
+              [\ac{f}2]
+              [\ac{nom}P
+                  [\ac{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
 
-The morpheme \tit{go} combines with \tit{te} and \tit{go}, and I assume it to start at the same point. Another
+There are two constituents. The first constituent contains a number feature and case features up to the dative and corresponds to the morpheme \tit{mu}. The second constituent gender features up to the animate.
+
+The morpheme \tit{go} is not used in the accusative neuter, but it is in the genitive. What I take away from that is that the morpheme \tit{go} needs to have \tsc{ind} as its bottom feature too, so that it can combine with the feature \tsc{an} if that is present and with the feature \tsc{cl} if \tsc{an} is absent.
 
 \ex. \label{ex:pol:entry-go}
 \begin{forest} boom
@@ -2879,67 +2850,9 @@ The morpheme \tit{go} combines with \tit{te} and \tit{go}, and I assume it to st
 
 
 
-
-modelled by letting \tit{te} spell out until masc so that it can shrink and become a neuter one
-
-
-
-
-
-Consider the neuter and masculine
-
-
-
-
-\begin{table}[htbp]
-  \center
-  \caption{Polish relative pronouns}
-\begin{tabular}{ccc}
-  \toprule
-          & \tsc{m} & \tsc{n} \\
-          \cmidrule{2-3}
-\tsc{acc} & k-o-go  & cz-e-go \\
-\tsc{dat} & k-o-mu  & cz-e-mu \\
-  \bottomrule
-\end{tabular}
-  \label{tbl:pol-je-pronouns}
-\end{table}
-
-
-
-
-
-
-The animate and inanimate forms are no longer syncretic between the accusative and the dative. The \tsc{wh}-pronoun is \tit{cze} plus the suffix in inanimate, and \tit{ko} plus the suffix in the animate. This can mean three things: (1) \tit{cz} spells out different features than \tit{k} and \tit{e} spells out different features than \tit{o}, (2) \tit{cz} spells out different features than \tit{k}, and the change in vowel is a phonological process, or (3) \tit{e} spells out different features than \tit{o}, and the change in the consonant is a phonological process.
-
-The phonological processes that I refer to known in Polish: as Baunaz \& Lander (2018a) point out, the suffix -o /o/ shifts into -e /e/ after a soft consonant ż- /ʒ/. This could work in two directions.
-
-An indication into the direction of the third option is that \tsc{wh}-pronouns in Polish often start with a \tit{k}.
-
-\ex.
-\a. g-dzie = where at (g is the result of voicing)
-\b. k-iedy = when
-\b. k-tory = which one
-
-Another instance of \tit{k} to \tit{cz} could be:
-
-\ex.
-\b. cz-yj = k-jyj 'whose'
-\a. czyjego
-
-Or this latter is another example of a \tsc{wh}-pronoun that is does not have a \tit{k} but \tit{cz}. There is also a \tsc{wh}-pronoun that starts with a \tit{j}:
-
-j-ak = how
-
-In dissertation, I go with the second option, namely that \tit{cz} and \tit{k} spell out different features and that the vowel changes according to the phonology. I leave determining whether it could be either of the other two options to future research.
-
-The difference in features is the animacy: \tit{k} spells out \tsc{cl} and \tsc{masc} and \tit{cz} spells out \tsc{cl}.\footnote{
-It is also possible for \tit{k} to spell out \tsc{masc} and \tit{cz} no gender features, but that does not work with my analysis.
-}
-
-so, k spells out anim, class, rel and wh
-
 what about dxs, ref and sigma?
+
+
 
 bartosz has arguments for dx being the t and that c overrides t
 

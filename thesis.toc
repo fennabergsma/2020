@@ -40,6 +40,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}The relative pronoun}{50}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{57}{table.1.1}%
+\contentsline {subsection}{\numberline {1.3.2}The (extra) light head}{62}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{59}{section*.34}%
+\contentsline {subsection}{\numberline {1.3.3}Comparing consituents}{65}{subsection.1.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Deriving the unrestricted type}{71}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}The relative pronoun}{73}{subsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}The light head}{76}{subsection.1.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.3}Comparing constituents}{79}{subsection.1.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Summary}{85}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Aside: a larger syntactic context}{87}{section.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Primary texts}{93}{table.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{95}{section*.47}%
