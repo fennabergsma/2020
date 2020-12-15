@@ -1,0 +1,750 @@
+% !TEX root = thesis.tex
+
+\chapter{Constituent containment}\label{ch:relativization}
+
+In Chapter \ref{ch:typology} I introduced two descriptive parameters that generate the attested languages, as shown in Figure \ref{fig:two-parameters}.
+The first parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes between unrestricted languages (e.g. Old High German) on the one hand and internal-only languages (e.g. Modern German) and matching languages (e.g. Polish) on the other hand.
+The second parameter concerns whether the internal case is allowed to surface when it wins the case competition (allow \tsc{int?}). This parameter distinguishes between internal-only languages (e.g. as Modern German) on the one hand and unrestricted languages (e.g. Old High German) on the other hand.
+
+\begin{figure}[htbp]
+  \centering
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {allow \tsc{int}?};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {matching};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Polish\\\phantom{x}}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {allow \tsc{ext}?};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {internal-only};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {un-restricted};
+                  \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+
+    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+    \end{tikzpicture}
+    }
+    \caption{Two descriptive parameters generate three language types}
+    \label{fig:two-parameters}
+\end{figure}
+
+``A natural question at this point is whether this typology needs to be fully stipulative, or is to some extent derivable from independent properties of individual languages'' \citet{grosu1994}{147}
+
+In this chapter I show how the typology can be derived from the morphology of the languages.
+
+This chapter is structured as follows.
+
+
+\section{The basic idea}\label{sec:basic-idea}
+
+This section gives the basic idea behind my proposal. Throughout the rest of the chapter I motivate the proposal, and I illustrate it with examples.
+
+\subsection{Underlying assumptions}
+
+I start with my assumption that headless relatives are derived from light-headed relatives.\footnote{
+The same is argued for headless relatives with \tsc{d}-pronouns in Modern German by \citealt{fuss2014,hanink2018} and for Polish by \citealt{citko2004}.
+A difference with Modern German and Polish is that one of the elements can only be absent when the cases match. In Section \ref{ch:discussion} I return to the point why Modern German does not have unrestricted headless relatives that look like Old High German, although it still has syncretic light heads and relative pronouns.
+
+Several others claim that headless relatives have a head, but that it is phonologically empty, cf. \citealt{bresnan1978,groos1981,himmelreich2017}.
+}
+The light head bears the external case, and the relative pronoun bears the internal case, as illustrated in \ref{ex:light+rel}.
+
+\ex. light head\scsub{ext} [relative pronoun\scsub{int} ... ]\label{ex:light+rel}
+
+In a headless relative, either the light head or the relative pronoun is absent.
+This happens under the following condition: a light head or a relative pronoun is absent when each of its constituents is contained in a constituent of the other element (i.e. the light head or the relative pronoun).
+
+To see what a light-headed relative looks like, consider the light-headed relative in \ref{ex:ohg-light-headed}.
+\tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the light head of the relative clause. This is the element that appears in the external case, the case that reflects the grammatical role in the main clause.
+\tit{Then} `\tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause. This is the element that appears in the internal case, the case that reflects the grammatical role within the relative clause.
+
+\exg. eno nist thiz thér \tbf{then} \tbf{ir} \tbf{suochet} \tbf{zi} \tbf{arslahanne}?\\
+ now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
+ \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
+ `Isn't this now the one, who you seek to kill?'\label{ex:ohg-light-headed}
+
+The difference between a light-headed relative and a headless relative is that in a headless relative either the light head or the relative pronoun does not surface.
+The surfacing element is the one that bears the winning case, and the absent element is the one that bears the losing case. This means that what I have so far been glossing as and calling the relative pronoun is actually sometimes the light head and sometimes the relative pronoun. To reflect that, I call the surfacing element from now on the surface pronoun.
+
+Table \ref{tbl:options-surface-pronoun} lists the two options that I just laid out plus an additional one.
+The first option is that the relative pronoun, which bears the internal case, can appear as the surface pronoun. The second option is that the light head, which bears the external case, can appear as the surface pronoun. The third option is that there is no grammatical form for the surface pronoun.
+
+\begin{table}[htbp]
+  \center
+  \caption{Options for the surface pronoun}
+\begin{tabular}{ccc}
+  \toprule
+surface pronoun             \\
+\cmidrule(lr){1-1}
+light head\scsub{ext}       \\
+relative pronoun\scsub{int} \\
+{*}                         \\
+\bottomrule
+\end{tabular}
+\label{tbl:options-surface-pronoun}
+\end{table}
+
+I propose that whether or the surface pronoun is the light head, the relative pronoun or none of them depends on whether one of the elements (i.e. the light head or the relative pronoun) can delete the other.
+The light head appears as the surface pronoun when the light head can delete the relative pronoun. The relative pronoun appears as the surface pronoun when the relative pronoun can delete the light head. There is no grammatical surface pronoun possible when neither of them can delete the other one.
+
+Whether or not one element can delete the other depends on the comparison between the two. Specifically, I compare the constituents within light heads and relative pronouns to each other. Light heads and relative pronouns do not only correspond to case features, but also to other features (having to do with number, gender, etc.). It differs per language how language organize these features into constituents. In this chapter, I illustrate how these different constituents within light heads and relative pronouns lead to the differences in whether or not the light head and the relative pronoun can be deleted, and therefore to different language types.
+
+In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Section \ref{sec:deriving-only-internal} to \ref{sec:deriving-nonmatching} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-structure} gives a simplified representation of them.\footnote{
+The structures in Figure \ref{fig:rel-lh-structure} are not base structures but derived ones. I assume the base structure of the light head to be as in \ref{ex:base-light-head} and the base structure of the relative pronoun to be as in \ref{ex:base-relative-pronoun}.
+
+\ex.
+\a.\label{ex:base-light-head}
+  \begin{forest} boom
+    [\tsc{k}P,
+        [\tsc{k}]
+        [ϕP
+            [\phantom{x}ϕ\phantom{x}, roof]
+        ]
+    ]
+  \end{forest}
+\b.\label{ex:base-relative-pronoun}
+  \begin{forest} boom
+    [\tsc{k}P
+        [\tsc{k}]
+        [\tsc{rel}P
+            [\tsc{rel}]
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+        ]
+    ]
+  \end{forest}
+
+The structure for the relative pronoun in Figure \ref{fig:rel-lh-structure} cannot be derived from the base structures in \ref{ex:base-relative-pronoun}. It is a simplification of a more complex situation for which I only give the intuition here.
+
+In Section \ref{sec:deriving-only-internal} I show the actual decomposition of the light head and the relative pronoun and how I reach the derived structure. I work with the derived structure in the main text because this is the configuration in which the containment relations under discussion hold.
+}
+The light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun in addition has a relative feature (\tsc{rel}).
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+      [\tsc{k}P
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof]
+          ]
+          [\tsc{k}P,
+              [\tsc{k}]
+          ]
+      ]
+      \end{forest}
+      & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{rel}P
+          [\tsc{rel}]
+          [\tsc{k}P
+              [ϕP
+                  [\phantom{x}ϕ\phantom{x}, roof]
+              ]
+              [\tsc{k}P,
+                  [\tsc{k}]
+              ]
+          ]
+      ]
+    \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Light head and relative pronoun}
+  \label{fig:rel-lh-structure}
+\end{figure}
+
+I compare the light head and the relative pronoun in terms of containment. The relative pronoun can delete the light head because the relative pronoun contains all constituents the light head contains.
+I illustrate this in Figure \ref{fig:rel-lh-structure-containment}. I draw a dashed circle around the constituent that is a constituent in both the light head and the relative pronoun.
+The \tsc{k}P is contained in the \tsc{rel}P, so the relative pronoun can delete the light head. I illustrate this by marking the content of the dashed circle for the \tsc{k}P gray.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P,
+        tikz={
+        \node[draw,circle,
+        dashed,
+        scale=0.85,
+        fill=DG,fill opacity=0.2,
+        fit to=tree]{};
+        }
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+            [\tsc{k}P,
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P, s sep=15mm
+            [\tsc{rel}]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [ϕP
+                    [\phantom{x}ϕ\phantom{x}, roof]
+                ]
+                [\tsc{k}P
+                    [\tsc{k}]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Light head and relative pronoun}
+  \label{fig:rel-lh-structure-containment}
+\end{figure}
+
+The light head cannot delete the relative pronoun, because it does not contain all constituents of the relative pronoun.
+The light head has a constituent \tsc{k}P, but it does not contain the feature \tsc{rel} to make it an \tsc{rel}P.
+
+With the set of assumptions I introduced in this section, I can account for the internal-only type of language. Moreover, the system I set up excludes the external-only type of language. An external-only type of language would be one in which the light head can delete the relative pronoun, but the relative pronoun cannot delete the light head. In my proposal, an element can the delete the other one if it contains all of the other's constituents. Relative pronouns always contain one more feature than light heads: \tsc{rel}. From that it follows that the light head does not contain all features that the relative pronoun contains. Therefore, it is impossible for a light head to contain all constituents of the relative pronoun.
+
+However, not all languages are of the internal-only type. I argue that the other two attested languages differ from the internal-only type in how light heads and relative pronouns are spelled out. Before I come back to how the different spellout leads to different language types, I show how the internal-only type fares with differing internal and external cases.
+
+
+\subsection{The internal-only type}
+
+I start with the example in Figure \ref{fig:rel-acc-lh-nom-structure}, in which the relative pronoun bears a more complex case than the light head.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{nom}P, s sep=15mm
+            [ϕP,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+            [\tsc{nom}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\tsc{f}1]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}]
+            [\tsc{acc}P
+                [ϕP,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\phantom{x}ϕ\phantom{x}, roof]
+                ]
+                [\tsc{acc}P
+                    [\tsc{f}2]
+                    [\tsc{nom}P,
+                    tikz={
+                    \node[draw,circle,
+                    dashed,
+                    scale=0.8,
+                    fit to=tree]{};
+                    }
+                        [\tsc{f}1]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{nom} extra light head and \tsc{acc} relative pronoun}
+  \label{fig:rel-acc-lh-nom-structure}
+\end{figure}
+
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun. There are two separate constituents.
+I start with the right-most constituent of the light head: \tsc{nom}P. This constituent is also a constituent in the relative pronoun, contained in the lower \tsc{acc}P.
+I continue with the left-most constituent of the light head: the ϕP. This constituent is also a constituent in the relative pronoun, contained in the higher \tsc{acc}P.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles for the light head gray.
+
+I continue with the example in Figure \ref{fig:rel-nom-lh-acc-structure}, in which the light head bears a more complex case than the relative pronoun.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{acc}P
+            [ϕP,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+            [\tsc{acc}P
+                [\tsc{f}2]
+                [\tsc{nom}P,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\tsc{f}1]
+                ]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}]
+            [\tsc{nom}P, s sep=15mm
+                [ϕP,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\phantom{x}ϕ\phantom{x}, roof]
+                ]
+                [\tsc{nom}P,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\tsc{f}1]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption { \tsc{nom} relative pronoun and \tsc{acc} extra light head}
+  \label{fig:rel-nom-lh-acc-structure}
+\end{figure}
+
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun. Different from the example in Figure \ref{fig:rel-acc-lh-nom-structure}, neither of the elements contains all of the other's constituents.
+The relative pronoun has a constituent \tsc{nom}P, but it lacks the \tsc{f}2 to make it an \tsc{acc}P. The light head has a constituent that is not a constituent in the relative pronoun, so the light head cannot be absent.
+The light head has a constituent \tsc{nom}P, but it does not contain \tsc{rel} to make it a \tsc{rel}P. The relative pronoun has a constituent that is not a constituent in the light head, so the relative pronoun cannot be absent.
+As a result, none of the elements can be absent.
+
+Now I return to the other two attested language types.
+The differences between the languages do not arise from changing the feature content of the light head and relative pronoun per language.\footnote{
+The feature content of the unrestricted languages differs slightly from that of the internal-only and matching languages. This is due to the fact that this language type uses a different type of relative pronoun. The basic idea of the relative pronoun having at least one more feature than the light head remains the same.
+}
+Instead, the differences come from how the light heads and relative pronouns are spelled out.
+
+\subsection{The matching type}
+
+In matching languages like Polish, the light head cannot delete the relative pronoun and the relative pronoun cannot delete the light head. The intuition for this type of language is that they package their features together differently from internal-only languages like Modern German. The packaging happens in such a way that the constituents of the relative pronoun do not contain the constituents of the light head. As a result, the relative pronoun cannot delete the light head anymore. This account crucially relies on constituent containment being the containment requirement that needs to be fulfilled. Feature containment is too weak of a requirement.
+
+I illustrate the difference between feature and constituent containment with two structures. In Figure \ref{fig:acc-nom-structure}, I repeated the light head and relative pronoun from Figure \ref{fig:rel-acc-lh-nom-structure}.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P,
+        tikz={
+        \node[draw,circle,
+        dashed,
+        scale=0.8,
+        fill=DG,fill opacity=0.2,
+        fit to=tree]{};
+        }
+            [\tsc{k}]
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{acc}P
+            [\tsc{f}2]
+            [\tsc{nom}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\tsc{f}1]
+                [XP
+                    [\phantom{xxx}, roof]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} vs. \tsc{rel} → \tsc{rel} (repeated)}
+  \label{fig:acc-nom-structure}
+\end{figure}
+
+In Figure \ref{fig:acc-nom-structure}, two different types of containment hold: feature containment and constituent containment.
+I start with feature containment. Each feature of the \tsc{k}P (i.e. ϕ and \tsc{k}) is also a feature within the \tsc{rel}P, so the \tsc{rel}P contains the \tsc{k}P.
+Constituent containment works as follows. Each constituent of the \tsc{k}P (i.e. ϕP and \tsc{k}P that contains \tsc{k} and ϕP) is also a constituent of the \tsc{k}P. Therefore, \tsc{rel}P contains contains the \tsc{k}P.
+
+Constituent containment is a stronger requirement than feature containment. In Figure \ref{fig:acc-nom-structure-moved-out} I show a situation in which the feature containment requirement holds but the constituent containment requirement does not. It is the same picture as in Figure \ref{fig:acc-nom-structure} except for that the ϕP has moved out of the \tsc{rel}P.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P
+            [\tsc{k}]
+            [ϕP,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [ϕP,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+            [\tsc{rel}P
+                [\tsc{rel}]
+                [\tsc{k}P
+                    [\tsc{k}]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} vs. \tsc{rel} after extraction ↛ \tsc{rel}}
+  \label{fig:acc-nom-structure-moved-out}
+\end{figure}
+
+There is still feature containment: the \tsc{k}P contains ϕ and \tsc{k} and so does the \tsc{rel}P.
+However, there is no longer constituent containment: the \tsc{k}P constituent containing ϕP and \tsc{k}P that contains \tsc{k} and ϕP is no longer a constituent within the \tsc{rel}P.
+
+In Section \ref{sec:deriving-matching} I show that only the stronger requirement of constituent containment is able to distinguish the internal-only from the matching type of language, and that the weaker requirement of feature containment is not.
+
+Constituent containment is also what seems to be crucial in the deletion of nominal modifiers. Cinque argues that nominal modifiers can only be absent if they form a constituent with the NP \citep{cinqueforthcoming}. If they are not, they can also not be interpreted.
+
+In \ref{ex:dutch-houses}, I give an example of a conjunction with two noun phrases in Dutch. The first conjunct consists of a demonstrative, an adjective and a noun, and the second one only of a demonstrative.
+
+\exg. deze witte huizen en die\\
+ these white houses and those\\
+ `these white houses and those white houses' \flushfill{Dutch}\label{ex:dutch-houses}
+
+The adjective \tit{witte} `white' forms a constituent with \tit{huizen} `houses'. I showed this in Figure \ref{fig:dutch-houses} under first conjunct. In the second conjunct, the constituent with the adjective and the noun in it is deleted. The adjective can still be interpreted in \ref{ex:dutch-houses}, because it forms a constituent with the noun.
+
+ \begin{figure}[htbp]
+   \center
+   \begin{tabular}[b]{ccc}
+       \toprule
+       first conjunct & & second conjunct \\
+       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+       \begin{forest} boom
+         [
+             [Dem]
+             [
+                 [A]
+                 [N]
+             ]
+         ]
+       \end{forest}
+       & \phantom{x} &
+       \begin{forest} boom
+         [
+             [Dem]
+             [
+                 [\sout{A}]
+                 [\sout{N}]
+             ]
+         ]
+       \end{forest}\\
+       \bottomrule
+   \end{tabular}
+    \caption {Nominal ellipsis in Dutch}
+   \label{fig:dutch-houses}
+ \end{figure}
+
+The situation is different in Kipsigis, a Nilotic Kalenjin language spoken in Kenya. In \ref{ex:kipsigis-houses}, I give an example of a conjunction of two noun phrases in Kipsigis. The first conjunct consists of a noun, a demonstrative and an adjective, and the second one only of a demonstrative \citep{cinqueforthcoming}.
+
+\exg. kaarii-chuun leel-ach ak chu\\
+houses-those white-\tsc{pl} and these\\
+`those white houses and these houses'\\
+not: `those white houses and these white houses'\label{ex:kipsigis-houses} \flushfill{Kipsigis, \pgcitealt{cinqueforthcoming}{24}}
+
+The adjective \tit{leel} `white' does not forms a constituent with \tit{kaarii} `houses'. I showed this in Figure \ref{fig:kipsigis-houses} under first conjunct. In the second conjunct, the adjective and the noun are deleted. Different from the Dutch example in \ref{fig:dutch-houses}, this is not a single constituent. The adjective cannot be interpreted in \ref{ex:kipsigis-houses}, because it does not form a constituent with the noun.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      first conjunct & & second conjunct \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [
+            [
+                [NP]
+                [Dem]
+            ]
+            [AP]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [
+            [
+                [\sout{N}]
+                [Dem]
+            ]
+            [\sout{A}]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Nominal ellipsis in Kipsigis}
+   \label{fig:kipsigis-houses}
+\end{figure}
+
+To sum up, the comparison between light heads requires constituent containment. Feature containment is not enough.
+
+
+\subsection{The unrestricted type}
+
+In unrestricted languages like Old High German, the light head can delete the relative pronoun and the relative pronoun can delete the light head. The property of unrestricted languages that I connect to this behavior is that their light heads and relative pronoun are syncretic. I suggest that if there is no constituent containment, but the two forms are spelled out by the same morpheme, one element can still delete the other.
+Consider Figure \ref{fig:rel-lh-syncretism1}, in which the relative pronoun deletes the light head.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [ϕP,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            \node[draw,circle,
+            dashed,
+            scale=0.9,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.95,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [ϕP,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\phantom{x}ϕ\phantom{x}, roof]
+                ]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Syncretism: relative pronoun deletes light head}
+  \label{fig:rel-lh-syncretism1}
+\end{figure}
+
+The ϕP in the light head is spelled out as \tit{α}, illustrated by the circle around the ϕP and the \tit{α} under it. The \tsc{rel}P in the relative pronoun is spelled out as \tit{α} too, illustrated in the same way. I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+
+I start with the right-most constituent of the light head: \tsc{k}P. This constituent is also a constituent in the relative pronoun.
+I continue with the left-most constituent of the light head: the ϕP. This constituent is also a constituent in the relative pronoun, contained in the \tsc{rel}P.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles for the light head gray.
+
+Consider Figure \ref{fig:rel-lh-syncretism2}, in which the light head deletes the relative pronoun.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [ϕP,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            \node[draw,circle,
+            dashed,
+            scale=0.9,
+            fit to=tree]{};
+            }
+                [\phantom{x}ϕ\phantom{x}, roof]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{k}P, s sep=20mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{α},
+            draw,circle,
+            scale=0.95,
+            fill=LG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [ϕP,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fill=DG,fill opacity=0.2,
+                fit to=tree]{};
+                }
+                    [\phantom{x}ϕ\phantom{x}, roof]
+                ]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.8,
+            fill=DG,fill opacity=0.2,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {Syncretism: light head deletes relative pronoun}
+  \label{fig:rel-lh-syncretism2}
+\end{figure}
+
+Just as in Figure \ref{fig:rel-lh-syncretism1}, the ϕP in the light head is spelled out as \tit{α} and the \tsc{rel}P in the relative pronoun is spelled out as \tit{α} too. I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+
+I start with the right-most constituent of the relative pronoun: \tsc{k}P. This constituent is also a constituent in the relative pronoun.
+I continue with the left-most constituent of the relative pronoun: the \tsc{rel}P. This constituent is not contained in the light head. The ϕP lacks the \tsc{rel} to make it a \tsc{rel}P. However, the two constituents are syncretic: the ϕP is also spelled out as \tit{α}. I suggest that this syncretism is also enough to license the deletion. I illustrate this by marking the content of the dashed circles for the relative pronoun gray and the portion that is deleted by syncretism in a lighter shade of gray.
+
+To sum up, each constituent of the relative pronoun is either also a constituent within the light head or it is syncretic with a constituent within the light head. Therefore, the relative pronoun can be absent. The fact that syncretism licenses deletion is not specific to the portion of the structure that corresponds to ϕ and \tsc{rel}. Syncretic cases can have the same effect, the inanimate nominative and inanimate accusative singular in Modern German being an instance of it. I give examples of this in Section \ref{sec:deriving-nonmatching}.
+
+\subsection{Everything is constituent containment}
+
+In summing up this section, I return to the metaphor with the committee that I introduced in Chapter \ref{ch:typology}. I wrote that first case competition takes place, in which a more complex case wins over a less complex case. This case competition can now be reformulated into a more general mechanism, namely constituent comparison. A more complex case corresponds to a constituent that contains the constituent of a less complex case.
+
+Subsequently, I noted that there is a committee that can either approve the winning case or not approve it. In Chapter \ref{ch:typology} I wrote that the approval happens based on where the winning case comes from: from inside of the relative clause (internal) or from outside of the relative clause (external). I argued in this section that headless relatives are derived from light-headed relatives. The light head bears that external case and the relative pronoun bears the internal case. The `approval' of an internal or external case relies on the same mechanism as case competition, namely constituent comparison. If each constituent of the light head is contained in a constituent of the relative pronoun, the relative pronoun can delete the light head. The light head with its external case is absent, and the relative pronoun with its internal case surfaces. This is what corresponds to the the internal case `being allowed to surface'. If each constituent of the relative pronoun is contained in a constituent of the light head, the light head can delete the relative pronoun. The relative pronoun with its internal case is absent, and the light head with its external case surfaces. This is what corresponds to the the external case `being allowed to surface'.
+
+In other words, the grammaticality of a headless relative depends on several instances of constituent comparison. The constituents that are compared are those of the light head and the relative pronoun, which both bear their own case. Case is special in that it can differ from sentence to sentence within a language. Therefore, the grammaticality of a sentence can differ within a language depending on the internal and external case. The part of the light head and relative pronoun that does not involve case features is stable within a language. Therefore, whether the internal or external case is `allowed to surface' does not differ within a language.
+
+In this dissertation I describe different language types in case competition in headless relatives. In my account, the different language types are a result of a comparison of the light head and the relative pronoun in the language.
+The larger syntactic context in which this takes place should be kept stable. The operation that deletes the light head or the relative pronoun is the same for all language types. In this work, I do not specify on which larger syntactic structure and which deletion operation should be used. In Section \ref{sec:larger-syntax} I discuss existing proposals on these topics and to what extend they are compatible with my account.
+
+To conclude, in this section I introduced the assumptions that headless relatives are derived from light-headed relatives and that relative pronouns contain at least one more feature than light heads. A headless relative is grammatical when either the light head or the relative pronoun contains all constituents of the other element. This set of assumptions derives that only the most complex case can surface and that there is no language of the external-only type.
+
+%at first sight this seems very much related to what Hanink proposes for Modern German. Something is non-pronounced if it contains the features. A crucial difference here is that she formulates it in terms of context sensitive rules, but she does not motivate where these rules come from. I do not have language-specific rules.

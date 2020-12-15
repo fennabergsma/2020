@@ -1,0 +1,894 @@
+% !TEX root = thesis.tex
+
+
+\section{Deriving the unrestricted type}\label{sec:deriving-nonmatching}
+
+Unrestricted languages can be summarizes as in Table \ref{tbl:overview-rel-light-ohg}.
+
+\begin{table}[htbp]
+  \center
+  \caption{The surface pronoun with differing cases in Polish}
+\begin{tabular}{cccc}
+  \toprule
+                & \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{k}\scsub{ext} > \tsc{k}\scsub{int} &   \\
+                \cmidrule{2-3}
+unrestricted    & relative pronoun\scsub{int}  & light head\scsub{ext} & Old High German  \\
+\bottomrule
+\end{tabular}
+\label{tbl:overview-rel-light-ohg}
+\end{table}
+
+A language of the unrestricted type (like Old High German) allows both the internal case and the external case to surface when either of them wins the case competition. Either the light head with its external case or the relative pronoun with its internal case can be the surface pronoun. The goal of this section is to derive this from the way light heads and relative pronouns are spelled out in Old High German.
+
+The section is structured as follows.
+Old High German differs from the other two languages I discussed in that its headless relatives have a different interpretation: they have a individuating or definite reading. This leads me to argue for slightly different functional sequences in Old High German.
+I argue that Old High German headless relatives are derived from regular light-headed relatives.
+I decompose the light heads and relative pronouns intro smaller morphemes, and I show which features each of the morphemes corresponds to.
+Then I compare the constituents of the light head and the relative pronoun.
+When the internal and the external case match, the relative pronoun can delete the light head, because it contains all its constituents.
+When the internal case is more complex than the external case, the relative pronoun can still delete the light head, for the same reason: the relative pronoun contains all constituents of the light head.
+The situation becomes a bit more complicated when the external case is more complex than the internal case. The light head does not contain all constituents of the relative pronoun. However, the constituent that is not contained in a constituent of the light head is syncretic with a constituent of the light head. I suggest that this syncretism is also enough to license the deletion of the relative pronoun.
+Finally, I show that the effect of syncretism is not limited to Old High German and the part of the light head and relative pronoun that does not involve case. I give examples from Modern German that show that syncretism can also license the deletion of a more complex case by a less complex case.
+
+
+
+\subsection{The relative pronoun}
+
+What is different here, is that the relative pronoun is a \tsc{d}-pronoun instead of a \tsc{wh}.
+
+
+Relative and demonstrative pronouns are syncretic in Old High German \pgcitep{braune2018}{338}. Table \ref{tbl:rel-dem-ohg} gives an overview of the forms in singular and plural, neuter, masculine and feminine and nominative, accusative and dative. The pronouns consist of two morphemes: a \tit{d} and suffix that differs per number, gender and case.\footnote{
+\tit{d} can also be written as \tit{dh} and \tit{th}, \tit{ë} and \tit{ē} can also be \tit{e} and \tit{é} \pgcitep{braune2018}{339}.
+}\footnote{
+The suffix could also be further divided into a vowel and a suffix. As this is not relevant for the discussion here, I refrain from doing that.
+}
+
+\begin{table}[htbp]
+ \center
+ \caption {Relative/demonstrative pronouns in Old High German \pgcitep{braune2018}{339}}
+  \begin{tabular}{cccc}
+  \toprule
+            & \ac{n}.\ac{sg}  & \ac{m}.\ac{sg}      & \ac{f}.\ac{sg}    \\
+        \cmidrule{2-4}
+  \ac{nom}  & d-aȥ            & d-ër                & d-iu               \\
+  \ac{acc}  & d-aȥ            & d-ën                & d-ea/d-ia         \\
+  \ac{dat}  & d-ëmu/d-ëmo     & d-ëmu/d-ëmo         & d-ëru/d-ëro       \\
+  \bottomrule
+            & \ac{n}.\ac{pl}  & \ac{m}.\ac{pl}      &  \ac{f}.\ac{pl}  \\
+        \cmidrule{2-4}
+  \ac{nom}  & d-iu            &  d-ē/d-ea/d-ia/d-ie & d-eo/-io         \\
+  \ac{acc}  & d-iu            &  d-ē/d-ea/d-ia/d-ie & d-eo/-io         \\
+  \ac{dat}  & d-ēm/d-ēn       &  d-ēm/d-ēn          & d-ēm/d-ēn        \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:rel-dem-ohg}
+\end{table}
+
+
+The suffixes that combine with the \tit{d} in demonstrative and relative pronouns also appear on adjectives. This is illustrated in Table \ref{tbl:adj-ohg}.
+
+\begin{table}[htbp]
+ \center
+ \caption {Adjectives on \tit{-a-/-ō-} in Old High German \pgcitealt{braune2018}{300}}
+  \begin{tabular}{cccc}
+  \toprule
+            & \ac{n}.\ac{sg}    & \ac{m}.\ac{sg}      & \ac{f}.\ac{sg}    \\
+    \cmidrule{2-4}
+  \ac{nom}  & jung, jung-aȥ     & jung, jung-ēr       & jung, jung-iu     \\
+  \ac{acc}  & jung, jung-aȥ     & jung-an             & jung-a            \\
+  \ac{dat}  & jung-emu/jung-emo & jung-emu/jung-emo   & jung-eru/jung-ero \\
+  \bottomrule
+            & \ac{n}.\ac{pl}    & \ac{m}.\ac{pl}      &  \ac{f}.\ac{pl}   \\
+      \cmidrule{2-4}
+  \ac{nom}  & jung-iu           &  jung-e             & jung-o            \\
+  \ac{acc}  & jung-iu           &  jung-e             & jung-o            \\
+  \ac{dat}  & jung-ēm/jung-ēn   &  jung-ēm/jung-ēn    & jung-ēm/jung-ēn   \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:adj-ohg}
+\end{table}
+
+I conclude from this that the suffix expresses features that are specific to being nominal, like number, gender and case. Not part of the suffix are features that are specific to being a demonstrative or relative pronoun, like anaphoricity and definiteness. I assume that these are expressed by the morpheme \tit{d}.
+
+split the suffix up in two morphemes
+
+
+In this section, I only discuss two forms: the nominative and accusative masculine singular relative and demonstrative pronoun. The nominative is \tit{dër} and the accusative is \tit{dën}. In what follows, I discuss the feature content of the morphemes \tit{d}, \tit{ër} and \tit{ën}. I start with the features that are expressed by the suffixes \tit{ër} and \tit{ën}.
+
+This allows me to propose the following lexical entries for the two suffixes.
+
+
+
+The \tit{d} morpheme corresponds to definiteness and anaphoricity. Anaphoricity establishes a relation with another element in the (linguistic) discourse. Definiteness encodes that the referent is specific.
+
+\ex.
+\begin{forest} boom
+ [\tsc{d}P
+     [\tsc{d}]
+     [\tsc{ana}]
+ ]
+ {\draw (.east) node[right]{⇔ \tit{d}}; }
+\end{forest}
+\label{ex:ohg-d-lexicon}
+
+So, the two relative pronouns look like this.\footnote{A question that arises here is how the case features can form a constituent to the exclusion of definiteness and anaphoricity. I come back to this issue in Chapter \ref{ch:discussion}.}
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=10mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{d}P
+              [\tsc{d}, roof]
+          ]
+      ]
+      [\tsc{acc}P, s sep=20mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref}]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}P
+                          [\tsc{an}]
+                          [\tsc{cl}P
+                              [\tsc{cl}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Old High German: \tsc{int} \tsc{nom}\\
+\tiny{
+\begin{forest} boompje
+  [\tsc{rel}P, s sep=10mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{d}P
+              [\tsc{d}, roof]
+          ]
+      ]
+      [\tsc{nom}P, s sep=20mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref}]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}P
+                          [\tsc{cl}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+
+
+
+
+\subsection{The light head}
+
+Headless relatives in which the relative pronoun starts with a \tit{d}, such as in Old High German, seem to be linked to individuating or definite readings and not to generalizing or indefinite readings \citep[cf.][]{fuss2017}. I illustrate this with the two examples I repeat from Chapter  \ref{ch:typology}.
+
+Consider the example in \ref{ex:ohg-nom-acc-interpretation}, repeated from Chapter \ref{ch:typology}.
+In this example, the author refers to the specific person which was talked about, and not to any or every person that was talked about.
+
+\exg. Thíz ist \tbf{then} \tbf{sie} \tbf{zéllent}\\
+\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc}
+3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+`this is the one whom they talk about'\\
+not: `this is whoever they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-interpretation}
+
+Consider also the example in \ref{ex:ohg-nom-acc-interpretation}, repeated from Chapter \ref{ch:typology}.
+In this example, the author refers to the specific person who spoke to someone, and not to any or every person who spoke to someone.
+
+\exg. enti aer {ant uurta} demo \tbf{zaimo} \tbf{sprah}\\
+and 3\ac{sg}.\ac{m}.\ac{nom} reply.\ac{pst}.3\ac{sg}\scsub{[dat]} \ac{rel}.\ac{sg}.\ac{m}.\ac{dat} {to 3\ac{sg}.\ac{m}.\ac{dat}} speak.\ac{pst}.3\ac{sg}\scsub{[nom]}\\
+`and he replied to the one who spoke to him'\\
+not: `and he replied to whoever spoke to him'
+ \flushfill{Old High German, \ac{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom-rep}
+
+ Consider the light-headed relative in \ref{ex:ohg-double}. \tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the head of the relative clause, which is the external element. \tit{Then} `\tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause, which is the internal element.
+
+ \exg. eno nist thiz thér then ir suochet zi arslahanne?\\
+  now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
+  \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
+  `Isn't this now the one, who you seek to kill?'\label{ex:ohg-double}
+
+ The difference between a light-headed relative and a headless relative is that in headless relatives, either the internal or the external is absent. The absent element is the one that has the least complex case. This shows the presence of two elements in Old High German is optional.\footnote{
+ This sharply contrasts with headless relatives in Modern German, which are always ungrammatical when both the internal and external elements surface. I come back to this in Section \ref{sec:deriving-only-internal}.
+ }
+ In Old High German, there are three possible constructions: the internal and external element can both surface, only the internal element can surface and only the external element can surface. If only one of the two elements surfaces, this is the element that bears the most complex case, which is either the internal or the external one, as I have shown in Chapter \ref{ch:typology}. I assume that whether both or only one of the elements surfaces is determined by information structure. In \ref{ex:ohg-double}, the external element \tit{thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the candidate to be absent. However, it seems plausible that this is emphasized in this sentence and that it, therefore, cannot be absent.
+
+
+ The light head in a light-headed relative is a demonstrative pronoun.
+
+\ex.
+\tiny{
+\begin{forest} boompje
+  [\tsc{d}P, s sep=15mm
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.8,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{acc}P, s sep=20mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref}]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}P
+                          [\tsc{an}]
+                          [\tsc{cl}P
+                              [\tsc{cl}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+\ex. Old High German: \tsc{ext} \tsc{nom}\\
+\tiny{
+\begin{forest} boompje
+  [\tsc{d}P, s sep=15mm
+      [\tsc{d}P,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.8,
+      fit to=tree]{};
+      }
+          [\tsc{d}, roof]
+      ]
+      [\tsc{nom}P, s sep=20mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ref}]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}P
+                          [\tsc{cl}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+}
+
+
+
+
+\subsection{Comparing constituents}\label{sec:comparing-ohg}
+
+Consider the examples in \ref{ex:ohg-nom-nom-rep}, in which the internal nominative case competes against the external nominative case. The relative clauses are marked in bold, and the light heads and the relative pronouns are underlined. As the light head and the relative pronoun are identical it is impossible to see which of them surfaces.
+The internal case is nominative, as the predicate \tit{senten} `to send' takes nominative subjects. The relative pronoun \tit{dher} `\ac{rel}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case.
+The external case is nominative as well, as the predicate \tit{queman} `to come' also takes nominative subjects. The light head \tit{dher} `\ac{dem}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case.
+\ref{ex:ohg-nom-nom-rep-rel} is the variant of the sentence in which the light head is absent (indicated by the square brackets) and the relative pronoun surfaces.
+\ref{ex:ohg-nom-nom-rep-lh} is the variant of the sentence in which the relative pronoun is absent (indicated by the square brackets) and the light head surfaces.
+
+\ex.\label{ex:ohg-nom-nom-rep}
+\ag. quham \underline{[dher]} \tbf{dher} \underline{\tbf{chisendit}} \tbf{scolda} \tbf{uuerdhan}\\
+ come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{dem}.\ac{sg}.\ac{m}.\ac{nom} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
+ `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep-rel}
+\bg. quham \underline{dher} [\tbf{dher}] \underline{\tbf{chisendit}} \tbf{scolda} \tbf{uuerdhan}\\
+ come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{dem}.\ac{sg}.\ac{m}.\ac{nom} \ac{rel}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
+ `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-rep-lh}
+
+In Figure \ref{fig:ohg-int=ext}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{c}
+        \toprule
+        \tsc{nom} extra light head \tit{dh-e-r}\\
+        \cmidrule{1-1}
+        \tiny{
+        \begin{forest} boompje
+          [\tsc{d}P, s sep=20mm
+              [\tsc{d}P,
+              tikz={
+              \node[label=below:\tit{dh},
+              draw,circle,
+              scale=0.8,
+              fit to=tree]{};
+              \node[draw,circle,
+              dashed,
+              fill=DG,fill opacity=0.2,
+              scale=0.9,
+              fit to=tree]{};
+              }
+                  [\tsc{d}, roof]
+              ]
+              [\tsc{nom}P, s sep=25mm
+                  [\tsc{med}P,
+                  tikz={
+                  \node[label=below:\tit{e},
+                  draw,circle,
+                  scale=0.85,
+                  fit to=tree]{};
+                  \node[draw,circle,
+                  dashed,
+                  fill=DG,fill opacity=0.2,
+                  scale=0.9,
+                  fit to=tree]{};
+                  }
+                      [\tsc{dx}\scsub{2}]
+                      [\tsc{prox}P
+                          [\tsc{dx}\scsub{1}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+                  [\tsc{nom}P,
+                  tikz={
+                  \node[label=below:\tit{r},
+                  draw,circle,
+                  scale=0.95,
+                  fit to=tree]{};
+                  \node[draw,circle,
+                  dashed,
+                  scale=1,
+                  fill=DG,fill opacity=0.2,
+                  fit to=tree]{};
+                  }
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}P
+                              [\tsc{an}]
+                              [\tsc{cl}P
+                                  [\tsc{cl}]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}
+        }
+      \\
+      \toprule
+      \tsc{nom} relative pronoun \tit{dh-e-r}
+      \\
+      \cmidrule{1-1}
+      \tiny{
+      \begin{forest} boompje
+        [\tsc{rel}P, s sep=15mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{dh},
+            draw,circle,
+            scale=0.95,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [\tsc{d}P,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.8,
+                fit to=tree]{};
+                }
+                    [\tsc{d}, roof]
+                ]
+            ]
+            [\tsc{nom}P, s sep=25mm
+                [\tsc{med}P,
+                tikz={
+                \node[label=below:\tit{e},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                \node[draw,circle,
+                dashed,
+                scale=0.9,
+                fit to=tree]{};
+                }
+                    [\tsc{dx}\scsub{2}]
+                    [\tsc{prox}P
+                        [\tsc{dx}\scsub{1}]
+                        [\tsc{ref}]
+                    ]
+                ]
+                [\tsc{nom}P,
+                tikz={
+                \node[label=below:\tit{r},
+                draw,circle,
+                scale=0.95,
+                fit to=tree]{};
+                \node[draw,circle,
+                dashed,
+                scale=1,
+                fit to=tree]{};
+                }
+                    [\tsc{f}1]
+                    [\tsc{ind}P
+                        [\tsc{ind}]
+                        [\tsc{an}P
+                            [\tsc{an}]
+                            [\tsc{cl}P
+                                [\tsc{cl}]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      }
+        \\
+      \bottomrule
+  \end{tabular}
+  \caption {Old High German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{nom} → \tit{dher}}
+  \label{fig:ohg-int=ext}
+\end{figure}
+
+The relative pronoun consists of three morphemes: \tit{dh}, \tit{e} and \tit{r}.
+The light head consists of three morphemes: \tit{dh}, \tit{e} and \tit{r}.
+As usual, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles for the light head gray.
+
+I explain this constituent by constituent.
+I start with the right-most constituent of the light head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the relative pronoun.
+I continue with the middle constituent of the light head that spells out as \tit{e} (\tsc{med}P). This constituent is also a constituent in the relative pronoun.
+I end with the left-most constituent of the light head that spells out as \tit{d} {\tsc{d}P}. This constituent is also a constituent in the relative pronoun, contained in \tsc{rel}P.
+All three constituent of the light head are also a constituent within the relative pronoun, and the light head can be absent.
+
+Consider the example in \ref{ex:ohg-nom-acc-rep}, in which the internal accusative case competes against the external nominative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
+The internal case is accusative, as the predicate \tit{zellen} `to tell' takes accusative objects. The relative pronoun \tit{then} `\ac{rel}.\ac{sg}.\ac{m}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
+The external case is nominative, as the predicate \tit{sin} `to be' takes nominative objects. The light head \tit{ther} `\ac{dem}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
+
+\exg. Thíz ist [\underline{ther}] \underline[\tbf{then}] \tbf{sie} \tbf{zéllent}\\
+\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{dem}.\ac{sg}.\ac{m}.\ac{nom} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+`this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-rep}
+
+In Figure \ref{fig:ohg-int-wins}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{c}
+      \toprule
+      \tsc{nom} extra light head \tit{th-e-r}
+      \\
+      \cmidrule{1-1}
+      \tiny{
+      \begin{forest} boompje
+        [\tsc{d}P, s sep=20mm
+            [\tsc{d}P,
+            tikz={
+            \node[label=below:\tit{th},
+            draw,circle,
+            scale=0.8,
+            fit to=tree]{};
+            \node[draw,circle,
+            dashed,
+            fill=DG,fill opacity=0.2,
+            scale=0.9,
+            fit to=tree]{};
+            }
+                [\tsc{d}, roof]
+            ]
+            [\tsc{nom}P, s sep=25mm
+                [\tsc{med}P,
+                tikz={
+                \node[label=below:\tit{e},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                \node[draw,circle,
+                dashed,
+                fill=DG,fill opacity=0.2,
+                scale=0.9,
+                fit to=tree]{};
+                }
+                    [\tsc{dx}\scsub{2}]
+                    [\tsc{prox}P
+                        [\tsc{dx}\scsub{1}]
+                        [\tsc{ref}]
+                    ]
+                ]
+                [\tsc{nom}P,
+                tikz={
+                \node[label=below:\tit{r},
+                draw,circle,
+                scale=0.95,
+                fit to=tree]{};
+                \node[draw,circle,
+                dashed,
+                fill=DG,fill opacity=0.2,
+                scale=1,
+                fit to=tree]{};
+                }
+                    [\tsc{f}1]
+                    [\tsc{ind}P
+                        [\tsc{ind}]
+                        [\tsc{an}P
+                            [\tsc{an}]
+                            [\tsc{cl}P
+                                [\tsc{cl}]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}
+      }
+      \\
+      \toprule
+      \tsc{acc} relative pronoun \tit{th-e-n}
+      \\
+      \cmidrule{1-1}
+      \tiny{
+          \begin{forest} boompje
+            [\tsc{rel}P, s sep=15mm
+                [\tsc{rel}P,
+                tikz={
+                \node[label=below:\tit{th},
+                draw,circle,
+                scale=0.95,
+                fit to=tree]{};
+                }
+                    [\tsc{rel}]
+                    [\tsc{d}P,
+                    tikz={
+                    \node[draw,circle,
+                    dashed,
+                    scale=0.8,
+                    fit to=tree]{};
+                    }
+                        [\tsc{d}, roof]
+                    ]
+                ]
+              [\tsc{acc}P, s sep=30mm
+                  [\tsc{med}P,
+                  tikz={
+                  \node[label=below:\tit{e},
+                  draw,circle,
+                  scale=0.85,
+                  fit to=tree]{};
+                  \node[draw,circle,
+                  dashed,
+                  scale=0.9,
+                  fit to=tree]{};
+                  }
+                      [\tsc{dx}\scsub{2}]
+                      [\tsc{prox}P
+                          [\tsc{dx}\scsub{1}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+                  [\tsc{acc}P,
+                  tikz={
+                  \node[label=below:\tit{n},
+                  draw,circle,
+                  scale=0.95,
+                  fit to=tree]{};
+                  }
+                      [\tsc{f}2]
+                      [\tsc{nom}P,
+                      tikz={
+                      \node[draw,circle,
+                      dashed,
+                      scale=0.9,
+                      fit to=tree]{};
+                      }
+                          [\tsc{f}1]
+                          [\tsc{ind}P
+                              [\tsc{ind}]
+                              [\tsc{an}P
+                                  [\tsc{an}]
+                                  [\tsc{cl}P
+                                      [\tsc{cl}]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}
+        }
+        \\
+      \bottomrule
+  \end{tabular}
+ \caption {Old High German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} → \tit{then}}
+  \label{fig:ohg-int-wins}
+\end{figure}
+
+The relative pronoun consists of three morphemes: \tit{th}, \tit{e} and \tit{n}.
+The light head consists of three morphemes: \tit{th}, \tit{e} and \tit{r}.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+As each constituent of the light head is also a constituent within the relative pronoun, the light head can be absent. I illustrate this by marking the content of the dashed circles for the light head gray.
+
+I explain this constituent by constituent.
+I start with the right-most constituent of the light head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the relative pronoun, contained in \tsc{acc}P.
+I continue with the middle constituent of the light head that spells out as \tit{e} (\tsc{med}P). This constituent is also a constituent in the relative pronoun.
+I end with the left-most constituent of the light head that spells out as \tit{d} {\tsc{d}P}. This constituent is also a constituent in the relative pronoun, contained in \tsc{rel}P.
+All three constituent of the light head are also a constituent within the relative pronoun, and the light head can be absent.
+
+Consider the examples in \ref{ex:ohg-acc-nom-rep}, in which the internal nominative case competes against the external accusative case. The relative clauses are marked in bold, and the light heads and the relative pronouns are underlined.
+The internal case is nominative, as the predicate \tit{gisizzen} `to possess' takes nominative subjects. The relative pronoun \tit{dher} `\ac{rel}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
+The external case is accusative, as the predicate \tit{bibringan} `to create' takes accusative objects. The light head \tit{dhen} `\ac{dem}.\ac{sg}.\ac{m}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
+
+\exg. ih bibringu fona iacobes samin endi fona iuda \underline{dhen} [\underline{\tbf{dher}}] \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
+1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{rel}.\ac{sg}.\ac{m}.\ac{acc} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+`I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-rep}
+
+In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light head at the top and the syntactic structure of the relative pronoun at the bottom.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{c}
+        \toprule
+        \tsc{acc} extra light head \tit{dh-e-n} \\
+        \cmidrule{1-1}
+        \tiny{
+        \begin{forest} boompje
+          [\tsc{d}P, s sep=20mm
+              [\tsc{d}P,
+              tikz={
+              \node[label=below:\tit{dh},
+              draw,circle,
+              scale=0.8,
+              fit to=tree]{};
+              \node[draw,circle,
+              dashed,
+              scale=0.9,
+              fit to=tree]{};
+              }
+                  [\tsc{d}, roof]
+              ]
+              [\tsc{acc}P, s sep=25mm
+                  [\tsc{med}P,
+                  tikz={
+                  \node[label=below:\tit{e},
+                  draw,circle,
+                  scale=0.85,
+                  fit to=tree]{};
+                  \node[draw,circle,
+                  dashed,
+                  scale=0.9,
+                  fit to=tree]{};
+                  }
+                      [\tsc{dx}\scsub{2}]
+                      [\tsc{prox}P
+                          [\tsc{dx}\scsub{1}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+                  [\tsc{acc}P,
+                  tikz={
+                  \node[label=below:\tit{n},
+                  draw,circle,
+                  scale=0.95,
+                  fit to=tree]{};
+                  }
+                      [\tsc{f}2]
+                      [\tsc{nom}P,
+                      tikz={
+                      \node[draw,circle,
+                      dashed,
+                      scale=0.9,
+                      fit to=tree]{};
+                      }
+                          [\tsc{f}1]
+                          [\tsc{ind}P
+                              [\tsc{ind}]
+                              [\tsc{an}P
+                                  [\tsc{an}]
+                                  [\tsc{cl}P
+                                      [\tsc{cl}]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}
+        }
+        \\
+        \toprule
+        \tsc{nom} relative pronoun \tit{dh-e-r}
+        \\
+        \cmidrule{1-1}
+        \tiny{
+            \begin{forest} boompje
+              [\tsc{rel}P, s sep=15mm
+                  [\tsc{rel}P,
+                  tikz={
+                  \node[label=below:\tit{dh},
+                  draw,circle,
+                  scale=0.95,
+                  fill=DG,fill opacity=0.1,
+                  fit to=tree]{};
+                  }
+                      [\tsc{rel}]
+                      [\tsc{d}P,
+                      tikz={
+                      \node[draw,circle,
+                      dashed,
+                      fill=DG,fill opacity=0.2,
+                      scale=0.8,
+                      fit to=tree]{};
+                      }
+                          [\tsc{d}, roof]
+                      ]
+                  ]
+                  [\tsc{nom}P, s sep=25mm
+                      [\tsc{med}P,
+                      tikz={
+                      \node[label=below:\tit{e},
+                      draw,circle,
+                      scale=0.85,
+                      fit to=tree]{};
+                      \node[draw,circle,
+                      dashed,
+                      scale=0.9,
+                      fill=DG,fill opacity=0.2,
+                      fit to=tree]{};
+                      }
+                          [\tsc{dx}\scsub{2}]
+                          [\tsc{prox}P
+                              [\tsc{dx}\scsub{1}]
+                              [\tsc{ref}]
+                          ]
+                      ]
+                      [\tsc{nom}P,
+                      tikz={
+                      \node[label=below:\tit{r},
+                      draw,circle,
+                      scale=0.95,
+                      fit to=tree]{};
+                      \node[draw,circle,
+                      dashed,
+                      fill=DG,fill opacity=0.2,
+                      scale=1,
+                      fit to=tree]{};
+                      }
+                          [\tsc{f}1]
+                          [\tsc{ind}P
+                              [\tsc{ind}]
+                              [\tsc{an}P
+                                  [\tsc{an}]
+                                  [\tsc{cl}P
+                                      [\tsc{cl}]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          \end{forest}
+          }
+          \\
+      \bottomrule
+  \end{tabular}
+   \caption {Old High German \tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{nom} → \tit{dhen}}
+  \label{fig:ohg-ext-wins}
+\end{figure}
+
+The relative pronoun consists of three morphemes: \tit{dh}, \tit{e} and \tit{r}.
+The light head consists of three morphemes: \tit{dh}, \tit{e} and \tit{n}.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
+As each constituent of the light head is also a constituent within the relative pronoun or is syncretic with one, the relative pronoun can be absent. I illustrate this by marking the content of the dashed circles for the relative pronoun gray.
+
+I explain this constituent by constituent.
+I start with the right-most constituent of the relative pronoun head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the light head, contained in \tsc{acc}P.
+I continue with the middle constituent of the relative pronoun that spells out as \tit{e} (\tsc{med}P). This constituent is also a constituent in the light head.
+I end with the left-most constituent of the relative pronoun that spells out as \tit{d} {\tsc{rel}P}. This consituent is not contained in the light head, but it is syncretic with it. The \tsc{d}P is also spelled out as \tit{d}.
+All three constituent of the light head are also a constituent within the relative pronoun or are syncretic with them, and the relative pronoun can be absent.
