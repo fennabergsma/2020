@@ -349,7 +349,8 @@ I give the lexical entries for \tit{r} and \tit{n} in \ref{ex:mg-entry-r} and \r
 The \tit{r} is the nominative masculine singular, so it spells out the features \tsc{ref}, Σ, \tsc{cl}, \tsc{an}, \tsc{ind} and \ac{f}1. The \tit{n} is the accusative masculine singular, so it spells out the features that the \tit{r} spells out plus \ac{f}2.
 
 \ex.\label{ex:mg-entries-rn}
-\a.\begin{forest} boom
+\a.\label{ex:mg-entry-r}
+\begin{forest} boom
   [\tsc{nom}P
       [\ac{f}1]
       [\tsc{ind}P
@@ -368,8 +369,8 @@ The \tit{r} is the nominative masculine singular, so it spells out the features 
   ]
   {\draw (.east) node[right]{⇔ \tit{r}}; }
 \end{forest}
-\label{ex:mg-entry-r}
-\b. \begin{forest} boom
+\b.\label{ex:mg-entry-n}
+\begin{forest} boom
   [\tsc{acc}P
       [\ac{f}2]
       [\tsc{nom}P
@@ -391,7 +392,6 @@ The \tit{r} is the nominative masculine singular, so it spells out the features 
   ]
   {\draw (.east) node[right]{⇔ \tit{n}}; }
 \end{forest}
-\label{ex:mg-entry-n}
 
 Note that the ordering of the features here is not random. I motivate this later on in this section.
 
@@ -505,7 +505,10 @@ At this point, I gave lexical entries for each of the morphemes (in \ref{ex:mg-e
 and I showed what the relative pronouns as a whole look like (in \ref{ex:mg-structure-rel-nom} and \ref{ex:mg-structure-rel-acc}).
 What is still needed, is a theory for combining these morphemes into a relative pronoun. This theory should determine which morphemes should be combined with each other in which order. Ideally, the theory is not language-specific, but the same for all languages. In what follows I show how this is accomplished in Nanosyntax. Readers who are not interested in the precise mechanics can proceed directly to Section \ref{sec:light-mg}.
 
-The way Nanosyntax combines different morphemes is not by glueing them together directly from the lexicon. Instead, features are merged one by one using two components that drive the derivation. These two components are (1) a functional sequence, in which the features that need to be merged and their order in which they are merged are specified, and (2) the spellout algorithm, which describes the spellout procedure. The lexical entries that are available within a language interact with the derivation in such a way that the morphemes get combined in the right way. Note that the functional sequence and the spellout algorithm are stable across languages. The only difference between languages lies in their lexical entries.
+
+\subsection{Combining morphemes in Nanosyntax}
+
+The way Nanosyntax combines different morphemes is not by glueing them together directly from the lexicon. Instead, features are merged one by one using two components that drive the derivation. These two components are (1) a functional sequence, in which the features that need to be merged and their order in which they are merged are specified, and (2) the Spellout Algorithm, which describes the spellout procedure. The lexical entries that are available within a language interact with the derivation in such a way that the morphemes get combined in the right way. Note that the functional sequence and the Spellout Algorithm are stable across languages. The only difference between languages lies in their lexical entries.
 
 \ref{ex:fseq-wh-rel} shows the functional sequence for relative pronouns. It gives all features it contains and their hierarchical ordering.
 
@@ -544,27 +547,33 @@ The way Nanosyntax combines different morphemes is not by glueing them together 
 \end{forest}
 \label{ex:fseq-wh-rel}
 
-Starting from the bottom, these are pronominal features (\tsc{ref} and Σ) and features having to do with deixis (\tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}), gender features (\tsc{cl} and \tsc{an}), number features (\tsc{ind}), operator features (\tsc{wh} and \tsc{rel}) and case features (\ac{f}1 and \ac{f}2). This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
+Starting from the bottom, these are pronominal features (\tsc{ref} and Σ), deixis features (\tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}), gender features (\tsc{cl} and \tsc{an}), number features (\tsc{ind}), operator features (\tsc{wh} and \tsc{rel}) and case features (\ac{f}1 and \ac{f}2). This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
 
 \tsc{ref}, Σ, \tsc{deix}, \tsc{wh/rel}?
 
-Features are merged one by one according to the functional sequence, starting from the bottom. Spellout is cyclic, as stated in \ref{ex:cyclic-phrasal-spellout}.
+Before I derive build the relative pronouns, I explain how the spellout procedure in Nanosyntax works. Features (Fs) are merged one by one according to the functional sequence, starting from the bottom. After each instance of merge, the constructed phrase must be spelled out, as stated in \ref{ex:cyclic-phrasal-spellout}.
 
-\ex. Cyclic phrasal spellout. Caha:declension\\
+\ex. \tbf{Cyclic phrasal spellout} \citep{caha2020a}\\
 Spellout must successfully apply to the output of every Merge F operation. After successfull spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
 
-After each instance of merge, the constructed phrase must be spelled out. Spellout happens according to the spellout algorithm, given in \ref{ex:spellout-algorithm}.
+Spellout is successful when the phrase that contains the newly merged feature forms a constituents in a lexical tree that is part of the language's lexicon.
+When the new feature is merged, it forms a phrase with all features merged so far.
+If this created phrase cannot be spelled out succesfully (i.e. when it does not form a constituent in a lexical tree), there are two movement operations possible that modify the syntactic structure in such a way that the newly merged feature becomes part of a different syntactic structure.
+These movements are triggered because spellout needs to successully apply, and, therefore, they are called spellout-driven movements.
+A Spellout Algorithm specifies which movement operations apply and in which order this happens. I give it in \ref{ex:spellout-algorithm}.
 
-\ex. \tbf{Spellout Algorithm:}\label{ex:spellout-algorithm}
+\ex. \tbf{Spellout Algorithm} (as in \citealt{caha2020a}, based on \citealt{starke2018})\label{ex:spellout-algorithm}
  \a. Merge F and spell out.\label{ex:spellout-algorithm-phrasal}
- \b. If \ref{ex:spellout-algorithm-phrasal} fails, move the Spec of the complement and spell out.\label{ex:spellout-algorithm-spec}
- \b. If \ref{ex:spellout-algorithm-spec} fails, move the complement of F and spell out.\label{ex:spellout-algorithm-comp}
+ \b. If (a) fails, move the Spec of the complement and spell out.\label{ex:spellout-algorithm-spec}
+ \b. If (b) fails, move the complement of F and spell out.\label{ex:spellout-algorithm-comp}
 
 I informally reformulate what is in \ref{ex:spellout-algorithm}. I start with the first line in \ref{ex:spellout-algorithm-phrasal}. This says that a feature F is merged, and the newly created phrase FP is attempted to spell out.
-The next two lines, \ref{ex:spellout-algorithm-spec} and \ref{ex:spellout-algorithm-comp}, describe two types of rescue movements that take place when the spellout in \ref{ex:spellout-algorithm-phrasal} fails (i.e. when there is no match in the lexicon).
-In the discussion about Modern German, only the first line leads to matching lexical entries. The second and third line do not lead to a match in the Modern German derivations I run. I introduce these two steps here anyway, because they will lead to successful matched in Polish.
+The next two lines, \ref{ex:spellout-algorithm-spec} and \ref{ex:spellout-algorithm-comp}, describe the two types of rescue movements that take place when the spellout in \ref{ex:spellout-algorithm-phrasal} fails (i.e. when there is no match in the lexicon).
+In the discussion about Modern German, only the first line leads to successfull spellout. In the next section in which I discuss Polish derivations, second and third line also lead to successfull spellouts. I give the full algorithm here to give the complete picture from the start.
 
-I illustrate this by merging \tsc{ref} and Σ, creating a ΣP.
+If these two movement operations still do not lead to a successfull spellout, there are two more derivational options possible: Backtracking and Spec Formation. I return to these options later in this section, when they are relevant in the derivation of Modern German relative pronouns.
+
+I start building the nominative relative pronoun. Starting from the bottom of the functional sequence, the first two features that are merged at \tsc{ref} and Σ, creating a ΣP.
 
 \ex.
 \begin{forest} boom
@@ -574,7 +583,7 @@ I illustrate this by merging \tsc{ref} and Σ, creating a ΣP.
   ]
 \end{forest}
 
-The syntactic structure is contained in the lexical tree in \ref{ex:mg-entry-r-rep}, repeated from \ref{ex:mg-entry-r}, which corresponds to the \tit{r}.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}, repeated from \ref{ex:mg-entry-r}, which corresponds to the \tit{r}.
 
 \ex.
 \begin{forest} boom
@@ -596,9 +605,10 @@ The syntactic structure is contained in the lexical tree in \ref{ex:mg-entry-r-r
   ]
   {\draw (.east) node[right]{⇔ \tit{r}}; }
 \end{forest}
-\label{ex:mg-spellout-r-rep}
+\label{ex:mg-entry-r-rep}
 
 Therefore, the ΣP is spelled out as \tit{r}. As usual, I mark this by circling the part of the structure that corresponds to the lexical entry, and placing the corresponding phonology under it.
+This spellout option corresponds to \ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm.
 
 \ex.
 \begin{forest} boom
@@ -613,192 +623,548 @@ Therefore, the ΣP is spelled out as \tit{r}. As usual, I mark this by circling 
        [\tsc{ref}]
   ]
 \end{forest}
-\label{ex:mg-spellout-e-refs}
+\label{ex:mg-spellout-r-ref-sigma}
 
+There are more features in the functional sequence, so the next feature is merged.
+This next feature is the feature \tsc{cl}, and a \tsc{cl}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
+Therefore, the \tsc{cl}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout-r-sigma-cl}.
 
-%
-% The next step in the derivation is to merge the following feature in the functional sequence in \ref{ex:fseq-wh-rel}. This is the feature \tsc{dx}, which creates the \tsc{dx}P.
-%
-% \ex.
-% \begin{forest} boom
-%   [\tsc{dx}P
-%       [\tsc{dx}]
-%       [\tsc{ref},
-%       tikz={
-%       \node[label=below:\tit{e},
-%       draw,circle,
-%       scale=0.85,
-%       fit to=tree]{};
-%       }
-%           [\tsc{ref}2]
-%           [\tsc{ref}1]
-%       ]
-%   ]
-% \end{forest}
-% \label{ex:mg-spellout-e-refs}
-%
-% The \tsc{dx}P is also contained in the lexical tree in \ref{ex:mg-entry-e-rep}. Therefore, the \tsc{dx}P spells out as \tit{e}, illustrated in \ref{ex:mg-spellout-e-dx}.
-%
-% \ex.
-% \begin{forest} boom
-%   [\tsc{dx}P,
-%   tikz={
-%   \node[label=below:\tit{e},
-%   draw,circle,
-%   scale=0.85,
-%   fit to=tree]{};
-%   }
-%       [\tsc{dx}]
-%       [\tsc{ref}
-%           [\tsc{ref}2]
-%           [\tsc{ref}1]
-%       ]
-%   ]
-% \end{forest}
-% \label{ex:mg-spellout-e-dx}
-%
-% Note here that the result of our derivation so far is not \tit{e}-\tit{e}. This is stated in \ref{ex:cyclic-override}.
-%
-% \ex. \tbf{Cyclic Override} \citep{starke2018}:\\
-% Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
-% \label{ex:cyclic-override}
-%
-% I reformulate this informally. If a lexical tree matches a syntactic structure, the lower matching items are replaced. This holds when the structure matches twice with the same lexical entry, and also when it matches with different lexical entries.
-%
-% The next feature in the functional sequence is \tsc{cl}, and a \tsc{cl}P is created.
-%
-% \ex.
-% \begin{forest} boom
-%   [\tsc{cl}{}
-%       [\tsc{cl}]
-%       [\tsc{dx}P,
-%       tikz={
-%       \node[label=below:\tit{e},
-%       draw,circle,
-%       scale=0.85,
-%       fit to=tree]{};
-%       }
-%           [\tsc{dx}]
-%           [\tsc{ref}
-%               [\tsc{ref}2]
-%               [\tsc{ref}1]
-%           ]
-%       ]
-%   ]
-% \end{forest}
-% \label{ex:mg-spellout-e-class}
+\ex.
+\begin{forest} boom
+  [\tsc{cl}P,
+  tikz={
+  \node[label=below:\tit{r},
+  draw,circle,
+  scale=0.9,
+  fit to=tree]{};
+  }
+      [\tsc{cl}]
+      [ΣP
+           [Σ]
+           [\tsc{ref}]
+      ]
+  ]
+\end{forest}
+\label{ex:mg-spellout-r-sigma-cl}
 
-% Here a problem arises. The lexical entry for \tit{e} does not contain the feature \tsc{cl} to make it a \tsc{cl}P.
-%
-% \ex.
-% \begin{forest} boom
-%   [\tsc{dx}P
-%       [\tsc{dx}P,name=tgt
-%           [\tit{e}, roof]
-%       ]
-%       [\tsc{cl}P
-%           [\tsc{cl}]
-%           [\tsc{dx}P,name=src,
-%           tikz={
-%           \node[label=below:\tit{e},
-%           draw,circle,
-%           scale=0.85,
-%           fit to=tree]{};
-%           }
-%               [\tsc{dx}]
-%               [\tsc{ref}
-%                   [\tsc{ref}2]
-%                   [\tsc{ref}1]
-%               ]
-%           ]
-%       ]
-%   ]
-%   \draw[->,dashed] (src) to[out=south west,in=east] (tgt);
-% \end{forest}
-% \label{ex:mg-spellout-e-r}
+The features \tsc{an} and \tsc{ind} are merged and spelled out in the same way.
+First, the feature \tsc{an} is merged, and a \tsc{an}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
+Therefore, the \tsc{an}P is spelled out as \tit{r}.
+Then, the feature \tsc{ind} is merged, and a \tsc{ind}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
+Therefore, the \tsc{ind}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout-r-sigma-cl}.
 
-% The next feature that is merged feature \tsc{dx}\scsub{1} is
-%
-% There are two other lexical entry that contains the feature \tsc{cl}, namely the one in \ref{ex:mg-entry-r} which spells out as \tit{r} and the one in \ref{ex:mg-entry-r} which spells out as \tit{n}. I repeat the one in \ref{ex:mg-entry-r} here as \ref{ex:mg-entry-r-rep}, because it has the least amount of unused features. Following the Elsewhere Principle, which says that a lexical tree with the least amount of unused features wins, this is the lexical entry that wins.
-%
-% \ex.\begin{forest} boom
-%   [\tsc{nom}P
-%       [\ac{f}1]
-%       [\tsc{ind}P
-%           [\tsc{ind}]
-%           [\tsc{an}P
-%               [\tsc{an}]
-%               [\tsc{cl}P
-%                   [\tsc{cl}]
-%               ]
-%           ]
-%       ]
-%   ]
-%   {\draw (.east) node[right]{⇔ \tit{r}}; }
-% \end{forest}
-% \label{ex:mg-entry-r-rep}
-%
-% As a result, the \tsc{cl}P spells out as \tit{r}.
-%
-% \ex.
-% \begin{forest} boom
-%   [\tsc{dx}P
-%       [\tsc{dx}P,name=tgt
-%           [\tit{e}, roof]
-%       ]
-%       [\tsc{cl}P,
-%       tikz={
-%       \node[label=below:\tit{r},
-%       draw,circle,
-%       scale=0.85,
-%       fit to=tree]{};
-%       }
-%           [\tsc{cl}]
-%       ]
-%   ]
-% \end{forest}
-% \label{ex:mg-spellout-e-r}
-%
-% Note here that it is crucial that the lexical entry for \tit{r} in \ref{ex:mg-entry-r-rep} has a unary bottom. Therefore, it can be inserted as the result of movement. What follows is that the lexical entry follows the existing structure and is spelled out as a suffix.
-%
-% The spellout proceeds by merging one by one the features \tsc{an} and \tsc{ind} (see the functional sequence in \ref{ex:fseq-wh-rel}), and spelling them out using the spellout algorithm.
+\ex.
+\begin{forest} boom
+  [\tsc{ind}P,
+  tikz={
+  \node[label=below:\tit{r},
+  draw,circle,
+  scale=1,
+  fit to=tree]{};
+  }
+      [\tsc{ind}]
+      [\tsc{an}P
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [ΣP
+                   [Σ]
+                   [\tsc{ref}]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\label{ex:mg-spellout-r-sigma-cl}
 
-The next point of interest arises when the feature \tsc{dx}\scsub{1} is merged.
-This feature cannot spell out together with all features merged so far (as the option in \ref{ex:spellout-algorithm-phrasal}).
-There is no spec, so the second option is impossible.
-Finally, it is impossible for \tsc{wh} to be spelled out as part of a suffix (as the option in \ref{ex:spellout-algorithm-spec}). This last option is impossible, because the lexical entry that contains the feature \tsc{wh} has a binary bottom. I repeat the lexical entry from \ref{ex:mg-entry-w} in \ref{ex:mg-entry-w-rep}.
+The next feature in the functional sequence is the feature \tsc{dx}\scsub{1}. This feature can not be spelled out as the other ones before. I show that in what follows.
+The feature \tsc{dx}\scsub{1} is merged, and a \tsc{prox}P is created, as shown in \ref{ex:mg-spellout-prox-phrasal}
 
+\ex.\label{ex:mg-spellout-prox-phrasal}
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{dx}\scsub{1}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                       [Σ]
+                       [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
 
+This syntactic structure does not form a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}. There is also no other lexical tree that contains the structure in \ref{ex:mg-spellout-prox-phrasal} as a constituent. Therefore, there is no successfull spellout for the syntactic structure in the derivational step in which the structure is spelled out as a single phrase (\ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm).
 
-The derivation turns to the last resort option, which is to build a complex left branch.
+The first movement option in the Spellout Algorithm is moving the specifier, as described in \ref{ex:spellout-algorithm-spec}. As there is no specifier in this structure, so the first movement option irrelevant.
+The second movement option in the Spellout Algorithm is moving the complement, as described in \ref{ex:spellout-algorithm-comp}. In this case, the complement of \tsc{dx}\scsub{1}, the \tsc{ind}P, is moved to the specifier of \tsc{ind}P. This movement is displayed in \ref{ex:mg-spellout-prox-comp-move}.
 
-\ex. \tbf{Spec Formation} \citep{starke2018}:\\
-If Merge F has failed to spell out, try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+\ex.\label{ex:mg-spellout-prox-comp-move}
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{ind}P,name=tgt
+          [\phantom{x}\tit{r}\phantom{x}, roof]
+      ]
+      [\tsc{prox}P
+          [\tsc{dx}\scsub{1}]
+          [\sout{\tsc{ind}P},name=src,
+           tikz={
+           \node[label=below:\tit{r},
+           draw,circle,
+           scale=0.925,
+           fit to=tree]{};
+           }
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [ΣP
+                           [Σ]
+                           [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\draw[->,dashed] (src) to[out=south west,in=east] (tgt);
+\end{forest}
 
-.. but the \tsc{wh} is on its own.. is \tsc{rel} merged right away?
+The result that arises after the movement is shown in \ref{ex:mg-spellout-prox-comp}.
 
-The last problem is the case feature. What happens then is backtracking + elements are split up, merged onto both of them, case can be spelled out with suffix.
+\ex.\label{ex:mg-spellout-prox-comp}
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{ind}P,name=tgt
+          [\phantom{x}\tit{r}\phantom{x}, roof]
+      ]
+      [\tsc{prox}P
+          [\tsc{dx}\scsub{1}]
+      ]
+  ]
+\end{forest}
 
+The \tsc{prox}P is a different constituent now. It still contains the feature \tsc{dx}\scsub{2}, but it no longer contains the \tsc{ind}P.
+However, also for this constituent there is no lexical tree that contains it, so there is no successfull spellout yet.
 
+As I mentioned earlier, there are two more derivational options possible: Backtracking and Spec Formation. Derivationally, Backtracking comes first. However, since this does not lead to a successfull spellout here I first introduce Spec Formation first and I return to Backtracking later. Spec Formation is a last resort operation, when the feature cannot be spelled out by any of the preceding options. It is formalized as in \ref{ex:merge-spec}.
 
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\\label{ex:merge-spec}
+If Merge F has failed to spell out (even after Backtracking), try to spawn a new derivation providing F and merge that with the current derivation, projecting F to the top node.
 
-%
-% The nominative masculine singular relative pronoun is built as follows.
-% The \tsc{ref}P is spelled out as \tit{e}.
-% The \tsc{ref}P is merged with \tsc{dx}\scsub{1}, and the whole phrase (\tsc{prox}P) is spelled out as \tit{e}.
-% The \tsc{prox}P is merged with \tsc{dx}\scsub{2}, and the whole phrase (\tsc{med}P) is spelled out as \tit{e}.
-%
-% The \tsc{med}P is merged with \tsc{cl}. There is no lexical entry that matches the whole phrase. There is no specifier to move, so this movement is irrelevant. The complement of \tsc{cl}, the \tsc{med}P, is moved to the specifier of \tsc{cl}P, and the \tsc{cl}P is spelled out as \tit{r}.
-% The \tsc{cl}P is merged with \tsc{an}. There is no lexical entry that matches the whole phrase. The specifier of \tsc{cl}P, the \tsc{med}P, is moved to the specifier of \tsc{an}P, and the \tsc{an}P is spelled out as \tit{r}.
-% The \tsc{an}P is merged with \tsc{ind}. There is no lexical entry that matched the whole phrase. The specifier of \tsc{an}P, the \tsc{med}P, is moved to the specifier of \tsc{ind}P, and the \tsc{ind}P is spelled out as \tit{r}.
-%
-% The \tsc{ind}P is merged with \tit{wh}. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. Backtracking also does not lead to a matching lexical entry. A complex specifier is created.
-%
-% The \tsc{wh}P is merged with \tsc{rel}. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. The first step of backtracking is that the two branches, the \tsc{wh}P and the \tsc{ind}P are separated. The \tsc{rel} is merged with the \tsc{wh}P (that only contains the \tsc{wh}) in the left branch and with the \tsc{ind}P in the right branch. In the left branch, the whole phrase (\tsc{rel}P) is spelled out as \tit{w}. In the right branch, there is no spellout.
-%
-% The \tsc{rel}P is merged with \ac{f}1. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. The first step of backtracking is that the two branches, the \tsc{rel}P and the \tsc{ind}P are separated. The \ac{f}1 is merged with the \tsc{rel}P in the left branch and with the \tsc{ind}P in the right branch. In both branches, there is no lexical entry that matches the whole phrase. In the left branch, there is no specifier to move, so this movement is irrelevant. In the right branch, the specifier of \tsc{ind}P, the \tsc{med}P, is moved to the specifier of \tsc{nom}P, and the \tsc{nom}P is spelled out as \tit{r}.
+To reformulate this informally, if none of the preceding spellout options led to a succesfull spellout, a last resort operation applies. The feature that has not been spelled out yet, is merged with some other features (to which I come back next) in a separate workspace. Crucially, the phrase that is created is contained in a lexical tree in the language's lexicon. Finally, the feature is spelled out successfully. The newly created phrase (the spec) is merged as a whole with the already existing structure.
 
-The final result is given in \ref{ex:mg-spellout-rel-nom}.
+Now I come back to the `other' features that the feature is merged with to create a phrase that can be spelled out. This cannot be just any feature. What is crucial here again is the functional sequence. The newly merged feature is merged with features that precede it in this sequence. This can be a single feature or more than one. I illustrate this with the Modern German relative pronouns.
+
+For \tsc{dx}\scsub{1} this means that it is merged with \tsc{ind}. Then, the lexicon is checked for a lexical tree that contains the phrase \tsc{prox}P that contains \tsc{dx}\scsub{1} and \tsc{ind}, as shown in \ref{ex:mg-spellout-dx1-ind}.
+
+\ex.\label{ex:mg-spellout-dx1-ind}
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{dx}\scsub{1}]
+      [\tsc{ind}]
+  ]
+\end{forest}
+
+This syntactic structure does not form a constituent in any of the lexical trees in the language's lexicon.
+Therefore, the feature \tsc{dx}\scsub{1} combines not only with the feature merged before it, but with a phrase that consists of the two features merged before it: \tsc{ind} and \tsc{an}. I give the phrase this creates in \ref{ex:mg-structure-dx1-ind-an}.
+
+\ex.\label{ex:mg-structure-dx1-ind-an}
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{dx}\scsub{1}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}]
+      ]
+  ]
+\end{forest}
+
+This syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-e-rep}, repeated from \ref{ex:mg-entry-e}, which corresponds to the \tit{e}.
+
+\ex.
+\begin{forest} boom
+  [\tsc{dist}P
+      [\tsc{dx}\scsub{3}]
+      [\tsc{med}P
+          [\tsc{dx}\scsub{2}]
+          [\tsc{prox}P
+              [\tsc{dx}\scsub{1}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{e}}; }
+  \label{ex:mg-entry-e-rep}
+\end{forest}
+
+Therefore, the \tsc{prox}P is spelled out as \tit{e}, as shown in \ref{ex:mg-spellout-dx1-ind-an}.
+
+\ex.\label{ex:mg-spellout-dx1-ind-an}
+\begin{forest} boom
+  [\tsc{prox}P,
+   tikz={
+   \node[label=below:\tit{e},
+   draw,circle,
+   scale=0.9,
+   fit to=tree]{};
+   }
+      [\tsc{dx}\scsub{1}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}]
+      ]
+  ]
+\end{forest}
+
+The newly created phrase is merged as a whole with the already existing structure. As specified in \ref{ex:merge-spec}, the feature \tsc{prox} projects to the top node. I show the results in \ref{ex:mg-spellout-proxp}.
+
+\ex.\label{ex:mg-spellout-proxp}
+\begin{forest} boom
+  [\tsc{prox}P
+      [\tsc{prox}P,
+       tikz={
+       \node[label=below:\tit{e},
+       draw,circle,
+       scale=0.9,
+       fit to=tree]{};
+       }
+          [\tsc{dx}\scsub{1}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}]
+          ]
+      ]
+      [\tsc{ind}P,
+      tikz={
+      \node[label=below:\tit{r},
+      draw,circle,
+      scale=1,
+      fit to=tree]{};
+      }
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                       [Σ]
+                       [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+Notice here that there is an overlap of multiple features between the phrase on the right and the phrase on the left.\footnote{
+There are two other proposals in the literature.
+\citet{caha2019} argue that there can only be a single feature overlap between the two phrases.
+\citet{de2018} argue that there cannot be any overlap at all, and the features used in the second workspace are removed from the structure in the other workspace.
+In this dissertation, I work with the proposal in \citet{starke2018} I introduced in the main text, which is the only one of the three that allows me to derive all the forms I encounter.
+}
+
+The next feature in the functional sequence is the feature \tsc{dx}\scsub{2}. As always, it merged to the existing syntactic structure, which is now the \tsc{prox}P. The result is the \tsc{med}P shown in \ref{ex:mg-spellout-medp-phrasal}.
+
+\ex.\label{ex:mg-spellout-medp-phrasal}
+\begin{forest} boom
+  [\tsc{med}P
+      [\tsc{dx}\scsub{2}]
+      [\tsc{prox}P
+          [\tsc{prox}P,
+           tikz={
+           \node[label=below:\tit{e},
+           draw,circle,
+           scale=0.9,
+           fit to=tree]{};
+           }
+              [\tsc{dx}\scsub{1}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}]
+              ]
+          ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=1,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [ΣP
+                           [Σ]
+                           [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+This whole structure does not form a constituent in any of the lexical trees in the language's lexicon. Neither of the spellout driven movement operations leads to a successful spellout. This means that, once again, the derivation reaches a point at which one of the two more possible derivational options come into play. As I mentioned before, Backtracking comes first, and this is the operation that leads to a successful spellout here.
+
+Consider the syntactic structure in \ref{ex:mg-spellout-medp-phrasal} again. The feature \tsc{dx}\scsub{2} is merged with the highest \tsc{prox}P. In this position it cannot be spelled out.
+Consider now the lexical entry in \ref{ex:mg-entry-e-rep}. This is a lexical tree that contains \tsc{dx}\scsub{2}. This means that the feature \tsc{dx}\scsub{2} somehow needs to end up in the Spec that has just been merged.
+I follow \citet{caha2019} who proposes that this happens via Backtracking. He argues that the main idea of Backtracking is that a feature is merged with a different tree than the one it was merged with before, as stated in \ref{ex:backtracking}.\footnote{
+In this dissertation I do not discuss the effect that Backtracking `normally' has, namely to try a different spellout option at the previous cycle. That does not mean that I assume it is not part of the derivation: I actually assume it a step that attempted is. I refrain from mentioning it, because this does not lead to a successful spellout in any of the derivations I discuss.
+}
+
+\ex. \tbf{The logic of backtracking} \pgcitep{caha2019}{198}\\\label{ex:backtracking}
+When spellout of F fails, go back to the previous cycle, and provide a different configuration for Merge F.
+
+Imagine a situation in which the previous feature was spelled out with a complex specifier and the next feature reaches the derivational option Backtracking. This is exactly the situation that arises after \tsc{dx}\scsub{2} is merged. Providing a different configuration means splitting up the two phrases, and then merging the feature again. Specifically, I adopt the proposal in which the features is merged in both workspaces, as stated in \ref{ex:multiple-merge}.
+
+\ex. \tbf{Multiple Merge} \pgcitep{caha2019}{227}\\\label{ex:multiple-merge}
+When backtracking reopens multiple workspaces, merge F in each such workspace.
+
+For the example under discussion, the situation looks as in \ref{ex:mg-dx2-2x}.
+
+\ex.\label{ex:mg-dx2-2x}
+\a.\label{ex:mg-proxp-dx2}
+\begin{forest} boom
+  [\tsc{med}P
+      [\tsc{dx}\scsub{2}]
+      [\tsc{prox}P
+          [\tsc{dx}\scsub{1}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}]
+          ]
+      ]
+  ]
+\end{forest}
+\b.\label{ex:mg-indp-dx2}
+\begin{forest} boom
+  [\tsc{med}P
+      [\tsc{dx}\scsub{2}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                       [Σ]
+                       [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+The feature \tsc{dx}\scsub{2} is merged in both workspaces, so it combines with the \tsc{prox}P in \ref{ex:mg-proxp-dx2} and with the \tsc{ind}P \ref{ex:mg-indp-dx2}. Spellout has to be successful in at least one of the two workspaces. From here on, the derivation proceeds, as usual, according to the Spellout Algorithm, with the only difference that it happens in two workspaces simultaneously.
+
+In the case of \ref{ex:mg-dx2-2x}, the spellout of \tsc{dx}\scsub{2} is successful in the syntactic structure in \ref{ex:mg-proxp-dx2}.
+This syntactic structure namely forms a constituent in the lexical tree in \ref{ex:mg-entry-e-rep}, which corresponds to the \tit{e}. As spellout has succeeded, the workspaces can be merged back together. The result is shown in \ref{ex:mg-spellout-medp-inspec}.
+
+\ex.\label{ex:mg-spellout-medp-inspec}
+\begin{forest} boom
+  [\tsc{med}P
+      [\tsc{med}P,
+       tikz={
+       \node[label=below:\tit{e},
+       draw,circle,
+       scale=0.9,
+       fit to=tree]{};
+       }
+          [\tsc{dx}\scsub{2}]
+          [\tsc{prox}P
+              [\tsc{dx}\scsub{1}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}]
+              ]
+          ]
+      ]
+      [\tsc{ind}P,
+      tikz={
+      \node[label=below:\tit{r},
+      draw,circle,
+      scale=1,
+      fit to=tree]{};
+      }
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                       [Σ]
+                       [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+The next feature on the functional sequence is \tsc{wh}. The story for \tsc{wh} is similar to the one for \tsc{dx}\scsub{1}.
+The feature is merged with the existing syntactic structure, creating a \tsc{wh}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout. Backtracking also does not lead to a successful spellout.
+Therefore, in a second workspace, the feature \tsc{wh} is merged with the feature \tsc{dx}\scsub{2} (the previous syntactic feature on the functional sequence) into a \tsc{wh}P.
+This syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-w-rep}, repeated from \ref{ex:mg-entry-w}, which corresponds to the \tit{w}.
+
+\ex. \begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P
+          [\tsc{wh}]
+          [\tsc{dx}\scsub{2}]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{w}}; }
+\end{forest}\label{ex:mg-entry-w-rep}
+
+Therefore, the \tsc{wh}P is spelled out as \tit{w}, and \tsc{wh}P is merged back to the existing syntactic structure, as shown in \ref{ex:mg-spellout-whp}.
+
+\ex.\label{ex:mg-spellout-whp}
+\begin{forest} boom
+  [\tsc{wh}P
+      [\tsc{wh}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=1,
+      fit to=tree]{};
+      }
+          [\tsc{wh}]
+          [\tsc{dx\scsub{2}}]
+      ]
+      [\tsc{med}P
+          [\tsc{med}P,
+           tikz={
+           \node[label=below:\tit{e},
+           draw,circle,
+           scale=0.9,
+           fit to=tree]{};
+           }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}]
+                  ]
+              ]
+          ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=1,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [ΣP
+                           [Σ]
+                           [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+The next feature on the functional sequence is \tsc{rel}. The story for \tsc{rel} is similar to the one for \tsc{dx}\scsub{2}.
+The feature is merged with the existing syntactic structure, creating a \tsc{rel}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{wh}P from the (higher) \tsc{med}P (which contains the lower \tsc{med}P and the \tsc{ind}P).
+The feature \tsc{rel} is merged in both workspaces, so with \tsc{wh}P and and with \tsc{med}P. The spellout of \tsc{rel} is successful when it is combined with the \tsc{wh}P.
+It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-w-rep}, which corresponds to the \tit{w}.
+The \tsc{rel}P is spelled out as \tit{w}, and the \tsc{rel}P is merged back to the existing syntactic structure, as shown in \ref{ex:mg-spellout-relp}.
+
+\ex.\label{ex:mg-spellout-relp}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=1,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{dx\scsub{2}}]
+          ]
+      ]
+      [\tsc{med}P
+          [\tsc{med}P,
+           tikz={
+           \node[label=below:\tit{e},
+           draw,circle,
+           scale=0.9,
+           fit to=tree]{};
+           }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}]
+                  ]
+              ]
+          ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{r},
+          draw,circle,
+          scale=1,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [ΣP
+                           [Σ]
+                           [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+For the nominative relative pronoun, the last feature on the functional sequence is the feature \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}, which corresponds to the \tit{r}. This is achieved via two instances of Backtracking in which phrases are split up. I go through the derivation step by step.
+
+The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{rel}P from the (higher) \tsc{med}P (which contains the lower \tsc{med}P and the \tsc{ind}P).
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{wh}P and and with the \tsc{med}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+
+Further Backtracking leads to splitting up the \tsc{med}P from the \tsc{ind}P.
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{med}P and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
+It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}, which corresponds to the \tit{r}.
+The \tsc{nom}P is spelled out as \tit{r}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-nom}.
 
 \ex.\label{ex:mg-spellout-rel-nom}
 \scriptsize{
@@ -860,6 +1226,41 @@ The final result is given in \ref{ex:mg-spellout-rel-nom}.
   ]
 \end{forest}
 }
+
+For the accusative relative pronoun, one more feature is merged: the \tsc{f}2. The story for \tsc{f}2 is similar to the one for \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{rel}P from the (higher) \tsc{med}P (which contains the lower \tsc{med}P and the \tsc{nom}P).
+The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{wh}P and and with the \tsc{med}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+
+Further Backtracking leads to splitting up the \tsc{med}P from the \tsc{nom}P.
+The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{med}P and and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
+It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, repeated from \ref{ex:mg-entry-n}, which corresponds to the \tit{n}.
+
+\ex.\label{ex:mg-entry-n-rep}
+\begin{forest} boom
+  [\tsc{acc}P
+      [\ac{f}2]
+      [\tsc{nom}P
+          [\ac{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [ΣP
+                          [Σ]
+                          [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{n}}; }
+\end{forest}
+
+The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-nom}.
 
 \ex.\label{ex:mg-spellout-rel-acc}
 \scriptsize{
@@ -925,11 +1326,7 @@ The final result is given in \ref{ex:mg-spellout-rel-nom}.
 \end{forest}
 }
 
-% The accusative masculine singular relative pronoun is built as the nominative singular relative pronoun, except for that the feature \ac{f}2 is added to make it an accusative.
-%
-% The \tsc{nom}P is merged with \ac{f}2. There is no lexical entry that matches the whole phrase, there is no match after spec-to-spec movement, and there is no match after complement movement. The first step of backtracking is that the two branches, the \tsc{rel}P and the \tsc{nom}P are separated. The \ac{f}2 is merged with the \tsc{rel}P in the left branch and with the \tsc{nom}P in the right branch. In both branches, there is no lexical entry that matches the whole phrase. In the left branch, there is no specifier to move, so this movement is irrelevant. In the right branch, the specifier of \tsc{nom}P, the \tsc{med}P, is moved to the specifier of \tsc{acc}P, and the \tsc{acc}P is spelled out as \tit{n}.
-
-To summarize, I showed independent evidence that the surface pronoun in Modern German is the relative pronoun. I decomposed the relative pronoun into the three morphemes \tit{w}, \tit{e} and the final consonant (\tit{r} and \tit{n}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituency that determine whether the relative pronoun can delete the light head or not.
+To summarize, I decomposed the relative pronoun into the three morphemes \tit{w}, \tit{e} and the final consonant (\tit{r} and \tit{n}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituency that determine whether the relative pronoun can delete the light head or not.
 
 \subsection{The (extra) light head}\label{sec:light-mg}
 

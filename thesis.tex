@@ -71,23 +71,28 @@ thanks
 \mainmatter
 \setcounter{secnumdepth}{4}
 
-% \include{introduction}
+\include{introduction}
 %
-\part{The case}\label{part:case-facts}
-% \include{recurring-pattern}
-% \include{case-decomposition}
+\part{The stable case facts}\label{part:case-facts}
+\include{recurring-pattern}
+\include{case-decomposition}
 
-\part{The base}\label{part:variation}
-% \include{case-competition-typology}
-% \include{committee-intro}
+\part{The typology}\label{part:variation}
+\include{case-competition-typology}
+\include{languages-without-case-competition}
+
+\part{Deriving the typology}
+\begingroup
+\let\clearpage\relax
+\include{committee-intro}
 \include{committee-mg}
 \include{committee-pol}
-% \include{committee-ohg}
-% \include{committee-end}
-
+\include{committee-ohg}
+\include{committee-end}
+\endgroup
 
 \bookmarksetup{startatroot}
-% \include{discussion}
+\include{discussion}
 
 %%%%%
 \backmatter
