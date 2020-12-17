@@ -1,5 +1,7 @@
 \documentclass[11pt,hidelinks]{memoir}
 
+\includeonly{committee-pol}
+
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
 \usepackage{fenna-files/abbreviations}
@@ -73,7 +75,7 @@ thanks
 
 \include{introduction}
 %
-\part{The stable case facts}\label{part:case-facts}
+\part{Case competition}\label{part:case-facts}
 \include{recurring-pattern}
 \include{case-decomposition}
 
@@ -82,14 +84,11 @@ thanks
 \include{languages-without-case-competition}
 
 \part{Deriving the typology}
-\begingroup
-\let\clearpage\relax
 \include{committee-intro}
 \include{committee-mg}
 \include{committee-pol}
 \include{committee-ohg}
 \include{committee-end}
-\endgroup
 
 \bookmarksetup{startatroot}
 \include{discussion}

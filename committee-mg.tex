@@ -1,7 +1,7 @@
 % !TEX root = thesis.tex
 
 
-\section{Deriving the internal-only type}\label{sec:deriving-only-internal}
+\chapter{Deriving the internal-only type}\label{sec:deriving-only-internal}
 
 Internal-only languages can be summarizes as in Table \ref{tbl:overview-rel-light-mg}.
 
@@ -28,7 +28,7 @@ When the internal and the external case match, the relative pronoun can delete t
 When the internal case is more complex than the external case, the relative pronoun can still delete the light head, for the same reason: the relative pronoun contains all constituents of the light head.
 This is no longer the case when the external case is more complex than the internal case. The light head does not contain all constituents of the relative pronoun, and the relative pronoun does not contain all constituents of the light head. As a result, there is no grammatical form to surface when the external case is more complex.
 
-\subsection{The relative pronoun}\label{sec:mg-rel}
+\section{The relative pronoun}\label{sec:mg-rel}
 
 In this section I discuss the relative pronoun in Modern German headless relatives.
 First, I show, independent from case facts, that the surface pronoun is the relative pronoun. The evidence comes from extraposition data.
@@ -417,7 +417,7 @@ What can be distinguished in Modern German is the differences of the vowel depen
    \ac{pl}  & d-ie   & d-ie    \\
  \bottomrule
  \end{tabular}
- \label{tbl:mg-paradigm-wh-rels}
+ \label{tbl:mg-paradigm-dems}
 \end{table}
 
 So, in sum:
@@ -506,7 +506,7 @@ and I showed what the relative pronouns as a whole look like (in \ref{ex:mg-stru
 What is still needed, is a theory for combining these morphemes into a relative pronoun. This theory should determine which morphemes should be combined with each other in which order. Ideally, the theory is not language-specific, but the same for all languages. In what follows I show how this is accomplished in Nanosyntax. Readers who are not interested in the precise mechanics can proceed directly to Section \ref{sec:light-mg}.
 
 
-\subsection{Combining morphemes in Nanosyntax}
+\section{Combining morphemes in Nanosyntax}
 
 The way Nanosyntax combines different morphemes is not by glueing them together directly from the lexicon. Instead, features are merged one by one using two components that drive the derivation. These two components are (1) a functional sequence, in which the features that need to be merged and their order in which they are merged are specified, and (2) the Spellout Algorithm, which describes the spellout procedure. The lexical entries that are available within a language interact with the derivation in such a way that the morphemes get combined in the right way. Note that the functional sequence and the Spellout Algorithm are stable across languages. The only difference between languages lies in their lexical entries.
 
@@ -554,7 +554,7 @@ Starting from the bottom, these are pronominal features (\tsc{ref} and Σ), deix
 Before I derive build the relative pronouns, I explain how the spellout procedure in Nanosyntax works. Features (Fs) are merged one by one according to the functional sequence, starting from the bottom. After each instance of merge, the constructed phrase must be spelled out, as stated in \ref{ex:cyclic-phrasal-spellout}.
 
 \ex. \tbf{Cyclic phrasal spellout} \citep{caha2020a}\\
-Spellout must successfully apply to the output of every Merge F operation. After successfull spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
+Spellout must succesfully apply to the output of every Merge F operation. After succesfull spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
 
 Spellout is successful when the phrase that contains the newly merged feature forms a constituents in a lexical tree that is part of the language's lexicon.
 When the new feature is merged, it forms a phrase with all features merged so far.
@@ -569,9 +569,9 @@ A Spellout Algorithm specifies which movement operations apply and in which orde
 
 I informally reformulate what is in \ref{ex:spellout-algorithm}. I start with the first line in \ref{ex:spellout-algorithm-phrasal}. This says that a feature F is merged, and the newly created phrase FP is attempted to spell out.
 The next two lines, \ref{ex:spellout-algorithm-spec} and \ref{ex:spellout-algorithm-comp}, describe the two types of rescue movements that take place when the spellout in \ref{ex:spellout-algorithm-phrasal} fails (i.e. when there is no match in the lexicon).
-In the discussion about Modern German, only the first line leads to successfull spellout. In the next section in which I discuss Polish derivations, second and third line also lead to successfull spellouts. I give the full algorithm here to give the complete picture from the start.
+In the discussion about Modern German, only the first line leads to succesfull spellout. In the next section in which I discuss Polish derivations, second and third line also lead to succesfull spellouts. I give the full algorithm here to give the complete picture from the start.
 
-If these two movement operations still do not lead to a successfull spellout, there are two more derivational options possible: Backtracking and Spec Formation. I return to these options later in this section, when they are relevant in the derivation of Modern German relative pronouns.
+If these two movement operations still do not lead to a succesfull spellout, there are two more derivational options possible: Backtracking and Spec Formation. I return to these options later in this section, when they are relevant in the derivation of Modern German relative pronouns.
 
 I start building the nominative relative pronoun. Starting from the bottom of the functional sequence, the first two features that are merged at \tsc{ref} and Σ, creating a ΣP.
 
@@ -654,7 +654,7 @@ The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-en
 Therefore, the \tsc{an}P is spelled out as \tit{r}.
 Then, the feature \tsc{ind} is merged, and a \tsc{ind}P is created.
 The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
-Therefore, the \tsc{ind}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout-r-sigma-cl}.
+Therefore, the \tsc{ind}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout-r-ind}.
 
 \ex.
 \begin{forest} boom
@@ -678,7 +678,7 @@ Therefore, the \tsc{ind}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellou
       ]
   ]
 \end{forest}
-\label{ex:mg-spellout-r-sigma-cl}
+\label{ex:mg-spellout-r-ind}
 
 The next feature in the functional sequence is the feature \tsc{dx}\scsub{1}. This feature can not be spelled out as the other ones before. I show that in what follows.
 The feature \tsc{dx}\scsub{1} is merged, and a \tsc{prox}P is created, as shown in \ref{ex:mg-spellout-prox-phrasal}
@@ -703,9 +703,9 @@ The feature \tsc{dx}\scsub{1} is merged, and a \tsc{prox}P is created, as shown 
   ]
 \end{forest}
 
-This syntactic structure does not form a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}. There is also no other lexical tree that contains the structure in \ref{ex:mg-spellout-prox-phrasal} as a constituent. Therefore, there is no successfull spellout for the syntactic structure in the derivational step in which the structure is spelled out as a single phrase (\ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm).
+This syntactic structure does not form a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}. There is also no other lexical tree that contains the structure in \ref{ex:mg-spellout-prox-phrasal} as a constituent. Therefore, there is no succesfull spellout for the syntactic structure in the derivational step in which the structure is spelled out as a single phrase (\ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm).
 
-The first movement option in the Spellout Algorithm is moving the specifier, as described in \ref{ex:spellout-algorithm-spec}. As there is no specifier in this structure, so the first movement option irrelevant.
+The first movement option in the Spellout Algorithm is moving the specifier, as described in \ref{ex:spellout-algorithm-spec}. As there is no specifier in this structure, so the first movement option is irrelevant.
 The second movement option in the Spellout Algorithm is moving the complement, as described in \ref{ex:spellout-algorithm-comp}. In this case, the complement of \tsc{dx}\scsub{1}, the \tsc{ind}P, is moved to the specifier of \tsc{ind}P. This movement is displayed in \ref{ex:mg-spellout-prox-comp-move}.
 
 \ex.\label{ex:mg-spellout-prox-comp-move}
@@ -755,14 +755,14 @@ The result that arises after the movement is shown in \ref{ex:mg-spellout-prox-c
 \end{forest}
 
 The \tsc{prox}P is a different constituent now. It still contains the feature \tsc{dx}\scsub{2}, but it no longer contains the \tsc{ind}P.
-However, also for this constituent there is no lexical tree that contains it, so there is no successfull spellout yet.
+However, also for this constituent there is no lexical tree that contains it, so there is no succesfull spellout yet.
 
-As I mentioned earlier, there are two more derivational options possible: Backtracking and Spec Formation. Derivationally, Backtracking comes first. However, since this does not lead to a successfull spellout here I first introduce Spec Formation first and I return to Backtracking later. Spec Formation is a last resort operation, when the feature cannot be spelled out by any of the preceding options. It is formalized as in \ref{ex:merge-spec}.
+As I mentioned earlier, there are two more derivational options possible: Backtracking and Spec Formation. Derivationally, Backtracking comes first. However, since this does not lead to a succesfull spellout here I first introduce Spec Formation first and I return to Backtracking later. Spec Formation is a last resort operation, when the feature cannot be spelled out by any of the preceding options. It is formalized as in \ref{ex:merge-spec}.
 
 \ex. \tbf{Spec Formation} \citep{starke2018}:\\\label{ex:merge-spec}
 If Merge F has failed to spell out (even after Backtracking), try to spawn a new derivation providing F and merge that with the current derivation, projecting F to the top node.
 
-To reformulate this informally, if none of the preceding spellout options led to a succesfull spellout, a last resort operation applies. The feature that has not been spelled out yet, is merged with some other features (to which I come back next) in a separate workspace. Crucially, the phrase that is created is contained in a lexical tree in the language's lexicon. Finally, the feature is spelled out successfully. The newly created phrase (the spec) is merged as a whole with the already existing structure.
+To reformulate this informally, if none of the preceding spellout options led to a succesfull spellout, a last resort operation applies. The feature that has not been spelled out yet, is merged with some other features (to which I come back next) in a separate workspace. Crucially, the phrase that is created is contained in a lexical tree in the language's lexicon. Finally, the feature is spelled out succesfully. The newly created phrase (the spec) is merged as a whole with the already existing structure.
 
 Now I come back to the `other' features that the feature is merged with to create a phrase that can be spelled out. This cannot be just any feature. What is crucial here again is the functional sequence. The newly merged feature is merged with features that precede it in this sequence. This can be a single feature or more than one. I illustrate this with the Modern German relative pronouns.
 
@@ -1159,7 +1159,7 @@ For the nominative relative pronoun, the last feature on the functional sequence
 The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 Backtracking leads splitting up the \tsc{rel}P from the (higher) \tsc{med}P (which contains the lower \tsc{med}P and the \tsc{ind}P).
-The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{wh}P and and with the \tsc{med}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{med}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 
 Further Backtracking leads to splitting up the \tsc{med}P from the \tsc{ind}P.
 The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{med}P and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
@@ -1328,7 +1328,7 @@ The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back i
 
 To summarize, I decomposed the relative pronoun into the three morphemes \tit{w}, \tit{e} and the final consonant (\tit{r} and \tit{n}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituency that determine whether the relative pronoun can delete the light head or not.
 
-\subsection{The (extra) light head}\label{sec:light-mg}
+\section{The (extra) light head}\label{sec:light-mg}
 
 In Section \ref{sec:basic-idea}, I argued that headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains all constituents of the light head. I suggested that this holds in Modern German, as long as the external case is not more complex than the internal case. In the previous section, I gave the internal structure of the relative pronoun, i.e. which constituents the relative pronoun consists of. In this section, I first need to identify the light head, as it does not surface in headless relatives. Then I show what its internal structure looks like: it is a constituent within the relative pronoun.
 
@@ -1550,7 +1550,7 @@ fit to=tree]{};
 % At first sight it seems like \citet{fuss2014} discuss a exception to this claim, namely headless relatives with \tsc{d}-pronouns. However, they claim that these headless relatives are actually light-headed relatives in which one of two syncretic elements is deleted by haplology.
 
 
-\subsection{Comparing constituents}\label{sec:comparing-mg}
+\section{Comparing constituents}\label{sec:comparing-mg}
 
 Consider the example in \ref{ex:mg-nom-nom-rep}, in which the internal nominative case competes against the external nominative case. The relative clause is marked in bold, and the extra light head and the relative pronoun are underlined.
 The internal case is nominative, as the predicate \tit{mögen} `to like' takes nominative subjects. The relative pronoun \tit{wer} `\ac{rel}.\ac{an}.\ac{nom}' appears in the nominative case. This is the element that surfaces.
