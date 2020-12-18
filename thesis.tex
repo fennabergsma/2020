@@ -1,10 +1,12 @@
 \documentclass[11pt,hidelinks]{memoir}
 
-% \includeonly{committee-pol}
+\includeonly{constituent-containment}
 
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
 \usepackage{fenna-files/abbreviations}
+
+\usepackage{adjustbox}
 
 \begin{document}
 
@@ -84,11 +86,11 @@ thanks
 \include{languages-without-case-competition}
 
 \part{Deriving the typology}
-\include{committee-intro}
-\include{committee-mg}
-\include{committee-pol}
-\include{committee-ohg}
-\include{committee-end}
+\include{constituent-containment}
+\include{deriving-internalonly}
+\include{deriving-matching}
+\include{deriving-unrestricted}
+\include{larger-syntax}
 
 \bookmarksetup{startatroot}
 \include{discussion}

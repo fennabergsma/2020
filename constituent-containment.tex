@@ -1,6 +1,6 @@
 % !TEX root = thesis.tex
 
-\chapter{Constituent containment}\label{sec:basic-idea}
+\chapter{Constituent containment}\label{ch:constituent-containment}
 
 In Chapter \ref{ch:typology} I introduced two descriptive parameters that generate the attested languages, as shown in Figure \ref{fig:two-parameters}.
 The first parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes between unrestricted languages (e.g. Old High German) on the one hand and internal-only languages (e.g. Modern German) and matching languages (e.g. Polish) on the other hand.
@@ -96,35 +96,25 @@ The light head appears as the surface pronoun when the light head can delete the
 
 Whether or not one element can delete the other depends on the comparison between the two. Specifically, I compare the constituents within light heads and relative pronouns to each other. Light heads and relative pronouns do not only correspond to case features, but also to other features (having to do with number, gender, etc.). It differs per language how language organize these features into constituents. In this chapter, I illustrate how these different constituents within light heads and relative pronouns lead to the differences in whether or not the light head and the relative pronoun can be deleted, and therefore to different language types.
 
-In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Section \ref{sec:deriving-only-internal} to \ref{sec:deriving-nonmatching} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-structure} gives a simplified representation of them.\footnote{
-The structures in Figure \ref{fig:rel-lh-structure} are not base structures but derived ones. I assume the base structure of the light head to be as in \ref{ex:base-light-head} and the base structure of the relative pronoun to be as in \ref{ex:base-relative-pronoun}.
+In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Chapter \ref{ch:deriving-onlyinternal} to \ref{ch:deriving-unrestricted} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-structure} gives a simplified representation of them.\footnote{
+The structure of the relative pronoun in Figure \ref{fig:rel-lh-structure} is not a base structure but a derived one. I assume the base structure of the relative pronoun to be as in \ref{ex:base-relative-pronoun}.
 
-\ex.
-\a.\label{ex:base-light-head}
-  \begin{forest} boom
-    [\tsc{k}P,
-        [\tsc{k}]
-        [ϕP
-            [\phantom{x}ϕ\phantom{x}, roof]
-        ]
-    ]
-  \end{forest}
-\b.\label{ex:base-relative-pronoun}
+\ex.\label{ex:base-relative-pronoun}
   \begin{forest} boom
     [\tsc{k}P
         [\tsc{k}]
         [\tsc{rel}P
             [\tsc{rel}]
             [ϕP
-                [\phantom{x}ϕ\phantom{x}, roof]
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
     ]
   \end{forest}
 
-The structure for the relative pronoun in Figure \ref{fig:rel-lh-structure} cannot be derived from the base structures in \ref{ex:base-relative-pronoun}. It is a simplification of a more complex situation for which I only give the intuition here.
+The structure in Figure \ref{fig:rel-lh-structure} cannot be derived from the base structures in \ref{ex:base-relative-pronoun}. It is a simplification of a more complex situation for which I only give the intuition here.
 
-In Section \ref{sec:deriving-only-internal} I show the actual decomposition of the light head and the relative pronoun and how I reach the derived structure. I work with the derived structure in the main text because this is the configuration in which the containment relations under discussion hold.
+In Section \ref{ch:deriving-onlyinternal} I show the actual decomposition of the light head and the relative pronoun and how I reach the derived structure. I work with the derived structure in the main text because this is the configuration in which the containment relations under discussion hold.
 }
 The light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun in addition has a relative feature (\tsc{rel}).
 
@@ -135,12 +125,10 @@ The light head and the relative pronoun partly contain the same syntactic featur
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-      [\tsc{k}P
+      [\tsc{k}P,
+          [\tsc{k}]
           [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof]
-          ]
-          [\tsc{k}P,
-              [\tsc{k}]
+              [\phantom{x}ϕ\phantom{x}, roof, baseline]
           ]
       ]
       \end{forest}
@@ -148,12 +136,10 @@ The light head and the relative pronoun partly contain the same syntactic featur
     \begin{forest} boom
       [\tsc{rel}P
           [\tsc{rel}]
-          [\tsc{k}P
+          [\tsc{k}P,
+              [\tsc{k}]
               [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof]
-              ]
-              [\tsc{k}P,
-                  [\tsc{k}]
+                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
               ]
           ]
       ]
@@ -183,17 +169,15 @@ The \tsc{k}P is contained in the \tsc{rel}P, so the relative pronoun can delete 
         fill=DG,fill opacity=0.2,
         fit to=tree]{};
         }
+            [\tsc{k}]
             [ϕP
-                [\phantom{x}ϕ\phantom{x}, roof]
-            ]
-            [\tsc{k}P,
-                [\tsc{k}]
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{rel}P, s sep=15mm
+        [\tsc{rel}P
             [\tsc{rel}]
             [\tsc{k}P,
             tikz={
@@ -202,11 +186,9 @@ The \tsc{k}P is contained in the \tsc{rel}P, so the relative pronoun can delete 
             scale=0.85,
             fit to=tree]{};
             }
+                [\tsc{k}]
                 [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof]
-                ]
-                [\tsc{k}P
-                    [\tsc{k}]
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
                 ]
             ]
         ]
@@ -236,26 +218,17 @@ I start with the example in Figure \ref{fig:rel-acc-lh-nom-structure}, in which 
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [\tsc{nom}P, s sep=15mm
-            [ϕP,
-            tikz={
-            \node[draw,circle,
-            dashed,
-            scale=0.8,
-            fill=DG,fill opacity=0.2,
-            fit to=tree]{};
-            }
-                [\phantom{x}ϕ\phantom{x}, roof]
-            ]
-            [\tsc{nom}P,
-            tikz={
-            \node[draw,circle,
-            dashed,
-            scale=0.8,
-            fill=DG,fill opacity=0.2,
-            fit to=tree]{};
-            }
-                [\tsc{f}1]
+        [\tsc{nom}P,
+        tikz={
+        \node[draw,circle,
+        dashed,
+        scale=0.85,
+        fill=DG,fill opacity=0.2,
+        fit to=tree]{};
+        }
+            [\tsc{f}1]
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
       \end{forest}
@@ -264,25 +237,17 @@ I start with the example in Figure \ref{fig:rel-acc-lh-nom-structure}, in which 
         [\tsc{rel}P
             [\tsc{rel}]
             [\tsc{acc}P
-                [ϕP,
+                [\tsc{f}2]
+                [\tsc{nom}P,
                 tikz={
                 \node[draw,circle,
                 dashed,
-                scale=0.8,
+                scale=0.85,
                 fit to=tree]{};
                 }
-                    [\phantom{x}ϕ\phantom{x}, roof]
-                ]
-                [\tsc{acc}P
-                    [\tsc{f}2]
-                    [\tsc{nom}P,
-                    tikz={
-                    \node[draw,circle,
-                    dashed,
-                    scale=0.8,
-                    fit to=tree]{};
-                    }
-                        [\tsc{f}1]
+                    [\tsc{f}1]
+                    [ϕP
+                        [\phantom{x}ϕ\phantom{x}, roof, baseline]
                     ]
                 ]
             ]
@@ -309,25 +274,17 @@ I continue with the example in Figure \ref{fig:rel-nom-lh-acc-structure}, in whi
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
         [\tsc{acc}P
-            [ϕP,
+            [\tsc{f}2]
+            [\tsc{nom}P,
             tikz={
             \node[draw,circle,
             dashed,
-            scale=0.8,
+            scale=0.85,
             fit to=tree]{};
             }
-                [\phantom{x}ϕ\phantom{x}, roof]
-            ]
-            [\tsc{acc}P
-                [\tsc{f}2]
-                [\tsc{nom}P,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.8,
-                fit to=tree]{};
-                }
-                    [\tsc{f}1]
+                [\tsc{f}1]
+                [ϕP
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
                 ]
             ]
         ]
@@ -336,24 +293,16 @@ I continue with the example in Figure \ref{fig:rel-nom-lh-acc-structure}, in whi
       \begin{forest} boom
         [\tsc{rel}P
             [\tsc{rel}]
-            [\tsc{nom}P, s sep=15mm
-                [ϕP,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.8,
-                fit to=tree]{};
-                }
-                    [\phantom{x}ϕ\phantom{x}, roof]
-                ]
-                [\tsc{nom}P,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.8,
-                fit to=tree]{};
-                }
-                    [\tsc{f}1]
+            [\tsc{nom}P,
+            tikz={
+            \node[draw,circle,
+            dashed,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{f}1]
+                [ϕP
+                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
                 ]
             ]
         ]
@@ -388,7 +337,7 @@ I illustrate the difference between feature and constituent containment with two
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [\tsc{k}P,
+        [\tsc{nom}P,
         tikz={
         \node[draw,circle,
         dashed,
@@ -396,9 +345,9 @@ I illustrate the difference between feature and constituent containment with two
         fill=DG,fill opacity=0.2,
         fit to=tree]{};
         }
-            [\tsc{k}]
+            [\tsc{f}1]
             [ϕP
-                [\phantom{x}ϕ\phantom{x}, roof]
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
       \end{forest}
@@ -415,7 +364,7 @@ I illustrate the difference between feature and constituent containment with two
             }
                 [\tsc{f}1]
                 [XP
-                    [\phantom{xxx}, roof]
+                    [\phantom{xxx}, roof, baseline]
                 ]
             ]
         ]
@@ -429,6 +378,8 @@ I illustrate the difference between feature and constituent containment with two
 In Figure \ref{fig:acc-nom-structure}, two different types of containment hold: feature containment and constituent containment.
 I start with feature containment. Each feature of the \tsc{k}P (i.e. ϕ and \tsc{k}) is also a feature within the \tsc{rel}P, so the \tsc{rel}P contains the \tsc{k}P.
 Constituent containment works as follows. Each constituent of the \tsc{k}P (i.e. ϕP and \tsc{k}P that contains \tsc{k} and ϕP) is also a constituent of the \tsc{k}P. Therefore, \tsc{rel}P contains contains the \tsc{k}P.
+
+%just give two constituents, compare it to the german example
 
 Constituent containment is a stronger requirement than feature containment. In Figure \ref{fig:acc-nom-structure-moved-out} I show a situation in which the feature containment requirement holds but the constituent containment requirement does not. It is the same picture as in Figure \ref{fig:acc-nom-structure} except for that the ϕP has moved out of the \tsc{rel}P.
 
@@ -448,7 +399,7 @@ Constituent containment is a stronger requirement than feature containment. In F
             scale=0.8,
             fit to=tree]{};
             }
-                [\phantom{x}ϕ\phantom{x}, roof]
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
       \end{forest}
@@ -462,7 +413,7 @@ Constituent containment is a stronger requirement than feature containment. In F
             scale=0.8,
             fit to=tree]{};
             }
-                [\phantom{x}ϕ\phantom{x}, roof]
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
             [\tsc{rel}P
                 [\tsc{rel}]
@@ -478,10 +429,12 @@ Constituent containment is a stronger requirement than feature containment. In F
   \label{fig:acc-nom-structure-moved-out}
 \end{figure}
 
+%this is exactly what happens in polish!
+
 There is still feature containment: the \tsc{k}P contains ϕ and \tsc{k} and so does the \tsc{rel}P.
 However, there is no longer constituent containment: the \tsc{k}P constituent containing ϕP and \tsc{k}P that contains \tsc{k} and ϕP is no longer a constituent within the \tsc{rel}P.
 
-In Section \ref{sec:deriving-matching} I show that only the stronger requirement of constituent containment is able to distinguish the internal-only from the matching type of language, and that the weaker requirement of feature containment is not.
+In Section \ref{ch:deriving-matching} I show that only the stronger requirement of constituent containment is able to distinguish the internal-only from the matching type of language, and that the weaker requirement of feature containment is not.
 
 Constituent containment is also what seems to be crucial in the deletion of nominal modifiers. Cinque argues that nominal modifiers can only be absent if they form a constituent with the NP \citep{cinqueforthcoming}. If they are not, they can also not be interpreted.
 
@@ -569,6 +522,8 @@ To sum up, the comparison between light heads requires constituent containment. 
 
 \section{The unrestricted type}
 
+%the features are slightly different here..
+
 In unrestricted languages like Old High German, the light head can delete the relative pronoun and the relative pronoun can delete the light head. The property of unrestricted languages that I connect to this behavior is that their light heads and relative pronoun are syncretic. I suggest that if there is no constituent containment, but the two forms are spelled out by the same morpheme, one element can still delete the other.
 Consider Figure \ref{fig:rel-lh-syncretism1}, in which the relative pronoun deletes the light head.
 
@@ -579,64 +534,48 @@ Consider Figure \ref{fig:rel-lh-syncretism1}, in which the relative pronoun dele
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [\tsc{k}P, s sep=20mm
-            [ϕP,
-            tikz={
-            \node[label=below:\tit{α},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
-            fill=DG,fill opacity=0.2,
-            fit to=tree]{};
-            }
-                [\phantom{x}ϕ\phantom{x}, roof]
-            ]
-            [\tsc{k}P,
-            tikz={
-            \node[draw,circle,
-            dashed,
-            scale=0.8,
-            fill=DG,fill opacity=0.2,
-            fit to=tree]{};
-            }
-                [\tsc{k}]
+        [\tsc{k}P,
+        tikz={
+        \node[label=below:\tit{α},
+        draw,circle,
+        scale=0.85,
+        fit to=tree]{};
+        \node[draw,circle,
+        dashed,
+        scale=0.9,
+        fill=DG,fill opacity=0.2,
+        fit to=tree]{};
+        }
+            [\tsc{k}]
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{k}P, s sep=20mm
-            [\tsc{rel}P,
-            tikz={
-            \node[label=below:\tit{α},
-            draw,circle,
-            scale=0.95,
-            fit to=tree]{};
-            }
-                [\tsc{rel}]
-                [ϕP,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.8,
-                fit to=tree]{};
-                }
-                    [\phantom{x}ϕ\phantom{x}, roof]
-                ]
-            ]
-            [\tsc{k}P,
-            tikz={
-            \node[draw,circle,
-            dashed,
-            scale=0.8,
-            fit to=tree]{};
-            }
-                [\tsc{k}]
-            ]
-        ]
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{α},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+              [\tsc{k}P,
+              tikz={
+              \node[draw,circle,
+              dashed,
+              scale=0.8,
+              fit to=tree]{};
+              }
+                  [\tsc{k}]
+                  [ϕP
+                      [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                  ]
+              ]
+          ]
+      ]
       \end{forest}\\
       \bottomrule
   \end{tabular}
@@ -659,65 +598,49 @@ Consider Figure \ref{fig:rel-lh-syncretism2}, in which the light head deletes th
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [\tsc{k}P, s sep=20mm
-            [ϕP,
-            tikz={
-            \node[label=below:\tit{α},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
-            fit to=tree]{};
-            }
-                [\phantom{x}ϕ\phantom{x}, roof]
-            ]
-            [\tsc{k}P,
-            tikz={
-            \node[draw,circle,
-            dashed,
-            scale=0.8,
-            fit to=tree]{};
-            }
-                [\tsc{k}]
+        [\tsc{k}P,
+        tikz={
+        \node[label=below:\tit{α},
+        draw,circle,
+        scale=0.85,
+        fit to=tree]{};
+        \node[draw,circle,
+        dashed,
+        scale=0.9,
+        fit to=tree]{};
+        }
+            [\tsc{k}]
+            [ϕP
+                [\phantom{x}ϕ\phantom{x}, roof, baseline]
             ]
         ]
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{k}P, s sep=20mm
-            [\tsc{rel}P,
-            tikz={
-            \node[label=below:\tit{α},
-            draw,circle,
-            scale=0.95,
-            fill=LG,fill opacity=0.2,
-            fit to=tree]{};
-            }
-                [\tsc{rel}]
-                [ϕP,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.8,
-                fill=DG,fill opacity=0.2,
-                fit to=tree]{};
-                }
-                    [\phantom{x}ϕ\phantom{x}, roof]
-                ]
-            ]
-            [\tsc{k}P,
-            tikz={
-            \node[draw,circle,
-            dashed,
-            scale=0.8,
-            fill=DG,fill opacity=0.2,
-            fit to=tree]{};
-            }
-                [\tsc{k}]
-            ]
-        ]
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{α},
+      draw,circle,
+      fill=LG,fill opacity=0.2,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+              [\tsc{k}P,
+              tikz={
+              \node[draw,circle,
+              dashed,
+              scale=0.8,
+              fill=DG,fill opacity=0.2,
+              fit to=tree]{};
+              }
+                  [\tsc{k}]
+                  [ϕP
+                      [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                  ]
+              ]
+          ]
+      ]
       \end{forest}\\
       \bottomrule
   \end{tabular}
@@ -730,9 +653,9 @@ Just as in Figure \ref{fig:rel-lh-syncretism1}, the ϕP in the light head is spe
 I start with the right-most constituent of the relative pronoun: \tsc{k}P. This constituent is also a constituent in the relative pronoun.
 I continue with the left-most constituent of the relative pronoun: the \tsc{rel}P. This constituent is not contained in the light head. The ϕP lacks the \tsc{rel} to make it a \tsc{rel}P. However, the two constituents are syncretic: the ϕP is also spelled out as \tit{α}. I suggest that this syncretism is also enough to license the deletion. I illustrate this by marking the content of the dashed circles for the relative pronoun gray and the portion that is deleted by syncretism in a lighter shade of gray.
 
-To sum up, each constituent of the relative pronoun is either also a constituent within the light head or it is syncretic with a constituent within the light head. Therefore, the relative pronoun can be absent. The fact that syncretism licenses deletion is not specific to the portion of the structure that corresponds to ϕ and \tsc{rel}. Syncretic cases can have the same effect, the inanimate nominative and inanimate accusative singular in Modern German being an instance of it. I give examples of this in Section \ref{sec:deriving-nonmatching}.
+To sum up, each constituent of the relative pronoun is either also a constituent within the light head or it is syncretic with a constituent within the light head. Therefore, the relative pronoun can be absent. The fact that syncretism licenses deletion is not specific to the portion of the structure that corresponds to ϕ and \tsc{rel}. Syncretic cases can have the same effect, the inanimate nominative and inanimate accusative singular in Modern German being an instance of it. I give examples of this in Section \ref{ch:deriving-nonmatching}.
 
-\section{Everything is constituent containment}
+\section{Summary}
 
 In summing up this section, I return to the metaphor with the committee that I introduced in Chapter \ref{ch:typology}. I wrote that first case competition takes place, in which a more complex case wins over a less complex case. This case competition can now be reformulated into a more general mechanism, namely constituent comparison. A more complex case corresponds to a constituent that contains the constituent of a less complex case.
 
@@ -741,7 +664,7 @@ Subsequently, I noted that there is a committee that can either approve the winn
 In other words, the grammaticality of a headless relative depends on several instances of constituent comparison. The constituents that are compared are those of the light head and the relative pronoun, which both bear their own case. Case is special in that it can differ from sentence to sentence within a language. Therefore, the grammaticality of a sentence can differ within a language depending on the internal and external case. The part of the light head and relative pronoun that does not involve case features is stable within a language. Therefore, whether the internal or external case is `allowed to surface' does not differ within a language.
 
 In this dissertation I describe different language types in case competition in headless relatives. In my account, the different language types are a result of a comparison of the light head and the relative pronoun in the language.
-The larger syntactic context in which this takes place should be kept stable. The operation that deletes the light head or the relative pronoun is the same for all language types. In this work, I do not specify on which larger syntactic structure and which deletion operation should be used. In Section \ref{sec:larger-syntax} I discuss existing proposals on these topics and to what extend they are compatible with my account.
+The larger syntactic context in which this takes place should be kept stable. The operation that deletes the light head or the relative pronoun is the same for all language types. In this work, I do not specify on which larger syntactic structure and which deletion operation should be used. In Section \ref{ch:larger-syntax} I discuss existing proposals on these topics and to what extend they are compatible with my account.
 
 To conclude, in this section I introduced the assumptions that headless relatives are derived from light-headed relatives and that relative pronouns contain at least one more feature than light heads. A headless relative is grammatical when either the light head or the relative pronoun contains all constituents of the other element. This set of assumptions derives that only the most complex case can surface and that there is no language of the external-only type.
 
