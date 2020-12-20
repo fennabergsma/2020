@@ -56,18 +56,18 @@ Several others claim that headless relatives have a head, but that it is phonolo
 }
 The light head bears the external case, and the relative pronoun bears the internal case, as illustrated in \ref{ex:light+rel}.
 
-\ex. light head\scsub{ext} [relative pronoun\scsub{int} ... ]\label{ex:light+rel}
+\ex. light head\scsub{ext} [\tsc{rp}\scsub{int} ... ]\label{ex:light+rel}
 
 In a headless relative, either the light head or the relative pronoun is absent.
 A light head or relative pronoun can be absent under the following condition: when it forms a constituent within the other element (i.e. the light head or the relative pronoun).
 
 To see what a light-headed relative looks like, consider the light-headed relative in \ref{ex:ohg-light-headed}.
-\tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the light head of the relative clause. This is the element that appears in the external case, the case that reflects the grammatical role in the main clause.
-\tit{Then} `\tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause. This is the element that appears in the internal case, the case that reflects the grammatical role within the relative clause.
+\tit{Thér} `\tsc{lh}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the light head of the relative clause. This is the element that appears in the external case, the case that reflects the grammatical role in the main clause.
+\tit{Then} `\tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause. This is the element that appears in the internal case, the case that reflects the grammatical role within the relative clause.
 
 \exg. eno nist thiz thér \tbf{then} \tbf{ir} \tbf{suochet} \tbf{zi} \tbf{arslahanne}?\\
- now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
- \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
+ now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{lh}.\tsc{sg}.\tsc{m}.\tsc{nom}
+ \tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
  `Isn't this now the one, who you seek to kill?'\label{ex:ohg-light-headed}
 
 The difference between a light-headed relative and a headless relative is that in a headless relative either the light head or the relative pronoun does not surface.
@@ -84,7 +84,7 @@ The first option is that the relative pronoun, which bears the internal case, ca
 surface pronoun             \\
 \cmidrule(lr){1-1}
 light head\scsub{ext}       \\
-relative pronoun\scsub{int} \\
+\tsc{rp}\scsub{int} \\
 {*}                         \\
 \bottomrule
 \end{tabular}
@@ -96,7 +96,7 @@ The light head appears as the surface pronoun when the light head can delete the
 
 Whether or not one element can delete the other depends on the comparison between the two. Specifically, it depends on the comparison of the constituents they consist of. Light heads and relative pronouns do not only correspond to case features, but also to other features (having to do with number, gender, etc.). It differs per language how language organize these features into constituents. In this chapter, I illustrate how these different constituents within light heads and relative pronouns lead to the differences in whether or not the light head and the relative pronoun can be deleted, and therefore to different language types.
 
-In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Chapter \ref{ch:deriving-onlyinternal} to \ref{ch:deriving-unrestricted} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-structure} gives a simplified representation of them.\footnote{
+In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Chapter \ref{ch:deriving-onlyinternal} to \ref{ch:discussing-unrestricted} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-intonly} gives a simplified representation of them.\footnote{
 The structure of the relative pronoun in Figure \ref{fig:rel-lh-intonly} is not a base structure but a derived one. I assume the base structure of the relative pronoun to be as in \ref{ex:base-rel}.
 
 \ex.\label{ex:base-rel}
@@ -105,9 +105,7 @@ The structure of the relative pronoun in Figure \ref{fig:rel-lh-intonly} is not 
       [\tsc{k}]
       [\tsc{rel}P
           [\tsc{rel}]
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
-          ]
+          [ϕ]
       ]
   ]
 \end{forest}
@@ -116,7 +114,6 @@ The structure in Figure \ref{fig:rel-lh-intonly} cannot be derived from the base
 
 In Chapter \ref{ch:deriving-onlyinternal} I show the actual decomposition of the light head and the relative pronoun and how I reach the derived structure. I work with the derived structure in the main text because this is the configuration in which the containment relations under discussion hold.
 }
-The light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun in addition has a relative feature (\tsc{rel}).
 
 \begin{figure}[htbp]
   \center
@@ -127,9 +124,7 @@ The light head and the relative pronoun partly contain the same syntactic featur
       \begin{forest} boom
       [\tsc{k}P,
           [\tsc{k}]
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
-          ]
+          [ϕ]
       ]
       \end{forest}
       & \phantom{x} &
@@ -138,30 +133,31 @@ The light head and the relative pronoun partly contain the same syntactic featur
           [\tsc{rel}]
           [\tsc{k}P
               [\tsc{k}]
-              [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
-              ]
+              [ϕ]
           ]
       ]
     \end{forest}\\
       \bottomrule
   \end{tabular}
-   \caption {\tsc{lh} and \tsc{rel} in the internal-only type}
+   \caption {\tsc{lh} and \tsc{rp} in the internal-only type}
   \label{fig:rel-lh-intonly}
 \end{figure}
 
-This system excludes the external-only type of language. An external-only type of language would be one in which the light head can delete the relative pronoun, but the relative pronoun cannot delete the light head. In my proposal, an element can be deleted if forms a constituent within the other element. Relative pronouns always contain one more feature than light heads: \tsc{rel}. From that it follows that the light head does not contain all features that the relative pronoun contains. Therefore, it is impossible for a relative pronoun to form a constituent within the light head.
+The light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case features (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun has at least one feature in addition, which I call here \tsc{rel}.
 
-I propose that the three different types of languages can be derived from this set of assumptions. The differences between the different types of languages do not arise from changing the feature content of the light head and relative pronoun per language. Instead, the differences come from how the light heads and relative pronouns are spelled out.
+This system excludes the external-only type. An external-only type would be one in which the light head can delete the relative pronoun, but the relative pronoun cannot delete the light head. In my proposal, an element can be deleted if forms a constituent within the other element. Relative pronouns always contain one more feature than light heads: \tsc{rel}. From that it follows that the light head does not contain all features that the relative pronoun contains. Therefore, it is impossible for a relative pronoun to form a constituent within the light head.
+
+I propose that the three attested different language types can be derived from this set of assumptions. The differences between them do not arise from changing the feature content of the light head and relative pronoun per language. Instead, the differences come from how the light heads and relative pronouns are spelled out.
 
 In the next three sections, I briefly give the intuition behind how spellout generates the three attested language types.
-I take the internal-only type as the point of departure. With the structures in \ref{fig:rel-lh-intonly}, the light head forms a constituent within the relative pronoun as long as the external case is not more complex than the internal one.
-The matching type differs from the internal-only type in that it has a different constituency. This is a consequence of this type of language having multiple separate morphemes spellout out portions of syntactic structure.
-The unrestricted type differs from the internal-only type in that it uses the same lexical entry for different portions of syntactic structure. This is a consequence of there being a syncretism between the relative pronoun and the light head.
+I take the internal-only type as the point of departure.
+The matching type differs from the internal-only type in that different constituents are formed. This is a consequence of having multiple morphemes spelling out different portions of the structure instead of having a single morpheme.
+The unrestricted type differs from the two other types in that it even different constituents are formed. In addition, it uses the same lexical entry for different portions of the structure. This is the consequence of there being a sycnretism.
 
 
 \section{The point of departure}
 
+As I mentioned, I take the internal-only type as the point of departure.
 In internal-only languages, headless relatives are grammatical when the internal and the external case match and when the internal case is more complex than the external case. Headless relatives are ungrammatical when the external case is more complex than the internal case. That means that the relative pronoun can delete the light head, but the light head cannot delete the relative pronoun. I show this in \ref{tbl:overview-rel-light-mg}.
 
 \begin{table}[htbp]
@@ -171,8 +167,8 @@ In internal-only languages, headless relatives are grammatical when the internal
   \toprule
                                         & surface pronoun             \\
   \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & relative pronoun\scsub{int} \\
-\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & relative pronoun\scsub{int} \\
+\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int} \\
+\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int} \\
 \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                           \\
 \bottomrule
 \end{tabular}
@@ -199,9 +195,7 @@ In Figure \ref{fig:nom-nom-intonly}, I give an example in which the relative pro
         fit to=tree]{};
         }
             [\tsc{f}1]
-            [ϕP
-                [\phantom{x}ϕ\phantom{x}, roof, baseline]
-            ]
+            [ϕ]
         ]
       \end{forest}
       & \phantom{x} &
@@ -216,9 +210,7 @@ In Figure \ref{fig:nom-nom-intonly}, I give an example in which the relative pro
             fit to=tree]{};
             }
                 [\tsc{f}1]
-                [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                ]
+                [ϕ]
             ]
         ]
       \end{forest}\\
@@ -249,9 +241,7 @@ In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pro
         fit to=tree]{};
         }
             [\tsc{f}1]
-            [ϕP
-                [\phantom{x}ϕ\phantom{x}, roof, baseline]
-            ]
+            [\tbf{ϕ}]
         ]
       \end{forest}
       & \phantom{x} &
@@ -268,9 +258,7 @@ In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pro
                 fit to=tree]{};
                 }
                     [\tsc{f}1]
-                    [ϕP
-                        [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                    ]
+                    [ϕ]
                 ]
             ]
         ]
@@ -303,9 +291,7 @@ In Figure \ref{fig:acc-nom-intonly}, I give an example in which the light head b
             fit to=tree]{};
             }
                 [\tsc{f}1]
-                [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                ]
+                [ϕ]
             ]
         ]
       \end{forest}
@@ -321,9 +307,7 @@ In Figure \ref{fig:acc-nom-intonly}, I give an example in which the light head b
             fit to=tree]{};
             }
                 [\tsc{f}1]
-                [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                ]
+                [ϕ]
             ]
         ]
       \end{forest}\\
@@ -340,12 +324,9 @@ The \tsc{nom}P of the relative pronoun forms a constituent within the relative p
 As a result, none of the elements can be absent. I illustrate this by leaving the content of both dashed circles unfilled.
 
 
-\section{A single constituent}
+\section{Changing constituency}
 
-The matching type language shows that
-The matching type differs from the internal-only type in that it has a different constituency. This is a consequence of this type of language having multiple separate morphemes spellout out portions of syntactic structure.
-
-Different from in the internal-only type of language, headless relatives are ungrammatical in the matching type when the internal case is more complex than the external case. This means that the relative pronoun can only delete the light head when the two cases match. I show overview of the language in \ref{tbl:overview-rel-light-pol}.
+The difference between the internal-only type and the matching type lies in when the internal case is more complex than the external case. In the internal-only type this is grammatical, and in the matching type, it is not. This means that the relative pronoun can only delete the light head when the two cases match. I show overview of the language in \ref{tbl:overview-rel-light-pol}.
 
 \begin{table}[htbp]
   \center
@@ -354,7 +335,7 @@ Different from in the internal-only type of language, headless relatives are ung
   \toprule
                                         & surface pronoun             \\
   \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & relative pronoun\scsub{int} \\
+\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int} \\
 \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & *                           \\
 \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                           \\
 \bottomrule
@@ -362,7 +343,8 @@ Different from in the internal-only type of language, headless relatives are ung
 \label{tbl:overview-rel-light-pol}
 \end{table}
 
-I suggest that matching type of languages differ from internal-only type of languages in the way they package their features together. In the internal only type of language, the ϕP appears below the case projections, shown in Figure \ref{fig:rel-lh-intonly-rep}
+I derive this difference from the matching type forming different constituents in its relative pronouns and light heads than the internal-only.
+In the internal only type, the case features appear higher in the structure than the phi-features, as shown in Figure \ref{fig:rel-lh-intonly-rep}
 
 \begin{figure}[htbp]
   \center
@@ -373,9 +355,7 @@ I suggest that matching type of languages differ from internal-only type of lang
       \begin{forest} boom
       [\tsc{k}P,
           [\tsc{k}]
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
-          ]
+          [ϕ]
       ]
       \end{forest}
       & \phantom{x} &
@@ -384,19 +364,17 @@ I suggest that matching type of languages differ from internal-only type of lang
           [\tsc{rel}]
           [\tsc{k}P
               [\tsc{k}]
-              [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
-              ]
+              [ϕ]
           ]
       ]
     \end{forest}\\
       \bottomrule
   \end{tabular}
-   \caption {\tsc{lh} and \tsc{rel} in the internal-only type}
+   \caption {\tsc{lh} and \tsc{rp} in the internal-only type}
   \label{fig:rel-lh-intonly-rep}
 \end{figure}
 
-In the matching type of language, the ϕP appears higher than the case projections, shown in Table \ref{fig:rel-lh-matching}.
+I suggest that in the matching type, the case features appear lower in the structure than the phi features, as shown in Figure \ref{fig:rel-lh-matching}.
 
 \begin{figure}[htbp]
   \center
@@ -405,11 +383,9 @@ In the matching type of language, the ϕP appears higher than the case projectio
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-      [\tsc{k}P
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
-          ]
-          [\tsc{k}P,
+      [ϕP
+          [ϕ]
+          [\tsc{k}P
               [\tsc{k}]
           ]
       ]
@@ -418,10 +394,8 @@ In the matching type of language, the ϕP appears higher than the case projectio
     \begin{forest} boom
       [\tsc{rel}P
           [\tsc{rel}]
-          [\tsc{k}P
-              [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
-              ]
+          [ϕP
+              [ϕ]
               [\tsc{k}P
                   [\tsc{k}]
               ]
@@ -430,15 +404,15 @@ In the matching type of language, the ϕP appears higher than the case projectio
     \end{forest}\\
       \bottomrule
   \end{tabular}
-   \caption {\tsc{lh} and \tsc{rel} in the matching type}
+   \caption {\tsc{lh} and \tsc{rp} in the matching type}
   \label{fig:rel-lh-matching}
 \end{figure}
 
-This is a result of the fact that case projections correspond to their own morpheme in matching languages and they are spelled out together with phi-features in internal-only languages. In Chapter \ref{ch:deriving-onlyinternal} and \ref{ch:deriving-matching} I motivate this claim for Modern German and Polish.
+This is a result of having multiple morphemes spelling out different portions of the structure instead of having a single morpheme spelling it out at once. In Chapter \ref{ch:deriving-onlyinternal} and \ref{ch:deriving-matching} I motivate this claim for Modern German and Polish.
 
 In this section, I show how this idea works out the matching type language. I discuss how the relative pronoun can still delete the light head when the internal and the external case match and how this does no longer work when the two cases differ.
 
-In Figure \ref{fig:acc-nom-matching}, I give an example in which the light head and the relative pronoun bear the same case.
+In Figure \ref{fig:nom-nom-matching}, I give an example in which the light head and the relative pronoun bear the same case.
 
 \begin{figure}[htbp]
   \center
@@ -447,7 +421,7 @@ In Figure \ref{fig:acc-nom-matching}, I give an example in which the light head 
     light head & & relative pronoun \\
     \cmidrule(lr){1-1} \cmidrule(lr){3-3}
     \begin{forest} boom
-      [\tsc{nom}P,
+      [ϕP,
       tikz={
       \node[draw,circle,
       dashed,
@@ -455,9 +429,7 @@ In Figure \ref{fig:acc-nom-matching}, I give an example in which the light head 
       scale=0.85,
       fit to=tree]{};
       }
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
-          ]
+          [ϕ]
           [\tsc{nom}P
               [\tsc{f}1]
           ]
@@ -467,16 +439,14 @@ In Figure \ref{fig:acc-nom-matching}, I give an example in which the light head 
     \begin{forest} boom
       [\tsc{rel}P
           [\tsc{rel}]
-          [\tsc{nom}P,
+          [ϕP,
           tikz={
           \node[draw,circle,
           dashed,
           scale=0.85,
           fit to=tree]{};
           }
-              [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
-              ]
+              [ϕ]
               [\tsc{nom}P
                   [\tsc{f}1]
               ]
@@ -490,11 +460,10 @@ In Figure \ref{fig:acc-nom-matching}, I give an example in which the light head 
 \end{figure}
 
 I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
-In this instance it no problem that the ϕP moved over than the feature \tsc{f}1.
-The light head (the \tsc{nom}P) still forms a constituent within the relative pronoun (the \tsc{rel}P), so the relative pronoun can delete the light head. I illustrate this by marking the content of the dashed circles for the light head gray.
+In this instance it no problem that the phi-features appear higher in the structure than the case feature \tsc{f}1.
+The light head (the ϕP) still forms a constituent within the relative pronoun (the \tsc{rel}P), so the relative pronoun can delete the light head. I illustrate this by marking the content of the dashed circles for the light head gray.
 
-
-In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pronoun bears a more complex case than the light head.
+In Figure \ref{fig:nom-acc-matching}, I give an example in which the relative pronoun bears a more complex case than the light head.
 
 \begin{figure}[htbp]
   \center
@@ -503,15 +472,14 @@ In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pro
     light head & & relative pronoun \\
     \cmidrule(lr){1-1} \cmidrule(lr){3-3}
     \begin{forest} boom
-      [\tsc{nom}P, s sep=15mm
-          [ϕP,
+      [ϕP, s sep=15mm
+          [ϕ
           tikz={
           \node[draw,circle,
           dashed,
           scale=0.85,
           fit to=tree]{};
           }
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
           ]
           [\tsc{nom}P,
           tikz={
@@ -528,15 +496,14 @@ In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pro
     \begin{forest} boom
       [\tsc{rel}P
           [\tsc{rel}]
-          [\tsc{acc}P
-              [ϕP,
+          [ϕP
+              [ϕ,
               tikz={
               \node[draw,circle,
               dashed,
               scale=0.85,
               fit to=tree]{};
               }
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
               ]
               [\tsc{acc}P
                   [\tsc{f}2]
@@ -560,93 +527,73 @@ In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pro
 \end{figure}
 
 I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
-The light head (the \tsc{nom}P) no longer forms a constituent within the relative pronoun (the \tsc{rel}P). Therefore, the relative pronoun cannot delete the light head, which I illustrate this by leaving the content of both dashed circles unfilled.
+The light head (the ϕP) no longer forms a constituent within the relative pronoun (the \tsc{rel}P). Therefore, the relative pronoun cannot delete the light head, which I illustrate this by leaving the content of both dashed circles unfilled.
+It shows that in this instance it is a problem problem that the phi-features appear higher in the structure than the case features.
 
-In this instance it is a problem problem that the ϕP moved over than the feature \tsc{f}1.
-
-Consider the modern  again here.
+Something else the example shows is the necessity to formulate the proposal in terms of constituent containment instead of feature containment. To illustrate the difference, I show the example from the internal-only type in which the relative pronoun could delete the light head in Figure \ref{fig:nom-acc-intonly-rep}, repeated from \ref{fig:nom-acc-intonly}.
 
 \begin{figure}[htbp]
   \center
   \begin{tabular}[b]{ccc}
-    \toprule
-    light head & & relative pronoun \\
-    \cmidrule(lr){1-1} \cmidrule(lr){3-3}
-    \begin{forest} boom
-      [\tsc{nom}P, s sep=15mm
-          [ϕP,
-          tikz={
-          \node[draw,circle,
-          dashed,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
-          ]
-          [\tsc{nom}P,
-          tikz={
-          \node[draw,circle,
-          dashed,
-          scale=0.85,
-          fit to=tree]{};
-          }
-              [\tsc{f}1]
-          ]
-      ]
-    \end{forest}
-    & \phantom{x} &
-    \begin{forest} boom
-      [\tsc{rel}P
-          [\tsc{rel}]
-          [\tsc{acc}P
-              [ϕP,
-              tikz={
-              \node[draw,circle,
-              dashed,
-              scale=0.85,
-              fit to=tree]{};
-              }
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
-              ]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P,
-                  tikz={
-                  \node[draw,circle,
-                  dashed,
-                  scale=0.85,
-                  fit to=tree]{};
-                  }
-                      [\tsc{f}1]
-                  ]
-              ]
-          ]
-      ]
-    \end{forest}\\
-    \bottomrule
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{nom}P,
+        tikz={
+        \node[draw,circle,
+        dashed,
+        scale=0.85,
+        fill=DG,fill opacity=0.2,
+        fit to=tree]{};
+        }
+            [\tsc{f}1]
+            [\tbf{ϕ}]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}]
+            [\tsc{acc}P
+                [\tsc{f}2]
+                [\tsc{nom}P,
+                tikz={
+                \node[draw,circle,
+                dashed,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\tsc{f}1]
+                    [ϕ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
   \end{tabular}
-  \caption {\tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} in the matching type}
- \label{fig:nom-acc-matching-rep}
+   \caption {\tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} in the internal-only type (repeated)}
+  \label{fig:nom-acc-intonly-rep}
 \end{figure}
+
+In Figure \ref{fig:nom-acc-intonly-rep}, two different types of containment hold: feature containment and constituent containment.
+I start with feature containment. Each feature of the light head (i.e. ϕ and \tsc{f}1) is also a feature within the relative pronoun. Therefore, the relative pronoun contains the light head.
+Constituent containment works as follows. The \tsc{nom}P forms a constituent within the \tsc{rel}P. Therefore, the relative pronoun contains contains the light head.
+
+Reconsider matching. feature containment holds, but constituent containment does not hold.
 
 This example shows the importance of formulating the proposal in terms of constituent containment.
 
-In Figure \ref{fig:nom-nom-matching}, two different types of containment hold: feature containment and constituent containment.
-I start with feature containment. Each feature of the \tsc{nom}P (i.e. ϕ and \tsc{f}1) is also a feature within the \tsc{rel}P. Therefore, the \tsc{rel}P contains the \tsc{nom}P.
-Constituent containment works as follows. The (higher) \tsc{nom}P forms a constituent within the \tsc{rel}P. Therefore, \tsc{rel}P contains contains the \tsc{nom}P.
-
 In the matching language, the feature containment requirement holds but the constituent containment requirement does not.
 
-Figure \ref{fig:nom-acc-matching} shows that only the stronger requirement of constituent containment is able to distinguish the internal-only from the matching type of language, and that the weaker requirement of feature containment is not. This account crucially relies on constituent containment being the containment requirement that needs to be fulfilled. Feature containment is too weak of a requirement.
+Only the stronger requirement of constituent containment is able to distinguish the internal-only from the matching type, and that the weaker requirement of feature containment is not. This account crucially relies on constituent containment being the containment requirement that needs to be fulfilled. Feature containment is too weak of a requirement.
 
 
 
 
 
 
-
-
-Constituent containment is not only the requirement in deletion in headless relatives. It is also what seems to be crucial in the deletion of nominal modifiers. \citealt{cinqueforthcoming} argues that nominal modifiers can only be absent if they form a constituent with the NP \citep{cinqueforthcoming}. If they are not, they can also not be interpreted.
+Constituent containment is not only the requirement in deletion in headless relatives. It is also what seems to be crucial in the deletion of nominal modifiers. \citet{cinqueforthcoming} argues that nominal modifiers can only be absent if they form a constituent with the NP. If they are not, they can also not be interpreted.
 
 In \ref{ex:dutch-houses}, I give an example of a conjunction with two noun phrases from Dutch. The first conjunct consists of a demonstrative, an adjective and a noun, and the second one only of a demonstrative.
 
@@ -786,9 +733,7 @@ Consider Figure \ref{fig:rel-lh-syncretism1}, in which the relative pronoun dele
 \begin{forest} boom
   [\tsc{rel}P
       [\tsc{rel}]
-      [ϕP
-          [\phantom{x}ϕ\phantom{x}, roof]
-      ]
+      [ϕ]
   ]
   {\draw (.east) node[right]{⇔ \tit{α}}; }
 \end{forest}
@@ -808,6 +753,34 @@ Consider Figure \ref{fig:rel-lh-syncretism2}, in which the light head deletes th
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
+      [\tsc{k}P,
+          [\tsc{k}]
+          [ϕ]
+      ]
+      \end{forest}
+      & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{rel}P
+          [\tsc{rel}]
+          [\tsc{k}P
+              [\tsc{k}]
+              [ϕ]
+          ]
+      ]
+    \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} and \tsc{rp} in the internal-only type}
+  \label{fig:rel-lh-intonly-rep}
+\end{figure}
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
         [\tsc{acc}P
             [\tsc{f}2]
             [\tsc{nom}P,
@@ -818,14 +791,13 @@ Consider Figure \ref{fig:rel-lh-syncretism2}, in which the light head deletes th
             fit to=tree]{};
             }
                 [\tsc{f}1]
-                [ϕP,
+                [ϕ,
                 tikz={
                 \node[label=below:\tit{α},
                 draw,circle,
                 scale=0.8,
                 fit to=tree]{};
                 }
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
                 ]
             ]
         ]
@@ -849,9 +821,7 @@ Consider Figure \ref{fig:rel-lh-syncretism2}, in which the light head deletes th
             fit to=tree]{};
             }
                 [\tsc{rel}]
-                [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                ]
+                [ϕ]
             ]
         ]
       \end{forest}\\
@@ -867,7 +837,7 @@ Just as in Figure \ref{fig:rel-lh-syncretism1}, the ϕP in the light head is spe
 I start with the right-most constituent of the relative pronoun: \tsc{k}P. This constituent is also a constituent in the relative pronoun.
 I continue with the left-most constituent of the relative pronoun: the \tsc{rel}P. This constituent is not contained in the light head. The ϕP lacks the \tsc{rel} to make it a \tsc{rel}P. However, the two constituents are syncretic: the ϕP is also spelled out as \tit{α}. I suggest that this syncretism is also enough to license the deletion. I illustrate this by marking the content of the dashed circles for the relative pronoun gray and the portion that is deleted by syncretism in a lighter shade of gray.
 
-To sum up, each constituent of the relative pronoun is either also a constituent within the light head or it is syncretic with a constituent within the light head. Therefore, the relative pronoun can be absent. The fact that syncretism licenses deletion is not specific to the portion of the structure that corresponds to ϕ and \tsc{rel}. Syncretic cases can have the same effect, the inanimate nominative and inanimate accusative singular in Modern German being an instance of it. I give examples of this in Chapter \ref{ch:deriving-unrestricted}.
+To sum up, each constituent of the relative pronoun is either also a constituent within the light head or it is syncretic with a constituent within the light head. Therefore, the relative pronoun can be absent. The fact that syncretism licenses deletion is not specific to the portion of the structure that corresponds to ϕ and \tsc{rel}. Syncretic cases can have the same effect, the inanimate nominative and inanimate accusative singular in Modern German being an instance of it. I give examples of this in Chapter \ref{ch:discussing-unrestricted}.
 
 case syncretism
 
@@ -877,9 +847,7 @@ case syncretism
       [\tsc{f}2]
       [\tsc{nom}P
           [\tsc{f}1]
-          [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof]
-          ]
+          [ϕ]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{β}}; }
@@ -909,9 +877,7 @@ case syncretism
             fit to=tree]{};
             }
                 [\tsc{f}1]
-                [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                ]
+                [ϕ]
             ]
         ]
       \end{forest}
@@ -931,9 +897,7 @@ case syncretism
             fit to=tree]{};
             }
                 [\tsc{f}1]
-                [ϕP
-                    [\phantom{x}ϕ\phantom{x}, roof, baseline]
-                ]
+                [ϕ]
             ]
         ]
       \end{forest}\\

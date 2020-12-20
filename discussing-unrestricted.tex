@@ -1,24 +1,241 @@
 % !TEX root = thesis.tex
 
+\chapter{Discussing the unrestricted type}\label{ch:discussing-unrestricted}
 
-\chapter{Discussing the unrestricted type}\label{ch:discussing-nonmatching}
-
-Unrestricted languages can be summarizes as in Table \ref{tbl:overview-rel-light-ohg}.
+Languages of the unrestricted type can be summarizes as in Table \ref{tbl:overview-rel-light-ohg}.
 
 \begin{table}[htbp]
   \center
-  \caption{The surface pronoun with differing cases in Polish}
-\begin{tabular}{cccc}
+  \caption{Grammaticality in the internal-only type}
+\begin{tabular}{cc}
   \toprule
-                & \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{k}\scsub{ext} > \tsc{k}\scsub{int} &   \\
-                \cmidrule{2-3}
-unrestricted    & relative pronoun\scsub{int}  & light head\scsub{ext} & Old High German  \\
+                                        & surface pronoun         \\
+  \cmidrule(lr){2-2}
+\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
+\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
+\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & \tsc{lh}\scsub{ext}      \\
 \bottomrule
 \end{tabular}
 \label{tbl:overview-rel-light-ohg}
 \end{table}
 
-A language of the unrestricted type (like Old High German) allows both the internal case and the external case to surface when either of them wins the case competition. Either the light head with its external case or the relative pronoun with its internal case can be the surface pronoun. The goal of this section is to derive this from the way light heads and relative pronouns are spelled out in Old High German.
+When the internal and the external case match, and there is a tie, the relative pronoun surfaces in the this particular case (just like in all other language types).
+When the internal case wins the case competition, this type of language allows the internal case to surface. This means that the relative pronoun with a more complex internal case can be the surface pronoun.
+When the external case wins the case competition, this type of language allows also the external case to surface. This means that the light head with a more complex external case can also be the surface pronoun.
+
+The situation in which the unrestricted type of language differs from the internal-only type is the one in which the external case wins the case competition. This is ungrammatical in the internal-only type of language but it is grammatical in the unrestricted type of language.
+In Chapter \ref{ch:constituent-containment}, I suggested that this difference can be derived from a difference in spellout between the two languages types. The difference lies in whether the light head and the relative pronoun correspond to the same lexical entry or not.
+
+In the internal-only type of language, the feature \tsc{rel} is spelled out separately from the ϕP, by its own lexical entry, as I showed is Chapter \ref{ch:deriving-onlyinternal}. In the unrestricted type of language, the feature \tsc{rel} is spelled out by a lexical entry that contains the ϕP. Moreover, the \tsc{rel}P and the ϕP are syncretic: there is not a more specific lexical entry for the ϕP (without the feature \tsc{rel}). I show this in Figure \ref{fig:rel-lh-unres-derive}.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+    \toprule
+    light head & & relative pronoun \\
+    \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+    \begin{forest} boom
+      [\tsc{k}P
+          [\tsc{k}]
+          [ϕP,
+          tikz={
+          \node[label=below:\tit{α},
+          draw,circle,
+          scale=0.8,
+          fit to=tree]{};
+          }
+              [\phantom{x}ϕ\phantom{x}, roof, baseline]
+          ]
+      ]
+    \end{forest}
+    & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{k}P
+          [\tsc{k}]
+          [\tsc{rel}P,
+          tikz={
+          \node[label=below:\tit{α},
+          draw,circle,
+          scale=0.8,
+          fit to=tree]{};
+          }
+              [\tsc{rel}]
+              [ϕP
+                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
+              ]
+          ]
+      ]
+    \end{forest}\\
+    \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} and \tsc{rp} in the unrestricted type}
+  \label{fig:rel-lh-unres-derive}
+\end{figure}
+
+When the internal and the external case match, the relative pronoun can delete the light head, because the light head forms a single constituent within the relative pronoun.
+When the internal case is more complex than the external case, the relative pronoun can still delete the light head, because it still forms a constituent within the relative pronoun.
+When the external case is more complex than the internal case, the light head can delete the relative pronoun. The relative pronoun does not form a constituent within the light head, but the features that the light head lacks are contained in the lexical entry that the light head corresponds to. I suggest that this syncretism is also enough to license the deletion of the relative pronoun.
+
+In Chapter \ref{ch:constituent-containment}, I suggested that the difference in structures between the internal-only type and the unrestricted type is a consequence of spellout.
+
+
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+    \toprule
+    light head & & relative pronoun \\
+    \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+    \begin{forest} boom
+      [\tsc{k}P,
+      tikz={
+      \node[
+      draw,circle,
+      scale=0.8,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof, baseline]
+          ]
+      ]
+    \end{forest}
+    & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{k}P,
+      tikz={
+      \node[
+      draw,circle,
+      scale=0.8,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [\tsc{rel}P
+              [\tsc{rel}]
+              [ϕP
+                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
+              ]
+          ]
+      ]
+    \end{forest}\\
+    \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} and \tsc{rp} in hypothetical language}
+  \label{fig:rel-lh-unres-derive}
+\end{figure}
+
+
+
+
+
+The change in constituency is a result of the fact that case projections correspond to their own morpheme in matching languages and they are spelled out together with phi-features in internal-only languages. In Chapter \ref{ch:deriving-matching}, I showed that Modern German indeed has a portmanteau for case and phi-features. In this Chapter, I show that Polish has two morphemes that corresponds to case and phi-features.
+
+I give a compact version of the Old High German light heads and relative pronouns in Figure \ref{fig:rel-lh-pol}.
+
+\begin{figure}[htbp]
+  \center
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{d}P
+            [\tsc{d}P,
+            tikz={
+            \node[label=below:\tit{d},
+            draw,circle,
+            scale=0.75,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof, baseline]
+            ]
+            [\tsc{med}P, s sep = 15mm
+                [\tsc{med}P,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.75,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof, baseline]
+                ]
+                [\tsc{k}P,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.75,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof, baseline]
+                ]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P, s sep = 15mm
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{d},
+            draw,circle,
+            scale=0.75,
+            fit to=tree]{};
+            }
+                [\tsc{rel}]
+                [\tsc{d}P
+                    [\phantom{xxx}, roof]
+                ]
+            ]
+            [\tsc{med}P, s sep = 15mm
+                [\tsc{med}P,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.75,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof, baseline]
+                ]
+                [\tsc{k}P,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.75,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof, baseline]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+   \caption {\tsc{lh} and \tsc{rp} in Old High German}
+  \label{fig:rel-lh-pol}
+\end{figure}
+
+In what follows, I compare the light head and the relative pronoun in Figure \ref{fig:rel-lh-pol} to the light head and the relative pronoun in Figure \ref{fig:rel-lh-matching}.
+
+Consider the light head in Figure \ref{fig:rel-lh-pol}.
+Light heads in Polish are spelled out by two morphemes, which are both circled. The morpheme on the right does not only correspond to case features, but also to number feature (\tsc{ind}). The remainder of what corresponds to the ϕP is the morpheme on the left (\tsc{an}P).
+Therefore, just like the structure of the light head in Figure \ref{fig:rel-lh-matching}, the structure of the light head in Figure \ref{fig:rel-lh-pol} consists of two morphemes.
+
+Consider the relative pronoun in Figure \ref{fig:rel-lh-pol}.
+Relative pronouns in Polish contain one more morpheme than light heads: the \tsc{rel}P. As already became clear in Chapter \ref{ch:deriving-onlyinternal}, the relative pronoun contains more a single feature more than the light head, which is in Polish all contained in \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-pol} is identical to the one in Figure \ref{fig:rel-lh-matching}.
+
+Crucially, the constituency in Figure \ref{fig:rel-lh-mg} is the same as it is in Figure \ref{fig:rel-lh-intonly}. In this chapter, I take the features that are contained in the Modern German relative pronouns and light heads. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-pol}.
+
+The section is structured as follows.
+First, I discuss the relative pronoun. According to my assumptions in Section \ref{ch:constituent-containment}, relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition. I decompose the relative pronouns into the three morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to.
+Then I discuss the light head. I argue that Modern German headless relatives are derived from a type of light-headed relative clause that does not surface in the language. I show that the features of the light head are spread over two morphemes (the \tsc{a}P and \tsc{k}P in Figure \ref{fig:rel-lh-mg}).
+
+Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can only delete the light head when the internal case matches the external case. When the internal and external case differ, I show that none of the elements can delete the other one.
+
+
+
+
 
 The section is structured as follows.
 Old High German differs from the other two languages I discussed in that its headless relatives have a different interpretation: they have a individuating or definite reading. This leads me to argue for slightly different functional sequences in Old High German.
@@ -116,15 +333,15 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
 \ex.
 \tiny{
 \begin{forest} boompje
-  [\tsc{rel}P, s sep=10mm
-      [\tsc{rel}P,
+  [\tsc{rp}P, s sep=10mm
+      [\tsc{rp}P,
       tikz={
       \node[label=below:\tit{d},
       draw,circle,
       scale=0.95,
       fit to=tree]{};
       }
-          [\tsc{rel}]
+          [\tsc{rp}]
           [\tsc{d}P
               [\tsc{d}, roof]
           ]
@@ -172,15 +389,15 @@ So, the two relative pronouns look like this.\footnote{A question that arises he
 \ex. Old High German: \tsc{int} \tsc{nom}\\
 \tiny{
 \begin{forest} boompje
-  [\tsc{rel}P, s sep=10mm
-      [\tsc{rel}P,
+  [\tsc{rp}P, s sep=10mm
+      [\tsc{rp}P,
       tikz={
       \node[label=below:\tit{d},
       draw,circle,
       scale=0.95,
       fit to=tree]{};
       }
-          [\tsc{rel}]
+          [\tsc{rp}]
           [\tsc{d}P
               [\tsc{d}, roof]
           ]
@@ -248,11 +465,11 @@ and 3\ac{sg}.\ac{m}.\ac{nom} reply.\ac{pst}.3\ac{sg}\scsub{[dat]} \ac{rel}.\ac{s
 not: `and he replied to whoever spoke to him'
  \flushfill{Old High German, \ac{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom-rep}
 
- Consider the light-headed relative in \ref{ex:ohg-double}. \tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the head of the relative clause, which is the external element. \tit{Then} `\tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause, which is the internal element.
+ Consider the light-headed relative in \ref{ex:ohg-double}. \tit{Thér} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' is the head of the relative clause, which is the external element. \tit{Then} `\tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{acc}' is the relative pronoun in the relative clause, which is the internal element.
 
  \exg. eno nist thiz thér then ir suochet zi arslahanne?\\
   now {not be.3\ac{sg}} \tsc{dem}.\tsc{sg}.\tsc{n}.\tsc{nom} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}
-  \tsc{rel}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
+  \tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{acc} 2\ac{pl}.\tsc{nom} seek.2\tsc{pl} to kill.\tsc{inf}.\ac{sg}.\tsc{dat}\\
   `Isn't this now the one, who you seek to kill?'\label{ex:ohg-double}
 
  The difference between a light-headed relative and a headless relative is that in headless relatives, either the internal or the external is absent. The absent element is the one that has the least complex case. This shows the presence of two elements in Old High German is optional.\footnote{
@@ -463,15 +680,15 @@ In Figure \ref{fig:ohg-int=ext}, I give the syntactic structure of the light hea
       \cmidrule{1-1}
       \tiny{
       \begin{forest} boompje
-        [\tsc{rel}P, s sep=15mm
-            [\tsc{rel}P,
+        [\tsc{rp}P, s sep=15mm
+            [\tsc{rp}P,
             tikz={
             \node[label=below:\tit{dh},
             draw,circle,
             scale=0.95,
             fit to=tree]{};
             }
-                [\tsc{rel}]
+                [\tsc{rp}]
                 [\tsc{d}P,
                 tikz={
                 \node[draw,circle,
@@ -542,7 +759,7 @@ As each constituent of the light head is also a constituent within the relative 
 I explain this constituent by constituent.
 I start with the right-most constituent of the light head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the relative pronoun.
 I continue with the middle constituent of the light head that spells out as \tit{e} (\tsc{med}P). This constituent is also a constituent in the relative pronoun.
-I end with the left-most constituent of the light head that spells out as \tit{d} {\tsc{d}P}. This constituent is also a constituent in the relative pronoun, contained in \tsc{rel}P.
+I end with the left-most constituent of the light head that spells out as \tit{d} {\tsc{d}P}. This constituent is also a constituent in the relative pronoun, contained in \tsc{rp}P.
 All three constituent of the light head are also a constituent within the relative pronoun, and the light head can be absent.
 
 Consider the example in \ref{ex:ohg-nom-acc-rep}, in which the internal accusative case competes against the external nominative case. The relative clause is marked in bold, and the light head and the relative pronoun are underlined.
@@ -632,15 +849,15 @@ In Figure \ref{fig:ohg-int-wins}, I give the syntactic structure of the light he
       \cmidrule{1-1}
       \tiny{
           \begin{forest} boompje
-            [\tsc{rel}P, s sep=15mm
-                [\tsc{rel}P,
+            [\tsc{rp}P, s sep=15mm
+                [\tsc{rp}P,
                 tikz={
                 \node[label=below:\tit{th},
                 draw,circle,
                 scale=0.95,
                 fit to=tree]{};
                 }
-                    [\tsc{rel}]
+                    [\tsc{rp}]
                     [\tsc{d}P,
                     tikz={
                     \node[draw,circle,
@@ -716,7 +933,7 @@ As each constituent of the light head is also a constituent within the relative 
 I explain this constituent by constituent.
 I start with the right-most constituent of the light head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the relative pronoun, contained in \tsc{acc}P.
 I continue with the middle constituent of the light head that spells out as \tit{e} (\tsc{med}P). This constituent is also a constituent in the relative pronoun.
-I end with the left-most constituent of the light head that spells out as \tit{d} {\tsc{d}P}. This constituent is also a constituent in the relative pronoun, contained in \tsc{rel}P.
+I end with the left-most constituent of the light head that spells out as \tit{d} {\tsc{d}P}. This constituent is also a constituent in the relative pronoun, contained in \tsc{rp}P.
 All three constituent of the light head are also a constituent within the relative pronoun, and the light head can be absent.
 
 Consider the examples in \ref{ex:ohg-acc-nom-rep}, in which the internal nominative case competes against the external accusative case. The relative clauses are marked in bold, and the light heads and the relative pronouns are underlined.
@@ -807,8 +1024,8 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
         \cmidrule{1-1}
         \tiny{
             \begin{forest} boompje
-              [\tsc{rel}P, s sep=15mm
-                  [\tsc{rel}P,
+              [\tsc{rp}P, s sep=15mm
+                  [\tsc{rp}P,
                   tikz={
                   \node[label=below:\tit{dh},
                   draw,circle,
@@ -816,7 +1033,7 @@ In Figure \ref{fig:ohg-ext-wins}, I give the syntactic structure of the light he
                   fill=DG,fill opacity=0.1,
                   fit to=tree]{};
                   }
-                      [\tsc{rel}]
+                      [\tsc{rp}]
                       [\tsc{d}P,
                       tikz={
                       \node[draw,circle,
@@ -890,5 +1107,5 @@ As each constituent of the light head is also a constituent within the relative 
 I explain this constituent by constituent.
 I start with the right-most constituent of the relative pronoun head that spells out as \tit{r} (\tsc{nom}P). This constituent is also a constituent in the light head, contained in \tsc{acc}P.
 I continue with the middle constituent of the relative pronoun that spells out as \tit{e} (\tsc{med}P). This constituent is also a constituent in the light head.
-I end with the left-most constituent of the relative pronoun that spells out as \tit{d} {\tsc{rel}P}. This consituent is not contained in the light head, but it is syncretic with it. The \tsc{d}P is also spelled out as \tit{d}.
+I end with the left-most constituent of the relative pronoun that spells out as \tit{d} {\tsc{rp}P}. This consituent is not contained in the light head, but it is syncretic with it. The \tsc{d}P is also spelled out as \tit{d}.
 All three constituent of the light head are also a constituent within the relative pronoun or are syncretic with them, and the relative pronoun can be absent.

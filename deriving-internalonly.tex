@@ -3,30 +3,147 @@
 
 \chapter{Deriving the internal-only type}\label{ch:deriving-onlyinternal}
 
-Internal-only languages can be summarizes as in Table \ref{tbl:overview-rel-light-mg}.
+Languages of the internal-only type can be summarizes as in Table \ref{tbl:overview-rel-light-mg}.
 
 \begin{table}[htbp]
   \center
-  \caption{The surface pronoun with differing cases in Modern German}
-\begin{tabular}{cccc}
+  \caption{Grammaticality in the internal-only type}
+\begin{tabular}{cc}
   \toprule
-                & \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{k}\scsub{ext} > \tsc{k}\scsub{int} &   \\
-                \cmidrule{2-3}
-internal-only   & relative pronoun\scsub{int} & *  & Modern German    \\
+                                        & surface pronoun         \\
+  \cmidrule(lr){2-2}
+\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
+\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
+\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
 \bottomrule
 \end{tabular}
-\label{tbl:overview-rel-light-mgx}
+\label{tbl:overview-rel-light-mg}
 \end{table}
 
-A language of the internal-only type (like Modern German) allows only the internal case to surface when it wins the case competition. This means that the relative pronoun with its internal case can be the surface pronoun. A language of this type does not allow the external case to surface when it wins the case competition. This means that the light head with its external case cannot be the surface pronoun. The goal of this section is to derive these properties from the way light heads and relative pronouns are spelled out in Modern German.
+When the internal and the external case match, and there is a tie, the relative pronoun surfaces in the this particular case (just like in all other language types).
+When the internal case wins the case competition, this type of language allows the internal case to surface. This means that the relative pronoun with a more complex internal case can be the surface pronoun.
+When the external case wins the case competition, this type of language does not allow the external case to surface. This means that the light head with a more complex external case cannot be the surface pronoun.
+
+In Chapter \ref{ch:constituent-containment}, I suggested that the relative pronoun contains at least one feature more than the light head.
+In the internal-only type of language, these features are spelled out in such a way that they form the constituency shown in Figure \ref{fig:rel-lh-intonly-derive}.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+      [\tsc{k}P,
+          [\tsc{k}]
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof, baseline]
+          ]
+      ]
+      \end{forest}
+      & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{rel}P
+          [\tsc{rel}]
+          [\tsc{k}P
+              [\tsc{k}]
+              [ϕP
+                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
+              ]
+          ]
+      ]
+    \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} and \tsc{rp} in the internal-only type}
+  \label{fig:rel-lh-intonly-derive}
+\end{figure}
+
+When the internal and the external case match, the relative pronoun can delete the light head, because the light head forms a single constituent within the relative pronoun.
+When the internal case is more complex than the external case, the relative pronoun can still delete the light head, because it still forms a constituent within the relative pronoun.
+When the external case is more complex than the internal case, the relative pronoun is not a single constituent within the light head. The relative pronoun contains features that are not part of the light head. As a result, there is no grammatical form to surface when the internal case is more complex.
+
+In this chapter, I show that Modern German light heads and relative pronouns have this type of structure. I give a compact version of the structures in Figure \ref{fig:rel-lh-mg}.
+
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{k}P,
+        tikz={
+        \node[
+        draw,circle,
+        scale=0.75,
+        fit to=tree]{};
+        }
+            [\tsc{k}]
+            [\tsc{ind}P
+                [\phantom{xxx}, roof, baseline]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P,
+            tikz={
+            \node[
+            draw,circle,
+            scale=0.75,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{med}P, s sep = 15mm
+                [\tsc{med}P,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.75,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof]
+                ]
+                [\tsc{k}P,
+                tikz={
+                \node[
+                draw,circle,
+                scale=0.75,
+                fit to=tree]{};
+                }
+                    [\tsc{k}]
+                    [\tsc{ind}P
+                        [\phantom{xxx}, roof, baseline]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} and \tsc{rp} in Modern German}
+  \label{fig:rel-lh-mg}
+\end{figure}
+
+In what follows, I compare the light head and the relative pronoun in Figure \ref{fig:rel-lh-mg} to the light head and the relative pronoun in Figure \ref{fig:rel-lh-intonly}.
+
+Consider the light head in Figure \ref{fig:rel-lh-mg}.
+Light heads in Modern German are spelled out by a single morpheme, which I indicate by circling the structure. I show the internal structure of \tsc{k}P to make clear that it contain the \tsc{ind}P (which is the highest feature of what corresponds to the ϕP). Therefore, the structure of the light head in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly}.
+
+Consider the relative pronoun in Figure \ref{fig:rel-lh-mg}.
+Relative pronouns in Modern German consist of three morphemes: the \tsc{k}P (which is the constituent that forms the light head) and the \tsc{med}P and the \tsc{rel}P, again indicated by the circles. This shows that the relative pronoun contains more a single feature more than the light head, namely whatever is in the \tsc{med}P and in the \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly}.
+
+Crucially, the constituency relevant for the deletion of the light head is the same in Figure \ref{fig:rel-lh-mg} as it is in Figure \ref{fig:rel-lh-intonly}. Throughout this chapter, I discuss what the exact feature content of relative pronouns and light heads is. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-mg}.
 
 The section is structured as follows.
-First, I discuss the relative pronoun. According to my assumptions in Section \ref{ch:constituent-containment}, relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition. I decompose the relative pronouns into three morphemes, and I show which features each of the morphemes corresponds to.
-Then I discuss the light head. I argue that Modern German headless relatives are derived from a light-headed relative clause that does not surface in the language. I show that the light head corresponds to one of the morphemes of the relative pronoun.
-Finally, I compare the constituents of the light head and the relative pronoun.
-When the internal and the external case match, the relative pronoun can delete the light head, because it contains all its constituents.
-When the internal case is more complex than the external case, the relative pronoun can still delete the light head, for the same reason: the relative pronoun contains all constituents of the light head.
-This is no longer the case when the external case is more complex than the internal case. The light head does not contain all constituents of the relative pronoun, and the relative pronoun does not contain all constituents of the light head. As a result, there is no grammatical form to surface when the external case is more complex.
+First, I discuss the relative pronoun. According to my assumptions in Section \ref{ch:constituent-containment}, relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition. I decompose the relative pronouns into the three morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to.
+Then I discuss the light head. I argue that Modern German headless relatives are derived from a type of light-headed relative clause that does not surface in the language. I show that the light head corresponds to one of the morphemes of the relative pronoun (the \tsc{k}P in Figure \ref{fig:rel-lh-mg}).
+
+Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can delete the light head when the internal case matches the external case or when the internal case is more complex than the external one. When the external case is more complex, I show that none of the elements can delete the other one.
+
 
 \section{The relative pronoun}\label{sec:mg-rel}
 
@@ -111,15 +228,16 @@ I discuss two relative pronouns: the animate nominative singular and the animate
 
 \ex.\label{ex:mg-rels}
 \ag. w-e-r\\
- `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
+ `\tsc{rp}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
 \bg. w-e-n\\
- `\tsc{rel}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
+ `\tsc{rp}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
 
 I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant. For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the end, I derive the relative pronouns, given here in \ref{ex:mg-spellout-rel-nom-preview} and \ref{ex:mg-spellout-rel-acc-preview}.
 
-\ex.\label{ex:mg-spellout-rel-nom-preview}
+\ex.
+\a. \label{ex:mg-spellout-rel-nom-preview}
 \begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boompje
+\begin{forest} boom
   [\tsc{rel}P, s sep=12mm
       [\tsc{rel}P,
       tikz={
@@ -177,10 +295,9 @@ I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} a
   ]
 \end{forest}
 \end{adjustbox}
-
-\ex.\label{ex:mg-spellout-rel-acc-preview}
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boompje
+\b.\label{ex:mg-spellout-rel-acc-preview}
+\begin{adjustbox}{max width=0.8\textwidth}
+\begin{forest} boom
   [\tsc{rel}P, s sep=12mm
       [\tsc{rel}P,
       tikz={
@@ -1203,7 +1320,7 @@ The \tsc{nom}P is spelled out as \tit{r}, and all constituents are merged back i
 
 \ex.\label{ex:mg-spellout-rel-nom}
 \begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boompje
+\begin{forest} boom
   [\tsc{rel}P, s sep=12mm
       [\tsc{rel}P,
       tikz={
@@ -1296,7 +1413,7 @@ The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back i
 
 \ex.\label{ex:mg-spellout-rel-acc}
 \begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boompje
+\begin{forest} boom
   [\tsc{rel}P, s sep=12mm
       [\tsc{rel}P,
       tikz={
@@ -1371,23 +1488,23 @@ I give an example of a Modern German light-headed relative in \ref{ex:mg-den-wen
 Modern German also has another light-headed relative, in which the relative pronoun is the \tsc{d}-pronoun. I give an example in \ref{ex:mg-den-den}.
 
 \exg. Jan umarmt den \tbf{den} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
 `Jan hugs the man that he likes.'\label{ex:mg-den-den}
 
 This relative pronoun generally appears in headed relatives, shown in \ref{ex:mg-den-headed}.
 
 \exg. Jan umarmt den Mann \tbf{den} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} man \tsc{rel}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
+Jan hugs \tsc{d}.\tsc{m}.\tsc{sg}.\tsc{acc} man \tsc{rp}.\tsc{m}.\tsc{sg}.\tsc{acc} he likes\\
 `Jan hugs the man that he likes.'\label{ex:mg-den-headed}
 
 I directly exclude the possibility that Modern German headless relatives are derived from these light-headed relatives, because they appear with the incorrect relative pronoun.
 }
 
 \exg. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 `Jan hugs the man that he likes.'\label{ex:mg-den-wen}
 
-In \ref{ex:mg-den-wen}, the relative pronoun is the \tsc{wh}-pronoun \tit{wen} `\tsc{rel}.\tsc{an}.\tsc{acc}', and the light head is the \tsc{d}-pronoun \tit{den} `\tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc}'. For easy reference, I call this light-headed relative the \tit{den}-\tit{wen} relative.
+In \ref{ex:mg-den-wen}, the relative pronoun is the \tsc{wh}-pronoun \tit{wen} `\tsc{rp}.\tsc{an}.\tsc{acc}', and the light head is the \tsc{d}-pronoun \tit{den} `\tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc}'. For easy reference, I call this light-headed relative the \tit{den}-\tit{wen} relative.
 
 One hypothesis is that the demonstrative \tit{den} `\tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc}' is deleted from the light-headed relative in \ref{ex:mg-den-wen} and that the headless relative in \ref{ex:mg-wen} remains.\footnote{
 This is exactly what \citet{hanink2018} argues for. She claims that the feature content of the light head matches the feature content of the relative pronoun. Therefore, the light head is by default deleted. Only if the light head carries an extra focus feature it surfaces.
@@ -1395,19 +1512,19 @@ This is exactly what \citet{hanink2018} argues for. She claims that the feature 
 For easy reference, I call this headless relative the \tit{wen} relative.
 
 \exg. Jan umarmt \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+Jan hugs \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 `Jan hugs who he likes.'\label{ex:mg-wen}
 
 I give two arguments against this hypothesis. First, in headless relatives the morpheme \tit{auch immer} `ever' can appear, as shown in \ref{ex:mg-wh-for-headless-ever}.
 
 \exg. Jan unarmt \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{rel}.\tsc{an}.\tsc{acc} ever he likes\\
+Jan hugs \tsc{rp}.\tsc{an}.\tsc{acc} ever he likes\\
 `Jan hugs whoever he likes.'\label{ex:mg-wh-for-headless-ever}
 
 Light-headed relatives do not allow this morpheme to be inserted, illustrated in \ref{ex:mg-wh-for-headed-ever}.
 
 \exg. *Jan unarmt den \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} ever he likes\\
+Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever he likes\\
 `Jan hugs him whoever he likes.'\label{ex:mg-wh-for-headed-ever}%source?
 
 I assume that the headless relative is not derived from an ungrammatical structure.\footnote{
@@ -1444,7 +1561,7 @@ The light head in the \tit{den}-\tit{wen} relative is a demonstrative. A demonst
 \ex.
 \a. Context: Yesterday Jan met with two friends. He likes one of them. The other one he does not like so much.\label{ex:mg-context-def}
 \bg. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 `Jan hugs the man that he likes.'
 
 %move the contexts closer to the table and give the headless relative too. then in this part say why that is problematic with the demonstrative.
@@ -1456,7 +1573,7 @@ Consider the context which facilitates a universal-interpretation and the repeat
 \ex.
 \a. Jan has a general habit of hugging everybody that he likes.\label{ex:mg-context-univ}
 \bg. \#Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 `Jan hugs the man that he likes.'
 
 In this case, there is no antecedent for the demonstrative \tit{den} to refer back to.
@@ -1490,7 +1607,7 @@ I do not see right away how the light head in headless relatives could encode un
 }
 
 \exg. Jan umarmt [n] \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{lh}.\tsc{an}.\tsc{acc} \tsc{rel}.\tsc{an}.\tsc{acc} he likes\\
+Jan hugs \tsc{lh}.\tsc{an}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 `Jan hugs who he likes.'\label{ex:mg-real-base}
 
 In Section \ref{ch:constituent-containment}, I gave the simplified structure of the light head, repeated here in \ref{ex:light-head-rep}.
@@ -1603,7 +1720,7 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the extra ligh
         \toprule
         \tsc{nom} extra light head \tit{r}\\
         \cmidrule{1-1}
-      \begin{forest} boompje
+      \begin{forest} boom
         [\tsc{nom}P,
         tikz={
         \node[label=below:{\tit{r}},
@@ -1637,7 +1754,7 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the extra ligh
       \tsc{nom} relative pronoun \tit{w-e-r}
       \\
       \cmidrule{1-1}
-          \begin{forest} boompje
+          \begin{forest} boom
           [\tsc{rel}P
               [\tsc{rel}P
                   [\phantom{x}\tit{w}\phantom{x}, roof]
@@ -1699,7 +1816,7 @@ The internal case is accusative, as the predicate \tit{mögen} `to like' takes a
 The external case is nominative, as the predicate \tit{besuchen} `to visit' takes nominative subjects. The extra light head \tit{ər} `\ac{dem}.\ac{an}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
 
 \exg. Uns besucht [r] \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{elh}.\ac{nom}.\tsc{an} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
+ we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{elh}.\ac{nom}.\tsc{an} \tsc{rp}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
  `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-rep}
 
 In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra light head at the top and the syntactic structure of the relative pronoun at the bottom.
@@ -1712,7 +1829,7 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra lig
       \tsc{nom} extra light head \tit{r}
       \\
       \cmidrule{1-1}
-      \begin{forest} boompje
+      \begin{forest} boom
         [\tsc{nom}P,
         tikz={
         \node[label=below:{\tit{r}},
@@ -1746,7 +1863,7 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra lig
       \tsc{acc} relative pronoun \tit{w-e-n}
       \\
       \cmidrule{1-1}
-          \begin{forest} boompje
+          \begin{forest} boom
             [\tsc{rel}P
                 [\tsc{rel}P
                     [\phantom{x}\tit{w}\phantom{x}, roof]
@@ -1830,7 +1947,7 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the extra lig
         \toprule
         \tsc{acc} extra light head \tit{n} \\
         \cmidrule{1-1}
-      \begin{forest} boompje
+      \begin{forest} boom
         [\tsc{acc}P,
         tikz={
         \node[label=below:{\tit{n}},
@@ -1867,7 +1984,7 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the extra lig
       \tsc{nom} relative pronoun \tit{w-e-r}
       \\
       \cmidrule{1-1}
-      \begin{forest} boompje
+      \begin{forest} boom
         [\tsc{rel}P
             [\tsc{rel}P
                 [\phantom{x}\tit{w}\phantom{x}, roof]
