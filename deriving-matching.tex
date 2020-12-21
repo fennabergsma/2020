@@ -2,7 +2,7 @@
 
 \chapter{Deriving the matching type}\label{ch:deriving-matching}
 
-Languages of the matching type can be summarizes as in Table \ref{tbl:overview-rel-light-pol}.
+Languages of the matching type can be summarizes as in Table \ref{tbl:rel-lh-pol}
 
 \begin{table}[htbp]
   \center
@@ -16,7 +16,7 @@ Languages of the matching type can be summarizes as in Table \ref{tbl:overview-r
 \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
 \bottomrule
 \end{tabular}
-\label{tbl:overview-rel-light-pol}
+\label{tbl:rel-lh-pol}
 \end{table}
 
 When the internal and the external case match, and there is a tie, the relative pronoun surfaces in the this particular case (just like in all other language types).
@@ -33,12 +33,10 @@ In Chapter \ref{ch:constituent-containment}, I suggested that this difference ca
     light head & & relative pronoun \\
     \cmidrule(lr){1-1} \cmidrule(lr){3-3}
     \begin{forest} boom
-    [\tsc{k}P
-        [ϕP
-            [\phantom{x}ϕ\phantom{x}, roof, baseline]
-        ]
-        [\tsc{k}P,
-            [\tsc{k}]
+    [ϕP
+        [ϕ]
+        [\tsc{k}P
+            [\tsc{k}, baseline]
         ]
     ]
     \end{forest}
@@ -46,12 +44,10 @@ In Chapter \ref{ch:constituent-containment}, I suggested that this difference ca
   \begin{forest} boom
     [\tsc{rel}P
         [\tsc{rel}]
-        [\tsc{k}P
-            [ϕP
-                [\phantom{x}ϕ\phantom{x}, roof, baseline]
-            ]
+        [ϕP
+            [ϕ]
             [\tsc{k}P
-                [\tsc{k}]
+                [\tsc{k}, baseline]
             ]
         ]
     ]
@@ -146,7 +142,7 @@ I give a compact version of the Polish light heads and relative pronouns in Figu
   \label{fig:rel-lh-pol}
 \end{figure}
 
-In what follows, I compare the light head and the relative pronoun in Figure \ref{fig:rel-lh-pol} to the light head and the relative pronoun in Figure \ref{fig:rel-lh-matching}.
+I compare the Polish light head and the relative pronoun in Figure \ref{fig:rel-lh-pol} to the structures of the light head and the relative pronoun I gave in Figure \ref{fig:rel-lh-matching}.
 
 Consider the light head in Figure \ref{fig:rel-lh-pol}.
 Light heads in Polish are spelled out by two morphemes, which are both circled. The morpheme on the right does not only correspond to case features, but also to number feature (\tsc{ind}). The remainder of what corresponds to the ϕP is the morpheme on the left (\tsc{an}P).
@@ -155,195 +151,107 @@ Therefore, just like the structure of the light head in Figure \ref{fig:rel-lh-m
 Consider the relative pronoun in Figure \ref{fig:rel-lh-pol}.
 Relative pronouns in Polish contain one more morpheme than light heads: the \tsc{rel}P. As already became clear in Chapter \ref{ch:deriving-onlyinternal}, the relative pronoun contains more a single feature more than the light head, which is in Polish all contained in \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-pol} is identical to the one in Figure \ref{fig:rel-lh-matching}.
 
-Crucially, the constituency in Figure \ref{fig:rel-lh-mg} is the same as it is in Figure \ref{fig:rel-lh-intonly}. In this chapter, I take the features that are contained in the Modern German relative pronouns and light heads. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-pol}.
+Crucially, the constituency in Figure \ref{fig:rel-lh-mg} is the same as it is in Figure \ref{fig:rel-lh-intonly}. Therefore, the deletion possibilities I described for Figure \ref{fig:rel-lh-matching} take place.
 
-The section is structured as follows.
-First, I discuss the relative pronoun. According to my assumptions in Section \ref{ch:constituent-containment}, relative pronouns are part of the relative clause. I confirm this independently for Modern German with data from extraposition. I decompose the relative pronouns into the three morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to.
-Then I discuss the light head. I argue that Modern German headless relatives are derived from a type of light-headed relative clause that does not surface in the language. I show that the features of the light head are spread over two morphemes (the \tsc{a}P and \tsc{k}P in Figure \ref{fig:rel-lh-mg}).
-
+The chapter is structured as follows.
+First, I discuss the light head. I decompose the light heads into the two morphemes I showed in Figure \ref{fig:rel-lh-pol}, and I show which features each of the morphemes corresponds to. I show that Polish headless relatives are derived from a type of light-headed relative clause that does not surface in the language, just like their Modern German counterparts.
+Then, I discuss the relative pronoun. I show that the Polish relative pronouns consist of one more morpheme than Polish light heads.
+Importantly, the features that form the Polish light head and relative pronoun are the same ones that form the Modern German ones. The only difference between the two languages is how the features are spelled out.
 Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can only delete the light head when the internal case matches the external case. When the internal and external case differ, I show that none of the elements can delete the other one.
 
 
+\section{The (extra) light head}
 
-\section{The relative pronoun}\label{sec:pol-rel}
+In Chapter \ref{ch:constituent-containment}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching}.
 
-In this section I discuss the internal structure of relative pronoun in Polish headless relatives. In Chapter \ref{ch:deriving-onlyinternal} I argued that Modern German relative pronouns consist of the features given in the functional sequence in \ref{ex:pol-fseq-rel}.
-
-\ex.\label{ex:pol-fseq-rel}
+\ex.\label{ex:simple-matching}
 \begin{forest} boom
- [\tsc{k}P
-     [\tsc{k}]
-     [\tsc{rel}P
-         [\tsc{rel}]
-         [\tsc{wh}P
-             [\tsc{wh}]
-             [\tsc{med}P
-                 [\tsc{dx}\scsub{2}]
-                 [\tsc{prox}P
-                     [\tsc{dx}\scsub{1}]
-                     [\tsc{ind}P
-                         [\tsc{ind}]
-                         [\tsc{an}P
-                             [\tsc{an}]
-                             [\tsc{cl}P
-                                 [\tsc{cl}]
-                                 [ΣP
-                                      [Σ]
-                                      [\tsc{person}P
-                                          [\tsc{person}]
-                                          [\tsc{thing}]
-                                      ]
-                                 ]
-                             ]
-                         ]
-                     ]
-                 ]
-             ]
-         ]
-     ]
- ]
+[ϕP
+    [ϕ]
+    [\tsc{k}P
+        [\tsc{k}]
+    ]
+]
 \end{forest}
 
-As I pointed out in Chapter \ref{ch:constituent-containment}, I propose that the difference between Modern German and Polish headless relatives comes from whether the relative pronoun can delete the light head. This depends on whether the light head forms a constituent within the relative pronoun. That, in turn, depends on which constituents are formed to spell out the relative pronoun and the light head. The difference in spellout is the only difference between Modern German and Polish: the features that are spelled out are the same ones, namely the ones in \ref{ex:pol-fseq-rel}.
+In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:fseq-wh-lh-pol}.\footnote{
+The \tsc{k}P in this functional sequence is a placeholder for multiple case projections.
+When the extra light head is the accusative, the \tsc{k}P consists of the features \tsc{f}1 and \tsc{f}2, and they form the \tsc{acc}P.
+When the extra light head is the dative, the \tsc{k}P consists of the features \tsc{f}1, \tsc{f}2 and \tsc{f}3, and they form the \tsc{dat}P.
+}
 
-I discuss two relative pronouns: the animate accusative singular and the animate dative singular. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-polish}. I show them in \ref{ex:pol-rels}.
-
-\ex.\label{ex:pol-rels}
-\ag. k-o-go\\
- `\tsc{rp}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
-\bg. k-o-mu\\
- `\tsc{rp}.\tsc{an}.\tsc{sg}.\tsc{dat}'\\
-
-I decompose the relative pronouns in three morphemes: the \tit{k}, the \tit{o} and the final suffix (\tit{go} and \tit{mu}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the end, I derive the relative pronouns, of which I give the accusative here in \ref{ex:pol-spellout-rel-acc-preview} and the dative here in \ref{ex:pol-spellout-rel-dat-preview}.
-
-\ex.
-\a.\label{ex:pol-spellout-rel-acc-preview}
-\begin{adjustbox}{max width=0.8\textwidth}
-\begin{forest} boom
-  [\tsc{rel}P, s sep=30mm
-      [\tsc{rel}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{rel}]
-          [\tsc{wh}P
-              [\tsc{wh}]
-              [\tsc{med}P
-                  [\tsc{deix\scsub{2}}]
-                  [\tsc{prox}P
-                      [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}P]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P, s sep=30mm
-      [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-          [\tsc{an}P]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [ΣP
-                  [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
-              ]
-          ]
-      ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{go},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
+\ex. \begin{forest} boom
+  [\tsc{k}P
+      [\tsc{k}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                      [Σ]
+                      [\tsc{ref}]
                   ]
               ]
           ]
       ]
   ]
 \end{forest}
-\end{adjustbox}
-\b. \label{ex:pol-spellout-rel-dat-preview}
-\begin{adjustbox}{max width=0.8\textwidth}
+\label{ex:fseq-wh-lh-pol}
+
+In this section, I argue that Polish light heads have the structure shown in \ref{ex:pol-elh}.
+
+\ex.\label{ex:pol-elh}
+\begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=30mm
-      [\tsc{rel}P,
+  [\tsc{dat}P, s sep=40mm
+      [\tsc{an}P,
       tikz={
-      \node[label=below:\tit{k},
+      \node[label=below:\tit{o},
       draw,circle,
       scale=0.95,
       fit to=tree]{};
       }
-          [\tsc{rel}]
-          [\tsc{wh}P
-              [\tsc{wh}]
-              [\tsc{med}P
-                  [\tsc{deix\scsub{2}}]
-                  [\tsc{prox}P
-                      [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{dat}P, s sep=30mm
-      [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-          [\tsc{an}P]
+          [\tsc{an}]
           [\tsc{cl}P
               [\tsc{cl}]
               [ΣP
                   [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
+                  [\tsc{ref}]
               ]
           ]
       ]
-          [\tsc{dat}P,
-          tikz={
-          \node[label=below:\tit{mu},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
+      [\tsc{k}P,
+      tikz={
+      \node[label=below:\tit{go/mu},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [\tsc{ind}P
+              [\tsc{ind}]
           ]
       ]
   ]
 \end{forest}
 \end{adjustbox}
+
+Recall from Chapter \ref{ch:deriving-onlyinternal} that Modern German the extra light head spells out as a single constituent. In this chapter I argue that the Polish extra light head consists of two constituents, as shown in \ref{ex:pol-elh}. This is the crucial difference between the two languages that leads them to be of different types in headless relatives.
+
+I discuss two extra light heads: the animate accusative and the animate dative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-polish}. I show them in \ref{ex:pol-elhs}.
+
+\ex.\label{ex:pol-elhs}
+\ag. o-go\\
+ `\tsc{elh}.\tsc{an}.\tsc{acc}'\\
+\bg. o-mu\\
+ `\tsc{elh}.\tsc{an}.\tsc{dat}'\\
+
+I decompose the extra light heads in two morphemes: the \tit{o} and the final suffix (\tit{go} and \tit{mu}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the end, I show how the extra light heads are constructed.
+
+I start from \tit{je}-pronouns.
+
 
 I start with the morphemes \tit{go} and \tit{mu}. Consider the masculine and neuter personal pronouns in Table \ref{tbl:pol-prons}.\footnote{
 Polish has three types of third person pronouns \pgcitep{swan2002}{156-157}. Not all types of pronouns exist for all numbers and genders, but they do for the masculine accusative and dative singular.
@@ -515,61 +423,8 @@ The morpheme \tit{go} is not used in the accusative neuter, but it is in the gen
   {\draw (.east) node[right]{⇔ \tit{go}}; }
 \end{forest}
 
-I continue with the morpheme \tit{k}. I argue that \tit{k} spells out five features: \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} and \tsc{ind}. I discuss them one by one.
 
-I start with the operator features \tsc{wh} and \tsc{rel}. Compare the animate relative pronoun to the masculine demonstrative in Table \ref{tbl:pol-rel-dem}.
 
-\begin{table}[htbp]
-  \center
-  \caption{Polish relative pronouns and demonstratives \pgcitep{swan2002}{160,171}}
-  \begin{tabular}[b]{ccc}
-    \toprule
-              & \tsc{rp}.\tsc{an} & \tsc{dem}.\tsc{m} \\
-    \cmidrule{2-3}
-    \tsc{nom} & kto               & t-en               \\
-    \tsc{acc} & k-ogo             & t-ego              \\
-    \tsc{gen} & k-ogo             & t-ego              \\
-    \tsc{dat} & k-omu             & t-emu              \\
-    \bottomrule
-  \end{tabular}
-  \label{tbl:pol-rel-dem}
-\end{table}
-
-The relative pronouns are \tsc{wh}-pronouns, which are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
-
-I continue with the deixis features. Consider Table \ref{tbl:pol-rel-dem} again. The \tit{k} and the \tit{t} combine with the same endings, which identifies both of them as a morpheme.
-Unlike Modern German, Polish demonstratives are not marked for definiteness.
-The demonstratives I gave in Table \ref{tbl:pol-rel-dem} are used as proximal and medial. I give an example in \ref{ex:pol-prox-med}. There is a separate marker for the distal, as shown in \ref{ex:pol-dist}.
-
-\ex.
-\ag. to auto\\
- \tsc{dem}.\tsc{prox}/\tsc{med} car.\tsc{n}.\tsc{nom}\\\label{ex:pol-prox-med}
-\bg. tam-to auto\\
- \tsc{dem}.\tsc{dist} car.\tsc{n}.\tsc{nom}\\\label{ex:pol-dist}
- \flushfill{Polish, \pgcitealt{wiland2019}{93}}
-
-The \tit{t} in \ref{ex:pol-prox-med} spells out deixis features: \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2} features. As the \tit{t} is not present in the relative pronoun (compare e.g. \tit{temu} and \tit{komu} in Table \ref{tbl:pol-rel-dem}), I assume that \tit{k} spells out the deixis features itself.
-Finally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
-
-In sum, the morpheme \tit{k} realizes the features \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} and \tsc{ind}.
-
-\ex.\label{ex:pol-entry-k}
-\begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}]
-      [\tsc{wh}P
-          [\tsc{wh}]
-          [\tsc{med}P
-              [\tsc{dx}\scsub{2}]
-              [\tsc{prox}P
-                  [\tsc{dx}\scsub{1}]
-                  [\tsc{ind}]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{k}}; }
-\end{forest}
 
 I continue with the morpheme \tit{o}. I propose that \tit{o} spells out the features \tsc{thing}, \tsc{person}, Σ, \tsc{cl} and \tsc{an}. Compare the animate and inanimate relative pronouns in Table \ref{tbl:pol-rels}.
 
@@ -582,7 +437,7 @@ I continue with the morpheme \tit{o}. I propose that \tit{o} spells out the feat
     \cmidrule{2-3}
     \tsc{nom} & kto       & c-o        \\
     \tsc{acc} & k-o-go    & c-o        \\
-    \tsc{gen} & k-o-go    & cz-    \\
+    \tsc{gen} & k-o-go    & cz-e-go    \\
     \tsc{dat} & k-o-mu    & cz-e-mu    \\
     \bottomrule
   \end{tabular}
@@ -614,15 +469,17 @@ I give the lexical entry for \tit{o} in \ref{ex:pol-entry-e}.
           [\tsc{cl}]
           [ΣP
               [Σ]
-              [\tsc{person}P
-                  [\tsc{person}]
-                  [\tsc{thing}]
-              ]
+              [\tsc{ref}]
           ]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{o}}; }
 \end{forest}
+
+
+
+
+
 
 In what follows, I construct the Polish relative pronouns. I follow the same functional sequence as I did for Modern German. Also, of course, the spellout procedure is identical. The outcome is different because of the different lexical entries Polish has.
 
@@ -655,10 +512,7 @@ Therefore, the \tsc{cl}P is spelled out as \tit{o}, shown in \ref{ex:pol-spellou
           [\tsc{cl}]
           [ΣP
               [Σ]
-              [\tsc{person}P
-                  [\tsc{person}]
-                  [\tsc{thing}]
-              ]
+              [\tsc{ref}]
           ]
       ]
   ]
@@ -709,6 +563,340 @@ Therefore, the \tsc{ind}P is spelled out as \tit{go}, as shown in \ref{ex:pol-sp
       ]
   ]
 \end{forest}
+
+The feature \tsc{f}1 is merged with the \tsc{ind}P, forming an \tsc{nom}P. This phrase is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}. The first movement is tried: the specifier of the \tsc{ind}P, the \tsc{an}P, is moved to the specifier of \tsc{nom}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go-rep}, so it is spelled out as \tit{go}.
+The feature \tsc{f}2 is merged with the \tsc{nom}P, forming an \tsc{acc}P. This phrase is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}. The first movement is tried: the specifier of the \tsc{nom}P, the \tsc{an}P, is moved to the specifier of \tsc{acc}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go-rep}, so it is spelled out as \tit{go}.
+
+The accusative animate extra light head is shown in \ref{ex:pol-elh-acc}.
+
+\ex.\label{ex:pol-elh-acc}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{dat}P, s sep=35mm
+      [\tsc{an}P,
+      tikz={
+      \node[label=below:\tit{o},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [ΣP
+                  [Σ]
+                  [\tsc{ref}]
+              ]
+          ]
+      ]
+      [\tsc{acc}P,
+      tikz={
+      \node[label=below:\tit{go},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+The dative animate extra light head is constructed as its accusative counterpart, except for that the feature \tsc{f}3 is added to create a dative.
+
+The feature \tsc{f}3 is merged with the \tsc{acc}P, forming an \tsc{dat}P. This phrase is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}. The first movement is tried: the specifier of the \tsc{acc}P, the \tsc{an}P, is moved to the specifier of \tsc{dat}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-mu-rep}, so it is spelled out as \tit{mu}.
+
+The dative animate extra light head is shown in \ref{ex:pol-elh-dat}.
+
+\ex.\label{ex:pol-elh-dat}.
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{dat}P, s sep=40mm
+      [\tsc{an}P,
+      tikz={
+      \node[label=below:\tit{o},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [ΣP
+                  [Σ]
+                  [\tsc{ref}]
+              ]
+          ]
+      ]
+      [\tsc{dat}P,
+      tikz={
+      \node[label=below:\tit{mu},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{f}3]
+          [\tsc{acc}P
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+So, the light-headed relative that headless relatives are derived from is:
+
+\exg. Jan lubi [ogo] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rp}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:pol-elh-rp}
+
+For Modern German, I considered two kinds of light-headed relatives as the source of the headless relative.
+First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
+For Modern German I concluded it was the second, and I proposed which features this extra light head should consist of. This set of features in Polish corresponds to the extra light head \tit{ogo} or \tit{omu}, which is not attested as a light head in an existing light-headed relative in Polish.
+
+In the rest of this section I consider the existing Polish light-headed relative that could potentially be the source for headless relatives. This is the light-headed relative that in which the demonstrative is the light head, as shown in \ref{ex:pol-light-headed}.
+
+\exg. Jan śpiewa to, co Maria śpiewa.\\
+Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} Maria sings\\
+`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{103}}\label{ex:pol-light-headed}
+
+For Modern German, I gave two arguments for not taking this existing light-headed relative as source of the headless relative. In what follows, I show that these arguments hold for Polish in the same way do for Modern German.
+
+First, in headless relatives the morpheme \tit{kolwiek} `ever' can appear, as shown in \ref{ex:pol-headless-ever}.
+
+\exg. Jan śpiewa co -kolwiek Maria śpiewa.\\
+Jan sings \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
+`Jan sings everything Maria sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headless-ever}
+
+Light-headed relatives do not allow this morpheme to be inserted, illustrated in \ref{ex:pol-headed-ever}.
+
+\exg. *Jan śpiewa to, co -kolwiek Maria śpiewa.\\
+Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
+`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headed-ever}
+
+Just like for Modern German, I assume that the headless relative is not derived from an ungrammatical structure.\footnote{
+\citet{citko2004} takes the complementary distribution of \tit{kolwiek} `ever' and the light head to mean that they share the same syntactic position. I have nothing to say about the exact syntactic position of \tit{ever}, but in my account it cannot be the head of the relative clause, as this position is reserved for the extra light head. My reason for the incompatibility of \tit{ever} and the light head is that they are semantically incompatible.
+
+For concreteness, I assume \tit{ever} to be situated within the relative clause. Placing it in the main clause generates a different meaning, illustrated by the contrast in meaning between \ref{ex:cz-wh-ever} and \ref{ex:cz-ever-wh} in Czech.
+
+\ex.
+\ag. Sním, co -koliv mi uvaříš.\\
+ eat.\tsc{1}sg what ever I.\tsc{dat} cook.2\tsc{sg}\\
+ `I will eat whatever you will cook for me.'\label{ex:cz-wh-ever}
+\bg. Sním co -koliv, co mi uvaříš.\\
+ eat.\tsc{1}sg what ever what I.\tsc{dat} cook.2\tsc{sg}\\
+ `I will eat anything that you will cook for me.' \flushfill{Czech, \pgcitealt{simik2016}{115}}\label{ex:cz-ever-wh}
+
+\phantom{x}
+}
+
+The second argument against the existing light-headed relatives being the source of headless relatives comes from their interpretation. Headless relatives have two possible interpretations, and light-headed relatives have only one of these.
+Just like in Modern German, Polish headless relatives can be analyzed as either universal or definite \pgcitep{citko2004}{103}.
+Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
+
+In sum, just like Modern German, Polish headless relatives do not seem to be derived from light-headed relatives in which the light head is a demonstrative. A difference between Polish and Modern German demonstratives is that Polish ones do not spell out definite features. The fact that Polish demonstratives are also not the light head of a headless relative confirm that deixis features have to be absent from the extra light head.
+
+
+\section{The relative pronoun}\label{sec:pol-rel}
+
+In Chapter \ref{ch:constituent-containment}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching-rel}.
+
+\ex.\label{ex:simple-matching-rel}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [ϕP
+          [ϕ]
+          [\tsc{k}P
+              [\tsc{k}, baseline]
+          ]
+      ]
+  ]
+\end{forest}
+
+In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:pol-fseq-rel}.
+
+\ex.\label{ex:pol-fseq-rel}
+\begin{adjustbox}{max width=0.9\textwidth}
+  \begin{forest} boom
+   [\tsc{k}P
+       [\tsc{k}]
+       [\tsc{rel}P
+           [\tsc{rel}]
+           [\tsc{wh}P
+               [\tsc{wh}]
+               [\tsc{med}P
+                   [\tsc{dx}\scsub{2}]
+                   [\tsc{prox}P
+                       [\tsc{dx}\scsub{1}]
+                       [\tsc{ind}P
+                           [\tsc{ind}]
+                           [\tsc{an}P
+                               [\tsc{an}]
+                               [\tsc{cl}P
+                                   [\tsc{cl}]
+                                   [ΣP
+                                        [Σ]
+                                        [\tsc{ref}]
+                                   ]
+                               ]
+                           ]
+                       ]
+                   ]
+               ]
+           ]
+       ]
+   ]
+  \end{forest}
+\end{adjustbox}
+
+In this section, I argue that Polish relative pronouns have the structure shown in \ref{ex:pol-rel}.
+
+\ex.\label{ex:pol-rel}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{rel}P, s sep=30mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{med}P
+                  [\tsc{deix\scsub{2}}]
+                  [\tsc{prox}P
+                      [\tsc{deix\scsub{1}}]
+                      [\tsc{ind}P]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P, s sep=30mm
+      [\tsc{an}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+          [\tsc{an}P]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [ΣP
+                  [Σ]
+                  [\tsc{ref}]
+              ]
+          ]
+      ]
+          [\tsc{k}P,
+          tikz={
+          \node[label=below:\tit{go/mu},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{k}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+              ]
+          ]
+      ]
+  ]
+  \end{forest}
+  \end{adjustbox}
+
+For the \tit{o} and the final suffix I already gave the lexical entries in the previous section. I discuss which features the \tsc{k} spells out, and I give their lexical entries. \tit{k} spells out all the extra features. In the end, I show how the relative pronouns are constructed.
+
+I argue that \tit{k} spells out five features: \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} \tsc{ind}. I discuss them one by one.
+
+I start with the operator features \tsc{wh} and \tsc{rel}. The relative pronouns are \tsc{wh}-pronouns, which are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
+
+I continue with the deixis features. Consider Table \ref{tbl:pol-rel-dem} again.
+
+\begin{table}[htbp]
+  \center
+  \caption{Polish relative pronouns and demonstratives \pgcitep{swan2002}{160,171}}
+  \begin{tabular}[b]{ccc}
+    \toprule
+              & \tsc{rp}.\tsc{an} & \tsc{dem}.\tsc{m} \\
+    \cmidrule{2-3}
+    \tsc{nom} & kto               & t-en               \\
+    \tsc{acc} & k-ogo             & t-ego              \\
+    \tsc{gen} & k-ogo             & t-ego              \\
+    \tsc{dat} & k-omu             & t-emu              \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:pol-rel-dem}
+\end{table}
+
+So, the \tit{k} spells out the feature that are contained in the \tit{t} and in the \tit{j}, which are \tsc{c}, \tsc{deix}\scsub{1} and \tsc{deix}\scsub{2}.\footnote{
+Unlike Modern German, Polish demonstratives are not marked for definiteness.
+}
+
+The demonstratives I gave in Table \ref{tbl:pol-rel-dem} are used as proximal and medial. I give an example in \ref{ex:pol-prox-med}. There is a separate marker for the distal, as shown in \ref{ex:pol-dist}.
+
+\ex.
+\ag. to auto\\
+ \tsc{dem}.\tsc{prox}/\tsc{med} car.\tsc{n}.\tsc{nom}\\\label{ex:pol-prox-med}
+\bg. tam-to auto\\
+ \tsc{dem}.\tsc{dist} car.\tsc{n}.\tsc{nom}\\\label{ex:pol-dist}
+ \flushfill{Polish, \pgcitealt{wiland2019}{93}}
+
+Finally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}. Lastly, \tsc{k} also contains \tsc{an} and \tsc{cl}.
+
+In sum, the morpheme \tit{k} realizes the features \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} and \tsc{ind}.
+
+\ex.\label{ex:pol-entry-k}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P
+          [\tsc{wh}]
+          [\tsc{med}P
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}P
+                              [\tsc{an}]
+                              [\tsc{cl}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{k}}; }
+\end{forest}
+
+how I derive the czego
+
+
+
+
+
+
+
 
 The next feature in the functional sequence is the feature \tsc{dx}\scsub{1}. The derivation for this feature resembles the derivation of \tsc{dx}\scsub{1} in Modern German.
 The feature is merged with the existing syntactic structure, creating a \tsc{prox}P.
@@ -762,10 +950,7 @@ Therefore, the \tsc{prox}P is spelled out as \tit{k}. The newly created phrase i
               [\tsc{cl}]
               [ΣP
                   [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
+                  [\tsc{ref}]
               ]
           ]
       ]
@@ -860,10 +1045,7 @@ The \tsc{acc}P is spelled out as \tit{go}, and the \tsc{acc}P is merged back to 
               [\tsc{cl}]
               [ΣP
                   [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
+                  [\tsc{ref}]
               ]
           ]
       ]
@@ -950,10 +1132,7 @@ The \tsc{dat}P is spelled out as \tit{mu}, and the \tsc{dat}P is merged back to 
               [\tsc{cl}]
               [ΣP
                   [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
+                  [\tsc{ref}]
               ]
           ]
       ]
@@ -983,256 +1162,6 @@ The \tsc{dat}P is spelled out as \tit{mu}, and the \tsc{dat}P is merged back to 
 To summarize, I decomposed the relative pronoun into the three morphemes \tit{k}, \tit{o} and the suffix (\tit{go} and \tit{mu}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituents that determine whether the relative pronoun can delete the light head or not.
 
 
-\section{The (extra) light head}
-
-In my proposal, headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains the light head as a single constituent. I suggest that this only holds for Polish when the internal and the external case match.
-In the previous section, I gave the internal structure of the Polish relative pronoun, i.e. which constituents the relative pronoun consists of.
-In this section, I show the internal structure of the Polish light head.
-
-I take the functional sequence of the extra light head in Modern German, and I show how these features are spelled out in Polish. In Modern German the extra light head spells out as a single constituent, in Polish it consists of two constituents. This is what leads Polish to be of a different language type than Modern German.
-Just like for Modern German, the extra light head is not attested in existing light-headed relatives in Polish.
-For Modern German, I gave two reasons for not taking the existing light-headed relative as source of the headless relative. I show both of them hold for Polish too.
-
-In Section \ref{sec:light-mg}, I argued for a particular feature content of the extra light head in Modern German. In my proposal, the difference in spellout is the only difference between Modern German and Polish: the features that are spelled out are the same ones. Therefore, I assume that the extra light head in Polish spells out the same features as the extra light head in Modern German.
-I give the functional sequence for the extra light head in \ref{ex:fseq-wh-lh-pol}.
-
-\ex. \begin{forest} boom
-  [\tsc{k}P
-      [\tsc{k}]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [ΣP
-                      [Σ]
-                      [\tsc{person}P
-                          [\tsc{person}]
-                          [\tsc{thing}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\label{ex:fseq-wh-lh-pol}
-
-The \tsc{k}P is a placeholder for multiple case projections.
-When the extra light head is the accusative, the \tsc{k}P consists of the features \tsc{f}1 and \tsc{f}2, and they form the \tsc{acc}P.
-When the extra light head is the dative, the \tsc{k}P consists of the features \tsc{f}1, \tsc{f}2 and \tsc{f}3, and they form the \tsc{dat}P.
-
-Three lexical entries are needed to spell out the accusative and dative extra light heads. I motivated their feature content in Section \ref{sec:pol-rel}.
-The morpheme \tit{o} spells out the features \tsc{thing}, \tsc{person}, Σ, \tsc{cl} and \tsc{an}, as shown in \ref{ex:pol-entry-e-rep}.
-The morpheme \tsc{go} spells out the features \tsc{ind}, \tsc{f}1 and \tsc{f}2, as shown in \ref{ex:pol-entry-go-rep}.
-The morpheme \tit{mu} spells out the features that \tit{go} spells out plus the feature \tsc{f}3, as shown in \ref{ex:pol-entry-mu-rep}.
-
-\ex.\label{ex:pol-entries-elh}
-\a.\label{ex:pol-entry-e-rep}
-\begin{forest} boom
-  [\tsc{an}P
-      [\tsc{an}]
-      [\tsc{cl}P
-          [\tsc{cl}]
-          [ΣP
-              [Σ]
-              [\tsc{person}P
-                  [\tsc{person}]
-                  [\tsc{thing}]
-              ]
-          ]
-      ]
-  ]
-{\draw (.east) node[right]{⇔ \tit{o}}; }
-\end{forest}
-\b.\label{ex:pol-entry-go-rep}
-\begin{forest} boom
-  [\tsc{acc}P
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-          ]
-      ]
-  ]
-{\draw (.east) node[right]{⇔ \tit{go}}; }
-\end{forest}
-\b.\label{ex:pol-entry-mu-rep}
-\begin{forest} boom
-  [\tsc{dat}P
-      [\tsc{f}3]
-      [\tsc{acc}P
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-              ]
-          ]
-      ]
-  ]
-{\draw (.east) node[right]{⇔ \tit{mu}}; }
-\end{forest}
-
-The accusative extra light head is derived as follows.
-The feature \tsc{person} is merged with the feature \tsc{thing}, forming the \tsc{person}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-e-rep}, so it is spelled out as \tit{o}.
-The feature Σ is merged with the \tsc{person}P, forming the ΣP. This phrase is contained in the lexical tree in \ref{ex:pol-entry-e-rep}, so it is spelled out as \tit{o}.
-The feature \tsc{cl} is merged with the ΣP, forming the \tsc{cl}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-e-rep}, so it is spelled out as \tit{o}.
-The feature \tsc{an} is merged with the \tsc{cl}P, forming the \tsc{an}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-e-rep}, so it is spelled out as \tit{o}.
-
-The feature \tsc{ind} is merged with the \tsc{an}P, forming the \tsc{ind}P. This phrase (an \tsc{ind}P containing more features besides \tsc{ind}) is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}.
-There is no specifier to move, so the first movement in the spellout algorithm is irrelevant. The second movement is tried: the complement of \tsc{ind}, the \tsc{an}P, is moved to the specifier of \tsc{ind}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go-rep}, so it is spelled out as \tit{go}.
-The feature \tsc{f}1 is merged with the \tsc{ind}P, forming an \tsc{nom}P. This phrase is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}. The first movement is tried: the specifier of the \tsc{ind}P, the \tsc{an}P, is moved to the specifier of \tsc{nom}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go-rep}, so it is spelled out as \tit{go}.
-The feature \tsc{f}2 is merged with the \tsc{nom}P, forming an \tsc{acc}P. This phrase is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}. The first movement is tried: the specifier of the \tsc{nom}P, the \tsc{an}P, is moved to the specifier of \tsc{acc}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go-rep}, so it is spelled out as \tit{go}.
-
-The accusative animate extra light head is shown in \ref{ex:pol-elh-acc}.
-
-\ex.\label{ex:pol-elh-acc}
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boom
-  [\tsc{dat}P, s sep=35mm
-      [\tsc{an}P,
-      tikz={
-      \node[label=below:\tit{o},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{an}]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [ΣP
-                  [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label=below:\tit{go},
-      draw,circle,
-      scale=0.9,
-      fit to=tree]{};
-      }
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\end{adjustbox}
-
-The dative animate extra light head is constructed as its accusative counterpart, except for that the feature \tsc{f}3 is added to create a dative.
-
-The feature \tsc{f}3 is merged with the \tsc{acc}P, forming an \tsc{dat}P. This phrase is not contained in any of the lexical entries in \ref{ex:pol-entries-elh}. The first movement is tried: the specifier of the \tsc{acc}P, the \tsc{an}P, is moved to the specifier of \tsc{dat}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-mu-rep}, so it is spelled out as \tit{mu}.
-
-The dative animate extra light head is shown in \ref{ex:pol-elh-dat}.
-
-\ex.\label{ex:pol-elh-dat}.
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boom
-  [\tsc{dat}P, s sep=40mm
-      [\tsc{an}P,
-      tikz={
-      \node[label=below:\tit{o},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{an}]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [ΣP
-                  [Σ]
-                  [\tsc{person}P
-                      [\tsc{person}]
-                      [\tsc{thing}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{dat}P,
-      tikz={
-      \node[label=below:\tit{mu},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{f}3]
-          [\tsc{acc}P
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\end{adjustbox}
-
-So, the light-headed relative that headless relatives are derived from is:
-
-\exg. Jan lubi [ogo] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
-Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rp}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
-`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:pol-elh}
-
-For Modern German, I considered two kinds of light-headed relatives as the source of the headless relative.
-First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
-For Modern German I concluded it was the second, and I proposed which features this extra light head should consist of. This set of features in Polish corresponds to the extra light head \tit{ogo} or \tit{omu}, which is not attested as a light head in an existing light-headed relative in Polish.
-
-In the rest of this section I consider the existing Polish light-headed relative that could potentially be the source for headless relatives. This is the light-headed relative that in which the demonstrative is the light head, as shown in \ref{ex:pol-light-headed}.
-
-\exg. Jan śpiewa to, co Maria śpiewa.\\
-Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} Maria sings\\
-`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{103}}\label{ex:pol-light-headed}
-
-For Modern German, I gave two arguments for not taking this existing light-headed relative as source of the headless relative. In what follows, I show that these arguments hold for Polish in the same way do for Modern German.
-
-First, in headless relatives the morpheme \tit{kolwiek} `ever' can appear, as shown in \ref{ex:pol-headless-ever}.
-
-\exg. Jan śpiewa co -kolwiek Maria śpiewa.\\
-Jan sings \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
-`Jan sings everything Maria sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headless-ever}
-
-Light-headed relatives do not allow this morpheme to be inserted, illustrated in \ref{ex:pol-headed-ever}.
-
-\exg. *Jan śpiewa to, co -kolwiek Maria śpiewa.\\
-Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
-`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headed-ever}
-
-Just like for Modern German, I assume that the headless relative is not derived from an ungrammatical structure.\footnote{
-\citet{citko2004} takes the complementary distribution of \tit{kolwiek} `ever' and the light head to mean that they share the same syntactic position. I have nothing to say about the exact syntactic position of \tit{ever}, but in my account it cannot be the head of the relative clause, as this position is reserved for the extra light head. My reason for the incompatibility of \tit{ever} and the light head is that they are semantically incompatible.
-
-For concreteness, I assume \tit{ever} to be situated within the relative clause. Placing it in the main clause generates a different meaning, illustrated by the contrast in meaning between \ref{ex:cz-wh-ever} and \ref{ex:cz-ever-wh} in Czech.
-
-\ex.
-\ag. Sním, co -koliv mi uvaříš.\\
- eat.\tsc{1}sg what ever I.\tsc{dat} cook.2\tsc{sg}\\
- `I will eat whatever you will cook for me.'\label{ex:cz-wh-ever}
-\bg. Sním co -koliv, co mi uvaříš.\\
- eat.\tsc{1}sg what ever what I.\tsc{dat} cook.2\tsc{sg}\\
- `I will eat anything that you will cook for me.' \flushfill{Czech, \pgcitealt{simik2016}{115}}\label{ex:cz-ever-wh}
-
-\phantom{x}
-}
-
-The second argument against the existing light-headed relatives being the source of headless relatives comes from their interpretation. Headless relatives have two possible interpretations, and light-headed relatives have only one of these.
-Just like in Modern German, Polish headless relatives can be analyzed as either universal or definite \pgcitep{citko2004}{103}.
-Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
-
-In sum, just like Modern German, Polish headless relatives do not seem to be derived from light-headed relatives in which the light head is a demonstrative. A difference between Polish and Modern German demonstratives is that Polish ones do not spell out definite features. The fact that Polish demonstratives are also not the light head of a headless relative confirm that deixis features have to be absent from the extra light head.
 
 \section{Comparing constituents}\label{sec:comparing-polish}
 
@@ -1261,7 +1190,7 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
         \tsc{acc} extra light head \tit{} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{acc}P, s sep=35mm, tikz={
+          [\tsc{acc}P, s sep=40mm, tikz={
           \node[
           draw, constituent-deletion, yshift=-0.4cm,
           fill=DG,fill opacity=0.2,
@@ -1281,10 +1210,7 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
                       [\tsc{cl}]
                       [ΣP
                           [Σ]
-                          [\tsc{person}P
-                              [\tsc{person}]
-                              [\tsc{thing}]
-                          ]
+                          [\tsc{ref}]
                       ]
                   ]
               ]
@@ -1316,7 +1242,7 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
             [\tsc{rel}P
                 [\phantom{x}k\phantom{x}, roof]
             ]
-            [\tsc{acc}P, s sep=35mm, tikz={
+            [\tsc{acc}P, s sep=40mm, tikz={
             \node[
             draw, constituent-deletion, yshift=-0.4cm,
             scale=1.25,
@@ -1335,10 +1261,7 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
                         [\tsc{cl}]
                         [ΣP
                             [Σ]
-                            [\tsc{person}P
-                                [\tsc{person}]
-                                [\tsc{thing}]
-                            ]
+                            [\tsc{ref}]
                         ]
                     ]
                 ]
@@ -1402,7 +1325,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
         \tsc{acc} extra light head \tit{o-go} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{acc}P, s sep=37mm
+          [\tsc{acc}P, s sep=42mm
               [\tsc{an}P,
               tikz={
               \node[label=below:\tit{o},
@@ -1420,10 +1343,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
                       [\tsc{cl}]
                       [ΣP
                           [Σ]
-                          [\tsc{person}P
-                              [\tsc{person}]
-                              [\tsc{thing}]
-                          ]
+                          [\tsc{ref}]
                       ]
                   ]
               ]
@@ -1460,7 +1380,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
             [\tsc{rel}P
                 [\phantom{x}k\phantom{x}, roof]
             ]
-            [\tsc{dat}P, s sep=40mm
+            [\tsc{dat}P, s sep=45mm
                 [\tsc{an}P,
                 tikz={
                 \node[label=below:\tit{o},
@@ -1478,10 +1398,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
                         [\tsc{cl}]
                         [ΣP
                             [Σ]
-                            [\tsc{person}P
-                                [\tsc{person}]
-                                [\tsc{thing}]
-                            ]
+                            [\tsc{ref}]
                         ]
                     ]
                 ]
@@ -1556,7 +1473,7 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
         \tsc{dat} extra light head \tit{o-mu} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{dat}P, s sep=40mm
+          [\tsc{dat}P, s sep=45mm
               [\tsc{an}P,
               tikz={
               \node[label=below:\tit{o},
@@ -1574,10 +1491,7 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
                       [\tsc{cl}]
                       [ΣP
                           [Σ]
-                          [\tsc{person}P
-                              [\tsc{person}]
-                              [\tsc{thing}]
-                          ]
+                          [\tsc{ref}]
                       ]
                   ]
               ]
@@ -1619,7 +1533,7 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
             [\tsc{rel}P
                 [\phantom{x}k\phantom{x}, roof]
             ]
-            [\tsc{acc}P, s sep=37mm
+            [\tsc{acc}P, s sep=42mm
                 [\tsc{an}P,
                 tikz={
                 \node[label=below:\tit{o},
@@ -1637,10 +1551,7 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
                         [\tsc{cl}]
                         [ΣP
                             [Σ]
-                            [\tsc{person}P
-                                [\tsc{person}]
-                                [\tsc{thing}]
-                            ]
+                            [\tsc{ref}]
                         ]
                     ]
                 ]
