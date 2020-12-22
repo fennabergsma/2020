@@ -98,11 +98,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{170}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}The (extra) light head}{189}{section.7.3}%
+\contentsline {section}{\numberline {7.3}The (extra) light head}{188}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Comparing constituents}{196}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Comparing constituents}{195}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Summary}{201}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Summary}{200}{section.7.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{203}{chapter.8}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +140,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{265}{table.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{267}{section*.23}%
+\contentsline {chapter}{Bibliography}{267}{section*.21}%

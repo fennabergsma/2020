@@ -168,7 +168,7 @@ In the end, I argue that Modern German relative pronoun have the structure shown
 \ex.\label{ex:mg-rp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=15mm
+  [\tsc{rel}P, s sep=18mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{w},
@@ -182,12 +182,12 @@ In the end, I argue that Modern German relative pronoun have the structure shown
               [\tsc{dx}\scsub{2}]
           ]
       ]
-      [\tsc{med}P, s sep=40mm
+      [\tsc{med}P, s sep=45mm
           [\tsc{med}P,
           tikz={
           \node[label=below:\tit{e},
           draw,circle,
-          scale=0.85,
+          scale=0.95,
           fit to=tree]{};
           }
               [\tsc{dx}\scsub{2}]
@@ -239,7 +239,7 @@ I discuss two relative pronouns: the animate accusative and the animate dative. 
 
 I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant (\tit{n} or \tit{m}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the next section, I show how I construct the relative pronouns by combining the separate morphemes.
 
-I start with the final consonants: \tit{n} and \tit{m}. Consider Table \ref{tbl:mg-paradigm-wh-rels}.
+I start with the final consonants: \tit{n} and \tit{m}. I argue that these consonants spell out gender features, number features, case features and pronominal features. Consider Table \ref{tbl:mg-paradigm-wh-rels}.
 
 \begin{table}[htbp]
 \center
@@ -282,7 +282,14 @@ Notice that the animate forms in Table \ref{tbl:mg-paradigm-wh-rels} are the mas
 
 Table \ref{tbl:mg-dieser} shows that the final consonant differs depending on gender, number and case. There is no vowel that differs between the different forms. I conclude from this that the consonant realizes features having to do with gender, number and case.
 
-Another context in which the final consonants appear is in their use as a pronoun. More specifically, the final consonants correspond to the weak pronoun in Modern German. In \ref{ex:mg-weak}, I give examples of the masculine accusative singular and masculine dative singular.
+For number and gender, I adopt the features that are distinguished by \citet{harley2002} for pronouns. The feature \tsc{cl} corresponds to a gender feature, which is inanimate or neuter if it is not combined with any other features. Combining \tsc{cl} with the feature \tsc{an} gives the animate or masculine gender.\footnote{
+If the features \tsc{cl} and \tsc{an} are combined with the feature \tsc{fem}, it becomes the feminine gender.
+}
+The feature \tsc{ind} corresponds to number, which is singular if it is not combined with any other features.
+
+For case, I adopt the features of \citet{caha2009}, already introduced in Chapter \ref{ch:decomposition}. The feature \ac{f}1 and \tsc{f}2 corresponds to the accusative, and the features \ac{f}1, \ac{f}2 and \tsc{f}3 correspond to the dative.
+
+I continue with the pronominal features. Another context in which the final consonants appear is in their use as a pronoun. More specifically, the final consonants correspond to the weak pronoun in Modern German. In \ref{ex:mg-weak}, I give examples of the masculine accusative singular and masculine dative singular.
 
 \ex.\label{ex:mg-weak}
 \ag. Ich wollte n gestern schon anrufen.\\
@@ -295,27 +302,26 @@ Another context in which the final consonants appear is in their use as a pronou
 \citet{cardinaletti1994} split pronouns in three classes: strong pronouns, weak pronouns and clitics. There are several tests that distinguish the types from each other. In what follows, I show that the pronouns in \ref{ex:mg-weak} are neither strong pronouns nor clitics, and therefore, should be classified as weak pronouns. The tests I are are taken from \citet{cardinaletti1994}.
 
 First, I show that \tit{n} and \tit{m} are not strong pronouns because of how they behave under coordination and under focus.
-Strong pronouns can be coordinated. The examples in \ref{ex:wk-pron-coord} illustrate that \tit{n} and \tit{m} cannot be coordinated. Instead, the strong pronouns \tit{ihn} and \tit{ihm} should be used.
+Strong pronouns can be coordinated. The examples in \ref{ex:wk-pron-coord} illustrate that \tit{n} and \tit{m} cannot be coordinated.
 
 \ex.\label{ex:wk-pron-coord}
-\ag. Ich wollte Jan und ihn/ *n gestern schon anrufen.\\
- I wanted Jan and 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} yesterday already call\\
+\ag. *Ich wollte Jan und n gestern schon anrufen.\\
+ I wanted Jan and 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} yesterday already call\\
  `I already wanted to call Jan and him yesterday.'
-\bg. Ich helfe Jan und ihm/ *m sein Fahrrad zu reparieren.\\
- I help Jan and 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} his bike to repare\\
- `I help Jan and him reparing his bike.'
+\bg. *Ich helfe Jan und m sein Fahrrad zu reparieren.\\
+ I help Jan and 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} his bike to repare\\
+ `I help Jan and him repairing his bike.'
 
 Strong pronouns can be focused.
 The examples in \ref{ex:wk-pron-focus} show that \tit{n} and \tit{m} cannot be focused.
-Instead, the strong pronouns \tit{ihn} and \tit{ihm} should be used.
 
 \ex.\label{ex:wk-pron-focus}
-\ag. Ich wollte nur ihn/ *n anrufen.\\
- I wanted only 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} call\\
+\ag. *Ich wollte nur n anrufen.\\
+ I wanted only 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} call\\
  `I wanted to call only him.'
-\bg. Ich helfe nur ihm/ *m sein Fahrrad zu reparieren.\\
- I help only 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} his bike to repare\\
- `I help only him reparing his bike.'
+\bg. *Ich helfe nur m sein Fahrrad zu reparieren.\\
+ I help only 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} his bike to repare\\
+ `I help only him repairing his bike.'
 
 Second, I show that the consonant is not a clitic because of how they behave with respect to following dative objects and combining with prepositions.
 Clitics can either follow a dative object or precede it. Strong and weak pronouns can only follow it.
@@ -331,10 +337,10 @@ The examples in \ref{ex:wk-pron-order-n} and \ref{ex:wk-pron-order-m} show that 
 
 \ex.\label{ex:wk-pron-order-m}
 \ag. .. dass Ursel m Jan empfohlen hat.\\
- {} that Ursel 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} Jan recommended has\\
+ {} that Ursel 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} Jan recommended has\\
  `that Ursel recommended Jan to him.'
 \bg. *.. dass Ursel Jan m empfohlen hat.\\
-{} that Ursel Jan 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} recommended has\\
+{} that Ursel Jan 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} recommended has\\
 `that Ursel recommended Jan to him.'
 
 Clitics cannot combine with prepositions.
@@ -342,79 +348,32 @@ The examples in \ref{ex:wk-pron-prep-n} and \ref{ex:wk-pron-prep-m} show that \t
 
 \ex.\label{ex:wk-pron-prep-n}
 \ag. Ich habe schon ein Geschenk für n gekauft.\\
- I have already a gift for him.\tsc{wk} bought\\
+ I have already a gift for 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} bought\\
  `I already bought a gift for him.'
-\bg. Ich habe gestern gegen n gespielt.\\
-I have yesterday against him.\tsc{wk} played\\
-`Yesterday I played against him.'
-\bg. Ich habe ein schönen Brief an n geschrieben.\\
-I have a nice letter to him.\tsc{wk} written\\
-`I wrote a nice letter to him.'
 \bg. Ich bin schnell auf n zu gelaufen.\\
-I am fast on him.\tsc{wk} to walked\\
-`I walked toward him fast.'
+ I am fast on 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} to walked\\
+ `I walked toward him fast.'
 
 \ex.\label{ex:wk-pron-prep-m}
-\ag. Ich habe schon ein Geschenk für n gekauft.\\
- I have already a gift for him.\tsc{wk} bought\\
- `I already bought a gift for him.'
-\bg. Ich habe gestern gegen n gespielt.\\
-I have yesterday against him.\tsc{wk} played\\
-`Yesterday I played against him.'
-\bg. Ich habe ein schönen Brief an n geschrieben.\\
-I have a nice letter to him.\tsc{wk} written\\
-`I wrote a nice letter to him.'
-\bg. Ich bin schnell auf n zu gelaufen.\\
-I am fast on him.\tsc{wk} to walked\\
-`I walked toward him fast.'
+\ag. Ich war mit m im Wald wandern.\\
+ I have already a gift for 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} bought\\
+ `I was hiking with him in the woods.'
+\bg. Ich habe Blumen von m bekommen.\\
+ I have flowers from 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} received\\
+ `I received flowers from him.'
 
 In sum, \tit{n} and \tit{m} are not strong pronouns and not clitics, so they are weak pronouns.
 This means that the forms also contain pronominal features.
-
-
-
-
-now we are done with segmentation, let me turn to the actual features.
-
-Since I discuss the animate accusative and the animate dative, I only introduce features that are realized by these morphemes.
-For case, I adopt the features of \citet{caha2009}, already introduced in Chapter \ref{ch:decomposition}. The feature \ac{f}1 corresponds to the nominative, and the features \ac{f}1 and \ac{f}2 correspond to the accusative.
-
-For number and gender, I adopt the features that are distinguished by \citet{harley2002} for pronouns. The feature \tsc{cl} corresponds to a gender feature, which is inanimate or neuter if it is not combined with any other features. Combining \tsc{cl} with the feature \tsc{an} gives the animate or masculine gender.\footnote{
-If the features \tsc{cl} and \tsc{an} are combined with the feature \tsc{fem}, it becomes the feminine gender.
-}
-The feature \tsc{ind} corresponds to number, which is singular if it is not combined with any other features.
-
-Regarding pronominal features, I assume the feature \tsc{ref} to be present. \citet{harley2002} claim that all pronouns contain this feature, because they are referential expressions. In addition, the feature Σ is present because it is a weak pronoun \citep{cardinaletti1994}.\footnote{
+I propose that two pronominal features are present: \tsc{ref} and Σ.
+\citet{harley2002} claim that all pronouns contain the feature \tsc{ref}, because they are referential expressions. The feature Σ is present because the consonants are weak pronouns \citep{cardinaletti1994}.\footnote{
 I assume that clitics lack the features \tsc{ref} (which corresponds to the LP in \pgcitealt{cardinaletti1994}{61}) and the feature Σ. Strong pronouns have, in addition to \tsc{ref} and Σ, another feature (C in terms of \pgcitealt{cardinaletti1994}{61}).
 }
 
-% \citet{baker2003} claims that it also present in nouns, and that this feature distinguishes nouns from other categories.
+I give the lexical entries for \tit{n} and \tit{m} in \ref{ex:mg-entry-n} and \ref{ex:mg-entry-m}.
+The \tit{n} is the nominative masculine singular, so it spells out the features \tsc{ref}, Σ, \tsc{cl}, \tsc{an}, \tsc{ind} \ac{f}1 and \tsc{f}2. The \tit{m} is the accusative masculine singular, so it spells out the features that the \tit{r} spells out plus \ac{f}3.
 
-I give the lexical entries for \tit{r} and \tit{n} in \ref{ex:mg-entry-r} and \ref{ex:mg-entry-n}.
-The \tit{r} is the nominative masculine singular, so it spells out the features \tsc{ref}, Σ, \tsc{cl}, \tsc{an}, \tsc{ind} and \ac{f}1. The \tit{n} is the accusative masculine singular, so it spells out the features that the \tit{r} spells out plus \ac{f}2.
-
-\ex.\label{ex:mg-entries-rn}
-\a.\label{ex:mg-entry-r}
-\begin{forest} boom
-  [\tsc{nom}P
-      [\ac{f}1]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [ΣP
-                      [Σ]
-                      [\tsc{ref}]
-                  ]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{r}}; }
-\end{forest}
-\b.\label{ex:mg-entry-n}
+\ex.\label{ex:mg-entries-nm}
+\a.\label{ex:mg-entry-n}
 \begin{forest} boom
   [\tsc{acc}P
       [\ac{f}2]
@@ -437,11 +396,57 @@ The \tit{r} is the nominative masculine singular, so it spells out the features 
   ]
   {\draw (.east) node[right]{⇔ \tit{n}}; }
 \end{forest}
+\b.\label{ex:mg-entry-m}
+\begin{forest} boom
+  [\tsc{dat}P
+      [\ac{f}3]
+      [\tsc{acc}P
+          [\ac{f}2]
+          [\tsc{nom}P
+              [\ac{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}P
+                          [\tsc{cl}]
+                          [ΣP
+                              [Σ]
+                              [\tsc{ref}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{m}}; }
+\end{forest}
 
 Note that the ordering of the features here is not random. I motivate this later on in this section.
 
-This leaves the \tit{e} in the relative pronoun. This morpheme is present in elements such as demonstratives and (\tsc{wh}-)relative pronouns. It spells out gender and number features and features regarding deixis. I start with the deixis features. In relative pronouns it does not express spatial deixis, but discourse deixis: it establishes a relation with an antecedent.
+I continue with the \tit{e}. This morpheme is present (\tsc{wh}-)relative pronouns, but also in demonstratives, as shown in \ref{tbl:mg-paradigm-dem}.\footnote{
+Note that \tsc{wh}-relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rel}. Demonstratives also have plural forms, and \tsc{wh}-relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
+}
 
+\begin{table}[H]
+\center
+\caption {Modern German demonstrative pronouns \pgcitep{durrell2011}{5.4.1}} %dieser source
+ \begin{tabular}{ccccc}
+ \toprule
+             & \ac{m}  & \tsc{n} & \ac{f} & \ac{pl} \\
+   \cmidrule{2-4}
+   \ac{nom}  & d-e-r   & d-a-s   & d-ie   & d-ie    \\
+   \ac{acc}  & d-e-n   & d-a-s   & d-ie   & d-ie    \\
+   \ac{dat}  & d-e-m   & d-e-m   & d-e-r  & d-e-n   \\
+ \bottomrule
+ \end{tabular}
+ \label{tbl:mg-paradigm-dem}
+\end{table}
+
+I suggest that the morpheme \tit{e} spells out deixis features, pronominal features and gender and number features. I start with the deixis features.
+
+In relative pronouns it does not express spatial deixis, but discourse deixis: it establishes a relation with an antecedent.
 Generally, three types of deixis are distinguished: proximal, medial and distal. I argue that \tit{e} in the relative pronoun corresponds to the medial. Generally speaking, \tsc{wh}-pronouns combine with the medial or the distal. English has morphological evidence for this claim. Demonstratives in English can combine with either the proximal or this medial/distal, as shown in \ref{ex:english-dem}.
 
 \ex.\label{ex:english-dem}
@@ -463,25 +468,35 @@ The use of the medial in \tsc{wh}-pronouns can be understood conceptually if one
 I adopt the features for deixis distinguished by \citet{lander2018}. The feature \tsc{dx}\scsub{1} corresponds to the proximal, the features \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2} correspond to the medial, and the features \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} and \tsc{dx}\scsub{3} correspond to the distal.
 The difference between the proximal, the medial and the distal cannot be observed in Modern German, because it is syncretic all of them \pgcitep{lander2018}{387}, see Table \ref{tbl:mg-paradigm-dem}.
 
-What can be distinguished in Modern German is the differences of the vowel depending on number and gender.
+I continue with gender and number features. Table \ref{tbl:mg-paradigm-dem} shows that the vowel changes depending on gender and number. The masculine singular uses the \tit{e}, the neuter singular uses the \tit{a}, the feminine singular uses the \tit{ie} and the plural uses for all genders the \tit{ie}.\footnote{
+Note that the dative forms in all gender and numbers have the \tit{e}, which I assigned to masculine gender. This holds for the genitive forms too, which I have not given here. I see these as arguments in favor the following analysis.
 
-\begin{table}[H]
-\center
-\caption {Modern German demonstratives \pgcitep{durrell2011}{5.4.1}}
- \begin{tabular}{ccc}
- \toprule
-            & \ac{m} & \tsc{n} \\
-   \cmidrule{2-3}
-   \ac{sg}  & d-e-r  & d-a-s   \\
-   \ac{pl}  & d-ie   & d-ie    \\
- \bottomrule
- \end{tabular}
- \label{tbl:mg-paradigm-dems}
-\end{table}
+The phonological part of the lexical entries in \ref{ex:mg-entry-nm} should not be \tit{n} and \tit{m} but \tit{en} and \tit{em}.
+Additionally, the lexical entry carries additional information: the lexical entries in \ref{ex:mg-entry-nm} only bring a single slot for a single consonant.
+The lexical entry for the neuter singular nominative and accusative is \tit{as} but only the \tit{s} surfaces due the single consonant slot.
+The feminine singular and the plurals do not have a weak pronoun and they do not have a marker in forms like \tit{diese} `this' (see Table \ref{tbl:mg-dieser}), because their lexical entry does not contain a consonant.
 
-So, in sum:
+Under this analysis, the lexical entry does not correspond to the phonology \tit{e}. Its phonological contribution is to bring a slot for a vowel. The lexical entry is then also not specified for gender, which correctly captures the observation that \tit{e} appears outside of the masculine.
 
-\ex. %to be revised, add the \tsc{ind}
+As this matter is not relevant for the core of my analysis, I put it aside for now. For ease of exposition I assign a phonological exponent to each lexical entry.
+}
+Therefore, I suggest that \tit{e} spells out the features \tsc{an} and \tsc{ind}.
+
+Finally, I assume that the \tit{e} corresponds to the feature \tsc{c}, a feature that strong pronouns have in addition to \tsc{ref} and Σ. Demonstratives, which contain the \tit{e} can namely be coordinated and focused, which is typical for strong pronouns \citep{cardinaletti1994}. I give an example of a coordinated demonstrative and a focused demonstrative in \ref{ex:mg-e-strong}.\footnote{
+The feature \tsc{c} could in principle also be contained in the morpheme \tit{d}.
+}
+
+\ex.\label{ex:mg-e-strong}
+\ag. Ich wollte Jan und den gestern schon anrufen.\\
+ I wanted Jan and \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{acc}. yesterday already call\\
+ `I already wanted to call Jan and him yesterday.'
+\bg. Ich helfe nur dem sein Fahrrad zu reparieren.\\
+ I help only \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{dat} his bike to repare\\
+ `I help only him repairing his bike.'
+
+In sum, the \tit{e} spells out the features \tsc{an}, \tsc{ind}, \tsc{c}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} and \tsc{dx}\scsub{3}, as shown in \ref{ex:mg-entry-e}.
+
+\ex.\label{ex:mg-entry-e}
 \begin{forest} boom
   [\tsc{dist}P
       [\tsc{dx}\scsub{3}]
@@ -491,60 +506,25 @@ So, in sum:
               [\tsc{dx}\scsub{1}]
               [\tsc{c}P
                   [\tsc{c}]
-                  [\tsc{ind}]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}]
+                  ]
               ]
           ]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{e}}; }
-  \label{ex:mg-entry-e}
 \end{forest}
 
-%an alternative way of looking at it: \tit{er} is the lexical entry for \tsc{ref} etc, but only has a slot for a single consonant. STRONG is the lexical entry for deixis etc, and it has space for a vowel too.
-
-This leaves the morpheme \tit{w} of the relative pronoun. Compare Table \ref{tbl:mg-paradigm-wh-rels-rep} (repeated from Table \ref{tbl:mg-paradigm-wh-rels}) and Table \ref{tbl:mg-paradigm-dem}. The \tit{w} combines with the same endings as the \tit{d} does in demonstratives (or relative pronouns in headed relatives).\footnote{
-Note here that the \tsc{wh}-relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels-rep}. Demonstratives also have plural forms (which are not given here), and \tsc{wh}-relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
-}
-
-\begin{table}[H]
-\center
-\caption {Modern German relative pronouns \pgcitep{durrell2011}{5.3.3}}
- \begin{tabular}{ccc}
- \toprule
-             & \ac{an}  & \tsc{inan}\\
-   \cmidrule{2-3}
-   \ac{nom}  & w-er    & w-as     \\
-   \ac{acc}  & w-en    & w-as     \\
-   \ac{dat}  & w-em    & (w-em)   \\
- \bottomrule
- \end{tabular}
- \label{tbl:mg-paradigm-wh-rels-rep}
-\end{table}
-
-
-
-\begin{table}[H]
-\center
-\caption {Modern German demonstrative pronouns \pgcitep{durrell2011}{5.4.1}} %dieser source
- \begin{tabular}{cccc}
- \toprule
-             & \ac{m}  & \tsc{n} & \ac{f} \\
-   \cmidrule{2-4}
-   \ac{nom}  & d-er   & d-as   & d-ie    \\
-   \ac{acc}  & d-en   & d-as   & d-ie    \\
-   \ac{dat}  & d-em   & d-em   & d-er    \\
- \bottomrule
- \end{tabular}
- \label{tbl:mg-paradigm-dem}
-\end{table}
-
-This identifies the \tit{d} and, more importantly for the discussion here, the \tit{w} as a separate morpheme. Three features that \tit{w} spells out are important for the discussion here.
+This leaves the morpheme \tit{w} of the relative pronoun. I showed in this section that \tit{w} combines with the same endings as the \tit{d} does in demonstratives (or relative pronouns in headed relatives).
+This identifies the \tit{d} and, more importantly for the discussion here, the \tit{w} as a separate morpheme. I suggest that the morpheme \tit{w} spells out three features: \tsc{wh}, \tsc{rel} and \tsc{dx}\scsub{2}.
 
 The first feature I refer to as \tsc{wh}. This is a feature that \tsc{wh}-pronouns, such as \tsc{wh}-relative pronouns and interrogatives, share. The \tsc{wh}-element triggers the construction of a set of alternatives in the sense of \citet{rooth1985,rooth1992} \citep{hachem2015}. This contrasts with the \tsc{d} in Table \ref{tbl:mg-paradigm-dem}, which is responsible for establishing a definite reference.
 The second relevant feature is \tsc{rel}, which establishes a relation.
-The third feature is \tsc{dx}\scsub{2}.. \tsc{wh}-element + `away from the speaker'
+The third feature is \tsc{dx}\scsub{2}, which ?
 
-In sum, the \tit{w} spells out the features \tsc{wh} and \tsc{rel}, shown in \ref{ex:mg-entry-w}.
+In sum, the \tit{w} spells out the features \tsc{wh} \tsc{rel} and \tsc{dx}\scsub{2}, as shown in \ref{ex:mg-entry-w}.
 
 \ex. \begin{forest} boom
   [\tsc{rel}P
@@ -557,8 +537,8 @@ In sum, the \tit{w} spells out the features \tsc{wh} and \tsc{rel}, shown in \re
   {\draw (.east) node[right]{⇔ \tit{w}}; }
 \end{forest}\label{ex:mg-entry-w}
 
-At this point, I gave lexical entries for each of the morphemes (in \ref{ex:mg-entry-r}, \ref{ex:mg-entry-n}, \ref{ex:mg-entry-e} and \ref{ex:mg-entry-w})
-and I showed what the relative pronouns as a whole look like (in \ref{ex:mg-spellout-rel-nom-preview} and \ref{ex:mg-spellout-rel-acc-preview}).
+At this point, I gave lexical entries for each of the morphemes (in \ref{ex:mg-entry-n}, \ref{ex:mg-entry-m}, \ref{ex:mg-entry-e} and \ref{ex:mg-entry-w})
+and I showed what the relative pronouns as a whole look like (in \ref{ex:mg-rp}).
 What is still needed, is a theory for combining these morphemes into a relative pronoun. This theory should determine which morphemes should be combined with each other in which order. Ideally, the theory is not language-specific, but the same for all languages. In what follows I show how this is accomplished in Nanosyntax. Readers who are not interested in the precise mechanics can proceed directly to Section \ref{sec:light-mg}.
 
 
@@ -568,7 +548,9 @@ The way Nanosyntax combines different morphemes is not by glueing them together 
 
 \ref{ex:fseq-wh-rel} shows the functional sequence for relative pronouns. It gives all features it contains and their hierarchical ordering.
 
-\ex. \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
+\ex.\label{ex:fseq-wh-rel}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
 [(\tsc{acc}P)
    [(\ac{f}2)]
    [\tsc{nom}P
@@ -604,24 +586,22 @@ The way Nanosyntax combines different morphemes is not by glueing them together 
    ]
 ]
 \end{forest}
-\label{ex:fseq-wh-rel}
+\end{adjustbox}
 
-Starting from the bottom, these are pronominal features (\tsc{ref} and Σ), deixis features (\tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}), gender features (\tsc{cl} and \tsc{an}), number features (\tsc{ind}), operator features (\tsc{wh} and \tsc{rel}) and case features (\ac{f}1 and \ac{f}2). This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
+Starting from the bottom, these are pronominal features (\tsc{ref} and Σ), deixis features (\tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}), gender features (\tsc{cl} and \tsc{an}), a number feature (\tsc{ind}), the strong pronoun feature (\tsc{c}), operator features (\tsc{wh} and \tsc{rel}) and case features (\ac{f}1 \ac{f}2 and \tsc{f}3). This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
 
-\tsc{ref}, Σ, \tsc{deix}, \tsc{wh/rel}?
-
-of those children
-of which children
-K > deix/wh
+\ex.
+\a. of those children
+\b. of which children
 
 Before I derive construct the relative pronouns, I explain how the spellout procedure in Nanosyntax works. Features (Fs) are merged one by one according to the functional sequence, starting from the bottom. After each instance of merge, the constructed phrase must be spelled out, as stated in \ref{ex:cyclic-phrasal-spellout}.
 
 \ex. \tbf{Cyclic phrasal spellout} \citep{caha2020a}\\
-Spellout must succesfully apply to the output of every Merge F operation. After succesfull spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
+Spellout must successfuly apply to the output of every Merge F operation. After successful spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
 
 Spellout is successful when the phrase that contains the newly merged feature forms a constituents in a lexical tree that is part of the language's lexicon.
 When the new feature is merged, it forms a phrase with all features merged so far.
-If this created phrase cannot be spelled out succesfully (i.e. when it does not form a constituent in a lexical tree), there are two movement operations possible that modify the syntactic structure in such a way that the newly merged feature becomes part of a different syntactic structure.
+If this created phrase cannot be spelled out successfuly (i.e. when it does not form a constituent in a lexical tree), there are two movement operations possible that modify the syntactic structure in such a way that the newly merged feature becomes part of a different syntactic structure.
 These movements are triggered because spellout needs to successully apply, and, therefore, they are called spellout-driven movements.
 A Spellout Algorithm specifies which movement operations apply and in which order this happens. I give it in \ref{ex:spellout-algorithm}.
 
@@ -632,9 +612,9 @@ A Spellout Algorithm specifies which movement operations apply and in which orde
 
 I informally reformulate what is in \ref{ex:spellout-algorithm}. I start with the first line in \ref{ex:spellout-algorithm-phrasal}. This says that a feature F is merged, and the newly created phrase FP is attempted to spell out.
 The next two lines, \ref{ex:spellout-algorithm-spec} and \ref{ex:spellout-algorithm-comp}, describe the two types of rescue movements that take place when the spellout in \ref{ex:spellout-algorithm-phrasal} fails (i.e. when there is no match in the lexicon).
-In the discussion about Modern German, only the first line leads to succesfull spellout. In the next section in which I discuss Polish derivations, second and third line also lead to succesfull spellouts. I give the full algorithm here to give the complete picture from the start.
+In the discussion about Modern German, only the first line leads to successful spellout. In the next section in which I discuss Polish derivations, second and third line also lead to successful spellouts. I give the full algorithm here to give the complete picture from the start.
 
-If these two movement operations still do not lead to a succesfull spellout, there are two more derivational options possible: Backtracking and Spec Formation. I return to these options later in this section, when they are relevant in the derivation of Modern German relative pronouns.
+If these two movement operations still do not lead to a successful spellout, there are two more derivational options possible: Backtracking and Spec Formation. I return to these options later in this section, when they are relevant in the derivation of Modern German relative pronouns.
 
 I start constructing the nominative relative pronoun. Starting from the bottom of the functional sequence, the first two features that are merged at \tsc{ref} and Σ, creating a ΣP.
 
@@ -646,58 +626,60 @@ I start constructing the nominative relative pronoun. Starting from the bottom o
   ]
 \end{forest}
 
-The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}, repeated from \ref{ex:mg-entry-r}, which corresponds to the \tit{r}.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, repeated from \ref{ex:mg-entry-n}, which corresponds to the \tit{n}.
 
 \ex.
 \begin{forest} boom
-  [\tsc{nom}P
-      [\ac{f}1]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [ΣP
-                      [Σ]
-                      [\tsc{ref}]
+  [\tsc{acc}P
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\ac{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [ΣP
+                          [Σ]
+                          [\tsc{ref}]
+                      ]
                   ]
               ]
           ]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{r}}; }
+  {\draw (.east) node[right]{⇔ \tit{n}}; }
 \end{forest}
-\label{ex:mg-entry-r-rep}
+\label{ex:mg-entry-n-rep}
 
-Therefore, the ΣP is spelled out as \tit{r}. As usual, I mark this by circling the part of the structure that corresponds to the lexical entry, and placing the corresponding phonology under it.
+Therefore, the ΣP is spelled out as \tit{n}. As usual, I mark this by circling the part of the structure that corresponds to the lexical entry, and placing the corresponding phonology under it.
 This spellout option corresponds to \ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm.
 
-\ex.
+\ex.\label{ex:mg-spellout-n-ref-sigma}
 \begin{forest} boom
   [ΣP,
   tikz={
-  \node[label=below:\tit{r},
+  \node[label=below:\tit{n},
   draw,circle,
-  scale=0.85,
+  scale=0.9,
   fit to=tree]{};
   }
        [Σ]
        [\tsc{ref}]
   ]
 \end{forest}
-\label{ex:mg-spellout-r-ref-sigma}
 
 There are more features in the functional sequence, so the next feature is merged.
 This next feature is the feature \tsc{cl}, and a \tsc{cl}P is created.
-The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
-Therefore, the \tsc{cl}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout-r-sigma-cl}.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}.
+Therefore, the \tsc{cl}P is spelled out as \tit{n}, shown in \ref{ex:mg-spellout-n-sigma-cl}.
 
-\ex.
+\ex.\label{ex:mg-spellout-n-sigma-cl}
 \begin{forest} boom
   [\tsc{cl}P,
   tikz={
-  \node[label=below:\tit{r},
+  \node[label=below:\tit{n},
   draw,circle,
   scale=0.9,
   fit to=tree]{};
@@ -709,23 +691,22 @@ Therefore, the \tsc{cl}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout
       ]
   ]
 \end{forest}
-\label{ex:mg-spellout-r-sigma-cl}
 
 The features \tsc{an} and \tsc{ind} are merged and spelled out in the same way.
 First, the feature \tsc{an} is merged, and a \tsc{an}P is created.
-The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
-Therefore, the \tsc{an}P is spelled out as \tit{r}.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}.
+Therefore, the \tsc{an}P is spelled out as \tit{n}.
 Then, the feature \tsc{ind} is merged, and a \tsc{ind}P is created.
-The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}.
-Therefore, the \tsc{ind}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellout-r-ind}.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}.
+Therefore, the \tsc{ind}P is spelled out as \tit{n}, shown in \ref{ex:mg-spellout-n-ind}.
 
-\ex.
+\ex.\label{ex:mg-spellout-n-ind}
 \begin{forest} boom
   [\tsc{ind}P,
   tikz={
-  \node[label=below:\tit{r},
+  \node[label=below:\tit{n},
   draw,circle,
-  scale=1,
+  scale=0.95,
   fit to=tree]{};
   }
       [\tsc{ind}]
@@ -741,7 +722,6 @@ Therefore, the \tsc{ind}P is spelled out as \tit{r}, shown in \ref{ex:mg-spellou
       ]
   ]
 \end{forest}
-\label{ex:mg-spellout-r-ind}
 
 The next feature in the functional sequence is the feature \tsc{c}. This feature can not be spelled out as the other ones before. I show that in what follows.
 The feature \tsc{c} is merged, and a \tsc{c}P is created, as shown in \ref{ex:mg-spellout-c-phrasal}
@@ -766,66 +746,18 @@ The feature \tsc{c} is merged, and a \tsc{c}P is created, as shown in \ref{ex:mg
   ]
 \end{forest}
 
-This syntactic structure does not form a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}. There is also no other lexical tree that contains the structure in \ref{ex:mg-spellout-c-phrasal} as a constituent. Therefore, there is no succesfull spellout for the syntactic structure in the derivational step in which the structure is spelled out as a single phrase (\ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm).
+This syntactic structure does not form a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}. There is also no other lexical tree that contains the structure in \ref{ex:mg-spellout-c-phrasal} as a constituent. Therefore, there is no successful spellout for the syntactic structure in the derivational step in which the structure is spelled out as a single phrase (\ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm).
 
 The first movement option in the Spellout Algorithm is moving the specifier, as described in \ref{ex:spellout-algorithm-spec}. As there is no specifier in this structure, so the first movement option is irrelevant.
-The second movement option in the Spellout Algorithm is moving the complement, as described in \ref{ex:spellout-algorithm-comp}. In this case, the complement of \tsc{dx}\scsub{1}, the \tsc{ind}P, is moved to the specifier of \tsc{ind}P. This movement is displayed in \ref{ex:mg-spellout-c-comp-move}.
+The second movement option in the Spellout Algorithm is moving the complement, as described in \ref{ex:spellout-algorithm-comp}. In this case, the complement of \tsc{c}, the \tsc{ind}P, is moved to the specifier of \tsc{ind}P. As this movement option does not lead to a successful match, I do not discuss it here. I come back to it in Chapter \ref{ch:deriving-matching}, in which it does lead to a successful match.
 
-\ex.\label{ex:mg-spellout-c-comp-move}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{ind}P,name=tgt
-          [\phantom{x}\tit{r}\phantom{x}, roof]
-      ]
-      [\tsc{c}P
-          [\tsc{c}]
-          [\sout{\tsc{ind}P},name=src,
-           tikz={
-           \node[label=below:\tit{r},
-           draw,circle,
-           scale=0.925,
-           fit to=tree]{};
-           }
-              [\tsc{ind}]
-              [\tsc{an}P
-                  [\tsc{an}]
-                  [\tsc{cl}P
-                      [\tsc{cl}]
-                      [ΣP
-                           [Σ]
-                           [\tsc{ref}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\draw[->,dashed] (src) to[out=south west,in=east] (tgt);
-\end{forest}
+As I mentioned earlier, there are two more derivational options possible: Backtracking and Spec Formation. Derivationally, Backtracking comes first. However, since this does not lead to a successful spellout here I first introduce Spec Formation first and I return to Backtracking later. Spec Formation is a last resort operation, when the feature cannot be spelled out by any of the preceding options. It is formalized as in \ref{ex:merge-spec}.
 
-The result that arises after the movement is shown in \ref{ex:mg-spellout-c-comp}.
-
-\ex.\label{ex:mg-spellout-c-comp}
-\begin{forest} boom
-  [\tsc{c}P
-      [\tsc{ind}P,name=tgt
-          [\phantom{x}\tit{r}\phantom{x}, roof]
-      ]
-      [\tsc{c}P
-          [\tsc{c}]
-      ]
-  ]
-\end{forest}
-
-The \tsc{c}P is a different constituent now. It still contains the feature \tsc{dx}\scsub{2}, but it no longer contains the \tsc{ind}P.
-However, also for this constituent there is no lexical tree that contains it, so there is no succesfull spellout yet.
-
-As I mentioned earlier, there are two more derivational options possible: Backtracking and Spec Formation. Derivationally, Backtracking comes first. However, since this does not lead to a succesfull spellout here I first introduce Spec Formation first and I return to Backtracking later. Spec Formation is a last resort operation, when the feature cannot be spelled out by any of the preceding options. It is formalized as in \ref{ex:merge-spec}.
-
-\ex. \tbf{Spec Formation} \citep{starke2018}:\\\label{ex:merge-spec}
+\ex.\label{ex:merge-spec}
+\tbf{Spec Formation} \citep{starke2018}:\\
 If Merge F has failed to spell out (even after Backtracking), try to spawn a new derivation providing F and merge that with the current derivation, projecting F to the top node.
 
-To reformulate this informally, if none of the preceding spellout options led to a succesfull spellout, a last resort operation applies. The feature that has not been spelled out yet, is merged with some other features (to which I come back next) in a separate workspace. Crucially, the phrase that is created is contained in a lexical tree in the language's lexicon. Finally, the feature is spelled out succesfully. The newly created phrase (the spec) is merged as a whole with the already existing structure.
+To reformulate this informally, if none of the preceding spellout options led to a successful spellout, a last resort operation applies. The feature that has not been spelled out yet, is merged with some other features (to which I come back next) in a separate workspace. Crucially, the phrase that is created is contained in a lexical tree in the language's lexicon. Finally, the feature is spelled out successfully. The newly created phrase (the spec) is merged as a whole with the already existing structure.
 
 Now I come back to the `other' features that the feature is merged with to create a phrase that can be spelled out. This cannot be just any feature. What is crucial here again is the functional sequence. The newly merged feature is merged with features that precede it in this sequence. This can be a single feature or more than one. I illustrate this with the Modern German relative pronouns.
 
@@ -839,6 +771,20 @@ For \tsc{c} this means that it is merged with \tsc{ind}. Then, the lexicon is ch
   ]
 \end{forest}
 
+This syntactic structure does not form a constituent in any of the lexical trees in the language's lexicon.
+Therefore, the feature \tsc{c} combines not only with the feature merged before it, but with a phrase that consists of the two features merged before it: \tsc{ind} and \tsc{an}. I give the phrase this creates in \ref{ex:mg-structure-c-ind-an}.
+
+\ex.\label{ex:mg-structure-c-ind-an}
+\begin{forest} boom
+  [\tsc{c}P
+      [\tsc{c}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}]
+      ]
+  ]
+\end{forest}
+
 This syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-e-rep}, repeated from \ref{ex:mg-entry-e}, which corresponds to the \tit{e}.
 
 \ex.
@@ -849,9 +795,12 @@ This syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-e
           [\tsc{dx}\scsub{2}]
           [\tsc{prox}P
               [\tsc{dx}\scsub{1}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{an}]
+              [\tsc{c}P
+                  [\tsc{c}]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}]
+                  ]
               ]
           ]
       ]
@@ -872,15 +821,19 @@ Therefore, the \tsc{c}P is spelled out as \tit{e}, as shown in \ref{ex:mg-spello
    fit to=tree]{};
    }
       [\tsc{c}]
-      [\tsc{ind}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}]
+      ]
   ]
 \end{forest}
 
 The newly created phrase is merged as a whole with the already existing structure. As specified in \ref{ex:merge-spec}, the feature \tsc{c} projects to the top node. I show the results in \ref{ex:mg-spellout-cp}.
 
 \ex.\label{ex:mg-spellout-cp}
+\begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{c}P
+  [\tsc{c}P, s sep = 30mm
       [\tsc{c}P,
        tikz={
        \node[label=below:\tit{e},
@@ -889,11 +842,14 @@ The newly created phrase is merged as a whole with the already existing structur
        fit to=tree]{};
        }
           [\tsc{c}]
-          [\tsc{ind}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}]
+          ]
       ]
       [\tsc{ind}P,
       tikz={
-      \node[label=below:\tit{r},
+      \node[label=below:\tit{n},
       draw,circle,
       scale=1,
       fit to=tree]{};
@@ -912,21 +868,23 @@ The newly created phrase is merged as a whole with the already existing structur
       ]
   ]
 \end{forest}
+\end{adjustbox}
 
-Notice here that there is an overlap of a single feature between the phrase on the right and the phrase on the left.\footnote{
-There are three different proposals in the literature.
+Notice here that there is an overlap of multiple features between the phrase on the right and the phrase on the left.\footnote{
+There are three different proposals on Spec Formation.
 \citet{caha2019} argue that there can only be a single feature overlap between the two phrases.
-\citet{de2018} argue that there cannot be any overlap at all, and the features used in the second workspace are removed from the structure in the other workspace.
+\citet{de2018} argue that there cannot be any overlap at all. The features that used in the second workspace are removed from the structure in the main workspace.
 In this dissertation, I work with the proposal in \citet{starke2018}, in which the the overlap between the phrase on the left and the phrase on the right can also be more than a single feature. This is the only proposal of the three that allows me to derive all the forms I encounter.
 }
 
 The next feature in the functional sequence is the feature \tsc{dx}\scsub{1}. As always, it merged to the existing syntactic structure, which is now the \tsc{c}P. The result is the \tsc{prox}P shown in \ref{ex:mg-spellout-prox-phrasal}.
 
 \ex.\label{ex:mg-spellout-prox-phrasal}
+\begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{prox}P, s sep=12mm
+  [\tsc{prox}P
       [\tsc{dx}\scsub{1}]
-      [\tsc{c}P
+      [\tsc{c}P, s sep = 30mm
           [\tsc{c}P,
            tikz={
            \node[label=below:\tit{e},
@@ -935,13 +893,16 @@ The next feature in the functional sequence is the feature \tsc{dx}\scsub{1}. As
            fit to=tree]{};
            }
               [\tsc{c}]
-              [\tsc{ind}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}]
+              ]
           ]
           [\tsc{ind}P,
           tikz={
-          \node[label=below:\tit{r},
+          \node[label=below:\tit{n},
           draw,circle,
-          scale=1,
+          scale=0.95,
           fit to=tree]{};
           }
               [\tsc{ind}]
@@ -959,6 +920,7 @@ The next feature in the functional sequence is the feature \tsc{dx}\scsub{1}. As
       ]
   ]
 \end{forest}
+\end{adjustbox}
 
 This whole structure does not form a constituent in any of the lexical trees in the language's lexicon. Neither of the spellout driven movement operations leads to a successful spellout. This means that, once again, the derivation reaches a point at which one of the two more possible derivational options come into play. As I mentioned before, Backtracking comes first, and this is the operation that leads to a successful spellout here.
 
@@ -985,7 +947,10 @@ For the example under discussion, the situation looks as in \ref{ex:mg-dx1-2x}.
       [\tsc{dx}\scsub{1}]
       [\tsc{c}P
           [\tsc{c}]
-          [\tsc{ind}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}]
+          ]
       ]
   ]
 \end{forest}
@@ -1017,7 +982,7 @@ This syntactic structure namely forms a constituent in the lexical tree in \ref{
 \ex.\label{ex:mg-spellout-proxp-inspec}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{prox}P
+  [\tsc{prox}P, s sep = 40mm
       [\tsc{prox}P,
        tikz={
        \node[label=below:\tit{e},
@@ -1028,14 +993,17 @@ This syntactic structure namely forms a constituent in the lexical tree in \ref{
           [\tsc{dx}\scsub{1}]
           [\tsc{c}P
               [\tsc{c}]
-              [\tsc{ind}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}]
+              ]
           ]
       ]
       [\tsc{ind}P,
       tikz={
-      \node[label=below:\tit{r},
+      \node[label=below:\tit{n},
       draw,circle,
-      scale=1,
+      scale=0.95,
       fit to=tree]{};
       }
           [\tsc{ind}]
@@ -1065,28 +1033,31 @@ The \tsc{med}P is spelled out as \tit{e}, and the \tsc{med}P is merged back to t
 \ex.\label{ex:mg-spellout-medp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{prox}P
-      [\tsc{med}P
+  [\tsc{med}P, s sep = 50mm
+      [\tsc{med}P,
+       tikz={
+       \node[label=below:\tit{e},
+       draw,circle,
+       scale=0.95,
+       fit to=tree]{};
+       }
           [\tsc{dx}\scsub{2}]
-          [\tsc{prox}P,
-           tikz={
-           \node[label=below:\tit{e},
-           draw,circle,
-           scale=0.9,
-           fit to=tree]{};
-           }
+          [\tsc{prox}P
               [\tsc{dx}\scsub{1}]
               [\tsc{c}P
                   [\tsc{c}]
-                  [\tsc{ind}]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}]
+                  ]
               ]
           ]
       ]
       [\tsc{ind}P,
       tikz={
-      \node[label=below:\tit{r},
+      \node[label=below:\tit{n},
       draw,circle,
-      scale=1,
+      scale=0.95,
       fit to=tree]{};
       }
           [\tsc{ind}]
@@ -1111,7 +1082,8 @@ This structure does not form a constituent in any of the lexical trees in the la
 Therefore, in a second workspace, the feature \tsc{wh} is merged with the feature \tsc{dx}\scsub{2} (the previous syntactic feature on the functional sequence) into a \tsc{wh}P.
 This syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-w-rep}, repeated from \ref{ex:mg-entry-w}, which corresponds to the \tit{w}.
 
-\ex. \begin{forest} boom
+\ex.\label{ex:mg-entry-w-rep}
+\begin{forest} boom
   [\tsc{rel}P
       [\tsc{rel}]
       [\tsc{wh}P
@@ -1120,14 +1092,14 @@ This syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-e
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{w}}; }
-\end{forest}\label{ex:mg-entry-w-rep}
+\end{forest}
 
 Therefore, the \tsc{wh}P is spelled out as \tit{w}, and \tsc{wh}P is merged back to the existing syntactic structure, as shown in \ref{ex:mg-spellout-whp}.
 
 \ex.\label{ex:mg-spellout-whp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{wh}P
+  [\tsc{wh}P, s sep = 20mm
       [\tsc{wh}P,
       tikz={
       \node[label=below:\tit{w},
@@ -1138,28 +1110,31 @@ Therefore, the \tsc{wh}P is spelled out as \tit{w}, and \tsc{wh}P is merged back
           [\tsc{wh}]
           [\tsc{dx\scsub{2}}]
       ]
-      [\tsc{med}P
+      [\tsc{med}P, s sep = 50mm
           [\tsc{med}P,
            tikz={
            \node[label=below:\tit{e},
            draw,circle,
-           scale=0.9,
+           scale=0.95,
            fit to=tree]{};
            }
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{an}]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
                   ]
               ]
           ]
           [\tsc{ind}P,
           tikz={
-          \node[label=below:\tit{r},
+          \node[label=below:\tit{n},
           draw,circle,
-          scale=1,
+          scale=0.95,
           fit to=tree]{};
           }
               [\tsc{ind}]
@@ -1190,12 +1165,12 @@ The \tsc{rel}P is spelled out as \tit{w}, and the \tsc{rel}P is merged back to t
 \ex.\label{ex:mg-spellout-relp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P
+  [\tsc{rel}P, s sep = 20mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{w},
       draw,circle,
-      scale=1,
+      scale=0.9,
       fit to=tree]{};
       }
           [\tsc{rel}]
@@ -1204,28 +1179,31 @@ The \tsc{rel}P is spelled out as \tit{w}, and the \tsc{rel}P is merged back to t
               [\tsc{dx\scsub{2}}]
           ]
       ]
-      [\tsc{med}P
+      [\tsc{med}P, s sep = 50mm
           [\tsc{med}P,
            tikz={
            \node[label=below:\tit{e},
            draw,circle,
-           scale=0.9,
+           scale=0.95,
            fit to=tree]{};
            }
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{an}]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
                   ]
               ]
           ]
           [\tsc{ind}P,
           tikz={
-          \node[label=below:\tit{r},
+          \node[label=below:\tit{n},
           draw,circle,
-          scale=1,
+          scale=0.95,
           fit to=tree]{};
           }
               [\tsc{ind}]
@@ -1245,7 +1223,7 @@ The \tsc{rel}P is spelled out as \tit{w}, and the \tsc{rel}P is merged back to t
 \end{forest}
 \end{adjustbox}
 
-For the nominative relative pronoun, the last feature on the functional sequence is the feature \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}, which corresponds to the \tit{r}. This is achieved via two instances of Backtracking in which phrases are split up. I go through the derivation step by step.
+The next feature on the functional sequence is \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which corresponds to the \tit{n}. This is achieved via two instances of Backtracking in which phrases are split up. I go through the derivation step by step.
 
 The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
@@ -1254,13 +1232,13 @@ The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and an
 
 Further Backtracking leads to splitting up the \tsc{med}P from the \tsc{ind}P.
 The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{med}P and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
-It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-r-rep}, which corresponds to the \tit{r}.
+It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which corresponds to the \tit{n}.
 The \tsc{nom}P is spelled out as \tit{r}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-nom}.
 
 \ex.\label{ex:mg-spellout-rel-nom}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=12mm
+  [\tsc{rel}P, s sep=20mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{w},
@@ -1274,7 +1252,7 @@ The \tsc{nom}P is spelled out as \tit{r}, and all constituents are merged back i
               [\tsc{dx}\scsub{2}]
           ]
       ]
-      [\tsc{med}P, s sep=40mm
+      [\tsc{med}P, s sep=55mm
           [\tsc{med}P,
           tikz={
           \node[label=below:\tit{e},
@@ -1285,12 +1263,18 @@ The \tsc{nom}P is spelled out as \tit{r}, and all constituents are merged back i
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ind}]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
+                  ]
               ]
           ]
           [\tsc{nom}P,
           tikz={
-          \node[label=below:\tit{r},
+          \node[label=below:\tit{n},
           draw,circle,
           scale=0.95,
           fit to=tree]{};
@@ -1315,45 +1299,19 @@ The \tsc{nom}P is spelled out as \tit{r}, and all constituents are merged back i
 \end{forest}
 \end{adjustbox}
 
-For the accusative relative pronoun, one more feature is merged: the \tsc{f}2. The derivation for \tsc{f}2 resembles the derivation of \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
+For the accusative relative pronoun, the last feature is merged: the \tsc{f}2. The derivation for \tsc{f}2 resembles the derivation of \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 Backtracking leads splitting up the \tsc{rel}P from the (higher) \tsc{med}P (which contains the lower \tsc{med}P and the \tsc{nom}P).
 The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{wh}P and and with the \tsc{med}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 
 Further Backtracking leads to splitting up the \tsc{med}P from the \tsc{nom}P.
 The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{med}P and and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
-It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, repeated from \ref{ex:mg-entry-n}, which corresponds to the \tit{n}.
-
-\ex.\label{ex:mg-entry-n-rep}
-\begin{forest} boom
-  [\tsc{acc}P
-      [\ac{f}2]
-      [\tsc{nom}P
-          [\ac{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{an}P
-                  [\tsc{an}]
-                  [\tsc{cl}P
-                      [\tsc{cl}]
-                      [ΣP
-                          [Σ]
-                          [\tsc{ref}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{n}}; }
-\end{forest}
-
-The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-nom}.
+It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which corresponds to the \tit{n}. The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-acc}.
 
 \ex.\label{ex:mg-spellout-rel-acc}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=12mm
+  [\tsc{rel}P, s sep=20mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{w},
@@ -1367,18 +1325,24 @@ The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back i
               [\tsc{dx}\scsub{2}]
           ]
       ]
-      [\tsc{med}P, s sep=40mm
+      [\tsc{med}P, s sep=60mm
           [\tsc{med}P,
           tikz={
           \node[label=below:\tit{e},
           draw,circle,
-          scale=0.95,
+          scale=1,
           fit to=tree]{};
           }
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ind}P]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
+                  ]
               ]
           ]
           [\tsc{acc}P,
@@ -1411,11 +1375,131 @@ The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back i
 \end{forest}
 \end{adjustbox}
 
-To summarize, I decomposed the relative pronoun into the three morphemes \tit{w}, \tit{e} and the final consonant (\tit{r} and \tit{n}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituency that determine whether the relative pronoun can delete the light head or not.
+For the dative relative pronoun, one more feature is merged: the \tsc{f}3. The derivation for \tsc{f}3 resembles the derivation of \tsc{f}1 and \tsc{f}2. The feature is merged with the existing syntactic structure, creating a \tsc{dat}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{rel}P from the (higher) \tsc{med}P (which contains the lower \tsc{med}P and the \tsc{acc}P).
+The feature \tsc{f}3 is merged in both workspaces, so with the \tsc{wh}P and and with the \tsc{med}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+
+Further Backtracking leads to splitting up the \tsc{med}P from the \tsc{acc}P.
+The feature \tsc{f}3 is merged in both workspaces, so with the \tsc{med}P and and with the \tsc{acc}P. The spellout of \tsc{f}3 is successful when it is combined with the \tsc{acc}P.
+It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-m-rep}, repeated from \ref{ex:mg-entry-m}, which corresponds to the \tit{m}.
+
+\ex.\label{ex:mg-entry-m-rep}
+\begin{forest} boom
+  [\tsc{dat}P
+      [\tsc{f}3]
+      [\tsc{acc}P
+          [\ac{f}2]
+          [\tsc{nom}P
+              [\ac{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}P
+                          [\tsc{cl}]
+                          [ΣP
+                              [Σ]
+                              [\tsc{ref}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{m}}; }
+\end{forest}
+
+The \tsc{acc}P is spelled out as \tit{m}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-dat}.
+
+\ex.\label{ex:mg-spellout-rel-dat}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{rel}P, s sep=20mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{dx}\scsub{2}]
+          ]
+      ]
+      [\tsc{med}P, s sep=60mm
+          [\tsc{med}P,
+          tikz={
+          \node[label=below:\tit{e},
+          draw,circle,
+          scale=1,
+          fit to=tree]{};
+          }
+              [\tsc{dx}\scsub{2}]
+              [\tsc{prox}P
+                  [\tsc{dx}\scsub{1}]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}]
+                      ]
+                  ]
+              ]
+          ]
+          [\tsc{dat}P,
+          tikz={
+          \node[label=below:\tit{m},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\ac{f}2]
+                  [\tsc{nom}P
+                      [\ac{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}P
+                              [\tsc{an}]
+                              [\tsc{cl}P
+                                  [\tsc{cl}]
+                                  [ΣP
+                                      [Σ]
+                                      [\tsc{ref}]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+To summarize, I decomposed the relative pronoun into the three morphemes \tit{w}, \tit{e} and the final consonant (\tit{n} and \tit{m}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituency that determine whether the relative pronoun can delete the light head or not.
 
 \section{The (extra) light head}\label{sec:light-mg}
 
-In Section \ref{ch:constituent-containment}, I argued that headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains all constituents of the light head. I suggested that this holds in Modern German, as long as the external case is not more complex than the internal case. In the previous section, I gave the internal structure of the relative pronoun, i.e. which constituents the relative pronoun consists of. In this section, I first need to identify the light head, as it does not surface in headless relatives. Then I show what its internal structure looks like: it is a constituent within the relative pronoun.
+
+
+\begin{forest} boom
+[\tsc{k}P,
+    [\tsc{k}]
+    [ϕP
+        [\phantom{x}ϕ\phantom{x}, roof, baseline]
+    ]
+]
+\end{forest}
+
+
+In Chapter \ref{ch:constituent-containment}, I argued that headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains all constituents of the light head. I suggested that this holds in Modern German, as long as the external case is not more complex than the internal case. In the previous section, I gave the internal structure of the relative pronoun, i.e. which constituents the relative pronoun consists of. In this section, I first need to identify the light head, as it does not surface in headless relatives. Then I show what its internal structure looks like: it is a constituent within the relative pronoun.
 
 In this section, I consider two kinds of light-headed relatives as the source of the headless relative.
 First, the deletion of the light head is optional, and the light-headed relative is derived from an existing light-headed relative.
@@ -1847,7 +1931,7 @@ The external case is dative, as the predicate \tit{vertrauen} `to trust' takes d
 \ex.\label{ex:mg-dat-acc-rep}
 \ag. *Ich vertraue [m], \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
 1\ac{sg}.\ac{nom} trust.\ac{pres}.1\ac{sg}\scsub{[dat]} \tsc{elh}.\ac{an}.\ac{dat} \tsc{rp}.\ac{an}.\ac{acc} also Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
-`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-rep-rel}
+`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-rep-rp}
 \bg. *Ich vertraue m, [\tbf{wen}] \tbf{auch} \tbf{Maria} \tbf{mag}.\\
 1\ac{sg}.\ac{nom} trust.\ac{pres}.1\ac{sg}\scsub{[dat]} \tsc{elh}.\ac{an}.\ac{dat} \tsc{rp}.\ac{an}.\ac{acc} also Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
 `I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-rep-lh}
@@ -1929,7 +2013,7 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the extra lig
   \end{tabular}
   \end{adjustbox}
    \caption {Modern German \tsc{ext}\scsub{dat} vs. \tsc{int}\scsub{acc} ↛ \tit{m}/\tit{wen}}
-  \label{fig:mg-int-wins}
+  \label{fig:mg-ext-wins}
 \end{figure}
 
 
