@@ -1,6 +1,5 @@
 % !TEX root = thesis.tex
 
-
 \chapter{Deriving the internal-only type}\label{ch:deriving-onlyinternal}
 
 Languages of the internal-only type can be summarizes as in Table \ref{tbl:rel-lh-mg}.
@@ -144,7 +143,7 @@ Then I discuss the light head. I argue that Modern German headless relatives are
 Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can delete the light head when the internal case matches the external case or when the internal case is more complex than the external one. When the external case is more complex, I show that none of the elements can delete the other one.
 
 
-\section{The relative pronoun}\label{sec:mg-rel}
+\section{The Modern German relative pronoun}\label{sec:mg-rel}
 
 In Chapter \ref{ch:constituent-containment}, I argued that in the internal-only type, the features of the relative pronoun are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-intonly-rp}.
 
@@ -426,7 +425,7 @@ The \tit{n} is the nominative masculine singular, so it spells out the features 
 Note that the ordering of the features here is not random. I motivate this later on in this section.
 
 I continue with the \tit{e}. This morpheme is present (\tsc{wh}-)relative pronouns, but also in demonstratives, as shown in \ref{tbl:mg-paradigm-dem}.\footnote{
-Note that \tsc{wh}-relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rel}. Demonstratives also have plural forms, and \tsc{wh}-relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
+Note that \tsc{wh}-relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels}. Demonstratives also have plural forms, and \tsc{wh}-relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.
 }
 
 \begin{table}[H]
@@ -471,8 +470,8 @@ The difference between the proximal, the medial and the distal cannot be observe
 I continue with gender and number features. Table \ref{tbl:mg-paradigm-dem} shows that the vowel changes depending on gender and number. The masculine singular uses the \tit{e}, the neuter singular uses the \tit{a}, the feminine singular uses the \tit{ie} and the plural uses for all genders the \tit{ie}.\footnote{
 Note that the dative forms in all gender and numbers have the \tit{e}, which I assigned to masculine gender. This holds for the genitive forms too, which I have not given here. I see these as arguments in favor the following analysis.
 
-The phonological part of the lexical entries in \ref{ex:mg-entry-nm} should not be \tit{n} and \tit{m} but \tit{en} and \tit{em}.
-Additionally, the lexical entry carries additional information: the lexical entries in \ref{ex:mg-entry-nm} only bring a single slot for a single consonant.
+The phonological part of the lexical entries in \ref{ex:mg-entries-nm} should not be \tit{n} and \tit{m} but \tit{en} and \tit{em}.
+Additionally, the lexical entry carries additional information: the lexical entries in \ref{ex:mg-entries-nm} only bring a single slot for a single consonant.
 The lexical entry for the neuter singular nominative and accusative is \tit{as} but only the \tit{s} surfaces due the single consonant slot.
 The feminine singular and the plurals do not have a weak pronoun and they do not have a marker in forms like \tit{diese} `this' (see Table \ref{tbl:mg-dieser}), because their lexical entry does not contain a consonant.
 
@@ -551,10 +550,8 @@ The way Nanosyntax combines different morphemes is not by glueing them together 
 \ex.\label{ex:fseq-wh-rel}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} for tree={s sep=13mm, inner sep=0, l=0}
-[(\tsc{acc}P)
-   [(\ac{f}2)]
-   [\tsc{nom}P
-       [\ac{f}1]
+   [\tsc{k}P
+       [\tsc{k}]
        [\tsc{rel}P
            [\tsc{rel}]
            [\tsc{wh}P
@@ -584,11 +581,15 @@ The way Nanosyntax combines different morphemes is not by glueing them together 
            ]
        ]
    ]
-]
 \end{forest}
 \end{adjustbox}
 
-Starting from the bottom, these are pronominal features (\tsc{ref} and Σ), deixis features (\tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}), gender features (\tsc{cl} and \tsc{an}), a number feature (\tsc{ind}), the strong pronoun feature (\tsc{c}), operator features (\tsc{wh} and \tsc{rel}) and case features (\ac{f}1 \ac{f}2 and \tsc{f}3). This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
+Starting from the bottom, these are pronominal features \tsc{ref} and Σ, deixis features \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}, gender features \tsc{cl} and \tsc{an}, a number feature \tsc{ind}, the strong pronoun feature \tsc{c}, operator features \tsc{wh} and \tsc{rel} and case features \tsc{k}.\footnote{
+The \tsc{k}P in this functional sequence is a placeholder for multiple case projections.
+When the extra light head is the accusative, the \tsc{k}P consists of the features \tsc{f}1 and \tsc{f}2, and they form the \tsc{acc}P.
+When the extra light head is the dative, the \tsc{k}P consists of the features \tsc{f}1, \tsc{f}2 and \tsc{f}3, and they form the \tsc{dat}P.
+}
+This order is independently supported by work in the literature. Both Picallo and Kramer argue that number is hierarchically higher than gender. Case is agreed to be higher than number (cf. Bittner and Hale).
 
 \ex.
 \a. of those children
@@ -1485,23 +1486,112 @@ The \tsc{acc}P is spelled out as \tit{m}, and all constituents are merged back i
 
 To summarize, I decomposed the relative pronoun into the three morphemes \tit{w}, \tit{e} and the final consonant (\tit{n} and \tit{m}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituency that determine whether the relative pronoun can delete the light head or not.
 
-\section{The (extra) light head}\label{sec:light-mg}
+\section{The Modern German (extra) light head}\label{sec:light-mg}
 
+In Chapter \ref{ch:constituent-containment}, I argued that headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the light head forms a constituent within the relative pronoun. In internal-only languages, the relative pronoun can delete the light head as long as the external case is not more complex than the internal case. In internal-only languages, features of the relative pronoun and light head are spelled out in such a way that they form the constituency shown in Figure \ref{fig:rel-lh-intonly-simple-rep}.
 
+\begin{figure}[htbp]
+  \center
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+      [\tsc{k}P,
+          [\tsc{k}]
+          [ϕP
+              [\phantom{x}ϕ\phantom{x}, roof, baseline]
+          ]
+      ]
+      \end{forest}
+      & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{rel}P
+          [\tsc{rel}]
+          [\tsc{k}P
+              [\tsc{k}]
+              [ϕP
+                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
+              ]
+          ]
+      ]
+    \end{forest}\\
+      \bottomrule
+  \end{tabular}
+   \caption {\tsc{lh} and \tsc{rp} in the internal-only type}
+  \label{fig:rel-lh-intonly-simple-rep}
+\end{figure}
 
+In the previous section, I showed that relative pronouns in Modern German are constituently structured as in Figure \ref{fig:rel-lh-intonly-simple-rep}. I give a compact version of it in \ref{ex:mg-rp-rep}.
+
+\ex.\label{ex:mg-rp-rep}
 \begin{forest} boom
-[\tsc{k}P,
-    [\tsc{k}]
-    [ϕP
-        [\phantom{x}ϕ\phantom{x}, roof, baseline]
-    ]
-]
+  [\tsc{rel}P
+      [\tsc{rel}P,
+      tikz={
+      \node[
+      draw,circle,
+      scale=0.75,
+      fit to=tree]{};
+      }
+          [\phantom{xxx}, roof]
+      ]
+      [\tsc{med}P, s sep = 15mm
+          [\tsc{med}P,
+          tikz={
+          \node[
+          draw,circle,
+          scale=0.75,
+          fit to=tree]{};
+          }
+              [\phantom{xxx}, roof]
+          ]
+          [\tsc{k}P,
+          tikz={
+          \node[
+          draw,circle,
+          scale=0.75,
+          fit to=tree]{};
+          }
+              [\tsc{k}]
+              [\tsc{ind}P
+                  [\phantom{xxx}, roof]
+              ]
+          ]
+      ]
+  ]
 \end{forest}
 
+In this section, I show that light heads in Modern German are constituently structured as in Figure \ref{fig:rel-lh-intonly-simple-rep}. The light head in Modern German forms a constituent within the relative pronoun. I give the structure of the Modern German light head in \ref{ex:mg-lh}.
 
-In Chapter \ref{ch:constituent-containment}, I argued that headless relatives are derived from light-headed relatives. The relative pronoun can delete the light head when the relative contains all constituents of the light head. I suggested that this holds in Modern German, as long as the external case is not more complex than the internal case. In the previous section, I gave the internal structure of the relative pronoun, i.e. which constituents the relative pronoun consists of. In this section, I first need to identify the light head, as it does not surface in headless relatives. Then I show what its internal structure looks like: it is a constituent within the relative pronoun.
+\ex.\label{ex:mg-lh}
+\begin{forest} boom
+    [\tsc{k}P,
+    tikz={
+    \node[label=below:\tit{r/n},
+    draw,circle,
+    scale=0.95,
+    fit to=tree]{};
+    }
+        [\tsc{k}]
+        [\tsc{ind}P
+            [\tsc{ind}]
+            [\tsc{an}P
+                [\tsc{an}]
+                [\tsc{cl}P
+                    [\tsc{cl}]
+                    [ΣP
+                        [Σ]
+                        [\tsc{ref}]
+                    ]
+                ]
+            ]
+        ]
+    ]
+\end{forest}
 
-In this section, I consider two kinds of light-headed relatives as the source of the headless relative.
+Before I dive into the feature content of the light head, I first need to identify it, as it does not surface in headless relatives.
+I consider two kinds of light-headed relatives as the source of the headless relative.
 First, the deletion of the light head is optional, and the light-headed relative is derived from an existing light-headed relative.
 Second, the deletion of the light head is obligatory, and the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German.
 I consider the first option first, and I give two reasons against it.
@@ -1570,8 +1660,31 @@ universal-like  & ✔         & *                   \\
 \label{tbl:mg-interpretations}
 \end{table}
 
-The first interpretation of the \tit{wen} relative is a definite-like one. This interpretation corresponds to a definite description: Jan hugs the person that he likes. The interpretation is available for the \tit{wen} relative and for the \tit{den}-\tit{wen} relative.
-The second interpretation of the \tit{wen} relative is a universal-like one. This interpretation corresponds to a universal quantifier: Jan hugs everybody that he likes. This interpretation is available for the \tit{wen} relative, but not for the \tit{den}-\tit{wen} relative.
+The first interpretation of the \tit{wen} relative is a definite-like one. This interpretation corresponds to a definite description: Jan hugs the person that he likes. Consider the context which facilitates a definite-interpretation and the repeated \tit{den}-\tit{wen} and \tit{wen} relative in \ref{ex:mg-context-def}.
+
+\ex.
+\a. Context: Yesterday Jan met with two friends. He likes one of them. The other one he does not like so much.\label{ex:mg-context-def}
+\bg. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'
+\bg. Jan umarmt \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'
+
+The interpretation is available for the \tit{wen} relative and for the \tit{den}-\tit{wen} relative.
+
+The second interpretation of the \tit{wen} relative is a universal-like one. This interpretation corresponds to a universal quantifier: Jan hugs everybody that he likes. Consider the context which facilitates a universal-interpretation and the repeated \tit{den}-\tit{wen} and \tit{wen} relative in \ref{ex:mg-context-univ}.
+
+\ex.
+\a. Jan has a general habit of hugging everybody that he likes.\label{ex:mg-context-univ}
+\bg. \#Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'
+\bg. Jan umarmt \tbf{wen} \tbf{er} \tbf{mag}.\\
+Jan hugs \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
+`Jan hugs who he likes.'
+
+This interpretation is available for the \tit{wen} relative, but not for the \tit{den}-\tit{wen} relative.
 
 There are some indications that the universal-like interpretation of headless relatives is the main interpretation that should be accounted for.
 First, informants have reported to me that headless relatives with case mismatches become more acceptable in the universal-like interpretation compared to the definite-like interpretation.
@@ -1579,37 +1692,14 @@ Second, \pgcitet{s̆imík2020}{4} notes that some languages do not easily allow 
 
 In sum, there are two arguments against the \tit{den}-\tit{wen} relative being the source of the \tit{wen} relative. In what follows, I show how the presence of \tit{den} leads to having only the definite-like interpretation. I suggest that the problem lies in the feature content of the light head \tit{den}. I point out how the feature content should be modified such that it is a suitable light head.
 
-The light head in the \tit{den}-\tit{wen} relative is a demonstrative. A demonstrative refers back to a linguistic or extra-linguistic antecedent. Consider the context which facilitates a definite-interpretation and the repeated \tit{den}-\tit{wen} relative in \ref{ex:mg-context-def}.
-
-\ex.
-\a. Context: Yesterday Jan met with two friends. He likes one of them. The other one he does not like so much.\label{ex:mg-context-def}
-\bg. Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
-`Jan hugs the man that he likes.'
-
-%move the contexts closer to the table and give the headless relative too. then in this part say why that is problematic with the demonstrative.
-
-The demonstrative \tit{den} in the \tit{den}-\tit{wen} relative refers back to the friend of Jan that he likes.
-
-Consider the context which facilitates a universal-interpretation and the repeated \tit{den}-\tit{wen} relative in \ref{ex:mg-context-univ}.
-
-\ex.
-\a. Jan has a general habit of hugging everybody that he likes.\label{ex:mg-context-univ}
-\bg. \#Jan umarmt den \tbf{wen} \tbf{er} \tbf{mag}.\\
-Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
-`Jan hugs the man that he likes.'
-
-In this case, there is no antecedent for the demonstrative \tit{den} to refer back to.
-
-% In footnote \ref{ftn:das-was}, I already briefly noted that not all speakers of Modern German accept \tit{den}-\tit{wen} relatives. Some of my informants reported that the meaning of the light head \tit{den} and relative pronoun \tit{wen} are incompatible for them. They prefer the \tsc{d}-pronoun as relative pronoun instead (as in \ref{ex:mg-den-den}).
-% That is why the relative pronoun \tit{den}, which also contains definiteness features, is a good match with a \tsc{d}-pronoun as a light head.
+The light head in the \tit{den}-\tit{wen} relative is a demonstrative. A demonstrative refers back to a linguistic or extra-linguistic antecedent. Consider the context in \ref{ex:mg-context-def} again. The demonstrative \tit{den} in the \tit{den}-\tit{wen} relative refers back to the friend of Jan that he likes, and the construction is grammatical. Now consider the context in \ref{ex:mg-context-univ} again. In this case, there is no antecedent for the demonstrative \tit{den} to refer back to, and the structure is infelicitous.
 
 I zoom in on the internal structure of the demonstrative \tit{den} to investigate what it is about the demonstrative that forces the definite-like interpretation. The demonstrative consists of the three morphemes \tit{d}, \tit{e} and \tit{n}. Two of its morphemes are identical to the \tsc{wh}-relative pronoun: (1) \tit{n}, which spells out pronominal, number, gender and case features, and (2) the \tit{e} which spells out deictic features. One morpheme differs: the \tit{d}, which establishes a definite reference. The two morphemes that force the definite-interpretation are the \tit{d} and the \tit{e}. The \tit{e} establishes a reference, and the \tit{d} makes this reference a definite one.
 
-% so, we have established that den-wen relative is not the input. Yet there must be SOME input structure, and so now we need to find out what it is. The intuition I follow is that this is a light headed relative whose head is even lighter than in the case of the den-wen relative.
+So far, I established that the \tit{den}-\tit{wen} relative cannot be the source from which the headless relative is derived. However, there must be some structure that is the source. I propose that this is a light-headed relative in which the head is even lighter than the head in the \tit{den}-\tit{wen} relative: it is an extra light head.
 
-I propose that the light head is the element that is left once the morphemes \tit{d} and \tit{e} are absent. This is the morpheme that is the final consonant of the relative pronoun. I give the light-headed relative from which the \tit{wen}-relative is derived in \ref{ex:mg-real-base}. The brackets around the light head indicate that it is obligatorily deleted.\footnote{
-The two light heads I discuss resemble the strong and weak definite in \citet{schwarz2009}, at least morphologically (although my light head is always obligatorily deleted). \posscitet{schwarz2009} strong definite is anaphoric in nature, and the weak definite encodes uniqueness. I give an example of a strong definite in \ref{ex:mg-florian-strong}. The strong definite is \tit{dem} that precedes \tit{Freund} `friend'. It refers back to the linguistic antecedent \tit{einen Freund} `a friend'.
+I propose that the extra light head is the element that is left once the morphemes \tit{d} and \tit{e} are absent. This is the morpheme that is the final consonant of the relative pronoun. I give the extra light-headed relative from which the \tit{wen}-relative is derived in \ref{ex:mg-real-base}. The brackets around the light head indicate that it is obligatorily deleted.\footnote{
+The light head and the extra light head I discuss resemble the strong and weak definite in \citet{schwarz2009}, at least morphologically (although my light head is always obligatorily deleted). \posscitet{schwarz2009} strong definite is anaphoric in nature, and the weak definite encodes uniqueness. I give an example of a strong definite in \ref{ex:mg-florian-strong}. The strong definite is \tit{dem} that precedes \tit{Freund} `friend'. It refers back to the linguistic antecedent \tit{einen Freund} `a friend'.
 
 \exg. Hans hat heute einen Freund zum Essen mit nach Hause gebracht. Er hat uns vorher ein Foto von dem Freund gezeigt.\\
 Hans has today a friend {to the} dinner with to home brought he has us beforehand a photo of the\scsub{strong} friend shown\\
@@ -1626,90 +1716,172 @@ Armstrong flew as {first one} {to the\scsub{weak}} moon\\
 `Armstrong was the first one to fly to the moon.' \flushfill{Modern German, \pgcitealt{schwarz2009}{40}}\label{ex:mg-florian-weak-mond}
 
 The meaning of \posscitet{schwarz2009} strong definite seems similar to the meaning of the light head in the \tit{den}-\tit{wen} relative.
-I do not see right away how the light head in headless relatives could encode uniqueness. One possibility is that the feature content of his and my form differs slightly after all. Another possibility is that the fact that his form combines with a preposition and an overt nouns leads to a change in interpretation.
+I do not see right away how the extra light head in headless relatives could encode uniqueness. One possibility is that the feature content of his and my form differs slightly after all. Another possibility is that the fact that his form combines with a preposition and an overt nouns leads to a change in interpretation.
 }
 
 \exg. Jan umarmt [n] \tbf{wen} \tbf{er} \tbf{mag}.\\
 Jan hugs \tsc{lh}.\tsc{an}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 `Jan hugs who he likes.'\label{ex:mg-real-base}
 
-In Section \ref{ch:constituent-containment}, I gave the simplified structure of the light head, repeated here in \ref{ex:light-head-rep}.
-
-\ex.
-\begin{forest} boom
-[\tsc{k}P
-    [ϕP
-        [\phantom{x}ϕ\phantom{x}, roof]
-    ]
-    [\tsc{k}P,
-        [\tsc{k}]
-    ]
-]
-\end{forest}
-\label{ex:light-head-rep}
-
-The idea was that the structures of the relative pronoun and the light heads match, but that the relative pronoun contains at least one feature more. I just argued that the light head has four feature less: \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}.
-
-I discuss two light heads: the animate accusative and the animate dative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-mg}. I show them in \ref{ex:mg-lhs}.
+In the remainder of this section, I discuss the two extra light heads that I compare the constituents of in Section \ref{sec:comparing-mg}. The are the accusative animate and the dative animate, shown in \ref{ex:mg-lhs}.
 
 \ex.\label{ex:mg-lhs}
-\ag. r\\
- `\tsc{lh}.\tsc{an}.\tsc{nom}'\\
-\bg. n\\
- `\tsc{lh}.\tsc{an}.\tsc{acc}'\\
+\ag. n\\
+ \tsc{lh}.\tsc{an}.\tsc{acc}\\
+\bg. m\\
+ \tsc{lh}.\tsc{an}.\tsc{dat}\\
 
-The derivations of the light heads are simple ones. The features are merged one by one, and after each new phrase is created, it is spelled out as a whole.
+In Chapter \ref{ch:constituent-containment}, I suggested that the relative pronoun contains at least one features more than the extra light head. In my proposal, it is actually five features, namely \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1}, \tsc{dx}\scsub{2} and \tsc{c}. This leaves the functional for the extra light head as shown in \ref{ex:fseq-elh}.
 
-I give the structures of the animate accusative light head in \ref{ex:fseq-wh-lh-nom}.
+\ex.\label{ex:fseq-elh}
+\begin{forest} boom
+  [\tsc{k}P
+      [\tsc{k}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [ΣP
+                      [Σ]
+                      [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+It contains the pronominal features \tsc{ref} and Σ, the gender features \tsc{cl} and \tsc{an}, the number feature \tsc{ind} and case features \tsc{k}.
+
+The two lexical entries that are required to spell these extra light heads out are the final consonants I introduced the lexical entries for in Section \ref{sec:mg-rel}. I repeat them from \ref{ex:mg-entries-nm} in \ref{ex:mg-entries-nm-rep}.
+
+\ex.\label{ex:mg-entries-nm-rep}
+\a.\label{ex:mg-entry-n-rep1}
+ \begin{forest} boom
+   [\tsc{acc}P
+       [\ac{f}2]
+       [\tsc{nom}P
+           [\ac{f}1]
+           [\tsc{ind}P
+               [\tsc{ind}]
+               [\tsc{an}P
+                   [\tsc{an}]
+                   [\tsc{cl}P
+                       [\tsc{cl}]
+                       [ΣP
+                           [Σ]
+                           [\tsc{ref}]
+                       ]
+                   ]
+               ]
+           ]
+       ]
+   ]
+   {\draw (.east) node[right]{⇔ \tit{n}}; }
+ \end{forest}
+\b.\label{ex:mg-entry-m-rep1}
+ \begin{forest} boom
+   [\tsc{dat}P
+       [\ac{f}3]
+       [\tsc{acc}P
+           [\ac{f}2]
+           [\tsc{nom}P
+               [\ac{f}1]
+               [\tsc{ind}P
+                   [\tsc{ind}]
+                   [\tsc{an}P
+                       [\tsc{an}]
+                       [\tsc{cl}P
+                           [\tsc{cl}]
+                           [ΣP
+                               [Σ]
+                               [\tsc{ref}]
+                           ]
+                       ]
+                   ]
+               ]
+           ]
+       ]
+   ]
+   {\draw (.east) node[right]{⇔ \tit{m}}; }
+ \end{forest}
+
+The derivations of the extra light heads are straight-forward ones. The features are merged one by one, and after each new phrase is created, it is spelled out as a whole. I still go through them step by step.
+
+First, the features \tsc{ref} and Σ are merged, and the ΣP is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep1}.
+Therefore, the ΣP is spelled out as \tit{n}.
+Then, the feature \tsc{cl} is merged, and the \tsc{cl}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep1}.
+Therefore, the \tsc{cl}P is spelled out as \tit{n}.
+Exactly the same happens for the features \tsc{an}, \tsc{ind} and \tsc{f}1 and
+They are merged, they form a constituent in the lexical tree in \ref{ex:mg-entry-n-rep1}, and they are spelled out as \tit{n}.
+
+The last feature that is merged for the accusative extra light head is the \tsc{f}2.
+It is merged, and the \tsc{acc}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep1}.
+Therefore, the \tsc{acc}P is spelled out as \tit{n}, as shown in \ref{ex:mg-elh-acc}.
 
 \ex. \begin{forest} boom
-    [\tsc{nom}P,
+    [\tsc{acc}P,
     tikz={
-    \node[label=below:\tit{r},
+    \node[label=below:\tit{n},
     draw,circle,
     scale=0.95,
     fit to=tree]{};
     }
-        [\ac{f}1]
-        [\tsc{ind}P
-            [\tsc{ind}]
-            [\tsc{an}P
-                [\tsc{an}]
-                [\tsc{cl}P
-                    [\tsc{cl}]
-                    [ΣP
-                        [Σ]
-                        [\tsc{ref}]
+        [\tsc{f}2]
+        [\tsc{nom}P
+            [\ac{f}1]
+            [\tsc{ind}P
+                [\tsc{ind}]
+                [\tsc{an}P
+                    [\tsc{an}]
+                    [\tsc{cl}P
+                        [\tsc{cl}]
+                        [ΣP
+                            [Σ]
+                            [\tsc{ref}]
+                        ]
                     ]
                 ]
             ]
         ]
     ]
 \end{forest}
-\label{ex:fseq-wh-lh-nom}
+\label{ex:mg-elh-acc}
 
-I give the structures of the animate dative light head in \ref{ex:fseq-wh-lh-acc}.
+For the dative extra light head another feature is merged: the \tsc{f}3.
+The feature \tsc{f}3 is merged, and the \tsc{dat}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:mg-entry-m-rep1}.
+Therefore, the \tsc{dat}P is spelled out as \tit{m}, as shown in \ref{ex:mg-elh-dat}.
 
-\ex. \begin{forest} boom
-[\tsc{acc}P,
+\ex. \label{ex:mg-elh-dat}
+\begin{forest} boom
+[\tsc{dat}P,
 tikz={
-\node[label=below:\tit{n},
+\node[label=below:\tit{m},
 draw,circle,
-scale=0.95,
+scale=1,
 fit to=tree]{};
 }
-    [\ac{f}2]
-    [\tsc{nom}P
-        [\ac{f}1]
-        [\tsc{ind}P
-            [\tsc{ind}]
-            [\tsc{an}P
-                [\tsc{an}]
-                [\tsc{cl}P
-                    [\tsc{cl}]
-                    [ΣP
-                        [Σ]
-                        [\tsc{ref}]
+    [\tsc{f}3]
+    [\tsc{acc}P
+        [\ac{f}2]
+        [\tsc{nom}P
+            [\ac{f}1]
+            [\tsc{ind}P
+                [\tsc{ind}]
+                [\tsc{an}P
+                    [\tsc{an}]
+                    [\tsc{cl}P
+                        [\tsc{cl}]
+                        [ΣP
+                            [Σ]
+                            [\tsc{ref}]
+                        ]
                     ]
                 ]
             ]
@@ -1717,14 +1889,14 @@ fit to=tree]{};
     ]
 ]
 \end{forest}
-\label{ex:fseq-wh-lh-acc}
 
 
+In sum, I argued that extra light heads consists of a single constituent. This constituent is also a constituent within the light head.
 
 % At first sight it seems like \citet{fuss2014} discuss a exception to this claim, namely headless relatives with \tsc{d}-pronouns. However, they claim that these headless relatives are actually light-headed relatives in which one of two syncretic elements is deleted by haplology.
 
 
-\section{Comparing constituents}\label{sec:comparing-mg}
+\section{Comparing Modern German constituents}\label{sec:comparing-mg}
 
 In this section, I compare the constituents of extra light heads to those of relative pronouns in Modern German. I give three examples, in which the internal and external case vary.
 I start with an example with matching cases: the internal and the external case are both accusative.

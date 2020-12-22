@@ -160,7 +160,7 @@ Importantly, the features that form the Polish light head and relative pronoun a
 Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can only delete the light head when the internal case matches the external case. When the internal and external case differ, I show that none of the elements can delete the other one.
 
 
-\section{The (extra) light head}
+\section{The Polish (extra) light head}
 
 In Chapter \ref{ch:constituent-containment}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching}.
 
@@ -174,11 +174,7 @@ In Chapter \ref{ch:constituent-containment}, I argued that in the matching type,
 ]
 \end{forest}
 
-In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:fseq-wh-lh-pol}.\footnote{
-The \tsc{k}P in this functional sequence is a placeholder for multiple case projections.
-When the extra light head is the accusative, the \tsc{k}P consists of the features \tsc{f}1 and \tsc{f}2, and they form the \tsc{acc}P.
-When the extra light head is the dative, the \tsc{k}P consists of the features \tsc{f}1, \tsc{f}2 and \tsc{f}3, and they form the \tsc{dat}P.
-}
+In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:fseq-wh-lh-pol}.
 
 \ex. \begin{forest} boom
   [\tsc{k}P
@@ -552,7 +548,7 @@ Therefore, the \tsc{cl}P is spelled out as \tit{o}, shown in \ref{ex:pol-spellou
   tikz={
   \node[label=below:\tit{o},
   draw,circle,
-  scale=0.95,
+  scale=0.9,
   fit to=tree]{};
   }
       [\tsc{an}]
@@ -620,12 +616,12 @@ The accusative animate extra light head is shown in \ref{ex:pol-elh-acc}.
 \ex.\label{ex:pol-elh-acc}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{dat}P, s sep=35mm
+  [\tsc{dat}P, s sep=40mm
       [\tsc{an}P,
       tikz={
       \node[label=below:\tit{o},
       draw,circle,
-      scale=0.95,
+      scale=0.9,
       fit to=tree]{};
       }
           [\tsc{an}]
@@ -662,10 +658,10 @@ The feature \tsc{f}3 is merged with the \tsc{acc}P, forming an \tsc{dat}P. This 
 
 The dative animate extra light head is shown in \ref{ex:pol-elh-dat}.
 
-\ex.\label{ex:pol-elh-dat}.
+\ex.\label{ex:pol-elh-dat}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{dat}P, s sep=40mm
+  [\tsc{dat}P, s sep=45mm
       [\tsc{an}P,
       tikz={
       \node[label=below:\tit{o},
@@ -757,7 +753,7 @@ Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have 
 In sum, just like Modern German, Polish headless relatives do not seem to be derived from light-headed relatives in which the light head is a demonstrative. A difference between Polish and Modern German demonstratives is that Polish ones do not spell out definite features. The fact that Polish demonstratives are also not the light head of a headless relative confirm that deixis features have to be absent from the extra light head.
 
 
-\section{The relative pronoun}\label{sec:pol-rel}
+\section{The Polish relative pronoun}\label{sec:pol-rel}
 
 In Chapter \ref{ch:constituent-containment}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching-rel}.
 
@@ -768,7 +764,7 @@ In Chapter \ref{ch:constituent-containment}, I argued that in the matching type,
       [ϕP
           [ϕ]
           [\tsc{k}P
-              [\tsc{k}, baseline]
+              [\tsc{k}]
           ]
       ]
   ]
@@ -789,15 +785,18 @@ In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the f
                    [\tsc{dx}\scsub{2}]
                    [\tsc{prox}P
                        [\tsc{dx}\scsub{1}]
-                       [\tsc{ind}P
-                           [\tsc{ind}]
-                           [\tsc{an}P
-                               [\tsc{an}]
-                               [\tsc{cl}P
-                                   [\tsc{cl}]
-                                   [ΣP
-                                        [Σ]
-                                        [\tsc{ref}]
+                       [\tsc{c}P
+                           [\tsc{c}]
+                           [\tsc{ind}P
+                               [\tsc{ind}]
+                               [\tsc{an}P
+                                   [\tsc{an}]
+                                   [\tsc{cl}P
+                                       [\tsc{cl}]
+                                       [ΣP
+                                            [Σ]
+                                            [\tsc{ref}]
+                                       ]
                                    ]
                                ]
                            ]
@@ -815,27 +814,36 @@ In this section, I argue that Polish relative pronouns have the structure shown 
 \ex.\label{ex:pol-rel}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=30mm
+  [\tsc{rel}P, s sep=75mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{k},
       draw,circle,
-      scale=0.95,
+      scale=1,
       fit to=tree]{};
       }
           [\tsc{rel}]
           [\tsc{wh}P
               [\tsc{wh}]
               [\tsc{med}P
-                  [\tsc{deix\scsub{2}}]
+                  [\tsc{dx}\scsub{2}]
                   [\tsc{prox}P
-                      [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}P]
+                      [\tsc{dx}\scsub{1}]
+                      [\tsc{c}P
+                          [\tsc{c}]
+                          [\tsc{ind}P
+                              [\tsc{ind}]
+                              [\tsc{an}P
+                                  [\tsc{an}]
+                                  [\tsc{cl}]
+                              ]
+                          ]
+                      ]
                   ]
               ]
           ]
       ]
-      [\tsc{acc}P, s sep=30mm
+      [\tsc{acc}P, s sep=35mm
       [\tsc{an}P,
           tikz={
           \node[label=below:\tit{o},
@@ -961,7 +969,16 @@ Therefore, in a second workspace, the feature \tsc{dx}\scsub{1} is merged with t
               [\tsc{dx}\scsub{2}]
               [\tsc{prox}P
                   [\tsc{dx}\scsub{1}]
-                  [\tsc{ind}]
+                  [\tsc{c}P
+                      [\tsc{c}]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                          [\tsc{an}P
+                              [\tsc{an}]
+                              [\tsc{cl}]
+                          ]
+                      ]
+                  ]
               ]
           ]
       ]
@@ -974,18 +991,24 @@ Therefore, the \tsc{prox}P is spelled out as \tit{k}. The newly created phrase i
 \ex.\label{ex:pol-spellout-proxp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{prox}P, s sep=25mm
-      [\tsc{prox}P,
+  [\tsc{c}P, s sep=30mm
+      [\tsc{c}P,
       tikz={
       \node[label=below:\tit{k},
       draw,circle,
       scale=0.95,
       fit to=tree]{};
       }
-          [\tsc{deix\scsub{1}}]
-          [\tsc{ind}]
+          [\tsc{c}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}]
+              ]
+          ]
       ]
-      [\tsc{ind}P, s sep=50mm
+      [\tsc{ind}P, s sep=35mm
       [\tsc{an}P,
           tikz={
           \node[label=below:\tit{o},
@@ -1060,7 +1083,7 @@ The \tsc{acc}P is spelled out as \tit{go}, and the \tsc{acc}P is merged back to 
 \ex.
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=30mm
+  [\tsc{rel}P, s sep=75mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{k},
@@ -1072,15 +1095,24 @@ The \tsc{acc}P is spelled out as \tit{go}, and the \tsc{acc}P is merged back to 
           [\tsc{wh}P
               [\tsc{wh}]
               [\tsc{med}P
-                  [\tsc{deix\scsub{2}}]
+                  [\tsc{dx}\scsub{2}]
                   [\tsc{prox}P
-                      [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}]
+                      [\tsc{dx}\scsub{1}]
+                      [\tsc{c}P
+                          [\tsc{c}]
+                          [\tsc{ind}P
+                              [\tsc{ind}]
+                              [\tsc{an}P
+                                  [\tsc{an}]
+                                  [\tsc{cl}]
+                              ]
+                          ]
+                      ]
                   ]
               ]
           ]
       ]
-      [\tsc{acc}P, s sep=30mm
+      [\tsc{acc}P, s sep=40mm
       [\tsc{an}P,
           tikz={
           \node[label=below:\tit{o},
@@ -1147,7 +1179,7 @@ The \tsc{dat}P is spelled out as \tit{mu}, and the \tsc{dat}P is merged back to 
 \ex. \label{ex:pol-spellout-rel-dat}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=30mm
+  [\tsc{rel}P, s sep=75mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{k},
@@ -1159,15 +1191,24 @@ The \tsc{dat}P is spelled out as \tit{mu}, and the \tsc{dat}P is merged back to 
           [\tsc{wh}P
               [\tsc{wh}]
               [\tsc{med}P
-                  [\tsc{deix\scsub{2}}]
+                  [\tsc{dx}\scsub{2}]
                   [\tsc{prox}P
-                      [\tsc{deix\scsub{1}}]
-                      [\tsc{ind}]
+                      [\tsc{dx}\scsub{1}]
+                      [\tsc{c}P
+                          [\tsc{c}]
+                          [\tsc{ind}P
+                              [\tsc{ind}]
+                              [\tsc{an}P
+                                  [\tsc{an}]
+                                  [\tsc{cl}]
+                              ]
+                          ]
+                      ]
                   ]
               ]
           ]
       ]
-      [\tsc{dat}P, s sep=30mm
+      [\tsc{dat}P, s sep=40mm
       [\tsc{an}P,
           tikz={
           \node[label=below:\tit{o},
@@ -1211,7 +1252,7 @@ To summarize, I decomposed the relative pronoun into the three morphemes \tit{k}
 
 
 
-\section{Comparing constituents}\label{sec:comparing-polish}
+\section{Comparing Polish constituents}\label{sec:comparing-polish}
 
 In this section, I compare the constituents of extra light heads to those of relative pronouns in Polish. I give three examples, in which the internal and external case vary.
 I start with an example with matching cases: the internal and the external case are both accusative.
@@ -1238,9 +1279,11 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
         \tsc{acc} extra light head \tit{} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{acc}P, s sep=40mm, tikz={
+          [\tsc{acc}P, s sep=40mm,
+          tikz={
           \node[
-          draw, constituent-deletion, yshift=-0.4cm,
+          draw, constituent-deletion,
+          yshift=-0.4cm,
           fill=DG,fill opacity=0.2,
           scale=1.25,
           dashed,
