@@ -96,23 +96,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}The relative pronoun}{160}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{169}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{170}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}The (extra) light head}{188}{section.7.3}%
+\contentsline {section}{\numberline {7.3}The (extra) light head}{189}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Comparing constituents}{195}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Comparing constituents}{196}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Summary}{200}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Summary}{201}{section.7.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{203}{chapter.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}The (extra) light head}{206}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}The relative pronoun}{219}{section.8.2}%
+\contentsline {section}{\numberline {8.2}The relative pronoun}{220}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing constituents}{227}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing constituents}{228}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{234}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{235}{section.8.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{237}{chapter.9}%
 \defcounter {refsection}{0}\relax 

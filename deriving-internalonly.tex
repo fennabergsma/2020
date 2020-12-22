@@ -25,7 +25,7 @@ When the internal case wins the case competition, this type of language allows t
 When the external case wins the case competition, this type of language does not allow the external case to surface. This means that the light head with a more complex external case cannot be the surface pronoun.
 
 In Chapter \ref{ch:constituent-containment}, I suggested that the relative pronoun contains at least one feature more than the light head.
-In the internal-only type of language, these features are spelled out in such a way that they form the constituency shown in Figure \ref{fig:rel-lh-intonly-derive}.
+In the internal-only type of language, these features are spelled out in such a way that they form the constituency shown in Figure \ref{fig:rel-lh-intonly-simple}.
 
 \begin{figure}[htbp]
   \center
@@ -56,7 +56,7 @@ In the internal-only type of language, these features are spelled out in such a 
       \bottomrule
   \end{tabular}
    \caption {\tsc{lh} and \tsc{rp} in the internal-only type}
-  \label{fig:rel-lh-intonly-derive}
+  \label{fig:rel-lh-intonly-simple}
 \end{figure}
 
 When the internal and the external case match, the relative pronoun can delete the light head, because the light head forms a single constituent within the relative pronoun.
@@ -128,15 +128,15 @@ In this chapter, I show that Modern German light heads and relative pronouns hav
   \label{fig:rel-lh-mg}
 \end{figure}
 
-In what follows, I compare the light head and the relative pronoun in Figure \ref{fig:rel-lh-mg} to the light head and the relative pronoun in Figure \ref{fig:rel-lh-intonly}.
+In what follows, I compare the light head and the relative pronoun in Figure \ref{fig:rel-lh-mg} to the light head and the relative pronoun in Figure \ref{fig:rel-lh-intonly-simple}.
 
 Consider the light head in Figure \ref{fig:rel-lh-mg}.
-Light heads in Modern German are spelled out by a single morpheme, which I indicate by circling the structure. I show the internal structure of \tsc{k}P to make clear that it contain the \tsc{ind}P (which is the highest feature of what corresponds to the ϕP). Therefore, the structure of the light head in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly}.
+Light heads in Modern German are spelled out by a single morpheme, which I indicate by circling the structure. I show the internal structure of \tsc{k}P to make clear that it contain the \tsc{ind}P (which is the highest feature of what corresponds to the ϕP). Therefore, the structure of the light head in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly-simple}.
 
 Consider the relative pronoun in Figure \ref{fig:rel-lh-mg}.
-Relative pronouns in Modern German consist of three morphemes: the \tsc{k}P (which is the constituent that forms the light head) and the \tsc{med}P and the \tsc{rel}P, again indicated by the circles. This shows that the relative pronoun contains more a single feature more than the light head, namely whatever is in the \tsc{med}P and in the \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly}.
+Relative pronouns in Modern German consist of three morphemes: the \tsc{k}P (which is the constituent that forms the light head) and the \tsc{med}P and the \tsc{rel}P, again indicated by the circles. This shows that the relative pronoun contains more a single feature more than the light head, namely whatever is in the \tsc{med}P and in the \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly-simple}.
 
-Crucially, the constituency relevant for the deletion of the light head is the same in Figure \ref{fig:rel-lh-mg} as it is in Figure \ref{fig:rel-lh-intonly}. Throughout this chapter, I discuss what the exact feature content of relative pronouns and light heads is. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-mg}.
+Crucially, the constituency relevant for the deletion of the light head is the same in Figure \ref{fig:rel-lh-mg} as it is in Figure \ref{fig:rel-lh-intonly-simple}. Throughout this chapter, I discuss what the exact feature content of relative pronouns and light heads is. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-mg}.
 
 The chapter is structured as follows.
 First, I discuss the relative pronoun. I decompose the relative pronouns into the three morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to. I illustrate how different morphemes are combined using Nanosyntax.
@@ -146,7 +146,9 @@ Finally, I compare the constituents of the light head and the relative pronoun. 
 
 \section{The relative pronoun}\label{sec:mg-rel}
 
-\ex.
+In Chapter \ref{ch:constituent-containment}, I argued that in the internal-only type, the features of the relative pronoun are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-intonly-rp}.
+
+\ex.\label{ex:simple-intonly-rp}
 \begin{forest} boom
 [\tsc{rel}P
     [\tsc{rel}]
@@ -161,11 +163,12 @@ Finally, I compare the constituents of the light head and the relative pronoun. 
 
 In this section, I give decompose the Modern German relative pronouns and I determine which features they correspond to.
 I carefully establish the feature content of the relative pronoun, because the features that I introduce for Modern German are present in the same way in the other two language types.
+In the end, I argue that Modern German relative pronoun have the structure shown in \ref{ex:mg-rp}.
 
-\ex.
+\ex.\label{ex:mg-rp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=12mm
+  [\tsc{rel}P, s sep=15mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{w},
@@ -179,7 +182,7 @@ I carefully establish the feature content of the relative pronoun, because the f
               [\tsc{dx}\scsub{2}]
           ]
       ]
-      [\tsc{med}P, s sep=21mm
+      [\tsc{med}P, s sep=40mm
           [\tsc{med}P,
           tikz={
           \node[label=below:\tit{e},
@@ -204,15 +207,18 @@ I carefully establish the feature content of the relative pronoun, because the f
           fit to=tree]{};
           }
               [\tsc{k}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{an}P
-                      [\tsc{an}]
-                      [\tsc{cl}P
-                          [\tsc{cl}]
-                          [ΣP
-                              [Σ]
-                              [\tsc{ref}]
+              [\tsc{c}P
+                  [\tsc{c}]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}P
+                          [\tsc{an}]
+                          [\tsc{cl}P
+                              [\tsc{cl}]
+                              [ΣP
+                                  [Σ]
+                                  [\tsc{ref}]
+                              ]
                           ]
                       ]
                   ]
@@ -223,7 +229,7 @@ I carefully establish the feature content of the relative pronoun, because the f
 \end{forest}
 \end{adjustbox}
 
-I discuss two relative pronouns: the animate nominative and the animate accusative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-mg}. I show them in \ref{ex:mg-rels}.
+I discuss two relative pronouns: the animate accusative and the animate dative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-mg}. I show them in \ref{ex:mg-rels}.
 
 \ex.\label{ex:mg-rels}
 \ag. w-e-n\\
@@ -231,33 +237,13 @@ I discuss two relative pronouns: the animate nominative and the animate accusati
 \bg. w-e-m\\
  `\tsc{rp}.\tsc{an}.\tsc{dat}'\\
 
-I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant (\tit{n} or \tit{m}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the end, I derive the relative pronouns, given here in \ref{ex:mg-spellout-rel-acc-preview} and \ref{ex:mg-spellout-rel-dat-preview}.
+I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant (\tit{n} or \tit{m}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the next section, I show how I construct the relative pronouns by combining the separate morphemes.
 
-
-
-I start with the final consonants: \tit{n} and \tit{m}. They can be observed in several contexts besides relative pronouns. Table \ref{tbl:mg-dieser} gives an overview of the demonstrative \tit{dieser} `this' in Modern German in two numbers, three genders and three cases.\footnote{
-The vowel preceding the final consonant is written as \tit{e}. I write it as \tit{ə}, because this is how it is pronounced. I make this distinction to emphasize that this differs from the vowel used in the relative pronouns.
-}
-Compare the final consonants in Table \ref{tbl:mg-paradigm-wh-rels} and Table \ref{tbl:mg-dieser}.
+I start with the final consonants: \tit{n} and \tit{m}. Consider Table \ref{tbl:mg-paradigm-wh-rels}.
 
 \begin{table}[htbp]
 \center
-\caption {Modern German demonstrative \tit{dieser} `this' \pgcitep{durrell2011}{Table 5.2}}
- \begin{tabular}{ccccc}
- \toprule
-             & \ac{m}.\tsc{sg}    & \tsc{n}.\tsc{sg}  & \ac{f}.\tsc{sg}  & \tsc{pl} \\
-   \cmidrule{2-5}
-   \ac{nom}  & dies-ə-r           & dies-ə-s          & dies-ə            & dies-ə    \\
-   \ac{acc}  & dies-ə-n           & dies-ə-s          & dies-ə            & dies-ə    \\
-   \ac{dat}  & dies-ə-m           & dies-ə-m          & dies-ə-r          & dies-ə-n  \\
- \bottomrule
- \end{tabular}
- \label{tbl:mg-dieser}
-\end{table}
-
-\begin{table}[htbp]
-\center
-\caption {Modern German relative pronouns \pgcitep{durrell2011}{5.3.3} (repeated)}
+\caption {Modern German relative pronouns \pgcitep{durrell2011}{5.3.3}}
 \begin{tabular}{ccc}
 \toprule
             & \ac{an}  & \tsc{inan}\\
@@ -270,55 +256,91 @@ Compare the final consonants in Table \ref{tbl:mg-paradigm-wh-rels} and Table \r
 \label{tbl:mg-paradigm-wh-rels}
 \end{table}
 
-Table \ref{tbl:mg-dieser} and \ref{tbl:mg-paradigm-wh-rels} show that the final consonants take different shapes depending on gender, number and case. I conclude from that that the consonant realizes features having to do with these three aspects.
+The final consonants depending on animateness and case.\footnote{
+The vowel also differs between animateness. I return to this point when I discuss the feature content of the \tit{e}.
+}
+The differing final consonant can be observed in several contexts besides relative pronouns. Table \ref{tbl:mg-dieser} gives an overview of the demonstrative \tit{dieser} `this' in Modern German in two numbers, three genders and three cases.\footnote{
+The vowel preceding the final consonant is written as \tit{e}. I write it as \tit{ə}, because this is how it is pronounced. I make this distinction to emphasize that this differs from the vowel used in the relative pronouns.
+}\footnote{
+Notice that the animate forms in Table \ref{tbl:mg-paradigm-wh-rels} are the masculine forms in Table \ref{tbl:mg-dieser} and that the inanimate forms in Table \ref{tbl:mg-paradigm-wh-rels} are the neuter forms in Table \ref{tbl:mg-dieser}. This is a pattern that appears more often.
+}
 
-Another context in which this consonant appears is in their use as a pronoun. More specifically, the final consonant corresponds to the weak pronoun in Modern German, which I illustrate in the following examples. I only give examples of the nominative and accusative masculine singular, because these are the forms used in the relative pronoun.
+\begin{table}[htbp]
+\center
+\caption {Modern German demonstrative \tit{dieser} `this' \pgcitep{durrell2011}{Table 5.2}}
+ \begin{tabular}{ccccc}
+ \toprule
+             & \tsc{m}.\tsc{sg} & \tsc{n}.\tsc{sg} & \ac{f}.\tsc{sg} & \tsc{pl} \\
+   \cmidrule{2-5}
+   \ac{nom}  & dies-ə-r        & dies-ə-s         & dies-ə          & dies-ə   \\
+   \ac{acc}  & dies-ə-n        & dies-ə-s         & dies-ə          & dies-ə   \\
+   \ac{dat}  & dies-ə-m        & dies-ə-m         & dies-ə-r        & dies-ə-n \\
+ \bottomrule
+ \end{tabular}
+ \label{tbl:mg-dieser}
+\end{table}
 
-\ex.
-\ag. Hat r das schon gemacht?\\
- has he.\tsc{wk} that already done\\
- `Did he already do that?'
-\bg. Ich wollte n gestern schon anrufen.\\
- I wanted him.\tsc{wk} yesterday already call\\
- `I wanted to call him already yesterday.'
+Table \ref{tbl:mg-dieser} shows that the final consonant differs depending on gender, number and case. There is no vowel that differs between the different forms. I conclude from this that the consonant realizes features having to do with gender, number and case.
 
-In the literature, pronouns have been split into three classes: strong, weak, clitic. Let me see what class these consonants represent. The tests I use are taken from  XXXX.
+Another context in which the final consonants appear is in their use as a pronoun. More specifically, the final consonants correspond to the weak pronoun in Modern German. In \ref{ex:mg-weak}, I give examples of the masculine accusative singular and masculine dative singular.
 
-First, I show that the consonant is not a strong pronoun.
-The example in \ref{ex:wk-pron-coord} illustrates this by showing that the weak pronoun cannot be coordinated.
+\ex.\label{ex:mg-weak}
+\ag. Ich wollte n gestern schon anrufen.\\
+ I wanted 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} yesterday already call\\
+ `I already wanted to call him yesterday.'
+\bg. Ich helfe m sein Fahrrad zu reparieren.\\
+ I help 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} his bike to repare\\
+ `I help him reparing his bike.'
+
+\citet{cardinaletti1994} split pronouns in three classes: strong pronouns, weak pronouns and clitics. There are several tests that distinguish the types from each other. In what follows, I show that the pronouns in \ref{ex:mg-weak} are neither strong pronouns nor clitics, and therefore, should be classified as weak pronouns. The tests I are are taken from \citet{cardinaletti1994}.
+
+First, I show that \tit{n} and \tit{m} are not strong pronouns because of how they behave under coordination and under focus.
+Strong pronouns can be coordinated. The examples in \ref{ex:wk-pron-coord} illustrate that \tit{n} and \tit{m} cannot be coordinated. Instead, the strong pronouns \tit{ihn} and \tit{ihm} should be used.
 
 \ex.\label{ex:wk-pron-coord}
-\ag. Jan und er/ *r essen gerne Dampfnudeln.\\
- Jan und he.\tsc{str}/ he.\tsc{wk} eat {with pleasure} \tit{Dampfnudeln}\\
- `Jan and he like to eat \tit{Dampfnudeln}.'
-\bg. Ich habe Jan und ihn/ *n gesehen.\\
- I have Jan and him.\tsc{str}/ him.\tsc{wk} seen\\
- `I saw Jan and him.'
+\ag. Ich wollte Jan und ihn/ *n gestern schon anrufen.\\
+ I wanted Jan and 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} yesterday already call\\
+ `I already wanted to call Jan and him yesterday.'
+\bg. Ich helfe Jan und ihm/ *m sein Fahrrad zu reparieren.\\
+ I help Jan and 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} his bike to repare\\
+ `I help Jan and him reparing his bike.'
 
-The example in \ref{ex:wk-pron-focus} illustrates the same point by showing that the weak pronoun cannot be focused.
+Strong pronouns can be focused.
+The examples in \ref{ex:wk-pron-focus} show that \tit{n} and \tit{m} cannot be focused.
+Instead, the strong pronouns \tit{ihn} and \tit{ihm} should be used.
 
 \ex.\label{ex:wk-pron-focus}
-\ag. Nur er/ *r isst gerne Saumagen.\\
- only he.\tsc{str}/ he.\tsc{wk} eats {with pleasure} \tit{Saumagen}\\
- `Only he likes \tit{Saumagen}'
-\bg. Ich habe nur ihn/ *n gesehen.\\
- I have only him.\tsc{str}/ him.\tsc{wk} seen\\
- `I saw only him.'
+\ag. Ich wollte nur ihn/ *n anrufen.\\
+ I wanted only 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} call\\
+ `I wanted to call only him.'
+\bg. Ich helfe nur ihm/ *m sein Fahrrad zu reparieren.\\
+ I help only 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{str} 3\tsc{sg}.\tsc{m}.\tsc{dat}.\tsc{wk} his bike to repare\\
+ `I help only him reparing his bike.'
 
-Second, I show that the consonant is not a clitic.
-The example in \ref{ex:wk-pron-order} illustrates this by showing that the weak pronoun obligatorily follows dative objects.
+Second, I show that the consonant is not a clitic because of how they behave with respect to following dative objects and combining with prepositions.
+Clitics can either follow a dative object or precede it. Strong and weak pronouns can only follow it.
+The examples in \ref{ex:wk-pron-order-n} and \ref{ex:wk-pron-order-m} show that \tit{n} and \tit{m} can only follow the dative object \tit{Jan}.
 
-\ex.\label{ex:wk-pron-order}
-\ag. .. dass Jan Ursel ihn/ n empfohlen hat.\\
- {} that Jan Ursel him.\tsc{str}/ him.\tsc{wk} recommended has\\
- `that Jan recommended him to Ursel.'
-\bg. *.. dass Jan ihn/ n Ursel emphfohlen hat.\\
- {} that Jan him.\tsc{str}/ him.\tsc{wk} Ursel recommended has\\
- `that Jan recommended him to Ursel.'
+\ex.\label{ex:wk-pron-order-n}
+\ag. .. dass Ursel Jan n empfohlen hat.\\
+ {} that Ursel Jan 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} recommended has\\
+ `that Ursel recommended him to Jan.'
+\bg. *.. dass Ursel n Jan empfohlen hat.\\
+{} that Ursel 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} Jan recommended has\\
+`that Ursel recommended him to Jan.'
 
-The example in \ref{ex:wk-pron-prep} illustrates the same point by showing that the weak pronoun can appear after prepositions (which clitics cannot).
+\ex.\label{ex:wk-pron-order-m}
+\ag. .. dass Ursel m Jan empfohlen hat.\\
+ {} that Ursel 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} Jan recommended has\\
+ `that Ursel recommended Jan to him.'
+\bg. *.. dass Ursel Jan m empfohlen hat.\\
+{} that Ursel Jan 3\tsc{sg}.\tsc{m}.\tsc{acc}.\tsc{wk} recommended has\\
+`that Ursel recommended Jan to him.'
 
-\ex.\label{ex:wk-pron-prep}
+Clitics cannot combine with prepositions.
+The examples in \ref{ex:wk-pron-prep-n} and \ref{ex:wk-pron-prep-m} show that \tit{n} and \tit{m} can combine with prepositions.
+
+\ex.\label{ex:wk-pron-prep-n}
 \ag. Ich habe schon ein Geschenk für n gekauft.\\
  I have already a gift for him.\tsc{wk} bought\\
  `I already bought a gift for him.'
@@ -332,13 +354,29 @@ I have a nice letter to him.\tsc{wk} written\\
 I am fast on him.\tsc{wk} to walked\\
 `I walked toward him fast.'
 
-In sum, besides gender, number and case features, the final consonants of relative pronoun can be used as weak pronouns.
+\ex.\label{ex:wk-pron-prep-m}
+\ag. Ich habe schon ein Geschenk für n gekauft.\\
+ I have already a gift for him.\tsc{wk} bought\\
+ `I already bought a gift for him.'
+\bg. Ich habe gestern gegen n gespielt.\\
+I have yesterday against him.\tsc{wk} played\\
+`Yesterday I played against him.'
+\bg. Ich habe ein schönen Brief an n geschrieben.\\
+I have a nice letter to him.\tsc{wk} written\\
+`I wrote a nice letter to him.'
+\bg. Ich bin schnell auf n zu gelaufen.\\
+I am fast on him.\tsc{wk} to walked\\
+`I walked toward him fast.'
 
-say that the vowel is residue
+In sum, \tit{n} and \tit{m} are not strong pronouns and not clitics, so they are weak pronouns.
+This means that the forms also contain pronominal features.
+
+
+
 
 now we are done with segmentation, let me turn to the actual features.
 
-Since I discuss the animate nominative and the animate accusative, I only introduce features that are realized by these morphemes.
+Since I discuss the animate accusative and the animate dative, I only introduce features that are realized by these morphemes.
 For case, I adopt the features of \citet{caha2009}, already introduced in Chapter \ref{ch:decomposition}. The feature \ac{f}1 corresponds to the nominative, and the features \ac{f}1 and \ac{f}2 correspond to the accusative.
 
 For number and gender, I adopt the features that are distinguished by \citet{harley2002} for pronouns. The feature \tsc{cl} corresponds to a gender feature, which is inanimate or neuter if it is not combined with any other features. Combining \tsc{cl} with the feature \tsc{an} gives the animate or masculine gender.\footnote{
@@ -1528,17 +1566,17 @@ In Section \ref{ch:constituent-containment}, I gave the simplified structure of 
 
 The idea was that the structures of the relative pronoun and the light heads match, but that the relative pronoun contains at least one feature more. I just argued that the light head has four feature less: \tsc{wh}, \tsc{rel}, \tsc{dx}\scsub{1} and \tsc{dx}\scsub{2}.
 
-I discuss two light heads: the animate nominative and the animate accusative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-mg}. I show them in \ref{ex:mg-lhs}.
+I discuss two light heads: the animate accusative and the animate dative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-mg}. I show them in \ref{ex:mg-lhs}.
 
 \ex.\label{ex:mg-lhs}
 \ag. r\\
- `\tsc{lh}.\tsc{an}.\tsc{sg}.\tsc{nom}'\\
+ `\tsc{lh}.\tsc{an}.\tsc{nom}'\\
 \bg. n\\
- `\tsc{lh}.\tsc{an}.\tsc{sg}.\tsc{acc}'\\
+ `\tsc{lh}.\tsc{an}.\tsc{acc}'\\
 
 The derivations of the light heads are simple ones. The features are merged one by one, and after each new phrase is created, it is spelled out as a whole.
 
-I give the structures of the animate nominative light head in \ref{ex:fseq-wh-lh-nom}.
+I give the structures of the animate accusative light head in \ref{ex:fseq-wh-lh-nom}.
 
 \ex. \begin{forest} boom
     [\tsc{nom}P,
@@ -1566,7 +1604,7 @@ I give the structures of the animate nominative light head in \ref{ex:fseq-wh-lh
 \end{forest}
 \label{ex:fseq-wh-lh-nom}
 
-I give the structures of the animate accusative light head in \ref{ex:fseq-wh-lh-acc}.
+I give the structures of the animate dative light head in \ref{ex:fseq-wh-lh-acc}.
 
 \ex. \begin{forest} boom
 [\tsc{acc}P,
@@ -1612,12 +1650,12 @@ In Modern German, a internal-only language, the first two example is grammatical
 
 I start with the matching cases.
 Consider the example in \ref{ex:mg-acc-acc-rep}, in which the internal accusative case competes against the external accusative case. The relative clause is marked in bold.
-The internal case is accusative, as the predicate \tit{mögen} `to like' takes nominative subjects. The relative pronoun \tit{wer} `\ac{rel}.\ac{an}.\ac{nom}' appears in the nominative case. This is the element that surfaces.
-The external case is accusative as well, as the predicate \tit{besuchen} `to visit' also takes nominative subjects. The extra light head \tit{ər} `\ac{dem}.\ac{an}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
+The internal case is accusative, as the predicate \tit{mögen} `to like' takes accusative objects. The relative pronoun \tit{wen} `\ac{rel}.\ac{an}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
+The external case is accusative as well, as the predicate \tit{einladen} `to invite' also takes accusative objects. The extra light head \tit{n} `\ac{elh}.\ac{an}.\ac{acc}' appears in the accusative case. It is placed between square brackets because it does not surface.
 
-\exg. Uns besucht [r], \tbf{wer} \tbf{Maria} \tbf{mag}.\\
- 2\ac{pl}.\ac{acc} visit.\ac{pres}.3\ac{sg}\scsub{[nom]} \tsc{elh}.\ac{an}.\ac{nom} \ac{rel}.\ac{an}.\ac{nom} Maria.\ac{acc} like.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
- `Who visits us likes Maria.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-nom-rep}
+\exg. Ich {lade ein} [n], \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+ 1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \tsc{elh}.\ac{an}.\ac{acc} \tsc{rp}.\ac{an}.\ac{acc} Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
+ `I invite who Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-acc-rep}
 
 In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the extra light head at the top and the syntactic structure of the relative pronoun at the bottom.
 
@@ -1626,18 +1664,18 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the extra ligh
   \begin{adjustbox}{max height=0.9\textheight}
   \begin{tabular}[b]{c}
         \toprule
-        \tsc{nom} extra light head \tit{n}\\
+        \tsc{acc} extra light head \tit{n}\\
         \cmidrule{1-1}
       \begin{forest} boom
         [\tsc{acc}P,
         tikz={
         \node[label=below:{\tit{n}},
         draw,circle,
-        scale=0.95,
+        scale=0.8,
         fit to=tree]{};
         \node[draw,circle,
         dashed,
-        scale=1,
+        scale=0.85,
         fill=DG,fill opacity=0.2,
         fit to=tree]{};
         }
@@ -1645,17 +1683,7 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the extra ligh
             [\tsc{nom}P
                 [\ac{f}1]
                 [\tsc{ind}P
-                    [\tsc{ind}]
-                    [\tsc{an}P
-                        [\tsc{an}]
-                        [\tsc{cl}P
-                            [\tsc{cl}]
-                            [ΣP
-                                [Σ]
-                                [\tsc{ref}]
-                            ]
-                        ]
-                    ]
+                    [\phantom{xxx}, roof]
                 ]
             ]
         ]
@@ -1670,36 +1698,26 @@ In Figure \ref{fig:mg-int=ext}, I give the syntactic structure of the extra ligh
               [\tsc{rel}P
                   [\phantom{x}\tit{w}\phantom{x}, roof]
               ]
-              [\tsc{nom}P, s sep=15mm
-                  [\tsc{med}P,
+              [\tsc{med}P
+                  [\tsc{med}P
                       [\phantom{x}\tit{e}\phantom{x}, roof]
                   ]
                   [\tsc{acc}P,
                   tikz={
                   \node[label=below:{\tit{n}},
                   draw,circle,
-                  scale=0.95,
+                  scale=0.8,
                   fit to=tree]{};
                   \node[draw,circle,
                   dashed,
-                  scale=1,
+                  scale=0.85,
                   fit to=tree]{};
                   }
                       [\tsc{f}2]
                       [\tsc{nom}P
                           [\ac{f}1]
                           [\tsc{ind}P
-                              [\tsc{ind}]
-                              [\tsc{an}P
-                                  [\tsc{an}]
-                                  [\tsc{cl}P
-                                      [\tsc{cl}]
-                                      [ΣP
-                                          [Σ]
-                                          [\tsc{ref}]
-                                      ]
-                                  ]
-                              ]
+                              [\phantom{xxx}, roof]
                           ]
                       ]
                   ]
@@ -1722,14 +1740,13 @@ I draw a dashed circle around each constituent that is a constituent in both the
 The extra light head consists of a single constituent: the \tsc{acc}P.
 This \tsc{acc}P is also a constituent within the relative pronoun. Therefore, the relative pronoun can delete the extra light head. I signal the deletion of the extra light head by marking the content of its circle gray.
 
+Consider the example in \ref{ex:mg-acc-dat-rep}, in which the internal dative case competes against the external accusative case. The relative clause is marked in bold.
+The internal case is dative, as the predicate \tit{vertrauen} `to trust' takes dative objects. The relative pronoun \tit{wem} `\ac{rel}.\ac{an}.\ac{dat}' appears in the dative case. This is the element that surfaces.
+The external case is accusative, as the predicate \tit{einladen} `to invite' takes accusative objects. The extra light head \tit{n} `\ac{elh}.\ac{an}.\ac{acc}' appears in the accusative case. It is placed between square brackets because it does not surface.
 
-Consider the example in \ref{ex:mg-nom-acc-rep}, in which the internal accusative case competes against the external nominative case. The relative clause is marked in bold.
-The internal case is accusative, as the predicate \tit{mögen} `to like' takes accusative objects. The relative pronoun \tit{wen} `\ac{rel}.\ac{an}.\ac{acc}' appears in the accusative case. This is the element that surfaces.
-The external case is nominative, as the predicate \tit{besuchen} `to visit' takes nominative subjects. The extra light head \tit{ər} `\ac{dem}.\ac{an}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
-
-\exg. Uns besucht [r] \tbf{wen} \tbf{Maria} \tbf{mag}.\\
- we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{elh}.\ac{nom}.\tsc{an} \tsc{rp}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
- `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-rep}
+\exg. Ich {lade ein} [n], \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
+1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \tsc{elh}.\ac{an}.\ac{dat} \tsc{rp}.\ac{an}.\ac{dat} also Maria.\ac{nom} trust.\ac{pres}.3\ac{sg}\scsub{[dat]}\\
+`I invite whoever Maria also trusts.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat-rep}
 
 In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra light head at the top and the syntactic structure of the relative pronoun at the bottom.
 
@@ -1742,37 +1759,30 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra lig
       \\
       \cmidrule{1-1}
       \begin{forest} boom
-        [\tsc{nom}P,
+        [\tsc{acc}P,
         tikz={
         \node[label=below:{\tit{n}},
         draw,circle,
-        scale=0.95,
+        scale=0.8,
         fit to=tree]{};
         \node[draw,circle,
         dashed,
-        scale=1,
+        scale=0.85,
         fill=DG,fill opacity=0.2,
         fit to=tree]{};
         }
-            [\ac{f}1]
-            [\tsc{ind}P
-                [\tsc{ind}]
-                [\tsc{an}P
-                    [\tsc{an}]
-                    [\tsc{cl}P
-                        [\tsc{cl}]
-                        [ΣP
-                            [Σ]
-                            [\tsc{ref}]
-                        ]
-                    ]
+            [\tsc{f}2]
+            [\tsc{nom}P
+                [\ac{f}1]
+                [\tsc{ind}P
+                    [\phantom{xxx}, roof]
                 ]
             ]
         ]
       \end{forest}
       \\
       \toprule
-      \tsc{acc} relative pronoun \tit{w-e-n}
+      \tsc{dat} relative pronoun \tit{w-e-m}
       \\
       \cmidrule{1-1}
           \begin{forest} boom
@@ -1780,36 +1790,30 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra lig
                 [\tsc{rel}P
                     [\phantom{x}\tit{w}\phantom{x}, roof]
                 ]
-                [\tsc{nom}P, s sep=15mm
-                    [\tsc{med}P,
+                [\tsc{med}P
+                    [\tsc{med}P
                         [\phantom{x}\tit{e}\phantom{x}, roof]
                     ]
-                    [\tsc{acc}P,
+                    [\tsc{dat}P,
                     tikz={
-                    \node[label=below:{\tit{n}},
+                    \node[label=below:{\tit{m}},
                     draw,circle,
-                    scale=0.95,
+                    scale=0.85,
                     fit to=tree]{};
                     }
-                        [\ac{f}2]
-                        [\tsc{nom}P, tikz={
+                        [\tsc{f}3]
+                        [\tsc{acc}P,
+                        tikz={
                         \node[draw,circle,
                         dashed,
-                        scale=0.9,
+                        scale=0.8,
                         fit to=tree]{};
                         }
-                            [\ac{f}1]
-                            [\tsc{ind}P
-                                [\tsc{ind}]
-                                [\tsc{an}P
-                                    [\tsc{an}]
-                                    [\tsc{cl}P
-                                        [\tsc{cl}]
-                                        [ΣP
-                                            [Σ]
-                                            [\tsc{ref}]
-                                        ]
-                                    ]
+                            [\tsc{f}2]
+                            [\tsc{nom}P
+                                [\ac{f}1]
+                                [\tsc{ind}P
+                                    [\phantom{xxx}, roof]
                                 ]
                             ]
                         ]
@@ -1821,7 +1825,7 @@ In Figure \ref{fig:mg-int-wins}, I give the syntactic structure of the extra lig
       \bottomrule
   \end{tabular}
   \end{adjustbox}
-   \caption {Modern German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} → \tit{wen}}
+   \caption {Modern German \tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{dat} → \tit{wem}}
   \label{fig:mg-int-wins}
 \end{figure}
 
@@ -1833,19 +1837,20 @@ I draw a dashed circle around each constituent that is a constituent in both the
 The extra light head consists of a single constituent: the \tsc{acc}P.
 This \tsc{acc}P is also a constituent within the relative pronoun. Therefore, the relative pronoun can delete the extra light head. I signal the deletion of the extra light head by marking the content of its circle gray.
 
-Consider the examples in \ref{ex:mg-acc-nom-rep}, in which the internal nominative case competes against the external accusative case. The relative clauses are marked in bold. It is not possible to make a grammatical headless relative in this situation.
-The internal case is nominative, as the predicate \tit{sein} `to be' takes nominative subjects. The relative pronoun \tit{wer} `\ac{rel}.\ac{an}.\ac{nom}' appears in the nominative case.
-The external case is accusative, as the predicate \tit{einladen} `to invite' takes accusative objects. The extra light head \tit{ən} `\ac{dem}.\ac{an}.\ac{acc}' appears in the accusative case.
-\ref{ex:mg-acc-nom-rep-rel} is the variant of the sentence in which the extra light head is absent (indicated by the square brackets) and the relative pronoun surfaces, and it is ungrammatical.
-\ref{ex:mg-acc-nom-rep-lh} is the variant of the sentence in which the relative pronoun is absent (indicated by the square brackets) and the extra light head surfaces, and it is ungrammatical too.
+Consider the examples in \ref{ex:mg-dat-acc-rep}, in which the internal accusative case competes against the external dative case. The relative clauses are marked in bold. It is not possible to make a grammatical headless relative in this situation.
 
-\ex.\label{ex:mg-acc-nom-rep}
-\ag. *Ich {lade ein}, [n] \tbf{wer} \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
-1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-rel}
-\bg. *Ich {lade ein}, n [\tbf{wer}] \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
-1\ac{sg}.\ac{nom} invite.\ac{pres}.1\ac{sg}\scsub{[acc]} \ac{rel}.\ac{an}.\ac{nom} 1\ac{sg}.\ac{dat} nice be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
-`I invite who I like.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-rep-lh}
+The internal case is accusative, as the predicate \tit{mögen} `to like' takes accusative objects. The relative pronoun \tit{wen} `\ac{rel}.\ac{an}.\ac{acc}' appears in the accusative case.
+The external case is dative, as the predicate \tit{vertrauen} `to trust' takes dative objects. The extra light head \tit{m} `\ac{elh}.\ac{an}.\ac{dat}' appears in the dative case.
+\ref{ex:mg-dat-acc-rep-rp} is the variant of the sentence in which the extra light head is absent (indicated by the square brackets) and the relative pronoun surfaces, and it is ungrammatical.
+\ref{ex:mg-dat-acc-rep-lh} is the variant of the sentence in which the relative pronoun is absent (indicated by the square brackets) and the extra light head surfaces, and it is ungrammatical too.
+
+\ex.\label{ex:mg-dat-acc-rep}
+\ag. *Ich vertraue [m], \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+1\ac{sg}.\ac{nom} trust.\ac{pres}.1\ac{sg}\scsub{[dat]} \tsc{elh}.\ac{an}.\ac{dat} \tsc{rp}.\ac{an}.\ac{acc} also Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
+`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-rep-rel}
+\bg. *Ich vertraue m, [\tbf{wen}] \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+1\ac{sg}.\ac{nom} trust.\ac{pres}.1\ac{sg}\scsub{[dat]} \tsc{elh}.\ac{an}.\ac{dat} \tsc{rp}.\ac{an}.\ac{acc} also Maria.\ac{nom} like.\ac{pres}.3\ac{sg}\scsub{[acc]}\\
+`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-rep-lh}
 
 In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the extra light head at the top and the syntactic structure of the relative pronoun at the bottom.
 
@@ -1853,36 +1858,31 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the extra lig
   \center
   \begin{adjustbox}{max height=0.9\textheight}
   \begin{tabular}[b]{c}
-        \toprule
-        \tsc{dat} extra light head \tit{m} \\
-        \cmidrule{1-1}
+      \toprule
+      \tsc{dat} extra light head \tit{m}
+      \\
+      \cmidrule{1-1}
       \begin{forest} boom
-        [\tsc{acc}P,
+        [\tsc{dat}P,
         tikz={
         \node[label=below:{\tit{m}},
         draw,circle,
-        scale=0.95,
+        scale=0.85,
         fit to=tree]{};
         }
-            [\ac{f}2]
-            [\tsc{nom}P, tikz={
+            [\tsc{f}3]
+            [\tsc{acc}P,
+            tikz={
             \node[draw,circle,
             dashed,
-            scale=0.9,
+            scale=0.8,
             fit to=tree]{};
             }
-                [\ac{f}1]
-                [\tsc{ind}P
-                    [\tsc{ind}]
-                    [\tsc{an}P
-                        [\tsc{an}]
-                        [\tsc{cl}P
-                            [\tsc{cl}]
-                            [ΣP
-                                [Σ]
-                                [\tsc{ref}]
-                            ]
-                        ]
+                [\tsc{f}2]
+                [\tsc{nom}P
+                    [\ac{f}1]
+                    [\tsc{ind}P
+                        [\phantom{xxx}, roof]
                     ]
                 ]
             ]
@@ -1890,54 +1890,48 @@ In Figure \ref{fig:mg-ext-wins}, I give the syntactic structure of the extra lig
       \end{forest}
       \\
       \toprule
-      \tsc{acc} relative pronoun \tit{w-e-n}
+      \tsc{dat} relative pronoun \tit{w-e-n}
       \\
       \cmidrule{1-1}
-      \begin{forest} boom
-        [\tsc{rel}P
+          \begin{forest} boom
             [\tsc{rel}P
-                [\phantom{x}\tit{w}\phantom{x}, roof]
-            ]
-            [\tsc{nom}P, s sep=15mm
-                [\tsc{med}P,
-                    [\phantom{x}\tit{e}\phantom{x}, roof]
+                [\tsc{rel}P
+                    [\phantom{x}\tit{w}\phantom{x}, roof]
                 ]
-                [\tsc{nom}P,
-                tikz={
-                \node[label=below:{\tit{r}},
-                draw,circle,
-                scale=0.95,
-                fit to=tree]{};
-                \node[draw,circle,
-                dashed,
-                scale=1,
-                fit to=tree]{};
-                }
-                    [\ac{f}1]
-                    [\tsc{ind}P
-                        [\tsc{ind}]
-                        [\tsc{an}P
-                            [\tsc{an}]
-                            [\tsc{cl}P
-                                [\tsc{cl}]
-                                [ΣP
-                                    [Σ]
-                                    [\tsc{ref}]
-                                ]
+                [\tsc{med}P
+                    [\tsc{med}P
+                        [\phantom{x}\tit{e}\phantom{x}, roof]
+                    ]
+                    [\tsc{acc}P,
+                    tikz={
+                    \node[label=below:{\tit{n}},
+                    draw,circle,
+                    scale=0.8,
+                    fit to=tree]{};
+                    \node[draw,circle,
+                    dashed,
+                    scale=0.85,
+                    fit to=tree]{};
+                    }
+                        [\tsc{f}2]
+                        [\tsc{nom}P
+                            [\ac{f}1]
+                            [\tsc{ind}P
+                                [\phantom{xxx}, roof]
                             ]
                         ]
                     ]
                 ]
             ]
-        ]
-    \end{forest}
-      \\
+        \end{forest}
+        \\
       \bottomrule
   \end{tabular}
   \end{adjustbox}
-   \caption {Modern German \tsc{ext}\scsub{dat} vs. \tsc{int}\scsub{acc} ↛ \tit{wen}/\tit{m}}
-  \label{fig:mg-ext-wins}
+   \caption {Modern German \tsc{ext}\scsub{dat} vs. \tsc{int}\scsub{acc} ↛ \tit{m}/\tit{wen}}
+  \label{fig:mg-int-wins}
 \end{figure}
+
 
 The relative pronoun consists of three morphemes: \tit{w}, \tit{e} and \tit{n}.
 The extra light head consists of a single morpheme: \tit{m}.
