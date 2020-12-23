@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -90,7 +90,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.4}Syncretism}{148}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Summary}{154}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Summary}{155}{section.6.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{157}{chapter.7}%
 \defcounter {refsection}{0}\relax 
@@ -106,38 +106,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{207}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Polish (extra) light head}{210}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Polish extra light head}{210}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}The Polish relative pronoun}{224}{section.8.2}%
+\contentsline {section}{\numberline {8.2}The Polish relative pronoun}{227}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{232}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{235}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{238}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{241}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{241}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{245}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}The relative pronoun}{244}{section.9.1}%
+\contentsline {section}{\numberline {9.1}How Old High German differs}{247}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}The light head}{247}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Comparing multiple constituents}{251}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Comparing constituents}{249}{section.9.3}%
+\contentsline {section}{\numberline {9.3}The hypothetical unrestricted language}{256}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Summary}{257}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Summary}{259}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {10}Aside: a larger syntactic context}{259}{chapter.10}%
+\contentsline {chapter}{\chapternumberline {10}Aside: a larger syntactic context}{261}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {11}Discussion}{267}{chapter.11}%
+\contentsline {chapter}{\chapternumberline {11}Discussion}{269}{chapter.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.1}Diachronic part}{267}{section.11.1}%
+\contentsline {section}{\numberline {11.1}Diachronic part}{269}{section.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.2}Suppletive nominatives in Gothic}{268}{section.11.2}%
+\contentsline {section}{\numberline {11.2}Towards deriving the always-external pattern}{269}{section.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.3}Towards deriving the always-external pattern}{268}{section.11.3}%
+\contentsline {section}{\numberline {11.3}More languages}{270}{section.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.4}On clitics}{268}{section.11.4}%
+\contentsline {section}{\numberline {11.4}The missing dative/accusative}{270}{section.11.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11.5}More languages}{268}{section.11.5}%
+\contentsline {chapter}{Primary texts}{271}{table.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{269}{table.11.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{271}{section*.22}%
+\contentsline {chapter}{Bibliography}{273}{section*.129}%
