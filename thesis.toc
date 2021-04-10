@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -80,17 +80,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {III}Deriving the typology}{133}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}Constituent containment}{135}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}The basic idea}{135}{chapter.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Underlying assumptions}{136}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The point of departure}{140}{section.6.2}%
+\contentsline {section}{\numberline {6.2}The three patterns}{139}{section.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Changing constituency}{142}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Syncretism}{148}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Syncretism}{147}{section.6.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Summary}{155}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Summary}{154}{section.6.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{157}{chapter.7}%
 \defcounter {refsection}{0}\relax 
@@ -138,4 +138,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{271}{table.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{273}{section*.129}%
+\contentsline {chapter}{Bibliography}{273}{section*.33}%
