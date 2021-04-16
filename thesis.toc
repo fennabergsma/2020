@@ -84,13 +84,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Underlying assumptions}{136}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The three patterns}{139}{section.6.2}%
+\contentsline {section}{\numberline {6.2}The three language types}{139}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Changing constituency}{142}{section.6.3}%
+\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{139}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Syncretism}{147}{section.6.4}%
+\contentsline {subsection}{\numberline {6.2.2}The matching type}{142}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Summary}{154}{section.6.5}%
+\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{148}{subsection.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Summary}{155}{section.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{157}{chapter.7}%
 \defcounter {refsection}{0}\relax 
