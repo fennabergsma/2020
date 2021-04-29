@@ -4,11 +4,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Contents}{ii}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{v}{section*.3}%
+\contentsline {chapter}{List of tables}{iii}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{viii}{section*.4}%
+\contentsline {chapter}{List of figures}{iv}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{v}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.3}The genitive}{8}{subsection.1.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {I}Case competition}{11}{part.1}%
+\contentsline {part}{\partnumberline {I}Case competition}{1}{part.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {2}A recurring pattern}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -56,7 +56,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Summary}{76}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The typology}{77}{part.2}%
+\contentsline {part}{\partnumberline {II}The typology}{3}{part.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {4}Languages with case competition}{79}{chapter.4}%
 \defcounter {refsection}{0}\relax 
@@ -78,25 +78,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}A typology of headless relatives}{127}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {III}Deriving the typology}{133}{part.3}%
+\contentsline {part}{\partnumberline {III}Deriving the typology}{5}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}The basic idea}{135}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {1}The basic idea}{7}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Underlying assumptions}{136}{section.6.1}%
+\contentsline {section}{\numberline {1.1}Underlying assumptions}{8}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The three language types}{139}{section.6.2}%
+\contentsline {section}{\numberline {1.2}The three language types}{11}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{139}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}The internal-only type}{11}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}The matching type}{142}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {1.2.2}The matching type}{14}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{148}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}The unrestricted type}{20}{subsection.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Summary}{155}{section.6.3}%
+\contentsline {section}{\numberline {1.3}Summary}{27}{section.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{157}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{160}{section.7.1}%
+\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{159}{section.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{170}{section.7.2}%
 \defcounter {refsection}{0}\relax 
@@ -138,6 +138,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11.4}The missing dative/accusative}{270}{section.11.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{271}{table.11.1}%
+\contentsline {chapter}{Primary texts}{29}{table.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{273}{section*.33}%
+\contentsline {chapter}{Bibliography}{31}{section*.34}%

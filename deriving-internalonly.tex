@@ -23,7 +23,7 @@ When the internal and the external case match, and there is a tie, the relative 
 When the internal case wins the case competition, this type of language allows the internal case to surface. This means that the relative pronoun with a more complex internal case can be the surface pronoun.
 When the external case wins the case competition, this type of language does not allow the external case to surface. This means that the light head with a more complex external case cannot be the surface pronoun.
 
-In Chapter \ref{ch:constituent-containment}, I suggested that the relative pronoun contains at least one feature more than the light head.
+In Chapter \ref{ch:the-basic-idea}, I suggested that the relative pronoun contains at least one feature more than the light head.
 In the internal-only type of language, these features are spelled out in such a way that they form the constituency shown in Figure \ref{fig:rel-lh-intonly-simple}.
 
 \begin{figure}[htbp]
@@ -36,18 +36,20 @@ In the internal-only type of language, these features are spelled out in such a 
       [\tsc{k}P,
           [\tsc{k}]
           [ϕP
-              [\phantom{x}ϕ\phantom{x}, roof, baseline]
+              [\phantom{xxx}, roof, baseline]
           ]
       ]
       \end{forest}
       & \phantom{x} &
     \begin{forest} boom
       [\tsc{rel}P
-          [\tsc{rel}]
+          [\tsc{rel}P
+              [\phantom{xxx}, roof, baseline]
+          ]
           [\tsc{k}P
               [\tsc{k}]
               [ϕP
-                  [\phantom{x}ϕ\phantom{x}, roof, baseline]
+                  [\phantom{xxx}, roof, baseline]
               ]
           ]
       ]
@@ -73,13 +75,13 @@ In this chapter, I show that Modern German light heads and relative pronouns hav
       \begin{forest} boom
         [\tsc{k}P,
         tikz={
-        \node[
+        \node[label=below:\tit{r/n/m},
         draw,circle,
         scale=0.75,
         fit to=tree]{};
         }
             [\tsc{k}]
-            [\tsc{ind}P
+            [ϕP
                 [\phantom{xxx}, roof, baseline]
             ]
         ]
@@ -89,34 +91,23 @@ In this chapter, I show that Modern German light heads and relative pronouns hav
         [\tsc{rel}P
             [\tsc{rel}P,
             tikz={
-            \node[
+            \node[label=below:\tit{w},
             draw,circle,
             scale=0.75,
             fit to=tree]{};
             }
                 [\phantom{xxx}, roof]
             ]
-            [\tsc{med}P, s sep = 15mm
-                [\tsc{med}P,
-                tikz={
-                \node[
-                draw,circle,
-                scale=0.75,
-                fit to=tree]{};
-                }
-                    [\phantom{xxx}, roof]
-                ]
-                [\tsc{k}P,
-                tikz={
-                \node[
-                draw,circle,
-                scale=0.75,
-                fit to=tree]{};
-                }
-                    [\tsc{k}]
-                    [\tsc{ind}P
-                        [\phantom{xxx}, roof, baseline]
-                    ]
+            [\tsc{k}P,
+            tikz={
+            \node[label=below:\tit{r/n/m},
+            draw,circle,
+            scale=0.75,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+                [ϕP
+                    [\phantom{xxx}, roof, baseline]
                 ]
             ]
         ]
@@ -127,15 +118,13 @@ In this chapter, I show that Modern German light heads and relative pronouns hav
   \label{fig:rel-lh-mg}
 \end{figure}
 
-In what follows, I compare the light head and the relative pronoun in Figure \ref{fig:rel-lh-mg} to the light head and the relative pronoun in Figure \ref{fig:rel-lh-intonly-simple}.
-
 Consider the light head in Figure \ref{fig:rel-lh-mg}.
-Light heads in Modern German are spelled out by a single morpheme, which I indicate by circling the structure. I show the internal structure of \tsc{k}P to make clear that it contain the \tsc{ind}P (which is the highest feature of what corresponds to the ϕP). Therefore, the structure of the light head in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly-simple}.
+Light heads in Modern German are spelled out by a single morpheme, indicated by the circle around the structure. They are spelled out as \tit{r}, \tit{n} or \tit{m} depending on which case they realize.
 
 Consider the relative pronoun in Figure \ref{fig:rel-lh-mg}.
-Relative pronouns in Modern German consist of three morphemes: the \tsc{k}P (which is the constituent that forms the light head) and the \tsc{med}P and the \tsc{rel}P, again indicated by the circles. This shows that the relative pronoun contains more a single feature more than the light head, namely whatever is in the \tsc{med}P and in the \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-mg} is identical to the one in Figure \ref{fig:rel-lh-intonly-simple}.
+Relative pronouns in Modern German consist of two morphemes: the \tsc{k}P (which is the constituent that forms the light head) and the \tsc{rel}P, again indicated by the circles.
 
-Crucially, the constituency relevant for the deletion of the light head is the same in Figure \ref{fig:rel-lh-mg} as it is in Figure \ref{fig:rel-lh-intonly-simple}. Throughout this chapter, I discuss what the exact feature content of relative pronouns and light heads is. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-mg}.
+Throughout this chapter, I discuss what the exact feature content of relative pronouns and light heads is. I motivate that these features form the constituents shown in Figure \ref{fig:rel-lh-mg}.
 
 The chapter is structured as follows.
 First, I discuss the relative pronoun. I decompose the relative pronouns into the three morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to. I illustrate how different morphemes are combined using Nanosyntax.
@@ -149,15 +138,29 @@ In Chapter \ref{ch:constituent-containment}, I argued that in the internal-only 
 
 \ex.\label{ex:simple-intonly-rp}
 \begin{forest} boom
-[\tsc{rel}P
-    [\tsc{rel}]
-    [\tsc{k}P
-        [\tsc{k}]
-        [ϕP
-            [\phantom{x}ϕ\phantom{x}, roof]
-        ]
-    ]
-]
+  [\tsc{rel}P
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{w},
+      draw,circle,
+      scale=0.75,
+      fit to=tree]{};
+      }
+          [\phantom{xxx}, roof]
+      ]
+      [\tsc{k}P,
+      tikz={
+      \node[label=below:\tit{r/n/m},
+      draw,circle,
+      scale=0.75,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [ϕP
+              [\phantom{xxx}, roof, baseline]
+          ]
+      ]
+  ]
 \end{forest}
 
 In this section, I give decompose the Modern German relative pronouns and I determine which features they correspond to.
@@ -170,7 +173,7 @@ In the end, I argue that Modern German relative pronoun have the structure shown
   [\tsc{rel}P, s sep=18mm
       [\tsc{rel}P,
       tikz={
-      \node[label=below:\tit{w},
+      \node[label=below:\tit{we},
       draw,circle,
       scale=0.9,
       fit to=tree]{};
@@ -178,46 +181,28 @@ In the end, I argue that Modern German relative pronoun have the structure shown
           [\tsc{rel}]
           [\tsc{wh}P
               [\tsc{wh}]
-              [\tsc{dx}\scsub{2}]
+              [\tsc{c}]
           ]
       ]
-      [\tsc{med}P, s sep=45mm
-          [\tsc{med}P,
-          tikz={
-          \node[label=below:\tit{e},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-              [\tsc{dx}\scsub{2}]
-              [\tsc{prox}P
-                  [\tsc{dx}\scsub{1}]
-                  [\tsc{c}P
-                      [\tsc{c}]
-                      [\tsc{ind}]
-                  ]
-              ]
-          ]
-          [\tsc{k}P,
-          tikz={
-          \node[label=below:\tit{n/m},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-              [\tsc{k}]
-              [\tsc{c}P
-                  [\tsc{c}]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                      [\tsc{an}P
-                          [\tsc{an}]
-                          [\tsc{cl}P
-                              [\tsc{cl}]
-                              [ΣP
-                                  [Σ]
-                                  [\tsc{ref}]
-                              ]
+      [\tsc{k}P,
+      tikz={
+      \node[label=below:\tit{n/m},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [\tsc{c}P
+              [\tsc{c}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}P
+                          [\tsc{cl}]
+                          [ΣP
+                              [Σ]
+                              [\tsc{ref}]
                           ]
                       ]
                   ]
@@ -231,12 +216,12 @@ In the end, I argue that Modern German relative pronoun have the structure shown
 I discuss two relative pronouns: the animate accusative and the animate dative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-mg}. I show them in \ref{ex:mg-rels}.
 
 \ex.\label{ex:mg-rels}
-\ag. w-e-n\\
+\ag. we-n\\
  `\tsc{rp}.\tsc{an}.\tsc{acc}'\\
-\bg. w-e-m\\
+\bg. we-m\\
  `\tsc{rp}.\tsc{an}.\tsc{dat}'\\
 
-I decompose the relative pronouns in three morphemes: the \tit{w}, the \tit{e} and the final consonant (\tit{n} or \tit{m}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the next section, I show how I construct the relative pronouns by combining the separate morphemes.
+I decompose the relative pronouns in three morphemes: the \tit{we} and the final consonant (\tit{n} or \tit{m}). For each morpheme, I discuss which features they spell out, and I give their lexical entries. In the next section, I show how I construct the relative pronouns by combining the separate morphemes.
 
 I start with the final consonants: \tit{n} and \tit{m}. I argue that these consonants spell out gender features, number features, case features and pronominal features. Consider Table \ref{tbl:mg-paradigm-wh-rels}.
 
@@ -245,11 +230,11 @@ I start with the final consonants: \tit{n} and \tit{m}. I argue that these conso
 \caption {Modern German relative pronouns \pgcitep{durrell2011}{5.3.3}}
 \begin{tabular}{ccc}
 \toprule
-            & \ac{an}  & \tsc{inan}\\
+            & \ac{an} & \tsc{inan}\\
   \cmidrule{2-3}
-  \ac{nom}  & w-e-r    & w-a-s     \\
-  \ac{acc}  & w-e-n    & w-a-s     \\
-  \ac{dat}  & w-e-m    & -         \\
+  \ac{nom}  & we-r    & wa-s     \\
+  \ac{acc}  & we-n    & wa-s     \\
+  \ac{dat}  & we-m    & -        \\
 \bottomrule
 \end{tabular}
 \label{tbl:mg-paradigm-wh-rels}
