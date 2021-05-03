@@ -98,13 +98,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{159}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{170}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{168}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{188}{section.7.3}%
+\contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{182}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Comparing Modern German constituents}{199}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Comparing Modern German constituents}{192}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Summary}{206}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Summary}{199}{section.7.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{207}{chapter.8}%
 \defcounter {refsection}{0}\relax 
