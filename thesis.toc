@@ -106,15 +106,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.5}Summary}{199}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{207}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{201}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Polish extra light head}{210}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Polish extra light head}{205}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}The Polish relative pronoun}{227}{section.8.2}%
+\contentsline {section}{\numberline {8.2}The Polish relative pronoun}{221}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{235}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{228}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{241}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{234}{section.8.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{245}{chapter.9}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +140,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{271}{table.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{273}{section*.22}%
+\contentsline {chapter}{Bibliography}{273}{section*.26}%
