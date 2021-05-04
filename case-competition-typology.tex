@@ -1219,31 +1219,35 @@ The matching type could also have been generated with the second parameter. The 
 
 \begin{figure}[ht]
   \centering
-  \footnotesize{
+  \begin{adjustbox}{max width=0.9\textwidth}
+  \begin{tabular}[b]{c}
+    \toprule
   \begin{tikzpicture}[node distance=1.5cm]
     \node (question2) [question]
     {allow \tsc{int}?};
         \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
         {matching};
             \node (example2) [example, below of=outcome2, yshift=0.25cm]
-            {\scriptsize{e.g. Polish\\\phantom{x}}};
+            {e.g. Polish\\\phantom{x}};
         \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
         {allow \tsc{ext}?};
             \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
             {internal-only};
                 \node (example3) [example, below of=outcome3, yshift=0.25cm]
-                {\scriptsize{e.g. Modern German\\\phantom{x}}};
+                {e.g. Modern German\\\phantom{x}};
             \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
             {unrestricted};
                 \node (example4) [example, below of=outcome4, yshift=0.25cm]
-                {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+                {e.g. Gothic, Old High German, Classical Greek};
 
   \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
   \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
   \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
   \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
-  \end{tikzpicture}
-  }
+  \end{tikzpicture}\\
+  \bottomrule
+\end{tabular}
+\end{adjustbox}
     \caption{Attested patterns in headless relatives with case competition}
     \label{fig:attested-headless-relatives-case-competition}
 \end{figure}

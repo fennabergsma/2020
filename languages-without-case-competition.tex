@@ -574,30 +574,32 @@ If the language lets its relative pronouns appear in the external case, the patt
 
 \begin{figure}[ht]
   \centering
+  \begin{adjustbox}{max width=0.9\textwidth}
+  \begin{tabular}[b]{c}
+      \toprule
     \begin{tikzpicture}[node distance=1.5cm]
-      \footnotesize{
     \node (question1) [question]
     {cases\\ considered:};
         \node (outcome1) [outcome, below of=question1, xshift=-1.5cm]
         {always external};
             \node (example1) [example, below of=outcome1, yshift=0.25cm]
-            {\scriptsize{e.g. Old English, Modern Greek (5)}};
+            {e.g. Old English, Modern Greek (5)};
     \node (question2) [question, below of=question1, xshift=2cm, yshift=-0.5cm]
     {allow \tsc{ext}?};
         \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
         {complex};
             \node (example2) [example, below of=outcome2, yshift=0.25cm]
-            {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+            {e.g. Gothic, Old High German, Classical Greek};
         \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
         {allow \tsc{int}?};
             \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
             {\ac{int} + complex};
                 \node (example3) [example, below of=outcome3, yshift=0.25cm]
-                {\scriptsize{e.g. Modern German\\\phantom{x}}};
+                {e.g. Modern German\\\phantom{x}};
             \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
             {matching};
                 \node (example4) [example, below of=outcome4, yshift=0.25cm]
-                {\scriptsize{e.g. Polish\\\phantom{x}}};
+                {e.g. Polish\\\phantom{x}};
 
     \draw [arrow] (question1) -- node[anchor=north west] {\ac{int} + \ac{ext}} (question2);
     \draw [arrow] (question1) -- node[anchor=east] {\ac{ext}} (outcome1);
@@ -605,8 +607,10 @@ If the language lets its relative pronouns appear in the external case, the patt
     \draw [arrow] (question2) -- node[anchor=west] {no} (question3);
     \draw [arrow] (question3) -- node[anchor=east] {yes} (outcome3);
     \draw [arrow] (question3) -- node[anchor=west] {no} (outcome4);
-    }
-    \end{tikzpicture}
+    \end{tikzpicture}\\
+    \bottomrule
+  \end{tabular}
+  \end{adjustbox}
     \caption{Attested patterns in headless relatives}
     \label{fig:typology}
 \end{figure}

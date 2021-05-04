@@ -24,7 +24,7 @@ When the internal case wins the case competition, this type of language does not
 When the external case wins the case competition, this type of language does not allow the external case to surface. This means that the light head with a more complex external case cannot be the surface pronoun.
 
 The situation in which the matching type of language differs from the internal-only type is the one in which the internal case wins the case competition. This is grammatical in the internal-only type of language but it is ungrammatical in the matching type of language.
-In Chapter \ref{ch:constituent-containment}, I suggested that this difference can be derived from a difference in spellout between the two languages types. A different spellout namely leads to a different constituency within relative pronouns and light heads. In the internal-only type of language, the ϕP appears lower in the structure than the case projections, as I showed is Chapter \ref{ch:deriving-onlyinternal}. In the matching type of language, the ϕP appears higher than the case projections shown in Figure \ref{fig:rel-lh-matching-derive}.
+In Chapter \ref{ch:the-basic-idea}, I suggested that this difference can be derived from a difference in spellout between the two languages types. A different spellout namely leads to a different constituency within relative pronouns and light heads. In the internal-only type of language, the ϕP appears lower in the structure than the case projections, as I showed is Chapter \ref{ch:deriving-onlyinternal}. In the matching type of language, the ϕP appears higher than the case projections shown in Figure \ref{fig:rel-lh-matching-derive}.
 
 \begin{figure}[htbp]
   \center
@@ -62,7 +62,7 @@ When the internal and the external case match, the light head can be deleted, be
 When the internal case is more complex than the external case, the light head is not a single constituent within the relative pronoun anymore. The relative pronoun contains all features of the light head, but they are spread over separate constituents. As a result, there is no grammatical form to surface when the internal case is more complex.
 When the external case is more complex than the internal case, the relative pronoun is not a single constituent within the light head. The relative pronoun contains features that are not part of the light head. As a result, there is no grammatical form to surface when the internal case is more complex.
 
-In Chapter \ref{ch:constituent-containment}, I suggested that the difference in structures between the internal-only type and the matching type is a consequence of spellout. The change in constituency is a result of the fact that case projections correspond to their own morpheme in matching languages and they are spelled out together with phi-features in internal-only languages. In Chapter \ref{ch:deriving-matching}, I showed that Modern German indeed has a portmanteau for case and phi-features. In this Chapter, I show that Polish has two morphemes that corresponds to case and phi-features.
+In Chapter \ref{ch:the-basic-idea}, I suggested that the difference in structures between the internal-only type and the matching type is a consequence of spellout. The change in constituency is a result of the fact that case projections correspond to their own morpheme in matching languages and they are spelled out together with phi-features in internal-only languages. In Chapter \ref{ch:deriving-matching}, I showed that Modern German indeed has a portmanteau for case and phi-features. In this Chapter, I show that Polish has two morphemes that corresponds to case and phi-features.
 
 I give a compact version of the Polish light heads and relative pronouns in Figure \ref{fig:rel-lh-pol}.
 
@@ -160,41 +160,116 @@ Importantly, the features that form the Polish light head and relative pronoun a
 Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can only delete the light head when the internal case matches the external case. When the internal and external case differ, I show that none of the elements can be deleted.
 
 
-\section{The Polish extra light head}\label{sec:pol-elh}
 
-In Chapter \ref{ch:constituent-containment}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching}.
 
-\ex.\label{ex:simple-matching}
+
+\section{The Polish relative pronoun}\label{sec:pol-rel}
+
+In the introduction of this chapter, I suggested that in Polish features of the relative pronoun are spelled out in such a way that they form the constituency shown in \ref{ex:simple-matching-rp}.
+
+\ex.\label{ex:simple-matching-rp}
 \begin{forest} boom
-[ϕP
-   [ϕ]
-   [\tsc{k}P
-       [\tsc{k}]
-   ]
-]
-\end{forest}
-
-In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:fseq-wh-lh-pol}.
-
-\ex. \begin{forest} boom
-  [\tsc{k}P
-      [\tsc{k}]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [\tsc{ref}]
-              ]
+  [\tsc{rel}P
+      [\tsc{rel}P
+          [\phantom{xxx}, roof]
+      ]
+      [\tsc{k}P
+          [ϕP
+              [\phantom{xxx}, roof]
+          ]
+          [\tsc{k}P
+              [\tsc{k}]
           ]
       ]
   ]
 \end{forest}
-\label{ex:fseq-wh-lh-pol}
 
-In this section, I propose that the features in \ref{ex:fseq-wh-lh-pol} correspond to two morphemes of Polish relative pronouns.
-I give the animate accusative and the animate dative relative pronouns in \ref{ex:pol-rels}.
+In Chapter \ref{ch:deriving-internalonly}, I suggested that Modern German relative pronouns consist of the features in the following functional sequence.
+
+\ex.\label{ex:pol-fseq-rel}
+\begin{adjustbox}{max width=0.9\textwidth}
+  \begin{forest} boom
+   [\tsc{k}P
+       [\tsc{k}]
+       [\tsc{rel}P
+           [\tsc{rel}]
+           [\tsc{wh}P
+               [\tsc{wh}]
+               [\tsc{ind}P
+                   [\tsc{ind}]
+                   [\tsc{an}P
+                       [\tsc{an}]
+                       [\tsc{cl}P
+                           [\tsc{cl}]
+                            [\tsc{ref}]
+                       ]
+                   ]
+               ]
+           ]
+       ]
+   ]
+  \end{forest}
+\end{adjustbox}
+
+In this section, I show that Polish relative pronouns are made up of the same features. They differ in how the features are distibuted over different morphemes.
+Crucially, the main claim I made in Chapter \ref{ch:the-basic-idea} remains unchanged: in Polish, phi- and case-features are spread over two different morphemes.
+In this section, I argue that Polish relative pronouns have the structure shown in \ref{ex:mg-rp}.
+
+\ex.\label{ex:pol-rel}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{rel}P, s sep=40mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P, s sep=30mm
+      [\tsc{an}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+          [\tsc{an}P]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [\tsc{ref}]
+          ]
+      ]
+          [\tsc{k}P,
+          tikz={
+          \node[label=below:\tit{go/mu},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{k}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+              ]
+          ]
+      ]
+  ]
+  \end{forest}
+  \end{adjustbox}
+
+I discuss two relative pronouns: the animate accusative and the animate dative. These are the two forms that I compare the constituents of in Section \ref{sec:comparing-pol}. I show them in \ref{ex:pol-rels}.
 
 \ex.\label{ex:pol-rels}
 \ag. k-o-go\\
@@ -202,54 +277,172 @@ I give the animate accusative and the animate dative relative pronouns in \ref{e
 \bg. k-o-mu\\
  \tsc{rp}.\tsc{an}.\tsc{dat}\\
 
-The two morphemes that spell out the features in \ref{ex:fseq-wh-lh-pol} are the vowel and the suffix, as shown in \ref{ex:pol-elhs}.
+I decompose the relative pronouns in three morphemes: \tit{k}, \tit{o} and the suffix (\tit{go} or \tit{mu}). For each morpheme, I discuss which features they spell out, I give their lexical entries, and I show how I construct the relative pronouns by combining the separate morphemes.
 
-\ex.\label{ex:pol-elhs}
-\ag. o-go\\
- \tsc{elh}.\tsc{an}.\tsc{acc}\\
-\bg. o-mu\\
- \tsc{elh}.\tsc{an}.\tsc{dat}\\
+I start with the suffixes \tit{go} and \tit{mu}. First I focus on \tit{mu}.
 
-Specifically, I argue that Polish light heads have the structure shown in \ref{ex:pol-elh}.
+In Table \ref{tbl:pol-datives}, I show three forms in which there is a syncretism between the neuter and the masculine in the dative case.
 
-\ex.\label{ex:pol-elh}
-\begin{adjustbox}{max width=0.9\textwidth}
+\begin{table}[htbp]
+  \center
+  \caption{Syncretic \tsc{n}/\tsc{m} dative forms \citep{swan2002}}
+  \begin{tabular}[b]{ccc}
+    \toprule
+                      & \tsc{m}   & \tsc{n}  \\
+    \cmidrule{2-3}
+    \tit{je}-pronoun  & je-mu    & je-mu   \\
+    \tit{ni}-pronoun  & nie-mu   & nie-mu  \\
+    \tsc{dem}         & te-mu    & te-mu   \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:pol-datives}
+\end{table}
+
+In Table \ref{tbl:pol-datives}, the complete pronouns are syncretic. I set up a system that can derive the syncretism between the two genders. Doing this allows me to establish which features the morpheme \tit{mu} spells out.
+
+I discussed in Chapter \ref{ch:decomposition} that syncretisms can be derived in Nanosyntax via the Superset Principle. The lexicon contains a lexical entry that is specified for the form that corresponds to the most features. To illustrate this, I repeat the lexical entry for the Dutch \tit{jullie} `you' in \ref{ex:dutch-jullie-lexicon-rep}.
+
+\ex.
 \begin{forest} boom
-  [\tsc{dat}P, s sep=40mm
-      [\tsc{an}P,
-      tikz={
-      \node[label=below:\tit{o},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{an}]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{ref}]
+  [\ac{dat}P
+      [\ac{f}3]
+      [\ac{acc}P
+          [\ac{f}2]
+          [\ac{nom}P
+              [\ac{f}1]
+              [2\ac{pl}P
+                  \phantom{xxx}, roof]
+              ]
           ]
       ]
-      [\tsc{k}P,
-      tikz={
-      \node[label=below:\tit{go/mu},
-      draw,circle,
-      scale=0.9,
-      fit to=tree]{};
-      }
-          [\tsc{k}]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{jullie}}; }
+\end{forest}
+\label{ex:dutch-jullie-lexicon-rep}
+
+\tit{Jullie} is syncretic between nominative, accusative and dative. It is specified for dative in the lexicon, because the dative contains the accusative and the nominative. The nominative and accusative second person plural in Dutch are spelled out as \tit{jullie} as well, because the \tsc{dat}P contains the \tsc{acc}P which contains \tsc{nom}P (Superset Principle), and there is no more specific lexical entry available in Dutch (Elsewhere Condition). It is important that the potentially unused features (so the \tsc{f}3 or \tsc{f}3 and the \tsc{f2}) are at the top, so that the constituent that needs to be spelled out is still contained in the lexical tree.
+
+In what follows, I show how I can derive the syncretisms for the forms in Table \ref{tbl:pol-datives}. Different from \tit{jullie}, these forms consists of two morphemes: \tit{je}/\tit{nie}/\tit{te} and \tit{mu}.
+I do not discuss the feature content of the morphemes \tit{je}, \tit{nie} and \tit{te}, but I know that all three forms combined with \tit{mu} spell out at least the features I give in \ref{ex:pol-mu-dat-fseq}.
+
+\ex.\label{ex:pol-mu-dat-fseq}
+\begin{forest} boom
+  [\tsc{dat}P
+      [\tsc{f}3]
+      [\tsc{acc}P
+          [\tsc{f}2]
+          [\tsc{nom}P
+            [\tsc{f}1]
+            [\tsc{ind}P
+                [\tsc{ind}]
+                [\tsc{an}P
+                    [\tsc{an}]
+                    [\tsc{cl}P
+                        [\tsc{cl}]
+                        [XP
+                            [\phantom{xxx}, roof]
+                        ]
+                    ]
+                ]
+            ]
+          ]
+      ]
+  ]
+\end{forest}
+
+The morphemes \tit{jego}, \tit{niego} and \tit{tego} are syncretic between the masculine and the neuter. This can be captured if the highest feature in the lexical tree is the feature that distinguishes masculine and neuter gender. In such case, the morpheme can easily spell both the structure with or without the masculine feature. The feature that distinguishes masculine and neuter gender is the feature \tsc{an} \citep{harley2002}. Therefore, the lexical entry is as given in \ref{ex:pol-entry-nie/je/te}.
+
+\ex. \label{ex:pol-entry-nie/je/te}
+\begin{forest} boom
+  [\tsc{an}P
+      [\tsc{an}]
+      [\tsc{cl}P
+          [\tsc{cl}]
+          [XP
+              [\phantom{xxx}, roof]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{je/nie/te}}; }
+\end{forest}
+
+In \ref{ex:pol-spellout-nie/je/te-an}, I give the syntactic structure of a masculine form. The syntactic structure forms a constituent within the lexical tree in \ref{ex:pol-entry-nie/je/te}, and the structure can be spelled out as \tit{je/nie/te}.
+
+\ex.\label{ex:pol-spellout-nie/je/te-an}
+\begin{forest} boom
+  [\tsc{an}P,
+  tikz={
+  \node[label=below:\tit{je/nie/te},
+  draw,circle,
+  scale=0.8,
+  fit to=tree]{};
+  }
+      [\tsc{an}]
+      [\tsc{cl}P
+          [\tsc{cl}]
+          [XP
+              [\phantom{xxx}, roof]
+          ]
+      ]
+  ]
+\end{forest}
+
+In \ref{ex:pol-spellout-nie/je/te-cl}, I give the syntactic structure of a masculine form. The syntactic structure forms a constituent within the lexical tree in \ref{ex:pol-entry-nie/je/te}, and the structure can be spelled out as \tit{je/nie/te}.
+
+\ex.\label{ex:pol-spellout-nie/je/te-cl}
+\begin{forest} boom
+  [\tsc{cl}P,
+  tikz={
+  \node[label=below:\tit{o},
+  draw,circle,
+  scale=0.8,
+  fit to=tree]{};
+  }
+      [\tsc{cl}]
+      [XP
+          [\phantom{xxx}, roof]
+      ]
+  ]
+\end{forest}
+
+What follows from this is that the lexical trees for the suffix \tit{mu} should contain all features in \ref{ex:pol-elh-dat} that are not spelled out by \tit{je/nie/te} so far. These are the feature \tsc{ind} and all case features up to the dative. I give the lexical entry for \tit{mu} in \ref{ex:pol-entry-mu}.
+
+\ex. \label{ex:pol-entry-mu}
+\begin{forest} boom
+  [\tsc{dat}P
+      [\tsc{f}3]
+      [\tsc{acc}P
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{mu}}; }
+\end{forest}
+
+Notice here that \tit{mu} has a unary bottom. Therefore, it can be inserted as the result of movement. That means that the lexical entry follows the existing structure and is spelled out as a suffix. This is how the correct order of \tit{je/nie/te} and \tit{mu} comes about. I show how this works when I construct the extra light head later on in this section.
+
+The morpheme \tit{go} differs from \tit{mu} in that it lacks the feature \tit{f}3. I give its lexical entry in \ref{ex:pol-entry-go}.
+
+\ex. \label{ex:pol-entry-go}
+\begin{forest} boom
+  [\tsc{acc}P
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\tsc{f}1]
           [\tsc{ind}P
               [\tsc{ind}]
           ]
       ]
   ]
+  {\draw (.east) node[right]{⇔ \tit{go}}; }
 \end{forest}
-\end{adjustbox}
 
-Crucially, the constituent structure in \ref{ex:pol-elh} is the same as in \ref{ex:simple-matching}. Recall from Chapter \ref{ch:deriving-onlyinternal} that in Modern German the extra light head spells out as a single constituent. The Polish extra light head consists of two constituents, as shown in \ref{ex:pol-elh}. This is the crucial difference between the two languages that leads them to be of different types in headless relatives.
-
-Before I discuss the feature content of the morphemes of the extra light head, I show that the two morphemes spell out the features in \ref{ex:fseq-wh-lh-pol}. Therefore, I need to discuss the \tit{o} of the relative pronoun. The \tit{o} can namely become an \tit{e} under particular phonological circumstances. This allows me to show that \tit{ogo} and \tit{omu} are the extra light heads in Polish.
-
-Consider the relative pronouns in Table \ref{tbl:pol-rps}.
+This leaves the two morphemes \tit{k} and \tit{o}. First I discuss the \tit{o}. Consider the relative pronouns in Table \ref{tbl:pol-rps}.
 
 \begin{table}[htbp]
   \center
@@ -397,124 +590,10 @@ Finally, there is the change of \tit{c} before \tit{e/y} to \tit{cz}.
 
 In sum, the \tit{o} in relative pronoun can appear as an \tit{e} when it is palatalized.
 
-One context in which the \tit{o} becomes an \tit{e} is in the paradigm of the strong personal pronoun that starts with \tit{je}. Consider the accusative and dative masculine forms in Table \ref{tbl:pol-prons}.\footnote{
-Polish has three types of third person pronouns \pgcitep{swan2002}{156-157}. Not all types of pronouns exist for all numbers and genders, but they do for the masculine accusative and dative singular.
-\tit{Je}-pronouns are used in clause-initial position or when emphasis or a contrast is expressed.
-\tit{Ni}-pronouns are used after prepositions.
-Clitics are used in non-stressed contexts. The only third person clitics that exist are \tit{go} and \tit{mu}. According to \pgcitet{franks2004}{22}, these clitics are not `real' clitics, since they syntactically behave like phrases. The deficiency is only just prosodic.
-} I gave the surface form and what I analyze as the underlying form. The \tit{o} changes into an \tit{e} because it follows the \tit{j}.
 
-\begin{table}[htbp]
-  \center
-  \caption{3\tsc{sg}.\tsc{m} personal pronouns \pgcitep{swan2002}{156}}
-  \begin{tabular}[b]{ccc}
-    \toprule
-              & surface  & underlying  \\
-    \cmidrule{2-3}
-    \tsc{acc} & j-e-go   & j-o-go      \\
-    \tsc{dat} & j-e-mu   & j-o-mu      \\
-    \bottomrule
-  \end{tabular}
-  \label{tbl:pol-prons}
-\end{table}
-
-I repeat the functional sequence of the extra light head in \ref{ex:fseq-wh-lh-pol-rep}.
-
-\ex. \begin{forest} boom
-  [\tsc{k}P
-      [\tsc{k}]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [\tsc{ref}]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\label{ex:fseq-wh-lh-pol-rep}
-
-The strong pronoun in Table \ref{tbl:pol-prons} differs from the extra light head in one feature: \tsc{c}. As each morpheme needs to spell out at least one feature, I assume that \tit{j} spells out this \tsc{c}.\footnote{
-Actually, I assume it spells out \tsc{c} and \tsc{ind} as it is a Complex Spec. As this is not crucial to the point I am making, I do not discuss it any further for now.
-}\footnote{
-It is also possible that the strong pronoun is syncretic with the extra light head and that the extra light head is actually also spelled out as \tit{jego}/\tit{jemu}. This would mean that the strong extra light head consists of even more than two morphemes. For my proposal, it is important to show that the extra light head consists of at least two morphemes, one of which spells out case features. It works equally well when the non-case part of the structure actually consists of more one morpheme. I continue working out a proposal in which the extra light head is bimorphemic.
+The question is which features \tit{k} spells out and which \tit{o}. We know now that \tit{e} is underlyingly \tit{j} + \tit{o}. How do \tit{tego} and \tit{kogo} differ? They are demonstrative vs. \tsc{wh}-element. \tit{k} does question, \tit{t} does \tsc{dem}. I actually assume that \tit{k} does \tsc{dem} too, but I leave that out here. This means that the \tit{o} needs to do `other stuff'. It is the base, so what I have referring to as phi-features.\footnote{
+\tit{jego} is actually \tit{j} + \tit{ogo}
 }
-This leaves the functional sequence in \ref{ex:fseq-wh-lh-pol-rep} to be spelled out by the morphemes \tit{o} and \tit{go}/\tit{mu}.
-
-In what follows, I discuss which features they \tit{o} and the suffixes (\tit{go} and \tit{mu}) spell out, and I give their lexical entries. At the end of the section, I show how the extra light heads are constructed.
-
-In Table \ref{tbl:pol-datives}, I show three forms in which there is a syncretism between the neuter and the masculine in the dative case. This shows that the syncretism is not specific for the relative pronoun (see Table \ref{tbl:pol-rps}).
-
-\begin{table}[htbp]
-  \center
-  \caption{Syncretic \tsc{n}/\tsc{m} dative forms \citep{swan2002}}
-  \begin{tabular}[b]{ccc}
-    \toprule
-                      & \tsc{m}   & \tsc{n}  \\
-    \cmidrule{2-3}
-    \tit{je}-pronoun  & j-e-mu    & j-e-mu   \\
-    \tit{ni}-pronoun  & ni-e-mu   & ni-e-mu  \\
-    \tsc{dem}         & t-e-mu    & t-e-mu   \\
-    \bottomrule
-  \end{tabular}
-  \label{tbl:pol-datives}
-\end{table}
-
-In Table \ref{tbl:pol-datives}, the complete pronouns are syncretic. I set up a system that can derive the syncretism between the two genders. Doing this allows me to establish which features the morpheme \tit{mu} spells out.
-
-I discussed in Chapter \ref{ch:decomposition} that syncretisms can be derived in Nanosyntax via the Superset Principle. The lexicon contains a lexical entry that is specified for the form that corresponds to the most features. To illustrate this, I repeat the lexical entry for the Dutch \tit{jullie} `you' in \ref{ex:dutch-jullie-lexicon-rep}.
-
-\ex.
-\begin{forest} boom
-  [\ac{dat}P
-      [\ac{f}3]
-      [\ac{acc}P
-          [\ac{f}2]
-          [\ac{nom}P
-              [\ac{f}1]
-              [2\ac{pl}P
-                  [\phantom{xxx}, roof]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{jullie}}; }
-\end{forest}
-\label{ex:dutch-jullie-lexicon-rep}
-
-\tit{Jullie} is syncretic between nominative, accusative and dative. It is specified for dative in the lexicon, because the dative contains the accusative and the nominative. The nominative and accusative second person plural in Dutch are spelled out as \tit{jullie} as well, because the \tsc{dat}P contains the \tsc{acc}P which contains \tsc{nom}P (Superset Principle), and there is no more specific lexical entry available in Dutch (Elsewhere Condition). It is important that the potentially unused features (so the \tsc{f}3 or \tsc{f}3 and the \tsc{f2}) are at the top, so that the constituent that needs to be spelled out is still contained in the lexical tree.
-
-In what follows, I show how I can derive the syncretisms for the forms in Table \ref{tbl:pol-datives}. Different from \tit{jullie}, these forms consists of three morphemes: \tit{j}/\tit{ni}/\tit{t}, \tit{o} and \tit{mu}.
-I put the morphemes \tit{j}, \tit{ni} and \tit{t} aside, assuming that they spell out structure that differs per morpheme.
-The structure that the combination of \tit{o} and \tit{mu} spell out is the syntactic structure of an extra light head, which I give in \ref{ex:pol-elh-dat-fseq}.
-
-\ex.\label{ex:pol-elh-dat-fseq}
-\begin{forest} boom
-  [\tsc{dat}P
-      [\tsc{f}3]
-      [\tsc{acc}P
-          [\tsc{f}2]
-          [\tsc{nom}P
-            [\tsc{f}1]
-            [\tsc{ind}P
-                [\tsc{ind}]
-                [\tsc{an}P
-                    [\tsc{an}]
-                    [\tsc{cl}P
-                        [\tsc{cl}]
-                        [\tsc{ref}]
-                    ]
-                ]
-            ]
-          ]
-      ]
-  ]
-\end{forest}
-
-The morpheme \tit{o} is syncretic between the masculine and the neuter. This can be captured if the highest feature in the lexical tree is the feature that distinguishes masculine and neuter gender. In such case, the morpheme can easily spell both the structure with or without the masculine feature. The feature that distinguishes masculine and neuter gender is the feature \tsc{an} \citep{harley2002}. Therefore, the lexical entry is as given in \ref{ex:pol-entry-o}.
 
 \ex. \label{ex:pol-entry-o}
 \begin{forest} boom
@@ -528,79 +607,56 @@ The morpheme \tit{o} is syncretic between the masculine and the neuter. This can
   {\draw (.east) node[right]{⇔ \tit{o}}; }
 \end{forest}
 
-In \ref{ex:pol-spellout-o-an}, I give the syntactic structure of a masculine form. The syntactic structure forms a constituent within the lexical tree in \ref{ex:pol-entry-o}, and the structure can be spelled out as \tit{o}.
+I discuss the features that I assume the \tit{k} spells out one by one.
 
-\ex.\label{ex:pol-spellout-o-an}
+I start with the operator features \tsc{wh} and \tsc{rel}. The relative pronouns are \tsc{wh}-pronouns, which are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
+
+Finally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
+Lastly, \tsc{k} also contains \tsc{an} and \tsc{cl}.
+
+In sum, the morpheme \tit{k} realizes the features \tsc{wh}, \tsc{rel}, \tsc{ind}, \tsc{an} and \tsc{cl}.\footnote{
+Actually, to be able to derive the inanimate relative pronoun, I assume that there is a pointer in the lexical entry for \tit{k}, as shown in \ref{ex:pol-entry-k-pointer}.
+
+\ex.\label{ex:pol-entry-k-pointer}
 \begin{forest} boom
-  [\tsc{an}P,
-  tikz={
-  \node[label=below:\tit{o},
-  draw,circle,
-  scale=0.95,
-  fit to=tree]{};
-  }
-      [\tsc{an}]
-      [\tsc{cl}P
-          [\tsc{cl}]
-          [\tsc{ref}]
-      ]
-  ]
-\end{forest}
-
-In \ref{ex:pol-spellout-o-cl}, I give the syntactic structure of a masculine form. The syntactic structure forms a constituent within the lexical tree in \ref{ex:pol-entry-o}, and the structure can be spelled out as \tit{o}.
-
-\ex.\label{ex:pol-spellout-o-cl}
-\begin{forest} boom
-  [\tsc{cl}P,
-  tikz={
-  \node[label=below:\tit{o},
-  draw,circle,
-  scale=0.9,
-  fit to=tree]{};
-  }
-      [\tsc{cl}]
-      [\tsc{ref}]
-  ]
-\end{forest}
-
-What follows from this is that the lexical trees for the suffix \tit{mu} should contain all features in \ref{ex:pol-elh-dat} that are not spelled out by \tit{o} so far. These are the feature \tsc{ind} and all case features up to the dative. I give the lexical entry for \tit{mu} in \ref{ex:pol-entry-mu}.
-
-\ex. \label{ex:pol-entry-mu}
-\begin{forest} boom
-  [\tsc{dat}P
-      [\tsc{f}3]
-      [\tsc{acc}P
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P, edge=->
+          [\tsc{wh}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}]
               ]
           ]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{mu}}; }
+  {\draw (.east) node[right]{⇔ \tit{k}}; }
 \end{forest}
 
-Notice here that \tit{mu} has a unary bottom. Therefore, it can be inserted as the result of movement. That means that the lexical entry follows the existing structure and is spelled out as a suffix. This is how the correct order of \tit{o} and \tit{mu} comes about. I show how this works when I construct the extra light head later on in this section.
+The pointer is situated above the \tsc{ind}P. That means that if there is no animate feature in the structure, the \tsc{ind} can also not be spelled out with \tit{k}. What follows is that there is another morpheme necessary that contributes the feature \tsc{ind}. I propose that this is \tit{j} which forms strong pronouns. This is what causes the phonological processes described in Section \ref{sec:pol-elh}.
+}
 
-The morpheme \tit{go} differs from \tit{mu} in that it lacks the feature \tit{f}3. I give its lexical entry in \ref{ex:pol-entry-go}.
-
-\ex. \label{ex:pol-entry-go}
+\ex.\label{ex:pol-entry-k}
 \begin{forest} boom
-  [\tsc{acc}P
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P
+          [\tsc{wh}]
           [\tsc{ind}P
               [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}]
+              ]
           ]
       ]
   ]
-  {\draw (.east) node[right]{⇔ \tit{go}}; }
+  {\draw (.east) node[right]{⇔ \tit{k}}; }
 \end{forest}
 
-In what follows, I construct the Polish extra light heads. I follow the same functional sequence as I did for Modern German. Also, of course, the spellout procedure is identical. The outcome is different because of the different lexical entries Polish has.
+In what follows, I show how the Polish relative pronouns are constructed. I follow the same functional sequence as I did for Modern German. Also, of course, the spellout procedure is identical. The outcome is different because of the different lexical entries Polish has.
 
 Starting from the bottom, the first two features that are merged \tsc{ref} and \tsc{cl}, creating a \tsc{cl}P.
 The syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-o}, which corresponds to the \tit{o}.
@@ -684,7 +740,377 @@ Therefore, the \tsc{ind}P is spelled out as \tit{go}, as shown in \ref{ex:pol-sp
   ]
 \end{forest}
 
-Next, the feature \tsc{f}1 is merged with the \tsc{ind}P, forming an \tsc{nom}P. This phrase is not contained in any of the lexical entries Polish. The first movement is tried, and the specifier of the \tsc{ind}P, the \tsc{an}P, is moved to the specifier of \tsc{nom}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go}, so it is spelled out as \tit{go}.
+Next, the feature \tsc{wh} is merged.
+The derivation for this feature resembles the derivation of \tsc{wh} in Modern German.
+The feature is merged with the existing syntactic structure, creating a \tsc{wh}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Therefore, in a second workspace, the feature \tsc{wh} is merged with the feature \tsc{ind} (the previous syntactic feature on the functional sequence) into a \tsc{wh}P. This syntactic structure does not form a constituent in any of the lexical trees in the language's lexicon.
+Therefore, the feature \tsc{wh} combines not only with the feature merged before it, but with a phrase that consists of the two features merged before it: \tsc{ind} and \tsc{an}. Also this syntactic structure does not form a constituent in any of the lexical trees in the language's lexicon.
+Therefore, the feature \tsc{wh} combines with a phrase that consists of the three features merged before it: \tsc{ind}, \tsc{an} and \tsc{cl}. This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-k}, which corresponds to the \tit{k}.
+Therefore, the \tsc{wh}P is spelled out as \tit{k}. The newly created phrase is merged as a whole with the already existing structure, and projects to the top node, as shown in \ref{ex:pol-spellout-whp}.
+
+\ex.\label{ex:pol-spellout-whp}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{wh}P, s sep=30mm
+      [\tsc{wh}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{wh}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}]
+              ]
+          ]
+      ]
+      [\tsc{ind}P, s sep=30mm
+      [\tsc{an}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+          [\tsc{an}P]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [\tsc{ref}]
+          ]
+      ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{go},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+The next feature in the functional sequence is the feature \tsc{rel}. The derivation for this feature resembles the derivation of \tsc{rel} in Modern German.
+The feature is merged with the existing syntactic structure, creating a \tsc{rel}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{wh}P from the \tsc{ind}P.
+The feature \tsc{rel} is merged in both workspaces, so with \tsc{wh}P and and with \tsc{ind}P. The spellout of \tsc{rel} is successful when it is combined with the \tsc{wh}P.
+It namely forms a constituent in the lexical tree in \ref{ex:pol-entry-k}, which corresponds to the \tit{k}.
+The \tsc{rel}P is spelled out as \tit{k}, and the \tsc{rel}P is merged back to the existing syntactic structure.
+
+The next feature on the functional sequence is \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:pol-entry-go-rep}, repeated from \ref{ex:pol-entry-go}, which corresponds to the \tit{go}.
+
+\ex. \label{ex:pol-entry-go-rep}
+\begin{forest} boom
+  [\tsc{acc}P
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\tsc{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{go}}; }
+\end{forest}
+
+This is achieved via Backtracking in which phrases are split up and going through the Spellout Algorithm. I go through the derivation step by step.
+The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{rel}P from the \tsc{ind}P.
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{ind}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon.
+The first movement option in the Spellout Algorithm is moving the specifier. In the \tsc{rel}P there is no specifier, so this movement option is irrelevant. In the \tsc{ind}P, however, there is a specifier, which is moved to the specifier of \tsc{nom}P.
+This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-go-rep}, which corresponds to the \tit{go}.
+The \tsc{nom}P is spelled out as \tit{go}, and the \tsc{nom}P is merged back to the existing syntactic structure.
+
+For the accusative relative pronoun, the last feature on the functional sequence is the feature \tsc{f}2. Its derivation proceeds the same as the one for the feature \tsc{f}1.
+The feature \tsc{f}2 is merged with the existing syntactic structure, creating a \tsc{acc}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{rel}P from the \tsc{nom}P.
+The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{nom}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon.
+The first movement option in the Spellout Algorithm is moving the specifier. In the \tsc{rel}P there is no specifier, so this movement option is irrelevant. In the \tsc{nom}P, however, there is a specifier, which is moved to the specifier of \tsc{acc}P.
+This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-go-rep}, which corresponds to the \tit{go}.
+The \tsc{acc}P is spelled out as \tit{go}, and the \tsc{acc}P is merged back to the existing syntactic structure, as shown in \ref{ex:pol-spellout-rel-acc}.
+
+\ex.\label{ex:pol-spellout-rel-acc}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{rel}P, s sep=40mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{acc}P, s sep=30mm
+      [\tsc{an}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+          [\tsc{an}P]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [\tsc{ref}]
+          ]
+      ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{go},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}2]
+              [\tsc{nom}P
+                  [\tsc{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+For the accusative relative pronoun, the last feature on the functional sequence is the feature \tsc{f}3. Its derivation proceeds the same as the one for the feature \tsc{f}2.
+The feature \tsc{f}3 is merged with the existing syntactic structure, creating a \tsc{dat}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads splitting up the \tsc{rel}P from the \tsc{acc}P.
+The feature \tsc{f}3 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{acc}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon.
+The first movement option in the Spellout Algorithm is moving the specifier. In the \tsc{rel}P there is no specifier, so this movement option is irrelevant. In the \tsc{acc}P, however, there is a specifier, which is moved to the specifier of \tsc{dat}P.
+This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-mu-rep}, which corresponds to the \tit{mu}.
+
+\ex. \label{ex:pol-entry-mu-rep}
+\begin{forest} boom
+  [\tsc{dat}P
+      [\tsc{f}3]
+      [\tsc{acc}P
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{mu}}; }
+\end{forest}
+
+The \tsc{dat}P is spelled out as \tit{mu}, and the \tsc{dat}P is merged back to the existing syntactic structure, as shown in \ref{ex:pol-spellout-rel-dat}.
+
+\ex.\label{ex:pol-spellout-rel-dat}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{rel}P, s sep=40mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}]
+                  ]
+              ]
+          ]
+      ]
+      [\tsc{dat}P, s sep=35mm
+      [\tsc{an}P,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+          [\tsc{an}P]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [\tsc{ref}]
+          ]
+      ]
+          [\tsc{dat}P,
+          tikz={
+          \node[label=below:\tit{mu},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{f}3]
+              [\tsc{acc}P
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\tsc{ind}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+To summarize, I decomposed the relative pronoun into the three morphemes \tit{k}, \tit{o} and the suffix (\tit{go} and \tit{mu}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituents that determine whether the light head can be deleted or not.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{The Polish extra light head}\label{sec:pol-elh}
+
+In Chapter \ref{ch:the-basic-idea}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching}.
+
+\ex.\label{ex:simple-matching}
+\begin{forest} boom
+[ϕP
+   [ϕ]
+   [\tsc{k}P
+       [\tsc{k}]
+   ]
+]
+\end{forest}
+
+In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:fseq-wh-lh-pol}.
+
+\ex. \begin{forest} boom
+  [\tsc{k}P
+      [\tsc{k}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [\tsc{ref}]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\label{ex:fseq-wh-lh-pol}
+
+The two morphemes that spell out the features in \ref{ex:fseq-wh-lh-pol} are the vowel and the suffix, as shown in \ref{ex:pol-elhs}.
+
+\ex.\label{ex:pol-elhs}
+\ag. o-go\\
+ \tsc{elh}.\tsc{an}.\tsc{acc}\\
+\bg. o-mu\\
+ \tsc{elh}.\tsc{an}.\tsc{dat}\\
+
+Specifically, I argue that Polish light heads have the structure shown in \ref{ex:pol-elh}.
+
+\ex.\label{ex:pol-elh}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+  [\tsc{dat}P, s sep=40mm
+      [\tsc{an}P,
+      tikz={
+      \node[label=below:\tit{o},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [\tsc{ref}]
+          ]
+      ]
+      [\tsc{k}P,
+      tikz={
+      \node[label=below:\tit{go/mu},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [\tsc{ind}P
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+Crucially, the constituent structure in \ref{ex:pol-elh} is the same as in \ref{ex:simple-matching}. Recall from Chapter \ref{ch:deriving-onlyinternal} that in Modern German the extra light head spells out as a single constituent. The Polish extra light head consists of two constituents, as shown in \ref{ex:pol-elh}. This is the crucial difference between the two languages that leads them to be of different types in headless relatives.
+
+Before I discuss the feature content of the morphemes of the extra light head, I show that the two morphemes spell out the features in \ref{ex:fseq-wh-lh-pol}. Therefore, I need to discuss the \tit{o} of the relative pronoun. The \tit{o} can namely become an \tit{e} under particular phonological circumstances. This allows me to show that \tit{ogo} and \tit{omu} are the extra light heads in Polish.
+
+
+I repeat the functional sequence of the extra light head in \ref{ex:fseq-wh-lh-pol-rep}.
+
+\ex. \begin{forest} boom
+  [\tsc{k}P
+      [\tsc{k}]
+      [\tsc{ind}P
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [\tsc{ref}]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\label{ex:fseq-wh-lh-pol-rep}
+
+The strong pronoun in Table \ref{tbl:pol-prons} differs from the extra light head in one feature: \tsc{c}. As each morpheme needs to spell out at least one feature, I assume that \tit{j} spells out this \tsc{c}.\footnote{
+Actually, I assume it spells out \tsc{c} and \tsc{ind} as it is a Complex Spec. As this is not crucial to the point I am making, I do not discuss it any further for now.
+}\footnote{
+It is also possible that the strong pronoun is syncretic with the extra light head and that the extra light head is actually also spelled out as \tit{jego}/\tit{jemu}. This would mean that the strong extra light head consists of even more than two morphemes. For my proposal, it is important to show that the extra light head consists of at least two morphemes, one of which spells out case features. It works equally well when the non-case part of the structure actually consists of more one morpheme. I continue working out a proposal in which the extra light head is bimorphemic.
+}
+This leaves the functional sequence in \ref{ex:fseq-wh-lh-pol-rep} to be spelled out by the morphemes \tit{o} and \tit{go}/\tit{mu}.
+
+In what follows, I discuss which features they \tit{o} and the suffixes (\tit{go} and \tit{mu}) spell out, and I give their lexical entries. At the end of the section, I show how the extra light heads are constructed.
+
+
+In what follows, I construct the Polish extra light heads. Until the feature \tsc{ind}, the derivation is identical to the one of the relative pronoun.
+
+%the situation is:
+
+Therefore, I start at point at which the feature \tsc{f}1 is merged. The feature \tsc{f}1 is merged with the \tsc{ind}P, forming an \tsc{nom}P. This phrase is not contained in any of the lexical entries Polish. The first movement is tried, and the specifier of the \tsc{ind}P, the \tsc{an}P, is moved to the specifier of \tsc{nom}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go}, so it is spelled out as \tit{go}.
 
 For the accusative extra light head, the last feature is merged: the \tsc{f}2.
 The feature is merged with the \tsc{nom}P, forming an \tsc{acc}P. This phrase is not contained in any of the lexical entries. The first movement is tried, and the specifier of the \tsc{nom}P, the \tsc{an}P, is moved to the specifier of \tsc{acc}P. This phrase is contained in the lexical tree in \ref{ex:pol-entry-go}, so it is spelled out as \tit{go}, as shown in \ref{ex:pol-elh-acc}.
@@ -819,430 +1245,6 @@ Just like in Modern German, Polish headless relatives can be analyzed as either 
 Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
 
 In sum, just like Modern German, Polish headless relatives do not seem to be derived from light-headed relatives in which the light head is a demonstrative. A difference between Polish and Modern German demonstratives is that Polish ones do not spell out definite features. The fact that Polish demonstratives are also not the light head of a headless relative confirm that deixis features have to be absent from the extra light head.
-
-
-\section{The Polish relative pronoun}\label{sec:pol-rel}
-
-In this section, I discuss two relative pronouns in Polish: the accusative animate and the dative animate. I show them in \ref{ex:pol-rels-rep}.
-
-\ex.\label{ex:pol-rels-rep}
-\ag. k-o-go\\
- \tsc{rp}.\tsc{an}.\tsc{acc}\\
-\bg. k-o-mu\\
- \tsc{rp}.\tsc{an}.\tsc{dat}\\
-
-In the previous section I showed that the extra light head in Polish corresponds to two of the morphemes of the relative pronoun, namely the \tit{o} and the suffix \tit{go} or \tit{mu}. In this section, I show that the features that are not part of the extra light head are spelled out by the morpheme \tit{k}.
-
-In \ref{ex:pol-fseq-rel} I repeat the functional sequence I proposed in Chapter \ref{ch:deriving-onlyinternal} for the relative pronoun.
-
-\ex.\label{ex:pol-fseq-rel}
-\begin{adjustbox}{max width=0.9\textwidth}
-  \begin{forest} boom
-   [\tsc{k}P
-       [\tsc{k}]
-       [\tsc{rel}P
-           [\tsc{rel}]
-           [\tsc{wh}P
-               [\tsc{wh}]
-               [\tsc{ind}P
-                   [\tsc{ind}]
-                   [\tsc{an}P
-                       [\tsc{an}]
-                       [\tsc{cl}P
-                           [\tsc{cl}]
-                            [\tsc{ref}]
-                       ]
-                   ]
-               ]
-           ]
-       ]
-   ]
-  \end{forest}
-\end{adjustbox}
-
-The features that are not contained in the extra light head are \tsc{wh} and \tsc{rel}. In addition, I propose that \tit{k} also spells out the features \tsc{ind}, \tsc{an} and \tsc{cl}.
-
-In sum, I argue that Polish relative pronouns have the structure shown in \ref{ex:pol-rel}.
-
-\ex.\label{ex:pol-rel}
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boom
-  [\tsc{rel}P, s sep=75mm
-      [\tsc{rel}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=1,
-      fit to=tree]{};
-      }
-          [\tsc{rel}]
-          [\tsc{wh}P
-              [\tsc{wh}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{an}P
-                      [\tsc{an}]
-                      [\tsc{cl}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P, s sep=35mm
-      [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-          [\tsc{an}P]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{ref}]
-          ]
-      ]
-          [\tsc{k}P,
-          tikz={
-          \node[label=below:\tit{go/mu},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{k}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-              ]
-          ]
-      ]
-  ]
-  \end{forest}
-  \end{adjustbox}
-
-This matches the constituency that I proposed in Chapter \ref{ch:constituent-containment} a matching language needs to have. I repeat this structure in \ref{ex:simple-matching-rel}.
-
-\ex.\label{ex:simple-matching-rel}
-\begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}]
-      [ϕP
-          [ϕ]
-          [\tsc{k}P
-              [\tsc{k}]
-          ]
-      ]
-  ]
-\end{forest}
-
-I discuss the features that I assume the \tit{k} spells out one by one.
-
-I start with the operator features \tsc{wh} and \tsc{rel}. The relative pronouns are \tsc{wh}-pronouns, which are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
-
-I continue with the feature \tsc{c}. Relative pronouns can be coordinated and focused, so they are strong.
-
-I continue with the deixis features. I follow Baunaz/Lander and specifically for Polish \citet{wiland2019} in that indefinite demonstratives are contained in \tsc{wh}-elements.
-
-Finally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
-Lastly, \tsc{k} also contains \tsc{an} and \tsc{cl}.
-
-In sum, the morpheme \tit{k} realizes the features \tsc{wh}, \tsc{rel}, \tsc{ind}, \tsc{an} and \tsc{cl}.
-
-\footnote{
-Actually, to be able to derive the inanimate relative pronoun, I assume that there is a pointer in the lexical entry for \tit{k}, as shown in \ref{ex:pol-entry-k-pointer}.
-
-\ex.\label{ex:pol-entry-k-pointer}
-\begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}]
-      [\tsc{wh}P
-          [\tsc{wh}]
-          [\tsc{med}P
-              [\tsc{dx}\scsub{2}]
-              [\tsc{prox}P
-                  [\tsc{dx}\scsub{1}]
-                  [\tsc{c}P, edge=->
-                      [\tsc{c}]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                          [\tsc{an}P
-                              [\tsc{an}]
-                              [\tsc{cl}]
-                          ]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{k}}; }
-\end{forest}
-
-The pointer is situated above the \tsc{c}P. That means that if there is no animate feature in the structure, the \tsc{c} can also not be spelled out with \tit{k}. What follows is that there is another morpheme necessary that contributes the feature \tsc{c}. I propose that this is \tit{j} which forms strong pronouns. This is what causes the phonological processes described in Section \ref{sec:pol-elh}.
-}
-
-\ex.\label{ex:pol-entry-k}
-\begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}]
-      [\tsc{wh}P
-          [\tsc{wh}]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{an}P
-                  [\tsc{an}]
-                  [\tsc{cl}]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{k}}; }
-\end{forest}
-
-In what follows, I show how the Polish relative pronouns are constructed.
-
-Until the feature \tsc{ind}, the derivation is identical to the one of the extra light. Therefore, I start at point at which the feature \tsc{wh} is merged.
-The derivation for this feature resembles the derivation of \tsc{wh} in Modern German.
-The feature is merged with the existing syntactic structure, creating a \tsc{wh}P.
-This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Therefore, in a second workspace, the feature \tsc{wh} is merged with the feature \tsc{ind} (the previous syntactic feature on the functional sequence) into a \tsc{wh}P. This syntactic structure does not form a constituent in any of the lexical trees in the language's lexicon.
-Therefore, the feature \tsc{wh} combines not only with the feature merged before it, but with a phrase that consists of the two features merged before it: \tsc{ind} and \tsc{an}. Also this syntactic structure does not form a constituent in any of the lexical trees in the language's lexicon.
-Therefore, the feature \tsc{wh} combines with a phrase that consists of the three features merged before it: \tsc{ind}, \tsc{an} and \tsc{cl}. This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-k}, which corresponds to the \tit{k}.
-Therefore, the \tsc{wh}P is spelled out as \tit{k}. The newly created phrase is merged as a whole with the already existing structure, and projects to the top node, as shown in \ref{ex:pol-spellout-whp}.
-
-\ex.\label{ex:pol-spellout-whp}
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boom
-  [\tsc{wh}P, s sep=30mm
-      [\tsc{wh}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{wh}]
-          [\tsc{ind}P
-              [\tsc{ind}]
-              [\tsc{an}P
-                  [\tsc{an}]
-                  [\tsc{cl}]
-              ]
-          ]
-      ]
-      [\tsc{ind}P, s sep=35mm
-      [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-          [\tsc{an}P]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{ref}]
-          ]
-      ]
-          [\tsc{ind}P,
-          tikz={
-          \node[label=below:\tit{go},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{ind}]
-          ]
-      ]
-  ]
-\end{forest}
-\end{adjustbox}
-
-The next feature in the functional sequence is the feature \tsc{rel}. The derivation for this feature resembles the derivation of \tsc{rel} in Modern German.
-The feature is merged with the existing syntactic structure, creating a \tsc{rel}P.
-This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads splitting up the \tsc{wh}P from the \tsc{ind}P.
-The feature \tsc{rel} is merged in both workspaces, so with \tsc{wh}P and and with \tsc{ind}P. The spellout of \tsc{rel} is successful when it is combined with the \tsc{wh}P.
-It namely forms a constituent in the lexical tree in \ref{ex:pol-entry-k}, which corresponds to the \tit{k}.
-The \tsc{rel}P is spelled out as \tit{k}, and the \tsc{rel}P is merged back to the existing syntactic structure.
-
-The next feature on the functional sequence is \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:pol-entry-go-rep}, repeated from \ref{ex:pol-entry-go}, which corresponds to the \tit{go}.
-
-\ex. \label{ex:pol-entry-go-rep}
-\begin{forest} boom
-  [\tsc{acc}P
-      [\tsc{f}2]
-      [\tsc{nom}P
-          [\tsc{f}1]
-          [\tsc{ind}P
-              [\tsc{ind}]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{go}}; }
-\end{forest}
-
-This is achieved via Backtracking in which phrases are split up and going through the Spellout Algorithm. I go through the derivation step by step.
-The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
-This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads splitting up the \tsc{rel}P from the \tsc{ind}P.
-The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{ind}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon.
-The first movement option in the Spellout Algorithm is moving the specifier. In the \tsc{rel}P there is no specifier, so this movement option is irrelevant. In the \tsc{ind}P, however, there is a specifier, which is moved to the specifier of \tsc{nom}P.
-This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-go-rep}, which corresponds to the \tit{go}.
-The \tsc{nom}P is spelled out as \tit{go}, and the \tsc{nom}P is merged back to the existing syntactic structure.
-
-For the accusative relative pronoun, the last feature on the functional sequence is the feature \tsc{f}2. Its derivation proceeds the same as the one for the feature \tsc{f}1.
-The feature \tsc{f}2 is merged with the existing syntactic structure, creating a \tsc{acc}P.
-This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads splitting up the \tsc{rel}P from the \tsc{nom}P.
-The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{nom}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon.
-The first movement option in the Spellout Algorithm is moving the specifier. In the \tsc{rel}P there is no specifier, so this movement option is irrelevant. In the \tsc{nom}P, however, there is a specifier, which is moved to the specifier of \tsc{acc}P.
-This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-go-rep}, which corresponds to the \tit{go}.
-The \tsc{acc}P is spelled out as \tit{go}, and the \tsc{acc}P is merged back to the existing syntactic structure, as shown in \ref{ex:pol-spellout-rel-acc}.
-
-\ex.\label{ex:pol-spellout-rel-acc}
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boom
-  [\tsc{rel}P, s sep=75mm
-      [\tsc{rel}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=1,
-      fit to=tree]{};
-      }
-          [\tsc{rel}]
-          [\tsc{wh}P
-              [\tsc{wh}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{an}P
-                      [\tsc{an}]
-                      [\tsc{cl}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{acc}P, s sep=40mm
-      [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-          [\tsc{an}P]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{ref}]
-          ]
-      ]
-          [\tsc{acc}P,
-          tikz={
-          \node[label=below:\tit{go},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{f}2]
-              [\tsc{nom}P
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\tsc{ind}]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\end{adjustbox}
-
-For the accusative relative pronoun, the last feature on the functional sequence is the feature \tsc{f}3. Its derivation proceeds the same as the one for the feature \tsc{f}2.
-The feature \tsc{f}3 is merged with the existing syntactic structure, creating a \tsc{dat}P.
-This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads splitting up the \tsc{rel}P from the \tsc{acc}P.
-The feature \tsc{f}3 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{acc}P. None of these phrases form a constituent in any of the lexical trees in the language's lexicon.
-The first movement option in the Spellout Algorithm is moving the specifier. In the \tsc{rel}P there is no specifier, so this movement option is irrelevant. In the \tsc{acc}P, however, there is a specifier, which is moved to the specifier of \tsc{dat}P.
-This syntactic structure forms a constituent in the lexical tree in \ref{ex:pol-entry-mu-rep}, which corresponds to the \tit{mu}.
-
-\ex. \label{ex:pol-entry-mu-rep}
-\begin{forest} boom
-  [\tsc{dat}P
-      [\tsc{f}3]
-      [\tsc{acc}P
-          [\tsc{f}2]
-          [\tsc{nom}P
-              [\tsc{f}1]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-              ]
-          ]
-      ]
-  ]
-  {\draw (.east) node[right]{⇔ \tit{mu}}; }
-\end{forest}
-
-The \tsc{dat}P is spelled out as \tit{mu}, and the \tsc{dat}P is merged back to the existing syntactic structure, as shown in \ref{ex:pol-spellout-rel-dat}.
-
-\ex.\label{ex:pol-spellout-rel-dat}
-\begin{adjustbox}{max width=0.9\textwidth}
-\begin{forest} boom
-  [\tsc{rel}P, s sep=75mm
-      [\tsc{rel}P,
-      tikz={
-      \node[label=below:\tit{k},
-      draw,circle,
-      scale=1,
-      fit to=tree]{};
-      }
-          [\tsc{rel}]
-          [\tsc{wh}P
-              [\tsc{wh}]
-              [\tsc{ind}P
-                  [\tsc{ind}]
-                  [\tsc{an}P
-                      [\tsc{an}]
-                      [\tsc{cl}]
-                  ]
-              ]
-          ]
-      ]
-      [\tsc{dat}P, s sep=40mm
-      [\tsc{an}P,
-          tikz={
-          \node[label=below:\tit{o},
-          draw,circle,
-          scale=0.95,
-          fit to=tree]{};
-          }
-          [\tsc{an}P]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{ref}]
-          ]
-      ]
-          [\tsc{dat}P,
-          tikz={
-          \node[label=below:\tit{mu},
-          draw,circle,
-          scale=0.9,
-          fit to=tree]{};
-          }
-              [\tsc{f}3]
-              [\tsc{acc}P
-                  [\tsc{f}2]
-                  [\tsc{nom}P
-                      [\tsc{f}1]
-                      [\tsc{ind}P
-                          [\tsc{ind}]
-                      ]
-                  ]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-\end{adjustbox}
-
-To summarize, I decomposed the relative pronoun into the three morphemes \tit{k}, \tit{o} and the suffix (\tit{go} and \tit{mu}). I showed which features each of the morphemes spells out, and in which constituents the features are combined. It is these constituents that determine whether the light head can be deleted or not.
 
 
 

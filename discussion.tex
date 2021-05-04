@@ -48,3 +48,360 @@ like-I.part what-el you choose-you.el\\
 \section{The missing dative/accusative}
 
 The accusative/dative example is missing from Gothic, Old High German and Ancient Greek. What if I take that seriously?
+
+
+
+
+\section{Summary}
+
+Table \ref{tbl:overview-rel-light} shows per language type which of the three options in Table \ref{tbl:options-surface-pronoun} is chosen when the internal and external case differ.
+
+\begin{table}[htbp]
+  \center
+  \caption{The surface pronoun with differing cases per language}
+\begin{tabular}{cccc}
+  \toprule
+                & \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{k}\scsub{ext} > \tsc{k}\scsub{int} &                  \\
+                \cmidrule{2-3}
+unrestricted    & relative pronoun\scsub{int}  & light head\scsub{ext} & Old High German  \\
+internal-only   & relative pronoun\scsub{int}  & *                     & Modern German    \\
+matching        & *                            & *                     & Polish           \\
+external-only   & *                            & light head\scsub{ext} & not attested     \\
+\bottomrule
+\end{tabular}
+\label{tbl:overview-rel-light}
+\end{table}
+
+The first column list the types of languages.
+The second column shows the situation in which the internal case is the most complex. The relative pronoun that bears the internal case is the potential surface pronoun.
+The third column shows the situation in which the external case is the most complex. The light head that bears the external case is the potential surface pronoun.
+The asterix (*) indicates that there is no grammatical form for the surface pronoun.
+The fourth column gives the example of the language type that I discuss in this chapter.
+A language of the unrestricted type (like Old High German) allows both the internal case and the external case to surface when either of them wins the case competition. Either the light head with its external case or the relative pronoun with its internal case can be the surface pronoun.
+A language of the internal-only type (like Modern German) allows only the internal case to surface when it wins the case competition, and it does not allow the external case to do so. The relative pronoun with its internal case can be the surface pronoun and the light head with its external case cannot.
+A language of the matching type (like Polish) allows neither the internal nor the external case to surface when either of them wins the case competition. Neither the relative pronoun with its internal case nor the light head with its external case can be the surface pronoun.\footnote{
+This holds for the situation in which the internal and external case differ. In Section \ref{ch:deriving-matching}, I show that the relative pronoun surfaces in matching contexts.
+}
+The language type that is not attested is the external-only type. That means that there is no language that allows only the external case to surface when it wins the case competition, and it does not allow the internal case to do so. In other words, there exist no language, in which the surface pronoun can only be the light head and not the relative pronoun.
+
+What I have done in this section so far is reformulate the two descriptive parameters from Figure \ref{fig:two-parameters} into two other descriptive parameters.
+Whether the internal case is allowed to surface corresponds to whether the relative pronoun surfaces. That implicates that the light head has been deleted and is therefore absent.
+Similarly, whether the external case is allowed to surface corresponds to whether the light head surfaces. That implicates that the relative pronoun has been deleted and is therefore absent.
+I show this in Figure \ref{fig:two-parameters-different}.
+
+\begin{figure}[htbp]
+  \centering
+    \footnotesize{
+    \begin{tikzpicture}[node distance=1.5cm]
+      \node (question2) [question]
+      {{delete relative pronoun?}};
+          \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+          {matching};
+              \node (example2) [example, below of=outcome2, yshift=0.25cm]
+              {\scriptsize{e.g. Polish\\\phantom{x}}};
+          \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+          {{delete light head?}};
+              \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+              {internal-only};
+                  \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                  {\scriptsize{e.g. Modern German\\\phantom{x}}};
+              \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+              {un-restricted};
+                  \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                  {\scriptsize{e.g. Gothic, Old High German, Classical Greek}};
+
+    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+    \end{tikzpicture}
+    }
+    \caption{Delete relative pronoun/light head as parameters}
+    \label{fig:two-parameters-different}
+\end{figure}
+
+Reformulating these parameters is not just restating the generalization in different terms. With this new formulation, I am able to identify the elements (i.e. the light head and the relative pronoun) that bear the internal and external cases. The difference between languages lies in whether or not it is possible to delete the light head (and with it the external case) and the relative pronoun (and with it the internal case).
+
+
+
+
+
+\section{A larger syntactic context}\label{ch:larger-syntax}
+
+First, I show, independent from case facts, that the surface pronoun is the relative pronoun. The evidence comes from extraposition data.
+
+The sentences in \ref{ex:mg-extrapose-cp} show that it is possible to extrapose a CP. In \ref{ex:mg-extrapose-cp-base}, the clausal object \tit{wie es dir geht} `how you are doing', marked here in bold, appears in its base position. It can be extraposed to the right edge of the clause, shown in \ref{ex:mg-extrapose-cp-moved}.
+
+\ex.\label{ex:mg-extrapose-cp}
+\ag. Mir ist \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht} egal.\\
+1\tsc{sg}.\tsc{dat} is how it 2\tsc{sg}.\tsc{dat} goes {the same}\\
+`I don't care how you are doing.'\label{ex:mg-extrapose-cp-base}
+\bg. Mir is egal \tbf{wie} \tbf{es} \tbf{dir} \tbf{geht}.\\
+1\tsc{sg}.\tsc{dat} is {the same} how it 2\tsc{sg}.\tsc{dat} goes\\
+`I don't care how you are doing.' \label{ex:mg-extrapose-cp-moved}\flushfill{Modern German}
+
+\ref{ex:mg-extrapose-dp} illustrates that it is impossible to extrapose a DP. The clausal object of \ref{ex:mg-extrapose-cp} is replaced by the simplex noun phrase \tit{die Sache} `that matter'.
+In \ref{ex:mg-extrapose-dp-base} the object, marked in bold, appears in its base position. In \ref{ex:mg-extrapose-dp-moved} it is extraposed, and the sentence is no longer grammatical.
+
+\ex.\label{ex:mg-extrapose-dp}
+\ag. Mir ist \tbf{die} \tbf{Sache} egal.\\
+1\tsc{sg}.\tsc{dat} is that matter {the same}\\
+`I don't care about that matter.'\label{ex:mg-extrapose-dp-base}
+\bg. *Mir ist egal \tbf{die} \tbf{Sache}.\\
+1\tsc{sg}.\tsc{dat} is {the same} that matter\\
+`I don't care about that matter.' \label{ex:mg-extrapose-dp-moved}\flushfill{Modern German}
+
+The same asymmetry between CPs and DPs can be observed with relative clauses. A relative clause is a CP, and the head of a relative clause is a DP. The sentences in \ref{ex:extra-headed} contain the relative clause \tit{was er gekocht hat} `what he has stolen'. This is marked in bold in the examples. The (light) head of the relative clause is \tit{das}.\footnote{
+Not all speakers of Modern German accept the combination of \tit{das} as a light head and \tit{was} as a relative pronoun and prefer \tit{das} as a relative pronoun instead. I use the combination of \tit{das} and \tit{was} to have a more minimal pair with the headless relatives (that uses the relative pronoun \tit{was}).
+\label{ftn:das-was}
+}
+In \ref{ex:extra-headed-base}, the relative clause and its head appear in base position. In \ref{ex:extra-headed-only-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headed-head-clause}, the relative clause and the head are extraposed. This is ungrammatical, because it is possible to extrapose DPs.
+
+\ex.\label{ex:extra-headed}
+\ag. Jan hat das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}, aufgegessen.\\
+Jan has that what he cooked has eaten\\
+`Jan has eaten what he cooked.'\label{ex:extra-headed-base}
+\bg. Jan hat das aufgegessen, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+Jan has that eaten what he cooked has\\
+`Jan has eaten what he cooked.'\label{ex:extra-headed-only-clause}
+\cg. *Jan hat aufgegessen, das, \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+Jan has eaten that what he cooked has\\
+`Jan has eaten what he cooked.'\label{ex:extra-headed-head-clause} \flushfill{Modern German}
+
+The same can be observed in relative clauses without a head. \ref{ex:extra-headless} is the same sentence as in \ref{ex:extra-headed} only without the overt head. The relative clause is marked in bold again.
+In \ref{ex:extra-headless-base}, the relative clause appears in base position. In \ref{ex:extra-headless-clause}, the relative clause is extraposed. This is grammatical, because it is possible to extrapose CPs in Modern German. In \ref{ex:extra-headless-no-rel}, the relative clause is extraposed without the relative pronouns. This is ungrammatical, because the relative pronoun is part of the CP.
+This shows that the relative pronoun in headless relatives in Modern German are necessarily part of a CP, which is here a relative clause.
+
+\ex.\label{ex:extra-headless}
+\ag. Jan hat \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat} aufgegessen.\\
+Jan has what he cooked has eaten\\
+`Jan has eaten what he cooked.'\label{ex:extra-headless-base}
+\bg. Jan hat aufgegessen \tbf{was} \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+Jan has eaten what he cooked has\\
+`Jan has eaten what he cooked.'\label{ex:extra-headless-clause}
+\bg. *Jan hat \tbf{was} aufgegessen \tbf{er} \tbf{gekocht} \tbf{hat}.\\
+Jan has what eaten he cooked has\\
+`Jan has eaten what he cooked.'\label{ex:extra-headless-no-rel}\flushfill{Modern German}
+
+In conclusion, extraposition facts show that the surface pronoun in Modern German headless relatives is the relative pronoun.
+
+
+
+
+If you talk about different patterns, there can be different locations to put your parameters. Himmelreich put her parameters in the structure. I put my parameters in the elements themselves. I show what an analysis like Himmelreich looks like, and I show then that it is difficult to reduce that then to differences in the lexicon (because it has to do with agree?).
+
+So what I do is keep the parameters that she was differing stable. I change the things that she kept constant, the internal and external element. Does her structure then work with what I want? Not entirely, because I have to do a c-command that is going in the wrong direction.
+Then I show a syntactic structure that could be compatible with mine, and I show why a grafting one is not.
+
+
+
+In this dissertation I focus on when languages allow the internal and external case to win the case competition. In my proposal, this depends on the comparison between the internal and external base. The larger syntactic context in which this takes place should be kept stable. For concreteness, I show a possible implementation in Cinque's double-headed analysis of relative clause. I do by no means claim that claim this is the only or even correct implementation.
+
+
+
+% In the previous section I introduced the relative pronoun as the internal element. This means that the other element is the external element. This section starts with the observation that there actually are languages in which two elements surface in so-called double-headed relative clauses. In these languages, the external head is a subset of the internal head, and that some features like \tsc{d} and case are necessarily excluded in the external head. I adopt this insight, and I apply it to the headless relative situation. I propose that the external head in headless relatives is a copy of a specific part of the relative pronoun.
+%
+% As I said earlier, I need two elements to do case competition with. In headless relatives, I only see a single one surfacing. However, some languages actually show two elements surfacing. Here there are two copies of the element, one inside the relative clause, one outside of the relative clause.
+%
+% \exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
+%  sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
+%  `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}
+%
+% The external element is not always an exact copy of the element inside of the relative clause. An example from Kombai shows that the element outside of the relative clause can also be a subset of what the element inside of the relative clause is. Here I give two examples, there is an \tit{old man} and a \tit{person}, and there is \tit{pig} and a \tit{thing}.
+%
+% \ex.
+% \ag. [\tbf{yare} gamo khereja bogi-n-o] \tbf{rumu} na-momof-a\\
+%  {old man} join.\ac{ss} work do.\ac{dur}.3\ac{sg}.\ac{nf}-\ac{tr}-\ac{conn} person my-uncle-\ac{pred}\\
+%  `The old man, who is joining the work, is my uncle.' 77
+% \bg. [\tbf{ai} fali-khano] \tbf{ro} nagu-n-ay-a.\\
+%  pig carry-go.3\tsc{pl}.\tsc{nf} thing our-\tsc{tr}-pig-\ac{pred}\\
+%  `The pig they took away, is ours.' \flushfill{Kombai, \pgcitealt{vries1993}{77}}
+%
+% Let me now apply what we have seen so far to headless relatives. Headless relatives do not have an overt NP, so this cannot be copied. However, there is the relative pronoun which is specified for number, gender, case, etc. Are all of these features copied onto the external element? The copy is the portion of the nominal extended projection c-commanded by the relative clause. A headless relative is a restrictive relative clause. Therefore, there is no \tsc{d} and no case.
+%
+% Is it possible to add features onto the external head after it has been copied? Yes, for example D, as the example shows, but also case.
+%
+% \exg. Junya-wa [Ayaka-ga \tbf{ringo}-o mui-ta] sono \tbf{ringo}-o tabe-ta.\\
+% Junya-\ac{top} Ayaka-\ac{nom} apple-\ac{acc} peel-\ac{pst} that apple-\ac{acc} eat-\ac{pst}\\
+% ‘Junya ate the apples that Ayaka peeled.’ \flushfill{Japanese, \pgcitealt{erlewine2016}{2}}
+%
+% In sum, the external element is a copy of a subset of the features of the relative pronoun. Definiteness and case are not copied. New features can be merged onto the external element.
+
+
+According to Cinque, every type of relative clause in every language is underlyingly double-headed. Evidence for this claim comes from languages that show this morphologically. An example from Kombai is given in \ref{ex:kombai}. The head of the relative clause is \tit{doü} `sago', and it appears inside the relative clause and outside.
+
+\exg. [\tbf{doü} adiyan-o-no] \tbf{doü} deyalukhe\\
+ sago give.3\tsc{pl}.\tsc{nonfut}-{tr}-\tsc{conn} sago finished.\tsc{adj}\\
+ `The sago that they gave is finished.' \flushfill{Kombai, \pgcitealt{vries1993}{78}}\label{ex:kombai}
+
+The internal and external instances of \tit{doü} correspond to the internal and external element I assume to be there in the headless relatives.
+
+\ref{ex:double-syntax} shows the syntactic structure of the sentence in \ref{ex:kombai}.
+
+\ex.
+\begin{forest} boom
+[CP
+   [FP
+      [CP
+          [\tsc{int}
+             [\tit{doü}, roof]
+          ]
+          [CP
+              [\tit{adiyan-o-no}, roof]
+          ]
+      ]
+      [\tsc{ext}
+         [\tit{doü}, roof]
+      ]
+   ]
+   [VP
+      [\tit{deyalukhe}, roof]
+   ]
+]
+\end{forest}\label{ex:double-syntax}
+
+In most languages one of the two heads is deleted throughout the derivation.
+
+According to \citealt{cinqueforthcoming}, the internal element can delete the external element, because the internal element c-commands the external element. This is c-command according to Kayne's definition of it: the internal element is in the specifier of the specifier of the FP.
+
+\ex.
+\begin{forest} boom
+[
+   [CP
+       [\tsc{int}
+          [\phantom{xxx}, roof]
+       ]
+       [CP
+           [\phantom{xxx}, roof]
+       ]
+   ]
+   [\tsc{ext}
+      [\phantom{xxx}, roof]
+   ]
+]
+\end{forest}\label{ex:cinque-int-wins}
+
+In order for the internal element to be able to delete the external element, a movement needs to take place. The external element moves over the relative clause.\footnote{
+What remains unclear is what the trigger is for the movement of the external element over relative clause is.
+}
+From this position, the external element can delete the internal one, because the external element c-commands the internal one.
+
+\ex.
+\begin{forest} boom
+[
+    [\tsc{ext}
+       [\phantom{xxx}, roof]
+    ]
+    [FP
+       [CP
+           [\tsc{int}
+              [\phantom{xxx}, roof]
+           ]
+           [CP
+               [\phantom{xxx}, roof]
+           ]
+       ]
+       [\tit{t\scsub{ext}}]
+    ]
+]
+\end{forest}
+
+Also talk about \tsc{d} here, and that maybe Old High German deletes a thing without a \tsc{d} when the internal thing wins. does that also have a not so definite interpretation?
+
+
+What does not work:
+
+For this pattern a single element analysis seems intuitive, if you assume that case is complex and that syntax works bottom-up. First you built the relative clause, with the big case in there. Then you build the main clause and you let the more complex case in the embedded clause license the main clause predicate.
+
+Consider the example in \ref{ex:mg-nom-acc-grafting}. Here the internal case is accusative and the external one nominative.
+
+\exg. Uns besucht \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+ we.\ac{acc} visit.3\ac{sg}\scsub{[nom]} \tsc{rel}.\ac{acc}.\tsc{an} Maria.\ac{nom} like.3\ac{sg}\scsub{[acc]}\\
+ `Who visits us, Maria likes.' \flushfill{adapted from \pgcitealt{vogel2001}{343}}\label{ex:mg-nom-acc-grafting}
+
+The relative clause is built, including the accusative relative pronoun. Now the main clause predicate can merge with the nominative that is contained within the accusative.
+
+ \ex.
+ \begin{forest} boom
+  [,name=src, s sep=15mm
+   [VP
+      [\tit{besucht}, roof]
+   ]
+    [,no edge, s sep=20mm
+        [\ac{acc}P,
+     tikz={
+     \node[label=below:\tit{wen},
+     draw,circle,
+     scale=0.85,
+     fit to=tree]{};
+     }
+            [\tsc{f2}]
+            [\tsc{nomP},name=tgt
+                [\tsc{f1}]
+                [XP
+                    [\phantom{xxx}, roof]
+                ]
+            ]
+        ]
+     [VP
+        [\tit{Maria mag}, roof]
+     ]
+   ]
+  ]
+  \draw (src) to[out=south east,in=north east] (tgt);
+ \end{forest}\label{ex:acc-nom-grafting}
+
+The other way around does not work. Consider \ref{ex:mg-acc-nom-grafting}. This is an example with nominative as internal case and accusative as external case.
+
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+I.\ac{nom} invite.1\ac{sg}\scsub{[acc]} \tsc{rel}.\ac{acc}.\tsc{an} I.\ac{dat} nice be.3\ac{sg}\scsub{[nom]}\\
+`I invite who I like.' \flushfill{adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-nom-grafting}
+
+Now the relative clause is built first again, this time only including the nominative case. There is no accusative node to merge with for the external predicate. Instead, the relative pronoun would need to grow to accusative somehow and then the merge could take place. This is the desired result, because the sentence is ungrammatical.
+
+\ex.
+\begin{forest} boom
+  [,name=src, s sep=15mm
+     [VP
+         [\tit{lade ein}, roof]
+     ]
+         [,no edge
+       [\tsc{nomP},
+       tikz={
+       \node[label=below:\tit{wer},
+       draw,circle,
+       scale=0.85,
+       fit to=tree]{};
+       }
+         [\tsc{f1}]
+         [XP
+           [\phantom{xxx}, roof]
+         ]
+       ]
+       [VP
+         [\tit{mir sympatisch ist}, roof]
+       ]
+      ]
+    ]
+\end{forest}\label{ex:nom-acc-grafting}
+
+So, this seems to work fine. The assumptions you have to do in order to make this are the following. First, case is complex. Second, you can remerge an embedded node (grafting). For the first one I have argued in Chapter \ref{ch:decomposition}. The second one could use some additional argumentation. It is a mix between internal remerge (move) and external merge, namely external remerge. Other literature on multidominance and grafting, other phenomena. Problems: linearization, .. But even if fix all these theoretical problems, there is an empirical one.
+
+That is, I want to connect this behavior of Modern German headless relatives to the shape of its relative pronouns. These pronouns are \tsc{wh}-elements. The OHG and Gothic ones are not \tsc{wh}, they are \tsc{d}. Their relative pronouns look different, and so their headless relatives can also behave differently.
+
+
+
+
+Himmelreich
+
+there are agree relations between
+- V\scsub{ext} and \tsc{ext}
+- V\scsub{int} and \tsc{int}
+- \tsc{int} and \tsc{ext}
+
+three parameters:
+1 relation between V\scsub{ext} and \tsc{ext} + V\scsub{int} and \tsc{int} are symmetric or asymmetric
+2 relation between \tsc{ext} and \tsc{int} are symmetric or asymmetric
+3 if \tsc{ext} --- \tsc{int} is asymmetric, \tsc{ext} or \tsc{int} probes
+
+I keep the parameters she has stable, the bigger syntactic context is the same everywhere. I vary the content of \tsc{ext}
