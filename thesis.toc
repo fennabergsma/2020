@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -112,7 +112,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}The Polish extra light head}{221}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{228}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{227}{section.8.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.4}Summary}{233}{section.8.4}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +140,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{261}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{263}{section*.22}%
+\contentsline {chapter}{Bibliography}{263}{section*.126}%

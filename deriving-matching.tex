@@ -998,36 +998,94 @@ To summarize, I decomposed the relative pronoun into the three morphemes \tit{k}
 
 \section{The Polish extra light head}\label{sec:pol-elh}
 
-In Chapter \ref{ch:the-basic-idea}, I argued that in the matching type, the features of the light head are spelled out in such a way that they form the constituency shown in Figure \ref{ex:simple-matching}.
+In Chapter \ref{ch:the-basic-idea}, I suggested that headless relatives are derived from light-headed relatives. The light head or the relative pronoun can be deleted when either of them forms a constituent within other. In Chapter \ref{ch:deriving-onlyinternal} I showed what the extra light head in Modern German looks like. I demonstrated
 
-\ex.\label{ex:simple-matching}
+In the introduction of this chapter, I suggested that in Polish features of the light head are spelled out in such a way that they form the constituency shown in \ref{ex:pol-lh-complex}.
+
+\ex.\label{ex:pol-lh-complex}
 \begin{forest} boom
-[ϕP
-   [ϕ]
-   [\tsc{k}P
-       [\tsc{k}]
-   ]
-]
-\end{forest}
-
-In Chapter \ref{ch:deriving-onlyinternal}, I argued for Modern German that the functional sequence for the extra light head contains the features in \ref{ex:fseq-wh-lh-pol}.
-
-\ex. \begin{forest} boom
-  [\tsc{k}P
-      [\tsc{k}]
-      [\tsc{ind}P
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [\tsc{ref}]
-              ]
+  [\tsc{k}P,
+  tikz={
+  \node[label=below:\tit{go/mu},
+  draw,circle,
+  scale=0.75,
+  fit to=tree]{};
+  }
+      [\tsc{k}P
+          [ϕP
+              [\phantom{xxx}, roof, baseline]
           ]
+          [\tsc{k}]
       ]
   ]
 \end{forest}
-\label{ex:fseq-wh-lh-pol}
+
+% In Chapter \ref{ch:the-basic-idea}, I suggested that light heads consist of at least two features: ϕ and \tsc{k}. In this section, I specify the feature content of the light head in more detail.
+% Before I dive into the feature content of the light head, I first need to identify it, as it does not surface in headless relatives.
+% I consider two kinds of light-headed relatives as the source of the headless relative.
+% First, the deletion of the light head is optional, and the light-headed relative is derived from an existing light-headed relative.
+% Second, the deletion of the light head is obligatory, and the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German.
+% I consider the first option first, and I give two reasons against it.
+% However, to identify the exact input structure, I take the light head from the existing light-headed relative as a point of departure, and I modify it in such a way that it is appropriate as a light head for a headless relative.
+% I end up claiming that the phi- and case-feature portmanteau of the relative pronoun is the light head in headless relatives, shown below in \ref{ex:mg-lh}.
+
+%worked out version in polish
+
+
+In this section I have argued that the extra light head in Polish is consists of the \tit{o} and a suffix. This means that I propose the light-headed relative that headless are derived from is of the type I show in \ref{ex:pol-elh-rp}
+
+\exg. Jan lubi [ogo] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rp}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:pol-elh-rp}
+
+For Modern German, I considered two kinds of light-headed relatives as the source of the headless relative.
+First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
+For Modern German I concluded it was the second, and I proposed which features this extra light head should consist of. This set of features in Polish corresponds to the extra light head \tit{ogo} or \tit{omu}, which is not attested as a light head in an existing light-headed relative in Polish.
+
+In the rest of this section I consider the existing Polish light-headed relative that could potentially be the source for headless relatives. This is the light-headed relative that in which the demonstrative is the light head, as shown in \ref{ex:pol-light-headed}.
+
+\exg. Jan śpiewa to, co Maria śpiewa.\\
+Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} Maria sings\\
+`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{103}}\label{ex:pol-light-headed}
+
+For Modern German, I gave two arguments for not taking this existing light-headed relative as source of the headless relative. In what follows, I show that these arguments hold for Polish in the same way do for Modern German.
+
+First, in headless relatives the morpheme \tit{kolwiek} `ever' can appear, as shown in \ref{ex:pol-headless-ever}.
+
+\exg. Jan śpiewa co -kolwiek Maria śpiewa.\\
+Jan sings \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
+`Jan sings everything Maria sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headless-ever}
+
+Light-headed relatives do not allow this morpheme to be inserted, illustrated in \ref{ex:pol-headed-ever}.
+
+\exg. *Jan śpiewa to, co -kolwiek Maria śpiewa.\\
+Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
+`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headed-ever}
+
+Just like for Modern German, I assume that the headless relative is not derived from an ungrammatical structure.\footnote{
+\citet{citko2004} takes the complementary distribution of \tit{kolwiek} `ever' and the light head to mean that they share the same syntactic position. I have nothing to say about the exact syntactic position of \tit{ever}, but in my account it cannot be the head of the relative clause, as this position is reserved for the extra light head. My reason for the incompatibility of \tit{ever} and the light head is that they are semantically incompatible.
+
+For concreteness, I assume \tit{ever} to be situated within the relative clause. Placing it in the main clause generates a different meaning, illustrated by the contrast in meaning between \ref{ex:cz-wh-ever} and \ref{ex:cz-ever-wh} in Czech.
+
+\ex.
+\ag. Sním, co -koliv mi uvaříš.\\
+ eat.\tsc{1}sg what ever I.\tsc{dat} cook.2\tsc{sg}\\
+ `I will eat whatever you will cook for me.'\label{ex:cz-wh-ever}
+\bg. Sním co -koliv, co mi uvaříš.\\
+ eat.\tsc{1}sg what ever what I.\tsc{dat} cook.2\tsc{sg}\\
+ `I will eat anything that you will cook for me.' \flushfill{Czech, \pgcitealt{simik2016}{115}}\label{ex:cz-ever-wh}
+
+\phantom{x}
+}
+
+The second argument against the existing light-headed relatives being the source of headless relatives comes from their interpretation. Headless relatives have two possible interpretations, and light-headed relatives have only one of these.
+Just like in Modern German, Polish headless relatives can be analyzed as either universal or definite \pgcitep{citko2004}{103}.
+Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
+
+
+
+
+
 
 The two morphemes that spell out the features in \ref{ex:fseq-wh-lh-pol} are the vowel and the suffix, as shown in \ref{ex:pol-elhs}.
 
@@ -1194,67 +1252,19 @@ This phrase is contained in the lexical tree in \ref{ex:pol-entry-mu}, so it is 
 \end{forest}
 \end{adjustbox}
 
-In this section I have argued that the extra light head in Polish is consists of the \tit{o} and a suffix. This means that I propose the light-headed relative that headless are derived from is of the type I show in \ref{ex:pol-elh-rp}
-
-\exg. Jan lubi [ogo] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
-Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rp}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
-`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:pol-elh-rp}
-
-For Modern German, I considered two kinds of light-headed relatives as the source of the headless relative.
-First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
-For Modern German I concluded it was the second, and I proposed which features this extra light head should consist of. This set of features in Polish corresponds to the extra light head \tit{ogo} or \tit{omu}, which is not attested as a light head in an existing light-headed relative in Polish.
-
-In the rest of this section I consider the existing Polish light-headed relative that could potentially be the source for headless relatives. This is the light-headed relative that in which the demonstrative is the light head, as shown in \ref{ex:pol-light-headed}.
-
-\exg. Jan śpiewa to, co Maria śpiewa.\\
-Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} Maria sings\\
-`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{103}}\label{ex:pol-light-headed}
-
-For Modern German, I gave two arguments for not taking this existing light-headed relative as source of the headless relative. In what follows, I show that these arguments hold for Polish in the same way do for Modern German.
-
-First, in headless relatives the morpheme \tit{kolwiek} `ever' can appear, as shown in \ref{ex:pol-headless-ever}.
-
-\exg. Jan śpiewa co -kolwiek Maria śpiewa.\\
-Jan sings \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
-`Jan sings everything Maria sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headless-ever}
-
-Light-headed relatives do not allow this morpheme to be inserted, illustrated in \ref{ex:pol-headed-ever}.
-
-\exg. *Jan śpiewa to, co -kolwiek Maria śpiewa.\\
-Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever Maria sings\\
-`John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headed-ever}
-
-Just like for Modern German, I assume that the headless relative is not derived from an ungrammatical structure.\footnote{
-\citet{citko2004} takes the complementary distribution of \tit{kolwiek} `ever' and the light head to mean that they share the same syntactic position. I have nothing to say about the exact syntactic position of \tit{ever}, but in my account it cannot be the head of the relative clause, as this position is reserved for the extra light head. My reason for the incompatibility of \tit{ever} and the light head is that they are semantically incompatible.
-
-For concreteness, I assume \tit{ever} to be situated within the relative clause. Placing it in the main clause generates a different meaning, illustrated by the contrast in meaning between \ref{ex:cz-wh-ever} and \ref{ex:cz-ever-wh} in Czech.
-
-\ex.
-\ag. Sním, co -koliv mi uvaříš.\\
- eat.\tsc{1}sg what ever I.\tsc{dat} cook.2\tsc{sg}\\
- `I will eat whatever you will cook for me.'\label{ex:cz-wh-ever}
-\bg. Sním co -koliv, co mi uvaříš.\\
- eat.\tsc{1}sg what ever what I.\tsc{dat} cook.2\tsc{sg}\\
- `I will eat anything that you will cook for me.' \flushfill{Czech, \pgcitealt{simik2016}{115}}\label{ex:cz-ever-wh}
-
-\phantom{x}
-}
-
-The second argument against the existing light-headed relatives being the source of headless relatives comes from their interpretation. Headless relatives have two possible interpretations, and light-headed relatives have only one of these.
-Just like in Modern German, Polish headless relatives can be analyzed as either universal or definite \pgcitep{citko2004}{103}.
-Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
-
 In sum, just like Modern German, Polish headless relatives do not seem to be derived from light-headed relatives in which the light head is a demonstrative. A difference between Polish and Modern German demonstratives is that Polish ones do not spell out definite features. The fact that Polish demonstratives are also not the light head of a headless relative confirm that deixis features have to be absent from the extra light head.
 
 
 
 \section{Comparing Polish constituents}\label{sec:comparing-polish}
 
-In this section, I compare the constituents of extra light heads to those of relative pronouns in Polish. I give three examples, in which the internal and external case vary.
-I start with an example with matching cases: the internal and the external case are both accusative.
-Then I give an example in which the internal case is more complex than the external case: the internal case is the dative and the external case is the accusative.
-I end with an example in which the external case is more complex than the internal case: the internal case is the accusative and the external case is the dative.
-In Polish, a matching language, only the first example is grammatical. I derive this by showing that only in this situation the light head can be deleted. When the cases match, the light head forms namely a constituent that is contained in the structure of the relative pronoun.
+In this section, I compare the constituents of extra light heads to those of relative pronouns in Polish. This is the worked out version of the comparisons in Section \ref{sec:basic-matching}. What is different here is that I show the comparison for Polish specifically, and that I motivated the content of the constituents that are being compared.
+
+I give three examples, in which the internal and external case vary.
+I start with an example with matching cases, in which the internal and the external case are both accusative.
+Then I give an example in which the internal dative case is more complex than the external accusative case.
+I end with an example in which the external dative case is more complex than the internal accusative case.
+I show that the first examples is grammatical and that the last two are not. I derive this by showing that only in the first situation the light head forms a constituent within the relative pronoun, and that it can therefore then be deleted.
 
 I start with the matching cases.
 Consider the example in \ref{ex:polish-acc-acc-rep}, in which the internal accusative case competes against the external accusative case. The relative clause is marked in bold.
@@ -1275,24 +1285,18 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
         \tsc{acc} extra light head \tit{} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{acc}P, s sep=40mm,
+          [\tsc{acc}P, s sep=20mm,
           tikz={
           \node[
-          draw, constituent-deletion,
-          yshift=-0.4cm,
+          draw, circle,
           fill=DG,fill opacity=0.2,
-          scale=1.25,
+          scale=0.95,
+          yshift=-0.5cm,
           dashed,
           fit to=tree]{};
           }
-              [\tsc{an}P,
-              tikz={
-              \node[label=below:\tit{o},
-              draw,circle,
-              scale=0.95,
-              fit to=tree]{};
-              }
-                  [\phantom{xxx}, roof]
+              [\tsc{an}P
+                  [\phantom{x}o\phantom{x}, roof]
               ]
               [\tsc{acc}P,
               tikz={
@@ -1318,25 +1322,21 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
       \\
       \cmidrule{1-1}
       \begin{forest} boom
-        [\tsc{rel}P, s sep=20mm
+        [\tsc{rel}P, s sep=15mm
             [\tsc{rel}P
                 [\phantom{x}k\phantom{x}, roof]
             ]
-            [\tsc{acc}P, s sep=40mm, tikz={
+            [\tsc{acc}P, s sep=20mm,
+            tikz={
             \node[
-            draw, constituent-deletion, yshift=-0.4cm,
-            scale=1.25,
+            draw, circle,
+            scale=0.95,
+            yshift=-0.5cm,
             dashed,
             fit to=tree]{};
             }
-                [\tsc{an}P,
-                tikz={
-                \node[label=below:\tit{o},
-                draw,circle,
-                scale=0.95,
-                fit to=tree]{};
-                }
-                    [\phantom{xxx}, roof]
+                [\tsc{an}P
+                    [\phantom{x}o\phantom{x}, roof]
                 ]
                 [\tsc{acc}P,
                 tikz={
@@ -1367,7 +1367,7 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
 
 The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{go}.
 The extra light head consists of two morphemes: \tit{o} and \tit{go}.
-As usual, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+As usual, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it, or I reduce the structure to a triangle, and I place the corresponding phonology under it.
 I draw a dashed circle around each constituent that is a constituent in both the extra light head and the relative pronoun.
 
 The extra light head consists of two constituents: the \tsc{an}P and the (lower) \tsc{acc}P. Together they form the (higher) \tsc{acc}P.
@@ -1398,20 +1398,16 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
         \tsc{acc} extra light head \tit{o-go} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{acc}P, s sep=42mm
+          [\tsc{acc}P, s sep=20mm
               [\tsc{an}P,
               tikz={
-              \node[label=below:\tit{o},
-              draw,circle,
-              scale=0.95,
-              fit to=tree]{};
               \node[
               draw,circle,
-              scale=1,
+              scale=0.85,
               dashed,
               fit to=tree]{};
               }
-                  [\phantom{xxx}, roof]
+                  [\phantom{x}o\phantom{x}, roof]
               ]
               [\tsc{acc}P,
               tikz={
@@ -1446,20 +1442,16 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
             [\tsc{rel}P
                 [\phantom{x}k\phantom{x}, roof]
             ]
-            [\tsc{dat}P, s sep=45mm
+            [\tsc{dat}P, s sep=22mm
                 [\tsc{an}P,
                 tikz={
-                \node[label=below:\tit{o},
-                draw,circle,
-                scale=0.95,
-                fit to=tree]{};
                 \node[
                 draw,circle,
-                scale=1,
+                scale=0.85,
                 dashed,
                 fit to=tree]{};
                 }
-                    [\phantom{xxx}, roof]
+                    [\phantom{x}o\phantom{x}, roof]
                 ]
                 [\tsc{dat}P,
                 tikz={
@@ -1498,7 +1490,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
 
 The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{mu}.
 The light head consists of two morphemes: \tit{o} and \tit{go}.
-Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it, or I reduce the structure to a triangle, and I place the corresponding phonology under it.
 I draw a dashed circle around each constituent that is a constituent in both the extra light head and the relative pronoun.
 
 The extra light head consists of two constituents: the \tsc{an}P and the (lower) \tsc{acc}P. Together they form the (higher) \tsc{acc}P.
@@ -1532,20 +1524,16 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
         \tsc{dat} extra light head \tit{o-mu} \\
         \cmidrule{1-1}
         \begin{forest} boom
-          [\tsc{dat}P, s sep=45mm
+          [\tsc{dat}P, s sep=25mm
               [\tsc{an}P,
               tikz={
-              \node[label=below:\tit{o},
-              draw,circle,
-              scale=0.95,
-              fit to=tree]{};
               \node[
               draw,circle,
-              scale=1,
+              scale=0.85,
               dashed,
               fit to=tree]{};
               }
-                  [\phantom{xxx}, roof]
+                  [\phantom{x}o\phantom{x}, roof]
               ]
               [\tsc{dat}P,
               tikz={
@@ -1585,20 +1573,16 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
             [\tsc{rel}P
                 [\phantom{x}k\phantom{x}, roof]
             ]
-            [\tsc{acc}P, s sep=42mm
+            [\tsc{acc}P, s sep=20mm
                 [\tsc{an}P,
                 tikz={
-                \node[label=below:\tit{o},
-                draw,circle,
-                scale=0.95,
-                fit to=tree]{};
                 \node[
                 draw,circle,
-                scale=1,
+                scale=0.85,
                 dashed,
                 fit to=tree]{};
                 }
-                    [\phantom{xxx}, roof]
+                    [\phantom{x}o\phantom{x}, roof]
                 ]
                 [\tsc{acc}P,
                 tikz={
@@ -1633,12 +1617,12 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
 
 The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{go}.
 The light head consists of two morphemes: \tit{o} and \tit{mu}.
-Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it.
+Again, I circle the part of the structure that corresponds to a particular lexical entry, and I place the corresponding phonology under it, or I reduce the structure to a triangle, and I place the corresponding phonology under it.
 I draw a dashed circle around each constituent that is a constituent in both the extra light head and the relative pronoun.
 
 The extra light head consists of two constituents: the \tsc{an}P and the (lower) \tsc{dat}P.
-In this case, the relative pronoun does not contain both these constituents. The relative pronoun only contains the \tsc{acc}P, and it lacks the \tsc{f}3 that makes a \tsc{dat}P. Since the weaker feature containment requirement is not met, the stronger constituent requirement cannot be met either.
+In this case, the relative pronoun does not contain both these constituents. The relative pronoun only contains the \tsc{acc}P, and it lacks the \tsc{f}3 that makes a \tsc{dat}P. Since the weaker feature containment requirement is not met, the stronger constituent containment requirement cannot be met either.
 The extra light head also does not contain all constituents or features that the relative pronoun contains, because it lacks the complete \tsc{rel}P.
-Therefore, the extra light head cannot be deleted, and the extra light head can also not delete the relative pronoun.
+Therefore, the extra light head cannot be deleted, and the relative pronoun cannot be deleted either.
 
 \section{Summary}
