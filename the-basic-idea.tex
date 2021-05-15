@@ -3,21 +3,19 @@
 \chapter{The basic idea}\label{ch:the-basic-idea}
 
 In Chapter \ref{ch:typology} I introduced two descriptive parameters that generate the attested languages, as shown in Figure \ref{fig:two-parameters}.
-The first parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes between unrestricted languages (e.g. Old High German) on the one hand and internal-only languages (e.g. Modern German) and matching languages (e.g. Polish) on the other hand.
-The second parameter concerns whether the internal case is allowed to surface when it wins the case competition (allow \tsc{int?}). This parameter distinguishes between internal-only languages (e.g. as Modern German) on the one hand and unrestricted languages (e.g. Old High German) on the other hand.
 
 \begin{figure}[htbp]
   \centering
     \footnotesize{
     \begin{tikzpicture}[node distance=1.5cm]
       \node (question2) [question]
-      {allow \tsc{int}?};
+      {allow \tsc{int}?}; %ϕ+\tsc{k} portmanteau?
           \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
           {matching};
               \node (example2) [example, below of=outcome2, yshift=0.25cm]
               {\scriptsize{e.g. Polish\\\phantom{x}}};
           \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
-          {allow \tsc{ext}?};
+          {allow \tsc{ext}?}; %\tsc{lh}-\tsc{rp} syncretism?
               \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
               {internal-only};
                   \node (example3) [example, below of=outcome3, yshift=0.25cm]
@@ -37,14 +35,15 @@ The second parameter concerns whether the internal case is allowed to surface wh
     \label{fig:two-parameters}
 \end{figure}
 
+The first parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes unrestricted languages (e.g. Old High German) from internal-only languages (e.g. Modern German) and matching languages (e.g. Polish). = actually ϕ + \tsc{k} portmanteau
+The second parameter concerns whether the internal case is allowed to surface when it wins the case competition (allow \tsc{int?}). This parameter distinguishes internal-only languages (e.g. as Modern German) from unrestricted languages (e.g. Old High German). = \tsc{rp} + \tsc{lh} syncretism
+
 ``A natural question at this point is whether this typology needs to be fully stipulative, or is to some extent derivable from independent properties of individual languages'' \citet{grosu1994}{147}
 
-In this chapter I show how the typology can be derived from the morphology of the languages.
-
-This chapter is structured as follows.
-
-
-This chapter gives the basic idea behind my proposal. First, I introduce the the underlying assumptions that I am making. Second, I briefly go through the three options that arise as a consequence of these assumptions. Throughout the rest of the chapter I motivate the proposal, and I illustrate it with examples.
+I propose that the typology can be derived from the morphology of the languages.
+first, basic assumptions in place
+then, show where the crosslingustic differences come from
+then show how they lead to differences
 
 \section{Underlying assumptions}
 
@@ -76,15 +75,12 @@ This brings me to my second assumption, which concerns the circumstances under w
 In Section \ref{sec:basic-matching} I show that constituent containment is also a necessary requirement is other types of deletion operations.
 }
 
-CONSTITUENT
-how to formulate the syncretism thing in terms of constituent containment
-
-For light heads and relative pronouns this means that one of them can be absent when they form a constituent within the other element. Throughout this chapter I elaborate further on the exact requirements for constituent containment.\footnote{
-There are namely two types of containment possible. The first one is structural constituent containment: an element can be absent if it structurally forms a constituent within the other element. I elaborate on this in Section \ref{sec:basic-matching}. The second one is formal containment: an element can be absent if its form is syncretic with a constituent within the other element. I elaborate on this in Section \ref{sec:basic-unrestricted}.}
-In other words, it depends on the comparison between the light head and the relative pronoun which one of them is absent. Specifically, it depends on the comparison of the constituents that the two elements consist of. Note that it is also possible that neither of the elements form a constituent within the other one. The consequence is then that neither of them is deleted, which describes the situation in which there is no grammatical headless relative.
+For light heads and relative pronouns this means that one of them can be absent when they form a constituent within the other element.\footnote{ Throughout this chapter I elaborate further on the exact requirements for constituent containment. There are namely two types of constituent containment possible. The first one is structural constituent containment: an element can be absent if it structurally forms a constituent within the other element. I elaborate on this in Section \ref{sec:basic-matching}. The second one is formal constituent containment: an element can be absent if its form is syncretic with a constituent within the other element. I elaborate on this in Section \ref{sec:basic-unrestricted}.}
+In other words, it depends on the comparison between the light head and the relative pronoun themselves which one of them is absent. Specifically, it depends on the comparison of the constituents that the two elements consist of.
+Note that it is also possible that neither of the elements form a constituent within the other one. The consequence is then that neither of them is deleted, which describes the situation in which there is no grammatical headless relative.
 
 I continue with my third assumption.
-In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Chapter \ref{ch:deriving-onlyinternal} to \ref{ch:discussing-unrestricted} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-intonly} gives a simplified representation of them.
+In order to be able to compare the light head and the relative pronoun, I zoom in on their syntactic structures. In Chapter \ref{ch:deriving-onlyinternal} to \ref{ch:discussing-unrestricted} I give arguments to support the structures I am assuming here. Figure \ref{fig:rel-lh-intonly} gives a simplified representation of the light head and the relative pronoun.
 
 \begin{figure}[htbp]
   \center
@@ -114,23 +110,119 @@ In order to be able to compare the light head and the relative pronoun, I zoom i
   \label{fig:rel-lh-intonly}
 \end{figure}
 
-I assume that the light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case features (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun has at least one feature in addition, which I call here \tsc{rel}.
+I assume that the light head and the relative pronoun partly contain the same syntactic features. The features they have in common are case features (\tsc{k}) and what I here simplify as phi-features (ϕ). The light head and the relative pronoun differ from each other in that the relative pronoun has at least one feature more, which I call here \tsc{rel}.
 
-My last assumption makes crucial use of Nanosyntax. I assume that the only way in which languages differ is in their lexicon: different languages contain different lexical entries. In Nanosyntax, lexical entries have the form of constitutions, as those are the only objects that can be spelled out. This means that languages differ in how they organize their features into constituents. This has consequences for the deletion of light heads and relative pronouns, since they need to be contained in the other the be deleted. For light heads and relative pronouns the crucial difference is whether phi-features are case features are each spelled out by their own lexical entry or whether they form a portmanteau and whether the light head and the relative pronoun are syncretic.
+The three assumptions I just introduced hold for all language types I discuss. In all language types, headless relatives are derived from light-headed relatives. For all language types, the deletion operation requires constituent containment. In all language types, the relative pronoun consists of the features of the light head plus at least one additional feature.
+The difference between languages does not come from modifying these assumptions in any way, but from how different languages package their features into constituents. Before I explain how differences in constituency lead to different grammaticality patterns, I show how differences in constituency arise.
 
-Summing up this section, I make four assumptions. My first assumption is that headless relative clauses are derived from light-headed relatives. Light-headed relatives contain a light head and relative pronoun. In a headless relative either the light head or the relative pronoun is deleted.
-My second assumption is that the necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) forms a constituent within the other element. My third assumption is that light heads and relative pronouns contain the same features, and that the relative pronoun contains one additional feature: \tsc{rel}. My last assumption is that the only way in which languages differ is in their lexicon, which contains different constituents with features that correspond to phonology.
+In Chapter \ref{ch:decomposition} I discussed the third person singular feminine pronoun in German. I repeat the lexical entry I gave for it in \ref{ex:faroese-teg-lexicon-rep}.
+
+\ex.
+\begin{forest} boom
+  [\ac{acc}P
+      [\ac{f}2]
+      [\ac{nom}P
+          [\ac{f}1]
+          [3\ac{sg}.\tsc{f}P
+              [\phantom{xxx}, roof]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{sie}}; }
+\end{forest}
+\label{ex:german-sie-lexicon-rep}
+
+This means that the syntactic structure in \ref{ex:german-sie-spellout-rep} is spelled out as \tit{sie}.
+
+\ex. \begin{forest} boom
+[\ac{acc}P,
+tikz={
+\node[label=below:\tit{sie},
+draw,circle,
+scale=0.825,
+fit to=tree]{};
+}
+    [\ac{f}2]
+    [\ac{nom}P
+        [\ac{f}1]
+        [3\ac{sg}.\tsc{f}P
+            [\phantom{xxx}, roof]
+        ]
+    ]
+]
+\end{forest}
+\label{ex:german-sie-spellout-rep}
+
+The third person singular feminine plural consists of a single constituent.
+
+The situation is different for the third person singular pronoun in Khanty, which I also showed in Chapter \ref{ch:decomposition}. In Khanty, there is not a single lexical entry that spells out all features that the German lexical entry in \ref{ex:german-sie-lexicon-rep} spells out. Instead, the same features are realized by two separate lexical entries, shown in \ref{ex:khanty-lexicon-rep}.
+
+\ex.\label{ex:khanty-lexicon-rep}
+\a.
+\begin{forest} boom
+  [\ac{nom}P
+      [\ac{f}1]
+      [3\ac{sg}P
+          [\phantom{xxx}, roof]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{luw}}; }
+\end{forest}\label{ex:khanty-luw-lexicon-rep}
+\b. \begin{forest} boom
+  [\ac{acc}P
+      [\ac{f}2]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{e:l}}; }
+\end{forest}\label{ex:khanty-el-lexicon-rep}
+
+Nanosyntax only allows constituents to be spelled out, which means that in order to spell out the \tsc{acc}P, the \tsc{nom}P needs to be moved out of the way first.\footnote{
+The movement operation is part of the spellout algorithm in Nanosyntax, which is the same for all languages. I elaborate on this spellout algorithm in Chapters \ref{ch:deriving-onlyinternal} and \ref{ch:deriving-matching}.
+}
+The syntactic structure of the accusative third person singular pronoun in Khanty looks as in \ref{ex:khanty-luw-el-spellout-rep}.
+
+\ex. \begin{forest} boom
+[\ac{acc}P
+    [\ac{nom}P
+        [\tit{luw}, roof]
+    ]
+    [\ac{acc}P,
+    tikz={
+    \node[label={below:\tit{e:l}},
+    draw,circle,
+    scale=0.775,
+    fit to=tree]{};
+    }
+     [\ac{f}2]
+    ]
+]
+\end{forest}
+\label{ex:khanty-luw-el-spellout-rep}
+
+Now compare the syntactic structures of the German accusative pronoun in \ref{ex:german-sie-spellout-rep} and the Khanty one in \ref{ex:khanty-luw-el-spellout-rep}. The feature content is the same (except for the feminine feature, which does not play a role here), but the constituents look different.
+This change in constituency is a direct consequence the lexical entries that are available within the language.
+
+Exactly this type of difference is what is going to lead to the different grammaticality patterns in headless relatives. Languages contain different lexical entries which spell out features of the light head and the relative pronoun.
+The different lexical entries lead to differences in constituency. The different constituents lead to differences in whether or the light head and the relative pronoun can be deleted. Lastly, whether or not the light head and the relative pronoun can be deleted lead to different grammaticality patterns.
+
+In sum, I assume that headless relative clauses are derived from light-headed relatives. Light-headed relatives contain a light head and relative pronoun. In a headless relative either the light head or the relative pronoun is deleted.
+The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) forms a constituent within the other element.
+Light heads and relative pronouns contain the same features, and that the relative pronoun contains one feature more: \tsc{rel}.
+The difference between grammaticality patterns in languages arise from languages having different lexical entries that spell out the features of the light head and the relative pronoun. The different lexical entries lead to differences in constituency, which lead to differences in deletion possibilities, which lead to different grammaticality patterns.
+
+
 
 
 \section{The three language types}\label{sec:three-types}
 
-In this I show how different types of constituency leads to different patterns in differences in whether or not the light head and the relative pronoun is deleted, and therefore to different language types. In Chapters \ref{ch:deriving-onlyinternal} to \ref{ch:discussing-unrestricted}, I motivate the constituency I propose for each of the languages, and I go through the derivations in detail.
-
-For each of the three languages types, I first give the constituency within light heads and relative pronouns. Then I compare the constituents of the two elements when they appear in different cases, which is (i) when the cases on the light head and the relative pronoun match, (ii) when the relative pronoun bears the more complex case, and (iii) when the light head bears the more complex case. I show for each of the language types that the correct results are derived in the different situations.
+In Chapter \ref{ch:typology} I discussed three different language types. In this section I broadly sketch the kind of lexical entries these language types have that ultimately lead to them being of these types.
+For each language type I start with describing the kind of lexical entries they have, and I show the constituent the light head and the relative pronoun have because of that.\footnote{
+In this chapter I do not motivate the lexical entries I propose. In chapters \ref{ch:deriving-onlyinternal} to \ref{ch:deriving-unrestricted} I take a concrete example for each language type and I work out in detail and I show evidence for the lexical entries I am proposing.}
+For each language type, I compare the constituents of the light head and the relative pronoun (i) when the cases on the light head and the relative pronoun match, (ii) when the relative pronoun bears the more complex case, and (iii) when the light head bears the more complex case.
+I show that with the constituents I proposed the light head and the relative pronoun can or cannot be deleted in these different situation in accordance with what is expected in the given language type.
 
 \subsection{The internal-only type}\label{sec:basic-internal}
 
-I start with the internal-only type of language. In this type of language, the constituency is as shown in Figure \ref{fig:rel-lh-intonly-1}.
+I start with the internal-only type of language. Consider the light head and the relative pronoun in this type of language in Figure \ref{fig:rel-lh-intonly-1}.
 
 \begin{figure}[htbp]
   \center
@@ -140,6 +232,11 @@ I start with the internal-only type of language. In this type of language, the c
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
       [\tsc{k}P,
+      tikz={
+      \node[draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
           [\tsc{k}]
           [ϕP
               [\phantom{xxx}, roof, baseline]
@@ -149,10 +246,20 @@ I start with the internal-only type of language. In this type of language, the c
       & \phantom{x} &
     \begin{forest} boom
       [\tsc{rel}P
-          [\tsc{rel}P
+          [\tsc{rel}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\phantom{xxx}, roof, baseline]
           ]
-          [\tsc{k}P
+          [\tsc{k}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\tsc{k}]
               [ϕP
                   [\phantom{xxx}, roof, baseline]
@@ -166,7 +273,8 @@ I start with the internal-only type of language. In this type of language, the c
   \label{fig:rel-lh-intonly-1}
 \end{figure}
 
-The \tsc{k}P is spelled out a whole, including the ϕP. The \tsc{rel}P has its own spellout and is merged as a prefix to the \tsc{k}P. Chapter \ref{ch:deriving-onlyinternal} motivates this analysis.
+The light head is spelled out by a single lexical entry, indicated by the circle around the \tsc{k}P. This lexical entry is a portmanteau of a phi- and case-features.
+The relative pronoun is spelled out by two lexical entries, indicated by the circles around the \tsc{k}P and the \tsc{rel}P. The phi- and case-features of the relative pronoun are spelled out by the same portmanteau as the light head is. The \tsc{rel}P is spelled out by a separate lexical entry. Chapter \ref{ch:deriving-onlyinternal} motivates this analysis for the internal-only type of language Modern German.
 
 In Figure \ref{fig:nom-nom-intonly}, I give an example in which the relative pronoun and the light head bear the same case.
 
@@ -219,6 +327,7 @@ In Figure \ref{fig:nom-nom-intonly}, I give an example in which the relative pro
 
 I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
 The light head (the \tsc{nom}P) forms a constituent within the relative pronoun (the \tsc{rel}P), so the light head can be deleted. I illustrate this by marking the content of the dashed circles for the light head gray.
+As the light head is deleted, the headless relative surfaces with the relative pronoun that bears the internal case.
 
 In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pronoun bears a more complex case than the light head.
 
@@ -274,6 +383,7 @@ In Figure \ref{fig:nom-acc-intonly}, I give an example in which the relative pro
 
 I draw a dashed circle around each constituent that is a constituent in both the light head and the relative pronoun.
 The light head (the \tsc{nom}P) still forms a constituent within the relative pronoun (the \tsc{rel}P), so the light head can be deleted. I illustrate this by marking the content of the dashed circles for the light head gray.
+As the light head is deleted, the headless relative surfaces with the relative pronoun that bears the internal case.
 
 In Figure \ref{fig:acc-nom-intonly}, I give an example in which the light head bears a more complex case than the relative pronoun.
 
@@ -331,8 +441,9 @@ Different from the examples in Figure \ref{fig:nom-nom-intonly} and \ref{fig:acc
 The \tsc{nom}P of the light head forms a constituent within the relative pronoun, but the relative pronoun does not contain the feature \tsc{f}2 that forms an \tsc{acc}P.
 The \tsc{nom}P of the relative pronoun forms a constituent within the relative pronoun, but the light head does not contain the feature \tsc{rel} that forms a \tsc{rel}P.
 As a result, none of the elements can be absent. I illustrate this by leaving the content of both dashed circles unfilled.
+As none of the items is deleted, there is no grammatical headless relative possible.
 
-These comparisons correctly the derive the observed patterns in internal-only languages. An overview of the patterns is shown in Table \ref{tbl:overview-rel-light-mg}.
+The comparisons between the light head and the relative pronoun in different cases correctly the derive the observed patterns in internal-only languages. An overview of the patterns is shown in Table \ref{tbl:overview-rel-light-mg}.
 
 \begin{table}[htbp]
   \center

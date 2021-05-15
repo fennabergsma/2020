@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -84,15 +84,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Underlying assumptions}{136}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The three language types}{139}{section.6.2}%
+\contentsline {section}{\numberline {6.2}The three language types}{141}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{139}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{141}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}The matching type}{142}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}The matching type}{145}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{149}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{151}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Summary}{154}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Summary}{157}{section.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{157}{chapter.7}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +140,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{261}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{263}{section*.126}%
+\contentsline {chapter}{Bibliography}{263}{section*.31}%
