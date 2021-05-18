@@ -465,7 +465,7 @@ Headless relatives in internal-only languages are grammatical when the internal 
 
 \subsection{The matching type}\label{sec:basic-matching}
 
-I continue with the matching type of language. In this type of language, the constituency is as shown in Figure \ref{fig:rel-lh-matching}.
+I start with the matching type of language. Consider the light head and the relative pronoun in this type of language in Figure \ref{fig:rel-lh-matching}.
 
 \begin{figure}[htbp]
   \center
@@ -475,10 +475,20 @@ I continue with the matching type of language. In this type of language, the con
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
       [\tsc{k}P
-          [ϕP
+          [ϕP,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\phantom{xxx}, roof]
           ]
-          [\tsc{k}P
+          [\tsc{k}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\tsc{k}, baseline]
           ]
       ]
@@ -486,14 +496,29 @@ I continue with the matching type of language. In this type of language, the con
       & \phantom{x} &
     \begin{forest} boom
       [\tsc{rel}P
-          [\tsc{rel}P
+          [\tsc{rel}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\phantom{xxx}, roof, baseline]
           ]
           [\tsc{k}P
-              [ϕP
+              [ϕP,
+              tikz={
+              \node[draw,circle,
+              scale=0.85,
+              fit to=tree]{};
+              }
                   [\phantom{xxx}, roof]
               ]
-              [\tsc{k}P
+              [\tsc{k}P,
+              tikz={
+              \node[draw,circle,
+              scale=0.85,
+              fit to=tree]{};
+              }
                   [\tsc{k}, baseline]
               ]
           ]
@@ -505,7 +530,7 @@ I continue with the matching type of language. In this type of language, the con
   \label{fig:rel-lh-matching}
 \end{figure}
 
-Like in the internal-only type of language, the \tsc{rel}P has its own spellout and is merged as a prefix. The difference between the two language types lies in how the ϕP and the \tsc{k}P are spelled out. In the matching type of language, the ϕP and the \tsc{k}P both correspond to a morpheme, which means that they both form separate constituents. As a result, the ϕP is moved over the \tsc{k}P (allowing the \tsc{k}P to form a constituent on its own, as only constituents can be spelled out). This crucially differs from the internal-only type of language, in which \tsc{k}P and ϕP are spelled out a by a single morpheme and no movement is taking place. In this section I show how this difference leads to different deletion possibilities and, therefore, to different grammaticality patterns. In Chapter \ref{ch:deriving-matching}, I motivate this analysis I put forward for the matching type of language.
+The light head is spelled out by two lexical entries: one that spells out the ϕP and one that spells out the \tsc{k}P which does not contain the ϕP. I indicate this by circling the ϕP and the \tsc{k}P. This is exactly where the difference between the internal-only type of language and the matching type of language lies in how the ϕP and the \tsc{k}P are spelled out. The relative pronoun is spelled out by three lexical entries: the ϕP and the \tsc{k}P that are also part of the light head, and in addition the \tsc{rel}P. I indcate this by circling the \tsc{rel}P, the ϕP and the \tsc{k}P. Chapter \ref{ch:deriving-onlyinternal} motivates this analysis for the matching type of language Polish.
 
 In Figure \ref{fig:nom-nom-matching}, I give an example in which the light head and the relative pronoun bear the same case.
 
