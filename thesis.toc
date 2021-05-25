@@ -92,7 +92,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{152}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Summary}{159}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Summary}{160}{section.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{161}{chapter.7}%
 \defcounter {refsection}{0}\relax 

@@ -1128,7 +1128,7 @@ In this chapter I only discuss the situation in which the relative pronoun as a 
       [DP, s sep = 20 mm
           [DP,
           tikz={
-          \node[label=below:\tit{d},
+          \node[
           draw,circle,
           scale=0.85,
           fit to=tree]{};
@@ -1153,7 +1153,7 @@ In this chapter I only discuss the situation in which the relative pronoun as a 
       [\tsc{rel}P, s sep = 20 mm
           [\tsc{rel}P,
           tikz={
-          \node[label=below:\tit{d},
+          \node[
           draw,circle,
           scale=0.85,
           fit to=tree]{};
@@ -1186,7 +1186,9 @@ In this chapter I only discuss the situation in which the relative pronoun as a 
 I propose that this light head does not only consist of phi- and case-features, but that they also contain a definite feature \tsc{d}. In Chapter \ref{ch:deriving-unrestricted} I motivate this claim. The light head is spelled out by two lexical entries. The definite feature is spelled out by its own lexical entry, indicated by the circle around the \tsc{d}P. The rest of the light head is spelled out by the portmanteau of phi- and case-features.
 
 The relative pronoun always consists of all features the light head consists of (see Section \ref{sec:assumptions} and motivation in Chapter \ref{ch:deriving-unrestricted}).
-Therefore, it consists of phi- and case-features, the feature \tsc{rel} and the feature \tsc{def}.
+Therefore, it consists of phi- and case-features, the feature \tsc{rel} and the feature \tsc{def}.\footnote{
+I actually assume that the relative pronoun that is being compared to the first possible light head also contains the feature \tsc{d}. I left it out of the structures there above because it was not relevant for the discussion.
+}
 The phi- and case-features are spelled out by the same portmanteau as in the light head. The feature \tsc{rel} and the feature \tsc{def} are spelled out by a single lexical entry.
 It is crucial for the analysis that there is a lexical entry for the \tsc{rel}P which contains the feature \tsc{rel} and the \tsc{d}P, but not a more specific one that spells out the \tsc{d}P on its own. In \ref{ex:entry-d}, I give the lexical entry, which spells out as \tit{d-}.
 
@@ -1201,7 +1203,7 @@ It is crucial for the analysis that there is a lexical entry for the \tsc{rel}P 
   {\draw (.east) node[right]{⇔ \tit{d-}}; }
 \end{forest}
 
-Chapter \ref{ch:deriving-unrestricted} motivates this analysis for the unrestricted type of language Old High German.
+Chapter \ref{ch:deriving-unrestricted} motivates this analysis for the unrestricted type of language Old High German. It also shows that the two other languages types, discussed as Modern German and Polish, do not have such a syncretism, so the introduction of a second possible light head does not aid them.
 
 In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible light head and relative pronoun, in which both elements bear the same case.
 
@@ -1210,19 +1212,21 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
   \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}[b]{ccc}
       \toprule
-      light head 2 & & relative pronoun 2 \\
+      light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [\tsc{d}P, s sep=20mm
+        [\tsc{d}P, s sep=20mm,
+        tikz={
+        \node[draw,circle,
+        dotted,
+        scale=1,
+        fit to=tree]{};
+        }
             [\tsc{d}P,
             tikz={
             \node[label=below:\tit{d},
             draw,circle,
             scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
             fit to=tree]{};
             }
                 [\phantom{xxx}, roof, baseline]
@@ -1232,10 +1236,6 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
             \node[label=below:\tit{-er},
             draw,circle,
             scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
             fit to=tree]{};
             }
                 [\tsc{f}1]
@@ -1247,7 +1247,14 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{rel}P, s sep=20mm
+        [\tsc{rel}P, s sep=20mm,
+        tikz={
+        \node[draw,circle,
+        dotted,
+        fill=DG,fill opacity=0.2,
+        scale=1.05,
+        fit to=tree]{};
+        }
             [\tsc{rel}P,
             tikz={
             \node[label=below:\tit{d},
@@ -1256,13 +1263,7 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
             fit to=tree]{};
             }
                 [\tsc{rel}]
-                [DP,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.9,
-                fit to=tree]{};
-                }
+                [DP
                     [\phantom{xxx}, roof, baseline]
                 ]
             ]
@@ -1271,10 +1272,6 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
             \node[label=below:\tit{-er},
             draw,circle,
             scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
             fit to=tree]{};
             }
                 [\tsc{f}1]
@@ -1294,8 +1291,8 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
 The light head corresponds to \tit{d-er}, illustrated by the circle around the \tsc{d}P and the \tit{d-} under it and the circle around the \tsc{nom}P and the \tit{er} under it. The relative pronoun corresponds to \tit{d-er} too, illustrated by the circle around the \tsc{rel}P and the \tit{d-} under it and the circle around the \tsc{nom}P and the \tit{er} under it.
 I draw a dotted circle around each constituent that is a constituent in both the light head and the relative pronoun.
 The light head (the \tsc{d}P realized by \tit{d-er}) is syncretic with the relative pronoun (the \tsc{rel}P realized by \tit{d-er}).
-As the two forms are entirely syncretic, either the light head or the relative pronoun can be deleted. For concreteness, I assume that the relative pronoun is deleted, and the headless relative surfaces in the internal and external case.
-I illustrate this by drawing a dotted circle around each constituent that is a constituent in both the light head and the relative pronoun and by marking the content of the dotted circle for the relative pronoun gray.
+As the two forms are entirely syncretic, either the light head or the relative pronoun can be deleted. I delete the relative pronoun here, as I discuss how it is possible for the relative pronoun to be deleted even though it has a feature less than the light head.
+I illustrate this by marking the content of the dotted circle for the relative pronoun gray.
 
 Let me come back to the problem at hand, namely that in unrestricted languages the light head can surface bearing a more complex case.
 Figure \ref{fig:nom-nom-unres} shows a situation in which it is possible for the relative pronoun to be deleted: the light head and the relative pronoun are fully syncretic.
@@ -1307,19 +1304,21 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
   \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}[b]{ccc}
       \toprule
-      light head & & relative pronoun \\
+      light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [\tsc{d}P, s sep=20mm
+        [\tsc{d}P, s sep=20mm,
+        tikz={
+        \node[draw,circle,
+        dotted,
+        scale=1,
+        fit to=tree]{};
+        }
             [\tsc{d}P,
             tikz={
             \node[label=below:\tit{d},
             draw,circle,
             scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
             fit to=tree]{};
             }
                 [\phantom{xxx}, roof, baseline]
@@ -1332,13 +1331,7 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
             fit to=tree]{};
             }
                 [\tsc{f}2]
-                [\tsc{nom}P,
-                tikz={
-                \node[draw,circle,
-                dashed,
-                scale=0.8,
-                fit to=tree]{};
-                }
+                [\tsc{nom}P
                     [\tsc{f}1]
                     [ϕP
                         [\phantom{xxx}, roof, baseline]
@@ -1349,16 +1342,19 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{rel}P, s sep=20mm
+        [\tsc{rel}P, s sep=20mm,
+        tikz={
+        \node[draw,circle,
+        dotted,
+        fill=DG,fill opacity=0.2,
+        scale=1.05,
+        fit to=tree]{};
+        }
             [\tsc{rel}P,
             tikz={
             \node[label=below:\tit{d},
             draw,circle,
             scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
             fit to=tree]{};
             }
                 [\tsc{rel}]
@@ -1371,10 +1367,6 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
             \node[label=below:\tit{-er},
             draw,circle,
             scale=0.85,
-            fit to=tree]{};
-            \node[draw,circle,
-            dashed,
-            scale=0.9,
             fit to=tree]{};
             }
                 [\tsc{f}1]
