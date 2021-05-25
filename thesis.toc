@@ -94,50 +94,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Summary}{160}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{161}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{163}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{163}{section.7.1}%
+\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{165}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{172}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{174}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{187}{section.7.3}%
+\contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{189}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Comparing Modern German constituents}{196}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Comparing Modern German constituents}{198}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Summary}{203}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Summary}{205}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{205}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{207}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{208}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{210}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}The Polish extra light head}{225}{section.8.2}%
+\contentsline {section}{\numberline {8.2}The Polish extra light head}{227}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{231}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{233}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{237}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{239}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{241}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{243}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}How Old High German differs}{243}{section.9.1}%
+\contentsline {section}{\numberline {9.1}How Old High German differs}{245}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Comparing multiple constituents}{247}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Comparing multiple constituents}{249}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}The hypothetical unrestricted language}{252}{section.9.3}%
+\contentsline {section}{\numberline {9.3}The hypothetical unrestricted language}{254}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {10}Discussion}{255}{chapter.10}%
+\contentsline {chapter}{\chapternumberline {10}Discussion}{257}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Diachronic part}{255}{section.10.1}%
+\contentsline {section}{\numberline {10.1}Diachronic part}{257}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}Towards deriving the always-external pattern}{255}{section.10.2}%
+\contentsline {section}{\numberline {10.2}Towards deriving the always-external pattern}{257}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}More languages}{256}{section.10.3}%
+\contentsline {section}{\numberline {10.3}More languages}{258}{section.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.4}The missing dative/accusative}{256}{section.10.4}%
+\contentsline {section}{\numberline {10.4}The missing dative/accusative}{258}{section.10.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.5}Summary}{256}{section.10.5}%
+\contentsline {section}{\numberline {10.5}Summary}{258}{section.10.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.6}A larger syntactic context}{258}{section.10.6}%
+\contentsline {section}{\numberline {10.6}A larger syntactic context}{260}{section.10.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{265}{table.10.1}%
+\contentsline {chapter}{Primary texts}{267}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{267}{section*.31}%
+\contentsline {chapter}{Bibliography}{269}{section*.22}%

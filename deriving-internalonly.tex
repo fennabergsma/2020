@@ -2,28 +2,7 @@
 
 \chapter{Deriving the internal-only type}\label{ch:deriving-onlyinternal}
 
-Languages of the internal-only type can be summarizes as in Table \ref{tbl:rel-lh-mg}.
-
-\begin{table}[htbp]
-  \center
-  \caption{Grammaticality in the internal-only type}
-\begin{tabular}{cc}
-  \toprule
-                                        & surface pronoun         \\
-  \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
-\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
-\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
-\bottomrule
-\end{tabular}
-\label{tbl:rel-lh-mg}
-\end{table}
-
-When the internal and the external case match, and there is a tie, the relative pronoun surfaces in the this particular case.
-When the internal case wins the case competition, the relative pronoun that bears the internal case surfaces, and the light head that bears the external case is deleted.
-When the external case wins the case competition, there is no headless relative construction possible.
-
-In Chapter \ref{ch:the-basic-idea}, I suggested that languages of the internal-only type have portmanteau for phi- and case-features. This means that the features of the relative pronoun and the light head are spelled out in such a way that they form the constituency shown in Figure \ref{fig:rel-lh-intonly-simple}.
+In Chapter \ref{ch:the-basic-idea}, I suggested that languages of the internal-only type have portmanteau for phi- and case-features. This means that the features of the relative pronoun and the light head are spelled out in such a way that they form the constituents shown in Figure \ref{fig:rel-lh-intonly-simple}.
 
 \begin{figure}[htbp]
   \center
@@ -33,6 +12,11 @@ In Chapter \ref{ch:the-basic-idea}, I suggested that languages of the internal-o
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
       [\tsc{k}P,
+      tikz={
+      \node[draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
           [\tsc{k}]
           [ϕP
               [\phantom{xxx}, roof, baseline]
@@ -41,11 +25,21 @@ In Chapter \ref{ch:the-basic-idea}, I suggested that languages of the internal-o
       \end{forest}
       & \phantom{x} &
     \begin{forest} boom
-      [\tsc{rel}P
-          [\tsc{rel}P
+      [\tsc{rel}P, s sep=20mm
+          [\tsc{rel}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\phantom{xxx}, roof, baseline]
           ]
-          [\tsc{k}P
+          [\tsc{k}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\tsc{k}]
               [ϕP
                   [\phantom{xxx}, roof, baseline]
@@ -59,9 +53,44 @@ In Chapter \ref{ch:the-basic-idea}, I suggested that languages of the internal-o
   \label{fig:rel-lh-intonly-simple}
 \end{figure}
 
-When the internal and the external case match, the light head forms a single constituent within the relative pronoun, so it can be deleted.
-When the internal case is more complex than the external case, the light head still forms a constituent within the relative pronoun, so it can still be deleted.
-When the external case is more complex than the internal case, neither the light head nor the relative pronoun forms a constituent within the other element, and none of them can be deleted.
+These lexical entries lead to a grammaticality pattern as shown in Table \ref{tbl:overview-intonly}.
+
+\begin{table}[htbp]
+  \center
+  \caption{Grammaticality in the internal-only type}
+    \begin{adjustbox}{max width=\textwidth}
+      \begin{tabular}{cccccc}
+        \toprule
+      situation           & \multicolumn{2}{c}{lexical entries}       & containment         & deleted             & surfacing           \\
+      \cmidrule(lr){1-1}    \cmidrule(lr){2-3}                          \cmidrule(lr){4-4}    \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+                          & \tsc{lh}            & \tsc{rp}            &                     &                     &                     \\
+                            \cmidrule(lr){2-2}    \cmidrule(lr){3-3}
+      \tsc{k}\scsub{int} = \tsc{k}\scsub{ext}               &
+      [\tsc{k}\scsub{1}[ϕ]]                                 &
+      [\tsc{rel}], [\tsc{k}\scsub{1}[ϕ]]                    &
+      [\tsc{rel}][\tsc{k}\scsub{1}[ϕ]] > [\tsc{k}\scsub{1}[ϕ]] &
+      \tsc{lh} & \tsc{rp}\scsub{int/ext} \\
+      \tsc{k}\scsub{int} > \tsc{k}\scsub{ext}               &
+      [\tsc{k}\scsub{1}[ϕ]]                                 &
+      [\tsc{rel}], [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]]  &
+      [\tsc{rel}][\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]] > [\tsc{k}\scsub{1}[ϕ]] &
+      \tsc{lh} & \tsc{rp}\scsub{int} \\
+      \tsc{k}\scsub{int} < \tsc{k}\scsub{ext}               &
+      [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]]               &
+      [\tsc{rel}], [\tsc{k}\scsub{1}[ϕ]]                    &
+      no containment &
+      none & * \\
+      \bottomrule
+      \end{tabular}
+    \end{adjustbox}
+    \label{tbl:overview-intonly}
+\end{table}
+
+When the internal and the external case match, the light head consists of phi- and case-features. The relative pronoun consists of the same features plus an additional feature \tsc{rel}. The features of the light head structurally form a constituent within the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun bearing the internal and external case surfaces.
+
+When the internal case wins the case competition, the light head consists of phi- and case-features. The relative pronoun consists of the same features plus an additional feature \tsc{rel} and a more complex case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). The features of the light head structurally form a constituent within the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun bearing the internal and external case surfaces.
+
+When the external case wins the case competition, the relative pronoun consists of phi- and case-features and the feature \tsc{rel}. The light head lacks feature \tsc{rel} compared to the relative pronoun, but is contains a more complex case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). Neither the light head nor the relative pronoun structurally forms a constituent within the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
 
 In Chapter \ref{ch:typology}, I showed that Modern German is a language of the internal-only type. In this chapter, I show that Modern German light heads and relative pronouns have this type of structure described in Figure \ref{fig:rel-lh-intonly-simple}. I give a compact version of the structures in Figure \ref{fig:rel-lh-mg}.
 
@@ -121,11 +150,10 @@ Consider the light head in Figure \ref{fig:rel-lh-mg}.
 Light heads (i.e. phi- and case-features) in Modern German are spelled out by a single morpheme, indicated by the circle around the structure. They are spelled out as \tit{r}, \tit{n} or \tit{m} depending on which case they realize.
 Consider the relative pronoun in Figure \ref{fig:rel-lh-mg}.
 Relative pronouns in Modern German consist of two morphemes: the constituent that forms the light head (i.e. phi- and case features) and the \tsc{rel}P, again indicated by the circles.
-
-Throughout this chapter, I discuss the exact feature content of relative pronouns and light heads, and I show evidence for the constituency given in Figure \ref{fig:rel-lh-mg}.
+Throughout this chapter, I discuss the exact feature content of relative pronouns and light heads, I give lexical entries for them, and I show how these lexical entries form the constituents shown in Figure \ref{fig:rel-lh-mg}.
 
 The chapter is structured as follows.
-First, I discuss the relative pronoun. I decompose the relative pronouns into the two morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to. I illustrate how different morphemes are combined using Nanosyntax.
+First, I discuss the relative pronoun. I decompose the relative pronouns into the two morphemes I showed in Figure \ref{fig:rel-lh-mg}, and I show which features each of the morphemes corresponds to. I illustrate how different morphemes are combined into the given constituents.
 Then I discuss the light head. I argue that Modern German headless relatives are derived from a type of light-headed relative clause that does not surface in the language. I show that the light head corresponds to one of the morphemes of the relative pronoun (the \tsc{k}P in Figure \ref{fig:rel-lh-mg}).
 Finally, I compare the constituents of the light head and the relative pronoun. I show that the light head can be deleted when the internal case matches the external case or when the internal case is more complex than the external case. When the external case is more complex, I show that none of the elements can be deleted.
 
@@ -162,10 +190,9 @@ In the introduction of this chapter, I suggested that in Modern German features 
 \end{forest}
 
 In Chapter \ref{ch:the-basic-idea}, I suggested that relative pronouns consist of at least three features: \tsc{rel}, ϕ and \tsc{k}.
-In this section, I decompose Modern German relative pronouns, and I show that relative pronoun consists of a few more features than that. This section establishes which features each morpheme realizes.
-I carefully establish the feature content of the relative pronoun, because the features that I introduce for Modern German are present in the same way in the other two language types.
-Crucially, the main claim I made in Chapter \ref{ch:the-basic-idea} remains unchanged: Modern German has a portmanteau for the features that correspond to phi- and case-features.
-I argue that Modern German relative pronoun have the structure shown in \ref{ex:mg-rp}.
+In this section, I show that relative pronoun consists of more features than that.
+Crucially, the main claim I made in Chapter \ref{ch:the-basic-idea} remains unchanged: Modern German has a portmanteau for the features that correspond to phi- and case-features and a separate lexical entry for the features the light head does not contain.
+I show the complete structure that I work towards in this section in \ref{ex:mg-rp}.
 
 \ex.\label{ex:mg-rp}
 \begin{adjustbox}{max width=0.9\textwidth}
@@ -270,7 +297,7 @@ The feature \tsc{ind} corresponds to number, which is singular if it is not comb
 
 For case, I adopt the features of \citet{caha2009}, already introduced in Chapter \ref{ch:decomposition}. The feature \ac{f}1 and \tsc{f}2 corresponds to the accusative, and the features \ac{f}1, \ac{f}2 and \tsc{f}3 correspond to the dative.
 
-I continue with the pronominal features. Another context besides in their use as relative pronouns and demonstrative pronouns in which the final consonants appear is as pronouns on their own. In \ref{ex:mg-weak}, I give examples of the masculine accusative singular and masculine dative singular.\footnote{
+I continue with the pronominal features. Another context in which the final consonants appear (besides their use as relative pronouns and demonstrative pronouns) is as pronouns on their own. In \ref{ex:mg-weak}, I give examples of the masculine accusative singular and masculine dative singular.\footnote{
 To be more precise, the final consonants correspond to the weak pronoun in Modern German. \citet{cardinaletti1994} split pronouns in three classes: strong pronouns, weak pronouns and clitics. Following the tests in \citet{cardinaletti1994} that distinguish the types from each other, the pronouns in \ref{ex:mg-weak} are neither strong pronouns nor clitics, and therefore, should be classified as weak pronouns.
 
 First, \tit{n} and \tit{m} are not strong pronouns because of how they behave under coordination and under focus.
@@ -366,7 +393,9 @@ The \tit{n} is the nominative masculine singular, so it spells out the features 
 
 Note that the ordering of the features here is not random. I motivate this in Section \ref{sec:combining}.
 
-I continue with the morpheme\tit{we}. This morpheme corresponds to what I called the \tsc{rel}-feature in Chapter \ref{ch:the-basic-idea} and the introduction to this chapter. Consider Table \ref{tbl:mg-paradigm-dem}.
+I continue with the morpheme\tit{we}. This morpheme corresponds to what I called the \tsc{rel}-feature in Chapter \ref{ch:the-basic-idea} and the introduction to this chapter. I argue that this morpheme actually also spells out \tsc{wh}-operator features and number and gender features.
+
+Consider Table \ref{tbl:mg-paradigm-dem}.
 
 \begin{table}[H]
 \center
@@ -384,11 +413,10 @@ I continue with the morpheme\tit{we}. This morpheme corresponds to what I called
 \end{table}
 
 The morpheme \tit{we} combines with the same endings as the morpheme \tit{de} does in demonstrative pronouns (or relative pronouns in headed relatives).\footnote{
-Note that \tsc{wh}-relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels}. Demonstratives also have plural forms, and \tsc{wh}-relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation with the always-external languages.}
+Note that \tsc{wh}-relative pronouns, unlike the demonstratives, do not have a feminine form for the relative pronouns in Table \ref{tbl:mg-paradigm-wh-rels}. Demonstratives also have plural forms, and \tsc{wh}-relative pronouns do not. As far as I know, this holds for all relative pronouns in languages of the internal-only type (cf. also for Finnish, even though it makes a lot of morphological distinctions) and of the matching type. Relative pronouns in languages of the unrestricted type do inflect for feminine, as well as always-external languages. In Chapter \ref{ch:discussion} I return to this observation in relation to the always-external languages.}
 This identifies the \tit{de} and, more importantly for the discussion here, the \tit{we} as a separate morpheme.\footnote{
 It is also possible to analyze \tit{we} as two separate morphemes: \tit{w} and \tit{e}. This further decomposition would not make a difference for the analysis I propose here. What is crucial is that phi- and case-features correspond to a single morpheme and the other part has its own morpheme or morphemes.
-}
-I suggest that the morpheme \tit{we} actually spells out more features than only the feature \tsc{rel}: it also spells out \tsc{wh}, \tsc{ind} and \tsc{an}.\footnote{
+}\footnote{
 I actually believe that \tit{we} also spells out deixis features. In relative pronouns it does not express spatial deixis, but discourse deixis: it establishes a relation with an antecedent.
 Generally, three types of deixis are distinguished: proximal, medial and distal. I argue that \tit{e} in the relative pronoun corresponds to the medial. Generally speaking, \tsc{wh}-pronouns combine with the medial or the distal. English has morphological evidence for this claim. Demonstratives in English can combine with either the proximal or this medial/distal, as shown in \ref{ex:english-dem}.
 
@@ -413,7 +441,10 @@ The difference between the proximal, the medial and the distal cannot be observe
 
 I leave the deixis features out of the discussion and the lexical entries because they are not relevant for the analysis.}
 
-I start with the last two features I mentioned, namely \tsc{ind} and \tsc{an}. Consider Table \ref{tbl:mg-paradigm-wh-rels-rep}, repeated from Table \ref{tbl:mg-paradigm-wh-rels-rep}.
+I start with a feature I refer to as \tsc{wh}. This is a feature that \tsc{wh}-pronouns, such as \tsc{wh}-relative pronouns and interrogatives, share. The \tsc{wh}-element triggers the construction of a set of alternatives in the sense of \citet{rooth1985,rooth1992} \citep{hachem2015}. This contrasts with the \tsc{d} in Table \ref{tbl:mg-paradigm-dem}, which is responsible for establishing a definite reference.
+The second relevant feature is \tsc{rel}, which establishes a relation.
+
+I continue with the last two features that are spelled out by \tit{we}, namely the number feature \tsc{ind} and the gender feature \tsc{an}. Consider Table \ref{tbl:mg-paradigm-wh-rels-rep}, repeated from Table \ref{tbl:mg-paradigm-wh-rels}.
 
 \begin{table}[htbp]
 \center
@@ -431,15 +462,15 @@ I start with the last two features I mentioned, namely \tsc{ind} and \tsc{an}. C
 \end{table}
 
 In the different genders, not only the final consonants differ, but also the vowel. This suggests that \tit{we} also realizes gender features.\footnote{
-An alternative to this analysis is to let \tit{wer} correspond to the morphemes in \ref{ex:wer-cv}.
+An alternative to this analysis is to let \tit{wer} correspond two lexical entries of which the phonological part look as in \ref{ex:wer-cv}.
 
 \ex.\label{ex:wer-cv}
-\a. \tit{w} + CV
-\b. \tit{er} + C
+\a. /\tit{w}/ + CV
+\b. /\tit{er}/ + C
 
 Under this analysis, the final consonant actually has a vowel in its lexical entry. This vowel does not surface, however, because there is only a slot for a consonant. Only when the lexical entry combines with a lexical entry that does have a slot for a vowel, the vowel gets to surface.
 
-An theoretical advantage of this analysis is that there is no need to specifiy a \tit{da} and a \tit{de} and a \tit{wa} and a \tit{we} for the different genders. The vowel is part of the lexical entry of the that belongs to the final consonant and it gets to surface because of the vowel slot that the \tit{w} or \tit{d} introduces.
+A theoretical advantage of this analysis is that there is no need to specifiy a \tit{da} and a \tit{de} and a \tit{wa} and a \tit{we} for the different genders. The vowel is part of the lexical entry of the that belongs to the final consonant and it gets to surface because of the vowel slot that the \tit{w} or \tit{d} introduces.
 
 An empirical advantage of this analysis concerns the vowel \tit{e}. The dative forms in all gender and numbers have the \tit{e}, which I assigned to masculine gender. This holds for the genitive forms too, which I have not given here. If \tit{we} is not specified for gender (but maybe still for number) and the vowel belongs to the final consonant, it can be inserted for non-masculines too.
 The feminine singular and the plurals do not have a weak pronoun and they do not have a marker in forms like \tit{diese} `this' (see Table \ref{tbl:mg-dieser}), because their lexical entry does not contain a consonant.
@@ -447,18 +478,17 @@ The feminine singular and the plurals do not have a weak pronoun and they do not
 As this matter is not relevant for the core of my analysis, I put it aside for now. For ease of exposition I simply assign a phonological exponent to each lexical entry and I do not make further distinctions in C and V slots.
 }
 
-In addition, \tit{we} expresses \tsc{ind}. It is only possible to have a singular interpretation and not a plural one.
+In addition, \tit{we} expresses \tsc{ind}. This is derived from the fact that \tsc{wh}-pronouns in Modern German can only show singular verbal agreement and no plural agreement. This is illustrated in \ref{ex:mg-wh}.
 
-\ex.
-\ag. Wer macht das?\\
-who do.3\tsc{sg} that\\
-`Who is doing that?'
-\b. *Wer machen das?\\
-who do.3\tsc{pl} that\\
-intended: `Who are doing that?'
+\ex.\label{ex:mg-wh}
+\ag. Wer mach-t das?\\
+who do-3\tsc{sg} that\\
+`Who is/are doing that?'\label{ex:mg-wh-sg}
+\b. *Wer mach-en das?\\
+who do-3\tsc{pl} that\\
+intended: `Who are doing that?'\label{ex:mg-wh-pl}
 
-The next feature I refer to as \tsc{wh}. This is a feature that \tsc{wh}-pronouns, such as \tsc{wh}-relative pronouns and interrogatives, share. The \tsc{wh}-element triggers the construction of a set of alternatives in the sense of \citet{rooth1985,rooth1992} \citep{hachem2015}. This contrasts with the \tsc{d} in Table \ref{tbl:mg-paradigm-dem}, which is responsible for establishing a definite reference.
-The second relevant feature is \tsc{rel}, which establishes a relation.
+In \ref{ex:mg-wh-sg}, the verb \tit{macht} appears in third person singular. It agrees with the \tsc{wh}-pronoun \tit{wer} `who'. This question can be interpreted as referring to a single referent or multiple, as indicated by the translation. The sentence in \ref{ex:mg-wh-pl}, in which the verb \tit{machen} has third person plural agreement, is ungrammatical.
 
 In sum, the \tit{we} spells out the features \tsc{wh}, \tsc{rel}, \tsc{ind} and \tsc{an} as shown in \ref{ex:mg-entry-we}.
 

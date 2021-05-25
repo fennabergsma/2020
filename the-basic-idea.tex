@@ -204,14 +204,14 @@ Now compare the syntactic structures of the German accusative pronoun in \ref{ex
 This change in constituency is a direct consequence the lexical entries that are available within the language.
 
 Exactly this type of difference is what is going to lead to the different grammaticality patterns in headless relatives. Languages contain different lexical entries which spell out features of the light head and the relative pronoun.
-The different lexical entries lead to differences in constituency. The different constituents lead to differences in whether or the light head and the relative pronoun can be deleted. Lastly, whether or not the light head and the relative pronoun can be deleted lead to different grammaticality patterns.
+The different lexical entries lead to differences in constituency. The different constituents lead to differences in whether or the light head and the relative pronoun can be deleted. Lastly, whether or not the light head and the relative pronoun can be deleted lead to different grammaticality patterns. I summarize this in \ref{ex:summary-differences-languages}.
+
+\ex.\label{ex:summary-differences-languages} lexical entries $\rightarrow$ containment $\rightarrow$ deletion possibility $\rightarrow$ grammaticality pattern
 
 In sum, I assume that headless relative clauses are derived from light-headed relatives. Light-headed relatives contain a light head and relative pronoun. In a headless relative either the light head or the relative pronoun is deleted.
 The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) forms a constituent within the other element.
 Light heads and relative pronouns contain the same features, and that the relative pronoun contains one feature more: \tsc{rel}.
 The difference between grammaticality patterns in languages arise from languages having different lexical entries that spell out the features of the light head and the relative pronoun. The different lexical entries lead to differences in constituency, which lead to differences in deletion possibilities, which lead to different grammaticality patterns.
-
-
 
 
 \section{The three language types}\label{sec:three-types}
@@ -450,17 +450,33 @@ The comparisons between the light head and the relative pronoun in different cas
 \begin{table}[htbp]
   \center
   \caption{Grammaticality in the internal-only type}
-\begin{tabular}{cc}
-  \toprule
-                                        & surface pronoun         \\
-  \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
-\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
-\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
-\bottomrule
-\end{tabular}
-\label{tbl:overview-rel-light-mg}
-\end{table}
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{cccccc}
+    \toprule
+  situation           & \multicolumn{2}{c}{lexical entries}       & containment         & deleted             & surfacing           \\
+  \cmidrule(lr){1-1}    \cmidrule(lr){2-3}                          \cmidrule(lr){4-4}    \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+                      & \tsc{lh}            & \tsc{rp}            &                     &                     &                     \\
+                        \cmidrule(lr){2-2}    \cmidrule(lr){3-3}
+  \tsc{k}\scsub{int} = \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}[ϕ]]                                 &
+  [\tsc{rel}], [\tsc{k}\scsub{1}[ϕ]]                    &
+  [\tsc{rel}][\tsc{k}\scsub{1}[ϕ]] > [\tsc{k}\scsub{1}[ϕ]] &
+  \tsc{lh} & \tsc{rp}\scsub{int/ext} \\
+  \tsc{k}\scsub{int} > \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}[ϕ]]                                 &
+  [\tsc{rel}], [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]]  &
+  [\tsc{rel}][\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]] > [\tsc{k}\scsub{1}[ϕ]] &
+  \tsc{lh} & \tsc{rp}\scsub{int} \\
+  \tsc{k}\scsub{int} < \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]]               &
+  [\tsc{rel}], [\tsc{k}\scsub{1}[ϕ]]                    &
+  no containment &
+  none & * \\
+  \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+  \label{tbl:overview-rel-light-mg}
+  \end{table}
 
 Headless relatives in internal-only languages are grammatical when the internal and the external case match and when the internal case is more complex than the external case. In these situations, the light head forms a constituent within the relative pronoun, and the light head is deleted. Headless relatives are ungrammatical when the external case is more complex than the internal case, because then the light head no longer forms a constituent within the relative pronoun, and none of the elements is deleted.
 
@@ -910,15 +926,31 @@ The comparisons between the light head and the relative pronoun in different cas
 \begin{table}[htbp]
   \center
   \caption{Grammaticality in the matching type}
-\begin{tabular}{cc}
-  \toprule
-                                        & surface pronoun             \\
-  \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int} \\
-\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & *                           \\
-\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                           \\
-\bottomrule
-\end{tabular}
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{cccccc}
+    \toprule
+    situation           & \multicolumn{2}{c}{lexical entries}       & containment         & deleted             & surfacing           \\
+    \cmidrule(lr){1-1}    \cmidrule(lr){2-3}                          \cmidrule(lr){4-4}    \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+                        & \tsc{lh}            & \tsc{rp}            &                     &                     &                     \\
+                          \cmidrule(lr){2-2}    \cmidrule(lr){3-3}
+  \tsc{k}\scsub{int} = \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}], [ϕ]                               &
+  [\tsc{rel}], [\tsc{k}\scsub{1}], [ϕ]                  &
+  [\tsc{rel}][[\tsc{k}\scsub{1}][ϕ]] > [\tsc{k}\scsub{1}][ϕ] &
+  \tsc{lh} & \tsc{rp}\scsub{int/ext} \\
+  \tsc{k}\scsub{int} > \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}], [ϕ]                               &
+  [\tsc{rel}], [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}], [ϕ] &
+  no containment &
+  none & * \\
+  \tsc{k}\scsub{int} < \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}]], [ϕ]             &
+  [\tsc{rel}], [\tsc{k}\scsub{1}], [ϕ]                  &
+  no containment &
+  none & * \\
+  \bottomrule
+  \end{tabular}
+  \end{adjustbox}
 \label{tbl:overview-rel-light-pol}
 \end{table}
 
@@ -1397,15 +1429,31 @@ The comparisons between the constituents within the light heads and the relative
 \begin{table}[htbp]
   \center
   \caption{Grammaticality in the unrestricted type}
-\begin{tabular}{cc}
-  \toprule
-                                        & surface pronoun             \\
-  \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext}     \\
-\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}         \\
-\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & \tsc{lh}\scsub{ext}         \\
-\bottomrule
-\end{tabular}
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{cccccc}
+    \toprule
+    situation           & \multicolumn{2}{c}{lexical entries}       & containment         & deleted             & surfacing           \\
+    \cmidrule(lr){1-1}    \cmidrule(lr){2-3}                          \cmidrule(lr){4-4}    \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+                        & \tsc{lh}            & \tsc{rp}            &                     &                     &                     \\
+                          \cmidrule(lr){2-2}    \cmidrule(lr){3-3}
+  \tsc{k}\scsub{int} = \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}[ϕ]]                                 &
+  [\tsc{rel}], [\tsc{k}\scsub{1}[ϕ]]                    &
+  [\tsc{rel}][\tsc{k}\scsub{1}[ϕ]] > [\tsc{k}\scsub{1}[ϕ]] &
+  \tsc{lh} & \tsc{rp}\scsub{int/ext}                    \\
+  \tsc{k}\scsub{int} > \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}[ϕ]]                                 &
+  [\tsc{rel}], [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]]  &
+  [\tsc{rel}][\tsc{k}\scsub{2}[\tsc{k}\scsub{1}[ϕ]]] > [\tsc{k}\scsub{1}[ϕ]] &
+  \tsc{lh} & \tsc{rp}\scsub{int}                        \\
+  \tsc{k}\scsub{int} < \tsc{k}\scsub{ext}               &
+  \tit{/X/}, \tit{/Y/}                                    &
+  \tit{/X/}, \tit{/Y/}                                    &
+  \tit{/XY/} > \tit{/XY/}                               &
+  \tsc{rp} & \tsc{lh}\scsub{ext} \\
+  \bottomrule
+  \end{tabular}
+  \end{adjustbox}
 \label{tbl:overview-rel-light-ohg}
 \end{table}
 
