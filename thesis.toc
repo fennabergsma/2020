@@ -98,7 +98,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{165}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{174}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{175}{section.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{189}{section.7.3}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +140,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{267}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{269}{section*.22}%
+\contentsline {chapter}{Bibliography}{269}{section*.31}%

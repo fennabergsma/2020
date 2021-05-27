@@ -2,69 +2,114 @@
 
 \chapter{Deriving the matching type}\label{ch:deriving-matching}
 
-Languages of the matching type can be summarizes as in Table \ref{tbl:rel-lh-pol}
-
-\begin{table}[htbp]
-  \center
-  \caption{Grammaticality in the internal-only type}
-\begin{tabular}{cc}
-  \toprule
-                                        & surface pronoun         \\
-  \cmidrule(lr){2-2}
-\tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
-\tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & *     \\
-\tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
-\bottomrule
-\end{tabular}
-\label{tbl:rel-lh-pol}
-\end{table}
-
-When the internal and the external case match, and there is a tie, the relative pronoun surfaces in the this particular case (just like in all other language types).
-When the internal case wins the case competition, this type of language does not allow the internal case to surface. This means that the relative pronoun with a more complex internal case cannot be the surface pronoun.
-When the external case wins the case competition, this type of language does not allow the external case to surface. This means that the light head with a more complex external case cannot be the surface pronoun.
-
-The situation in which the matching type of language differs from the internal-only type is the one in which the internal case wins the case competition. This is grammatical in the internal-only type of language but it is ungrammatical in the matching type of language.
-In Chapter \ref{ch:the-basic-idea}, I suggested that this difference can be derived from a difference in spellout between the two languages types. A different spellout namely leads to a different constituency within relative pronouns and light heads. In the internal-only type of language, the ϕP appears lower in the structure than the case projections, as I showed is Chapter \ref{ch:deriving-onlyinternal}. In the matching type of language, the ϕP appears higher than the case projections shown in Figure \ref{fig:rel-lh-matching-derive}.
+In Chapter \ref{ch:the-basic-idea}, I suggested that languages of the matching type have a morpheme that spells out phi-features and another one that spells out case-features. This is the crucial difference with internal-only languages such as Modern German, that have a portmanteau for phi- and case-features. This means that the features of the relative pronoun and the light head are spelled out in such a way that they form the constituents shown in Figure \ref{fig:rel-lh-matching-simple}.
 
 \begin{figure}[htbp]
   \center
   \begin{tabular}[b]{ccc}
-    \toprule
-    light head & & relative pronoun \\
-    \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+      [\tsc{k}P, s sep = 20 mm
+          [ϕP,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\phantom{xxx}, roof]
+          ]
+          [\tsc{k}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{k}, baseline]
+          ]
+      ]
+      \end{forest}
+      & \phantom{x} &
     \begin{forest} boom
-    [ϕP
-        [ϕ]
-        [\tsc{k}P
-            [\tsc{k}, baseline]
-        ]
-    ]
-    \end{forest}
-    & \phantom{x} &
-  \begin{forest} boom
-    [\tsc{rel}P
-        [\tsc{rel}]
-        [ϕP
-            [ϕ]
-            [\tsc{k}P
-                [\tsc{k}, baseline]
-            ]
-        ]
-    ]
-  \end{forest}\\
-    \bottomrule
+      [\tsc{rel}P, s sep = 15 mm
+          [\tsc{rel}P,
+          tikz={
+          \node[draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\phantom{xxx}, roof, baseline]
+          ]
+          [\tsc{k}P, s sep = 20 mm
+              [ϕP,
+              tikz={
+              \node[draw,circle,
+              scale=0.85,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof]
+              ]
+              [\tsc{k}P,
+              tikz={
+              \node[draw,circle,
+              scale=0.85,
+              fit to=tree]{};
+              }
+                  [\tsc{k}, baseline]
+              ]
+          ]
+      ]
+    \end{forest}\\
+      \bottomrule
   \end{tabular}
    \caption {\tsc{lh} and \tsc{rp} in the matching type}
-  \label{fig:rel-lh-matching-derive}
+  \label{fig:rel-lh-matching-simple}
 \end{figure}
 
-When the internal and the external case match, the light head can be deleted, because the light head forms a single constituent within the relative pronoun.
-When the internal case is more complex than the external case, the light head is not a single constituent within the relative pronoun anymore. The relative pronoun contains all features of the light head, but they are spread over separate constituents. As a result, there is no grammatical form to surface when the internal case is more complex.
-When the external case is more complex than the internal case, the relative pronoun is not a single constituent within the light head. The relative pronoun contains features that are not part of the light head. As a result, there is no grammatical form to surface when the internal case is more complex.
+These lexical entries lead to a grammaticality pattern as shown in Table \ref{tbl:overview-matching}.
 
+\begin{table}[htbp]
+  \center
+  \caption{Grammaticality in the matching type}
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{cccccc}
+    \toprule
+    situation           & \multicolumn{2}{c}{lexical entries}       & containment         & deleted             & surfacing           \\
+    \cmidrule(lr){1-1}    \cmidrule(lr){2-3}                          \cmidrule(lr){4-4}    \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+                        & \tsc{lh}            & \tsc{rp}            &                     &                     &                     \\
+                          \cmidrule(lr){2-2}    \cmidrule(lr){3-3}
+  \tsc{k}\scsub{int} = \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}], [ϕ]                               &
+  [\tsc{rel}], [\tsc{k}\scsub{1}], [ϕ]                  &
+  [\tsc{rel}][[\tsc{k}\scsub{1}][ϕ]] > [\tsc{k}\scsub{1}][ϕ] &
+  \tsc{lh} & \tsc{rp}\scsub{int/ext} \\
+  \tsc{k}\scsub{int} > \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{1}], [ϕ]                               &
+  [\tsc{rel}], [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}], [ϕ] &
+  no containment &
+  none & * \\
+  \tsc{k}\scsub{int} < \tsc{k}\scsub{ext}               &
+  [\tsc{k}\scsub{2}[\tsc{k}\scsub{1}]], [ϕ]             &
+  [\tsc{rel}], [\tsc{k}\scsub{1}], [ϕ]                  &
+  no containment &
+  none & * \\
+  \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+\label{tbl:overview-matching}
+\end{table}
+
+First consider the situation in which the internal and the external case match. The light head consists of phi-feature morpheme and a case-feature morpheme. The relative pronoun consists of the same morphemes plus an additional morpheme that spells out the feature \tsc{rel}. The light head structurally forms a constituent within the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun bearing the internal and external case surfaces.
+In this situation, the fact that there is a phi- and case-feature portmanteau (as in internal-only languages) or two separate morphemes for the features (as in matching languages) does not make a difference for the containment relation.
+
+Consider now the situation in the internal case wins the case competition. The light head consists of phi- and case-features. The relative pronoun consists of the same features plus an additional feature \tsc{rel} and a more complex case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). The features of the light head structurally form a constituent within the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun bearing the internal and external case surfaces.
 In Chapter \ref{ch:the-basic-idea}, I suggested that the difference in structures between the internal-only type and the matching type is a consequence of spellout. The change in constituency is a result of the fact that case projections correspond to their own morpheme in matching languages and they are spelled out together with phi-features in internal-only languages. In Chapter \ref{ch:deriving-matching}, I showed that Modern German indeed has a portmanteau for case and phi-features. In this Chapter, I show that Polish has two morphemes that corresponds to case and phi-features.
 
-I give a compact version of the Polish light heads and relative pronouns in Figure \ref{fig:rel-lh-pol}.
+Finally, consider the situation in which the external case wins the case competition. The relative pronoun consists of phi- and case-features and the feature \tsc{rel}. The light head lacks feature \tsc{rel} compared to the relative pronoun, but is contains a more complex case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). Neither the light head nor the relative pronoun structurally forms a constituent within the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
+also same as in modern german
+
+In Chapter \ref{ch:typology}, I showed that Polish is a language of the matching type. In this chapter, I show that Polish light heads and relative pronouns have this type of structure described in Figure \ref{fig:rel-lh-matching-simple}. I give a compact version of the structures in Figure \ref{fig:rel-lh-pol}.
 
 \begin{figure}[htbp]
   \center
@@ -142,23 +187,17 @@ I give a compact version of the Polish light heads and relative pronouns in Figu
   \label{fig:rel-lh-pol}
 \end{figure}
 
-I compare the Polish light head and the relative pronoun in Figure \ref{fig:rel-lh-pol} to the structures of the light head and the relative pronoun I gave in Figure \ref{fig:rel-lh-matching}.
-
 Consider the light head in Figure \ref{fig:rel-lh-pol}.
-Light heads in Polish are spelled out by two morphemes, which are both circled. The morpheme on the right does not only correspond to case features, but also to number feature (\tsc{ind}). The remainder of what corresponds to the ϕP is the morpheme on the left (\tsc{an}P).
-Therefore, just like the structure of the light head in Figure \ref{fig:rel-lh-matching}, the structure of the light head in Figure \ref{fig:rel-lh-pol} consists of two morphemes.
-
+Light heads (i.e. the phi- and case-features) in Polish are spelled out by two morphemes, which are both circled. The phi-features are spelled out as \tit{o} and the case features are spelled out as \tit{go} or \tit{mu}, depending on which case they realize.
 Consider the relative pronoun in Figure \ref{fig:rel-lh-pol}.
-Relative pronouns in Polish contain one more morpheme than light heads: the \tsc{rel}P. As already became clear in Chapter \ref{ch:deriving-onlyinternal}, the relative pronoun contains more a single feature more than the light head, which is in Polish all contained in \tsc{rel}P. Besides that, the structure of the relative pronoun in Figure \ref{fig:rel-lh-pol} is identical to the one in Figure \ref{fig:rel-lh-matching}.
-
-Crucially, the constituency in Figure \ref{fig:rel-lh-mg} is the same as it is in Figure \ref{fig:rel-lh-intonly}. Therefore, the deletion possibilities I described for Figure \ref{fig:rel-lh-matching} take place.
+Relative pronouns in Polish contain one more morpheme than light heads: the constituent that forms the light head (i.e. phi- and case-features) and the \tsc{rel}P, again circled. The \tsc{rel}P is spelled out as \tit{k}.
+Throughout this chapter, I discuss the exact feature content of relative pronouns and light heads, I give lexical entries for them, and I show how these lexical entries form the constituents shown in Figure \ref{fig:rel-lh-pol}.
 
 The chapter is structured as follows.
-First, I discuss the light head. I decompose the light head into the two morphemes I showed in Figure \ref{fig:rel-lh-pol}, and I show which features correspond to which morphemes. I show that Polish headless relatives are derived from a type of light-headed relative clause that does not surface in the language, just like their Modern German counterparts.
-Then, I discuss the relative pronoun. I show that the Polish relative pronoun consist of one more morpheme than Polish light head.
+First, I discuss the relative pronoun. I decompose the relative pronoun into the three morphemes I showed in Figure \ref{fig:rel-lh-pol}, and I show which features correspond to which morphemes.
+Then, I discuss the light head. I show that the Polish light head consist of a subset of the features of the relative pronoun. I also show that Polish headless relatives are derived from a type of light-headed relative clause that does not surface in the language, just like their Modern German counterparts.
 Importantly, the features that form the Polish light head and relative pronoun are the same ones that form the Modern German ones. The only difference between the two languages is how the features are spelled out.
-Finally, I compare the constituents of the light head and the relative pronoun. I show that the relative pronoun can only delete the light head when the internal case matches the external case. When the internal and external case differ, I show that none of the elements can be deleted.
-
+Finally, I compare the constituents of the light head and the relative pronoun. I show that the light head can only be deleted when the internal case matches the external case. When the internal and external case differ, I show that none of the elements can be deleted.
 
 
 
