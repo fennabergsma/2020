@@ -112,9 +112,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}The Polish extra light head}{228}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{234}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{235}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{240}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{242}{section.8.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{243}{chapter.9}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +140,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{267}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{269}{section*.24}%
+\contentsline {chapter}{Bibliography}{269}{section*.25}%
