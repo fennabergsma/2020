@@ -199,16 +199,34 @@ In the introduction of this chapter, I suggested that in Polish features of the 
 
 \ex.\label{ex:simple-matching-rp}
 \begin{forest} boom
-  [\tsc{rel}P
-      [\tsc{rel}P
-          [\phantom{xxx}, roof]
+  [\tsc{rel}P, s sep = 15 mm
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{k},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\phantom{xxx}, roof, baseline]
       ]
-      [\tsc{k}P
-          [ϕP
+      [\tsc{k}P, s sep = 20 mm
+          [ϕP,
+          tikz={
+          \node[label=below:\tit{o},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
               [\phantom{xxx}, roof]
           ]
-          [\tsc{k}P
-              [\tsc{k}]
+          [\tsc{k}P,
+          tikz={
+          \node[label=below:\tit{go/mu},
+          draw,circle,
+          scale=0.85,
+          fit to=tree]{};
+          }
+              [\tsc{k}, baseline]
           ]
       ]
   ]
@@ -399,13 +417,13 @@ In \ref{ex:pol-spellout-nie/je/te-an}, I give the syntactic structure of a mascu
 
 The syntactic structure forms a constituent within the lexical tree in \ref{ex:pol-entry-nie/je/te}, and the structure can be spelled out as \tit{je/nie/te}.
 
-In \ref{ex:pol-spellout-nie/je/te-cl}, I give the syntactic structure of a masculine form.
+In \ref{ex:pol-spellout-nie/je/te-cl}, I give the syntactic structure of a neuter form.
 
 \ex.\label{ex:pol-spellout-nie/je/te-cl}
 \begin{forest} boom
   [\tsc{cl}P,
   tikz={
-  \node[label=below:\tit{o},
+  \node[label=below:\tit{je/nie/te},
   draw,circle,
   scale=0.8,
   fit to=tree]{};
@@ -438,9 +456,9 @@ This means that the lexical tree for the suffix \tit{mu} should contain all feat
   {\draw (.east) node[right]{⇔ \tit{mu}}; }
 \end{forest}
 
-Notice here that \tit{mu} has a unary bottom. Therefore, it can be inserted as the result of movement. That means that the lexical entry follows the existing structure and is spelled out as a suffix. This is how the correct order of \tit{je/nie/te} and \tit{mu} comes about. I show how this works when I construct the extra light head later on in this section.
+Notice here that \tit{mu} has a unary bottom. Therefore, it can be inserted as the result of movement. That means that the lexical entry follows the existing structure and is spelled out as a suffix. This is how the correct order of \tit{je/nie/te} and \tit{mu} comes about. I show how this works when I construct the relative pronoun later on in this section.
 
-The morpheme \tit{go} differs from \tit{mu} in that it lacks the feature \tit{f}3. I give its lexical entry in \ref{ex:pol-entry-go}.
+The morpheme \tit{go} differs from \tit{mu} in that it lacks the feature \tsc{f}3. I give its lexical entry in \ref{ex:pol-entry-go}.
 
 \ex. \label{ex:pol-entry-go}
 \begin{forest} boom
@@ -462,7 +480,7 @@ This leaves the two morphemes \tit{k} and \tit{o}. First I discuss the \tit{o}.
 This morpheme corresponds to what I called the phi-feature morpheme in Chapter \ref{ch:the-basic-idea} and the introduction to this chapter.
 I show that this morpheme corresponds to pronominal features and gender features.
 
-First I will show that the \tit{o} does not only appear in relative pronouns, but it also appears in other pronouns.
+First I will show that the \tit{o} does not only appear in relative pronouns, but that it also appears in other pronouns.
 Consider the relative pronouns in Table \ref{tbl:pol-rps}.
 
 \begin{table}[htbp]
@@ -482,7 +500,7 @@ Consider the relative pronouns in Table \ref{tbl:pol-rps}.
   \label{tbl:pol-rps}
 \end{table}
 
-I leave the nominative and accusative aside from now and come back to them later.
+I leave the nominative and accusative aside from now and come back to them later in this section.
 From the genitive on, the final suffixes in the animate and the inanimate paradigm are the same.\footnote{
 I include genitive and the instrumental in the paradigms to show that the patterns observed in the dative are not standing on themselves. Instead, they are more generally attested in Polish, and they deserve an explanation.
 In Polish, the genitive comes between the accusative and the dative, i.e. it is more complex than the accusative and less complex than the dative. However, I do not incorporate them in the syntactic structures.
@@ -511,7 +529,7 @@ The \tit{k} in \ref{ex:pol-gdzie} gets voiced into \tit{g} because it is followe
 
 Moreover, \tit{cz} is not a primary consonant in Polish but a derived one \pgcitep{swan2002}{23}. The consonants \tit{cz} and \tit{c} are derived from \tit{k}.
 
-I propose that the \tit{k} is present in the inanimate relative pronouns. They appear as a consequence of being combined with an \tit{j}. I show the proposed decomposition in Table \ref{tbl:pol-rp-underl}.
+I propose that the \tit{k} is underlyingly present in the inanimate relative pronouns. They appear as a consequence of being combined with an \tit{i}. I show the proposed decomposition in Table \ref{tbl:pol-rp-underl}.
 
 \begin{table}[htbp]
   \center
@@ -530,8 +548,8 @@ I propose that the \tit{k} is present in the inanimate relative pronouns. They a
   \label{tbl:pol-rp-underl}
 \end{table}
 
-Under this analysis, Polish only has the morphemes \tit{k}, \tit{o} and \tit{i} that can be observed in the animate plus an \tit{j} that is present throughout the whole paradigm in the inanimate.\footnote{
-There seems to be a contradition here: the inanimate is featurally speaking less complex than the animate  \citep[cf.]{harley2002}, but morphologically the inanimate is more complex than the animate: it contains the additional morpheme \tit{i}. I return to this seemingly contradition later in this section.
+Under this analysis, Polish only has the morphemes \tit{k}, \tit{o} and \tit{i} that can be observed in the animate plus an \tit{i} that is present throughout the whole paradigm in the inanimate.\footnote{
+As first sight, there seems to be a contradiction here: the inanimate is featurally speaking less complex than the animate  \citep[cf.]{harley2002}, but morphologically the inanimate is more complex than the animate: it contains the additional morpheme \tit{i}. I return to this point later in this section to show how this apparent contradiction can be resolved.
 }
 This hypothesizes that Polish relative pronouns have the underlying forms shown in Table \ref{tbl:pol-rps-underl-real}.
 
@@ -552,54 +570,15 @@ This hypothesizes that Polish relative pronouns have the underlying forms shown 
   \label{tbl:pol-rps-underl-real}
 \end{table}
 
-The sequence \tit{k-i-i} becomes \tit{czy} in the instrumental, and the sequence \tit{k-i-o} becomes \tit{cze} in the genitive and dative.
-To get from the underlying form to the surface form, three phonological processes are taking place, which are all independently observed within Polish.
-
-
-\footnote{
-Under this analysis, \tit{czyj} `whose' is underlyingly \tit{k-i-i-j}.
+The sequence \tit{k-i-i} becomes \tit{czy} in the instrumental, and the sequence \tit{k-i-o} becomes \tit{cze} in the genitive and dative.\footnote{
+Under this analysis, the \tsc{wh}-element \tit{czyj} `whose' is underlyingly \tit{k-i-i-j}.
 }
+To get from the underlying form to the surface form, several phonological processes are taking place, which are all independently observed within Polish. I start with the combination of \tit{k} and \tit{i} becoming \tit{c}, as shown in \ref{ex:pol-phon-k+i}.
 
-\ex.\label{ex:pol-phon-j-vowel}
-\a. /o/ → /e/ / /i/\underline{\hspace{0.6cm}}\label{ex:pol-phon-j-o}
-\b. /i/ → /y/ / /i/\underline{\hspace{0.6cm}}\label{ex:pol-phon-j-i}
+\ex.\label{ex:pol-phon-k+i}
+\a. /k/ + /i/ → /c/
 
-I continue with the change shown in \ref{ex:pol-phon-j-o}, in which the combination of /i/ and /i/ results in /y/.
-
-\exg. walc-ik: walczyk\\
-waltz-\tsc{dim}\\
-(this is two in one) \flushfill{\pgcitealt{swan2002}{26}}
-
-I continue with the change shown in \ref{ex:pol-phon-j-o}, in which the combination of /o/ and /i/ results in /e/.
-
-\ex. moje-story
-
-
-\footnote{
-In the nominative and accusative only the change in \ref{ex:pol-phon-j-k} is happening. I assume that the \tit{o} in the nominative and accusative resists the process in \ref{ex:pol-phon-j-vowel}. This is because the \tit{o} in the nominative and accusative is a `different' \tit{o} than all the other ones. This \tit{o} namely spells out different features than the \tit{o}.
-}
-
-\begin{table}[htbp]
-  \center
-  \caption{Polish inanimate relative pronouns (underlying + surface forms) \pgcitep{swan2002}{160}}
-  \begin{tabular}[b]{cc}
-    \toprule
-              & after first step  \\
-    \cmidrule{2-2}
-    \tsc{nom} & k-i-o           \\
-    \tsc{acc} & k-i-o             \\
-    \tsc{gen} & k-i-e-go      \\
-    \tsc{dat} & k-i-e-mu      \\
-    \tsc{ins} & k-i-y-m        \\
-    \bottomrule
-  \end{tabular}
-  \label{tbl:pol-rps-step-1}
-\end{table}
-
-\ex.\label{ex:pol-phon-j-k}
-\a. /k/ /i/ → /c/
-
-I start with the change shown in \ref{ex:pol-phon-j-k}, in which the combination of /k/ and /i/ results in /c/. Consider the paradigm for the singular of \tit{lampa} `light' and the singular of \tit{córka} `daugther' in Table \ref{tbl:pol-jk-to-c}.
+Consider the paradigm for the singular of \tit{lampa} `light' and the singular of \tit{córka} `daugther' in Table \ref{tbl:pol-jk-to-c}.
 
 \begin{table}[htbp]
   \center
@@ -619,47 +598,97 @@ I start with the change shown in \ref{ex:pol-phon-j-k}, in which the combination
 \end{table}
 
 The stem and the suffixes are identical in both paradigms, except for in the dative.\footnote{
-Notice also the change from /i/ to /y/ in the genitive of \tit{lampa}. Possibly, the underlying form is here \tit{lamp-i-i}, and this is an instance of the change given in \ref{ex:pol-phon-j-i}.
+There is also the change from /i/ to /y/ in the genitive of \tit{lampa}.
 }
 There, the stem of \tit{córka} does no longer end with a \tit{k}, but with a \tit{c}. Also, part of the suffix, namely the \tit{i} has disappeared. Analyzing \tit{córc-e} as \tit{córk-i-e} brings back regularity in the paradigm.
 
+Consider the forms after this first phonological change and the surface forms in Table \ref{tbl:pol-rps-change1-real}.
+
 \begin{table}[htbp]
   \center
-  \caption{Polish inanimate relative pronouns (underlying + surface forms) \pgcitep{swan2002}{160}}
-  \begin{tabular}[b]{cc}
+  \caption{Polish inanimate relative pronouns (after change 1 + surface forms) \pgcitep{swan2002}{160}}
+  \begin{tabular}[b]{ccc}
     \toprule
-              & after second step  \\
-    \cmidrule{2-2}
-    \tsc{nom} & c-o           \\
-    \tsc{acc} & c-o             \\
-    \tsc{gen} & c-e-go      \\
-    \tsc{dat} & c-e-mu      \\
-    \tsc{ins} & c-y-m        \\
+              & after change 1  & surface    \\
+    \cmidrule{2-3}
+    \tsc{nom} & c-o             &  c-o      \\
+    \tsc{acc} & c-o             &  c-o      \\
+    \tsc{gen} & c-o-go          &  cz-e-go  \\
+    \tsc{dat} & c-o-mu          &  cz-e-mu  \\
+    \tsc{ins} & c-i-m           &  cz-y-m   \\
     \bottomrule
   \end{tabular}
-  \label{tbl:pol-rps-step-2}
+  \label{tbl:pol-rps-change1-real}
 \end{table}
 
-\ex.
-\b. /c/ → /cz/ / \underline{\hspace{0.6cm}}/e/
-\b. /c/ → /cz/ / \underline{\hspace{0.6cm}}/y/
+I continue with the combination of \tit{c} and \tit{i} becoming \tit{czy}, as shown in \ref{ex:pol-phon-c+i}.
 
+\ex.\label{ex:pol-phon-c+i}
+\a. /c/ + /i/ → /czy/
 
-
-Finally, there is the change of \tit{c} before \tit{e/y} to \tit{cz}.
-
-\exg. ojc-e: ojcze\\
- father.\tsc{voc}\\
-\flushfill{\pgcitealt{swan2002}{26}}
-
+This change can be independently observed in \ref{ex:pol-waltz}.
 
 \exg. walc-ik: walczyk\\
- waltz-\tsc{dim}\\
- (this is two in one) \flushfill{\pgcitealt{swan2002}{26}}
+waltz-\tsc{dim} waltz.\tsc{dim}\\
+\flushfill{\pgcitealt{swan2002}{26}}\label{ex:pol-waltz}
 
-In sum, the \tit{o} in relative pronoun can appear as an \tit{e} when it is palatalized.
+The noun \tit{walc} `waltz' combines with the diminutive marker \tit{ik}. The sequence \tit{c-ik} changes to \tit{czyk}.
 
-The conclusion I draw from this is that the morpheme \tit{o} is not specific to animate relative pronouns, but it also appears elsewhere, for instance in inanimate relative pronouns, demonstratives and the \tit{ni}- and \tit{je}-pronouns. What these elements all have in common is that they are pronouns. Therefore, I assume that the \tit{o} spells out pronominal features. In addition, it also spells out gender features.
+Consider the forms after this second phonological change and the surface forms in Table \ref{tbl:pol-rps-change2-real}.
+
+\begin{table}[htbp]
+  \center
+  \caption{Polish inanimate relative pronouns (after change 1 + surface forms) \pgcitep{swan2002}{160}}
+  \begin{tabular}[b]{ccc}
+    \toprule
+              & after change 1  & surface    \\
+    \cmidrule{2-3}
+    \tsc{nom} & c-o             &  c-o      \\
+    \tsc{acc} & c-o             &  c-o      \\
+    \tsc{gen} & c-o-go          &  cz-e-go  \\
+    \tsc{dat} & c-o-mu          &  cz-e-mu  \\
+    \tsc{ins} & cz-y-m          &  cz-y-m   \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:pol-rps-change2-real}
+\end{table}
+
+The last phonological change is the combination of \tit{c} and \tit{o} becoming \tit{cze} in the genitive and dative.
+
+\ex.\label{ex:pol-phon-c+o}
+\a. /c/ + /o/ → /cze/
+
+Note, however, that the \tit{co} in the nominative and the accusative does not become \tit{cze}. I assume that the \tit{o} in the nominative and accusative resists the process in \ref{ex:pol-phon-c+o}. This is because the \tit{o} in the nominative and accusative is a `different' \tit{o} than the \tit{o} in the genitive and dative. This \tit{o} namely spells out different features than the \tit{o}.
+
+I do not know of an example that independently shows this change. There is an example in which the combination of \tit{c} and \tit{e} results in \tit{cze}. I show this in \ref{ex:pol-father}.
+
+\exg. ojc-e: ojcze\\
+ father-\tsc{voc} father.\tsc{voc}\\
+\flushfill{\pgcitealt{swan2002}{26}}\label{ex:pol-father}
+
+The noun \tit{ojc} `father' combines with the vocative marker \tit{e}. The sequence \tit{c-e} changes to \tit{cze}.
+
+This could indicate that there is an independent cause that triggers the change of the \tit{o} into the \tit{e}.
+A likely candidate for that is the \tit{i}, that also changed the \tit{k} into a \tit{c}. Phonologically, this seems realistic because the \tit{e} appears between the \tit{o} and the \tit{i} in frontness of the vowel.
+
+The conclusion I draw from this is that the morpheme \tit{o} is not specific to animate relative pronouns, but it also appears elsewhere, for instance in inanimate relative pronouns, demonstratives and the \tit{ni}- and \tit{je}-pronouns, as shown in \ref{tbl:pol-o-everywhere}.
+
+\begin{table}[htbp]
+  \center
+  \caption{Polish dative pronouns (underlying and surface)}
+  \begin{tabular}[b]{ccc}
+    \toprule
+                      & underlying  & surface  \\
+    \cmidrule{2-3}
+    \tsc{dem}         & t-i-o-mu    &  t-e-mu   \\
+    \tit{nie}-pronoun & ni(-i)-o-mu &  n-i-e-mu \\
+    \tsc{je}-pronoun  & j(-i)-o-mu  &  j-e-mu   \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:pol-o-everywhere}
+\end{table}
+
+What these elements all have in common is that they are pronouns. Moreover, they can all appear in both animate and inanimate gender Therefore, I assume that the \tit{o} spells out pronominal features and gender features.
 
 \ex. \label{ex:pol-entry-o}
 \begin{forest} boom
@@ -673,18 +702,12 @@ The conclusion I draw from this is that the morpheme \tit{o} is not specific to 
   {\draw (.east) node[right]{⇔ \tit{o}}; }
 \end{forest}
 
-The question is which features \tit{k} spells out and which \tit{o}. We know now that \tit{e} is underlyingly \tit{j} + \tit{o}. How do \tit{tego} and \tit{kogo} differ? They are demonstrative vs. \tsc{wh}-element. \tit{k} does question, \tit{t} does \tsc{dem}. I actually assume that \tit{k} does \tsc{dem} too, but I leave that out here. This means that the \tit{o} needs to do `other stuff'. It is the base, so what I have referring to as phi-features.\footnote{
-\tit{jego} is actually \tit{j} + \tit{ogo}
-}
+Finally, I discuss the feature content of the morpheme\tit{k}. This morpheme corresponds to what I called the \tsc{rel}-feature in Chapter \ref{ch:the-basic-idea} and the introduction to this chapter. I argue that this morpheme actually also spells out \tsc{wh}-operator features and number and gender features.
 
-
-
-I discuss the features that I assume the \tit{k} spells out one by one.
-
-I start with the operator features \tsc{wh} and \tsc{rel}. The relative pronouns are \tsc{wh}-pronouns, which are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{w}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
+I start with the operator features \tsc{wh} and \tsc{rel}. The relative pronouns are \tsc{wh}-pronouns, which are also used as interrogatives in Polish. Therefore, just like the Modern German \tit{we}, the Polish \tit{k} spells out the features \tsc{wh} and \tsc{rel}.
 
 Finally, since the relative pronouns do not have a morphological plural, I assume that \tit{k} contains the feature \tsc{ind}.
-Lastly, \tsc{k} also contains \tsc{an} and \tsc{cl}.
+Lastly, I assume that \tsc{k} also contains the features \tsc{an} and \tsc{cl}.
 
 In sum, the morpheme \tit{k} realizes the features \tsc{wh}, \tsc{rel}, \tsc{ind}, \tsc{an} and \tsc{cl}.\footnote{
 Actually, to be able to derive the inanimate relative pronoun, I assume that there is a pointer in the lexical entry for \tit{k}, as shown in \ref{ex:pol-entry-k-pointer}.
@@ -707,7 +730,7 @@ Actually, to be able to derive the inanimate relative pronoun, I assume that the
   {\draw (.east) node[right]{⇔ \tit{k}}; }
 \end{forest}
 
-The pointer is situated above the \tsc{ind}P. That means that if there is no animate feature in the structure, the \tsc{ind} can also not be spelled out with \tit{k}. What follows is that there is another morpheme necessary that contributes the feature \tsc{ind}. I propose that this is \tit{j} which forms strong pronouns. This is what causes the phonological processes described in Section \ref{sec:pol-elh}.
+The pointer is situated above the \tsc{ind}P. That means that if there is no animate feature in the structure, the \tsc{ind} can also not be spelled out with \tit{k}. Then there is another morpheme necessary that contributes the feature \tsc{ind}. I propose that this is \tit{i}, which causes the phonological processes described in this section.
 }
 
 \ex.\label{ex:pol-entry-k}
@@ -1067,33 +1090,30 @@ I have suggested that headless relatives are derived from light-headed relatives
 
 \ex.\label{ex:pol-lh-complex}
 \begin{forest} boom
-  [\tsc{k}P, s sep = 15mm
-      [\tsc{an}P,
+  [\tsc{k}P, s sep = 20 mm
+      [ϕP,
       tikz={
-      \node[label=below:\tit{o},
-      draw,circle,
-      scale=0.75,
+      \node[draw,circle,
+      scale=0.85,
       fit to=tree]{};
       }
-          [\phantom{xxx}, roof, baseline]
+          [\phantom{xxx}, roof]
       ]
       [\tsc{k}P,
       tikz={
-      \node[label=below:\tit{go/mu},
-      draw,circle,
+      \node[draw,circle,
       scale=0.85,
       fit to=tree]{};
       }
           [\tsc{k}]
-          [\tsc{ind}P
-              [\tsc{ind}]
-          ]
       ]
   ]
 \end{forest}
 
 \ref{ex:pol-lh-complex} shows that light heads consist of at least two features: ϕ and \tsc{k}, as I suggested in Chapter \ref{ch:the-basic-idea}. In this section, I specify the feature content of the light head in more detail.
 Just like I suggested in Chapter \ref{ch:deriving-onlyinternal}, I end up claiming that the phi- and case-feature morphemes of the relative pronoun are the light head in headless relatives. I show the complete structure that I work towards in this section in \ref{ex:pol-elh}.
+
+% Crucially, the constituent structure in \ref{ex:pol-elh} is the same as in \ref{ex:simple-matching}. Recall from Chapter \ref{ch:deriving-onlyinternal} that in Modern German the extra light head spells out as a single constituent. The Polish extra light head consists of two constituents, as shown in \ref{ex:pol-elh}. This is the crucial difference between the two languages that leads them to be of different types in headless relatives.
 
 \ex.\label{ex:pol-elh}
 \begin{adjustbox}{max width=0.9\textwidth}
@@ -1128,22 +1148,17 @@ Just like I suggested in Chapter \ref{ch:deriving-onlyinternal}, I end up claimi
 \end{forest}
 \end{adjustbox}
 
-%
-% In this section I argue that the extra light head in Polish is consists of the \tit{o} and a suffix. This means that I propose the light-headed relative that headless are derived from is of the type I show in \ref{ex:pol-elh-rp}
-%
-% \exg. Jan lubi [ogo] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
-% Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rp}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
-% `Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:pol-elh-rp}
-
 For Modern German, I considered two kinds of light-headed relatives as the source of the headless relative.
 First, the light-headed relative is derived from an existing light-headed relative, and the deletion of the light head is optional. Second, the light-headed relative is derived from a light-headed relative that does not surfaces in Modern German, and the deletion of the light head is obligatory.
-For Modern German I concluded it was the second, and I proposed which features this extra light head should consist of. This set of features in Polish corresponds to the extra light head \tit{ogo} or \tit{omu}, which is not attested as a light head in an existing light-headed relative in Polish.
+For Modern German I concluded it was the second, and I proposed which features this extra light head should consist of. I do the same investigation for Polish, and I reach the same conclusion as I did for Modern German.
 
-In the rest of this section I consider the existing Polish light-headed relative that could potentially be the source for headless relatives. This is the light-headed relative that in which the demonstrative is the light head, as shown in \ref{ex:pol-light-headed}.
+Consider the existing Polish light-headed relative in \ref{ex:pol-light-headed}.
 
 \exg. Jan śpiewa to, co Maria śpiewa.\\
 Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} Maria sings\\
 `John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{103}}\label{ex:pol-light-headed}
+
+This light-headed relative, in which the demonstrative is the light head, could potentially be the source for headless relatives.
 
 For Modern German, I gave two arguments for not taking this existing light-headed relative as source of the headless relative. In what follows, I show that these arguments hold for Polish in the same way do for Modern German.
 
@@ -1177,14 +1192,11 @@ For concreteness, I assume \tit{ever} to be situated within the relative clause.
 
 The second argument against the existing light-headed relatives being the source of headless relatives comes from their interpretation. Headless relatives have two possible interpretations, and light-headed relatives have only one of these.
 Just like in Modern German, Polish headless relatives can be analyzed as either universal or definite \pgcitep{citko2004}{103}.
-Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
+Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.\footnote{
+It is also possible that the strong pronoun is syncretic with the extra light head and that the extra light head is actually also spelled out as \tit{jego}/\tit{jemu}. This would mean that the strong extra light head consists of even more than two morphemes. For my proposal, it is important to show that the extra light head consists of at least two morphemes, one of which spells out case features. It works equally well when the non-case part of the structure actually consists of more one morpheme. I continue working out a proposal in which the extra light head is bimorphemic.
+}
 
-
-
-
-
-
-The two morphemes that spell out the features in \ref{ex:fseq-wh-lh-pol} are the vowel and the suffix, as shown in \ref{ex:pol-elhs}.
+In the remainder of this section, I discuss the two extra light heads that I compare the constituents of in Section \ref{sec:comparing-pol}. The are the accusative animate and the dative animate, shown in \ref{ex:pol-elhs}.
 
 \ex.\label{ex:pol-elhs}
 \ag. o-go\\
@@ -1192,49 +1204,10 @@ The two morphemes that spell out the features in \ref{ex:fseq-wh-lh-pol} are the
 \bg. o-mu\\
  \tsc{elh}.\tsc{an}.\tsc{dat}\\
 
-Specifically, I argue that Polish light heads have the structure shown in \ref{ex:pol-elh}.
+In Chapter \ref{ch:deriving-internalonly}, I showed that the relative pronoun contains two features more than the extra light head, namely \tsc{wh} and \tsc{rel}. This means that the functional for the extra light head as shown in \ref{ex:fseq-elh-rep}.
 
-\ex.\label{ex:pol-elh}
-\begin{adjustbox}{max width=0.9\textwidth}
+\ex.\label{ex:fseq-elh-rep}
 \begin{forest} boom
-  [\tsc{dat}P, s sep=40mm
-      [\tsc{an}P,
-      tikz={
-      \node[label=below:\tit{o},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{an}]
-          [\tsc{cl}P
-              [\tsc{cl}]
-              [\tsc{ref}]
-          ]
-      ]
-      [\tsc{k}P,
-      tikz={
-      \node[label=below:\tit{go/mu},
-      draw,circle,
-      scale=0.9,
-      fit to=tree]{};
-      }
-          [\tsc{k}]
-          [\tsc{ind}P
-              [\tsc{ind}]
-          ]
-      ]
-  ]
-\end{forest}
-\end{adjustbox}
-
-Crucially, the constituent structure in \ref{ex:pol-elh} is the same as in \ref{ex:simple-matching}. Recall from Chapter \ref{ch:deriving-onlyinternal} that in Modern German the extra light head spells out as a single constituent. The Polish extra light head consists of two constituents, as shown in \ref{ex:pol-elh}. This is the crucial difference between the two languages that leads them to be of different types in headless relatives.
-
-Before I discuss the feature content of the morphemes of the extra light head, I show that the two morphemes spell out the features in \ref{ex:fseq-wh-lh-pol}. Therefore, I need to discuss the \tit{o} of the relative pronoun. The \tit{o} can namely become an \tit{e} under particular phonological circumstances. This allows me to show that \tit{ogo} and \tit{omu} are the extra light heads in Polish.
-
-
-I repeat the functional sequence of the extra light head in \ref{ex:fseq-wh-lh-pol-rep}.
-
-\ex. \begin{forest} boom
   [\tsc{k}P
       [\tsc{k}]
       [\tsc{ind}P
@@ -1249,17 +1222,54 @@ I repeat the functional sequence of the extra light head in \ref{ex:fseq-wh-lh-p
       ]
   ]
 \end{forest}
-\label{ex:fseq-wh-lh-pol-rep}
 
-The strong pronoun in Table \ref{tbl:pol-prons} differs from the extra light head in one feature: \tsc{c}. As each morpheme needs to spell out at least one feature, I assume that \tit{j} spells out this \tsc{c}.\footnote{
-Actually, I assume it spells out \tsc{c} and \tsc{ind} as it is a Complex Spec. As this is not crucial to the point I am making, I do not discuss it any further for now.
-}\footnote{
-It is also possible that the strong pronoun is syncretic with the extra light head and that the extra light head is actually also spelled out as \tit{jego}/\tit{jemu}. This would mean that the strong extra light head consists of even more than two morphemes. For my proposal, it is important to show that the extra light head consists of at least two morphemes, one of which spells out case features. It works equally well when the non-case part of the structure actually consists of more one morpheme. I continue working out a proposal in which the extra light head is bimorphemic.
-}
-This leaves the functional sequence in \ref{ex:fseq-wh-lh-pol-rep} to be spelled out by the morphemes \tit{o} and \tit{go}/\tit{mu}.
+It contains the pronominal feature \tsc{ref}, the gender features \tsc{cl} and \tsc{an}, the number feature \tsc{ind} and case features \tsc{k}.
 
-In what follows, I discuss which features they \tit{o} and the suffixes (\tit{go} and \tit{mu}) spell out, and I give their lexical entries. At the end of the section, I show how the extra light heads are constructed.
+I introduced the lexical entries that are required to spell out these features in Section \ref{sec:pol-rel}. I repeat them in \ref{ex:pol-entries-rep}.
 
+\ex.\label{ex:pol-entries-rep}
+\a.\label{ex:pol-entry-o-rep}
+\begin{forest} boom
+  [\tsc{an}P
+      [\tsc{an}]
+      [\tsc{cl}P
+          [\tsc{cl}]
+          [\tsc{ref}]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{o}}; }
+\end{forest}
+\b. \label{ex:pol-entry-go-rep}
+\begin{forest} boom
+  [\tsc{acc}P
+      [\tsc{f}2]
+      [\tsc{nom}P
+          [\tsc{f}1]
+          [\tsc{ind}P
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{go}}; }
+\end{forest}
+\b. \label{ex:pol-entry-mu-rep}
+\begin{forest} boom
+  [\tsc{dat}P
+      [\tsc{f}3]
+      [\tsc{acc}P
+          [\tsc{f}2]
+          [\tsc{nom}P
+              [\tsc{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{mu}}; }
+\end{forest}
+
+%%%
 
 In what follows, I construct the Polish extra light heads. Until the feature \tsc{ind}, the derivation is identical to the one of the relative pronoun.
 
