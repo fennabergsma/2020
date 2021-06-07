@@ -4,9 +4,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Contents}{ii}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{v}{section*.3}%
+\contentsline {chapter}{List of tables}{vi}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{viii}{section*.4}%
+\contentsline {chapter}{List of figures}{ix}{section*.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
 \defcounter {refsection}{0}\relax 
@@ -112,17 +112,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}The Polish extra light head}{229}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{235}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{236}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{241}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{243}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {9}Discussing the unrestricted type}{243}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{245}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}How Old High German differs}{245}{section.9.1}%
+\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{249}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Comparing multiple constituents}{249}{section.9.2}%
+\contentsline {section}{\numberline {9.2}The Old High German light head}{253}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}The hypothetical unrestricted language}{254}{section.9.3}%
+\contentsline {subsection}{\numberline {9.2.1}The extra light head}{253}{subsection.9.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.2}The light head}{253}{subsection.9.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.3}Possible predictions}{253}{subsection.9.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Comparing constituents}{253}{section.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.1}With the extra light head}{253}{subsection.9.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.2}With the light head}{254}{subsection.9.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.4}The hypothetical unrestricted language}{259}{section.9.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {10}Discussion}{257}{chapter.10}%
 \defcounter {refsection}{0}\relax 
@@ -140,4 +152,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{267}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{269}{section*.26}%
+\contentsline {chapter}{Bibliography}{269}{section*.19}%
