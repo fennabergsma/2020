@@ -1,6 +1,6 @@
 % !TEX root = thesis.tex
 
-\chapter{The basic idea}\label{ch:the-basic-idea}
+\chapter{The source of variation}\label{ch:the-basic-idea}
 
 In Chapter \ref{ch:typology} I introduced two descriptive parameters that generate the attested languages, as shown in Figure \ref{fig:two-parameters}.
 
@@ -37,15 +37,20 @@ In Chapter \ref{ch:typology} I introduced two descriptive parameters that genera
     \label{fig:two-parameters}
 \end{figure}
 
-The first parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes unrestricted languages (e.g. Old High German) from internal-only languages (e.g. Modern German) and matching languages (e.g. Polish). = actually ϕ + \tsc{k} portmanteau
-The second parameter concerns whether the internal case is allowed to surface when it wins the case competition (allow \tsc{int?}). This parameter distinguishes internal-only languages (e.g. as Modern German) from unrestricted languages (e.g. Old High German). = \tsc{rp} + \tsc{lh} syncretism
+The first parameter concerns whether the internal case is allowed to surface when it wins the case competition (allow \tsc{int?}). This parameter distinguishes matching languages from internal-only languages and unrestricted languages.
+The second parameter concerns whether the external case is allowed to surface when it wins the case competition (allow \tsc{ext}?). This parameter distinguishes internal-only languages from unrestricted languages.
 
-``A natural question at this point is whether this typology needs to be fully stipulative, or is to some extent derivable from independent properties of individual languages'' \citet{grosu1994}{147}
+The question that arises at this point is whether these parameters are specific to headless relatives in the language or whether the differences can be derived from independent properties of the languages.\footnote{
+Exactly this question was raised by in \citet{grosu1994}{147}:
+``A natural question at this point is whether this typology needs to be fully stipulative, or is to some extent derivable from independent properties of individual languages.''
+He investigated the correlation between the morphology richness of morphology and the willingness for a language to show headless relatives. He found one, but it was not strict.
+}
+I argue for the latter. The independent property that cause languages to be of different types is the different lexical entries that are present in different languages.
+The goal of Part \ref{part:deriving} is to show how different lexical entries lead to differences in grammaticality patterns and to illustrate in detail how this works for the three different language types I discussed in Chapter \ref{ch:typology}. In this chapter I give the basic idea behind my proposal and in the following three chapters I work the proposal out for the three different language types.
 
-I propose that the typology can be derived from the morphology of the languages.
-first, basic assumptions in place
-then, show where the crosslingustic differences come from
-then show how they lead to differences
+This chapter is structured as follows.
+First, I discuss the basic assumptions that I am making, which are the same for each of the language types I discuss. Then I introduce the source for the crosslinguistic differences: the lexical entries that are present in the different language types. I show how a difference in lexical entries can ultimately lead to the different languages types.
+
 
 \section{Underlying assumptions}\label{sec:assumptions}
 
@@ -1314,7 +1319,7 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
   \label{fig:nom-nom-unres}
 \end{figure}
 
-The light head corresponds to \tit{XY}, illustrated by the circle around the XP and the \tit{X} under it and the circle around the \tsc{nom}P and the \tit{Y} under it. The relative pronoun corresponds to \tit{XY} too, illustrated by the circle around the \tsc{rel}P and the \tit{X} under it and the circle around the \tsc{nom}P and the \tit{Y} under it.
+The light head corresponds to \tit{X}, illustrated by the circle around the XP and the \tit{X} under it and the circle around the \tsc{nom}P and the \tit{Y} under it. The relative pronoun corresponds to \tit{XY} too, illustrated by the circle around the \tsc{rel}P and the \tit{X} under it and the circle around the \tsc{nom}P and the \tit{Y} under it.
 I draw a dotted circle around each constituent that is a constituent in both the light head and the relative pronoun.
 The light head (the XP realized by \tit{XY}) is syncretic with the relative pronoun (the \tsc{rel}P realized by \tit{XY}).
 As the two forms are entirely syncretic, either the light head or the relative pronoun can be deleted. I delete the relative pronoun here, as I discuss how it is possible for the relative pronoun to be deleted even though it has a feature less than the light head.
@@ -1333,25 +1338,23 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
       light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [XP, s sep=20mm,
-        tikz={
-        \node[draw,circle,
-        dotted,
-        scale=1,
-        fit to=tree]{};
-        }
+        [XP, s sep=20mm
             [XP,
             tikz={
             \node[label=below:\tit{X},
             draw,circle,
             scale=0.85,
             fit to=tree]{};
+            \node[draw,circle,
+            dotted,
+            scale=0.9,
+            fit to=tree]{};
             }
                 [\phantom{xxx}, roof, baseline]
             ]
             [\tsc{acc}P,
             tikz={
-            \node[label=below:\tit{Y},
+            \node[label=below:\tit{Z},
             draw,circle,
             scale=0.85,
             fit to=tree]{};
@@ -1368,19 +1371,16 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
       \end{forest}
       & \phantom{x} &
       \begin{forest} boom
-        [\tsc{rel}P, s sep=20mm,
-        tikz={
-        \node[draw,circle,
-        dotted,
-        fill=DG,fill opacity=0.2,
-        scale=1.05,
-        fit to=tree]{};
-        }
+        [\tsc{rel}P, s sep=20mm
             [\tsc{rel}P,
             tikz={
             \node[label=below:\tit{X},
             draw,circle,
             scale=0.85,
+            fit to=tree]{};
+            \node[draw,circle,
+            dotted,
+            scale=0.9,
             fit to=tree]{};
             }
                 [\tsc{rel}]
@@ -1416,7 +1416,9 @@ As none of the items is deleted, it is expected that there is no grammatical hea
 
 However, this is not what is observed in the unrestricted type of language.
 For this type of language I need to make explicit an additional assumption which concerns the larger syntactic structure of headless relatives. I assume that the relative clause is built first, which includes the relative pronoun that bears its case.
-At a later stage in the derivation, the light head is built. The last features of the light head that are merged are the case features. This means that there is a stage in which the light head bears the nominative case (as in Figure \ref{fig:nom-nom-unres}). At that point, the relative pronoun is deleted, and subsequently \tsc{f}2 is merged to the light head to make it a \tsc{acc}P. In Chapter \ref{ch:deriving-unrestricted} I discuss the derivation in more detail.
+At a later stage in the derivation, the light head is built. The last features of the light head that are merged are the case features. This means that there is a stage in the derivation in which the light head bears the nominative case (as in Figure \ref{fig:nom-nom-unres}). At that point, the relative pronoun is deleted, and subsequently \tsc{f}2 is merged to the light head to make it a \tsc{acc}P. In Chapter \ref{ch:deriving-unrestricted} I discuss the derivation in more detail.
+
+Crucially, this option deletion is possible for languages of the unrestricted type but not for languages of the internal-only or the matching type. This is derived from the fact that the unrestricted type of language has a light head available that is syncretic with the relative pronoun. This does not happen in the internal-only and the matching type of language. I elaborate on this in Chapter \ref{ch:deriving-unrestricted}.
 
 The comparisons between the constituents within the light heads and the relative pronouns correctly derive the patterns observed in the unrestricted type of language. An overview of the patterns is shown in Table \ref{tbl:overview-rel-light-ohg}.
 
