@@ -1248,9 +1248,10 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
       \begin{forest} boom
         [XP, s sep=20mm,
         tikz={
-        \node[draw,circle,
+        \node[draw,
+        constituent-deletion,yshift=-0.4cm,
         dotted,
-        scale=1,
+        scale=1.3,
         fit to=tree]{};
         }
             [XP,
@@ -1280,10 +1281,11 @@ In Figure \ref{fig:nom-nom-unres}, I give an example of the second possible ligh
       \begin{forest} boom
         [\tsc{rel}P, s sep=20mm,
         tikz={
-        \node[draw,circle,
+        \node[draw,
+        constituent-deletion,yshift=-0.4cm,
         dotted,
         fill=DG,fill opacity=0.2,
-        scale=1.05,
+        scale=1.25,
         fit to=tree]{};
         }
             [\tsc{rel}P,
