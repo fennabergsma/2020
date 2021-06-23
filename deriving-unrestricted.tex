@@ -774,7 +774,7 @@ In Figure \ref{fig:ohg-ext-wins-lh}, I give the syntactic structure of the light
   \begin{adjustbox}{max height=0.9\textheight}
   \begin{tabular}[b]{c}
         \toprule
-        \tsc{nom} light head \tit{dhe-r}\\
+        \tsc{nom} light head \tit{dhe-n}\\
         \cmidrule{1-1}
         \begin{forest} boom
           [\tsc{d}P, s sep=20mm,
@@ -794,16 +794,19 @@ In Figure \ref{fig:ohg-ext-wins-lh}, I give the syntactic structure of the light
               }
                   [\phantom{xxx}, roof, baseline]
               ]
-              [\tsc{nom}P,
+              [\tsc{acc}P,
               tikz={
               \node[label=below:\tit{r},
               draw,circle,
               scale=0.85,
               fit to=tree]{};
               }
-                  [\tsc{f}1]
-                  [\tsc{ind}P
-                      [\phantom{xxx}, roof, baseline]
+                  [\tsc{f}2]
+                  [\tsc{nom}P
+                      [\tsc{f}1]
+                      [\tsc{ind}P
+                          [\phantom{xxx}, roof, baseline]
+                      ]
                   ]
               ]
           ]
@@ -857,11 +860,44 @@ In Figure \ref{fig:ohg-ext-wins-lh}, I give the syntactic structure of the light
   \label{fig:ohg-ext-wins-lh}
 \end{figure}
 
+this does not work, but the example is grammatical!
+so by simply comparing the two, we're not gonna get there
 
+as I already alluded to in the basic idea, there is a stage in the derivation, in which the two cases are both nominative, and on that moment, the relative pronoun is deleted
 
+if we start talking about `stages in the derivation' we need to know more about the derivation.
+So far, I have only be talking about the light head and the relative pronoun separately. I have not placed them in a larger syntactic structure. For the discussion so far that has also not been relevant: whatever is going on, it is the same for all languages.
 
-So far, I have only be talking about the light head and the relative pronoun separately. I have not placed them in a larger syntactic structure. For the discussion so far that has also not been relevant:
+now that I need to make reference to a stage in the derivation, we need to know what the larger syntactic structure looks like.
 
+I assume that a syntactic structure of a light-headed relative looks as in X\footnote{
+I actually assume that a light-headed relative with an extra light looks as in X
+
+\ex. here an example with a non-D with the head in the low position
+
+here explain what is in the example.
+This is also what Cinque says: non-definite heads are low, and definite heads are high.
+Two questions follow from such an analysis: (1) how do the case features end up down there, and (2) what triggers the movement of the light head to the higher position. About (1), Cinque says that it is feature percolation, and I follow that intuition. Technically, what's happening is backtracking, opening up the different workspaces, which leads to the case features finding a match on the element to the left of the relative clause. Concerning (2), Cinque says it's movement, I'm not sure what it's triggered by. I don't know what it is. If it's movement, then it can be triggered by spellout or by features. I don't see how either of them should work. It could be connected to the formation of a complex spec. It seems that as soon the spec is there, the light head also moves up, and the complex spec does not attach to the relative clause. I leave this for future research.
+}
+
+\ex. here an example of a high D and the relative clause below it
+
+There is a D, which appears higher in the structure than the relative clause, etc. etc. explanation
+the relative clause is already complete, including case features
+This structure for light-headed relatives is also assumed by cf. Cinque etc. etc.
+the features that are merged last in building a light head are the case features. first we have a D without case features, and then the case features are merged on by one. this means that we have a stage in the dervation dathat looks like:
+
+\ex. no cases, including relative pronoun and relative clause
+
+\ex. only nominative case
+
+now there's deletion!
+
+then we merge the next case feature, and we get a more complex external case
+
+note that we also have c-command for the deletion! great!\footnote{
+coming back the extra light head, we also have c-command there, under the defininteino of kayne
+}
 
 
 
