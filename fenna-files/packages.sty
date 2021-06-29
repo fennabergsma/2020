@@ -22,6 +22,12 @@
 \raggedbottom %%do not spread content over page
 %%%SPACING/BREAKING%%%
 
+%reverse margins left-right
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+%
 
 %%%TREES%%%
 \usepackage[linguistics]{forest}

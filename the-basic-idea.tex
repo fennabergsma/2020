@@ -1,4 +1,4 @@
-phi features% !TEX root = thesis.tex
+% !TEX root = thesis.tex
 
 \chapter{The source of variation}\label{ch:the-basic-idea}
 
@@ -1059,9 +1059,9 @@ The relative pronoun is spelled out by two lexical entries, indicated by the cir
 
 Because the internal syntax of the light head and the relative pronoun is the same as in the internal-only type of language, the outcomes of the comparison between them in different cases are also the same as in the internal-only type of language. This means that when the internal case and the external case match or when the internal case is more complex than the external case, the light head is a constituent that is structurally contained within the relative pronoun, and the light head is deleted, as shown in Figure \ref{fig:nom-nom-intonly} and Figure \ref{fig:nom-acc-intonly}. This is the pattern that is observed in the unrestricted type of language.
 
-Crucially, the unrestricted type of language differs from the internal-only type of language when the external case is more complex than the internal case. The structures given in Figure \ref{fig:rel-lh-unres-1} cannot lead to a grammatical headless relative, shown in Figure \ref{fig:acc-nom-intonly}.
+Crucially, the unrestricted type of language differs from the internal-only type of language when the external case is more complex than the internal case. The structures given in Figure \ref{fig:rel-lh-unres-1} cannot lead to a grammatical headless relative, shown in Figure \ref{fig:acc-nom-intonly}. Therefore, I propose that in this situation the light head needs to be a different one.
 
-I zoom in on the situation in which the external case is more complex. At first sight, it is unexpected that the light head bearing the external case surfaces to begin with. Recall that the feature content of light head is that of the relative pronoun minus the feature \tsc{rel}.
+Before I give the second possible light head in the unrestricted type of language, I zoom in on the situation in which the external case is more complex. At first sight, it is unexpected that the light head bearing the external case surfaces to begin with. Recall that the feature content of light head is that of the relative pronoun minus the feature \tsc{rel}.
 So far, I proposed that the light head can be deleted when all of its features structurally form a constituent within the relative pronoun. This is impossible the other way around: all features of the relative pronoun can never structurally form a constituent in the light head, because the relative pronoun contains the feature \tsc{rel} that the light head does not. It seems that there is one case that defies this rule: syncretism.
 In what follows I show a situation similar to the missing \tsc{rel} feature: a syncretism between nominative and accusative case in Modern German. This situation leads me to propose a second type of constituent containment: formal constituent containment.
 
@@ -1159,9 +1159,7 @@ The light head (the \tsc{acc}P realized by \tit{s}) is a constituent that is for
 I illustrate this by marking the content of the dotted circle for the light head gray.
 As the light head is deleted, the headless relative surfaces with the relative pronoun that bears the internal case.
 
-In sum, a more complex case can be deleted when it is syncretic with the less complex case, even though the more complex case contains a case feature more. If that is the case, then a relative pronoun can also be deleted when it is syncretic with the light head, even though the relative pronoun contains at least one feature more.
-
-With this in mind, consider..\footnote{
+In sum, a more complex case can be deleted when it is syncretic with the less complex case, even though the more complex case contains a case feature more. If that is the case, then a relative pronoun can also be deleted when it is syncretic with the light head, even though the relative pronoun contains at least one feature more. Consider such a situation in \ref{fig:rel-lh-unres-mono}.\footnote{
 Another option to get a relative pronoun deleted is to let the relative features form a separate constituent which is not deleted.
 
 \ex.\label{ex:gothic-nutshell}
@@ -1191,7 +1189,7 @@ Another option to get a relative pronoun deleted is to let the relative features
   ]
 \end{forest}
 
-In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work out the proposal for Old High German) I only discuss the situation in which the relative pronoun as a whole is a constituent that is structurally contained within the light head, and the relative pronoun is deleted.}
+In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work out the proposal for Old High German) I only discuss the situation in which the relative pronoun as a whole is a constituent that is formally contained within the light head, and the relative pronoun is deleted.}
 
 \begin{figure}[htbp]
   \center
@@ -1201,39 +1199,29 @@ In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work o
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-      [XP, s sep = 20 mm,
+      [\tsc{k}P,
       tikz={
-      \node[
+      \node[label=below:\tit{P},
       draw,circle,
       scale=0.85,
       fit to=tree]{};
       }
-          [XP
+          [\tsc{k}]
+          [ϕP
               [\phantom{xxx}, roof, baseline]
-          ]
-          [\tsc{k}P
-              [\tsc{k}]
-              [ϕP
-                  [\phantom{xxx}, roof, baseline]
-              ]
           ]
       ]
       \end{forest}
       & \phantom{x} &
     \begin{forest} boom
-      [\tsc{rel}P, s sep = 20 mm,
+      [\tsc{rel}P,
       tikz={
-      \node[
+      \node[label=below:\tit{P},
       draw,circle,
       scale=0.85,
       fit to=tree]{};
       }
-          [\tsc{rel}P
-              [\tsc{rel}]
-              [XP
-                  [\phantom{xxx}, roof, baseline]
-              ]
-          ]
+          [\tsc{rel}]
           [\tsc{k}P
               [\tsc{k}]
               [ϕP
@@ -1245,22 +1233,23 @@ In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work o
       \bottomrule
   \end{tabular}
   \end{adjustbox}
-   \caption {\tsc{lh}-2 and \tsc{rp} in the unrestricted type}
-  \label{fig:rel-lh-unres-2}
+   \caption {A syncretic light head and relative pronoun}
+  \label{fig:rel-lh-unres-mono}
 \end{figure}
 
+The light head corresponds to \tit{P}, illustrated by the circle around the \tsc{k}P and the \tit{P} below it. The relative pronoun corresponds to \tit{P} too, illustrated by the circle around the \tsc{rel}P and the \tit{P}. The relative pronoun (the \tsc{rel}P realized by \tit{P}) is a constituent that is formally contained within the light head (the \tsc{k}P realized by \tit{P}), so the relative pronoun can be deleted.
 
+Although in this situation the relative pronoun can be deleted, this does not describe the situation in Old High German, the language I discuss in Chapter \ref{ch:deriving-unrestricted}. In Old High German, the second possible light head contains an additional feature, which I refer to as \tsc{x}.
+This is not just a stipulation, but is a reason to think that a second possible light head needs to have a slightly different feature content. This reason has to do with spellout. If two forms contain exactly the same features, it is impossible that they lead to two different syntactic structures. However, this is exactly what I showed in Figure \ref{fig:rel-lh-unres-1} and Figure \ref{fig:rel-lh-unres-mono}: in the former the feature \tsc{rel} gets its own spellout while in the latter \tsc{rel} is spelled out together with the \tsc{k}P. These two structures can never be part of the same language, meaning that Figure \ref{fig:rel-lh-unres-mono} cannot be part of the unrestricted type of language. A possible solution is that the light head has a different feature content, which I argue is the case in Old High German.\footnote{
+There is a second possible solution to solve the problem, which is having two different relative pronouns: in one the feature \tsc{rel} actually corresponds to more than one feature or a different feature.
+}\footnote{
+There is a second reason to believe that the second possible light head needs to have a different feature content. This reason has to do with the larger syntactic structure of headless relatives. I return to this point in Chapter \ref{ch:deriving-unrestricted}.
+%in a nutshell: the light head can only delete the relative pronoun when it c-commands it. it only c-commands it when it is in the high position. it can only be in the high position when it is definite. so we need an additional feature besides phi and case
+%also, the relative pronoun needs the light head to be low to delete it
+}
+I leave it open for future research to find out whether a language like the one described in Figure \ref{fig:rel-lh-unres-mono} exists or not.
 
-
-
-
-
-
-This type of language has two possible light heads, which are part of the derivation under different circumstances.
-Therefore, I propose that in this situation the light head needs to be a different one.
-Before I give the second possible light head in the unrestricted type of language,
-
-consider the second possible light head and the relative pronoun I suggest for the unrestricted type of language. I show them in Figure \ref{fig:rel-lh-unres-2}.
+Now consider the second possible light head and the relative pronoun I suggest for the unrestricted type of language. I show them in Figure \ref{fig:rel-lh-unres-2}.
 
 \begin{figure}[htbp]
   \center
@@ -1270,8 +1259,8 @@ consider the second possible light head and the relative pronoun I suggest for t
       light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-      [XP, s sep = 20 mm
-          [XP,
+      [\tsc{x}P, s sep = 20 mm
+          [\tsc{x}P,
           tikz={
           \node[
           draw,circle,
@@ -1304,7 +1293,7 @@ consider the second possible light head and the relative pronoun I suggest for t
           fit to=tree]{};
           }
               [\tsc{rel}]
-              [XP
+              [\tsc{x}P
                   [\phantom{xxx}, roof, baseline]
               ]
           ]
@@ -1328,27 +1317,29 @@ consider the second possible light head and the relative pronoun I suggest for t
   \label{fig:rel-lh-unres-2}
 \end{figure}
 
-This is a consequence of the following lexical entries.
-I propose that this light head does not only consist of phi and case features, but that it also contains a feature I here refer to as X. In Chapter \ref{ch:deriving-unrestricted} I motivate this claim and I discuss the content of this feature. The light head is spelled out by two lexical entries. The feature X is spelled out by its own lexical entry, indicated by the circle around the XP. The rest of the light head is spelled out by the portmanteau of phi and case features.
+As discussed, I propose that this light head does not only consist of phi and case features, but that it also contains a feature I here refer to as \tsc{x}. In Chapter \ref{ch:deriving-unrestricted} I motivate this claim and I discuss the content of this feature.
 
-The relative pronoun always consists of all features the light head consists of. Therefore, it consists of phi and case features, the feature \tsc{rel} and the feature X.\footnote{
-I actually assume that the relative pronoun that is being compared to the first possible light head also contains the feature X. I left it out of the structures there because it was not relevant for the discussion.
+The internal syntax of the light head and the relative pronoun is the consequence of the following lexical entries.
+The light head is spelled out by two lexical entries.
+The feature \tsc{x} is spelled out by its own lexical entry, indicated by the circle around the \tsc{x}P. The rest of the light head is spelled out by the portmanteau of phi and case features.
+The relative pronoun always consists of all features the light head consists of. Therefore, it consists of phi and case features, the feature \tsc{rel} and the feature \tsc{x}.\footnote{
+I actually assume that the relative pronoun that is being compared to the first possible light head also contains the feature \tsc{x}. I left it out of the structures there because it was not relevant for the discussion.
 }
-The phi and case features are spelled out by the same portmanteau as in the light head. The feature \tsc{rel} and the feature X are spelled out by a single lexical entry.
-It is crucial for the analysis that there is a lexical entry for the \tsc{rel}P which contains the feature \tsc{rel} and the XP, but not a more specific one that spells out the XP on its own. In \ref{ex:entry-d}, I give the lexical entry, which spells out as \tit{X}.
+The phi and case features are spelled out by the same portmanteau as in the light head. The feature \tsc{rel} and the feature \tsc{x} are spelled out by a single lexical entry.
+It is crucial for the analysis that there is a lexical entry for the \tsc{rel}P which contains the feature \tsc{rel} and the \tsc{x}P, but not a more specific one that spells out the \tsc{x}P on its own. In \ref{ex:entry-x}, I give the lexical entry, which spells out as \tit{X}.
 
-\ex.\label{ex:entry-d}
+\ex.\label{ex:entry-x}
 \begin{forest} boom
   [\tsc{rel}P
       [\tsc{rel}]
-      [XP
+      [\tsc{x}P
           [\phantom{xxx}, roof]
       ]
   ]
   {\draw (.east) node[right]{⇔ \tit{X}}; }
 \end{forest}
 
-Chapter \ref{ch:deriving-unrestricted} motivates this analysis for the unrestricted type of language Old High German. It also shows that the two other languages types, discussed as Modern German and Polish, do not have a syncretism as described in \ref{ex:entry-d}, so the introduction of a second possible light head would not aid them.
+Chapter \ref{ch:deriving-unrestricted} motivates this analysis for the unrestricted type of language Old High German. It also shows that the two other languages types, discussed as Modern German and Polish, do not have a syncretism as described in \ref{ex:entry-x}, so the introduction of a second possible light head would not aid them.
 
 I now return to the problem at hand, being that in the unrestricted type of language a relative pronoun can be deleted.
 In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. It contains the second possible light head and the relative pronoun, which both elements bear the same case.
@@ -1361,7 +1352,7 @@ In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. I
       light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [XP, s sep=20mm,
+        [\tsc{x}P, s sep=20mm,
         tikz={
         \node[draw,
         constituent-deletion,yshift=-0.4cm,
@@ -1369,7 +1360,7 @@ In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. I
         scale=1.3,
         fit to=tree]{};
         }
-            [XP,
+            [\tsc{x}P,
             tikz={
             \node[label=below:\tit{X},
             draw,circle,
@@ -1411,7 +1402,7 @@ In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. I
             fit to=tree]{};
             }
                 [\tsc{rel}]
-                [XP
+                [\tsc{x}P
                     [\phantom{xxx}, roof, baseline]
                 ]
             ]
@@ -1436,10 +1427,10 @@ In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. I
   \label{fig:nom-nom-unres}
 \end{figure}
 
-The light head corresponds to \tit{XY}, illustrated by the circle around the XP and the \tit{X} below it and the circle around the \tsc{nom}P and the \tit{Y} below it. The relative pronoun corresponds to \tit{XY} too, illustrated by the circle around the \tsc{rel}P and the \tit{X} below it and the circle around the \tsc{nom}P and the \tit{Y} below it.
+The light head corresponds to \tit{XY}, illustrated by the circle around the \tsc{x}P and the \tit{X} below it and the circle around the \tsc{nom}P and the \tit{Y} below it. The relative pronoun corresponds to \tit{XY} too, illustrated by the circle around the \tsc{rel}P and the \tit{X} below it and the circle around the \tsc{nom}P and the \tit{Y} below it.
 I draw a dotted circle around each constituent that is a constituent in both the light head and the relative pronoun.
-The relative pronoun (the \tsc{rel}P realized by \tit{XY}) is a constituent that is formally contained within the light head (the XP realized by \tit{XY}), so the relative pronoun is deleted.\footnote{
-The same holds the other way around: the light head (the XP realized by \tit{XY}) is a constituent that is formally contained within the relative pronoun (the \tsc{rel}P realized by \tit{XY}). Therefore, either the light head or the relative pronoun can be deleted. I delete the relative pronoun here, as I discuss how it is possible for the relative pronoun to be deleted even though it has a feature less than the light head.
+The relative pronoun (the \tsc{rel}P realized by \tit{XY}) is a constituent that is formally contained within the light head (the \tsc{x}P realized by \tit{XY}), so the relative pronoun is deleted.\footnote{
+The same holds the other way around: the light head (the \tsc{x}P realized by \tit{XY}) is a constituent that is formally contained within the relative pronoun (the \tsc{rel}P realized by \tit{XY}). Therefore, either the light head or the relative pronoun can be deleted. I delete the relative pronoun here, as I discuss how it is possible for the relative pronoun to be deleted even though it has a feature less than the light head.
 }
 I illustrate this by marking the content of the dotted circle for the relative pronoun gray.
 
@@ -1454,8 +1445,8 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
       light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-        [XP, s sep=20mm
-            [XP,
+        [\tsc{x}P, s sep=20mm
+            [\tsc{x}P,
             tikz={
             \node[label=below:\tit{X},
             draw,circle,
@@ -1500,7 +1491,7 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
             fit to=tree]{};
             }
                 [\tsc{rel}]
-                [XP
+                [\tsc{x}P
                     [\phantom{xxx}, roof, baseline]
                 ]
             ]
@@ -1525,7 +1516,7 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
   \label{fig:acc-nom-unres}
 \end{figure}
 
-The light head corresponds to \tit{XZ}, illustrated by the circle around the XP and the \tit{X} below it and the circle around the \tsc{acc}P and the \tit{Z} below it. The relative pronoun corresponds to \tit{XY}, illustrated by the circle around the \tsc{rel}P and the \tit{X} below it and the circle around the \tsc{nom}P and the \tit{Y} below it.
+The light head corresponds to \tit{XZ}, illustrated by the circle around the \tsc{x}P and the \tit{X} below it and the circle around the \tsc{acc}P and the \tit{Z} below it. The relative pronoun corresponds to \tit{XY}, illustrated by the circle around the \tsc{rel}P and the \tit{X} below it and the circle around the \tsc{nom}P and the \tit{Y} below it.
 I draw a dotted circle around each constituent that is a constituent in both the light head and the relative pronoun.
 The relative pronoun is no longer a constituent that is formally contained within the light head. Therefore, the relative pronoun cannot be deleted, which I illustrate by leaving the content of both dotted circles unfilled.
 As none of the items is deleted, it is expected that there is no grammatical headless relative possible.
@@ -1605,7 +1596,7 @@ Table \ref{tbl:overview-rel-light-ohg-lh2} shows the comparisons between the con
 \label{tbl:overview-rel-light-ohg-lh2}
 \end{table}
 
-Focusing on the second possible light head, languages of the unrestricted type have a lexical entry that spells out phi and case features and a lexical entry that spells out the features X and \tsc{rel} and crucially not a lexical entry that only spells out the feature X.
+Focusing on the second possible light head, languages of the unrestricted type have a lexical entry that spells out phi and case features and a lexical entry that spells out the features X and \tsc{rel} and crucially not a lexical entry that only spells out the feature \tsc{x}.
 Headless relatives in this language are grammatical in all situations: when the internal and the external case match, when the internal case is more complex and when the external case is more complex.
 The second possible light head only derives the correct result for the first and the last situation but not for the second one.
 In the first and last situation, the relative pronoun is (at some point of the derivation) a constituent that is formally contained within the light head, the relative pronoun is deleted, and the light head is the surface pronoun.
@@ -1667,14 +1658,58 @@ The relative pronoun contains at least one feature more than the light head: the
 
 Now consider also formal constituent containment.
 Remember that an external-only type of language is a language in which the relative pronoun can be deleted, but the light head cannot be deleted.
-In TOBEMADE I showed a situation in which the light head is syncretic with the relative pronoun.
+In Figure \ref{fig:rel-lh-unres-mono}, I showed a situation in which the light head is syncretic with the relative pronoun, which I repeat here in Figure \ref{fig:rel-lh-unres-mono-rep}.
 
-make figure here
+\begin{figure}[htbp]
+  \center
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}[b]{ccc}
+      \toprule
+      light head & & relative pronoun \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+      [\tsc{k}P,
+      tikz={
+      \node[label=below:\tit{P},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{k}]
+          [ϕP
+              [\phantom{xxx}, roof, baseline]
+          ]
+      ]
+      \end{forest}
+      & \phantom{x} &
+    \begin{forest} boom
+      [\tsc{rel}P,
+      tikz={
+      \node[label=below:\tit{P},
+      draw,circle,
+      scale=0.85,
+      fit to=tree]{};
+      }
+          [\tsc{rel}]
+          [\tsc{k}P
+              [\tsc{k}]
+              [ϕP
+                  [\phantom{xxx}, roof, baseline]
+              ]
+          ]
+      ]
+    \end{forest}\\
+      \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+   \caption {A syncretic light head and relative pronoun}
+  \label{fig:rel-lh-unres-mono-rep}
+\end{figure}
 
- Then, the relative pronoun is a constituent that is formally contained within the light head, and the relative pronoun can be deleted. Note here that the internal and external case need to be identical too. Only then the two forms are fully syncretic, and deletion can take place.
-As I explained at the of Section \ref{sec:basic-unrestricted}, this is a situation that appears when the internal and external cases match, but also when the external case is more complex. In a derivation with a more complex external case, there is namely always a stage in which the internal and external case match: the external case features are namely the last ones to be merged.
+In Figure \ref{fig:rel-lh-unres-mono-rep}, the relative pronoun is a constituent that is formally contained within the light head, and the relative pronoun can be deleted. Note here that the internal and external case need to be identical too. Only then the two forms are fully syncretic, and deletion can take place.
+As I explained at the of Section \ref{sec:basic-unrestricted}, this is a situation that appears when the internal and external cases match, but also when the external case is more complex. In a derivation with a more complex external case, there is namely always a stage in which the internal and external case match, since the external case features are the last features to be merged with the light head.
 When the internal case is more complex, the light head cannot be deleted by formal constituent containment. There is namely no stage in the derivation in which the internal and external case match and the light head and the relative pronoun are fully syncretic.
-However, consider Figure TOBEMADE again.
+However, consider Figure \ref{fig:rel-lh-unres-mono-rep} again.
 Although the light head cannot be deleted by formal constituent containment, it can be deleted by structural constituent containment. The light head is namely still a constituent that is formally contained within the relative pronoun.\footnote{This reasoning holds for monomorphemic light heads and relative pronouns. I discuss the possibility of an external-only type of language with bimorphemic light head and relative pronouns in Chapter \ref{ch:deriving-unrestricted}.}
 
 In this dissertation I describe different language types in case competition in headless relatives. In my account, the different language types are a result of a comparison of the light head and the relative pronoun in the language.
