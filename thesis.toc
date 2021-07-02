@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -30,103 +30,103 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}In headless relatives}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}In syntax}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.2}In syntax}{19}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Agreement}{20}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Agreement}{19}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Relativization}{26}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}In morphology}{34}{section.2.3}%
+\contentsline {section}{\numberline {2.3}In morphology}{33}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Syncretism}{34}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Syncretism}{33}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{35}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Morphological case containment}{34}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Summary}{36}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Summary}{35}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{39}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}Case decomposition}{37}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The basic idea}{40}{section.3.1}%
+\contentsline {section}{\numberline {3.1}The basic idea}{38}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{40}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Deriving syncretism}{38}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{57}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{55}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{62}{section.3.4}%
+\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{60}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Summary}{64}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Summary}{62}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {II}The typology}{67}{part.2}%
+\contentsline {part}{\partnumberline {II}The typology}{65}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}Languages with case competition}{69}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}Languages with case competition}{67}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Four possible patterns}{70}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Four possible patterns}{68}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Internal and external case allowed}{74}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Internal and external case allowed}{72}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Only internal case allowed}{81}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Only internal case allowed}{79}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Only external case allowed}{89}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Only external case allowed}{87}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Only matching allowed}{92}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Only matching allowed}{90}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Summary}{96}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Summary}{94}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}Aside: languages without case competition}{101}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}Aside: languages without case competition}{97}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Always external case}{102}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Always external case}{98}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}A typology of headless relatives}{109}{section.5.2}%
+\contentsline {section}{\numberline {5.2}A typology of headless relatives}{105}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\partnumberline {III}Deriving the typology}{115}{part.3}%
+\contentsline {part}{\partnumberline {III}Deriving the typology}{111}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}The source of variation}{117}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}The source of variation}{113}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Underlying assumptions}{118}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Underlying assumptions}{114}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The three language types}{123}{section.6.2}%
+\contentsline {section}{\numberline {6.2}The three language types}{119}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{124}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{120}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}The matching type}{126}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}The matching type}{122}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{132}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{128}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Summary}{141}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Summary}{137}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{145}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{141}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{147}{section.7.1}%
+\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{143}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{155}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Combining morphemes in Nanosyntax}{151}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{167}{section.7.3}%
+\contentsline {section}{\numberline {7.3}The Modern German (extra) light head}{163}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Comparing Modern German constituents}{175}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Comparing Modern German constituents}{171}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Summary}{180}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Summary}{176}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{183}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{179}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{186}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{182}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}The Polish extra light head}{202}{section.8.2}%
+\contentsline {section}{\numberline {8.2}The Polish extra light head}{198}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{208}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing Polish constituents}{204}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary}{213}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary}{209}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{217}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{213}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{222}{section.9.1}%
+\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{218}{section.9.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}The Old High German light heads}{227}{section.9.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.2.1}The extra light head}{227}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}The light head}{228}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}The light head}{227}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Comparing constituents}{229}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Comparing constituents}{228}{section.9.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.4}Possible predictions}{237}{section.9.4}%
 \defcounter {refsection}{0}\relax 
@@ -147,5 +147,3 @@
 \contentsline {section}{\numberline {10.7}A larger syntactic context}{241}{section.10.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{249}{table.10.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{251}{section*.142}%

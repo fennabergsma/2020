@@ -584,7 +584,34 @@ In sum, the morpheme \tit{d} corresponds to the features D, \tsc{rel} and \tsc{i
   {\draw (.east) node[right]{⇔ \tit{d}}; }
 \end{forest}\label{ex:ohg-entry-d}
 
-In what follows, I show how the Old High German relative pronouns are constructed. I follow the same functional sequence as I did for Modern German and Polish, except for substituting the feature \tsc{wh} by the feature D. Of course, the spellout procedure is identical. The outcome is different because of the different lexical entries Old High German has. I repeat the available lexical entries in \ref{ex:ohg-entries-all-rp}.
+In what follows, I show how the Old High German relative pronouns are constructed. I follow the same functional sequence as I did for Modern German and Polish, except for substituting the feature \tsc{wh} by the feature D. I give the functional sequence in \ref{ex:fseq-d-rel}.
+
+\ex.\label{ex:fseq-d-rel}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+   [\tsc{k}P
+       [\tsc{k}]
+       [\tsc{rel}P
+           [\tsc{rel}]
+           [\tsc{wh}P
+               [\tsc{wh}]
+               [\tsc{ind}P
+                   [\tsc{ind}]
+                   [\tsc{an}P
+                       [\tsc{an}]
+                       [\tsc{cl}P
+                           [\tsc{cl}]
+                           [\tsc{ref}]
+                       ]
+                   ]
+               ]
+           ]
+       ]
+   ]
+\end{forest}
+\end{adjustbox}
+
+Of course, the spellout procedure is identical. The outcome is different because of the different lexical entries Old High German has. I repeat the available lexical entries in \ref{ex:ohg-entries-all-rp}.
 
 \ex.\label{ex:ohg-entries-all-rp}
 \a.\label{ex:ohg-entry-ër-rep-rp}
@@ -636,7 +663,185 @@ In what follows, I show how the Old High German relative pronouns are constructe
   {\draw (.east) node[right]{⇔ \tit{d}}; }
 \end{forest}
 
-Starting from the bottom,
+Starting from the bottom, the first two features that are merged are \tsc{ref} and \tsc{cl}, creating a \tsc{cl}P.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}, which corresponds to \tit{r}.
+Therefore, the \tsc{cl}P is spelled out as \tit{ër}, which I do not show here.
+Then, the feature \tsc{an} is merged, and a \tsc{an}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}.
+Therefore, the \tsc{an}P is spelled out as \tit{ër}, which I do not show here either.
+Then, the feature \tsc{ind} is merged, and a \tsc{ind}P is created.
+The syntactic structure forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}.
+Therefore, the \tsc{ind}P is spelled out as \tit{ër}, which I show in
+
+\ex.\label{ex:ohg-spellout-ër-ind}
+\begin{forest} boom
+  [\tsc{ind}P,
+  tikz={
+  \node[label=below:\tit{ër},
+  draw,circle,
+  scale=0.9,
+  fit to=tree]{};
+  }
+      [\tsc{ind}]
+      [\tsc{an}P
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+               [\tsc{ref}]
+          ]
+      ]
+  ]
+\end{forest}
+
+Next, the feature D is merged.
+The derivation for this feature resembles the derivation of \tsc{wh} in Modern German and Polish.
+The feature is merged with the existing syntactic structure, creating a DP.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Therefore, in a second workspace, the feature D is merged with the feature \tsc{ind} (the previous syntactic feature on the functional sequence) into a DP. This syntactic structure forms a constituent in the lexical tree in \ref{ex:ohg-entry-d-rep-rp}, which corresponds to the \tit{d}.
+Therefore, the DP is spelled out as \tit{d}. The newly created phrase is merged as a whole with the already existing structure, and projects to the top node, as shown in \ref{ex:ohg-spellout-dp}.
+
+\ex.\label{ex:ohg-spellout-dp}
+\begin{forest} boom
+  [DP, s sep=15mm
+      [DP,
+      tikz={
+      \node[label=below:\tit{d},
+      draw,circle,
+      scale=0.95,
+      fit to=tree]{};
+      }
+          [\tsc{d}]
+          [\tsc{ind}]
+      ]
+      [\tsc{ind}P,
+      tikz={
+      \node[label=below:\tit{ër},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{ind}]
+          [\tsc{an}P
+              [\tsc{an}]
+              [\tsc{cl}P
+                  [\tsc{cl}]
+                  [\tsc{ref}]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+
+The next feature in the functional sequence is the feature \tsc{rel}. The derivation for this feature resembles the derivation of \tsc{rel} in Modern German and Polish.
+The feature is merged with the existing syntactic structure, creating a \tsc{rel}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads to splitting up the DP from the \tsc{ind}P.
+The feature \tsc{rel} is merged in both workspaces, so with DP and and with \tsc{ind}P. The spellout of \tsc{rel} is successful when it is combined with the DP.
+It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-d-rep-rp}, which corresponds to the \tit{d}.
+The \tsc{rel}P is spelled out as \tit{d}, and it is merged back to the existing syntactic structure.
+
+For the nominative relative pronoun, the last feature is merged: the \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}, which corresponds to the \tit{ër}.
+This is achieved via Backtracking in which phrases are split up and going through the Spellout Algorithm. I go through the derivation step by step.
+The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads to splitting up the \tsc{rel}P from the \tsc{ind}P.
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
+It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}, which corresponds to the \tit{ër}.
+The \tsc{nom}P is spelled out as \tit{ër}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:ohg-spellout-rel-nom}.
+
+\ex.\label{ex:ohg-spellout-rel-nom}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+      [\tsc{rel}P, s sep=30mm
+          [\tsc{rel}P,
+          tikz={
+          \node[label=below:\tit{d},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{rel}]
+              [DP
+                  [D]
+                  [\tsc{ind}]
+              ]
+          ]
+          [\tsc{nom}P,
+          tikz={
+          \node[label=below:\tit{ër},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\ac{f}1]
+              [\tsc{ind}P
+                  [\tsc{ind}]
+                  [\tsc{an}P
+                      [\tsc{an}]
+                      [\tsc{cl}P
+                          [\tsc{cl}]
+                          [\tsc{ref}]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+For the accusative relative pronoun, the last feature is merged: the \tsc{f}2. The derivation for \tsc{f}2 resembles the derivation of \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads to splitting up the \tsc{rel}P from the \tsc{nom}P.
+The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
+It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ën-rep-rp}, which corresponds to the \tit{ën}. The \tsc{acc}P is spelled out as \tit{ën}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:ohg-spellout-rel-acc}.
+
+\ex.\label{ex:ohg-spellout-rel-acc}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+      [\tsc{rel}P, s sep=35mm
+          [\tsc{rel}P,
+          tikz={
+          \node[label=below:\tit{d},
+          draw,circle,
+          scale=1,
+          fit to=tree]{};
+          }
+              [\tsc{rel}]
+              [DP
+                  [D]
+                  [\tsc{ind}]
+              ]
+          ]
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{ën},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\ac{f}2]
+              [\tsc{nom}P
+                  [\ac{f}1]
+                  [\tsc{ind}P
+                      [\tsc{ind}]
+                      [\tsc{an}P
+                          [\tsc{an}]
+                          [\tsc{cl}P
+                              [\tsc{cl}]
+                              [\tsc{ref}]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+To summarize, I decomposed the relative pronoun into the two morphemes: \tit{d} and the suffix (\tit{ër} and \tit{ën}). I showed which features each of the morphemes spells out and what the internal syntax looks like that they are combined into. It is this internal syntax that determines whether the light head can be deleted or not.
+
 
 \section{The Old High German light heads}
 
