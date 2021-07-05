@@ -3,15 +3,17 @@
 \chapter{Introduction}
 
 This dissertation is about case competition, a situation in which two cases are assigned but only one of them surfaces. One of the constructions in which case competition appears is relative clauses that lack a head, i.e. headless relatives.
+Before I discuss what this dissertation is about, I first introduce what I mean exactly with case competition in headless relatives.
+Then I discuss the content of the dissertation, going step by step through the different aspects of case competition in headless relatives.
+This chapter ends with a section on what this dissertation does not discuss.
 
-Free relatives? I use the neutral descriptive term headless relatives, because free has this free choice interpretation connotation.
+% Free relatives? I use the neutral descriptive term headless relatives, because free has this free choice interpretation connotation.
 
 % I show that one aspect about case competition in headless relatives holds for all languages (under discussion here at least). That is, there is a fixed order which decides which case wins the competition. I let this follow from what we observe in morphology. Another aspect of case competition in headless relatives differs per language. That is, whether the competition takes place to begin with. I connect this variable to the morphology of the language in question.
 %
 % Case competition in headless relatives has been described as some special property of a few special languages. Therefore, language-specific rules have been postulated to account for the data. My goal is to show that this phenomenon can be captured with `normal' syntactic processes, like ellipsis, c-command. The account makes predictions about how a language behaves based on the shape of its relative pronouns. And we see that case competition in headless relatives is actually more wide-spread than what has been assumed.
 % %%this is too difficult
 
-In this introduction I first introduce what I mean exactly with case competition in headless relatives. Then I introduce the topics I discuss in this dissertation.
 
 
 \section{Decomposing the title}
@@ -106,10 +108,55 @@ Second, I write the relative clause in bold. When the relative pronoun takes the
 
 \section{The content of this dissertation}
 
-In the previous section I introduced the notion of case competition, and I illustrated how it appears in headless relatives. This dissertation discusses two question regarding this phenomenon.
-The first one is which case is going to win the case competition, i.e. which case surfaces. I discuss this in Part \ref{part:case-facts}.
-The second question is whether both competitors are able to compete in the competition, i.e. whether one of the cases is surfacing or both are ungrammatical. I discuss this in Part \ref{part:variation}.
-For both I will show that morphology is leading. What we observe in syntax is a reflex of the morphology.
+In the previous section I introduced the notion of case competition, and I illustrated how it appears in headless relatives. This dissertation discusses two aspects of this phenomenon: who wins the competition and whether the winner is allowed to surface.
+
+Part \ref{part:case-facts} of this dissertation discusses the first aspect that concerns which case wins the case competition. It is a crosslinguistically stable fact that this is determined by the case scale: \tsc{nom} < \tsc{acc} < \tsc{dat} \citep[cf.][]{grosu1994}. A case more to the right on the scale wins over a case more to the left on the scale.
+
+This generates the pattern shown in Table \ref{tbl:case-competition-cases}. The left column shows the internal case (the case assigned in the relative clause) between square brackets. The top row shows the external case (the case assigned in the main clause) between square brackets. The other cells indicate the case of the relative pronoun. The table shows three different instances of case competition and their winners: (1) when the accusative wins over the nominative, the relative pronoun appears in the accusative case; (2) when the dative wins over the nominative, the relative pronoun appears in the dative case; and (3) when the dative wins over the accusative, the relative pronoun appears in the dative case.
+
+\begin{table}[ht]
+  \center
+  \caption{The winner of case competition}
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\ac{nom}]
+           & [\ac{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\ac{nom}]
+           & \ac{nom}
+           & \cellcolor{DG}{\ac{acc}}
+           & \cellcolor{DG}{\tsc{dat}}
+           \\ \cmidrule{1-4}
+       [\ac{acc}]
+           & \cellcolor{LG}{\ac{acc}}
+           & \ac{acc}
+           & \cellcolor{DG}{\tsc{dat}}
+           \\ \cmidrule{1-4}
+       [\ac{dat}]
+           & \cellcolor{LG}{\tsc{dat}}
+           & \cellcolor{LG}{\tsc{dat}}
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-cases}
+\end{table}
+
+In Chapter \ref{ch:recurring}, I give examples that illustrate the pattern shown in Table \ref{tbl:case-competition-cases}. Additionally, I show that the \tsc{nom} < \tsc{acc} < \tsc{dat} scale is a recurring one. The pattern does not only appear in headless relatives, but also in other syntactic and morphological phenomena. I discuss two implicational hierarchies concerning agreement and relativization, and I show that the case scale is reflected in patterns of syncretism and in morphological containment.
+Chapter \ref{ch:decomposition}, I argue that there is a single trigger that is responsible for the case scales in different subparts of language. This trigger is a cumulative case decomposition \citep{caha2009}. Informally speaking, cases more on the right on the case scale or syntactically more complex than cases more to the left on the case scale. I show how the case scale in headless relatives is a reflex of this decomposition.
+
+Part \ref{part:case-facts} of this dissertation introduces the second aspect that plays a role in headless relatives. This aspect concerns whether the internal and the external case are allowed to surface when either of them wins the case competition. In Table \ref{tbl:case-competition-cases}, the light gray cells are the ones in which the internal case wins, the dark gray cells are the ones in which the external case wins, and the unmarked cells are the ones in which both cases match. It differs across languages whether they allow different winners to surface.
+
+There are four logically possible language types. The first possible type is one in which the internal and the external case are allowed to surface when either of them wins the case competition. Relative pronouns in the unmarked, light gray and dark gray cells are grammatical. I call this type the unrestricted type. The second possible type is one in which only the internal case is allowed to surface when it wins the case competition. Relative pronouns in the unmarked and light gray cells are grammatical but those in the dark gray cells are not. I call this type the internal-only type. The third possible type is one in which only the external case is allowed to surface when it wins the case competition. Relative pronouns in the unmarked and the dark gray cells are grammatical but those in the light gray cells are not. I call this type the external-only type. The fourth possible type is one in which neither the internal case nor in the external case is allowed to surface when either of them wins the case competition. Relative pronouns in the unmarked cells are grammatical, but those in the light and dark gray cells are not. I call this type the matching type.
+
+Chapter \ref{ch:typology} introduces these possible patterns in more detail and gives examples of them in different languages. As far as I am aware, only three of these possible language types are attested in natural languages. Old High German is an example of the non-matching type, Modern German is an example of the internal-only type \citep{vogel2001}, and Polish is an example of the matching type \citep{citko2013}. To my knowledge, the external-only type is not attested.
+
+Chapter \ref{sec:without-case-competition} takes a small detour and discusses languages that do not show any case competition.
+
+In Part \ref{part:deriving} I derive the possible patterns.
+assumptions
 
 
 \section{The scope of this dissertation}
