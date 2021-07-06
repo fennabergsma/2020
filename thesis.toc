@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -16,13 +16,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}The content of this dissertation}{5}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}The scope of this dissertation}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.2.1}Case attraction}{8}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Case attraction}{7}{subsection.1.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Syncretism}{8}{subsection.1.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}The genitive}{8}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.2.2}The genitive}{9}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\partnumberline {I}Case competition}{11}{part.1}%
 \defcounter {refsection}{0}\relax 
@@ -126,14 +122,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.2.2}The light head}{235}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{240}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{241}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Coming back to the light heads}{248}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Coming back to the light heads}{252}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}Summary}{253}{section.9.5}%
+\contentsline {section}{\numberline {9.5}Summary}{256}{section.9.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {10}Conclusion}{255}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{257}{table.10.1}%
+\contentsline {chapter}{Primary texts}{259}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{259}{section*.143}%
+\contentsline {chapter}{Bibliography}{261}{section*.25}%

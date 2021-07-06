@@ -52,7 +52,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.7}{\ignorespaces \textsc {lh} and \textsc {rp} in the matching type\relax }}{127}{figure.caption.81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the matching type\relax }}{128}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the matching type\relax }}{127}{figure.caption.82}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.9}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the matching type\relax }}{128}{figure.caption.83}%
 \defcounter {refsection}{0}\relax 
@@ -82,7 +82,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.1}{\ignorespaces \textsc {elh} and \textsc {rp} in the internal-only type\relax }}{145}{figure.caption.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces \textsc {lh} and \textsc {rp} in Modern German\relax }}{147}{figure.caption.100}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces \textsc {lh} and \textsc {rp} in Modern German\relax }}{146}{figure.caption.100}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {wen}\relax }}{176}{figure.caption.106}%
 \defcounter {refsection}{0}\relax 
@@ -108,24 +108,26 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in the unrestricted type\relax }}{217}{figure.caption.126}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in the unrestricted type\relax }}{217}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.2}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in Old High German\relax }}{219}{figure.caption.128}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in Old High German\relax }}{219}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.3}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in the unrestricted type\relax }}{219}{figure.caption.129}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in the unrestricted type\relax }}{219}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.4}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in Old High German\relax }}{221}{figure.caption.131}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in Old High German\relax }}{221}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.5}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {elh})\relax }}{242}{figure.caption.134}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {elh})\relax }}{243}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.6}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {elh})\relax }}{243}{figure.caption.135}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {lh})\relax }}{244}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.7}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {ën}/\textit {dher} (\textsc {elh})\relax }}{245}{figure.caption.136}%
+\contentsline {figure}{\numberline {9.7}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {en}/\textit {dher} (\textsc {elh})\relax }}{246}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.8}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {dhen}/\textit {ther} (\textsc {lh})\relax }}{246}{figure.caption.137}%
+\contentsline {figure}{\numberline {9.8}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {dhën}/\textit {dhër} (\textsc {lh})\relax }}{247}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.9}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {then}\relax }}{249}{figure.caption.138}%
+\contentsline {figure}{\numberline {9.9}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {then}\relax }}{250}{figure.caption.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.10}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {ther}/\textit {then} (\textsc {lh})\relax }}{251}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10pt}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Delete relative pronoun/light head as parameters\relax }}{256}{figure.caption.140}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Different lexical entries generate three language types (repeated)\relax }}{257}{figure.caption.140}%
