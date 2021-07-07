@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -126,10 +126,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.4}Coming back to the light heads}{253}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}Summary}{257}{section.9.5}%
+\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{253}{subsection.9.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{255}{subsection.9.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.5}Summary}{256}{section.9.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {10}Conclusion}{257}{chapter.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{261}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{263}{section*.25}%
+\contentsline {chapter}{Bibliography}{263}{section*.144}%
