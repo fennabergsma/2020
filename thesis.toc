@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -118,22 +118,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}The Old High German light heads}{231}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}The extra light head}{231}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}The extra light head}{232}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}The light head}{235}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}The light head}{236}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{241}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Coming back to the light heads}{253}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Coming back to the light heads}{254}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{253}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{254}{subsection.9.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{256}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{257}{subsection.9.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}Summary}{260}{section.9.5}%
+\contentsline {section}{\numberline {9.5}Summary}{261}{section.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{263}{chapter.10}%
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{265}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{267}{table.10.1}%
+\contentsline {chapter}{Primary texts}{269}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{269}{section*.29}%
+\contentsline {chapter}{Bibliography}{271}{section*.148}%
