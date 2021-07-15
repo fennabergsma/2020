@@ -1163,7 +1163,7 @@ I have suggested that headless relatives are derived from light-headed relatives
   ]
 \end{forest}
 
-In Chapter \ref{ch:the-basic-idea}, I suggested that light heads consist of at least two features: ϕ and \tsc{k}.
+In Chapter \ref{ch:the-basic-idea}, I suggested that languages have two possible light heads. Headless relatives in Modern German can only be derived from light-headed relatives that are headed by the light head that consists of the two features ϕ and \tsc{k}.
 In this section, I determine the exact feature content of the light head.
 As I suggested in Chapter \ref{ch:deriving-onlyinternal} for Modern German, I end up claiming that the phi and case features morpheme of the relative pronoun is the light head in headless relatives. I show the complete structure that I work towards in this section in \ref{ex:pol-elh}.
 
@@ -1203,8 +1203,8 @@ As I suggested in Chapter \ref{ch:deriving-onlyinternal} for Modern German, I en
 \end{adjustbox}
 
 For Modern German, I considered two kinds of headless relatives as the potential source of the headless relative.
-The first possible scenario is that the headless relative is derived from an existing light-headed relative, in which case the deletion of the light head would have to be optional.
-The second possible scenario is that the headless relative is derived from a light-headed relative that does not surfaces in Modern German, in which case the deletion of the light head would have to be obligatory.
+The first possible scenario would be that the headless relative is derived from an existing light-headed relative, in which case the deletion of the light head would have to be optional.
+The second possible scenario would be that the headless relative is derived from a light-headed relative that does not surface, in which case the deletion of the light head would have to be obligatory.
 I consider the first scenario first, and I give two arguments against it.
 For Modern German I concluded it was the second, and I determined which features this extra light head should consist of. I do the same investigation for Polish, and I reach the same conclusion as I did for Modern German.
 
@@ -1231,7 +1231,7 @@ Jan sings \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever 
 `John sings what Mary sings.' \flushfill{Polish, \pgcitealt{citko2004}{116}}\label{ex:pol-headed-ever}
 
 just as for Modern German, I assume that the headless relative is not derived from an ungrammatical structure.\footnote{
-\citet{citko2004} takes the complementary distribution of \tit{kolwiek} `ever' and the regular light head to mean that they share the same syntactic position. I have nothing to say about the exact syntactic position of \tit{ever}, but in my account it cannot be the head of the relative clause, as this position is reserved for the extra light head. My reason for the incompatibility of \tit{ever} and the regular light head is that they are semantically incompatible.
+\citet{citko2004} takes the complementary distribution of \tit{kolwiek} `ever' and the demonstrative to mean that they share the same syntactic position. I have nothing to say about the exact syntactic position of \tit{ever}, but in my account it cannot be the head of the relative clause, as this position is reserved for the extra light head. My reason for the incompatibility of \tit{ever} and the demonstrative is that they are semantically incompatible.
 
 For concreteness, I assume \tit{ever} to be situated within the relative clause. Placing it in the main clause generates a different meaning, illustrated by the contrast in meaning between \ref{ex:cz-wh-ever} and \ref{ex:cz-ever-wh} in Czech.
 
@@ -1250,7 +1250,7 @@ The second argument against the existing light-headed relatives being the source
 just as in Modern German, Polish headless relatives can be analyzed as either universal or definite \pgcitep{citko2004}{103}.
 Light-headed relatives, such as the one in \ref{ex:pol-light-headed}, only have the definite interpretation.
 
-In the remainder of this section, I discuss the two extra light heads that I compare the internal syntax of in Section \ref{sec:comparing-polish}. As I noted before, these forms do not surface as light heads in a light-headed relative. They do also not surface anywhere else in the language. These are the accusative animate and the dative animate, shown in \ref{ex:pol-elhs}.
+In the remainder of this section, I discuss the two extra light heads that I compare the internal syntax of in Section \ref{sec:comparing-polish}. These are the accusative animate and the dative animate, shown in \ref{ex:pol-elhs}.
 % \footnote{
 % It is also possible that the strong pronoun is syncretic with the extra light head and that the extra light head is actually also spelled out as \tit{jego}/\tit{jemu}. This would mean that the strong extra light head consists of even more than two morphemes. For my proposal, it is important to show that the extra light head consists of at least two morphemes, one of which spells out case features. It works equally well when the non-case part of the structure actually consists of more one morpheme. I continue working out a proposal in which the extra light head is bimorphemic.
 % }
@@ -1261,7 +1261,9 @@ In the remainder of this section, I discuss the two extra light heads that I com
 \bg. o-mu\\
  \tsc{elh}.\tsc{an}.\tsc{dat}\\
 
-In Chapter \ref{ch:deriving-onlyinternal}, I showed that the relative pronoun contains two features more than the extra light head, namely \tsc{wh} and \tsc{rel}. This means that the functional sequence for the extra light head is  as shown in \ref{ex:fseq-elh-rep}.
+As I noted before, these forms do not surface as light heads in a light-headed relative. They do also not surface anywhere else in the language.
+
+In Chapter \ref{ch:deriving-onlyinternal}, I showed that the relative pronoun contains two features more than the extra light head, namely \tsc{wh} and \tsc{rel}. This means that the functional sequence for the extra light head is as shown in \ref{ex:fseq-elh-rep}.
 
 \ex.\label{ex:fseq-elh-rep}
 \begin{forest} boom
@@ -1330,10 +1332,20 @@ In what follows, I construct the Polish extra light heads. Until the feature \ts
 
 \ex.\label{ex:pol-spellout-o-ind-rep}
 \begin{forest} boom
-  [\tsc{ind}P
-  [\tsc{an}P
-      [\phantom{x}\tit{o}\phantom{x}, roof]
-  ]
+  [\tsc{ind}P, s sep=20mm
+      [\tsc{an}P,
+      tikz={
+      \node[label=below:\tit{o},
+      draw,circle,
+      scale=0.9,
+      fit to=tree]{};
+      }
+          [\tsc{an}]
+          [\tsc{cl}P
+              [\tsc{cl}]
+              [\tsc{ref}]
+          ]
+      ]
       [\tsc{ind}P,
       tikz={
       \node[label=below:\tit{go},
@@ -1849,11 +1861,7 @@ The relative pronoun is not a constituent that is structurally contained in the 
 Therefore, the extra light cannot be deleted, and the relative pronoun cannot be deleted either.
 As a result, there is no grammatical headless relative possible.
 
-\section{Reflecting on crosslinguistic differences}
-
-
-
-\section{Summary}
+\section{Summary and discussion}
 
 Polish is an example of a matching type of language. This means that headless relatives are grammatical in the language only when the internal and external case match.
 
@@ -1931,5 +1939,9 @@ I derive this from the internal syntax of light heads and relative pronouns in P
 \end{figure}
 
 A crucial characteristic of matching languages such as Polish is that they have separate morphemes for phi and case features. Therefore, the light head is structurally contained in the relative pronoun when the internal and the external case match. As a result, the light head can be deleted, and the relative pronoun can surface, bearing the internal case.
-
 When the internal and external case differ, neither the light head nor the relative pronoun is structurally contained in the other element. None of the elements can be deleted, and there is no grammatical headless relative possible.
+
+In other words, the difference between Modern German and Polish that leads them to be of different language types is that I analyze Modern German extra light heads as monomorphemic (e.g. \tit{n}) and Polish extra light heads as bimorphemic (e.g. \tit{o-go}).
+This raises the question of whether Polish extra light heads could not be monomorphemic too. A possible hypothesis would be that the morpheme \tit{go} is the extra light head and not \tit{o-go}.
+A parallel between the Polish \tit{go} (and \tit{mu}) and the Modern German \tit{n} (and \tit{m}) would be that they both surface as pronouns in their respective languages. However, there is a difference between the Polish \tit{go} and Modern German \tit{n}. The Polish \tit{go} is analyzed as a clitic \cite{swan2002}, whereas the Modern German \tit{n} is analyzed as a weak pronoun (see footnote \ref{ftn:mg-weak-pronoun}).
+I assume that the weak pronoun in Polish is \tit{o-go} (which combines with the \tit{i} I introduced in Section \ref{sec:pol-rel} to become a strong pronoun). A question that remains unanswered is why \tit{o-go} does not surface as a weak pronoun.

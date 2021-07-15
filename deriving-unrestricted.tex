@@ -154,7 +154,7 @@ Consider the relative pronoun in Figure \ref{fig:rel-lh-ohg-1}.
 The relative pronoun in Old High German consists of two morphemes: the constituent that forms the light head (i.e. phi and case features) and the \tsc{rel}P, again indicated by the circles. The constituent that forms the light head has the same spellout as in the light head (\tit{ën} or \tit{m}), and the \tsc{rel}P is spelled out as \tit{d}.
 Throughout this chapter, I discuss the exact feature content of the first possible light head and the relative pronoun, I give lexical entries for them, and I show how these lexical entries lead to the internal syntax shown in Figure \ref{fig:rel-lh-ohg-1}.
 
-The second possible light head differs from the first possible head in that it contains an additional morpheme, which I here call XP. The phi and case features are still spelled out by the phi and case portmanteau. The XP is spelled out by its own lexical entry.
+The second possible light head differs from the first possible head in that it contains a feature more than the relative pronoun instead of a feature less. I call the additional feature X. The phi and case features are still spelled out by the phi and case portmanteau. The XP that contains the feature X and the feature \tsc{rel} is spelled out by its own lexical entry.
 The relative pronoun is spelled out by that same phi and case portmanteau plus a separate lexical entry that spells out the feature \tsc{rel}.
 Crucially, the morpheme that spells out the XP has the same spellout as the morpheme that spells out the feature \tsc{rel} (here \tit{X}).
 This means that the internal syntax of the second possible light head and the relative pronoun looks as shown in Figure \ref{fig:rel-lh-unres-simple-1}.
@@ -175,7 +175,10 @@ This means that the internal syntax of the second possible light head and the re
           scale=0.85,
           fit to=tree]{};
           }
-              [\phantom{xxx}, roof, baseline]
+              [X]
+              [\tsc{rel}P
+                  [\phantom{xxx}, roof, baseline]
+              ]
           ]
           [\tsc{k}P,
           tikz={
@@ -252,15 +255,15 @@ These lexical entries lead to the grammaticality pattern shown in Table \ref{tbl
 \label{tbl:overview-unres-2}
 \end{table}
 
-Consider first the situation in which the internal and the external case match. The light head consists of a phi and case feature portmanteau plus a morpheme that spells the XP, which corresponds to phonological form \tit{X}. The relative pronoun consists of the same phi and case feature morpheme and a morpheme that spells out the feature \tsc{rel}, which corresponds to the phonological form \tit{X} too.
+Consider first the situation in which the internal and the external case match. The light head consists of a phi and case feature portmanteau plus a morpheme that spells out \tsc{rel} and X, which corresponds to phonological form \tit{X}. The relative pronoun consists of the same phi and case feature morpheme and a morpheme that spells out the feature \tsc{rel}, which corresponds to the phonological form \tit{X} too.
 The lexical entries create a syntactic structure such that the light head and the relative pronoun are syncretic, so the relative pronoun is formally contained in the light head. Therefore, the relative pronoun can be deleted, and the light head surfaces, bearing the external case.\footnote{
 The same holds the other way around: the light head is also formally contained in the relative pronoun, so the light head can be deleted too. Later in this section I come back to why it is the relative pronoun that is deleted here and not the light head.
 }
 
-Consider now the situation in which the internal case wins the case competition. The light head consists of a phi and case feature portmanteau plus a morpheme that spells out the XP, which corresponds to phonological form \tit{X}. The relative pronoun consists of a phi and case feature portmanteau that contains at least one more case feature than the light head (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-unres-2}) plus a morpheme that spells out the feature \tsc{rel}, which corresponds to the phonological form \tit{X} too.
-The lexical entries create a syntactic structure such that neither the light head nor the relative pronoun is structurally contained in the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
+Consider now the situation in which the internal case wins the case competition. The light head consists of a phi and case feature portmanteau plus a morpheme that spells out \tsc{rel} and X, which corresponds to phonological form \tit{X}. The relative pronoun consists of a phi and case feature portmanteau that contains at least one more case feature than the light head (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-unres-2}) plus a morpheme that spells out the feature \tsc{rel}, which corresponds to the phonological form \tit{X} too.
+The lexical entries create a syntactic structure such that neither the light head nor the relative pronoun is structurally or formally contained in the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
 
-Finally, consider the situation in which the external case wins the case competition. The relative pronoun consists of the same phi plus case feature morpheme and a morpheme that spells out the feature \tsc{rel}, which corresponds to the phonological form \tit{X}. Compared to the relative pronoun, the light head lacks the feature \tsc{rel} and the XP spells out as \tit{X}, and it contains at least one more case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). The lexical entries create a syntactic structure such that neither the light head nor the relative pronoun is structurally is contained in the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
+Finally, consider the situation in which the external case wins the case competition. The relative pronoun consists of the same phi and case feature morpheme and a morpheme that spells out the feature \tsc{rel}, which corresponds to the phonological form \tit{X}. Compared to the relative pronoun, the light head has in addition the feature X, which is spelled out as \tit{X}, and it contains at least one more case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). The lexical entries create a syntactic structure such that neither the light head nor the relative pronoun is structurally or formally contained in the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
 However, the derivation in which the external case is more complex than the internal one goes through a stage in which the internal and the external case match. Therefore, at that stage, these lexical entries create a syntactic structure such that the light head and the relative pronoun are syncretic, so the relative pronoun is formally contained in the light head. Therefore, the relative pronoun can be deleted, and the light head remains, bearing external case. Then, the remaining case features are merged to the light head, and the light head surfaces, bearing the more complex external case.
 
 In Chapter \ref{ch:typology}, I showed that Old High German is a language of the unrestricted type. In this chapter, I show that Old High German has light heads and relative pronouns with the type of internal syntax described in Figure \ref{fig:rel-lh-unres-simple-2}. I give a compact version of the structures in Figure \ref{fig:rel-lh-ohg-2}.
@@ -273,15 +276,18 @@ In Chapter \ref{ch:typology}, I showed that Old High German is a language of the
       light head 2 & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-      [DP, s sep = 17.5 mm
-          [DP,
+      [\tsc{dem}P, s sep = 17.5 mm
+          [\tsc{dem}P,
           tikz={
           \node[label=below:\tit{d},
           draw,circle,
           scale=0.85,
           fit to=tree]{};
           }
-              [\phantom{xxx}, roof, baseline]
+              [\tsc{dem}]
+              [\tsc{rel}P
+                  [\phantom{xxx}, roof, baseline]
+              ]
           ]
           [\tsc{k}P,
           tikz={
@@ -330,9 +336,9 @@ In Chapter \ref{ch:typology}, I showed that Old High German is a language of the
   \label{fig:rel-lh-ohg-2}
 \end{figure}
 
-The phrase I so far called XP is replaced here by DP. I come back to this in Section \ref{sec:ohg-lh}.
+The phrase I so far called XP is replaced here by \tsc{dem}P. I come back to this in Section \ref{sec:ohg-lh}.
 Consider the second possible light head in Figure \ref{fig:rel-lh-ohg-2}.
-The light head (i.e. the phi and case features and DP) is spelled out by two morphemes, which are both circled. The DP is spelled out as \tit{d} and the phi and case features are spelled out as \tit{ër} or \tit{ën}, depending on which case they realize.
+The light head (i.e. the phi and case features and \tsc{dem}P) is spelled out by two morphemes, which are both circled. The \tsc{dem}P is spelled out as \tit{d} and the phi and case features are spelled out as \tit{ër} or \tit{ën}, depending on which case they realize.
 Consider the relative pronoun in Figure \ref{fig:rel-lh-ohg-2}.
 The relative pronoun in Old High German consists of two morphemes: the constituent that spells out phi and case features and the constituent that spells out the feature \tsc{rel}, again indicated by the circles. The constituent that spells out phi and case features has the same spellout as in the light head (\tit{ër} or \tit{ën}), and the \tsc{rel}P is spelled out as \tit{d}.
 Throughout this chapter, I discuss, just as I do for the first possible light head, the exact feature content of light heads and relative pronouns, I give lexical entries for them, and I show how these lexical entries lead to the internal syntax shown in Figure \ref{fig:rel-lh-ohg-2}.
@@ -342,9 +348,9 @@ First, I discuss the relative pronoun. I decompose it into the two morphemes I s
 Next, I discuss the two possible light heads. I argue that Old High German headless relatives can, unlike Modern German and Polish headless relatives, be derived from two different light-headed relatives. One of these light-headed relatives does not surface in the language, and the other one does.
 The light head in the light-headed relative that does not surface is the extra light head. The features that form the Old High German extra light head and relative pronoun are the same ones that form the Modern German and Polish extra light head and relative pronoun. I show that the Old High German extra light head has the same internal syntax as the Modern German extra light head: it corresponds to one of the morphemes of the relative pronoun (the \tsc{k}P in Figure \ref{fig:rel-lh-ohg-1}).
 
-The second light-headed relative from which headless relatives can be derived of is one headed by a regular light head. Remember that Modern German and Polish also have this light-headed relative in their language, but headless relatives cannot be derived from them. Crucially, headless relatives in Old High German can be derived from light-headed relatives headed by a regular light head because the regular light head and the relative pronoun are syncretic. Both of them start with a \tit{d}, followed by a phi and case feature morpheme. This syncretism leads Old High German to be an unrestricted type of language.
+The second light-headed relative that headless relatives can be derived from is one headed by a demonstrative. Remember that Modern German and Polish also have this light-headed relative in their language, but headless relatives cannot be derived from them. Crucially, headless relatives in Old High German can be derived from light-headed relatives headed by a demonstrative because the demonstrative and the relative pronoun are syncretic in the language. Both of them start with a \tit{d}, followed by a phi and case feature morpheme. This syncretism leads Old High German to be an unrestricted type of language.
 
-Next, I compare the internal syntax of the extra light head and the regular light head to that of the relative pronoun. I show that the extra light head can be deleted via structural containment when the internal case and external case match and when the internal case is more complex than the external case. The relative pronoun can be deleted via formal containment when the internal case and external case match and when the internal case is more complex than the external case via formal containment.
+Next, I compare the internal syntax of the extra light head and the demonstrative to that of the relative pronoun. I show that the extra light head can be deleted via structural containment when the internal case and external case match and when the internal case is more complex than the external case. The relative pronoun can be deleted via formal containment when the internal case and external case match and when the internal case is more complex than the external case via formal containment.
 In order to account for the more complex external case surfacing, I show the larger syntactic structure of light-headed and headless relatives.
 Finally, I reflect on the assumption that two different light-headed relatives can be the source of Old High German headless relatives. I investigate whether there is support for this assumption coming from their interpretation and the larger syntactic structure.
 
@@ -388,7 +394,7 @@ I show the complete structure that I work towards in this section in \ref{ex:ohg
 \ex.\label{ex:ohg-rp}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-  [\tsc{rel}P, s sep=40mm
+  [\tsc{rel}P, s sep=30mm
       [\tsc{rel}P,
       tikz={
       \node[label=below:\tit{d},
@@ -426,7 +432,7 @@ I show the complete structure that I work towards in this section in \ref{ex:ohg
 \end{adjustbox}
 
 I discuss two relative pronouns: the masculine singular nominative and the masculine singular accusative. These are the two forms that I compare the internal syntax of in Section \ref{sec:comparing-ohg}.\footnote{
-For reasons of space, I do not discuss the animate nominative \tit{dëmu/dëmo} `\tsc{rp}.\tsc{m}.\tsc{sg}.\tsc{dat}'. I assume its analysis is identical to the one I propose for \tit{dër} and \tit{dën}, except that \tit{dëmu/dëmo} spells out more case features. I work out the proposal for \tit{dër} and \tit{dën}, because I have not found an example in which the internal dative case wins over the external accusative case.
+For reasons of space, I do not discuss the animate dative \tit{dëmu/dëmo} `\tsc{rp}.\tsc{m}.\tsc{sg}.\tsc{dat}'. I assume its analysis is identical to the one I propose for \tit{dër} and \tit{dën}, except that \tit{dëmu/dëmo} spells out more case features. I work out the proposal for \tit{dër} and \tit{dën}, because I have not found an example in which the internal dative case wins over the external accusative case.
 }
 I show them in \ref{ex:ohg-rels}.
 
@@ -540,7 +546,7 @@ The \tit{ër} is the nominative masculine singular, so it spells out the feature
 I continue with the morpheme \tit{d}. This morpheme corresponds to what I called the \tsc{rel}-feature in Chapter \ref{ch:the-basic-idea} and in the introduction to this chapter. I argue that this morpheme actually spells out the feature \tsc{rel}, the feature \tsc{wh} and a number feature.
 
 Relative and demonstrative pronouns are syncretic in Old High German \pgcitep{braune2018}{338}. They contain the morpheme \tit{d}, which is responsible for establishing a definite reference. The feature \tsc{rel} is present to establish a relation.
-I assume that \tit{d} also spells out the feature \tsc{ind}. For this I do not have any independent support. I make this assumption to allow myself to build a complex specifier.
+I assume that \tit{d} also spells out the feature \tsc{ind}. This is a theory-internal assumption that is required by the spellout algorithm. The feature \tsc{ind} is copied from the first workspace when I build a complex specifier.
 
 In sum, the morpheme \tit{d} corresponds to the features \tsc{rel}, \tsc{wh} and \tsc{ind} as shown in \ref{ex:ohg-entry-d}.
 
@@ -555,7 +561,7 @@ In sum, the morpheme \tit{d} corresponds to the features \tsc{rel}, \tsc{wh} and
   {\draw (.east) node[right]{⇔ \tit{d}}; }
 \end{forest}\label{ex:ohg-entry-d}
 
-In what follows, I show how the Old High German relative pronouns are constructed. I follow the same functional sequence as I did for Modern German and Polish, except for substituting the feature \tsc{wh} by the feature D. I give the functional sequence in \ref{ex:fseq-d-rel}.
+In what follows, I show how the Old High German relative pronouns are constructed. I follow the same functional sequence as I did for Modern German and Polish. I give the functional sequence in \ref{ex:fseq-d-rel}.
 
 \ex.\label{ex:fseq-d-rel}
 \begin{adjustbox}{max width=0.9\textwidth}
@@ -706,8 +712,8 @@ Therefore, the \tsc{wh}P is spelled out as \tit{d}. The newly created phrase is 
 The next feature in the functional sequence is the feature \tsc{rel}. The derivation for this feature resembles the derivation of \tsc{rel} in Modern German and Polish.
 The feature is merged with the existing syntactic structure, creating a \tsc{rel}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads to splitting up the DP from the \tsc{ind}P.
-The feature \tsc{rel} is merged in both workspaces, so with \tsc{wh}P and and with \tsc{ind}P. The spellout of \tsc{rel} is successful when it is combined with the DP.
+Backtracking leads to splitting up the \tsc{wh}P from the \tsc{ind}P.
+The feature \tsc{rel} is merged in both workspaces, so with \tsc{wh}P and and with \tsc{ind}P. The spellout of \tsc{rel} is successful when it is combined with the \tsc{wh}P.
 It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-d-rep-rp}, which corresponds to the \tit{d}.
 The \tsc{rel}P is spelled out as \tit{d}, and it is merged back to the existing syntactic structure.
 
@@ -816,16 +822,16 @@ To summarize, I decomposed the relative pronoun into the two morphemes: \tit{d} 
 
 \section{The Old High German light heads}\label{sec:light-ohg}
 
-I have suggested that headless relatives are derived from light-headed relatives. The light head or the relative pronoun can be deleted when either of them is contained in the other one. In Chapter \ref{ch:the-basic-idea} and in the introduction of this chapter, I suggested that Old High German has two possible light heads: the extra light head and the regular light head. Therefore I will also suggest that there are two different light-headed relatives that can be the source of the headless relative.
+I have suggested that headless relatives are derived from light-headed relatives. The light head or the relative pronoun can be deleted when either of them is contained in the other one. In Chapter \ref{ch:the-basic-idea} and in the introduction of this chapter, I suggested that Old High German has two possible light heads: the extra light head and the demonstrative. That means that there are also two different light-headed relatives that can be the source of the headless relative.
 
 For Modern German and Polish, I considered two kinds of light-headed relatives as the potential source of the headless relative.
-The first possible scenario is that the headless relative is derived from an existing light-headed relative, in which case the deletion of the light head would have to be optional.
-The second possible scenario is that the headless relative is derived from a light-headed relative that does not surfaces in Modern German and Polish, in which case the deletion of the light head would have to be obligatory.
+The first possible scenario would be that the headless relative is derived from an existing light-headed relative, in which case the deletion of the light head would have to be optional.
+The second possible scenario would be that the headless relative is derived from a light-headed relative that does not surface, in which case the deletion of the light head would have to be obligatory.
 I concluded for Modern German and Polish that the second scenario is the one that is attested in the languages.
-For Old High German I assume that headless relatives can be derived from both light-headed relatives.
+For Old High German I assume that headless relatives can be derived from both kinds of light-headed relatives.
 
 In Section \ref{sec:ohg-elh}, I introduce the extra light head that does not surface in the language in a light-headed relative as the first possible light head.
-In Section \ref{sec:ohg-lh}, I introduce the regular light head that does surface in the language in a light-headed relative as the second possible light head.
+In Section \ref{sec:ohg-lh}, I introduce the demonstrative that does surface in the language in a light-headed relative as the second possible light head.
 
 
 \subsection{The extra light head}\label{sec:ohg-elh}
@@ -835,7 +841,7 @@ In this section I discuss the first one, the light-headed relative that does not
 In the sections on extra light heads in Modern German and Polish I discussed the possible interpretations of headless relatives in these languages. In this section I do not do so for Old High German. I come back to this in Section \ref{sec:coming-back}.
 }
 
-In the introduction of this chapter, I suggested that the extra light head (or the first possible light head as I called it there) in the unrestricted type of language consist of at least two features: ϕ and \tsc{k}. I claimed that the internal syntax of the extra light head is as shown in \ref{ex:ohg-lh-complex-1}.
+In the introduction of this chapter, I suggested that the extra light head (or the first possible light head as I called it there) in the unrestricted type of language consists of two features: ϕ and \tsc{k}. I claimed that the internal syntax of the extra light head is as shown in \ref{ex:ohg-lh-complex-1}.
 
 \ex.\label{ex:ohg-lh-complex-1}
 \begin{forest} boom
@@ -881,7 +887,9 @@ I end up claiming that the extra light head corresponds to the phi and case feat
 
 The internal syntax of the Old High German extra light head is identical to the internal syntax of the Modern German extra light head. They both form a single phi and case feature portmanteau.
 
-In the remainder of this section, I discuss the two extra light heads that I compare the internal syntax of in Section \ref{sec:comparing-ohg}. As I noted before, these forms do not surface as light heads in a light-headed relative. They do also not surface anywhere else in the language. The are the nominative masculine singular and the accusative masculine singular, shown in \ref{ex:ohg-elhs}.
+In the remainder of this section, I discuss the two extra light heads that I compare the internal syntax of in Section \ref{sec:comparing-ohg}. As I noted before, these forms do not surface as light heads in a light-headed relative. They do also not surface anywhere else in the language. The are the nominative masculine singular and the accusative masculine singular, shown in \ref{ex:ohg-elhs}.\footnote{
+Again, for reasons of space, I do not discuss the dative form. I assume its analysis is identical to the one I propose for the accusative and the dative.
+}
 
 \ex.\label{ex:ohg-elhs}
 \ag. ër\\
@@ -959,7 +967,7 @@ In what follows, I construct the Old High German extra light heads. Until the fe
   tikz={
   \node[label=below:\tit{ër},
   draw,circle,
-  scale=0.9,
+  scale=0.95,
   fit to=tree]{};
   }
       [\tsc{ind}]
@@ -1036,17 +1044,17 @@ In sum, Old High German headless relatives can be derived from a light-headed re
 
 
 
-\subsection{The regular light head}\label{sec:ohg-lh}
+\subsection{The demonstrative}\label{sec:ohg-lh}
 
 As I mentioned in the introduction of this section, headless relatives in Old High German can be derived from two different light-headed relatives: one that does not surface in the language and one that does surface in the language.
-In this section I discuss the second one, the light-headed relative that also surfaces in the language. This light-headed relative is headed by a regular light head. This light-headed relative cannot be the source of a headless relative in Modern German or Polish, but it can Old High German. In Old High German, the regular light head is namely syncretic with the relative pronoun.
+In this section I discuss the second one, the light-headed relative that also surfaces in the language. This light-headed relative is headed by a demonstrative. This light-headed relative cannot be the source of a headless relative in Modern German or Polish, but it can Old High German. In Old High German, the demonstrative is namely syncretic with the relative pronoun.
 
-In the introduction of this chapter, I suggested that the internal syntax of the regular light head is as shown in \ref{ex:ohg-lh-complex-2}.
+In the introduction of this chapter, I suggested that the internal syntax of the demonstrative is as shown in \ref{ex:ohg-lh-complex-2}.
 
 \ex.\label{ex:ohg-lh-complex-2}
 \begin{forest} boom
-  [DP, s sep = 17.5 mm
-      [DP,
+  [\tsc{dem}P, s sep = 17.5 mm
+      [\tsc{dem}P,
       tikz={
       \node[label=below:\tit{d},
       draw,circle,
@@ -1070,22 +1078,22 @@ In the introduction of this chapter, I suggested that the internal syntax of the
   ]
 \end{forest}
 
-Also in the introduction of this chapter, I suggested that the regular light head in the unrestricted type of language consist of at least three features: D, ϕ and \tsc{k}.
-The regular light head is spelled out by the same lexical entries as the relative pronoun. This raises the question of how the features D and \tsc{rel} are connected. This is what I discuss in this section, in which I determine the exact feature content of the regular light head.
+Also in the introduction of this chapter, I suggested that the demonstrative in the unrestricted type of language consist of at least three features: D, ϕ and \tsc{k}.
+The demonstrative is spelled out by the same lexical entries as the relative pronoun. This raises the question of how the features D and \tsc{rel} are connected. This is what I discuss in this section, in which I determine the exact feature content of the demonstrative.
 I show the complete structure that I work towards in this section in \ref{ex:ohg-lh}.
 
 \ex.\label{ex:ohg-lh}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-      [DP, s sep=20mm
-          [DP,
+      [\tsc{dem}P, s sep=30mm
+          [\tsc{dem}P,
           tikz={
           \node[label=below:\tit{d},
           draw,circle,
           scale=0.95,
           fit to=tree]{};
           }
-              [D]
+              [\tsc{dem}]
               [\tsc{rel}P
                   [\tsc{rel}]
                   [\tsc{wh}P
@@ -1121,64 +1129,163 @@ I show the complete structure that I work towards in this section in \ref{ex:ohg
 \end{forest}
 \end{adjustbox}
 
-I give an example of a light-headed in Old High German relative headed by a regular light head in \ref{ex:ohg-lh-rel}.
-The \tit{ther} `\tsc{rlh}.\tsc{sg}.\tsc{m}.\tsc{nom}' not marked in bold is the regular light head that is the head of the relative clause.
+I give an example of a light-headed in Old High German relative headed by a demonstrative in \ref{ex:ohg-lh-rel}.
+The \tit{ther} `\tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}' not marked in bold is the demonstrative that is the head of the relative clause.
 The \tit{Ther} `\tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{nom}' marked in bold is the relative pronoun in the relative clause.\footnote{
 I assume that whether both the light head and the relative pronoun or only one of them surfaces is determined by information structure. In \ref{ex:ohg-lh-rel}, it seems plausible that the one that hit Christ is emphasized, and that therefore no deletion takes place.
 }
 
 \exg. Crist, uuer ist ther \tbf{ther} \tbf{dih} \tbf{slehit}?\\
-Christ who.\tsc{an}.\tsc{nom} be.3\tsc{sg} \tsc{rlh}.\tsc{sg}.\tsc{m}.\tsc{nom} \tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{nom} 2\tsc{sg}.\tsc{acc} hit.3\tsc{sg}\\
+Christ who.\tsc{an}.\tsc{nom} be.3\tsc{sg} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom} \tsc{rp}.\tsc{sg}.\tsc{m}.\tsc{nom} 2\tsc{sg}.\tsc{acc} hit.3\tsc{sg}\\
 `Christ, who is the one that hit you?' \flushfill{Old High German, \ac{tatian} 192:2}\label{ex:ohg-lh-rel}
 
-As \ref{ex:ohg-lh-rel} shows and as I mentioned earlier in this chapter, relative pronouns and demonstrative pronouns are syncretic in Old High German. Both of them start with a \tit{d}, followed by a phi and case feature portmanteau.
+As \ref{ex:ohg-lh-rel} shows and as I mentioned earlier in this chapter, relative pronouns and demonstrative pronouns are syncretic in Old High German. Both of them start with a \tit{d}, followed by a phi and case feature portmanteau. I already discussed the phi and case feature morpheme in Section \ref{sec:ohg-rel}. In what follows, I discuss how the two \tit{d}s are related.
 
-zoom in on \tit{d}
-since they are syncretic, they are realized by the same lexical entry\footnote{
-Another logical possibility would be to argue that they are accidentically syncretic. I do not go down that path.
+As I mentioned, both relative pronouns and demonstratives start with a \tit{d}. As I discussed throughout this dissertation (especially in Chapter \ref{ch:decomposition}), a syncretism can be described by letting the two forms correspond to the same lexical entry.\footnote{
+It is also possible to argue that they are accidentally syncretic. As the syncretism between relative pronouns and demonstratives is attested in multiple (albeit mostly Germanic) language \citep{baunaz2018}, I do not discuss that option.
+}
+The lexical entry for \tit{d} I gave so far is the one in \ref{ex:entry-d-so-far}.
+
+\ex.\label{ex:entry-d-so-far}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P
+          [\tsc{wh}]
+          [\tsc{ind}]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{d}}; }
+\end{forest}
+
+Logically speaking, the syncretism can be derived by either putting the \tsc{dem} feature above the feature \tsc{rel} or below it. I show the two options in \ref{ex:dem-options}.
+
+\ex.\label{ex:dem-options}
+\a.\label{ex:dem-option-high}
+\begin{forest} boom
+  [\tsc{dem}P
+      [\tsc{dem}]
+      [\tsc{rel}P
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{d}}; }
+\end{forest}
+\b.\label{ex:dem-option-low}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{dem}P
+          [\tsc{dem}]
+          [\tsc{wh}P
+              [\tsc{wh}]
+              [\tsc{ind}]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{d}}; }
+\end{forest}
+
+With both lexical entries, the \tit{d} is inserted for the \tsc{rel}P and the \tsc{dem}P (because of the Superset Principle). The feature \tsc{dem} could not be put below \tsc{wh}, as Old High German uses pronouns starting with \tit{(h)w} for interrogatives. If the feature \tsc{dem} was be below \tsc{wh}, it would be the \tit{(h)w} that would be inserted and not the \tit{d} (because of the Elsewhere Condition).
+
+If you also consider the syncretisms in Modern German and in Polish, then only the ordering in \ref{ex:dem-option-high} can derive the patterns. These languages namely have a syncretism between the interrogative and the relative pronoun to the exclusion of the demonstrative. I give an overview of the syncretism patterns in the different languages I discussed in Table \ref{tbl:syncretisms-dem}.
+
+\begin{table}[htbp]
+  \center
+  \caption{Syncretisms between \tsc{dem}, \tsc{rel} and \tsc{wh}}
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{cccc}
+    \toprule
+    language           & \tsc{dem}   & \tsc{rel}   & \tsc{wh}   \\
+    \cmidrule(lr){1-1}    \cmidrule(lr){2-4}
+  Old High German      & d           & d           &  (h)w      \\
+  Modern German        & d           & w           &  w         \\
+  Polish               & t           & k           &  k         \\
+  \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+\label{tbl:syncretisms-dem}
+\end{table}
+
+I give the lexical entries for Modern German and Polish that derive this pattern in \ref{ex:dem-mg-p}.\footnote{
+As I also noted in Chapter \ref{ch:deriving-onlyinternal}, Modern German has two relative pronouns: one starting with \tit{d} and one starting with \tit{w}. To capture that, I assume that the \tsc{rel}-head should actually consist of two heads, say \tsc{rel}\scsub{1} and \tsc{rel}\scsub{2}.
+Up to \tsc{rel}\scsub{1}, the structure is spelled out as \tit{we} and from \tsc{rel}\scsub{2} on the structure is spelled out as \tit{de}. I give the lexical entries that derive this result in \ref{ex:2rels-mg}.
+
+\ex.\label{ex:2rels-mg}
+\a.\label{ex:2rels-mg-we}
+\begin{forest} boom
+  [\tsc{rel\scsub{1}}P
+      [\tsc{rel\scsub{1}}]
+      [\tsc{wh}P
+          [\phantom{xxx}, roof]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{we}}; }
+\end{forest}
+\b.\label{ex:2rels-mg-de}
+\begin{forest} boom
+  [\tsc{dem}P
+      [\tsc{dem}]
+      [\tsc{rel\scsub{2}}P
+          [\tsc{rel\scsub{2}}]
+          [\tsc{rel\scsub{1}}P
+              [\tsc{rel\scsub{1}}]
+              [\tsc{wh}P
+                  [\phantom{xxx}, roof]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{de}}; }
+\end{forest}
+
+Splitting the \tsc{rel} head in two heads does not make a difference for Old High German and Polish. Old High German would only let \tit{h(w)} spell out the \tsc{wh}P, and Polish would let \tit{k} spell out the \tsc{wh}P and both \tsc{rel}Ps.
 }
 
-so far we had this lexical entry
-now there are two possibilities:
-the d is merged on top of rel
-or the d is somewhere inside of the rel
+\ex.\label{ex:dem-mg-p}
+\a.\label{ex:dem-wh-mg-p}
+\begin{forest} boom
+  [\tsc{rel}P
+      [\tsc{rel}]
+      [\tsc{wh}P
+          [\phantom{xxx}, roof]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{we/k}}; }
+\end{forest}
+\b.\label{ex:dem-dem-mg-p}
+\begin{forest} boom
+  [\tsc{dem}P
+      [\tsc{dem}]
+      [\tsc{rel}P
+          [\tsc{rel}]
+          [\tsc{wh}P
+              [\phantom{xxx}, roof]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{de/t}}; }
+\end{forest}
 
-i go for the latter option
-this is also exactly what lander\&baunaz argued for, what they found crosslinguistically
+Crucially, the syncretism between the demonstrative and the relative pronoun makes Old High German an unrestricted type of language. The relative pronoun can be deleted via formal containment. In Modern German and in Polish, relative pronouns and demonstratives are not syncretic (see Section \ref{sec:light-mg} and Section \ref{sec:pol-elh}). Therefore, the relative pronoun cannot be deleted via formal containment.
 
-semantically I make sense of it by saying..
-\footnote{
-Modern German actually has two different relative opronouns. I assume that there are two relative heads, so:
---give tree--
-the languages i discuss in these three chapters have two lexical entries to realize this: a wh and d
-the polish wh can do up to reld and lets the d do the rest
-the modern german wh can do up to relwh ans lets the d to the rest
-the ohg wh can do only wh and lets the d do the rest
+This hierarchy has also been proposed by \citet{baunaz2018}, who in addition include a complementizer and an indefinite (which is not what I call the extra light head). They provide evidence from crosslinguistic patterns of syncretism and morphological containment.\footnote{
+Semantically, this functional sequence can be interpreted as follows:
 }
 
-
-Crucially, this syncretism leads Old High German to be an unrestricted type of language. The relative pronoun can be deleted via formal containment. In Modern German and in Polish, relative pronouns and demonstratives are not syncretic (see Section \ref{sec:light-mg} and Section \ref{sec:pol-elh})\footnote{
-An exception is..
-
-First, German only had the d-pronoun and attraction. The pattern of attraction that came with that pronoun is ext only.
-At some point, German invented the wh-pronoun. Helmut showed how it emerged. With that came the other pattern: int only. Some people lost the attraction (but everybody kept the d-pronoun) and with that the pattern disappeared.
-So the patterns in headless relatives follow from the relative pronouns in the language.
-
-Why are all languages of the `unrestricted' type dead languages?
-Was it a common thing that wh-pronouns were not used as relative pronouns?
-
-Wouldn't we now not expect that Modern German patterns with Old High German wrt attraction in headed constructions. Yes, we would. And yes, this is exactly what we see. Paper by Bader on case attraction.
-
-First there was only the relative pronoun with a D. Then we did case competition with this one, in both directions. Later, we only did it with the wh, and we only had internal left. Because this competitor was introduced, the case competition with D disappeared.
-} Therefore, the relative pronoun cannot be deleted via formal containment.
-
-In the remainder of this section, I discuss the two regular light heads that I compare the internal syntax of in Section \ref{sec:comparing-ohg}. These are the nominative masculine singular and the accusative masculine singular, shown in \ref{ex:ohg-lhs}.
+In the remainder of this section, I discuss the two demonstratives that I compare the internal syntax of in Section \ref{sec:comparing-ohg}. These are the nominative masculine singular and the accusative masculine singular, shown in \ref{ex:ohg-lhs}.\footnote{
+Again, for reasons of space, I do not discuss the dative form. I assume its analysis is identical to the one I propose for the accusative and the dative.
+}
 
 \ex.\label{ex:ohg-lhs}
 \ag. d-ër\\
- \tsc{rlh}.\tsc{m}.\tsc{sg}.\tsc{nom}\\
+ \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{nom}\\
 \bg. d-ën\\
- \tsc{rlh}.\tsc{m}.\tsc{sg}.\tsc{acc}\\
+ \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc}\\
 
 The functional sequence for the light head is as shown in \ref{ex:fseq-lh-ohg}.
 
@@ -1186,15 +1293,21 @@ The functional sequence for the light head is as shown in \ref{ex:fseq-lh-ohg}.
  \begin{forest} boom
    [\tsc{k}P
        [\tsc{k}]
-       [DP
-           [D]
-           [\tsc{ind}P
-               [\tsc{ind}]
-               [\tsc{an}P
-                   [\tsc{an}]
-                   [\tsc{cl}P
-                       [\tsc{cl}]
-                       [\tsc{ref}]
+       [\tsc{dem}P
+           [\tsc{dem}]
+           [\tsc{rel}P
+               [\tsc{rel}]
+               [\tsc{wh}P
+                   [\tsc{wh}]
+                   [\tsc{ind}P
+                       [\tsc{ind}]
+                       [\tsc{an}P
+                           [\tsc{an}]
+                           [\tsc{cl}P
+                               [\tsc{cl}]
+                               [\tsc{ref}]
+                           ]
+                       ]
                    ]
                ]
            ]
@@ -1202,9 +1315,9 @@ The functional sequence for the light head is as shown in \ref{ex:fseq-lh-ohg}.
    ]
 \end{forest}
 
-The functional sequence contains the pronominal feature \tsc{ref}, the gender features \tsc{cl} and \tsc{an}, the number feature \tsc{ind}, the definite feature D and case features \tsc{k}.
+The functional sequence contains the pronominal feature \tsc{ref}, the gender features \tsc{cl} and \tsc{an}, the number feature \tsc{ind}, the operator features \tsc{wh}, \tsc{rel} and \tsc{dem} and case features \tsc{k}.
 
-I introduced the lexical entries that are required to spell out these features in Section \ref{sec:ohg-rel}. I repeat them in \ref{ex:ohg-entries-rep-lh}.
+I introduced the lexical entries that are required to spell out these features in Section \ref{sec:ohg-rel} and earlier in this section. I repeat them in \ref{ex:ohg-entries-rep-lh}.
 
  \ex.\label{ex:ohg-entries-rep-lh}
  \a.\label{ex:ohg-entry-ër-rep-lh}
@@ -1246,72 +1359,95 @@ I introduced the lexical entries that are required to spell out these features i
  \end{forest}
 \b.\label{ex:ohg-entry-d-rep-lh}
  \begin{forest} boom
-   [\tsc{rel}P
-       [\tsc{rel}]
-       [DP
-           [D]
-           [\tsc{ind}]
+   [\tsc{dem}P
+       [\tsc{dem}]
+       [\tsc{rel}P
+           [\tsc{rel}]
+           [\tsc{wh}P
+               [\tsc{wh}]
+               [\tsc{ind}]
+           ]
        ]
    ]
    {\draw (.east) node[right]{⇔ \tit{d}}; }
  \end{forest}
 
-In what follows, I construct the Old High German light heads. Until the feature D, the derivation is identical to the one of the relative pronoun. I give the syntactic structure at that point in \ref{ex:ohg-spellout-dp-rep}.
+In what follows, I construct the Old High German demonstratives. Until the feature \tsc{rel}, the derivation is identical to the one of the relative pronoun. I give the syntactic structure at that point in \ref{ex:ohg-spellout-relp-rep}.
 
-\ex.\label{ex:ohg-spellout-dp-rep}
-\begin{forest} boom
-  [DP, s sep=15mm
-      [DP,
-      tikz={
-      \node[label=below:\tit{d},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [D]
-          [\tsc{ind}]
-      ]
-      [\tsc{ind}P,
-      tikz={
-      \node[label=below:\tit{ër},
-      draw,circle,
-      scale=0.95,
-      fit to=tree]{};
-      }
-          [\tsc{ind}]
-          [\tsc{an}P
-              [\tsc{an}]
-              [\tsc{cl}P
-                  [\tsc{cl}]
-                  [\tsc{ref}]
-              ]
-          ]
-      ]
-  ]
-\end{forest}
-
-For the nominative light head, the last feature is merged: the \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-lh}, which corresponds to the \tit{ër}.
-This is achieved via Backtracking in which phrases are split up and going through the Spellout Algorithm. I go through the derivation step by step.
-The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
-This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads to splitting up the DP from the \tsc{ind}P.
-The feature \tsc{f}1 is merged in both workspaces, so with the DP and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
-It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-lh}, which corresponds to the \tit{ër}.
-The \tsc{nom}P is spelled out as \tit{ër}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:ohg-spellout-dp-nom}.
-
-\ex.\label{ex:ohg-spellout-dp-nom}
+\ex.\label{ex:ohg-spellout-relp-rep}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-      [DP, s sep=20mm
-          [DP,
+      [\tsc{rel}P, s sep=30mm
+          [\tsc{rel}P,
           tikz={
           \node[label=below:\tit{d},
           draw,circle,
           scale=0.95,
           fit to=tree]{};
           }
-              [D]
+              [\tsc{rel}]
+              [\tsc{wh}P
+                  [\tsc{wh}]
+                  [\tsc{ind}]
+              ]
+          ]
+          [\tsc{ind}P,
+          tikz={
+          \node[label=below:\tit{ër},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
               [\tsc{ind}]
+              [\tsc{an}P
+                  [\tsc{an}]
+                  [\tsc{cl}P
+                      [\tsc{cl}]
+                      [\tsc{ref}]
+                  ]
+              ]
+          ]
+      ]
+  ]
+\end{forest}
+\end{adjustbox}
+
+The next feature that is merged is the feture \tsc{dem}. The derivation for this feature resembles the derivation of \tsc{rel}.
+The feature is merged with the existing syntactic structure, creating a \tsc{dem}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads to splitting up the \tsc{rel}P from the \tsc{ind}P.
+The feature \tsc{dem} is merged in both workspaces, so with \tsc{rel}P and and with \tsc{ind}P. The spellout of \tsc{rel} is successful when it is combined with the \tsc{rel}P.
+It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-d-rep-lh}, which corresponds to the \tit{d}.
+The \tsc{dem}P is spelled out as \tit{d}, and it is merged back to the existing syntactic structure.
+
+For the nominative relative pronoun, the last feature is merged: the \tsc{f}1. This feature should somehow end up merging with \tsc{ind}P, because it forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}, which corresponds to the \tit{ër}.
+This is achieved via Backtracking in which phrases are split up and going through the Spellout Algorithm. I go through the derivation step by step.
+The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
+This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
+Backtracking leads to splitting up the \tsc{dem}P from the \tsc{ind}P.
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{dem}P and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
+It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ër-rep-rp}, which corresponds to the \tit{ër}.
+The \tsc{nom}P is spelled out as \tit{ër}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:ohg-spellout-rel-nom}.
+
+\ex.\label{ex:ohg-spellout-rel-nom}
+\begin{adjustbox}{max width=0.9\textwidth}
+\begin{forest} boom
+      [\tsc{rel}P, s sep=30mm
+          [\tsc{rel}P,
+          tikz={
+          \node[label=below:\tit{d},
+          draw,circle,
+          scale=0.95,
+          fit to=tree]{};
+          }
+              [\tsc{dem}]
+              [\tsc{rel}P
+                  [\tsc{rel}]
+                  [\tsc{wh}P
+                      [\tsc{wh}]
+                      [\tsc{ind}]
+                  ]
+              ]
           ]
           [\tsc{nom}P,
           tikz={
@@ -1337,25 +1473,31 @@ The \tsc{nom}P is spelled out as \tit{ër}, and all constituents are merged back
 \end{forest}
 \end{adjustbox}
 
-For the accusative light head pronoun, the last feature is merged: the \tsc{f}2. The derivation for \tsc{f}2 resembles the derivation of \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
+For the accusative relative pronoun, the last feature is merged: the \tsc{f}2. The derivation for \tsc{f}2 resembles the derivation of \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
-Backtracking leads to splitting up the DP from the \tsc{nom}P.
-The feature \tsc{f}2 is merged in both workspaces, so with the DP and and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
-It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ën-rep-lh}, which corresponds to the \tit{ën}. The \tsc{acc}P is spelled out as \tit{ën}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:ohg-spellout-dp-acc}.
+Backtracking leads to splitting up the \tsc{dem}P from the \tsc{nom}P.
+The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{dem}P and and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
+It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ën-rep-rp}, which corresponds to the \tit{ën}. The \tsc{acc}P is spelled out as \tit{ën}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:ohg-spellout-rel-acc}.
 
-\ex.\label{ex:ohg-spellout-dp-acc}
+\ex.\label{ex:ohg-spellout-rel-acc}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
-      [DP, s sep=20mm
-          [DP,
+      [\tsc{dem}P, s sep=30mm
+          [\tsc{dem}P,
           tikz={
           \node[label=below:\tit{d},
           draw,circle,
           scale=0.95,
           fit to=tree]{};
           }
-              [D]
-              [\tsc{ind}]
+              [\tsc{dem}]
+              [\tsc{rel}P
+                  [\tsc{rel}]
+                  [\tsc{wh}P
+                      [\tsc{wh}]
+                      [\tsc{ind}]
+                  ]
+              ]
           ]
           [\tsc{acc}P,
           tikz={
@@ -1384,17 +1526,20 @@ It namely forms a constituent in the lexical tree in \ref{ex:ohg-entry-ën-rep-l
 \end{forest}
 \end{adjustbox}
 
-In sum, Old High German headless relatives can be derived from a light-headed relative headed by a regular light head. This regular light head is spelled out by a morpheme that spells out the definite feature and by a phi and case feature portmanteau. The lexical entries used to spell this light head out are also used to spell out the relative pronoun, as the light head and the relative pronoun are syncretic.
+
+In sum, Old High German headless relatives can be derived from a light-headed relative headed by a demonstrative. This demonstrative is spelled out by a morpheme that spells out amongst others the feature \tsc{dem} and by a phi and case feature portmanteau. The lexical entries used to spell out the demonstraitve are also used to spell out the relative pronoun, as the demonstrative and the relative pronoun are syncretic.
 
 
 \section{Comparing light heads and relative pronouns}\label{sec:comparing-ohg}
 
-In this section, I compare the internal syntax of extra light heads and light heads to the internal syntax of relative pronouns in Old High German. This is the worked out version of the comparisons in Section \ref{sec:basic-unrestricted}. What is different here is that I show the comparison for Old High German specifically, and that the content of the internal syntax that is being compared is motivated earlier in this chapter.
+In this section, I compare the internal syntax of extra light heads and demonstratives to the internal syntax of relative pronouns in Old High German. This is the worked out version of the comparisons in Section \ref{sec:basic-unrestricted}. What is different here is that I show the comparison for Old High German specifically, and that the content of the internal syntax that is being compared is motivated earlier in this chapter.
 
 I give three examples, in which the internal and external case vary.
 I start with an example with matching cases, in which the internal and the external case are both nominative. I show that the grammaticality of the example can be derived by either taking the light-headed relative headed by the extra light head or the light-headed relative headed by the light head as the source of the headless relative.
 Then I give an example in which the external accusative case is more complex than the internal nominative case. I show that the grammaticality of this example can only be derived by taking the light-headed relative headed by the light head as the source of the headless relative and not the light-headed relative headed by the extra light head. Before I can properly do that, I take a necessary but brief detour into the larger syntactic structure of headless relatives.
-I end with an example in which the internal accusative case is more complex than the external nominative case. I show that the grammaticality of this example can only be derived by taking the light-headed relative headed by the extra light head as the source of the headless relative and not the light-headed relative headed by the light head.
+I end with an example in which the internal accusative case is more complex than the external nominative case. I show that the grammaticality of this example can only be derived by taking the light-headed relative headed by the extra light head as the source of the headless relative and not the light-headed relative headed by the light head.\footnote{
+In this section I discuss two different light heads (the extra light head and the demonstrative) and two different types of containment (structural containment and formal containment). That means that I could make four comparisons per headless relative: (1) one with the extra light head and structural containment, (2) one with the extra light head and formal containment, (3) one with the demonstrative and structural containment, and (4) one with the demonstrative and formal containment. I do not do this. Instead, I only discuss the first and the last option, namely whether there is structural containment with the extra light head and whether there is formal containment with the demonstrative. The other two comparisons (extra light head and formal containment and demonstrative and structural containment) namely never lead to a deletion, because the containment never holds.
+}
 
 I start with the situation in which the cases match.
 Consider the example in \ref{ex:ohg-nom-nom-rep}, in which the internal nominative case competes against the external nominative case. The relative clause is marked in bold. \ref{ex:ohg-nom-nom-elh} shows the example with the extra light head, and \ref{ex:ohg-nom-nom-lh} shows the example with the light head.
@@ -1402,14 +1547,14 @@ The internal case is nominative, as the predicate \tit{senten} `to send' takes n
 In both examples, the relative pronoun \tit{dher} `\ac{rp}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case.
 The external case is nominative as well, as the predicate \tit{queman} `to come' also takes nominative subjects.
 In \ref{ex:ohg-nom-nom-elh}, the extra light head \tit{er} `\tsc{elh}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
-In \ref{ex:ohg-nom-nom-lh}, the light head \tit{dher} `\tsc{rlh}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. Here the relative pronoun is placed between square brackets because it does not surface.
+In \ref{ex:ohg-nom-nom-lh}, the light head \tit{dher} `\tsc{dem}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. Here the relative pronoun is placed between square brackets because it does not surface.
 
 \ex.\label{ex:ohg-nom-nom-rep}
 \ag. quham [er] \tbf{dher} \tbf{chisendit} \tbf{scolda} \tbf{uuerdhan}\\
  come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{elh}.\ac{sg}.\ac{m}.\ac{nom} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
  `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-elh}
 \bg. quham dher [\tbf{dher}] \tbf{chisendit} \tbf{scolda} \tbf{uuerdhan}\\
- come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{rlh}.\ac{sg}.\ac{m}.\ac{nom} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
+ come.\ac{pst}.3\ac{sg}\scsub{[nom]} \ac{dem}.\ac{sg}.\ac{m}.\ac{nom} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} send.\ac{pst}.\ac{ptcp}\scsub{[nom]} should.\ac{pst}.3\ac{sg} become.\ac{inf}\\
  `the one, who should have been sent, came' \flushfill{Old High German, \ac{isid} 35:5}\label{ex:ohg-nom-nom-lh}
 
 Both examples in \ref{ex:ohg-nom-nom-rep} can be the source of the headless relative. First I show the comparison of the internal syntax of the extra light head and relative pronoun in \ref{ex:ohg-nom-nom-elh}. Then I show the comparison of the internal syntax of the light head and the relative pronoun in \ref{ex:ohg-nom-nom-lh}.
@@ -1497,21 +1642,21 @@ In Figure \ref{fig:ohg-int=ext-lh}, I give the syntactic structure of the light 
         \tsc{nom} light head \tit{dh-er}\\
         \cmidrule{1-1}
         \begin{forest} boom
-          [DP, s sep=15mm,
+          [\tsc{dem}P, s sep=15mm,
           tikz={
           \node[draw,circle,
           scale=0.95,
           dotted,very thick,
           fit to=tree]{};
           }
-              [DP,
+              [\tsc{dem}P,
               tikz={
               \node[label=below:\tit{dh},
               draw,circle,
               scale=0.85,
               fit to=tree]{};
               }
-                  [D]
+                  [\tsc{dem}]
                   [\tsc{rel}P
                       [\phantom{x}\tit{dh}\phantom{x}, roof]
                   ]
@@ -1572,7 +1717,7 @@ In Figure \ref{fig:ohg-int=ext-lh}, I give the syntactic structure of the light 
       \bottomrule
   \end{tabular}
   \end{adjustbox}
-  \caption {Old High German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{nom} → \tit{dher} (\tsc{rlh})}
+  \caption {Old High German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{nom} → \tit{dher} (\tsc{dem})}
   \label{fig:ohg-int=ext-lh}
 \end{figure}
 
@@ -1581,10 +1726,10 @@ The relative pronoun also consists of two morphemes: \tit{dh} and \tit{er}.
 Again, I circle the part of the structure that corresponds to a particular lexical entry, or I reduce the structure to a triangle, and I place the corresponding phonology below it.
 I draw a dotted circle around the biggest possible element that formally contained in both the light head and the relative pronoun.
 
-The relative pronoun (the \tsc{rel}P realized by \tit{dher}) is formally contained in the light head (the DP realized by \tit{dher}).
+The relative pronoun (the \tsc{rel}P realized by \tit{dher}) is formally contained in the light head (the \tsc{dem}P realized by \tit{dher}).
 Therefore, the relative pronoun can be deleted. I signal the deletion of the relative pronoun by marking the content of its circle gray.
 The surface pronoun is the light head that bears the external case: \tit{dher}.\footnote{
-The same holds the other way around: the light head (the DP realized by \tit{dher}) is formally contained in the relative pronoun (the \tsc{rel}P realized by \tit{dher}). Therefore, with the information I have given so far, it could also be that the light head is deleted. In Section \ref{sec:coming-back} I discuss the larger syntactic structure of headless relatives and I show in this case only the relative pronoun can be deleted because of c-command relations.
+The same holds the other way around: the light head (the \tsc{dem}P realized by \tit{dher}) is formally contained in the relative pronoun (the \tsc{rel}P realized by \tit{dher}). Therefore, with the information I have given so far, it could also be that the light head is deleted. In Section \ref{sec:coming-back} I discuss the larger syntactic structure of headless relatives and I show in this case only the relative pronoun can be deleted because of c-command relations.
 }
 
 For reasons of space I do not show the comparisons of the other matching situations. These are situations in which both the internal and external case are accusative or both the internal and external case are dative. The same logic as I showed in Figure \ref{fig:ohg-int=ext-elh} and Figure \ref{fig:ohg-int=ext-lh} works for these situations too.
@@ -1595,14 +1740,14 @@ The internal case is nominative, as the predicate \tit{gisizzen} `to possess' ta
 In both examples, the relative pronoun \tit{dher} `\ac{rp}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case.
 The external case is accusative, as the predicate \tit{bibringan} `to create' takes accusative objects.
 In \ref{ex:ohg-acc-nom-elh}, the extra light head \tit{ën} `\tsc{elh}.\ac{sg}.\ac{m}.\ac{acc}' appears in the accusative case. It is placed between square brackets because it does not surface.
-In \ref{ex:ohg-acc-nom-lh}, the light head \tit{dhen} `\tsc{rlh}.\ac{sg}.\ac{m}.\ac{acc}' appears in the accusative case. Here the relative pronoun is placed between square brackets because it does not surface.
+In \ref{ex:ohg-acc-nom-lh}, the light head \tit{dhen} `\tsc{dem}.\ac{sg}.\ac{m}.\ac{acc}' appears in the accusative case. Here the relative pronoun is placed between square brackets because it does not surface.
 
 \ex.\label{ex:ohg-acc-nom-rep}
 \ag. *ih bibringu fona iacobes samin endi fona iuda [en] \tbf{dher} \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
 1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{elh}.\ac{sg}.\ac{m}.\ac{acc} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
 `I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-elh}
 \bg. ih bibringu fona iacobes samin endi fona iuda dhen [\tbf{dher}] \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
-1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{rlh}.\ac{sg}.\ac{m}.\ac{acc} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{dem}.\ac{sg}.\ac{m}.\ac{acc} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
 `I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-lh}
 
 Only \ref{ex:ohg-acc-nom-lh} can be the source of the headless relative. First I show the comparison of the internal syntax of the extra light head and relative pronoun in \ref{ex:ohg-acc-nom-elh}, which does not lead to a grammatical headless relative. Then I show the comparison of the internal syntax of the light head and the relative pronoun in \ref{ex:ohg-acc-nom-lh}, which does derive a grammatical headless relative.
@@ -1698,21 +1843,21 @@ In Figure \ref{fig:ohg-ext-wins-lh}, I give the syntactic structure of the light
         \tsc{acc} light head \tit{dh-en}\\
         \cmidrule{1-1}
         \begin{forest} boom
-          [DP, s sep=15mm,
+          [\tsc{dem}P, s sep=15mm,
           tikz={
           \node[draw,circle,
           dotted,very thick,
           scale=0.95,
           fit to=tree]{};
           }
-              [DP,
+              [\tsc{dem}P,
               tikz={
               \node[label=below:\tit{dh},
               draw,circle,
               scale=0.85,
               fit to=tree]{};
               }
-                  [D]
+                  [\tsc{dem}]
                   [\tsc{rel}P
                       [\phantom{x}\tit{dh}\phantom{x}, roof]
                   ]
@@ -1775,7 +1920,7 @@ In Figure \ref{fig:ohg-ext-wins-lh}, I give the syntactic structure of the light
       \bottomrule
   \end{tabular}
   \end{adjustbox}
-  \caption {Old High German \tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{nom} ↛ \tit{dhën}/\tit{dhër} (\tsc{rlh})}
+  \caption {Old High German \tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{nom} ↛ \tit{dhën}/\tit{dhër} (\tsc{dem})}
   \label{fig:ohg-ext-wins-lh}
 \end{figure}
 
@@ -1793,7 +1938,7 @@ This is not what the data suggests, however, as a more complex external case is 
 To understand how a grammatical headless relative with a more complex external case gets to surface, the larger syntactic structure needs to be considered. I repeat light-headed relative that is the source of the example from \ref{ex:ohg-acc-nom-lh} in \ref{ex:ohg-acc-nom-lh-rep}.
 
 \exg. ih bibringu fona iacobes samin endi fona iuda dhen [\tbf{dher}] \tbf{mina} \tbf{berga} \tbf{chisitzit}\\
-1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{rlh}.\ac{sg}.\ac{m}.\ac{acc} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
+1\ac{sg}.\ac{nom} {create}.\ac{pres}.1\ac{sg}\scsub{[acc]} of Jakob.\ac{gen} seed.\ac{sg}.\ac{dat} and of Judah.\ac{dat} \ac{dem}.\ac{sg}.\ac{m}.\ac{acc} \ac{rp}.\ac{sg}.\ac{m}.\ac{nom} my.\ac{acc}.\ac{m}.\ac{pl} mountain.\ac{acc}.\ac{pl} possess.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
 `I create of the seed of Jacob and of Judah the one, who possess my mountains' \flushfill{Old High German, \ac{isid} 34:3}\label{ex:ohg-acc-nom-lh-rep}
 
 Consider the syntactic structure in \ref{ex:ohg-syntax-ext-wins} that represents part of the sentence in \ref{ex:ohg-acc-nom-lh-rep}.
@@ -1802,7 +1947,7 @@ Consider the syntactic structure in \ref{ex:ohg-syntax-ext-wins} that represents
  \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
 [, s sep=20mm
-    [DP, s sep=15mm,
+    [\tsc{dem}P, s sep=15mm,
     tikz={
     \node[draw,
     circle,
@@ -1810,14 +1955,14 @@ Consider the syntactic structure in \ref{ex:ohg-syntax-ext-wins} that represents
     scale=0.95,
     fit to=tree]{};
     }
-        [DP,
+        [\tsc{dem}P,
         tikz={
         \node[label=below:\tit{dh},
         draw,circle,
         scale=0.85,
         fit to=tree]{};
         }
-            [D]
+            [\tsc{dem}]
             [\tsc{rel}P
                 [\phantom{x}\tit{dh}\phantom{x}, roof]
             ]
@@ -1880,33 +2025,33 @@ Consider the syntactic structure in \ref{ex:ohg-syntax-ext-wins} that represents
 \end{forest}
 \end{adjustbox}
 
-The DP on the left (that spells out as \tit{dhen}) is the light head from Figure \ref{fig:ohg-ext-wins-lh}. The \tsc{rel}P in the middle (that spells out as \tit{dher}) is the relative pronoun from Figure \ref{fig:ohg-ext-wins-lh}. The CP on the right represents the relative clause without the relative pronoun. I do not show its internal structure, as it is not relevant for the discussion.
+The \tsc{dem}P on the left (that spells out as \tit{dhen}) is the light head from Figure \ref{fig:ohg-ext-wins-lh}. The \tsc{rel}P in the middle (that spells out as \tit{dher}) is the relative pronoun from Figure \ref{fig:ohg-ext-wins-lh}. The CP on the right represents the relative clause without the relative pronoun. I do not show its internal structure, as it is not relevant for the discussion.
 The remainder of the main clause is also not part of the syntactic structure. This is because at this point in the derivation the features that spell out \tit{ih bibringu fona iacobes samin endi fona iuda} `I bring of the seed of Jacob and of Judah' have not been merged yet.
 
-The structure in \ref{ex:ohg-syntax-ext-wins} has come into being by merging features one by one. The last feature that has been merged is \tsc{f}2, which created the \tsc{acc}P within the DP. Remember from the functional sequence in \ref{ex:fseq-lh-ohg} that case features are the highest features, so they are the last ones to be merged.
+The structure in \ref{ex:ohg-syntax-ext-wins} has come into being by merging features one by one. The last feature that has been merged is \tsc{f}2, which created the \tsc{acc}P within the \tsc{dem}P. Remember from the functional sequence in \ref{ex:fseq-lh-ohg} that case features are the highest features, so they are the last ones to be merged.
 Before the feature \tsc{f}2 was merged, the syntactic structure looked as in \ref{ex:ohg-syntax-ext=int}.\footnote{\label{ftn:features-lh}
-The feature \tsc{f}2 ends up in it position via several steps of Backtracking in which different workspaces are split up and features are merged in both workspaces, as explained in Chapter \ref{ch:deriving-onlyinternal}. First, the DP and the FP are split up and \tsc{f}2 is merged in both workspaces. None of them leads to a successful spellout, so both workspaces are split up further, giving three workspaces: the DP, the \tsc{nom}P and the lowest CP. Now \tsc{f}2 can be spelled out with the \tsc{nom}P. All worskpaces are merged back together and the result is the structure in \ref{fig:ohg-ext-wins-lh}.
+The feature \tsc{f}2 ends up in it position via several steps of Backtracking in which different workspaces are split up and features are merged in both workspaces, as explained in Chapter \ref{ch:deriving-onlyinternal}. First, the \tsc{dem}P and the FP are split up and \tsc{f}2 is merged in both workspaces. None of them leads to a successful spellout, so both workspaces are split up further, giving three workspaces: the \tsc{dem}P, the \tsc{nom}P and the lowest CP. Now \tsc{f}2 can be spelled out with the \tsc{nom}P. All worskpaces are merged back together and the result is the structure in \ref{fig:ohg-ext-wins-lh}.
 }
 
 \ex.\label{ex:ohg-syntax-ext=int}
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
 [, s sep=20mm
-    [DP, s sep=15mm,
+    [\tsc{dem}P, s sep=15mm,
     tikz={
     \node[draw,circle,
     dotted,very thick,
     scale=0.95,
     fit to=tree]{};
     }
-        [DP,
+        [\tsc{dem}P,
         tikz={
         \node[label=below:\tit{dh},
         draw,circle,
         scale=0.85,
         fit to=tree]{};
         }
-            [D]
+            [\tsc{dem}]
             [\tsc{rel}P
                 [\phantom{x}\tit{dh}\phantom{x}, roof]
             ]
@@ -1967,7 +2112,7 @@ The feature \tsc{f}2 ends up in it position via several steps of Backtracking in
 \end{forest}
 \end{adjustbox}
 
-The DP on the left (that spells out as \tit{dher}) is the light head from Figure \ref{fig:ohg-int=ext-lh}. The \tsc{rel}P in the middle (that spells out as \tit{dher}) is the relative pronoun from Figure \ref{fig:ohg-int=ext-lh}.
+The \tsc{dem}P on the left (that spells out as \tit{dher}) is the light head from Figure \ref{fig:ohg-int=ext-lh}. The \tsc{rel}P in the middle (that spells out as \tit{dher}) is the relative pronoun from Figure \ref{fig:ohg-int=ext-lh}.
 At this point in the derivation, the relative pronoun is formally contained in the light head.
 Therefore, the relative pronoun can be deleted. I signal the deletion of the relative pronoun by marking the content of its circle gray in \ref{ex:ohg-syntax-ext=int}.
 The surface pronoun is the light head that bears the external case: \tit{dher}.
@@ -1978,21 +2123,21 @@ Then the feature \tsc{f}2 is merged, and the light head is spelled out as \tit{d
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
 [, s sep=20mm
-    [DP, s sep=15mm,
+    [\tsc{dem}P, s sep=15mm,
     tikz={
     \node[draw,circle,
     dotted,very thick,
     scale=0.95,
     fit to=tree]{};
     }
-        [DP,
+        [\tsc{dem}P,
         tikz={
         \node[label=below:\tit{dh},
         draw,circle,
         scale=0.85,
         fit to=tree]{};
         }
-            [D]
+            [\tsc{dem}]
             [\tsc{rel}P
                 [\phantom{x}\tit{dh}\phantom{x}, roof]
             ]
@@ -2067,14 +2212,14 @@ Consider the examples in \ref{ex:ohg-nom-acc-rep}, in which the internal accusat
 The internal case is accusative, as the predicate \tit{zellen} `to tell' takes accusative objects.
 In both examples, the relative pronoun \tit{then} `\ac{rp}.\ac{sg}.\ac{m}.\ac{acc}' appears in the accusative case.
 In \ref{ex:ohg-nom-acc-elh}, the extra light head \tit{ër} `\tsc{elh}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. It is placed between square brackets because it does not surface.
-In \ref{ex:ohg-nom-acc-lh}, the light head \tit{dher} `\tsc{rlh}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. Here the relative pronoun is placed between square brackets because it does not surface.
+In \ref{ex:ohg-nom-acc-lh}, the light head \tit{dher} `\tsc{dem}.\ac{sg}.\ac{m}.\ac{nom}' appears in the nominative case. Here the relative pronoun is placed between square brackets because it does not surface.
 
 \ex.\label{ex:ohg-nom-acc-rep}
 \ag. Thíz ist [er] \tbf{then} \tbf{sie} \tbf{zéllent}\\
 \ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \tsc{elh}.\ac{sg}.\ac{m}.\ac{nom} \ac{rp}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
 `this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-elh}
 \bg. *Thíz ist ther [\tbf{then}] \tbf{sie} \tbf{zéllent}\\
-\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{rlh}.\ac{sg}.\ac{m}.\ac{nom} \ac{rp}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
+\ac{dem}.\ac{sg}.\ac{n}.\ac{nom} be.\ac{pres}.3\ac{sg}\scsub{[nom]} \ac{dem}.\ac{sg}.\ac{m}.\ac{nom} \ac{rp}.\ac{sg}.\ac{m}.\ac{acc} 3\ac{pl}.\ac{m}.\ac{nom} tell.\ac{pres}.3\ac{pl}\scsub{[acc]}\\
 `this is the one whom they talk about' \flushfill{Old High German, \ac{otfrid} III 16:50}\label{ex:ohg-nom-acc-lh}
 
 Only \ref{ex:ohg-nom-acc-lh} can be the source of the headless relative. First I show the comparison of the internal syntax of the extra light head and relative pronoun in \ref{ex:ohg-nom-acc-elh}, which leads to a grammatical headless relative. Then I show the comparison of the internal syntax of the light head and the relative pronoun in \ref{ex:ohg-nom-acc-lh}, which does not derive a grammatical headless relative.
@@ -2168,21 +2313,21 @@ In Figure \ref{fig:ohg-int-wins-lh}, I give the syntactic structure of the light
         \tsc{nom} light head \tit{th-er}\\
         \cmidrule{1-1}
         \begin{forest} boom
-          [DP, s sep=15mm,
+          [\tsc{dem}P, s sep=15mm,
           tikz={
           \node[draw,circle,
           dotted,very thick,
           scale=-0.95,
           fit to=tree]{};
           }
-              [DP,
+              [\tsc{dem}P,
               tikz={
               \node[label=below:\tit{th},
               draw,circle,
               scale=0.85,
               fit to=tree]{};
               }
-                  [D]
+                  [\tsc{dem}]
                   [\tsc{rel}P
                       [\phantom{x}\tit{dh}\phantom{x}, roof]
                   ]
@@ -2245,7 +2390,7 @@ In Figure \ref{fig:ohg-int-wins-lh}, I give the syntactic structure of the light
       \bottomrule
   \end{tabular}
   \end{adjustbox}
-  \caption {Old High German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} ↛ \tit{ther}/\tit{then} (\tsc{rlh})}
+  \caption {Old High German \tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} ↛ \tit{ther}/\tit{then} (\tsc{dem})}
   \label{fig:ohg-int-wins-lh}
 \end{figure}
 
@@ -2266,7 +2411,7 @@ For reasons of space I do not show the comparisons of the other situations in wh
 
 \section{Coming back to the light heads}\label{sec:coming-back}
 
-In this chapter I have suggested that headless relatives in Old High German can be derived from two different light-headed relatives: one headed by an extra light head and one headed by a regular light head.
+In this chapter I have suggested that headless relatives in Old High German can be derived from two different light-headed relatives: one headed by an extra light head and one headed by a demonstrative.
 In Section \ref{sec:light-ohg} I did not provide any motivation for why there should be two different sources for headless relative in the language.
 In this section I consider whether there is any support that suggests so.
 In Section \ref{sec:interpretation-ohg}, I consider headless relatives in which an extra light head is deleted have a different interpretation from headless relatives in which the relative pronoun is deleted. I do not find such support.
@@ -2315,7 +2460,7 @@ Now consider Table \ref{tbl:overview-rel-light-ohg-lh1-rep}, that gives the gram
 \label{tbl:overview-rel-light-ohg-lh1-rep}
 \end{table}
 
-Consider also Table \ref{tbl:overview-rel-light-ohg-lh2-rep}, that gives the grammaticality pattern for headless relatives derived from light-headed relatives headed by a regular light head.
+Consider also Table \ref{tbl:overview-rel-light-ohg-lh2-rep}, that gives the grammaticality pattern for headless relatives derived from light-headed relatives headed by a demonstrative.
 
 \begin{table}[htbp]
   \center
@@ -2345,19 +2490,19 @@ Consider also Table \ref{tbl:overview-rel-light-ohg-lh2-rep}, that gives the gra
 \label{tbl:overview-rel-light-ohg-lh2-rep}
 \end{table}
 
-As can be seen in the tables, examples in which the internal and external case match can be derived from both types of light-headed relatives. The example in \ref{ex:ohg-acc-acc-rep} is one in which the internal and the external case match. Therefore, this example can be derived from the two different light-headed relatives: one headed by an extra light head, as shown in \ref{ex:ohg-acc-acc-rep-elh}, and one headed by a regular light head, as shown in \ref{ex:ohg-acc-acc-rep-lh}.
+As can be seen in the tables, examples in which the internal and external case match can be derived from both types of light-headed relatives. The example in \ref{ex:ohg-acc-acc-rep} is one in which the internal and the external case match. Therefore, this example can be derived from the two different light-headed relatives: one headed by an extra light head, as shown in \ref{ex:ohg-acc-acc-rep-elh}, and one headed by a demonstrative, as shown in \ref{ex:ohg-acc-acc-rep-lh}.
 
 \ex.
 \ag. gihortut ir [iu] \tbf{thiu} \tbf{ih} \tbf{íu} \tbf{quad}\\
  listen.\ac{pst}.2\ac{pl}\scsub{[acc]} 2\ac{pl}.\ac{nom} \tsc{elh}.\ac{pl}.\ac{n}.\ac{nom} \tsc{rp}.\ac{pl}.\ac{n}.\ac{acc} 1\ac{sg}.\ac{nom} 2\ac{pl}.\ac{dat} speak.\ac{pst}.1\ac{sg}\scsub{[acc]}\\
  `you listened to those things, that I said to you' \flushfill{Old High German, \ac{tatian} 165:6}\label{ex:ohg-acc-acc-rep-elh}
 \bg. gihortut ir thiu [\tbf{thiu}] \tbf{ih} \tbf{íu} \tbf{quad}\\
- listen.\ac{pst}.2\ac{pl}\scsub{[acc]} 2\ac{pl}.\ac{acc} \tsc{rlh}.\ac{pl}.\ac{n}.\ac{nom} \tsc{rp}.\ac{pl}.\ac{n}.\ac{nom} 1\ac{sg}.\ac{nom} 2\ac{pl}.\ac{dat} speak.\ac{pst}.1\ac{sg}\scsub{[acc]}\\
+ listen.\ac{pst}.2\ac{pl}\scsub{[acc]} 2\ac{pl}.\ac{acc} \tsc{dem}.\ac{pl}.\ac{n}.\ac{nom} \tsc{rp}.\ac{pl}.\ac{n}.\ac{nom} 1\ac{sg}.\ac{nom} 2\ac{pl}.\ac{dat} speak.\ac{pst}.1\ac{sg}\scsub{[acc]}\\
  `you listened to those things, that I said to you' \flushfill{Old High German, \ac{tatian} 165:6}\label{ex:ohg-acc-acc-rep-lh}
 
 When the internal and external case do not match, only one of the light-headed relatives can be the source of the headless relative.
-Table \ref{tbl:overview-rel-light-ohg-lh1-rep} and \ref{tbl:overview-rel-light-ohg-lh2-rep} show that headless relative with a more complex internal case needs to be derived from a light-headed relative headed by an extra light head. The light-headed relative headed by a regular light head does not generate a grammatical example.
-On the other hand, the tables show that headless relative with a more complex external case needs to be derived from a light-headed relative headed by a regular light head. The light-headed relative headed by an extra light head does not generate a grammatical example.
+Table \ref{tbl:overview-rel-light-ohg-lh1-rep} and \ref{tbl:overview-rel-light-ohg-lh2-rep} show that headless relative with a more complex internal case needs to be derived from a light-headed relative headed by an extra light head. The light-headed relative headed by a demonstrative does not generate a grammatical example.
+On the other hand, the tables show that headless relative with a more complex external case needs to be derived from a light-headed relative headed by a demonstrative. The light-headed relative headed by an extra light head does not generate a grammatical example.
 
 This situation allows me to investigate whether headless relatives in which an extra light head is deleted have a different interpretation from headless relatives in which the relative pronoun is deleted. As I already mentioned in the introduction, I do not find such support. All headless relatives have a definite interpretation.
 
@@ -2370,10 +2515,10 @@ not: `and he replied to whoever spoke to him'
  \flushfill{Old High German, \ac{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom-rep}
 
 In this example, the author refers to the specific person who spoke to someone, and not to any or every person who spoke to someone.
-This example can only be derived from a light-headed relative headed by a regular light head, as shown in \ref{ex:ohg-dat-nom-rep-lh}.
+This example can only be derived from a light-headed relative headed by a demonstrative, as shown in \ref{ex:ohg-dat-nom-rep-lh}.
 
 \exg. enti aer {ant uurta} demo [\tbf{der}] \tbf{zaimo} \tbf{sprah}\\
-and 3\ac{sg}.\ac{m}.\ac{nom} reply.\ac{pst}.3\ac{sg}\scsub{[dat]} \ac{rp}.\ac{sg}.\ac{m}.\ac{dat} \ac{rlh}.\ac{sg}.\ac{m}.\ac{nom} {to 3\ac{sg}.\ac{m}.\ac{dat}} speak.\ac{pst}.3\ac{sg}\scsub{[nom]}\\
+and 3\ac{sg}.\ac{m}.\ac{nom} reply.\ac{pst}.3\ac{sg}\scsub{[dat]} \ac{rp}.\ac{sg}.\ac{m}.\ac{dat} \ac{dem}.\ac{sg}.\ac{m}.\ac{nom} {to 3\ac{sg}.\ac{m}.\ac{dat}} speak.\ac{pst}.3\ac{sg}\scsub{[nom]}\\
 `and he replied to the one who spoke to him'
 \flushfill{Old High German, \ac{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom-rep-lh}
 
@@ -2409,7 +2554,7 @@ Consider the syntactic structure with the light head and the relative pronoun bo
 \begin{adjustbox}{max width=0.9\textwidth}
 \begin{forest} boom
 [, s sep=20mm
-    [DP, s sep=20mm,
+    [\tsc{dem}P, s sep=20mm,
     tikz={
     \node[draw,
     constituent-deletion,yshift=-0.4cm,rounded corners=2.6cm,
@@ -2418,14 +2563,14 @@ Consider the syntactic structure with the light head and the relative pronoun bo
     scale=1.25,
     fit to=tree]{};
     }
-        [DP,
+        [\tsc{dem}P,
         tikz={
         \node[label=below:\tit{dh},
         draw,circle,
         scale=0.85,
         fit to=tree]{};
         }
-            [D]
+            [\tsc{dem}]
             [\tsc{rel}P
                 [\phantom{x}\tit{dh}\phantom{x}, roof]
             ]
@@ -2486,9 +2631,9 @@ Consider the syntactic structure with the light head and the relative pronoun bo
 
 As I pointed out in Section \ref{sec:comparing-ohg}, the relative pronoun is deleted in this situation.
 Notice here that the light head c-commands the relative pronoun.
-The DP on the left c-commands the \tsc{rel}P, as the DP is in the specifier of the FP, which dominates the \tsc{rel}P.
+The \tsc{dem}P on the left c-commands the \tsc{rel}P, as the \tsc{dem}P is in the specifier of the FP, which dominates the \tsc{rel}P.
 From there the reasoning goes as follows.
-The relative pronoun (the \tsc{rel}P realized by \tit{dher}) is formally contained in the light head (the DP realized by \tit{dher}).
+The relative pronoun (the \tsc{rel}P realized by \tit{dher}) is formally contained in the light head (the \tsc{dem}P realized by \tit{dher}).
 Therefore, the relative pronoun can be deleted, which is signaled by the gray marking of the circle.
 The surface pronoun is the light head that bears the external case: \tit{dher}.
 
@@ -2716,15 +2861,15 @@ The features of the second possible light head are spelled out by two lexical en
       light head & & relative pronoun \\
       \cmidrule(lr){1-1} \cmidrule(lr){3-3}
       \begin{forest} boom
-      [DP, s sep = 17.5 mm
-          [DP,
+      [\tsc{dem}P, s sep = 17.5 mm
+          [\tsc{dem}P,
           tikz={
           \node[label=below:\tit{d},
           draw,circle,
           scale=0.85,
           fit to=tree]{};
           }
-              [D]
+              [\tsc{dem}]
               [\tsc{rel}P
                   [\phantom{x}\tit{dh}\phantom{x}, roof]
               ]
@@ -2786,3 +2931,18 @@ I do not have an explanation for that.
 
 It could be that there is some kind of competition at play between different relative pronouns
 The change from ohg to mg of not being an unrestricted type of language anymore seems to be related to the prnouns. in mhg the wh pronoun started to be used as relative pronoun (see footnote X). at that point, the unrestricted pattern disappeared
+
+\footnote{
+An exception is..
+
+First, German only had the d-pronoun and attraction. The pattern of attraction that came with that pronoun is ext only.
+At some point, German invented the wh-pronoun. Helmut showed how it emerged. With that came the other pattern: int only. Some people lost the attraction (but everybody kept the d-pronoun) and with that the pattern disappeared.
+So the patterns in headless relatives follow from the relative pronouns in the language.
+
+Why are all languages of the `unrestricted' type dead languages?
+Was it a common thing that wh-pronouns were not used as relative pronouns?
+
+Wouldn't we now not expect that Modern German patterns with Old High German wrt attraction in headed constructions. Yes, we would. And yes, this is exactly what we see. Paper by Bader on case attraction.
+
+First there was only the relative pronoun with a D. Then we did case competition with this one, in both directions. Later, we only did it with the wh, and we only had internal left. Because this competitor was introduced, the case competition with D disappeared.
+}

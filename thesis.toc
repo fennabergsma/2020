@@ -80,13 +80,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Underlying assumptions}{116}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}The three language types}{121}{section.6.2}%
+\contentsline {section}{\numberline {6.2}The three language types}{122}{section.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.1}The internal-only type}{122}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}The matching type}{124}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}The matching type}{125}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{130}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{131}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Summary}{139}{section.6.3}%
 \defcounter {refsection}{0}\relax 
@@ -110,9 +110,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.3}Comparing light heads and relative pronouns}{206}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Reflecting on crosslinguistic differences}{211}{section.8.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.5}Summary}{211}{section.8.5}%
+\contentsline {section}{\numberline {8.4}Summary and discussion}{211}{section.8.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{215}{chapter.9}%
 \defcounter {refsection}{0}\relax 
@@ -122,20 +120,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.2.1}The extra light head}{229}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}The regular light head}{234}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}The demonstrative}{234}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{240}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{242}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Coming back to the light heads}{253}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Coming back to the light heads}{255}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{254}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{255}{subsection.9.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{257}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{258}{subsection.9.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}Summary}{260}{section.9.5}%
+\contentsline {section}{\numberline {9.5}Summary}{262}{section.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{261}{chapter.10}%
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{265}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{265}{table.10.1}%
+\contentsline {chapter}{Primary texts}{269}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{267}{section*.29}%
+\contentsline {chapter}{Bibliography}{271}{section*.30}%
