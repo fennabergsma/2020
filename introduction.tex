@@ -1,22 +1,18 @@
 % !TEX root = thesis.tex
 
-\chapter{Introduction}
+\chapter{Introduction}\label{ch:introduction}
 
-This dissertation is about case competition, a situation in which two cases are assigned but only one of them surfaces. One of the constructions in which case competition appears is relative clauses that lack a head, i.e. headless relatives.
+This dissertation is about case competition, a situation in which two cases are assigned but only one of them surfaces. One of the constructions in which case competition appears is in headless relatives, i.e. relative clauses that lack a head.
 
-I will show in this dissertation that case competition has a few properties that hold for all languages and few that differ across languages.
-If you look from a distance, you can't make much sense of it.
-However, if you look more closely and zoom in on the morphology of the language, then it can all be explained.
-It turns out that everything needed to account for the phenomenon can independently motivated: there is a case hierarchy deeply ingrained in syntax and there is deletion under c-command under containment (structural and formal).
+This dissertation attempts to achieve two goals. The first one is to give an overview of the data. I show which aspects are crosslinguistically stable, which differ across languages, and whether all logically possible patterns are attested. My second goal is to provide an account for the observed data. I set up a proposal that generates the attested patterns and excludes the non-attested ones. Moreover, the variation between languages follows from properties within languages that can be independently observed.
 
-Before I discuss what this dissertation is about, I first introduce what I mean exactly with case competition in headless relatives.
-Then I discuss the content of the dissertation, going step by step through the different aspects of case competition in headless relatives.
-This chapter ends with a section on what this dissertation does not discuss.
+In this chapter I first introduce the topic of case competition in headless relatives.
+Then I give a brief description of the content and structure of the dissertation.
 
 
 \section{Decomposing the title}
 
-Languages can use case to mark the grammatical role of a noun phrase in a clause \citep[cf.][]{moravcsik2009}. Consider the two Modern German sentences in \ref{ex:german-case}. What can descriptively be called the subject of the predicate \tit{mögen} `to like' is marked as nominative. What can be described as the object of \tit{mögen} `to like' is marked as accusative. The case marking of the noun phrases is reflected on the determiner in the noun phrase.
+Languages can use case to mark the grammatical role of a noun phrase in a clause \citep[cf.][]{moravcsik2009}. Consider the two German sentences in \ref{ex:german-case}. What can descriptively be called the subject of the predicate \tit{mögen} `to like' is marked as nominative. What can be described as the object of \tit{mögen} `to like' is marked as accusative. The case marking of the noun phrases is reflected on the determiner of the noun phrase.
 In \ref{ex:german-case-1}, \tit{der} in \tit{der Lehrer} `the teacher' appears in nominative case, because it is the descriptive subject in the clause. \tit{Den} in \tit{den Schüler} `the pupil' appears in accusative case, because it is a descriptive object of \tit{mögen} `to like'.
 In \ref{ex:german-case-2}, the grammatical roles are reversed: \tit{der} in \tit{der Schüler} `the pupil' appears in nominative case, because it is the descriptive subject in the clause. \tit{Den} in \tit{den Lehrer} `the teacher' appears in accusative case, because it is the descriptive object of \tit{mögen} `to like'.
 
@@ -26,9 +22,9 @@ In \ref{ex:german-case-2}, the grammatical roles are reversed: \tit{der} in \tit
  `The teacher likes the pupil.'\label{ex:german-case-1}
 \bg. Der Schüler mag den Lehrer.\\
  the.\ac{nom} student likes the.\ac{acc} teacher\\
- `The pupil likes the teacher.'\label{ex:german-case-2}
+ `The pupil likes the teacher.' \flushfill{German}\label{ex:german-case-2}
 
-Not only full noun phrases, but also other elements can be marked for case, such as relative pronouns. Modern German marks relative pronouns, just like full noun phrases, for the grammatical role they have in the clause. Consider the two sentences in \ref{ex:german-relatives}. These two sentences both contain a main clause that is modified by a relative clause.
+Not only full noun phrases, but also other elements can be marked for case. An example of another element is the relative pronoun. German marks its relative pronouns, just like full noun phrases, for the grammatical role they have in the clause. Consider the two sentences in \ref{ex:german-relatives}. These two sentences both contain a main clause that is modified by a relative clause.
 In \ref{ex:german-relative-1}, the relative clause \tit{der nach draußen guckt} `that looks outside' modifies \tit{den Schüler} `the pupil'. \tit{Schüler} `pupil` is called the head (noun) or the antecedent of the relative clause. \tit{Den} in \tit{den Schüler} `the pupil` appears in accusative case, because it is the descriptive object of \tit{mögen} `to like' in the main clause. The relative pronoun \tit{der} `\tsc{rp}.\ac{sg}.\ac{m}.\ac{nom}' appears in nominative case, because it is the descriptive subject of \tit{mögen} `to like' in the relative clause.
 
 In \ref{ex:german-relative-2}, the relative clause \tit{den er beim Verstecktspiel sucht} `that he is searching for playing hide-and-seek' modifies \tit{den Schüler} `the pupil'. \tit{Den} in \tit{den Schüler} `the pupil` appears again in accusative, because it is the descriptive object of \tit{mögen} `to like' in the main clause. The relative pronoun \tit{den} `\tsc{rp}.\ac{sg}.\ac{m}.\ac{acc}' appears in accusative case, because it is the descriptive object of \tit{suchen} `to search' in the relative clause.
@@ -39,14 +35,14 @@ In \ref{ex:german-relative-2}, the relative clause \tit{den er beim Verstecktspi
  `The teacher likes the pupil that is looking outside.'\label{ex:german-relative-1}
  \bg. Der Lehrer mag den Schüler, den er beim Versteckspiel sucht.\\
  the.\ac{nom} teacher likes the.\ac{acc} student \tsc{rp}.\ac{sg}.\ac{m}.\ac{acc} he {at the} {hide-and-seek game} searches\\
- `The teacher likes the pupil that he is searching for playing hide-and-seek.'\label{ex:german-relative-2}
+ `The teacher likes the pupil that he is searching for playing hide-and-seek.' \flushfill{German}\label{ex:german-relative-2}
 
-Compare the two sentences in \ref{ex:german-relatives}. In both sentences the head is marked as accusative because it is the descriptive object in the main clause. The case of the relative pronoun in \ref{ex:german-relative-2} is also accusative, because it is the descriptive object in the relative clause. The case of the relative pronoun in \ref{ex:german-relative-1} is nominative, because it is the descriptive subject in the relative clause. So, the case of the relative pronoun in \ref{ex:german-relative-1} differs from the case of the head.
+Compare the two sentences in \ref{ex:german-relatives}. In both sentences the head is marked as accusative because it is the descriptive object in the main clause. The relative pronouns do not appear in the same case. The case of the relative pronoun in \ref{ex:german-relative-2} is accusative, because it is the descriptive object in the relative clause. The case of the relative pronoun in \ref{ex:german-relative-1} is not accusative but nominative, because it is the descriptive subject in the relative clause. In \ref{ex:german-relative-1}, the case of the relative pronoun (which is nominative) differs from the case of the head (which is accusative).
 
 The focus of this dissertation lies on headless relatives. As the name suggests, this type of relative clause lacks a head.\footnote{
-This `missing noun' has been interpreted in two different ways. Some researchers argue that the noun is truly missing, it is absent, cf. \citealt{citko2005,vanriemsdijk2006}. Others claim that there is actually a head, but it is phonologically zero, \citealt{bresnan1978,groos1981,grosu2003}. At this point in the discussion this distinction is not relevant. I return to the issue in Chapter \ref{part:deriving}.
+This `missing noun' has been interpreted in two different ways. Some researchers argue that the noun is truly missing and that it is absent \citep[cf.][]{citko2005,vanriemsdijk2006}. Others claim that there is actually a head, but it is phonologically zero \citep[cf.][]{bresnan1978,groos1981,grosu2003}. At this point in the discussion this distinction is not relevant. I return to the issue in Part \ref{part:deriving}.
 }
-Even though Modern German also has case competition in headless relatives, I turn to Gothic now. The patterns among the two languages differ slightly, and the first part of the dissertation can be illustrated best with Gothic.
+Even though German also has case competition in headless relatives, I turn to Gothic now. The patterns among the two languages differ slightly, and the first part of the dissertation can be illustrated best with Gothic.
 
 I give an example of a headless relative in Gothic in \ref{ex:gothic-acc-acc}.
 There is no head that this relative clause modifies, because it is a headless relative. This is different from the examples from German I gave above, which each had a head.
@@ -59,56 +55,61 @@ The relative pronoun without the complementizer \tit{-ei} is \tit{þana}. Theref
  pity.\ac{pres}.1\ac{sg}\scsub{[acc]} \tsc{rp}.\ac{sg}.\ac{m}.\ac{acc} -\ac{comp} pity.\ac{pres}.1\ac{sg}\scsub{[acc]}\\
  `I pity him whom I pity' \flushfill{Gothic, \ac{rom} 9:15, adapted from \pgcitealt{harbert1978}{339}}\label{ex:gothic-acc-acc}
 
-Where does this accusative case come from? Logically speaking, there are two possible sources: the predicate in the main clause \tit{gaarman} `to pity', the predicate in the relative clause \tit{arman} `to pity'. From now on, I use the terms internal and external case to refer to these two possible case sources. Now there are three logical possibilities for the source of the accusative case on \tit{þan(a)} `\tsc{rp}.\ac{sg}.\ac{m}.\ac{acc}' in \ref{ex:gothic-acc-acc}: the internal case, the external case, or both.
+A question that can be raised now is where this accusative case comes from. Logically speaking, there are two possible sources: the predicate in the main clause \tit{gaarman} `to pity', the predicate in the relative clause \tit{arman} `to pity'.
 
-Internal case refers to the case associated with the relative pronoun internal to the relative clause. More precisely, it is the case, which is associated with the grammatical role that the relative pronoun has internal to the relative clause. In \ref{ex:gothic-acc-acc}, the relative pronoun is the descriptive object of \tit{arman} `to pity'. The predicate \tit{arman} `to pity' takes accusative objects. So, the internal case is accusative.
+From now on, I use the terms internal and external case to refer to these two possible case sources.
+Internal case refers to the case associated with the relative pronoun internal to the relative clause. More precisely, it is the case that is associated with the grammatical role that the relative pronoun has internal to the relative clause. In \ref{ex:gothic-acc-acc}, the relative pronoun is the descriptive object of \tit{arman} `to pity'. The predicate \tit{arman} `to pity' takes accusative objects, so the internal case is accusative.
+External case refers to the case associated with the missing head in the main clause, which is external to the relative clause. Concretely, it is the case that is associated with the grammatical role that the missing head has external to the relative clause. In \ref{ex:gothic-acc-acc}, the missing head is the descriptive object of \tit{gaarman} `to pity'. The predicate \tit{gaarman} `to pity' takes accusative objects, so the external case is accusative.
 
-External case refers to the case associated with the missing head in the main clause, which is external to the relative clause. Concretely, it is the case which is associated with the grammatical role that the missing head has external to the relative clause. In \ref{ex:gothic-acc-acc}, the missing head is the descriptive object of \tit{gaarman} `to pity'. The predicate \tit{gaarman} `to pity' takes accusative objects. In \ref{ex:gothic-acc-acc}, the external case is accusative.
-
-Now I return to the question where \tit{þan(a)} `\tsc{rp}.\ac{sg}.\ac{m}.\ac{acc}' in \ref{ex:gothic-acc-acc} got its case from. In the remainder of this section I show evidence for the claim that the relative pronoun is sensitive to both the internal and the external case.
-This is easy to imagine for the internal case: the internal case reflects the grammatical role of the relative clause. It is a bit more complicated for the external case. The external case is associated with the grammatical role of the missing head in the main clause. The idea is going to be that the external case cannot be reflected on a non-existing head. Indirectly, it appears on the relative pronoun.\footnote{
-Later on I will argue that this indirect process is actually a deletion operation.
-}
-This means that the internal and external case come together on the relative pronoun. In other words, there is case competition going on in headless relatives. \ref{ex:gothic-acc-acc} is indeed the first example I gave of case competition in a headless relative. It is an uninteresting one, because the two competing cases are identical.
+Coming back to the issue at hand, the accusative case on \tit{þan(a)} `\tsc{rp}.\ac{sg}.\ac{m}.\ac{acc}' can be the internal case or the external case (or both).
+Because the internal and the external case in \ref{ex:gothic-acc-acc} match, it is impossible determine what the source of the accusative case is.
+Therefore, in what follows, I give examples in which the internal and external case differ.
+I show that sometimes the relative pronoun appears in the internal case and sometimes it appears in the external case.
 
 Consider the example in \ref{ex:gothic-acc-nom}, in which the internal case is accusative and the external case is nominative.
 The internal case is accusative. The predicate \tit{frijon} `to love' takes accusative objects, as indicated by the subscript on the predicate.
-The external case is accusative. The predicate \tit{wisan} `to be' takes nominative subjects, indicated by the subscript on the predicate.
+The external case is nominative. The predicate \tit{wisan} `to be' takes nominative subjects, indicated by the subscript on the predicate.
 The relative pronoun \tit{þan(a)} `\tsc{rp}.\ac{sg}.\ac{m}.\ac{acc}' appears in accusative. This accusative can only come from the predicate \tit{frijon} `to love', which is the internal case here. The relative pronoun is marked in bold, just as the relative clause, showing that the relative pronoun patterns with the relative clause.
 
 \exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
  \tsc{rp}.\ac{sg}.\ac{m}.\ac{acc} -\ac{comp} love.\ac{pres}.2\ac{sg}.\scsub{[acc]} sick be.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
  `the one whom you love is sick' \flushfill{Gothic, \ac{john} 11:3, adapted from \pgcitealt{harbert1978}{342}}\label{ex:gothic-acc-nom}
 
-The conclusion that follows is that the relative pronoun can take the internal case. At this point it remains unclear what happened to the external nominative case.
+The conclusion that follows is that it is possible for the relative pronoun to take the internal case. In other words, the relative pronoun is sensitive to the internal case.
+At this point it remains unclear what happened to the external nominative case.
 
 Now consider the example in \ref{ex:gothic-nom-acc}, in which the internal case is nominative and the external case is accusative.
 The internal case is nominative. The predicate \tit{wisan} `to be' takes nominative subjects, as indicated by the subscript on the predicate.
-The external case is accusative. The predicate \tit{ussiggwan} `to read' takes accusative objects, as indicated by the subscript on the predicate.
-The relative pronoun \tit{þo} `\tsc{rp}.\ac{sg}.\ac{n}.\ac{acc}' appears in the accusative case. This accusative can only come from the predicate \tit{ussiggwan} `to read', which is the external case here. The relative pronoun is not marked in bold, just like as the main clause, showing that the relative pronoun patterns with the main clause.
+The external case is accusative. The predicate \tit{ussiggwan} `to read' takes accusative objects, as indicated by the subscript on the predicate.\footnote{
+Throughout this dissertation, I place subscripts on the glosses of the predicates. They indicate what the internal or external case is. The subscript on the predicate in the relative clause indicates the internal case. The subscript on the predicate in the main clause indicates the external case. This subscript can mean different things.
+For \tit{frijon} `to love' in \ref{ex:gothic-acc-nom} the subscript indicates which case the complement of the verb appears in. The subscript on \tit{wisan} `to be' in \ref{ex:gothic-acc-nom} refers to the case the descriptive subject appears in. A subscript can also refer to the case of the indirect object of a predicate, a possibility that arises in the next chapter.
+In other words, the subscript can refer several elements: a subject, direct object or indirect object of a predicate. There is no overarching theoretical notion that the subscript makes reference to. The subscript simply indicates which case is required within the (main or relative) clause.
+}
+The relative pronoun \tit{þo} `\tsc{rp}.\ac{sg}.\ac{n}.\ac{acc}' appears in the accusative case. This accusative can only come from the predicate \tit{ussiggwan} `to read', which is the external case here. The relative pronoun is not marked in bold, just like as the main clause, showing that the relative pronoun patterns with the main clause.\footnote{
+Throughout the dissertation, I write the relative clause in bold when the internal and external case differ. When the relative pronoun takes the internal case, I mark the relative pronoun in bold as well, as shown in \ref{ex:gothic-acc-nom}. When the relative pronoun takes the external case, I do not mark the relative pronoun in bold, indicating it patterns with the main clause. An example of that is \ref{ex:gothic-nom-acc}. When the internal and external case match, I do not mark any part of the sentence in bold, as I did in \ref{ex:gothic-acc-nom}.
+}
 
 \exg. jah þo \tbf{-ei} \tbf{ist} \tbf{us} \tbf{Laudeikaion} jus ussiggwaid\\
  and \tsc{rp}.\ac{sg}.\ac{n}.\ac{acc} -\ac{comp} be.\ac{pres}.3\ac{sg}\scsub{[nom]} from Laodicea 2\ac{pl}.\ac{nom} read.\scsub{[acc]}\\
  `and you read the one which is from Laodicea' \flushfill{Gothic, \ac{col} 4:16, adapted from \pgcitealt{harbert1978}{357}}\label{ex:gothic-nom-acc}
 
-The conclusion that follows is that the relative pronoun can take the external case. At this point it remains unclear what happened to the internal nominative case.
+The conclusion that follows is that it is possible for the relative pronoun to take the external case. In other words, the relative pronoun is sensitive to the external case.
+At this point it remains unclear what happened to the internal nominative case.
 
-The examples in \ref{ex:gothic-acc-nom} and \ref{ex:gothic-nom-acc} have shown that the relative pronoun in headless relatives can take either the internal or the external case. In the examples, the predicates take nominative and accusative, and in both cases, the relative pronoun appeared in accusative case. In other words, there was a competition between nominative and accusative, and accusative won.
-
-In the next section, I discuss the content of this dissertation. Before that, I comment on two notational conventions I use throughout this dissertation. First, I place subscripts on the glosses of the predicates. They indicate what the internal or external case is. The subscript on the predicate in the relative clause indicates the internal case. The subscript on the predicate in the main clause indicates the external case. This subscript can mean different things.
-For \tit{frijon} `to love' in \ref{ex:gothic-acc-nom} the subscript indicates which case the complement of the verb appears in. The subscript on \tit{wisan} `to be' in \ref{ex:gothic-acc-nom} refers to the case the descriptive subject appears in. A subscript can also refer to the case of the indirect object of a predicate, a possibility that arises in the next chapter.
-In other words, the subscript can refer several elements: a subject, direct object or indirect object of a predicate. There is no overarching theoretical notion that the subscript makes reference to. The subscript simply indicates which case is required within the (main or relative) clause.
-
-Second, I write the relative clause in bold. When the relative pronoun takes the internal case, I mark it in bold as well, as shown in \ref{ex:gothic-acc-nom}. When the relative pronoun takes the external case, I leave it black, indicating it patterns with the main clause. An example of that is \ref{ex:gothic-nom-acc}.
+The examples in \ref{ex:gothic-acc-nom} and \ref{ex:gothic-nom-acc} show that the relative pronoun in headless relatives can take either the internal or the external case. In both examples, the predicates take either nominative and accusative, and in both cases, the relative pronoun appears in accusative case. In other words, in a case competition between a nominative and an accusative, the accusative wins.
 
 
 \section{The content of this dissertation}
 
-In the previous section I introduced the notion of case competition, and I illustrated how it appears in headless relatives. This dissertation discusses two aspects of this phenomenon: who wins the competition and whether the winner is allowed to surface.
+In the previous section I introduced the phenomenon of case competition in headless relatives. This dissertation investigates two aspects of it. The first aspect is which case wins the case competition. The second aspect concerns whether the winner of the competition is allows to surface. In this section I give a brief overview of how the content of the dissertation is structured.
 
-Part \ref{part:case-facts} of this dissertation discusses the first aspect that concerns which case wins the case competition. It is a crosslinguistically stable fact that this is determined by the case scale: \tsc{nom} < \tsc{acc} < \tsc{dat} \citep[cf.][]{grosu1994}. A case more to the right on the scale wins over a case more to the left on the scale.
+Part \ref{part:case-facts} of this dissertation discusses the first aspect that plays a role in case competition in headless relatives. This aspect concerns which case wins the case competition. It is a crosslinguistically stable fact that this is determined by the case scale in \ref{ex:case-scale-content} \citep[cf.][]{grosu1994}.
 
-This generates the pattern shown in Table \ref{tbl:case-competition-cases}. The left column shows the internal case (the case assigned in the relative clause) between square brackets. The top row shows the external case (the case assigned in the main clause) between square brackets. The other cells indicate the case of the relative pronoun. The table shows three different instances of case competition and their winners: (1) when the accusative wins over the nominative, the relative pronoun appears in the accusative case; (2) when the dative wins over the nominative, the relative pronoun appears in the dative case; and (3) when the dative wins over the accusative, the relative pronoun appears in the dative case.
+\ex.\label{ex:case-scale-content} \tsc{nom} < \tsc{acc} < \tsc{dat}
+
+A case more to the right on the scale wins over a case more to the left on the scale.
+
+The case scale in \ref{ex:case-scale-content} generates the pattern shown in Table \ref{tbl:case-competition-cases}. The left column shows the internal case (\ac{int}) between square brackets. The top row shows the external case (\ac{ext}) between square brackets. The other cells indicate the case of the relative pronoun. The table shows three different instances of case competition and their winners: (1) when the accusative competes against the nominative, the accusative wins, and the relative pronoun appears in the accusative case; (2) when the dative competes against the the nominative, the dative wins, and the relative pronoun appears in the dative case; and (3) when the dative competes against the accusative, the dative wins, and the relative pronoun appears in the dative case.
 
 \begin{table}[ht]
   \center
@@ -140,78 +141,71 @@ This generates the pattern shown in Table \ref{tbl:case-competition-cases}. The 
     \label{tbl:case-competition-cases}
 \end{table}
 
-In Chapter \ref{ch:recurring}, I give examples that illustrate the pattern shown in Table \ref{tbl:case-competition-cases}. Additionally, I show that the \tsc{nom} < \tsc{acc} < \tsc{dat} scale is a recurring one. The pattern does not only appear in headless relatives, but also in other syntactic and morphological phenomena. I discuss two implicational hierarchies concerning agreement and relativization, and I show that the case scale is reflected in patterns of syncretism and in morphological containment.
-Chapter \ref{ch:decomposition}, I argue that there is a single trigger that is responsible for the case scales in different subparts of language. This trigger is a cumulative case decomposition \citep{caha2009}. Informally speaking, cases more on the right on the case scale or syntactically more complex than cases more to the left on the case scale. I show how the case scale in headless relatives is a reflex of this decomposition.
+In Chapter \ref{ch:recurring}, I give examples that illustrate the pattern shown in Table \ref{tbl:case-competition-cases}. Additionally, I show that the \tsc{nom} < \tsc{acc} < \tsc{dat} scale is a recurring one. The pattern does not only appear in headless relatives, but also in other syntactic and morphological phenomena.
+In Chapter \ref{ch:decomposition}, I argue that there is a single trigger that is responsible for the case scales in different subparts of language. This trigger is a cumulative case decomposition \citep{caha2009}. Informally speaking, cases more on the right on the case scale or syntactically more complex than cases more to the left on the case scale. I show how the case scale in headless relatives is a reflex of this decomposition.
 
-Part \ref{part:case-facts} of this dissertation introduces the second aspect that plays a role in headless relatives. This aspect concerns whether the internal and the external case are allowed to surface when either of them wins the case competition. In Table \ref{tbl:case-competition-cases}, the light gray cells are the ones in which the internal case wins, the dark gray cells are the ones in which the external case wins, and the unmarked cells are the ones in which both cases match. It differs across languages whether they allow different winners to surface.
+Part \ref{part:variation} of this dissertation introduces the second aspect that plays a role in case competition headless relatives. This aspect concerns whether the internal and the external case are allowed to surface when either of them wins the case competition. In Table \ref{tbl:case-competition-cases}, the light gray cells are the ones in which the internal case wins, the dark gray cells are the ones in which the external case wins, and the unmarked cells are the ones in which both cases match. It differs across languages whether they allow different winners to surface.
 
 There are four logically possible language types. The first possible type is one in which the internal and the external case are allowed to surface when either of them wins the case competition. Relative pronouns in the unmarked, light gray and dark gray cells are grammatical. I call this type the unrestricted type. The second possible type is one in which only the internal case is allowed to surface when it wins the case competition. Relative pronouns in the unmarked and light gray cells are grammatical but those in the dark gray cells are not. I call this type the internal-only type. The third possible type is one in which only the external case is allowed to surface when it wins the case competition. Relative pronouns in the unmarked and the dark gray cells are grammatical but those in the light gray cells are not. I call this type the external-only type. The fourth possible type is one in which neither the internal case nor in the external case is allowed to surface when either of them wins the case competition. Relative pronouns in the unmarked cells are grammatical, but those in the light and dark gray cells are not. I call this type the matching type.
 
-Chapter \ref{ch:typology} introduces these possible patterns in more detail and gives examples of them in different languages. As far as I am aware, only three of these possible language types are attested in natural languages. Old High German is an example of the non-matching type, Modern German is an example of the internal-only type \citep{vogel2001}, and Polish is an example of the matching type \citep{citko2013}. To my knowledge, the external-only type is not attested.
-Chapter \ref{sec:without-case-competition} takes a small detour and discusses languages that do not show any case competition. At the end I present an overview of all logically patterns in headless relatives across language, and I show which ones are attested.
+Chapter \ref{ch:typology} introduces these possible patterns in more detail and gives examples of them in different languages. As far as I am aware, only three of the possible language types are attested in natural languages. Gothic and Old High German are examples of the unrestricted type, Modern German is an example of the internal-only type \citep{vogel2001}, and Polish is an example of the matching type \citep{citko2013}. To my knowledge, the external-only type is not attested.
+Chapter \ref{sec:without-case-competition} takes a small detour and discusses languages that do not show any case competition. I present an overview of all logically possible patterns in headless relatives across languages, and I show which ones are attested.
 
-In Part \ref{part:deriving} I derive the possible patterns of languages with case competition.
-I make a few assumptions that hold for all languages and are necessary to derive the patterns. Headless relatives are derived from light-headed relatives. Light-headed relatives contain a light head and a relative pronoun. The relative pronoun consists of the features of the light head (which are phi and case features) plus at least one additional feature (here \tsc{rel}). In a headless relative either the light head or the relative pronoun is deleted. The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) is structurally or formally contained within the other element.
+In Part \ref{part:deriving} I focus again on the different language types that involve case competition. The goal of this part is to provide an account that generates the attested language types and excludes the non-attested one. Additionally, the variation between the language types should follow from properties that can be independently observed within a language of a particular language type.
 
-The difference between languages arises from languages having different lexical entries that spell out the features of the light head and the relative pronoun. These different lexical entries ultimately lead to different languages types, according to the following chain.
-The different lexical entries lead to differences in the internal syntax of the light head and the relative pronoun.
-Differences in the internal syntax of the light head and the relative pronoun lead to differences in whether or not one of them is contained in the other.
-Whether or not one of them is contained in the other determines whether or not the light head or relative pronoun can be recovered and, therefore, deleted.
-Whether or not the light head or relative pronoun can be deleted determines whether or not there is a single surface pronoun and, with that, a grammatical headless relative.
+In my account, headless relatives are derived from light-headed relatives. These light-headed relatives contain a light head and a relative pronoun. Relative pronouns and light heads partly overlap in feature content with the relative pronoun. In a headless relative either the light head or the relative pronoun is deleted. The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) is structurally or formally contained within the other element.
+The difference between languages arises from languages having different lexical entries that spell out the features of the light head and the relative pronoun. These different lexical entries ultimately lead to different languages types.
+
 I describe this basic setup of my proposal in Chapter \ref{ch:the-basic-idea}, and I show how a different lexical entries ultimately generate the three attested language types and not the unattested one.
+In Chapter \ref{ch:deriving-onlyinternal}, I motivate the analysis for the internal-only type of language Modern German. I first identify the morphemes that Modern German light heads and relative pronouns consist of. Then I show which features each of the morphemes correspond to. I illustrate that the lexical entries in Modern German are such that they lead Modern German to be an internal-only type of language.
+In Chapter \ref{ch:deriving-matching} and \ref{ch:deriving-unrestricted} I do the same for the two other attested language types. I show that Polish has lexical entries that ultimately lead it to be a matching type of language, and that Old High German has lexical entries that ultimately lead it to be an unrestricted type of language.
+Toward the end of the chapter I briefly sketch what I assume the larger syntactic structure of a headless relative looks like.
 
-In Chapter \ref{ch:deriving-onlyinternal}, I motivate the analysis for the internal-only type of language Modern German. I first identify the morphemes that Modern German light heads and relative pronouns consist of. Then I show which features each of the morphemes correspond to. The lexical entries are such that the light heads is contained in the relative pronoun when the cases match and when the internal case is more complex. In these cases there is a grammatical headless relative. When the external case is more complex, neither the light head nor the relative pronoun is contained in the other element, so there is no grammatical headless relative.
+Chapter \ref{ch:discussio} summarizes.
 
-In Chapter \ref{ch:deriving-matching}, I motivate the analysis for the matching type of language Polish. Again I identify the morphemes that the light heads and relative pronouns consist of. The crucial difference between the internal-only type of language Modern German and the matching type of language Polish is how the phi and case features are spelled out. In Modern German they are spelled out by a phi and case feature portmanteau, which is a single lexical entry. In Polish, the same features are spelled out by a phi feature morpheme and a case feature morpheme, which are two lexical entries. This difference causes a difference in containment when the internal case is more complex. In Modern German the light head is contained in the relative pronoun, but in Polish the light head is not contained in the relative pronoun. This is the crucial difference between a language of the matching type and a language of the internal-only type.
+% \subsection{Case attraction}\label{sec:attraction}
+%
+% Case attraction in headed relatives seems related, but I will not account for it.
+%
+% \exg. unde ne wolden níet besên den mort den dô was geschên\\
+%  and not wanted not see the murder.\ac{acc} that.\ac{acc} there had happened\\
+%  `and they didn't want to see the murder that had happened.' \flushfill{MHG, \ac{nib} 1391,14, \pgcitealt{behaghel1923}{756}, after \pgcitealt{pittner1995}{198}}
+%
+%  \exg. Den schilt den er {vür bôt} der wart schiere zeslagen\\
+%  the.\ac{acc} shield.\ac{acc} which.\ac{acc} he held\scsub{acc}, that.\ac{nom} was quickly shattered\scsub{nom}\\
+%  `The shield he held was quickly shattered' \label{ex:iaheaded}\hfill Iwein 6722f., Lenerz 1984: 116)
+%
+% OHG has case attraction in headed relatives, Gothic does not, but both show case competition in headless relatives. So, there does not seem to be a one-to-one connection there. I leave it for further research.
+%
+% \subsection{The genitive}\label{sec:genitive}
+%
+% In Gothic headless relatives, there is data available of the genitive in case competition with the accusative. The genitive wins in this competition.
+% I give an example in which the internal case is accusative and the external case is genitive in \ref{ex:gothic-gen-acc}.
+% The relative clause is marked in bold, the relative pronoun is not.
+% The internal case is accusative. The predicate \tit{gasehvun} `saw' takes accusative objects.
+% The external case is genitive. The noun \tit{waiht} `thing' combines with a genitive.
+% The relative pronoun \tit{þiz(e)} `what.\ac{gen}' appears in the external case: the genitive.
+%
+% \exg. ni waiht þiz \tbf{-ei} \tbf{gasehvun}\\
+%  not thing\scsub{[gen]} what.\ac{gen} -\ac{comp} saw\scsub{[acc]}\\
+%  `not any of (that) which they saw' \flushfill{Gothic, \ac{luke} 9:36, adapted from \pgcitealt{harbert1978}{340}}\label{ex:gothic-gen-acc}
+%
+% If the internal case is genitive and the external case is accusative, the genitive wins as well. Crucially, there are no attested examples in Gothic of genitives in case competition with nominatives or datives.
+%
+% The same holds for the two other main languages discussed in this thesis: Modern German and Old High German.
+% In Modern German, case competitions have been reported between all possible case combinations, so also between genitives and nominatives, between genitives and accusatives, and between genitives and datives \citep[cf.][]{vogel2001}. The genitive wins over the nominative and the accusative. In a competition between the genitive and the dative neither of them gives a grammatical result.
+% Old High German might show some examples of case competition between genitives and accusatives and genitives and nominative. In these cases, the genitive always wins. No examples of datives against genitives are attested \citep{behaghel1923}.
+% In sum, the genitive does not appear in all possible case competition combinations in all three languages, and is therefore excluded.
+%
+%
+% 
+%
+% more: in middle high german only the genitive shows case attraction in headed relatives. again, it is different from the others.
+%
+% I leave it for future research..
 
-Finally, in chapter \ref{ch:deriving-unrestricted}, I do the same for the unrestricted type of language Old High German. Also here I identify the morphemes that the light heads and relative pronouns consist of. I show that Old High German differs from the other two languages in that it has light heads and relative pronouns that are syncretic. That point is crucial for the unrestricted type of language, because it allows making use of formal containment: an element can be absent if it is formally contained within the other element. This is the only way in which the relative pronoun can be contained in the light head and the relative pronoun can be deleted, even though the relative pronoun contains one feature more than the light head. Toward the end of the chapter I briefly sketch what I assume the larger syntactic structure of a headless relative looks like.
-
-
-
-
-
-\subsection{Case attraction}\label{sec:attraction}
-
-Case attraction in headed relatives seems related, but I will not account for it.
-
-\exg. unde ne wolden níet besên den mort den dô was geschên\\
- and not wanted not see the murder.\ac{acc} that.\ac{acc} there had happened\\
- `and they didn't want to see the murder that had happened.' \flushfill{MHG, \ac{nib} 1391,14, \pgcitealt{behaghel1923}{756}, after \pgcitealt{pittner1995}{198}}
-
- \exg. Den schilt den er {vür bôt} der wart schiere zeslagen\\
- the.\ac{acc} shield.\ac{acc} which.\ac{acc} he held\scsub{acc}, that.\ac{nom} was quickly shattered\scsub{nom}\\
- `The shield he held was quickly shattered' \label{ex:iaheaded}\hfill Iwein 6722f., Lenerz 1984: 116)
-
-OHG has case attraction in headed relatives, Gothic does not, but both show case competition in headless relatives. So, there does not seem to be a one-to-one connection there. I leave it for further research.
-
-\subsection{The genitive}\label{sec:genitive}
-
-In Gothic headless relatives, there is data available of the genitive in case competition with the accusative. The genitive wins in this competition.
-I give an example in which the internal case is accusative and the external case is genitive in \ref{ex:gothic-gen-acc}.
-The relative clause is marked in bold, the relative pronoun is not.
-The internal case is accusative. The predicate \tit{gasehvun} `saw' takes accusative objects.
-The external case is genitive. The noun \tit{waiht} `thing' combines with a genitive.
-The relative pronoun \tit{þiz(e)} `what.\ac{gen}' appears in the external case: the genitive.
-
-\exg. ni waiht þiz \tbf{-ei} \tbf{gasehvun}\\
- not thing\scsub{[gen]} what.\ac{gen} -\ac{comp} saw\scsub{[acc]}\\
- `not any of (that) which they saw' \flushfill{Gothic, \ac{luke} 9:36, adapted from \pgcitealt{harbert1978}{340}}\label{ex:gothic-gen-acc}
-
-If the internal case is genitive and the external case is accusative, the genitive wins as well. Crucially, there are no attested examples in Gothic of genitives in case competition with nominatives or datives.
-
-The same holds for the two other main languages discussed in this thesis: Modern German and Old High German.
-In Modern German, case competitions have been reported between all possible case combinations, so also between genitives and nominatives, between genitives and accusatives, and between genitives and datives \citep[cf.][]{vogel2001}. The genitive wins over the nominative and the accusative. In a competition between the genitive and the dative neither of them gives a grammatical result.
-Old High German might show some examples of case competition between genitives and accusatives and genitives and nominative. In these cases, the genitive always wins. No examples of datives against genitives are attested \citep{behaghel1923}.
-In sum, the genitive does not appear in all possible case competition combinations in all three languages, and is therefore excluded.
-
-What do I predict for the genitive? Starke: S-acc --- S-dat --- gen --- B-acc --- B-dat
-
-hierarchies for each language individually. Gothic syncretisms: acc-dat, acc-nom, nom-gen(!). Modern German: nom-acc-dat-gen? Old High German: ?
-
-then the predictions would be..
-
-The genitive differs from the other cases in a particular way. That is, nominative, accusative and dative are dependents of the verb (or prepositions). Genitives can be dependents of verbs, or they can be dependents of nouns, as possessors or partitives. Consider the example in \ref{ex:gothic-gen-acc}. The genitive relative pronoun \tit{þiz(e)} `what.\ac{gen}' is a dependent of the noun \tit{waiht} `thing'. Most of the examples in headless relatives contain genitives that depend on nouns and not those that depend on verbs. The (genitive) possessor is also placed far away from the other three cases in \posscitet{keenan1977} relativization hiearchy.
-
-more: in middle high german only the genitive shows case attraction in headed relatives. again, it is different from the others.
-
-I leave it for future research..
+% What do I predict for the genitive? Starke: S-acc --- S-dat --- gen --- B-acc --- B-dat
+%
+% hierarchies for each language individually. Gothic syncretisms: acc-dat, acc-nom, nom-gen(!). Modern German: nom-acc-dat-gen? Old High German: ?
+%
+% then the predictions would be..
