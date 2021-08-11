@@ -85,7 +85,7 @@ These lexical entries lead to the grammaticality pattern shown in Table \ref{tbl
 
 Consider the first situation in which the internal and the external case match. The light head consists of a phi and case feature portmanteau. The relative pronoun consists of the same morpheme plus an additional morpheme that spells out the feature \tsc{rel}. The lexical entries create a syntactic structure such that the light head is structurally contained in the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun surfaces, bearing the internal case.
 
-Consider now the situation in the internal case wins the case competition. The light head consists of a phi and case feature portmanteau. The relative pronoun consists of a phi and case feature portmanteau that contains at least one more case feature than the light head (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}) plus an additional morpheme that spells out the feature \tsc{rel}. The lexical entries create a syntactic structure such that the light head is structurally contained in the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun surfaces, bearing the internal case.
+Consider now the situation in which the internal case wins the case competition. The light head consists of a phi and case feature portmanteau. The relative pronoun consists of a phi and case feature portmanteau that contains at least one more case feature than the light head (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}) plus an additional morpheme that spells out the feature \tsc{rel}. The lexical entries create a syntactic structure such that the light head is structurally contained in the relative pronoun. Therefore, the light head can be deleted, and the relative pronoun surfaces, bearing the internal case.
 
 Finally, consider the situation in which the external case wins the case competition. The relative pronoun consists of a phi and case feature portmanteau and an additional morpheme that spells out the feature \tsc{rel}. Compared to the relative pronoun, the light head lacks the morpheme that spells out \tsc{rel}, and it contains at least one more case feature (\tsc{k}\scsub{2} in Figure \ref{tbl:overview-intonly}). The lexical entries create a syntactic structure such that neither the light head nor the relative pronoun is structurally contained in the other element. Therefore, none of the elements can be deleted, and there is no headless relative construction possible.
 
@@ -187,7 +187,7 @@ In the introduction of this chapter, I suggested that the internal syntax of rel
 \end{forest}
 
 In Chapter \ref{ch:the-basic-idea}, I suggested that relative pronouns consist of at least three features: \tsc{rel}, ϕ and \tsc{k}.
-In this section, I show that relative pronoun consists of more features than that.
+In this section, I show that the relative pronoun consists of more features than that.
 Still, the crucial claim I made in Chapter \ref{ch:the-basic-idea} remains unchanged: internal-only languages (of which Modern German is an example) have a portmanteau for the features that correspond to phi and case features and a morpheme that spells out the features the light head does not contain.
 I show the complete structure that I work towards in this section in \ref{ex:mg-rp}.\footnote{
 The \tsc{k}P in this functional sequence is a placeholder for multiple case projections.
@@ -240,7 +240,7 @@ When the relative pronoun is the dative, the \tsc{k}P consists of the features \
 \end{adjustbox}
 
 I discuss two relative pronouns: the animate accusative and the animate dative. These are the two forms that I compare the internal syntax of in Section \ref{sec:comparing-mg}.\footnote{
-For reasons of space, I do not discuss the animate nominative \tit{wer} `\tsc{rp}.\tsc{an}.\tsc{acc}'. I assume its analysis is identical to the one I propose for \tit{wen} and \tit{wem}, except that \tit{wer} spells out fewer case features. I work out the proposal for \tit{wen} and \tit{wem} to be able to do a comparison between Modern German and Polish in which the relative pronouns spell out exactly the same feature content.
+For reasons of space, I do not discuss the animate nominative \tit{wer} `\tsc{rp}.\tsc{an}.\tsc{nom}'. I assume its analysis is identical to the one I propose for \tit{wen} and \tit{wem}, except that \tit{wer} spells out fewer case features. I work out the proposal for \tit{wen} and \tit{wem} to be able to do a comparison between Modern German and Polish in which the relative pronouns spell out exactly the same feature content.
 } I show them in \ref{ex:mg-rels}.
 
 \ex.\label{ex:mg-rels}
@@ -279,7 +279,7 @@ Notice that the animate forms in Table \ref{tbl:mg-paradigm-wh-rels} are the mas
 
 \begin{table}[htbp]
 \center
-\caption {Modern German \tit{dieser} demonstratives \pgcitep{durrell2011}{Table 5.2}}
+\caption {Modern German \tit{dieser} demonstratives \pgcitep{durrell2011}{5.1.2}}
  \begin{tabular}{ccccc}
  \toprule
              & \tsc{m}.\tsc{sg} & \tsc{n}.\tsc{sg} & \ac{f}.\tsc{sg} & \tsc{pl} \\
@@ -556,7 +556,7 @@ At this point, I gave lexical entries for each of the morphemes that the relativ
 \end{adjustbox}
 
 What is still needed, is a theory for combining the morphemes into relative pronouns. This theory should determine which morphemes should be combined with each other in which order. Ultimately, the result needs to be the internal syntax in \ref{ex:mg-rp-rep}.
-Ideally, the theory that derives this is not language-specific, but the same for all languages. In what follows I show how this is accomplished in Nanosyntax. Readers who are not interested in the precise mechanics can proceed directly to Section \ref{sec:light-mg}.
+Ideally, theory that derives this is not language-specific, but the same for all languages. In what follows I show how this is accomplished in Nanosyntax. Readers who are not interested in the precise mechanics can proceed directly to Section \ref{sec:light-mg}.
 
 
 \section{Combining morphemes in Nanosyntax}\label{sec:combining}
@@ -609,11 +609,11 @@ Finally, I assume that the feature \tsc{rel} is hierarchy higher than \tsc{wh}.
 Before I construct the relative pronouns, I explain how the spellout procedure in Nanosyntax works. Features (Fs) are merged one by one according to the functional sequence, starting from the bottom. After each instance of merge, the constructed phrase must be spelled out, as stated in \ref{ex:cyclic-phrasal-spellout}.
 
 \ex. \tbf{Cyclic phrasal spellout} \citep{caha2020a}\\
-Spellout must successfuly apply to the output of every Merge F operation. After successful spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
+Spellout must successfully apply to the output of every Merge F operation. After successful spellout, the derivation may terminate, or proceed to another round of Merge F.\label{ex:cyclic-phrasal-spellout}
 
 Spellout is successful when the phrase that contains the newly merged feature forms a constituent in a lexical tree that is part of the language's lexicon.
 When the new feature is merged, it forms a phrase with all features merged so far.
-If this created phrase cannot be spelled out successfuly (i.e. when it does not form a constituent in a lexical tree), there are two movement operations possible that modify the syntactic structure in such a way that the newly merged feature becomes part of a different syntactic structure.
+If this created phrase cannot be spelled out successfully (i.e. when it does not form a constituent in a lexical tree), there are two movement operations possible that modify the syntactic structure in such a way that the newly merged feature becomes part of a different syntactic structure.
 These movements are triggered because spellout needs to successully apply. Therefore, they are called spellout-driven movements.
 A Spellout Algorithm specifies which movement operations apply and in which order this happens. I give it in \ref{ex:spellout-algorithm}.
 
@@ -788,7 +788,7 @@ This syntactic structure does not form a constituent in the lexical tree in \ref
 There is also no other lexical tree that contains the structure in \ref{ex:mg-spellout-wh-phrasal} as a constituent. Therefore, there is no successful spellout for the syntactic structure in the derivational step in which the structure is spelled out as a single phrase (\ref{ex:spellout-algorithm-phrasal} in the Spellout Algorithm).
 
 The first movement option in the Spellout Algorithm is moving the specifier, as described in \ref{ex:spellout-algorithm-spec}. As there is no specifier in this structure, the first movement option is irrelevant.
-The second movement option in the Spellout Algorithm is moving the complement, as described in \ref{ex:spellout-algorithm-comp}. In this case, the complement of \tsc{wh}, the \tsc{ind}P, is moved to the specifier of \tsc{ind}P. As this movement option does not lead to a successful match, I do not show it here. I come back to it in Chapter \ref{ch:deriving-matching}, in which it does lead to a successful match.
+The second movement option in the Spellout Algorithm is moving the complement, as described in \ref{ex:spellout-algorithm-comp}. In this case, the complement of \tsc{wh}, the \tsc{ind}P, is moved to the specifier of \tsc{wh}P. As this movement option does not lead to a successful match, I do not show it here. I come back to it in Chapter \ref{ch:deriving-matching}, in which it does lead to a successful match.
 
 As I mentioned earlier, there are two more derivational options possible: Backtracking and Spec Formation. Derivationally, Backtracking comes first. However, since this does not lead to a successful spellout here I first introduce Spec Formation and I return to Backtracking later. Spec Formation is a last resort operation, when the feature cannot be spelled out by any of the preceding options. It is formalized as in \ref{ex:merge-spec}.
 
@@ -802,7 +802,7 @@ Now I come back to the `other' features that the feature is merged with to creat
 There are three different proposals on Spec Formation.
 \citet{caha2019} argue that there can only be a single feature overlap between the two phrases.
 \citet{de2018} argue that there cannot be any overlap at all. The features that used in the second workspace are removed from the structure in the main workspace.
-In this dissertation, I work with the proposal in \citet{starke2018}, in which the the overlap between the phrase on the left and the phrase on the right can also be more than a single feature. This is the only proposal of the three that allows me to derive all the forms I encounter.
+In this dissertation, I work with the proposal in \citet{starke2018}, in which the overlap between the phrase on the left and the phrase on the right can also be more than a single feature. This is the only proposal of the three that allows me to derive all the forms I encounter.
 }
 This can be a single feature or multiples ones. I illustrate this with the Modern German relative pronouns.
 
@@ -1031,7 +1031,7 @@ The next feature in the functional sequence is \tsc{f}1. This feature should som
 The feature \tsc{f}1 is merged with the existing syntactic structure, creating a \tsc{nom}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 Backtracking leads to splitting up the \tsc{rel}P from the \tsc{ind}P.
-The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
+The feature \tsc{f}1 is merged in both workspaces, so with the \tsc{rel}P and with the \tsc{ind}P. The spellout of \tsc{f}1 is successful when it is combined with the \tsc{ind}P.
 It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which corresponds to the \tit{n}.
 The \tsc{nom}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-nom}.
 
@@ -1082,7 +1082,7 @@ The \tsc{nom}P is spelled out as \tit{n}, and all constituents are merged back i
 For the accusative relative pronoun, the last feature is merged: the \tsc{f}2. The derivation for \tsc{f}2 resembles the derivation of \tsc{f}1. The feature is merged with the existing syntactic structure, creating a \tsc{acc}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 Backtracking leads to splitting up the \tsc{rel}P from the \tsc{nom}P.
-The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
+The feature \tsc{f}2 is merged in both workspaces, so with the \tsc{rel}P and with the \tsc{nom}P. The spellout of \tsc{f}2 is successful when it is combined with the \tsc{nom}P.
 It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which corresponds to the \tit{n}. The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-acc}.
 
 \ex.\label{ex:mg-spellout-rel-acc}
@@ -1135,7 +1135,7 @@ It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, wh
 For the dative relative pronoun, one more feature is merged: the \tsc{f}3. The derivation for \tsc{f}3 resembles the derivation of \tsc{f}1 and \tsc{f}2. The feature is merged with the existing syntactic structure, creating a \tsc{dat}P.
 This structure does not form a constituent in any of the lexical trees in the language's lexicon, and neither of the spellout driven movements leads to a successful spellout.
 Backtracking leads to splitting up the \tsc{rel}P from the \tsc{acc}P.
-The feature \tsc{f}3 is merged in both workspaces, so with the \tsc{rel}P and and with the \tsc{acc}P. The spellout of \tsc{f}3 is successful when it is combined with the \tsc{acc}P.
+The feature \tsc{f}3 is merged in both workspaces, so with the \tsc{rel}P and with the \tsc{acc}P. The spellout of \tsc{f}3 is successful when it is combined with the \tsc{acc}P.
 It namely forms a constituent in the lexical tree in \ref{ex:mg-entry-m-rep}.
 The \tsc{dat}P is spelled out as \tit{m}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-dat}.
 
@@ -1278,13 +1278,13 @@ Jan hugs \tsc{rp}.\tsc{an}.\tsc{acc} he likes\\
 
 I give two arguments against this hypothesis. First, in headless relatives the phrase \tit{auch immer} `ever' can appear, as shown in \ref{ex:mg-wh-for-headless-ever}.
 
-\exg. Jan unarmt \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
+\exg. Jan umarmt \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
 Jan hugs \tsc{rp}.\tsc{an}.\tsc{acc} ever he likes\\
 `Jan hugs whoever he likes.'\label{ex:mg-wh-for-headless-ever}
 
 Light-headed relatives do not allow for this phrase to be inserted, illustrated in \ref{ex:mg-wh-for-headed-ever}.
 
-\exg. *Jan unarmt den \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
+\exg. *Jan umarmt den \tbf{wen} {\tbf{auch} \tbf{immer}} \tbf{er} \tbf{mag}.\\
 Jan hugs \tsc{dem}.\tsc{m}.\tsc{sg}.\tsc{acc} \tsc{rp}.\tsc{an}.\tsc{acc} ever he likes\\
 `Jan hugs him whoever he likes.'\label{ex:mg-wh-for-headed-ever}%source?
 
@@ -1296,7 +1296,7 @@ The second argument against the \tit{den}-\tit{wen} relative being the source of
 
 \begin{table}[htbp]
   \center
-  \caption{Intepretations of \tit{wen} and \tit{den}-\tit{wen} relatives}
+  \caption{Interpretations of \tit{wen} and \tit{den}-\tit{wen} relatives}
 \begin{tabular}{ccc}
   \toprule
                 & \tit{wen} & \tit{den}-\tit{wen} \\
