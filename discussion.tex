@@ -1,50 +1,140 @@
 % !TEX root = thesis.tex
 
-\chapter{Conclusion}\label{ch:discussio}
+\chapter{Conclusion}\label{ch:discussion}
 
-something happens in syntax
-it can be explained if you look at morphology
+This dissertation discussed two aspects of case competition in headless relatives. The first aspect was introduced in Chapter \ref{ch:recurring} and concerns which case wins the case competition. In all languages with case competition that I discussed, this is determined by the case scale in
 
-Case competition in headless relatives has been described as some special property of a few special languages. Therefore, language-specific rules have been postulated to account for the data. My goal is to show that this phenomenon can be captured with `normal' syntactic processes, like ellipsis, c-command. The account makes predictions about how a language behaves based on the shape of its relative pronouns. And we see that case competition in headless relatives is actually more wide-spread than what has been assumed.
+\ex.\label{ex:case-scale-summary} \tsc{nom} < \tsc{acc} < \tsc{dat}
 
+A case more to the right on the scale wins over a case more to the left on the scale. This scale is not specific to case competition in headless relatives, but it can also be observed in syncretism patterns and morphological case containment.
 
-Table \ref{tbl:overview-rel-light} shows per language type which of the three options is chosen when the internal and external case differ.
+Chapter \ref{tbl:case-decomposed} showed that the case scale can be derived from assuming the cumulative case decomposition shown in Table \ref{tbl:case-decomposed-summary}.
+
+\begin{table}[ht]
+  \center
+	\caption {Cumulative case decomposition (repeated)}
+		\begin{tabular}{ll}
+    \toprule
+    case      & features                  \\
+    \midrule
+    \ac{nom} & \tsc{k}1                    \\
+    \ac{acc} & \tsc{k}1, \tsc{k}2           \\
+    \ac{dat} & \tsc{k}1, \tsc{k}2, \tsc{k}3  \\
+    \bottomrule
+    \end{tabular}
+    \label{tbl:case-decomposed-summary}
+\end{table}
+
+A case wins over another case when it contains all features that the other case contains. The dative (with its \tsc{k}1, \tsc{k}2 and \tsc{k}3) wins over the accusative (with its \tsc{k}1 and \tsc{k}2) and over the nominative (with its \tsc{k}1). In turn, the accusative (with its \tsc{k}1 and \tsc{k}2) wins over the nominative (with its \tsc{k}1).
+
+The second aspect of case competition in headless relatives is introduced in Chapter \ref{ch:typology}. This concerns whether or not the winner of the case competition in allowed to surface when it wins the case competition. It differs from language to language whether they allow the internal and the external case to surface. Table \ref{tbl:languages-int-ext} gives on overview of the possible language types and whether they are attested.
 
 \begin{table}[htbp]
   \center
-  \caption{The surface pronoun with differing cases per language}
-\begin{tabular}{cccc}
+  \caption{Possible language types and languages}
+  \begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{ccccc}
   \toprule
-                & \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{k}\scsub{ext} > \tsc{k}\scsub{int} &                  \\
+                language type
+              & \tsc{k}\scsub{int} = \tsc{k}\scsub{ext}
+              & \tsc{k}\scsub{int} > \tsc{k}\scsub{ext}
+              & \tsc{k}\scsub{ext} > \tsc{k}\scsub{int}
+              & language \\
                 \cmidrule{2-3}
-unrestricted    & relative pronoun\scsub{int}  & light head\scsub{ext} & Old High German  \\
-internal-only   & relative pronoun\scsub{int}  & *                     & Modern German    \\
-matching        & *                            & *                     & Polish           \\
-external-only   & *                            & light head\scsub{ext} & not attested     \\
+unrestricted    \tsc{int/ext} & \tsc{int} & \tsc{ext} & Old High German, Gothic, Ancient Greek  \\
+internal-only   \tsc{int/ext} & \tsc{int} & *         & Modern German                           \\
+external-only   \tsc{int/ext} & *         & \tsc{ext} & not attested                            \\
+matching        \tsc{int/ext} & *         & *         & Polish                                  \\
 \bottomrule
 \end{tabular}
-\label{tbl:overview-rel-light}
+\end{adjustbox}
+\label{tbl:languages-int-ext}
 \end{table}
 
-The first column list the types of languages.
-The second column shows the situation in which the internal case is the most complex. The relative pronoun that bears the internal case is the potential surface pronoun.
-The third column shows the situation in which the external case is the most complex. The light head that bears the external case is the potential surface pronoun.
+The first column lists the types of languages.
+The second column shows the situation in which the internal and the external case match. The surfacing case is the internal or external case.
+The third column shows the situation in which the internal case is the most complex. Due to the case scale, the potential surfacing case is the internal case.
+The fourth column shows the situation in which the external case is the most complex. Due to the case scale, the potential surfacing case is the external case.
 The asterix (*) indicates that there is no grammatical form for the surface pronoun.
-The fourth column gives the example of the language type that I discuss in this chapter.
-A language of the unrestricted type (like Old High German) allows both the internal case and the external case to surface when either of them wins the case competition. Either the light head with its external case or the relative pronoun with its internal case can be the surface pronoun.
-A language of the internal-only type (like Modern German) allows only the internal case to surface when it wins the case competition, and it does not allow the external case to do so. The relative pronoun with its internal case can be the surface pronoun and the light head with its external case cannot.
-A language of the matching type (like Polish) allows neither the internal nor the external case to surface when either of them wins the case competition. Neither the relative pronoun with its internal case nor the light head with its external case can be the surface pronoun.\footnote{
-This holds for the situation in which the internal and external case differ. In Section \ref{ch:deriving-matching}, I show that the relative pronoun surfaces in matching contexts.
-}
-The language type that is not attested is the external-only type. That means that there is no language that allows only the external case to surface when it wins the case competition, and it does not allow the internal case to do so. In other words, there exist no language, in which the surface pronoun can only be the light head and not the relative pronoun.
+The fifth column gives examples of languages that are of this type.
 
-What I have done in this section so far is reformulate the two descriptive parameters from Figure \ref{fig:two-parameters} into two other descriptive parameters.
-Whether the internal case is allowed to surface corresponds to whether the relative pronoun surfaces. That implicates that the light head has been deleted and is therefore absent.
-Similarly, whether the external case is allowed to surface corresponds to whether the light head surfaces. That implicates that the relative pronoun has been deleted and is therefore absent.
-I show this in Figure \ref{fig:lexical-entries-rep}.
+The unrestricted type of language allows both the internal case and the external case to surface when either of them wins the case competition.
+Examples of this language type are Old High German, Gothic and Ancient Greek.
+The internal-only type of language allows only the internal case to surface when it wins the case competition, and it does not allow the external case to do so.
+An example of this language type is Modern German.
+The external-only type of language allows only the external case to surface when it wins the case competition, and it does not allow the internal case to do so.
+To my knowledge, there is no language that behaves like this.
+The matching type of language allows neither the internal nor the external case to surface when either of them wins the case competition.
+An example of this language type is Polish.
+
+Chapter \ref{ch:without-case-competition} took a small detour to discuss languages without case competition. This type of language shows either always the internal case or always the external case. To my knowledge, there is no language in which it is always the internal case that surfaces. Two examples in which the external case always surfaces are Modern Greek and Old English.
+
+The diagram in Figure \ref{fig:typology-summary} generates the four possible language types that I discussed in this dissertation.
+
+\begin{figure}[ht]
+  \centering
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}[b]{c}
+      \toprule
+    \begin{tikzpicture}[node distance=1.5cm]
+    \node (question1) [question]
+    {cases\\ considered:};
+        \node (outcome1) [outcome, below of=question1, xshift=-2cm, yshift=-0.5cm]
+        {always external};
+            \node (example1) [example, below of=outcome1]
+            {e.g. Old English, Modern Greek\\\phantom{x}};
+    \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
+      {allow \tsc{int}};
+          \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
+          {matching};
+              \node (example2) [example, below of=outcome2]
+              {e.g. Polish\\\phantom{x}\\\phantom{x}};
+          \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
+          {allow \tsc{ext}};
+              \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
+              {internal-only};
+                  \node (example3) [example, below of=outcome3]
+                  {e.g. Modern German\\\phantom{x}};
+              \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
+              {urestricted};
+                  \node (example4) [example, below of=outcome4]
+                  {e.g. Gothic, Old High German, Classical Greek};
+
+    \draw [arrow] (question1) -- node[anchor=north] {\ac{int} + \ac{ext}} (question2);
+    \draw [arrow] (question1) -- node[anchor=east] {\ac{ext}} (outcome1);
+    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+
+    \end{tikzpicture}\\
+    \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+    \caption{Three descriptive parameters generate four language types (repeated)}
+    \label{fig:typology-summary}
+\end{figure}
+
+A language can either only consider the external case or it considers both the internal and the external case. If it only considers the external case, the always-external type of language is generated.
+If a language considers both the internal and external case, it can allow the internal case to surface when it wins the case competition or it cannot. If it does not, the matching type of language is generated.
+If a language allows the internal case to surface when it wins the case competition, it can allow the external case to surface when it wins the case competition or it cannot. If it does not, the internal-only type of language is generated.
+If a language allows the external case to surface when it wins the competition, the unrestricted type of language is generated.
+
+The goal of Part \ref{part:deriving} of the dissertation was to derive the crosslinguistic differences from something that can be independently observed within a language. I proposed to investigate the morphology of the languages. By doing so, I could suggest differences between the lexical entries in the languages. These different lexical entries would then ultimately lead languages to be of different types.
+
+Chapter \ref{ch:the-basic-idea} put in place the assumptions needed for the proposal to work. First, I assume that headless relative clauses are derived from light-headed relatives. Light-headed relatives contain a light head and a relative pronoun. In a headless relative either the light head or the relative pronoun is deleted. The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) is structurally or formally contained in the other element. All languages have two possible light heads, which partly overlap in feature content with the relative pronoun.
+
+In Chapter \ref{ch:deriving-onlyinternal}, I motivated the analysis for the internal-only type of language Modern German. I first identified the morphemes that Modern German light heads and relative pronouns consist of. Then I showed to which features each of the morphemes correspond. The Modern German lexical entries are such that the light heads is contained in the relative pronoun when the cases match and when the internal case is more complex. In these cases there is a grammatical headless relative. When the external case is more complex, neither the light head nor the relative pronoun is contained in the other element, so there is no grammatical headless relative.
+
+In Chapter \ref{ch:deriving-matching}, I motivated the analysis for the matching type of language Polish. Again, I identified the morphemes that the light heads and relative pronouns consist of. The crucial difference between the internal-only type of language Modern German and the matching type of language Polish is how the phi and case features are spelled out. In Modern German they are spelled out by a phi and case feature portmanteau, which is a single lexical entry. In Polish, the same features are spelled out by two lexical entries: a phi feature (minus number feature) morpheme and a case feature (plus number feature) morpheme. This difference causes a difference in containment when the internal case is more complex. In Modern German the light head is contained in the relative pronoun, but in Polish the light head is not contained in the relative pronoun. This is the crucial difference between a language of the matching type and a language of the internal-only type.
+
+Finally, in chapter \ref{ch:deriving-unrestricted}, I motivated the analysis for the unrestricted type of language Old High German. Also here I identified the morphemes that the light heads and relative pronouns consist of. I showed that Old High German differs from the other two languages in that it has light heads and relative pronouns that are syncretic. That point is crucial for the unrestricted type of language, because it allows making use of formal containment: an element can be absent if it is formally contained within the other element. This is the only way in which the relative pronoun can be contained in the light head and the relative pronoun can be deleted even though the relative pronoun contains one feature more than the light head. Towards the end of the chapter I briefly sketched what I assume to be the larger syntactic structure of a headless relative.
+
+In sum, I reformulated two of the descriptive parameters from Figure \ref{fig:typology-summary} into parameters that can be observed within a language.
 
 \begin{figure}[htbp]
   \centering
+  \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}[b]{c}
     \toprule
     \begin{tikzpicture}[node distance=1.5cm]
@@ -72,19 +162,11 @@ I show this in Figure \ref{fig:lexical-entries-rep}.
     \end{tikzpicture}\\
     \bottomrule
   \end{tabular}
+\end{adjustbox}
     \caption{Different lexical entries generate three language types (repeated)}
-    \label{fig:lexical-entries-rep}
+    \label{fig:lexical-entries-summary}
 \end{figure}
 
-Reformulating these parameters is not just restating the generalization in different terms. With this new formulation, I am able to identify the elements (i.e. the light head and the relative pronoun) that bear the internal and external cases. The difference between languages lies in whether or not it is possible to delete the light head (and with it the external case) and the relative pronoun (and with it the internal case).
-
-
-
-
-
-
-In Chapter \ref{ch:deriving-onlyinternal}, I motivate the analysis for the internal-only type of language Modern German. I first identify the morphemes that Modern German light heads and relative pronouns consist of. Then I show which features each of the morphemes correspond to. The lexical entries are such that the light heads is contained in the relative pronoun when the cases match and when the internal case is more complex. In these cases there is a grammatical headless relative. When the external case is more complex, neither the light head nor the relative pronoun is contained in the other element, so there is no grammatical headless relative.
-
-In Chapter \ref{ch:deriving-matching}, I motivate the analysis for the matching type of language Polish. Again I identify the morphemes that the light heads and relative pronouns consist of. The crucial difference between the internal-only type of language Modern German and the matching type of language Polish is how the phi and case features are spelled out. In Modern German they are spelled out by a phi and case feature portmanteau, which is a single lexical entry. In Polish, the same features are spelled out by a phi feature morpheme and a case feature morpheme, which are two lexical entries. This difference causes a difference in containment when the internal case is more complex. In Modern German the light head is contained in the relative pronoun, but in Polish the light head is not contained in the relative pronoun. This is the crucial difference between a language of the matching type and a language of the internal-only type.
-
-Finally, in chapter \ref{ch:deriving-unrestricted}, I do the same for the unrestricted type of language Old High German. Also here I identify the morphemes that the light heads and relative pronouns consist of. I show that Old High German differs from the other two languages in that it has light heads and relative pronouns that are syncretic. That point is crucial for the unrestricted type of language, because it allows making use of formal containment: an element can be absent if it is formally contained within the other element. This is the only way in which the relative pronoun can be contained in the light head and the relative pronoun can be deleted, even though the relative pronoun contains one feature more than the light head. Toward the end of the chapter I briefly sketch what I assume the larger syntactic structure of a headless relative looks like.
+A language can either have a portmanteau for phi and case features or it does not and multiple lexical entries spell out these features. If there is not a phi and case feature portmanteau, the matching type of language is generated.
+If a language has a phi and case feature portmanteau, it can either have a syncretism between relative pronouns (used in headless relatives) and demonstratives or there is no such syncretism. If there is no such syncretism, the internal-only type of language is generated.
+If there is such a syncretism, the unrestricted type of language is generated.

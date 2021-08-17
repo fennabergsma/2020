@@ -10,13 +10,13 @@ In Chapter \ref{ch:typology}, I introduced two descriptive parameters that descr
     \toprule
     \begin{tikzpicture}[node distance=1.5cm]
       \node (question2) [question]
-      {allow \tsc{int}}; %ϕ+\tsc{k} portmanteau?
+      {allow \tsc{int}};
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
           {matching};
               \node (example2) [example, below of=outcome2]
               {e.g. Polish\\\phantom{x}\\\phantom{x}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
-          {allow \tsc{ext}}; %\tsc{lh}-\tsc{rp} syncretism?
+          {allow \tsc{ext}};
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
               {internal-only};
                   \node (example3) [example, below of=outcome3]
@@ -58,9 +58,8 @@ First, I discuss the basic assumptions that I am making, which are the same for 
 
 This section lays out the underlying assumptions that I make in my proposal. First, it introduces three assumptions that hold for each of the language types. Then, it discusses how lexical entries lead to differences in languages.
 
-I start with my assumption that headless relatives are derived from light-headed relatives.\footnote{
+I start with my assumption that headless relatives are derived from relative clauses headed by a light head.\footnote{
 The same is argued for headless relatives with \tsc{d}-pronouns in Modern German by \citet{fuss2014,hanink2018} and for Polish by \citet{citko2004}.
-% A difference with Modern German and Polish is that one of the elements can only be absent when the cases match. In Chapter \ref{ch:discussion} I return to the point why Modern German does not have unrestricted headless relatives that look like Old High German, although it still has syncretic light heads and relative pronouns.
 Several others claim that headless relatives have a head, but that it is phonologically empty \citep[cf.][]{bresnan1978,groos1981,himmelreich2017}.
 }
 The light head bears the external case, and the relative pronoun bears the internal case, as illustrated in \ref{ex:light+rel}.
@@ -87,7 +86,7 @@ In Section \ref{sec:basic-matching} I show that `containment as a whole' is also
 }\footnote{
 Throughout this chapter I elaborate further on the exact requirements for containment. There are two types of containment possible. The first type is structural containment: an element can be absent if it is structurally contained in the other element. I elaborate on this in Section \ref{sec:basic-matching}. The second type is formal containment: an element can be absent if it is formally contained in the other element. I elaborate on this in Section \ref{sec:basic-unrestricted}.
 }
-For light heads and relative pronouns this means that one of them can be absent when they are contained in the other element.
+For light heads and relative pronouns this means that one of them can be absent when it is contained in the other element. That is, the light head can be absent when it is contained in the relative pronoun, or the relative pronoun can be absent when it is contained in the light head.
 In other words, it depends on the comparison between the light head and the relative pronoun themselves which one of them is absent.
 Note that it is also possible that neither of the elements is contained in the other one. The consequence is then that neither of them is deleted, which describes the situation in which there is no grammatical headless relative.
 
@@ -164,7 +163,7 @@ Figure \ref{fig:rel-lh-intonly-2} gives a simplified representation of the secon
 I assume that the second possible light head and the relative pronoun also partly contain the same syntactic features. The features they have in common are case features (\tsc{k}), phi features (ϕ) and the feature \tsc{rel}. The light head and the relative pronoun differ from each other in that the light head has at least one feature more, which I call here X. In Chapter \ref{ch:deriving-unrestricted} I discuss in detail what X refers to.
 
 The three assumptions I just introduced hold for all language types I discuss. In all language types, headless relatives are derived from light-headed relatives. For all language types, the deletion operation requires containment. And in all language types, there are two possible light heads: the first possible light head contains at least one feature less than the relative pronoun, and the second possible light head contains at least one feature more than the relative pronoun.
-The difference between languages does not come from modifying these assumptions in any way, but from how different languages package their features into constituents. Before I explain how differences in internal syntax lead to different language types, I show how differences in internal syntax arise.
+The difference between languages does not come from modifying these assumptions in any way, but from how different languages package their features into constituents. Before I explain how differences in internal syntax lead to different language types, I show how different lexical entries lead to differences in internal syntax.
 
 In Chapter \ref{ch:decomposition} I discussed the third person singular feminine pronoun in German. I repeat the lexical entry I gave for it in \ref{ex:german-sie-lexicon-rep}.
 
@@ -264,7 +263,7 @@ The only available lexical entry in Khanty that contains the \tsc{acc}P is \ref{
 The movement operation is part of the spellout algorithm in Nanosyntax, which is the same for all languages. I elaborate on this spellout algorithm in Chapters \ref{ch:deriving-onlyinternal} and \ref{ch:deriving-matching}.
 }
 Now compare the syntactic structures of the German accusative pronoun in \ref{ex:german-sie-spellout-rep} and the Khanty one in \ref{ex:khanty-luw-el-spellout-rep}. The feature content is the same (except for the feminine feature, which does not play a role here), but the internal syntax looks different.
-This change in internal syntax is a direct consequence of the lexical entries that are available within the language.
+This change in internal syntax is a direct consequence of the lexical entries that I gave for the different languages.
 
 Exactly this type of difference is what leads to the different language types in headless relatives. Languages contain different lexical entries that spell out the features of the light heads and the relative pronouns.
 The different lexical entries lead to differences in the internal syntax of the light heads and the relative pronouns.
@@ -275,36 +274,44 @@ I summarize this chain in \ref{ex:summary-differences-languages}.
 
 \ex.\label{ex:summary-differences-languages} lexical entries → internal syntax → containment → deletion → surface element
 
-The different language types appear by going through the chain in \ref{ex:summary-differences-languages} in the three different situations: (i) when the internal and external case match, (ii) when the internal case is the more complex case, and (iii) when the external case is the more complex case. An overview of these situation and whether or not a surface element, and therefore a grammatical headless relative, results from it is shown in Table \ref{tbl:overview-situations}.
+The different language types appear by going through the chain in \ref{ex:summary-differences-languages} in the three different situations: (i) when the internal and external case match, (ii) when the internal case is the more complex case, and (iii) when the external case is the more complex case. An overview of these situation and what (if any) is the surface element is shown in Table \ref{tbl:overview-situations}.
 
 \begin{table}[htbp]
   \center
-  \caption{Different languages types in different situations}
+  \caption{Different language types in different situations}
   \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}{ccc}
     \toprule
-  language type &   situation                               & surface element \\
+  language type &   situation                               & surface element         \\
   \cmidrule(lr){1-1}  \cmidrule(lr){2-2} \cmidrule(lr){3-3}
-  unrestricted  &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & ✔               \\
-                &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & ✔               \\
-                &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & ✔               \\
+  unrestricted  &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}\tsc{lh}\scsub{ext} \\
+                &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
+                &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & \tsc{lh}\scsub{ext}     \\
                 \cmidrule(lr){2-2} \cmidrule(lr){3-3}
-  internal-only &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & ✔               \\
-                &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & ✔               \\
-                &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *               \\
+  internal-only &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
+                &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
+                &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
                 \cmidrule(lr){2-2} \cmidrule(lr){3-3}
-  matching      &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & ✔               \\
-                &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & *               \\
-                &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *               \\
+  matching      &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
+                &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & *                       \\
+                &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
   \bottomrule
   \end{tabular}
   \end{adjustbox}
   \label{tbl:overview-situations}
   \end{table}
 
-In the unrestricted type of language, the lexical entries are such that there is a grammatical headless relative when the cases match, when the internal case is more complex and when the external case is more complex.
-In the internal-only type of language, the lexical entries are such that there is a grammatical headless relative when the cases match and when the internal case is more complex but not when external case is more complex.
-In the matching type of language, the lexical entries are such that there is a grammatical headless relative when the cases match but not when the internal case is more complex or when the external case is more complex.
+In the unrestricted type of language, the lexical entries are such that there is a grammatical headless relative when the cases match, when the internal case is more complex and when the external case is more complex. When the cases match, the surface element can be either the relative pronoun that bears the internal case or the light head that bears the external case.\footnote{
+In Section \ref{sec:basic-unrestricted} I show why the surface element can be both the relative pronoun or the light head.
+} When the internal case is more complex, the surface is element is the relative pronoun that bears the internal case. When the external case is more complex, the surface element is the light head that bears the external case.
+
+In the internal-only type of language, the lexical entries are such that there is a grammatical headless relative when the cases match and when the internal case is more complex but not when external case is more complex.\footnote{
+In Section \ref{sec:basic-internal} I show why the surface pronoun can only be the relative pronoun.
+} When the cases match, the surface element is the relative pronoun that bears the internal (and external) case. When the internal case is more complex, the surface is element is the relative pronoun that bears the internal case.
+
+In the matching type of language, the lexical entries are such that there is a grammatical headless relative when the cases match but not when the internal case is more complex or when the external case is more complex. When the cases match, the surface element is the relative pronoun that bears the internal (and external) case.\footnote{
+In Section \ref{sec:basic-matching} I show why the surface pronoun can only be the relative pronoun.
+}
 
 In sum, I assume that headless relative clauses are derived from light-headed relatives. Light-headed relatives contain a light head and a relative pronoun. In a headless relative either the light head or the relative pronoun is deleted.
 The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) is structurally or formally contained in the other element.
@@ -326,7 +333,7 @@ I show that the internal syntax I assume for the light heads and the relative pr
 I start with the internal-only type of language. In Chapter \ref{ch:typology} I showed that Modern German is a language of the internal-only type. Chapter \ref{ch:deriving-onlyinternal} motivates the analysis I propose in this section for Modern German.
 
 In this type of language, grammatical headless relatives can only be derived from light-headed relatives headed by the first possible light head.
-Light-headed relatives headed by the second possible light head cannot be the the source of headless relatives. For Modern German, I provide evidence for this claim based on interpretation in Chapter \ref{ch:deriving-onlyinternal}. In Chapter \ref{ch:deriving-unrestricted} I give an argument that come from phonology. I already briefly introduce to the phonology argument in Section \ref{sec:basic-unrestricted}.
+Light-headed relatives headed by the second possible light head cannot be the source of headless relatives. For Modern German, I provide evidence for this claim based on interpretation in Chapter \ref{ch:deriving-onlyinternal}. In Chapter \ref{ch:deriving-unrestricted} I give an argument that come from phonology. I already briefly introduce to the phonology argument in Section \ref{sec:basic-unrestricted}.
 In this section, I only discuss the first possible light head, and I leave the second possible light head aside.
 
 I suggest that the light head and the relative pronoun in this type of language have the internal syntax as shown in Figure \ref{fig:rel-lh-intonly-3}.
@@ -546,7 +553,7 @@ In Figure \ref{fig:acc-nom-intonly}, I give an example in which the light head b
 \end{figure}
 
 I draw a dashed circle around the biggest possible element that is contained in both the light head and the relative pronoun.
-Different from the examples in Figure \ref{fig:nom-nom-intonly} and \ref{fig:acc-nom-intonly}, the light head is not contained in the relative pronoun.
+Different from the examples in Figures \ref{fig:nom-nom-intonly} and \ref{fig:acc-nom-intonly}, the light head is not contained in the relative pronoun.
 The \tsc{nom}P of the light head is contained in the relative pronoun, but the relative pronoun does not contain the feature \tsc{k}2 that forms an \tsc{acc}P.
 The \tsc{nom}P of the relative pronoun is contained in the relative pronoun, but the light head does not contain the feature \tsc{rel} that forms a \tsc{rel}P.
 As a result, none of the elements can be absent. I illustrate this by leaving the content of both dashed circles unfilled.
@@ -591,7 +598,7 @@ Headless relatives in this type of language are grammatical when the internal an
 I continue with the matching type of language. In Chapter \ref{ch:typology} I showed that Polish is a language of the matching type. Chapter \ref{ch:deriving-matching} motivates the analysis I propose in this section for Polish.
 
 In this type of language, grammatical headless relatives can only be derived from light-headed relatives headed by the first possible light head.
-Light-headed relatives headed by the second possible light head cannot be the the source of headless relatives. For Polish, I provide evidence for this claim based on interpretation in Chapter \ref{ch:deriving-matching}. In Chapter \ref{ch:deriving-unrestricted} I give an argument that come from phonology. I already briefly introduce to the phonology argument in Section \ref{sec:basic-unrestricted}.
+Light-headed relatives headed by the second possible light head cannot be the source of headless relatives. For Polish, I provide evidence for this claim based on interpretation in Chapter \ref{ch:deriving-matching}. In Chapter \ref{ch:deriving-unrestricted} I give an argument that come from phonology. I already briefly introduce to the phonology argument in Section \ref{sec:basic-unrestricted}.
 In this section, I only discuss the first possible light head, and I leave the second possible light head aside.
 
 I suggest that the light head and the relative pronoun in this type of language have the internal syntax as shown in Figure \ref{fig:rel-lh-matching}.
@@ -662,7 +669,7 @@ I suggest that the light head and the relative pronoun in this type of language 
 This is a consequence of the following lexical entries.
 The light head is spelled out by two lexical entries: one that spells out the ϕP and one that spells out the \tsc{k}P which does not contain the ϕP. I indicate this by circling the ϕP and the \tsc{k}P. Notice that the ϕP has moved over the \tsc{k}P, which is a direct consequence of the available lexical entries.
 Remember that Nanosyntax only allows constituents to be spelled out. \tsc{k}P can only be spelled out if the ϕP is moved out of the way.
-This is the crucial difference between the internal-only type of language and the matching type of language: the former has a single lexical entry that spells out both phi and case features and the latter has two separate ones. Exactly this ultimately leads to two different languages types.
+This is the crucial difference between the internal-only type of language and the matching type of language: the former has a single lexical entry that spells out both phi and case features and the latter has two separate ones. Exactly this ultimately leads to two different language types.
 The relative pronoun in the matching type of language is spelled out by three lexical entries: the ϕP and the \tsc{k}P that are also part of the light head, and in addition the \tsc{rel}P. I indicate this by circling the \tsc{rel}P, the ϕP and the \tsc{k}P.
 In Chapter \ref{ch:deriving-matching} I work out this proposal for Polish, and I give evidence for the lexical entries I suggest here.
 
@@ -1063,7 +1070,7 @@ I end with the unrestricted type of language. In Chapter \ref{ch:typology} I sho
 
 In this type of language, grammatical headless relatives can be derived from both light-headed relatives headed by the first possible light head and from light-headed relatives headed by the second possible light head.
 
-I suggest that the first possible light head and the relative pronoun in this type of language have the internal syntax as shown Figure \ref{fig:rel-lh-unres-1}.
+I suggest that the first possible light head and the relative pronoun in this type of language have the internal syntax as shown in Figure \ref{fig:rel-lh-unres-1}.
 
 \begin{figure}[htbp]
   \center
@@ -1121,7 +1128,7 @@ In Chapter \ref{ch:deriving-unrestricted} I work out this proposal for Old High 
 
 Because the internal syntax of the light head and the relative pronoun is the same as in the internal-only type of language, the outcomes of the comparison between them in different cases are also the same as in the internal-only type of language. This means that when the internal case and the external case match or when the internal case is more complex than the external case, the light head is structurally contained in the relative pronoun, and the light head is deleted, as shown in Figure \ref{fig:nom-nom-intonly} and Figure \ref{fig:nom-acc-intonly}. This is the pattern that is observed in the unrestricted type of language.
 
-Crucially, the unrestricted type of language differs from the internal-only type of language when the external case is more complex than the internal case. The structures given in Figure \ref{fig:rel-lh-unres-1} cannot lead to a grammatical headless relative, which I have shown in Figure \ref{fig:acc-nom-intonly}. Before I resort to introducing the second possible light head, I investigate whether it is possible to let a more complex external case surface while still keeping the light head but changing something else: a different kind of containment.
+Crucially, the unrestricted type of language differs from the internal-only type of language when the external case is more complex than the internal case. The structures given in Figure \ref{fig:rel-lh-unres-1} cannot lead to a grammatical headless relative, which I have shown in Figure \ref{fig:acc-nom-intonly}. Before I introduce the second possible light head, I investigate whether it is possible to let a more complex external case surface while still keeping the light head but changing something else: a different kind of containment.
 
 I zoom in on the situation in which the external case is more complex.
 At first sight, it is unexpected that the light head bearing the external case surfaces to begin with. Recall that the feature content of the light head is that of the relative pronoun minus the feature \tsc{rel}.
@@ -1130,7 +1137,7 @@ In what follows I show a situation similar to the missing \tsc{rel} feature: a s
 The phenomenon can be understood if we assume that there is a third type of containment: formal containment.
 
 Consider the example in \ref{ex:mg-syn}, in which the internal nominative case competes against the external accusative case. The relative clause is marked in bold.
-The internal case is nominative, as the predicate \tit{gefällen} `to please' takes nominative subjects.
+The internal case is nominative, as the experiencer predicate \tit{gefallen} `to please' takes nominative subjects.
 The external case is accusative, as the predicate \tit{erzählen} `to tell' takes accusative objects.
 The relative pronoun \tit{was} `\ac{rp}.\ac{inan}.\tsc{nom/acc}' is syncretic between the nominative and the accusative.
 
@@ -1138,7 +1145,7 @@ The relative pronoun \tit{was} `\ac{rp}.\ac{inan}.\tsc{nom/acc}' is syncretic be
  1\ac{sg}.\ac{nom} tell.\ac{pres}.1\ac{sg}\scsub{[acc]} \tsc{rp}.\ac{inan}.\tsc{nom/acc} ever 1\tsc{sg}.\tsc{dat} pleases.\ac{pres}.3\ac{sg}\scsub{[nom]}\\
  `I tell whatever pleases me.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-syn}
 
-Remember from Chapter \ref{ch:typology} that Modern German is an internal-only type of language. This means that it allows the internal case to surface when it wins the case competition, but it does not allow the external case to do so. Solely looking at the cases in the example, it is expected that the example is ungrammatical: the internal nominative case cannot win over the external accusative case, and the external case is not allowed to surface. However, the example in \ref{ex:mg-syn} is grammatical, because there is a syncretism between the nominative and the accusative in the inanimate gender.
+Remember from Chapter \ref{ch:typology} that Modern German is an internal-only type of language. This means that it allows the internal case to surface when it wins the case competition, but it does not allow the external case to do so. Solely looking at the cases in the example, it is expected that the example is ungrammatical: the internal nominative case cannot win over the external accusative case, and the external case cannot surface because it is not allowed to. However, the example in \ref{ex:mg-syn} is grammatical, because there is a syncretism between the nominative and the accusative in the inanimate gender.
 
 This leads me to distinguish a third type of containment: formal containment. This type of containment holds when an element is formally (i.e. with its phonological form) contained in the other element.
 Technically, it works as follows. The fact that there is a syncretism between the nominative and the accusative means that there is a lexical entry for the \tsc{acc}P which contains the feature \tsc{k}2 and the \tsc{nom}P, but not a more specific one that spells out only the \tsc{nom}P. In \ref{ex:nom-acc-syn}, I give such a lexical entry, which spells out as \tit{s}.
@@ -1239,7 +1246,9 @@ Another option to get a relative pronoun deleted is to let the relative features
       scale=0.85,
       fit to=tree]{};
       \node[draw,circle,
-      scale=0.9, dashed,
+      dotted,very thick,
+      fill=DG,fill opacity=0.2,
+      scale=0.9,
       fit to=tree]{};
       }
           [\tsc{k}]
@@ -1274,6 +1283,10 @@ In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work o
       draw,circle,
       scale=0.85,
       fit to=tree]{};
+      \node[draw,circle,
+      dotted,very thick,
+      scale=0.9,
+      fit to=tree]{};
       }
           [\tsc{k}]
           [ϕP
@@ -1288,6 +1301,11 @@ In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work o
       \node[label=below:\tit{P},
       draw,circle,
       scale=0.85,
+      fit to=tree]{};
+      \node[draw,circle,
+      dotted,very thick,
+      fill=DG,fill opacity=0.2,
+      scale=0.9,
       fit to=tree]{};
       }
           [\tsc{rel}]
@@ -1306,7 +1324,14 @@ In this chapter and in Chapter \ref{ch:deriving-unrestricted} (in which I work o
   \label{fig:rel-lh-unres-mono}
 \end{figure}
 
-The light head corresponds to \tit{P}, illustrated by the circle around the \tsc{k}P and the \tit{P} below it. The relative pronoun corresponds to \tit{P} too, illustrated by the circle around the \tsc{rel}P and the \tit{P}. The relative pronoun (the \tsc{rel}P realized by \tit{P}) is formally contained in the light head (the \tsc{k}P realized by \tit{P}), so the relative pronoun can be deleted.
+The light head corresponds to \tit{P}, illustrated by the circle around the \tsc{k}P and the \tit{P} below it. The relative pronoun corresponds to \tit{P} too, illustrated by the circle around the \tsc{rel}P and the \tit{P}.
+I draw a dotted circle around the biggest possible element that is formally contained in both the light head and the relative pronoun.
+
+The relative pronoun (the \tsc{rel}P realized by \tit{P}) is formally contained in the light head (the \tsc{k}P realized by \tit{P}), so the relative pronoun can be deleted.\footnote{
+The same holds the other way around: the \tsc{k}P realized by \tit{P} is formally contained in the \tsc{rel}P that is realized by \tit{P}. Therefore, the light head can be deleted too.
+Moreover, there is also structural containment: the \tsc{k}P is structurally contained in the \tsc{rel}P, so the light head can be deleted.
+Since I am discussing how it is possible for the relative pronoun to be deleted, I leave this point aside for now.
+}
 Although in this situation the relative pronoun can be deleted, this does not describe the situation in Old High German, the language I discuss in Chapter \ref{ch:deriving-unrestricted}. I leave it open for future research to find out whether a language like the one described in Figure \ref{fig:rel-lh-unres-mono} exists or not.
 
 In Old High German, the second possible light head that I introduced in Section \ref{sec:assumptions} generates a grammatical headless relative.
@@ -1404,7 +1429,7 @@ In Chapter \ref{ch:deriving-onlyinternal} and in Chapter \ref{ch:deriving-matchi
 In Chapter \ref{ch:deriving-unrestricted}, I explain that there is another reason. The crucial reason for Old High German allowing headless relatives being derived from light-headed relatives headed by the second possible light head is that Old High German has a syncretism between the relative pronoun and the second possible light head. Modern German and Polish do not have that syncretism, so the light-headed relative headed by this second possible light head cannot be the source of the headless relative.}
 
 I now return to the problem at hand, being that in the unrestricted type of language a relative pronoun can be deleted.
-In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. It contains the second possible light head and the relative pronoun, which both elements bear the same case.
+In Figure \ref{fig:nom-nom-unres}, I give an example in which this can happen. It contains the second possible light head and the relative pronoun, which both bear the same case.
 
 \begin{figure}[htbp]
   \center
@@ -1494,7 +1519,7 @@ I draw a dotted circle around the biggest possible element that is formally cont
 The relative pronoun (the \tsc{rel}P realized by \tit{αβ}) is formally contained in the light head (the XP realized by \tit{αβ}), so the relative pronoun is deleted.
 I illustrate this by marking the content of the dotted circle for the relative pronoun gray.
 
-The same holds the other way around: the light head (the XP realized by \tit{αβ}) is formally contained in the relative pronoun (the \tsc{rel}P realized by \tit{αβ}). Therefore, either the light head or the relative pronoun can be deleted. I delete the relative pronoun here, as I discuss how it is possible for the relative pronoun to be deleted even though it has a feature less than the light head.\footnote{A possible way to distinguish which of the two elements is deleted is by investigating extraposition possibilities. If the language under investigation can only extrapose CPs not not DPs (just as Modern German, cf. \citealt{vanriemsdijk2006}), it is expected that it is grammatical to extrapose the relative clause that contains the relative pronoun but not the relative clause that contains the light head.}
+The same holds the other way around: the light head (the XP realized by \tit{αβ}) is formally contained in the relative pronoun (the \tsc{rel}P realized by \tit{αβ}). Therefore, either the light head or the relative pronoun can be deleted. I delete the relative pronoun here, since I am discussing how it is possible for the relative pronoun to be deleted even though it contains one feature less than the light head.\footnote{A possible way to distinguish which of the two elements is deleted is by investigating extraposition possibilities. If the language under investigation can only extrapose CPs not not DPs (just as Modern German, cf. \citealt{vanriemsdijk2006}), it is expected that it is grammatical to extrapose the relative clause that contains the relative pronoun but not the relative clause that contains the light head.}
 
 Finally arriving at the situation in which the external case is more complex than the internal case, I show that the analysis of Figure \ref{fig:nom-nom-unres} cannot simply be extended to this situation.
 In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light head and the relative pronoun, in which the light head bears the more complex case.
@@ -1580,21 +1605,21 @@ In Figure \ref{fig:acc-nom-unres} I give an example of the second possible light
 
 The light head corresponds to \tit{αɣ}, illustrated by the circle around the XP and the \tit{α} below it and the circle around the \tsc{acc}P and the \tit{ɣ} below it. The relative pronoun corresponds to \tit{αβ}, illustrated by the circle around the \tsc{rel}P and the \tit{α} below it and the circle around the \tsc{nom}P and the \tit{β} below it.
 I draw a dotted circle around the biggest possible element that is formally contained in both the light head and the relative pronoun.
-The relative pronoun is no longer formally contained in the light head. Therefore, the relative pronoun cannot be deleted, which I illustrate by leaving the content of both dotted circles unfilled.
+The relative pronoun is no longer formally contained in the light head: \tit{αɣ} does not contain \tit{αβ}. Therefore, the relative pronoun cannot be deleted, which I illustrate by leaving the content of both dotted circles unfilled.
 As none of the items is deleted, it is expected that there is no grammatical headless relative possible.\footnote{
 I do not consider the option to combine structural and formal containment (i.e. the \tsc{acc}P structurally contains the \tsc{nom}P and \tit{α} formally contains \tit{α}) because I assume that the antecedent needs to contain the deleted element as a whole.
 }
 
 However, this is not what is observed in the unrestricted type of language.
 For this type of language I need to make an assumption explicit that concerns the larger syntactic structure of headless relatives. I assume that the relative clause is built first, which includes the relative pronoun that bears its case.
-At a later stage in the derivation, the light head is built. The last features of the light head that are merged are the case features. This means that there is a stage in the derivation in which the light head bears the nominative case (as in Figure \ref{fig:nom-nom-unres}). At that point, the relative pronoun is deleted. The light head remains as the surface element. Subsequently the feature \tsc{k}2 is merged to the light head to make it a \tsc{acc}P.\footnote{
+At a later stage in the derivation, the light head is built. The last features of the light head that are merged are the case features. Remember that in Nanosyntax, features are merged step by step, and spellout takes place after each instance of merge. This means that there is a stage in the derivation in which the light head bears the nominative case (as in Figure \ref{fig:nom-nom-unres}). At that point, the relative pronoun is deleted. The light head remains as the surface element. Subsequently the feature \tsc{k}2 is merged to the light head to make it a \tsc{acc}P.\footnote{
 Thanks to Pavel Caha for suggesting this possibility.
 }
 
 This type of derivation is not possible in the situation in which the internal case is more complex than the external case. In that situation, there is no stage in the derivation in which the case of the relative pronoun and the case of the light head match. The relative pronoun is built before the light head, and even at the end of the derivation the light head does not have the more complex case that the relative pronoun has.
 In Chapter \ref{ch:deriving-unrestricted} I discuss these derivations in more detail.
 
-Crucially, this deletion option is only successful for languages of the unrestricted type but not for languages of the internal-only or the matching type. This is derived from the fact that the unrestricted type of language has a light head available that is syncretic with the relative pronoun. This is not the case in the internal-only and the matching type of language. I elaborate on this in Chapter \ref{ch:deriving-unrestricted}.
+Crucially, this deletion option is only successful for languages of the unrestricted type but not for languages of the internal-only or the matching type. In Chapter \ref{ch:deriving-unrestricted} I show why this deletion option only works in the unrestricted type of language and not in the other two types, by giving an argument that concerns phonology.
 
 The comparisons between the first possible light head and the relative pronoun correctly derive the observed patterns for the situation in which cases match and for the situation in which internal case is more complex than the external case. An overview of the patterns is shown in Table \ref{tbl:overview-rel-light-ohg-lh1}.
 
@@ -1665,7 +1690,9 @@ The comparisons between the second possible light head and the relative pronoun 
 Focusing on the second possible light head, languages of the unrestricted type have a lexical entry that spells out phi and case features and a lexical entry that spells out the features X and \tsc{rel} and crucially not a lexical entry that provides a different spellout for only the feature \tsc{rel}.
 Headless relatives in this language are grammatical in all situations: when the internal and the external case match, when the internal case is more complex and when the external case is more complex.
 The second possible light head only derives the correct result for the first and the last situation but not for the second one.
-In the first and last situation, the relative pronoun is (at some point of the derivation) formally contained in the light head, the relative pronoun is deleted, and the light head is the surface element.
+In the first and last situation, the relative pronoun is (at some point of the derivation) formally contained in the light head, the relative pronoun is deleted, and the light head is the surface element.\footnote{
+This means that in the first situation the headless relative can be derived from a light-headed relative with the first possible light head or with the second possible light head. In Section \ref{sec:coming-back} I return to this matter.
+}
 In the second situation, the relative pronoun is at no point in the derivation formally contained in the light head, and none of the elements is deleted.
 
 
@@ -1720,8 +1747,8 @@ The second parameter distinguishes the internal-only type of language from the u
 This system excludes the external-only type. An external-only type would be a language type in which the relative pronoun can be deleted, but the light head cannot be deleted.
 In my proposal, an element can be deleted if it is structurally or formally contained in the other element.
 First consider only structural containment, leaving formal containment aside for now.
-Every language has two possible light heads. The first possible light head contains one feature more less than the relative pronoun, and the second possible light head contains one feature more than the relative pronoun.
-Since the first possible light head contains one feature less than the relative pronoun, it can never structurally contain the relative pronoun. Therefore, relative pronoun can never be deleted.
+Every language has two possible light heads. The first possible light head contains one feature less than the relative pronoun, and the second possible light head contains one feature more than the relative pronoun.
+Since the first possible light head contains one feature less than the relative pronoun, it can never structurally contain the relative pronoun. Therefore, the relative pronoun can never be deleted.
 
 Now consider also formal containment.
 Remember that an external-only type of language is a language in which the relative pronoun can be deleted, but the light head cannot be deleted.
@@ -1741,6 +1768,10 @@ In Figure \ref{fig:rel-lh-unres-mono}, I showed a situation in which the light h
       draw,circle,
       scale=0.85,
       fit to=tree]{};
+      \node[draw,circle,
+      dotted,very thick,
+      scale=0.9,
+      fit to=tree]{};
       }
           [\tsc{k}]
           [ϕP
@@ -1755,6 +1786,11 @@ In Figure \ref{fig:rel-lh-unres-mono}, I showed a situation in which the light h
       \node[label=below:\tit{P},
       draw,circle,
       scale=0.85,
+      fit to=tree]{};
+      \node[draw,circle,
+      dotted,very thick,
+      fill=DG,fill opacity=0.2,
+      scale=0.9,
       fit to=tree]{};
       }
           [\tsc{rel}]
@@ -1780,7 +1816,9 @@ However, consider Figure \ref{fig:rel-lh-unres-mono-rep} again.
 Although the light head cannot be deleted by formal containment, it can be deleted by structural containment. The light head is still formally contained in the relative pronoun.\footnote{This reasoning holds for monomorphemic light heads and relative pronouns.}
 
 In this dissertation I describe different language types in case competition in headless relatives. In my account, the different language types are a result of a comparison of the light head and the relative pronoun in the language.
-The larger syntactic context in which this takes place should be kept stable across languages. The operation that deletes the light head or the relative pronoun is the same for all language types. Therefore, the larger syntactic structure and the deletion operation do not play a central role in the account. At the end of Chapter \ref{ch:deriving-unrestricted}, the larger syntactic structure of headless relatives enters the discussion when I account for how an external case can win the case competition. There I show where in the larger syntax the (different) light heads are situated and that deletion takes place under c-command.
+The larger syntactic context in which this takes place should be kept stable across languages. The operation that deletes the light head or the relative pronoun is the same for all language types. Therefore, the larger syntactic structure and the deletion operation do not play a central role in the account.
+At the end of Chapter \ref{ch:deriving-unrestricted}, the larger syntactic structure of headless relatives enters the discussion when I account for how an external case can win the case competition. There I show where in the larger syntax the (different) light heads are situated and that deletion takes place under c-command.
+The deletion operation is optional. However, I show in Chapters \ref{ch:deriving-onlyinternal}, \ref{ch:deriving-matching} and \ref{ch:deriving-unrestricted} that one of the possible light heads cannot be the head of a relative clause for independent reasons, so the source structure is ruled out for independent reasons.
 
 To conclude, in this chapter I introduced the assumptions that headless relatives are derived from light-headed relatives and that relative pronouns contain at least one more feature than light heads. A headless relative is grammatical when either the light head or the relative pronoun is structurally or formally contained in the other element. This set of assumptions derives that only the most complex case can surface and that there is no language of the external-only type.
 

@@ -495,7 +495,7 @@ These different suffixes can be observed in several contexts besides relative pr
 
 For some forms, the table gives two different forms, the first one being nominal inflection and the second one being pronominal inflection \citep{braune2018}.
 The pronominal endings are the same as can be observed in the Table \ref{tbl:rel-dem-ohg}.
-Note here that the situation in Old High German is slightly different from the one in Modern German, in which only the final consonant expresses gender, number and case features.
+Note here that the situation in Old High German is slightly different from the one in Modern German, in which adjectives only combine with the final consonant of relative pronouns and demonstratives (compare with Table \ref{tbl:mg-paradigm-wh-rels} and Table \ref{tbl:mg-paradigm-dem} in Chapter \ref{ch:deriving-onlyinternal}).
 
 Besides gender, number and case features, I assume that the suffix also contains pronominal features. I do not only do so because the suffix is called pronominal inflection (\tit{Pronominalflexion}) in the literature \pgcitep{braune2018}{338}, but also because it appears in other pronominal forms too, such as possessives \pgcitep{braune2018}{337-338}, demonstratives with the \tit{dës}-stem \pgcitep{braune2018}{342} and interrogatives \pgcitep{braune2018}{345}.
 
@@ -543,7 +543,10 @@ The \tit{ër} is the nominative masculine singular, so it spells out the feature
 
 I continue with the morpheme \tit{d}. This morpheme corresponds to what I called the \tsc{rel}-feature in Chapter \ref{ch:the-basic-idea} and in the introduction to this chapter. I argue that this morpheme actually spells out the feature \tsc{rel}, the feature \tsc{wh} and a number feature.
 
-Relative and demonstrative pronouns are syncretic in Old High German \pgcitep{braune2018}{338}. They contain the morpheme \tit{d}, which is responsible for establishing a definite reference. The feature \tsc{rel} is present to establish a relation.
+Relative and demonstrative pronouns are syncretic in Old High German \pgcitep{braune2018}{338}.\footnote{
+Modern German also has relative pronouns and demonstratives that are syncretic, but these are not the relative pronouns that appear in headless relatives. I return to this matter in Section \ref{sec:ohg-lh}.
+}
+They contain the morpheme \tit{d}, which is responsible for establishing a definite reference. The feature \tsc{rel} is present to establish a relation.
 I assume that \tit{d} also spells out the feature \tsc{ind}. This is a theory-internal assumption that is required by the spellout algorithm. The feature \tsc{ind} is copied from the first workspace when I build a complex specifier.
 
 In sum, the morpheme \tit{d} corresponds to the features \tsc{rel}, \tsc{wh} and \tsc{ind} as shown in \ref{ex:ohg-entry-d}.
@@ -2648,7 +2651,7 @@ When c-command is a requirement for deletion, then the relative pronoun should c
            ]
            [\tsc{nom}P,
            tikz={
-           \node[label=below:{\tit{en}},
+           \node[label=below:{\tit{er}},
            draw,circle,
            scale=0.8,
            fit to=tree]{};
@@ -2703,7 +2706,9 @@ There is no successful deletion possible when the internal case is more complex,
 The structure in \ref{ex:ohg-syntax-elh} represent the situation in which the source structure contains an extra light head. In these cases, the extra light head can be deleted via structural containment.
 This applies when the internal and external case match, as in \ref{ex:ohg-syntax-elh}, but also when the internal case is more complex.
 In that case, the relative pronoun that bears the more complex case still structurally contains the extra light head that bears the less complex case.
-There is no successful deletion possible when the external case is more complex, because in that is situation the relative pronoun does not structurally contain the extra light head at any point in the derivation.
+There is no successful deletion possible when the external case is more complex, because in that is situation the relative pronoun does not structurally contain the extra light head at any point in the derivation.\footnote{
+The two different deletions possibly make different predictions with respect to extraposition. In \ref{ex:ohg-syntax-elh} the surface is element is part of the relative clause, but in \ref{ex:ohg-syntax-ext=int-rep} it is not. If Old High German is a language that allows extraposition of CPs but not extraposition of DPs, the prediction is that relative clauses with a deleted relative pronoun can be extraposed, leaving the demonstrative behind. Relative clauses with a deleted extra light head can only be extraposed including the relative pronoun. I did not check this prediction for Old High German.
+}
 
 I am not the only one to place a demonstrative and an extra light head in such a way in a structure that they either c-command or are c-commanded by the relative pronoun. \citet{cinqueforthcoming} suggests the same, but then more generally for relative clauses. He suggests every type of relative clause in every language is underlyingly double-headed. Support for this claim comes from languages that show this morphologically. An example from Kombai is given in \ref{ex:kombai}. The head of the relative clause is \tit{doü} `sago', and it appears inside the relative clause and outside of it, which make them respectively the internal and the external head.
 
@@ -2789,7 +2794,7 @@ Finally, notice that the larger syntactic structures I proposed for Old High Ger
 
 Old High German is an example of an unrestricted type of language. This means that headless relatives are grammatical in the language when the internal and external case match, when the internal case is more complex and when the external case is more complex.
 
-I derive this from the internal syntax of two light heads and the internal synax of the relative pronoun in Old High German. The features of the extra light head (which is the first possible light head) are spelled out by a single lexical entry, which spells out phi and case features. The features of the relative pronoun are spelled out by the same lexical entry plus one which amongst other spells out a relative feature. The internal syntax of the extra light head and the relative pronoun in Old High German are shown in Figure \ref{fig:rel-elh-ohg-sum}.
+I derive this from the internal syntax of two light heads and the internal syntax of the relative pronoun in Old High German. The features of the extra light head (which is the first possible light head) are spelled out by a single lexical entry, which spells out phi and case features. The features of the relative pronoun are spelled out by the same lexical entry plus one which amongst other spells out a relative feature. The internal syntax of the extra light head and the relative pronoun in Old High German are shown in Figure \ref{fig:rel-elh-ohg-sum}.
 
 \begin{figure}[htbp]
   \center
@@ -2913,9 +2918,11 @@ The features of the demonstrative (which is the second possible light head) are 
   \label{fig:rel-lh-ohg-sum}
 \end{figure}
 
-A crucial characteristic of unrestricted languages such as Old High German is that there is a syncretism between the demonstrative and the relative pronoun. Therefore, the relative pronoun is formally contained in the light head, and the relative pronoun can be deleted. This can lead to a more complex external case surfacing. The other light head is crucial for allowing for a more internal case to surface, since for that it is required that the extra light head is structurally contained in the relative pronoun.
+A crucial characteristic of unrestricted languages such as Old High German is that there is a syncretism between the demonstrative and the relative pronoun. Therefore, the relative pronoun is formally contained in the light head, and the relative pronoun can be deleted. This can lead to a more complex external case surfacing.
 
-In the end, the crucial difference between Old High German and Modern German that leads them to be of different language types is that Old High German has a syncretism between the relative pronoun and the demonstrative and Modern German has not. Actually, as I noted before (in Chapter \ref{ch:deriving-onlyinternal} and in footnote \ref{ftn:mg-de-we} of this chapter), Modern German does have a syncretism between a relative pronoun and its demonstrative. However, the syncretic relative pronoun is not the relative pronoun that is used in headless relatives. Old High German does not have these two separate relative pronouns, but only the one that is syncretic with the demonstrative. Still, based on the syncretism between one of its relative pronouns and the demonstrative, I would expect Modern German to allow for the formal deletion just as Old High German does. This is not what is observed in the language, however.
+The extra light head is crucial for allowing for a more internal case to surface, since for that it is required that the extra light head is structurally contained in the relative pronoun. Just as in Modern German and in Polish, this extra light head does not surface as head of a relative clause. Just as in Polish, the extra light head is not attested independently in the language.
+
+In the end, the crucial difference between Old High German and Modern German that leads them to be of different language types is that Old High German has a syncretism between the relative pronoun and the demonstrative and Modern German has not. Actually, as I noted before (in Chapter \ref{ch:deriving-onlyinternal} and in this chapter), Modern German does have a syncretism between a relative pronoun and its demonstrative. However, the syncretic relative pronoun is not the relative pronoun that is used in headless relatives. Old High German does not have these two separate relative pronouns, but only the one that is syncretic with the demonstrative. Still, based on the syncretism between one of its relative pronouns and the demonstrative, I would expect Modern German to allow for the formal deletion just as Old High German does. This is not what is observed in the language, however.
 
 Instead, somewhere along the way when Old High German changed to Modern German, the language changed from being of the unrestricted type to being of the internal-only type. This change coincides with the introduction of the \tsc{wh}-pronoun being used as a relative pronoun (see Weiß 20XX for how \tsc{wh}-pronouns became relative pronouns). In Middle High German, there are no longer examples in which the external case wins and the relative pronouns in headless relatives start with a \tit{w} \citep{behaghel1923}. The presence of the two different relative pronouns in Modern German seems to lead to \tit{d}-pronouns not taking part in the forming headless relatives anymore. I do not have an explanation for how this follows.
 

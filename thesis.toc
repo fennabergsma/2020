@@ -80,66 +80,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}The three language types}{116}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{116}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{117}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}The matching type}{119}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.2}The matching type}{120}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{125}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{126}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Summary}{134}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Summary}{135}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{138}{chapter.7}%
+\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{139}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{140}{section.7.1}%
+\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{141}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Aside: Notes on Modern German relative pronouns}{146}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Aside: Notes on Modern German relative pronouns}{148}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Modern German weak pronouns}{147}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.1}Modern German weak pronouns}{148}{subsection.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Deixis in relative pronouns}{148}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}Deixis in relative pronouns}{149}{subsection.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.3}Alternative segmatation of \textit {wer}}{149}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.3}Alternative segmatation of \textit {wer}}{150}{subsection.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Combining morphemes in Nanosyntax}{150}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Combining morphemes in Nanosyntax}{151}{section.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}The Modern German (extra) light head}{161}{section.7.4}%
+\contentsline {section}{\numberline {7.4}The Modern German (extra) light head}{163}{section.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Comparing light heads and relative pronouns}{170}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Comparing light heads and relative pronouns}{172}{section.7.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Summary and discussion}{176}{section.7.6}%
+\contentsline {section}{\numberline {7.6}Summary and discussion}{178}{section.7.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{179}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{181}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{182}{section.8.1}%
+\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{184}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}The Polish extra light head}{198}{section.8.2}%
+\contentsline {section}{\numberline {8.2}The Polish extra light head}{200}{section.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Comparing light heads and relative pronouns}{204}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Comparing light heads and relative pronouns}{206}{section.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Summary and discussion}{209}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Summary and discussion}{211}{section.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{212}{chapter.9}%
+\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{214}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{217}{section.9.1}%
+\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{219}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}The Old High German light heads}{226}{section.9.2}%
+\contentsline {section}{\numberline {9.2}The Old High German light heads}{228}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}The extra light head}{226}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}The extra light head}{228}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}The demonstrative}{231}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}The demonstrative}{233}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{238}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{240}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Coming back to the light heads}{251}{section.9.4}%
+\contentsline {section}{\numberline {9.4}Coming back to the light heads}{253}{section.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{251}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{253}{subsection.9.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{254}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{256}{subsection.9.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.5}Summary and discussion}{258}{section.9.5}%
+\contentsline {section}{\numberline {9.5}Summary and discussion}{261}{section.9.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {10}Conclusion}{261}{chapter.10}%
+\contentsline {chapter}{\chapternumberline {10}Conclusion}{264}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Primary texts}{264}{table.10.1}%
+\contentsline {chapter}{Primary texts}{269}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{265}{section*.150}%
+\contentsline {chapter}{Bibliography}{270}{section*.151}%
