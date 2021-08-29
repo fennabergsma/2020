@@ -311,14 +311,15 @@ To determine their exact feature content, I first focus on \tit{mu}. Then, I ext
                       & \tsc{m}.\tsc{dat}   & \tsc{n}.\tsc{dat}  \\
     \cmidrule{2-3}
     \tit{je}-pronoun  & je-mu    & je-mu   \\
-    \tit{ni}-pronoun  & nie-mu   & nie-mu  \\
+    \tit{n}-pronoun   & nie-mu   & nie-mu  \\
     \tsc{dem}         & te-mu    & te-mu   \\
     \bottomrule
   \end{tabular}
   \label{tbl:pol-datives}
 \end{table}
 
-The table shows three forms in which there is a syncretism between the neuter and the masculine in the dative case. The complete pronouns are syncretic. I set up a system that can derive the syncretism between the two genders. Doing this allows me to establish which features the morpheme \tit{mu} spells out.
+The table shows three forms: the \tit{je}-pronoun is the long version of the third person singular pronoun (not the clitic), the \tit{n}-pronoun is the third person singular pronoun used after prepositions \pgcitep{swan2002}{156-157}, and the \tsc{dem} is the demonstrative.
+In all three forms there is a syncretism between the neuter and the masculine in the dative case. They are the  The complete pronouns are syncretic. I set up a system that can derive the syncretism between the two genders. Doing this allows me to establish which features the morpheme \tit{mu} spells out.
 
 I discussed in Chapter \ref{ch:decomposition} that syncretisms can be derived in Nanosyntax via the Superset Principle. The lexicon contains a lexical entry that is specified for the form that corresponds to most features. To illustrate this, I repeat the lexical entry for the Dutch \tit{jullie} `you' in \ref{ex:dutch-jullie-lexicon-rep}.
 
@@ -340,7 +341,8 @@ I discussed in Chapter \ref{ch:decomposition} that syncretisms can be derived in
 \end{forest}
 \label{ex:dutch-jullie-lexicon-rep}
 
-\tit{Jullie} is syncretic between nominative, accusative and dative. It is specified for dative in the lexicon, it is the most complex case of the three. The nominative, the accusative and the dative second person plural in Dutch are spelled out as \tit{jullie}, because the \tsc{dat}P, the \tsc{acc}P and the \tsc{nom}P are all contained in the lexical tree in \ref{ex:dutch-jullie-lexicon-rep} (Superset Principle), and there is no more specific lexical entry available in Dutch (Elsewhere Condition). Importantly, the potentially unused features (so the \tsc{k}3 or \tsc{k}3 and the \tsc{k}2) are at the top, so that the constituent that needs to be spelled out is still contained in the lexical tree.
+\tit{Jullie} is syncretic between nominative, accusative and dative. It is specified for dative in the lexicon, it is the most complex case of the three. The nominative, the accusative and the dative second person plural in Dutch are spelled out as \tit{jullie}, because the \tsc{dat}P, the \tsc{acc}P and the \tsc{nom}P are all contained in the lexical tree in \ref{ex:dutch-jullie-lexicon-rep} (Superset Principle), and there is no more specific lexical entry available in Dutch (Elsewhere Condition).
+Importantly, the potentially unused features (so the \tsc{k}3 or \tsc{k}3 and the \tsc{k}2) are the top-most features of the lexical tree in \ref{ex:dutch-jullie-lexicon-rep}, so that the constituent that needs to be spelled out is still contained in the lexical tree.
 
 In what follows, I show how I can derive the syncretisms for the forms in Table \ref{tbl:pol-datives}. I propose that \tit{jemu}, \tit{niemu} and \tit{temu} spell out the syntactic structure in \ref{ex:pol-mu-dat-fseq}.
 
@@ -437,7 +439,8 @@ In \ref{ex:pol-spellout-nie/je/te-cl}, I give the syntactic structure of a neute
 
 Again, the syntactic structure forms a constituent within the lexical tree in \ref{ex:pol-entry-nie/je/te}, and the structure can be spelled out as \tit{je/nie/te}.
 
-This means that the lexical tree for the suffix \tit{mu} should contain all features in \ref{ex:pol-mu-dat-fseq} that are not spelled out by \tit{je/nie/te} so far. These are the feature \# and all case features up to the dative.
+This means that the lexical tree for the suffix \tit{mu} should contain all features in the functional sequence in \ref{ex:pol-mu-dat-fseq} that are not spelled out by \tit{je/nie/te} so far. These are the number feature and all case features up to the dative.
+
 I give the lexical entry for \tit{mu} in \ref{ex:pol-entry-mu}.
 
 \ex. \label{ex:pol-entry-mu}
@@ -457,7 +460,8 @@ I give the lexical entry for \tit{mu} in \ref{ex:pol-entry-mu}.
   {\draw (.east) node[right]{⇔ \tit{mu}}; }
 \end{forest}
 
-Notice here that \tit{mu} has a unary bottom, just as the morpheme \tit{e:l} in Khanty (see Chapter \ref{ch:decomposition} and Chapter \ref{ch:the-basic-idea}). Therefore, it can be inserted as the result of movement. It also means that the inserted phonology form follows the already present phonology and is spelled out as a suffix. This is how the correct order of \tit{je/nie/te} and \tit{mu} comes about. I illustrate the movement operation and how it is a step of the Spellout Algorithm later on in this section.
+Notice here that \tit{mu} has a unary bottom, meaning that it has a single feature at the bottom of its structure (just as the morpheme \tit{e:l} in Khanty, see Chapter \ref{ch:decomposition} and Chapter \ref{ch:the-basic-idea}).
+Therefore, it is inserted as the result of movement. It also means that the inserted phonological form follows the already present phonology and is spelled out as a suffix. This is how the correct order of \tit{je/nie/te} and \tit{mu} comes about. Later on in this section, I illustrate the movement operation and how it is a step of the Spellout Algorithm.
 
 The morpheme \tit{go} is identical to the morpheme \tit{mu}, except for that it expresses accusative case instead of dative case. Therefore, the morpheme \tit{go} differs from \tit{mu} in that it lacks the feature \tsc{k}3 in its lexical entry, as shown in \ref{ex:pol-entry-go}.
 
@@ -481,7 +485,7 @@ This leaves the two morphemes \tit{k} and \tit{o}. First I discuss the \tit{o}.
 This morpheme corresponds to what I called the phi feature morpheme in Chapter \ref{ch:the-basic-idea} and the introduction to this chapter.
 I show that this morpheme corresponds to pronominal features and gender features.
 
-First I show that the \tit{o} does not only appear in animate relative pronouns, but also in the inanimate relative pronoun and even in other pronouns. I go through this rather long reasoning to show that \tit{o} is present in environments, even though it does not surface.
+First I show that the \tit{o} does not only appear in animate relative pronouns, but also in the inanimate relative pronoun and even in other pronouns. I go through this rather long reasoning to show that \tit{o} is present in pronominal environments, even though it does not surface as an \tit{o}.
 Consider the relative pronouns in Table \ref{tbl:pol-rps}.
 
 \begin{table}[htbp]
@@ -528,10 +532,19 @@ The \tit{k} in \ref{ex:pol-gdzie} gets voiced into \tit{g} because it is followe
  where\\\label{ex:pol-gdzie}
  \flushfill{Polish, \pgcitealt{swan2002}{180,183,184}}
 
-Moreover, according to \pgcitet{swan2002}{23} \tit{cz} is not a primary consonant in Polish but a derived one, and the consonants \tit{cz} and \tit{c} are derived from \tit{k}.
+Moreover, according to \pgcitet{swan2002}{23} \tit{cz} is not a primary consonant in Polish but a derived one, and the consonants \tit{cz} and \tit{c} are derived from \tit{k}. In other words, the \tit{k} goes to \tit{c} in some morphophonological environments, and the \tit{k} goes to \tit{cz} in other morphophonological environments.
 
-I propose that the \tit{k} is underlyingly present in the inanimate relative pronouns. They appear as a consequence of being combined with an \tit{i}.
-I show the proposed decomposition in Table \ref{tbl:pol-rp-underl}.
+I propose that one of the environments in which \tit{k} goes to \tit{c} and \tit{cz} is the inanimate relative pronouns.
+I suggest that the morphophonological environment that turns \tit{k} into \tit{c} and \tit{cz} is the presence of an \tit{i} in the inanimate relative pronoun paradigm.\footnote{
+Phonologically, the \tit{k} corresponds to /k/, the \tit{c} corresponds to /ts/ and the \tit{cz} corresponds to the /tʂ/.
+} The presence of \tit{i} also causes other phonological changes to take place.
+In the animate relative pronoun these phonological changes do not take place, since there the morpheme \tit{i} is not present.\footnote{
+As first sight, there seems to be a contradiction here: the inanimate is featurally speaking less complex than the animate  \citep[cf.][]{harley2002}, but morphologically the inanimate is more complex than the animate: it contains the additional morpheme \tit{i}. I return to this point in footnote \ref{ftn:inam-pointer} of this chapter to show how this apparent contradiction can be resolved.
+}
+
+In Table \ref{tbl:pol-rp-underl}, I show the animate relative pronouns on the left and what I propose to be the underlying forms of the inanimate relative pronouns on the right.\footnote{
+I do not decompose the animate nominative relative pronoun (unlike \citealt{wiland2019}, who identifies the \tit{t} as the demonstrative stem). My reason for not decomposing \tit{kto} is that it does not contain a suffix that can be observed elsewhere in the language (unlike the other cases which can be found in for instance adjectival inflection, see \citealt{swan2002}{126}). Therefore, I assume \tit{kto} to be a fixed expression. I do not give a detailed analysis of the pronoun, as it is not a form I discuss in my derivations.
+}
 
 \begin{table}[htbp]
   \center
@@ -550,10 +563,8 @@ I show the proposed decomposition in Table \ref{tbl:pol-rp-underl}.
   \label{tbl:pol-rp-underl}
 \end{table}
 
-Under this analysis, Polish only has the morphemes \tit{k}, \tit{o} and \tit{i} that can be observed in the animate plus an \tit{i} that is present throughout the whole paradigm in the inanimate.\footnote{
-As first sight, there seems to be a contradiction here: the inanimate is featurally speaking less complex than the animate  \citep[cf.][]{harley2002}, but morphologically the inanimate is more complex than the animate: it contains the additional morpheme \tit{i}. I return to this point in footnote \ref{ftn:inam-pointer} of this chapter to show how this apparent contradiction can be resolved.
-}
-I put the underlying forms and the surface form side by side in Table \ref{tbl:pol-rps-underl-real}.
+Under this analysis, Polish only has the morphemes \tit{k}, \tit{o} and \tit{i} that can be observed in the animate plus an \tit{i} that is present throughout the whole paradigm in the inanimate.
+I put the underlying forms and the surface form of the inanminate relative pronoun side by side in Table \ref{tbl:pol-rps-underl-real}.
 
 \begin{table}[htbp]
   \center
@@ -694,7 +705,7 @@ It is crucial for the analysis that the \tit{i} in \tit{co} has a single effect,
 Maybe it is possible to analyze the \tit{o} in the nominative and accusative as an \tit{o} without a slot for a vowel and the \tit{o} in the genitive and dative as an \tit{o} plus a slot for a vowel.
 }
 
-The conclusion I draw from this rather long reasoning is that the morpheme \tit{o} in \tit{kogo} and \tit{komu} is not specific to animate relative pronouns, but it also appears elsewhere, for instance in inanimate relative pronouns, demonstratives and in the \tit{ni}- and \tit{je}-pronouns, as shown in Table \ref{tbl:pol-o-everywhere}.\footnote{
+The conclusion I draw from this rather long reasoning is that the morpheme \tit{o} in \tit{kogo} and \tit{komu} is not specific to animate relative pronouns, but it also appears elsewhere, for instance in inanimate relative pronouns, demonstratives and in the \tit{n}- and \tit{je}-pronouns, as shown in Table \ref{tbl:pol-o-everywhere}.\footnote{
 In this dissertation I do not discuss the exact feature content that corresponds to \tit{i}. I assume it spells out features that have to do with being strong pronouns. See footnote \ref{ftn:inam-pointer} of this chapter for why the morpheme is not inserted in animate relative pronouns.
 }
 
@@ -706,8 +717,8 @@ In this dissertation I do not discuss the exact feature content that corresponds
                       & underlying  & surface  \\
     \cmidrule{2-3}
     \tsc{dem}         & t-i-o-mu    &  t-e-mu   \\
-    \tit{nie}-pronoun & ni(-i)-o-mu &  n-i-e-mu \\
-    \tit{je}-pronoun  & j(-i)-o-mu  &  j-e-mu   \\
+    \tit{nie}-pronoun & n-i-o-mu    &  n-i-e-mu \\
+    \tit{je}-pronoun  & i-o-mu      &  j-e-mu   \\
     \bottomrule
   \end{tabular}
   \label{tbl:pol-o-everywhere}
@@ -1576,7 +1587,7 @@ In Figure \ref{fig:polish-int=ext}, I give the syntactic structure of the extra 
 The extra light head consists of two morphemes: \tit{o} and \tit{go}.
 The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{go}.
 As usual, I circle the part of the structure that corresponds to a particular lexical entry, or I reduce the structure to a triangle, and I place the corresponding phonology below it.
-I draw a dashed circle around the biggest possible element that is structurally a constituent in both the extra light head and the relative pronoun.
+I draw a dashed circle around the \tsc{acc}P, as it is the biggest possible element that is structurally a constituent in both the extra light head and the relative pronoun.
 
 The extra light head consists of two constituents: the \tsc{an}P and the (lower) \tsc{acc}P. Together they form the (higher) \tsc{acc}P.
 This (higher) \tsc{acc}P is structurally contained in the relative pronoun. Therefore, the extra light head can be deleted. I signal the deletion of the extra light head by marking the content of its circle gray.
@@ -1699,8 +1710,7 @@ In Figure \ref{fig:polish-int-wins}, I give the syntactic structure of the extra
 
 The light head consists of two morphemes: \tit{o} and \tit{go}.
 The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{mu}.
-Again, I circle the part of the structure that corresponds to a particular lexical entry, or I reduce the structure to a triangle, and I place the corresponding phonology below it.
-I draw a dashed circle around the biggest possible element that is structurally a constituent in both the extra light head and the relative pronoun.
+I draw a dashed circle around the \tsc{an}P and the \tsc{acc}P, as they are the biggest possible elements that are structurally constituents in both the extra light head and the relative pronoun.
 
 In this case, the light head is not a constituent that is structurally contained in the relative pronoun.
 The extra light head consists of two constituents: the \tsc{an}P and the (lower) \tsc{acc}P. Together they form the (higher) \tsc{acc}P.
@@ -1836,8 +1846,7 @@ In Figure \ref{fig:polish-ext-wins}, I give the syntactic structure of the extra
 
 The light head consists of two morphemes: \tit{o} and \tit{mu}.
 The relative pronoun consists of three morphemes: \tit{k}, \tit{o} and \tit{go}.
-Again, I circle the part of the structure that corresponds to a particular lexical entry, or I reduce the structure to a triangle, and I place the corresponding phonology below it.
-I draw a dashed circle around the biggest possible element that is structurally a constituent in both the extra light head and the relative pronoun.
+I draw a dashed circle around the \tsc{an}P and the \tsc{acc}P, as they are the biggest possible elements that are structurally constituents in both the extra light head and the relative pronoun.
 
 In this case, the light head is not a constituent that is structurally contained in the relative pronoun.
 The light head consists of two morphemes: \tit{o} and \tit{mu}.
@@ -1919,7 +1928,7 @@ I derive this from the internal syntax of light heads and relative pronouns in P
         \bottomrule
     \end{tabular}
   \end{adjustbox}
-   \caption {\tsc{lh} and \tsc{rp} in Polish (repeated)}
+   \caption {\tsc{elh} and \tsc{rp} in Polish (repeated)}
   \label{fig:rel-lh-pol-sum}
 \end{figure}
 
