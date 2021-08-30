@@ -2,13 +2,13 @@
 \defcounter {refsection}{0}\relax 
 \acswitchoff 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Contents}{i}{section*.1}%
+\contentsline {chapter}{Contents}{ii}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{iv}{section*.2}%
+\contentsline {chapter}{List of tables}{v}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{vii}{section*.3}%
+\contentsline {chapter}{List of figures}{viii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of abbreviations}{x}{table.0.1}%
+\contentsline {chapter}{List of abbreviations}{xi}{table.0.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -142,4 +142,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Primary texts}{271}{table.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{272}{section*.152}%
+\contentsline {chapter}{Bibliography}{272}{section*.153}%
