@@ -1,9 +1,19 @@
-\documentclass[hidelinks,a4paper,oneside]{memoir}
+\documentclass[hidelinks,a4paper,twoside,openright,11pt]{memoir}
 
-% \includeonly{deriving-matching}
+% \includeonly{introduction}
 %
 % \setulmarginsandblock{3.3cm}{4cm}{*}
 % \setlrmarginsandblock{3cm}{3cm}{*}
+
+\setlrmarginsandblock{3.5cm}{3.5cm}{*}
+\setulmarginsandblock{3.5cm}{*}{1}
+\checkandfixthelayout
+
+%%% set up the recto page layout
+% \checkandfixthelayout% or perhaps \checkandfixthelayout[lines]
+% \setlength{\evensidemargin}{\oddsidemargin}% after \checkandfix...
+%
+
 
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
@@ -27,7 +37,7 @@
 {\Huge
 Case competition in headless relatives}\\
 
-\vspace{6em}
+\vspace{5em}
 
 Inauguraldissertation\\
 zur Erlangung des Grades eines Doktors der Philosophie\\
@@ -35,14 +45,14 @@ im Fachbereich Neuere Philologien\\
 der Johann Wolfgang Goethe-Universität\\
 zu Frankfurt am Main\\
 
-\vspace{8em}
+\vspace{7em}
 
 vorgelegt von\\
 Fenna Bergsma\\
 aus\\
 Boarnsterhim, Niederlande\\
 
-\vspace{8em}
+\vspace{7em}
 
 2021
 
