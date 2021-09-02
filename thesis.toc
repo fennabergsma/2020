@@ -100,7 +100,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2.3}Alternative segmatation of \textit {wer}}{151}{subsection.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Combining morphemes in Nanosyntax}{152}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Combining morphemes in Nanosyntax}{153}{section.7.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.4}The Modern German (extra) light head}{164}{section.7.4}%
 \defcounter {refsection}{0}\relax 
@@ -120,7 +120,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{216}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{221}{section.9.1}%
+\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{222}{section.9.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}The Old High German light heads}{230}{section.9.2}%
 \defcounter {refsection}{0}\relax 
