@@ -1,0 +1,2053 @@
+\documentclass[xcolor=dvipsnames,10pt]{beamer}
+
+\usepackage{../fenna-files-presentation/packages}
+\usepackage{../fenna-files-presentation/commands}
+\addbibresource{../fenna-files-presentation/references.bib}
+
+\usepackage{multicol}
+
+\geometry{paperwidth=140mm,paperheight=105mm}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+\usetheme{Berlin}      % or try Darmstadt, Madrid, Warsaw, ...
+\definecolor{goethe}{rgb}{0,0.37,0.66}
+\usecolortheme[named=goethe]{structure}
+	% \usefonttheme{serif}  % or try serif, structurebold, ...
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\resetcounteronoverlays{exx}
+}
+
+\renewcommand{\eachwordone}{\sffamily}
+\renewcommand{\eachwordtwo}{\sffamily}
+\renewcommand{\eachwordthree}{\sffamily}
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}{}
+
+%gets rid of navigation symbols
+% \setbeamertemplate{navigation symbols}{}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+\usebeamerfont{footline}%
+\usebeamercolor[fg]{footline}%
+\hspace{1em}%
+\insertframenumber/\inserttotalframenumber
+}
+
+
+\title{Case competition in headless relatives}
+\author{Fenna Bergsma}
+\date{\today}
+\institute{Goethe-Universität Frankfurt}
+
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+
+\centering{
+\includegraphics[width=0.4\textwidth]{../fenna-files-presentation/dfg-logo}
+\hspace{2cm}
+\includegraphics[width=0.3\textwidth]{../fenna-files-presentation/goethe-logo}
+}
+\end{frame}
+
+
+\begin{frame}{Topic}
+
+\pause
+
+\exg. Ich {lade ein}, \textbf<3->{wem} \textbf<3->{auch} \textbf<3->{Maria} \textbf<3->{vertraut}.\\
+ 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor<6->{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor<8->{red}{\tsc{dat}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor<7->{red}{\scsub{[dat]}}\\
+ `I invite whoever Maria also trusts.'
+
+\only<4>{
+\exg. Ich lade die Person ein, \textbf<3->{dem} \textbf<3->{Maria} \textbf<3->{vertraut}.\\
+ 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}{\scsub{[acc]}} the person {} \tsc{rel}.\tsc{an}.{\tsc{dat}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}{\scsub{[dat]}}\\
+ `I invite the person that Maria trusts.'
+ }
+
+\onslide<9>
+\exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
+ 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+ `I invite whoever Maria also trusts.'
+
+\end{frame}
+
+
+\begin{frame}{Two aspects}
+
+\pause
+
+\begin{itemize}
+  \item the winner of the competition  \onslide<4->{→ is stable across languages}\pause
+  \item whether the winner gets approved \onslide<4->{→ differs across languages}
+\end{itemize}
+
+\pause
+\pause
+
+\vspace{1em}
+
+\begin{enumerate}
+  \item show the generalizations\pause
+  \item derive the generalizations
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}{The winner of the competition --- German}
+
+\onslide<2->{
+\exg. Ich {lade ein}, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`I invite whoever Maria also trusts.'
+}
+
+\only<3-4>{
+\exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`I invite whoever Maria also trusts.'
+}
+
+\onslide<5->{
+\exg. Uns besucht, \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`Who visits us, Maria likes.'
+}
+
+\only<6-7>{
+\exg. *Uns besucht, wer \tbf{Maria} \tbf{mag}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`Who visits us, Maria likes.'
+}
+
+\onslide<8-10>{
+\exg. Uns besucht, \tbf{wem} \tbf{Maria} \tbf{vertraut}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`Who visits us, Maria trusts.'
+}
+
+\only<9>{
+\exg. *Uns besucht, wer \tbf{Maria} \tbf{vertraut}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`Who visits us, Maria trusts.'
+}
+
+\onslide<7->{\tsc{nom} <} \onslide<4->{\tsc{acc} < \tsc{dat}}
+
+\end{frame}
+
+
+
+\begin{frame}{The winner of the competition --- other languages}
+
+\pause
+
+\tsc{nom} < \tsc{acc} < \tsc{dat}
+
+\pause
+
+\exg. \tbf{hòn} \tbf{hoi} \tbf{theoì} \tbf{philoũsin} apothnḗͅskei néos\\
+\tsc{rp}.\tsc{sg}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} the god.\tsc{pl} love.3\tsc{pl}\textcolor{LimeGreen}{\scsub{[acc]}} die.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} young\\
+`He, whom the gods love, dies young.' \flushfill{Classical Greek, Menander, The Double Deceiver 125}\label{ex:ag-nom-acc}
+
+\pause
+
+\exg. \tbf{themo} \tbf{min} \tbf{uuirdit} \tbf{forlazan}, min minnot\\
+\tsc{rp}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} less become.\tsc{pres}.3\tsc{sg} read.\tsc{inf}\textcolor{red}{\scsub{[dat]}} less love.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+`whom less is read, loves less' \flushfill{Old High German, Tatian 138:13}\label{ex:ohg-nom-dat}
+
+\pause
+
+\exg. ei galaubjaiþ þamm \tbf{-ei} \tbf{insandida} \tbf{jains}\\
+that believe.\tsc{opt}.\tsc{pres}.2\tsc{pl}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} -\tsc{comp} {send}.\tsc{pret}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}\\
+`that you believe in him whom he sent' \flushfill{Gothic, John 6:29}\label{ex:gothic-dat-acc}
+
+\end{frame}
+
+
+
+\begin{frame}{Whether the winner gets approved --- German}
+
+\onslide<2->{
+\exg. Ich {lade ein}, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`I invite whoever Maria also trusts.'
+}
+
+\only<3>{
+\exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`I invite whoever Maria also trusts.'
+}
+
+\onslide<4->{
+\exg. *Ich vertraue, wem \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`I trust whoever Maria also likes.'
+}
+
+\onslide<5->{
+\exg. *Ich vertraue, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`I trust whoever Maria also likes.'
+}
+
+\only<6>{
+internal vs. external case
+}
+
+\onslide<7->{
+the internal case gets approved when it wins the case competition}\onslide<8->{,
+the external case does not
+}
+
+\end{frame}
+
+
+\begin{frame}{Whether the winner gets approved --- German schema}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-only-int}
+  \end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{Whether the winner gets approved --- Old High German}
+
+\pause
+
+  \exg. \tbf{themo} \tbf{min} \tbf{uuirdit} \tbf{forlazan}, min minnot\\
+  \tsc{rp}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} less become.\tsc{pres}.3\tsc{sg} read.\tsc{inf}\textcolor{red}{\scsub{[dat]}} less love.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+  `whom less is read, loves less' \flushfill{Old High German, Tatian 138:13}\label{ex:ohg-nom-dat}
+
+\pause
+
+  \exg. enti aer {ant uurta} demo \tbf{zaimo} \tbf{sprah}\\
+  and 3\tsc{sg}.\tsc{m}.\tsc{nom} reply.\tsc{pst}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rp}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} {to 3\tsc{sg}.\tsc{m}.\tsc{dat}} speak.\tsc{pst}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+  `and he replied to the one who spoke to him' \flushfill{Old High German, \tsc{mons} 7:24, adapted from \pgcitealt{pittner1995}{199}}\label{ex:ohg-dat-nom}
+
+\pause
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}{Whether the winner gets approved --- Polish}
+
+\pause
+
+  \exg. *Jan lubi \tbf{komu} \tbf{-kolkwiek} \tbf{dokucza}.\\
+  Jan like.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\textcolor{red}{\tsc{dat}}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\textcolor{red}{\scsub{[dat]}}\\
+  `Jan likes whoever he teases.'
+
+\pause
+
+  \exg. *Jan ufa komu \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+  Jan trust.\tsc{3sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\textcolor{red}{\tsc{dat}}.\tsc{an}.\tsc{sg} ever let.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} to home\\
+  `Jan trusts whoever he let into the house.'
+
+\pause
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}*
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}*
+             & \cellcolor{DG}*
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-none}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}{Whether the winner gets approved --- overview}
+
+\begin{multicols}{2}
+
+\onslide<2->{
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-only-int}
+  \end{table}
+}
+
+\onslide<3->{
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+}
+
+\onslide<2->{
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}*
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}*
+             & \cellcolor{DG}*
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-only-ext}
+  \end{table}
+}
+
+\onslide<4->{
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}*
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}*
+             & \cellcolor{DG}*
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-none}
+  \end{table}
+}
+
+  \end{multicols}
+
+\end{frame}
+
+
+
+\begin{frame}{Two generalizations}
+
+\begin{itemize}
+  \item The winner of the case competition → is stable across languages\\
+  \tsc{nom} < \tsc{acc} < \tsc{dat}
+  \item Whether the winner gets approved → differs across languages\\
+
+\end{itemize}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Introduction --- case in headless relative clauses}
+
+\exg. gaarma \tbf{þan} \tbf{-ei} \tbf{arma}\\
+ pity.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} -\tsc{comp} pity.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+ `I pity him whom I pity' \flushfill{Gothic, \tsc{rom} 9:15}
+
+\end{frame}
+
+\begin{frame}{Introduction --- case competition (Harbert 1978)}
+
+\exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
+ \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} -\tsc{comp} love.\tsc{pres}.2\tsc{sg}.\textcolor{LimeGreen}{\scsub{[acc]}} sick be.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+ `the one whom you love is sick' \flushfill{Gothic, \tsc{john} 11:3}
+
+
+
+\exg. jah þo \tbf{-ei} \tbf{ist} \tbf{us} \tbf{Laudeikaion} jus ussiggwaid\\
+ and \tsc{rel}.\tsc{sg}.\tsc{n}.\textcolor{LimeGreen}{\tsc{acc}} -\tsc{comp} be.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} from Laodicea 2\tsc{pl}.\tsc{nom} read.\textcolor{LimeGreen}{\scsub{[acc]}}\\
+ `and you read the one which is from Laodicea' \flushfill{Gothic, \tsc{col} 4:16}
+
+
+
+ \begin{itemize}
+   \item internal case
+   \item external case
+ \end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{Two aspects}
+
+\begin{itemize}
+  \item Which case wins the case competition?
+  \item Is the winner of the case competition allowed to surface?
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Which case wins the case competition?}
+
+
+
+\tsc{nom} < \tsc{acc} < \tsc{dat}
+
+\end{frame}
+
+
+\begin{frame}{Gothic --- matching data (Harbert 1978)}
+
+\exg. ei \tbf{sa} \tbf{-ei} \tbf{þis} \tbf{matjai}, ni gadauþnai\\
+\tsc{comp} \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{Turquoise}{\tsc{nom}} -\tsc{comp} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{gen} eat.\tsc{opt}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} not die.\tsc{opt}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+`that the one, who eats of this may not die' \flushfill{\tsc{john} 6:50}
+
+
+
+\exg. gaarma \tbf{þan} \tbf{-ei} \tbf{arma}\\
+ pity.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} -\tsc{comp} pity.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+ `I pity him, whom I pity' \flushfill{\tsc{rom} 9:15}
+
+
+
+\exg. nist mein du giban, alja \tbf{þaim} \tbf{-ei} \tbf{manwiþ} \tbf{was}\\
+{is not} 1\tsc{sg}.\tsc{poss}.\tsc{nom} to give.\tsc{inf}\textcolor{red}{\scsub{[dat]}} {except for} \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} -\tsc{comp} prepare.\tsc{ptcp} be.\tsc{pret}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`it is not mine to give except for to the one, for whom it was prepared'\flushfill{\tsc{mark} 10:49}
+
+\end{frame}
+
+
+\begin{frame}{Gothic --- overview matching}
+
+  \begin{table}
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \colorbox{red}{\tsc{nom}}
+           &
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           &
+           & \colorbox{LimeGreen}{\tsc{acc}}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           &
+           &
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+  \end{table}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Gothic --- \tsc{nom} vs. \tsc{acc} data (Harbert 1978)}
+
+\exg. \tbf{þan} \tbf{-ei} \tbf{frijos} siuks ist\\
+ \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} -\tsc{comp} love.\tsc{pres}.2\tsc{sg}.\textcolor{LimeGreen}{\scsub{[acc]}} sick be.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+ `the one whom you love is sick' \flushfill{\tsc{john} 11:3}
+
+
+
+\exg. jah þo \tbf{-ei} \tbf{ist} \tbf{us} \tbf{Laudeikaion} jus ussiggwaid\\
+ and \tsc{rel}.\tsc{sg}.\tsc{n}.\textcolor{LimeGreen}{\tsc{acc}} -\tsc{comp} be.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} from Laodicea 2.\tsc{pl}.\tsc{nom} read.\textcolor{LimeGreen}{\scsub{[acc]}}\\
+ `and you read the one which is from Laodicea' \flushfill{\tsc{col} 4:16}
+
+
+\end{frame}
+
+
+\begin{frame}{Gothic --- overview \tsc{nom} vs. \tsc{acc}}
+
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+       \diagbox[linecolor=white]{\tsc{int}}{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{\colorbox{LimeGreen}{\tsc{acc}}}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \diagbox[linecolor=white]{\colorbox{red}{\tsc{acc}}}{*\tsc{nom}}
+           & \tsc{acc}
+           & \diagbox[linecolor=white]{\phantom{{\tsc{xxx}}}}{\phantom{*\tsc{xxx}}}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           &
+           & \diagbox[linecolor=white]{\phantom{{\tsc{xxx}}}}{\phantom{*\tsc{xxx}}}
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+     \label{tbl:summary-gothic-nom-acc}
+  \end{table}
+
+
+\end{frame}
+
+
+\begin{frame}{Gothic --- \tsc{nom} vs. \tsc{dat} data (Harbert 1978)}
+
+\exg. iþ \tbf{þamm} \tbf{-ei} \tbf{leitil} \tbf{fraletada} leitil frijod\\
+ but \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} -\tsc{comp} little {forgive}.\tsc{pass}.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}} little love\textcolor{Turquoise}{\scsub{[nom]}}\\
+ `but the one whom little is forgiven loves little' \flushfill{\tsc{luke} 7:47}
+
+
+
+\exg. þaim \tbf{-ei} \tbf{iupa} \tbf{sind} fraþjaiþ \\
+ \tsc{rel}.\tsc{pl}.\tsc{n}.\textcolor{red}{\tsc{dat}} -\tsc{comp} above be.\tsc{pres}.3\tsc{pl}\textcolor{Turquoise}{\scsub{[nom]}} {think about}.\tsc{opt}.\tsc{pres}.2\tsc{pl}\textcolor{red}{\scsub{[dat]}}\\
+ `think about those which are above' \flushfill{\tsc{col} 3:2}
+
+\end{frame}
+
+
+\begin{frame}{Gothic --- overview \tsc{nom} --- \tsc{dat}}
+
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+       \diagbox[linecolor=white]{\tsc{int}}{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{\tsc{acc}}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{\colorbox{LimeGreen}{\tsc{dat}}}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \diagbox[linecolor=white]{\tsc{acc}}{*\tsc{nom}}
+           & \tsc{acc}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \diagbox[linecolor=white]{\colorbox{red}{\tsc{dat}}}{*\tsc{nom}}
+           &
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+     \label{tbl:summary-gothic-nom-dat}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}{Gothic --- \tsc{acc} vs. \tsc{dat} data (Harbert 1978)}
+
+\exg. ushafjands \tbf{ana} \tbf{þamm} \tbf{-ei} \tbf{lag}\\
+{pick up}.\tsc{pres}.\tsc{ptcp}\textcolor{LimeGreen}{\scsub{[acc]}} on\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{sg}.\tsc{n}.\textcolor{red}{\tsc{dat}} -\tsc{comp} lie.\tsc{pret}.3\tsc{sg}\\
+`picking up that what he lay on' \flushfill{\tsc{luke} 5:25}
+
+
+
+\exg. ei galaubjaiþ þamm \tbf{-ei} \tbf{insandida} \tbf{jains}\\
+that believe.\tsc{opt}.\tsc{pres}.2\tsc{pl}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{sg}.\tsc{m}.\textcolor{red}{\tsc{dat}} -\tsc{comp} {send}.\tsc{pret}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{dem}.\tsc{sg}.\tsc{m}.\tsc{nom}\\
+`that you believe in him whom he sent' \flushfill{Gothic, \tsc{john} 6:29}\label{ex:gothic-dat-acc}
+
+\end{frame}
+
+
+
+\begin{frame}{Gothic --- overview \tsc{acc} --- \tsc{dat}}
+
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+       \diagbox[linecolor=white]{\tsc{int}}{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{{\tsc{acc}}}
+           & \diagbox[linecolor=white]{*\tsc{nom}}{{\tsc{dat}}}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \diagbox[linecolor=white]{{\tsc{acc}}}{*\tsc{nom}}
+           & \tsc{acc}
+           & \diagbox[linecolor=white]{*\tsc{acc}}{\colorbox{LimeGreen}{\tsc{dat}}}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \diagbox[linecolor=white]{{\tsc{dat}}}{*\tsc{nom}}
+           & \diagbox[linecolor=white]{\colorbox{red}{(\tsc{dat})}}{*\tsc{acc}}
+           & \tsc{dat}
+           \\
+     \bottomrule
+   \end{tabular}
+     \label{tbl:summary-gothic-acc-dat}
+  \end{table}
+\end{frame}
+
+
+\begin{frame}{Gothic: overview summary}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \tsc{acc}
+             & \tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \tsc{acc}
+             & \tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \tsc{dat}
+             & \tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{Which case wins the case competition?}
+
+  \tsc{nom} < \tsc{acc} < \tsc{dat}
+
+\end{frame}
+
+\begin{frame}{Is the winner of the case competition allowed to surface?}
+
+
+
+\begin{itemize}
+  \item Is the internal case allowed to surface?
+  \item Is the external case allowed to suface?
+\end{itemize}
+
+\vspace{1em}
+
+4 possible language types
+
+\end{frame}
+
+
+
+
+\begin{frame}{The unrestricted type}
+
+the internal and the external case are allowed to surface when either of them wins the case competition\label{ex:int-ext}
+
+\vspace{1em}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}{The internal-only type}
+
+only the internal case is allowed to surface when it wins the case competition\label{ex:int-only}
+
+\vspace{1em}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}\tsc{acc}
+           & \tsc{acc}
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}\tsc{dat}
+           & \cellcolor{DG}\tsc{dat}
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-int}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{The external-only type}
+
+only the external case is allowed to surface when it wins the case competition\label{ex:ext-only}
+
+\vspace{1em}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}\tsc{acc}
+           & \cellcolor{LG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}*
+           & \tsc{acc}
+           & \cellcolor{LG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-ext}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{The matching type}
+
+neither the internal case nor in the external case is allowed to surface when either of them wins the case competition\label{ex:matching}
+
+\vspace{1em}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}*
+           & \tsc{acc}
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-none}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{All types together}
+
+\begin{multicols}{2}
+
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}\tsc{acc}
+           & \tsc{acc}
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}\tsc{dat}
+           & \cellcolor{DG}\tsc{dat}
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-int}
+\end{table}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}\tsc{acc}
+           & \cellcolor{LG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}*
+           & \tsc{acc}
+           & \cellcolor{LG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-ext}
+\end{table}
+
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}*
+           & \tsc{acc}
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-none}
+\end{table}
+
+
+\end{multicols}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Gothic as the unrestricted type}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+
+\end{frame}
+
+
+
+\begin{frame}{German as the internal-only type}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}*
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}\tsc{acc}
+           & \tsc{acc}
+           & \cellcolor{LG}*
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}\tsc{dat}
+           & \cellcolor{DG}\tsc{dat}
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-only-int}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{German --- matching data (Vogel 2001)}
+
+\exg. Uns besucht, \tbf{wer} \tbf{Maria} \tbf{mag}.\\
+ 2\tsc{pl}.\tsc{acc} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.\tsc{acc} like.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+ `Who visits us likes Maria.'
+
+
+
+\exg. Ich {lade ein}, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`I invite who Maria also likes.'
+
+
+
+\exg. Ich forede, \tbf{wem} \tbf{immer} \tbf{ich} \tbf{vertraue}.\\
+ 1\tsc{sg}.{\tsc{nom}} forede.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} ever 1\tsc{sg}.{\tsc{nom}} vertraue.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+ `I follow whoever I trust.'
+
+\end{frame}
+
+
+\begin{frame}{German --- overview matching}
+
+\begin{table}[H]
+ \center
+ \begin{tabular}{c|c|c|c}
+   \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+         & [\tsc{nom}]
+         & [\tsc{acc}]
+         & [\tsc{dat}]
+         \\ \cmidrule{1-4}
+     [\tsc{nom}]
+         & \colorbox{red}{\tsc{nom}}
+         &
+         &
+         \\ \cmidrule{1-4}
+     [\tsc{acc}]
+         &
+         & \colorbox{LimeGreen}{\tsc{acc}}
+         &
+         \\ \cmidrule{1-4}
+     [\tsc{dat}]
+         &
+         &
+         & \tsc{dat}
+         \\
+   \bottomrule
+ \end{tabular}
+   \label{tbl:summary-mg-matching}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{German --- \tsc{nom} vs. \tsc{acc} data (Vogel 2001)}
+
+\exg. Uns besucht, \tbf{wen} \tbf{Maria} \tbf{mag}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`Who visits us, Maria likes.'
+
+
+
+\exg. *Uns besucht, wer \tbf{Maria} \tbf{mag}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`Who visits us, Maria likes.'
+
+
+
+\exg. *Ich {lade ein}, wen \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} 1\tsc{sg}.{\tsc{dat}} nice be.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+`I invite who I like.'
+
+
+
+\exg. *Ich {lade ein}, \tbf{wer} \tbf{mir} \tbf{sympathisch} \tbf{ist}.\\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} 1\tsc{sg}.{\tsc{dat}} nice be.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+`I invite who I like.'
+
+\end{frame}
+
+\begin{frame}{German --- overview \tsc{nom} --- \tsc{acc}}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}*
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}\tsc{acc}
+           & \tsc{acc}
+           &
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           &
+           &
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:case-competition-mg-nom-acc}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{German --- \tsc{nom} vs. \tsc{dat} data (Vogel 2001)}
+
+\exg. Uns besucht, \tbf{wem} \tbf{Maria} \tbf{vertraut}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`Who visits us, Maria trusts.'
+
+
+
+\exg. *Uns besucht, wer \tbf{Maria} \tbf{vertraut}.\\
+2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`Who visits us, Maria trusts.'
+
+
+
+\exg. *Ich vertraue, wem \tbf{Hitchcock} \tbf{mag}.\\
+1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} Hitchcock.{\tsc{acc}} like.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+`I trust who likes Hitchcock.'
+
+
+
+\exg. *Ich vertraue, \tbf{wer} \tbf{Hitchcock} \tbf{mag}.\\
+1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Hitchcock.{\tsc{acc}} like.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}}\\
+`I trust who likes Hitchcock.'
+
+\end{frame}
+
+\begin{frame}{German --- overview \tsc{nom} --- \tsc{dat}}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & *
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \tsc{acc}
+             &
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             &
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-mg-nom-dat}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{German --- \tsc{acc} vs. \tsc{dat} data (Vogel 2001)}
+
+\exg. Ich {lade ein}, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`I invite whoever Maria also trusts.'
+
+
+
+\exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
+1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
+`I invite whoever Maria also trusts.'
+
+
+
+\exg. *Ich vertraue, wem \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`I trust whoever Maria also likes.'
+
+
+
+\exg. *Ich vertraue, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}. \\
+1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+`I trust whoever Maria also likes.'
+
+\end{frame}
+
+
+\begin{frame}{German --- overview \tsc{acc} --- \tsc{dat}}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & *
+             & *
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-mg-acc-dat}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{No external-only type}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{dat}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{LG}\tsc{acc}
+           & \cellcolor{LG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & \cellcolor{DG}*
+           & \tsc{acc}
+           & \cellcolor{LG}\tsc{dat}
+           \\ \cmidrule{1-4}
+       [\tsc{dat}]
+           & \cellcolor{DG}*
+           & \cellcolor{DG}*
+           & \tsc{dat}
+           \\
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}{Polish as the matching type}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}*
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}*
+             & \cellcolor{DG}*
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{Polish --- matching data (Citko 2013 after Himmelreich 2017)}
+
+\exg. Jan lubi \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+ Jan like.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\textcolor{LimeGreen}{\tsc{acc}}.\tsc{an}.\tsc{sg} ever Maria like.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+ `Jan likes whoever Maria likes.'
+
+
+
+\exg. Jan pomaga \tbf{komu} \tbf{-kolkwiek} \tbf{ufa}.\\
+Jan help.\tsc{3sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\textcolor{red}{\tsc{dat}}.\tsc{an}.\tsc{sg} ever trust.\tsc{3sg}\textcolor{red}{\scsub{[dat]}}\\
+`Jan helps whomever he trusts.'
+
+\end{frame}
+
+\begin{frame}{Polish --- overview matching}
+
+  \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c}
+     \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{acc}]
+            & [\tsc{dat}]
+            \\ \cmidrule{1-3}
+        [\tsc{acc}]
+            & \cellcolor{DG}\tsc{acc}
+            &
+            \\ \cmidrule{1-3}
+        [\tsc{dat}]
+            &
+            & \cellcolor{LG}\tsc{dat}
+            \\
+      \bottomrule
+   \end{tabular}
+     \label{tbl:summary-polish-matching}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{Polish --- \tsc{acc} vs. \tsc{dat} data (Citko 2013 after Himmelreich 2017)}
+
+  \exg. *Jan lubi \tbf{komu} \tbf{-kolkwiek} \tbf{dokucza}.\\
+  Jan like.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\textcolor{red}{\tsc{dat}}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\textcolor{red}{\scsub{[dat]}}\\
+  `Jan likes whoever he teases.'
+
+
+
+  \exg. *Jan lubi kogo \tbf{-kolkwiek} \tbf{dokucza}.\\
+  Jan like.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\textcolor{LimeGreen}{\tsc{acc}}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\textcolor{red}{\scsub{[dat]}}\\
+  `Jan likes whoever he teases.'
+
+
+
+  \exg. *Jan ufa komu \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+  Jan trust.\tsc{3sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\textcolor{red}{\tsc{dat}}.\tsc{an}.\tsc{sg} ever let.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} to home\\
+  `Jan trusts whoever he let into the house.'
+
+
+
+  \exg. *Jan ufa \tbf{kogo} \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+  Jan trust.\tsc{3sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\textcolor{LimeGreen}{\tsc{acc}}.\tsc{an}.\tsc{sg} ever let.\tsc{3sg}\textcolor{LimeGreen}{\scsub{[acc]}} to home\\
+  `Jan trusts whoever he let into the house.'
+
+\end{frame}
+
+\begin{frame}{Polish --- overview \tsc{acc} vs. \tsc{dat}}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-3}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \cellcolor{LG}{*}
+             \\ \cmidrule{1-3}
+         [\tsc{dat}]
+             & \cellcolor{DG}{*}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:summary-polish-acc-dat}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{The table again}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-table-marking}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{Is the winner of the case competition allowed to surface?}
+
+  \begin{figure}[H]
+    \centering
+      \footnotesize{
+      \begin{tikzpicture}[node distance=1.5cm]
+        \node (question2) [question]
+        {allow \tsc{int}?};
+            \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+            {matching};
+                \node (example2) [example, below of=outcome2, yshift=0.25cm]
+                {\scriptsize{e.g. Polish\\\phantom{x}}};
+            \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+            {allow \tsc{ext}?};
+                \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+                {internal-only};
+                    \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                    {\scriptsize{e.g. German\\\phantom{x}}};
+                \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+                {un-restricted};
+                    \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                    {\scriptsize{e.g. Gothic}};
+
+      \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+      \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+      \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+      \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+      \end{tikzpicture}
+      }
+      \label{fig:two-parameters}
+  \end{figure}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Two aspects}
+
+\begin{itemize}
+  \item Which case wins the case competition?\\
+  \tsc{nom} < \tsc{acc} < \tsc{dat}
+  \item Is the winner of the case competition allowed to surface?\\
+  \tsc{int} + \tsc{ext}, \tsc{int} or none
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}{No case competition: always internal vs. always external}
+
+\begin{multicols}{2}
+
+
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \tsc{acc}
+             & \tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \tsc{acc}
+             & \tsc{acc}
+             & \tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \tsc{dat}
+             & \tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-table-marking}
+  \end{table}
+
+
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{nom}]
+            & [\tsc{acc}]
+            & [\tsc{dat}]
+            \\ \cmidrule{1-4}
+        [\tsc{nom}]
+            & \tsc{nom}
+            & \tsc{nom}
+            & \tsc{nom}
+            \\ \cmidrule{1-4}
+        [\tsc{acc}]
+            & \tsc{acc}
+            & \tsc{acc}
+            & \tsc{acc}
+            \\ \cmidrule{1-4}
+        [\tsc{dat}]
+            & \tsc{dat}
+            & \tsc{dat}
+            & \tsc{dat}
+            \\
+      \bottomrule
+    \end{tabular}
+    \label{tbl:no-case-competition-int}
+  \end{table}
+
+
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{nom}]
+            & [\tsc{acc}]
+            & [\tsc{dat}]
+            \\ \cmidrule{1-4}
+        [\tsc{nom}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            \\ \cmidrule{1-4}
+        [\tsc{acc}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            \\ \cmidrule{1-4}
+        [\tsc{dat}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            \\
+      \bottomrule
+    \end{tabular}
+    \label{tbl:no-case-competition-ext}
+  \end{table}
+
+\end{multicols}
+
+\end{frame}
+
+\begin{frame}{No always internal type}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{nom}]
+            & [\tsc{acc}]
+            & [\tsc{dat}]
+            \\ \cmidrule{1-4}
+        [\tsc{nom}]
+            & \tsc{nom}
+            & \tsc{nom}
+            & \tsc{nom}
+            \\ \cmidrule{1-4}
+        [\tsc{acc}]
+            & \tsc{acc}
+            & \tsc{acc}
+            & \tsc{acc}
+            \\ \cmidrule{1-4}
+        [\tsc{dat}]
+            & \tsc{dat}
+            & \tsc{dat}
+            & \tsc{dat}
+            \\
+      \bottomrule
+    \end{tabular}
+    \label{tbl:no-case-competition-int}
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{Greek as always external type}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{nom}]
+            & [\tsc{acc}]
+            & [\tsc{dat}]
+            \\ \cmidrule{1-4}
+        [\tsc{nom}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            \\ \cmidrule{1-4}
+        [\tsc{acc}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            \\ \cmidrule{1-4}
+        [\tsc{dat}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{dat}
+            \\
+      \bottomrule
+    \end{tabular}
+    \label{tbl:no-case-competition-ext}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}{Greek \tsc{nom}\scsub{int} vs. \tsc{acc}\scsub{ext} (Daskalaki 2011)}
+
+  \exg. Efχarístisa ópjus \tbf{me} \tbf{voíϑisan}.\\
+  thank.\tsc{pst}.3\tsc{pl}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{pl}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} \tsc{cl}.1\tsc{sg}.\tsc{acc} help.\tsc{pst}.3\tsc{pl}\textcolor{Turquoise}{\scsub{[nom]}}\\
+  `I thanked whoever helped me.'
+
+\end{frame}
+
+\begin{frame}{Three possibilities for Greek}
+
+\begin{multicols}{2}
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+    \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+           & [\tsc{nom}]
+           & [\tsc{acc}]
+           & [\tsc{gen}]
+           \\ \cmidrule{1-4}
+       [\tsc{nom}]
+           & \tsc{nom}
+           & \cellcolor{DG}\tsc{acc}
+           & \tsc{gen}
+           \\ \cmidrule{1-4}
+       [\tsc{acc}]
+           & *
+           & \tsc{acc}
+           & \tsc{gen}
+           \\ \cmidrule{1-4}
+       [\tsc{gen}]
+           & *
+           & *
+           & \tsc{gen}
+           \\
+     \bottomrule
+  \end{tabular}
+    \label{tbl:greek-poss1}
+\end{table}
+
+
+
+ \begin{table}[H]
+   \center
+   \begin{tabular}{c|c|c|c}
+     \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{nom}]
+            & [\tsc{acc}]
+            & [\tsc{gen}]
+            \\ \cmidrule{1-4}
+        [\tsc{nom}]
+            & \tsc{nom}
+            & \cellcolor{DG}\tsc{acc}
+            & \tsc{gen}
+            \\ \cmidrule{1-4}
+        [\tsc{acc}]
+            & \tsc{acc}
+            & \tsc{acc}
+            & \tsc{gen}
+            \\ \cmidrule{1-4}
+        [\tsc{gen}]
+            & \tsc{gen}
+            & \tsc{gen}
+            & \tsc{gen}
+            \\
+      \bottomrule
+   \end{tabular}
+     \label{tbl:greek-poss2}
+ \end{table}
+
+
+
+\begin{table}[H]
+  \center
+  \begin{tabular}{c|c|c|c}
+    \toprule
+   \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+          & [\tsc{nom}]
+          & [\tsc{acc}]
+          & [\tsc{gen}]
+          \\ \cmidrule{1-4}
+      [\tsc{nom}]
+          & \tsc{nom}
+          & \cellcolor{DG}\tsc{acc}
+          & \tsc{gen}
+          \\ \cmidrule{1-4}
+      [\tsc{acc}]
+          & \tsc{nom}
+          & \tsc{acc}
+          & \tsc{gen}
+          \\ \cmidrule{1-4}
+      [\tsc{gen}]
+          & \tsc{nom}
+          & \tsc{acc}
+          & \tsc{gen}
+          \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:greek-poss3}
+\end{table}
+
+\end{multicols}
+
+\end{frame}
+
+\begin{frame}{Greek \tsc{nom}\scsub{int} vs. \tsc{acc}\scsub{ext} (Daskalaki 2011)}
+
+  \exg. Irθan ópji \tbf{káleses}.\\
+  come.\tsc{pst}.3\tsc{pl}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{pl}.\tsc{m}.\textcolor{Turquoise}{\tsc{nom}} invite.\tsc{pst}.2\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+  `Whoever you invited came.'
+
+
+
+  \exg. *Irθan \tbf{ópjus} \tbf{káleses}.\\
+  come.\tsc{pst}.3\tsc{pl}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{pl}.\tsc{m}.\textcolor{LimeGreen}{\tsc{acc}} invite.\tsc{pst}.2\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
+  `Whoever you invited came.'
+
+\end{frame}
+
+\begin{frame}{Greek: always external}
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+     \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+            & [\tsc{nom}]
+            & [\tsc{acc}]
+            & [\tsc{gen}]
+            \\ \cmidrule{1-4}
+        [\tsc{nom}]
+            & \tsc{nom}
+            & \cellcolor{DG}\tsc{acc}
+            & \tsc{gen}
+            \\ \cmidrule{1-4}
+        [\tsc{acc}]
+            & \cellcolor{LG}\tsc{nom}
+            & \tsc{acc}
+            & \tsc{gen}
+            \\ \cmidrule{1-4}
+        [\tsc{gen}]
+            & \tsc{nom}
+            & \tsc{acc}
+            & \tsc{gen}
+            \\
+      \bottomrule
+    \end{tabular}
+    \label{tbl:no-case-competition-greek}
+  \end{table}
+
+\end{frame}
+
+
+\begin{frame}
+
+  \begin{figure}[H]
+    \centering
+      \begin{tikzpicture}[node distance=1.5cm]
+        \footnotesize{
+      \node (question1) [question]
+      {cases\\ considered:};
+          \node (outcome1) [outcome, below of=question1, xshift=-1.5cm]
+          {always external};
+              \node (example1) [example, below of=outcome1, yshift=0.25cm]
+              {\scriptsize{e.g. Greek\\\phantom{x}}};
+              \node (question2) [question, below of=question1, xshift=2cm, yshift=-0.5cm]
+              {allow \tsc{int}?};
+                  \node (outcome2) [outcome, below of=question2, xshift=-1.5cm]
+                  {matching};
+                      \node (example2) [example, below of=outcome2, yshift=0.25cm]
+                      {\scriptsize{e.g. Polish\\\phantom{x}}};
+                  \node (question3) [question, below of=question2, xshift=2cm, yshift=-0.5cm]
+                  {allow \tsc{ext}?};
+                      \node (outcome3) [outcome, below of=question3, xshift=-1.5cm]
+                      {internal-only};
+                          \node (example3) [example, below of=outcome3, yshift=0.25cm]
+                          {\scriptsize{e.g. German\\\phantom{x}}};
+                      \node (outcome4) [outcome, below of=question3, xshift=1.5cm]
+                      {un-restricted};
+                          \node (example4) [example, below of=outcome4, yshift=0.25cm]
+                          {\scriptsize{e.g. Gothic\\\phantom{x}}};
+
+            \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+            \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+            \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+            \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+            \draw [arrow] (question1) -- node[anchor=west] {\tsc{int} + \tsc{ext}} (question2);
+            \draw [arrow] (question1) -- node[anchor=east] {\tsc{ext}} (outcome1);
+}
+      \end{tikzpicture}
+      \label{fig:typology}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Possible patterns for headless relatives}
+
+  \begin{table}[H]
+    \center
+      \begin{tabular}{ccc|ccc}
+      \toprule
+        &   \multicolumn{2}{c}{[\tsc{int}]>[\tsc{ext}]} & \multicolumn{2}{|c}{[\tsc{ext}]>[\tsc{int}]} &                  \\
+            \cmidrule(lr){2-3}                      \cmidrule(lr){4-5}
+        &   \tsc{int}            & \tsc{ext}          & \tsc{int}          & \tsc{ext}            & language              \\
+            \cmidrule(lr){2-2}  \cmidrule(lr){3-3}  \cmidrule(lr){4-4}  \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+      1 &   \checkmark          & *                 & \checkmark      & *                     & n.a.                  \\
+      2 &   \checkmark          & *                 & *               & \checkmark            & e.g. Gothic           \\
+      3 &   \checkmark          & *                 & *               & *                     & e.g. German           \\
+      4 &   {*}                 & \checkmark        & \checkmark      & *                     & n.a.                  \\
+      5 &   {*}                 & \checkmark        & *               & \checkmark            & e.g. Greek            \\
+      6 &   {*}                 & \checkmark        & *               & *                     & n.a.                  \\
+      7 &   {*}                 & *                 & \checkmark      & *                     & n.a.                  \\
+      8 &   {*}                 & *                 & *               & \checkmark            & n.a.                  \\
+      9 &   {*}                 & *                 & *               & *                     & e.g. Polish           \\
+      \bottomrule
+    \end{tabular}
+      \label{tbl:possible-headless-relatives}
+  \end{table}
+
+\end{frame}
+
+
+
+
+\begin{frame}{References}
+
+Citko, Barbara (2013). “Size matters: Multidominance and DP structure in Polish”. In: \tit{Talk at the th Poznan Linguistic Meeting}.\\
+Daskalaki, Evangelia (2011). “Case Mis-Matching as Kase Stranding”. In: U\tit{niversity of Pennsylvania Working Papers in Linguistics.} Ed. by Lauren A. Friedman. Vol. 17. Philadelphia: Penn Linguistics Club, pp. 77–86.\\
+Harbert, Wayne Eugene (1978). “Gothic syntax: a relational grammar”. PhD thesis. Urbana-Champaign.\\
+Himmelreich, Anke (2017). “Case Matching Effects in Free Relatives and Parasitic Gaps: A Study on the Properties of Agree”. PhD thesis. Universität Leipzig.\\
+Vogel, Ralf (2001). “Case Conflict in German Free Relative Constructions: An Optimality Theoretic Treatment”. In: \tit{Competition in Syntax.} Ed. by Gereon Müller and Wolfgang Sternefeld. Berlin: Mouton de Gruyter, pp. 341–375. doi: 10.1515/9783110829068.341.
+
+\end{frame}
+
+
+\end{document}
