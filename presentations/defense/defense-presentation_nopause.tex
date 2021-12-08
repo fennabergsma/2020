@@ -5,6 +5,8 @@
 \addbibresource{../fenna-files-presentation/references.bib}
 
 \usepackage{multicol}
+\usepackage{adjustbox}
+\usepackage{ulem}
 
 \geometry{paperwidth=140mm,paperheight=105mm}
 %
@@ -32,7 +34,7 @@
 \setbeamertemplate{footline}{}
 
 %gets rid of navigation symbols
-% \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{navigation symbols}{}
 
 
 \addtobeamertemplate{navigation symbols}{}{%
@@ -46,13 +48,13 @@
 \title{Case competition in headless relatives}
 \author{Fenna Bergsma}
 \date{\today}
-\institute{Goethe-Universität Frankfurt}
+\institute{\normalsize{Goethe-Universität Frankfurt}}
 
 
 
 \begin{document}
 
-\begin{frame}
+\begin{frame}[t]
 \titlepage
 
 \centering{
@@ -62,8 +64,7 @@
 }
 \end{frame}
 
-
-\begin{frame}{Topic}
+\begin{frame}[t]{Topic}
 
 \pause
 
@@ -72,90 +73,102 @@
  `I invite whoever Maria also trusts.'
 
 \only<4>{
-\exg. Ich lade die Person ein, \textbf<3->{dem} \textbf<3->{Maria} \textbf<3->{vertraut}.\\
- 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}{\scsub{[acc]}} the person {} \tsc{rel}.\tsc{an}.{\tsc{dat}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}{\scsub{[dat]}}\\
+\exg. Ich lade die Person ein, \textbf<3->{der} \textbf<3->{Maria} \textbf<3->{vertraut}.\\
+ 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}{\scsub{[acc]}} the person {} \tsc{rel}.\tsc{sg}.\tsc{f}.{\tsc{dat}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}{\scsub{[dat]}}\\
  `I invite the person that Maria trusts.'
  }
 
-\onslide<9>
+\onslide<9>{
 \exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
  1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
  `I invite whoever Maria also trusts.'
+ }
 
 \end{frame}
 
 
-\begin{frame}{Two aspects}
+\begin{frame}[t]{Two generalizations}
 
 \pause
 
-\begin{itemize}
-  \item the winner of the competition  \onslide<4->{→ is stable across languages}\pause
-  \item whether the winner gets approved \onslide<4->{→ differs across languages}
-\end{itemize}
-
-\pause
-\pause
+\begin{enumerate}
+  \item the winner of the competition\pause
+  \begin{itemize}
+      \onslide<4->{\item is stable across languages}
+      \onslide<5->{\item \tsc{nom} < \tsc{acc} < \tsc{dat}}
+  \end{itemize}
+  \item whether the winner gets approved
+  \begin{itemize}
+      \onslide<6->{\item differs across languages}
+      \onslide<7->{\item \tsc{int}/\tsc{ext} approved}
+  \end{itemize}
+\end{enumerate}
 
 \vspace{1em}
 
-\begin{enumerate}
-  \item show the generalizations\pause
+\onslide<8->{
+\begin{itemize}
+  \item \textbf<9>{illustrate the generalizations}\pause
   \item derive the generalizations
-\end{enumerate}
+\end{itemize}
+}
 
 \end{frame}
 
 
 
-\begin{frame}{The winner of the competition --- German}
+\begin{frame}[t]{The winner of the competition in German (Vogel 2001)}
 
-\onslide<2->{
+\pause
+
+\center
+\textbf<9->{\tsc{nom} <} \textbf<5->{\tsc{acc} < \tsc{dat}}
+
+\onslide<3->{
 \exg. Ich {lade ein}, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
 `I invite whoever Maria also trusts.'
 }
 
-\only<3-4>{
+\only<4-5>{
 \exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}. \\
 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
 `I invite whoever Maria also trusts.'
 }
 
-\onslide<5->{
+\onslide<7->{
 \exg. Uns besucht, \tbf{wen} \tbf{Maria} \tbf{mag}.\\
 2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
 `Who visits us, Maria likes.'
 }
 
-\only<6-7>{
+\only<8-9>{
 \exg. *Uns besucht, wer \tbf{Maria} \tbf{mag}.\\
 2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
 `Who visits us, Maria likes.'
 }
 
-\onslide<8-10>{
+\onslide<11-13>{
 \exg. Uns besucht, \tbf{wem} \tbf{Maria} \tbf{vertraut}.\\
 2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
 `Who visits us, Maria trusts.'
 }
 
-\only<9>{
+\only<12>{
 \exg. *Uns besucht, wer \tbf{Maria} \tbf{vertraut}.\\
 2\tsc{pl}.{\tsc{acc}} visit.\tsc{pres}.3\tsc{sg}\textcolor{Turquoise}{\scsub{[nom]}} \tsc{rel}.\tsc{an}.\textcolor{Turquoise}{\tsc{nom}} Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
 `Who visits us, Maria trusts.'
 }
 
-\onslide<7->{\tsc{nom} <} \onslide<4->{\tsc{acc} < \tsc{dat}}
-
 \end{frame}
 
 
 
-\begin{frame}{The winner of the competition --- other languages}
+\begin{frame}[t]{The winner of the competition in other languages}
 
 \pause
 
+\center
 \tsc{nom} < \tsc{acc} < \tsc{dat}
 
 \pause
@@ -180,37 +193,30 @@ that believe.\tsc{opt}.\tsc{pres}.2\tsc{pl}\textcolor{red}{\scsub{[dat]}} \tsc{r
 
 
 
-\begin{frame}{Whether the winner gets approved --- German}
+\begin{frame}[t]{Whether the winner gets approved in German (Vogel 2001)}
 
-\onslide<2->{
+\pause
+approve \textbf<4>{\tsc{int}} or \tsc{ext} as a winner
+
+\onslide<3->{
 \exg. Ich {lade ein}, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
 1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
 `I invite whoever Maria also trusts.'
 }
 
-\only<3>{
-\exg. *Ich {lade ein}, wen \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
-1\tsc{sg}.{\tsc{nom}} invite.\tsc{pres}.1\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} trust.\tsc{pres}.3\tsc{sg}\textcolor{red}{\scsub{[dat]}}\\
-`I invite whoever Maria also trusts.'
-}
-
-\onslide<4->{
+\onslide<6->{
 \exg. *Ich vertraue, wem \tbf{auch} \tbf{Maria} \tbf{mag}. \\
 1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{red}{\tsc{dat}} also Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
 `I trust whoever Maria also likes.'
 }
 
-\onslide<5->{
+\onslide<7->{
 \exg. *Ich vertraue, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}. \\
 1\tsc{sg}.{\tsc{nom}} trust.\tsc{pres}.1\tsc{sg}\textcolor{red}{\scsub{[dat]}} \tsc{rel}.\tsc{an}.\textcolor{LimeGreen}{\tsc{acc}} also Maria.{\tsc{nom}} like.\tsc{pres}.3\tsc{sg}\textcolor{LimeGreen}{\scsub{[acc]}}\\
 `I trust whoever Maria also likes.'
 }
 
-\only<6>{
-internal vs. external case
-}
-
-\onslide<7->{
+\onslide<5->{
 the internal case (\tsc{int}) gets approved when it wins the case competition}\onslide<8->{,
 the external case (\tsc{ext}) does not
 }
@@ -218,8 +224,13 @@ the external case (\tsc{ext}) does not
 \end{frame}
 
 
-\begin{frame}{Whether the winner gets approved --- German schema}
+\begin{frame}[t]{Whether the winner gets approved in German}
 
+\pause
+the internal case (\tsc{int}) gets approved when it wins the case competition,
+the external case (\tsc{ext}) does not
+
+\pause
   \begin{table}[H]
     \center
     \begin{tabular}{c|c|c|c}
@@ -253,7 +264,7 @@ the external case (\tsc{ext}) does not
 
 
 
-\begin{frame}{Whether the winner gets approved --- Old High German}
+\begin{frame}[t]{Whether the winner gets approved in Old High German}
 
 \pause
 
@@ -301,7 +312,7 @@ the external case (\tsc{ext}) does not
 \end{frame}
 
 
-\begin{frame}{Whether the winner gets approved --- Polish}
+\begin{frame}[t]{Whether the winner gets approved in Polish}
 
 \pause
 
@@ -349,7 +360,7 @@ the external case (\tsc{ext}) does not
 \end{frame}
 
 
-\begin{frame}{Whether the winner gets approved --- overview}
+\begin{frame}[t]{Whether the winner gets approved in overview}
 
 \begin{multicols}{2}
 
@@ -384,38 +395,7 @@ the external case (\tsc{ext}) does not
   \end{table}
 }
 
-\onslide<2->{
-  \begin{table}[H]
-    \center
-    \begin{tabular}{c|c|c|c}
-      \toprule
-      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
-             & [\tsc{nom}]
-             & [\tsc{acc}]
-             & [\tsc{dat}]
-             \\ \cmidrule{1-4}
-         [\tsc{nom}]
-             & \tsc{nom}
-             & \cellcolor{LG}\tsc{acc}
-             & \cellcolor{LG}\tsc{dat}
-             \\ \cmidrule{1-4}
-         [\tsc{acc}]
-             & \cellcolor{DG}\tsc{acc}
-             & \tsc{acc}
-             & \cellcolor{LG}\tsc{dat}
-             \\ \cmidrule{1-4}
-         [\tsc{dat}]
-             & \cellcolor{DG}\tsc{dat}
-             & \cellcolor{DG}\tsc{dat}
-             & \tsc{dat}
-             \\
-       \bottomrule
-    \end{tabular}
-      \label{tbl:case-competition-int-ext}
-  \end{table}
-}
-
-\onslide<3-5>{
+\onslide<4-6>{
   \begin{table}[H]
     \center
     \begin{tabular}{c|c|c|c}
@@ -446,7 +426,38 @@ the external case (\tsc{ext}) does not
   \end{table}
 }
 
-\only<4>{
+\onslide<3->{
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}\tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}\tsc{dat}
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-int-ext}
+  \end{table}
+}
+
+\only<5>{
   \begin{table}[H]
     \center
     \begin{tabular}{c|c|c|c}
@@ -477,39 +488,81 @@ the external case (\tsc{ext}) does not
   \end{table}
 }
 
-  \end{multicols}
+\end{multicols}
 
 \end{frame}
 
 
 
-\begin{frame}{Two generalizations}
+\begin{frame}[t]{Whether the winner gets approved in flowchart}
+
 \pause
 
-\begin{itemize}
-  \item The winner of the case competition → is stable across languages\\ \pause
-  \tsc{nom} < \tsc{acc} < \tsc{dat}\pause
-  \item Whether the winner gets approved → differs across languages\\ \pause
-  \tsc{int}/\tsc{ext} approved\pause
+  \begin{figure}[H]
+    \centering
+    \begin{tabular}[b]{c}
+      \toprule
+      \begin{tikzpicture}[node distance=1.5cm]
+        \node (question2) [question]
+        {\tsc{int} approved};
+            \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
+            {matching};
+                \node (example2) [example, below of=outcome2]
+                {e.g. Polish\\\phantom{x}\\\phantom{x}};
+            \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
+            {\tsc{ext} approved};
+                \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
+                {internal-only};
+                    \node (example3) [example, below of=outcome3]
+                    {e.g. Modern German\\\phantom{x}};
+                \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
+                {unrestricted};
+                    \node (example4) [example, below of=outcome4]
+                    {e.g. Gothic, Old High German, Classical Greek};
+
+      \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+      \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+      \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+      \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+      \end{tikzpicture}\\
+      \bottomrule
+    \end{tabular}
+      \label{fig:two-parameters}
+  \end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}[t]{Two generalizations}
+
+\begin{enumerate}
+  \item the winner of the competition
   \begin{itemize}
-    \item \tsc{int} approved
-    \item \tsc{int} + \tsc{ext} approved
-    \item none approved
+      \item is stable across languages
+      \item \tsc{nom} < \tsc{acc} < \tsc{dat}
   \end{itemize}
-\end{itemize}\pause
+  \item whether the winner gets approved
+  \begin{itemize}
+      \item differs across languages
+      \item \tsc{int}/\tsc{ext} approved
+  \end{itemize}
+\end{enumerate}
 
 \vspace{1em}
 
-\begin{enumerate}
-  \item show the generalizations\pause
-  \item derive the generalizations
-\end{enumerate}
+\begin{itemize}
+  \item illustrate the generalizations
+  \item \textbf<2>{derive the generalizations}
+\end{itemize}
 
 \end{frame}
 
 
 
-\begin{frame}{Generalization 1: \tsc{nom} < \tsc{acc} < \tsc{dat}}
+
+\begin{frame}[t]{\tsc{nom} < \tsc{acc} < \tsc{dat}}
 
 \pause
 
@@ -600,7 +653,7 @@ the external case (\tsc{ext}) does not
 \end{frame}
 
 
-\begin{frame}{The winning case contains the losing case}
+\begin{frame}[t]{The winning case contains the losing case}
 
 \center
 
@@ -626,7 +679,7 @@ the external case (\tsc{ext}) does not
           \onslide<4>{
           \node[draw,circle,transparent,
           fill=DG,fill opacity=0.2,
-          scale=0.875,
+          scale=0.825,
           fit to=tree]{};
           }
           }
@@ -649,14 +702,20 @@ the external case (\tsc{ext}) does not
     ]
   \end{forest}\label{ex:dat-contains-acc}
 
+\onslide<5>{
+Properties of morphology show reflexes in syntax
+}
+
 \end{frame}
 
 
-\begin{frame}{Generalization 2: \tsc{int}/\tsc{ext} approved}
+
+\begin{frame}[t]{\tsc{int}/\tsc{ext} approved}
 
 \pause
 
   \begin{figure}[H]
+    \begin{adjustbox}{max height=0.7\textheight}
     \centering
     \begin{tabular}[b]{c}
       \toprule
@@ -683,37 +742,41 @@ the external case (\tsc{ext}) does not
       \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
       \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
 
-      \pause\node[yshift=-0.5cm,
+      \onslide<4->{
+      \node[yshift=-0.5cm,
       draw,circle,color=red,
-      scale=1,line width=2pt,
+      scale=1,line width=1.5pt,
       fit=(question2)]{};
+      }
       \end{tikzpicture}\\
       \bottomrule
     \end{tabular}
       \label{fig:two-parameters}
+  \end{adjustbox}
   \end{figure}
 
-\end{frame}
 
-
-
-\begin{frame}{Borer-Chomsky Conjecture}
-
+\pause
+\center
   Borer-Chomsky Conjecture: the lexicon is the source of language variation
 
+
+
 \end{frame}
 
 
-\begin{frame}{Assumptions}
+\begin{frame}[t]{Assumptions}
 
 \begin{itemize}
-  \item \onslide<2->{headless relatives are derived from light-headed relatives}
+  \item \onslide<2->{headless relatives are derived from light-headed relatives, headed by a special type of light head}
   \only<3>{\\
-  \vspace{1em}
   light head\scsub{ext} [relative pronoun\scsub{int} ... ]\label{ex:light+rel}
   }
-  \item \onslide<4->{deletion takes place when the light head is contained in the relative pronoun}
-  \item \onslide<5->{the relative pronoun contains the features of the light head plus an additional one}\\
+  \onslide<4->{\\
+  \sout{light head\scsub{ext}} [relative pronoun\scsub{int} ... ]\label{ex:light+rel}
+  }
+  \item \onslide<5->{deletion takes place when the relative pronoun contains the light head as a single constituent}
+  \item \onslide<6->{the relative pronoun contains the features of the light head plus an additional one}\\
   \onslide<6->{
   \begin{figure}[H]
     \center
@@ -747,9 +810,45 @@ the external case (\tsc{ext}) does not
 \end{frame}
 
 
+\begin{frame}[t]{The pattern in German}
+
+\pause
+
+  \begin{table}[H]
+    \center
+    \begin{tabular}{c|c|c|c}
+      \toprule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}\tsc{acc}
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}\tsc{dat}
+             & \cellcolor{DG}\tsc{dat}
+             & \tsc{dat}
+             \\
+       \bottomrule
+    \end{tabular}
+      \label{tbl:case-competition-only-int}
+  \end{table}
+
+\end{frame}
 
 
-\begin{frame}{First show German}
+\begin{frame}[t]{Light head and relative pronoun in German}
+
+\pause
 
   \begin{figure}[H]
     \center
@@ -758,15 +857,14 @@ the external case (\tsc{ext}) does not
         light head & & relative pronoun \\
         \cmidrule(lr){1-1} \cmidrule(lr){3-3}
         \begin{forest} boom
-          [\tsc{nom}P,
+          [\tsc{k}P,
           tikz={
-          \node[draw,circle,
-          dashed,
-          scale=0.85,
-          fill=DG,fill opacity=0.2,
+          \node[label=below:\tit{n/m},
+          draw,circle,
+          scale=0.75,
           fit to=tree]{};
           }
-              [\tsc{k}1]
+              [\tsc{k}]
               [ϕP
                   [\phantom{xxx}, roof, baseline]
               ]
@@ -774,18 +872,24 @@ the external case (\tsc{ext}) does not
         \end{forest}
         & \phantom{x} &
         \begin{forest} boom
-          [\tsc{rel}P
-              [\tsc{rel}P
-                  [\phantom{xxx}, roof, baseline]
-              ]
-              [\tsc{nom}P,
+          [\tsc{rel}P, s sep=15mm
+              [\tsc{rel}P,
               tikz={
-              \node[draw,circle,
-              dashed,
-              scale=0.85,
+              \node[label=below:\tit{we},
+              draw,circle,
+              scale=0.75,
               fit to=tree]{};
               }
-                  [\tsc{k}1]
+                  [\phantom{xxx}, roof]
+              ]
+              [\tsc{k}P,
+              tikz={
+              \node[label=below:\tit{n/m},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\tsc{k}]
                   [ϕP
                       [\phantom{xxx}, roof, baseline]
                   ]
@@ -794,8 +898,91 @@ the external case (\tsc{ext}) does not
         \end{forest}\\
         \bottomrule
     \end{tabular}
-     \caption {\tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{nom} in the internal-only type}
-    \label{fig:nom-nom-intonly}
+    \label{fig:rel-lh-mg}
+  \end{figure}
+
+\end{frame}
+
+
+\begin{frame}[t]{\tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{acc} → \tit{wen} in German}
+
+\pause
+
+\exg. Ich lade \sout{n} ein, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+ 1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{lh}.\tsc{an}.\tsc{acc} {} \tsc{rp}.\tsc{an}.\tsc{acc} also Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}\\
+ `I invite who Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-acc-rep}
+
+\pause
+
+\begin{figure}[H]
+  \begin{adjustbox}{max height=0.5\textheight}
+  \centering
+    \begin{tabular}[b]{ccc}
+        \toprule
+        light head \tit{n} & & relative pronoun \tit{we-n} \\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+          [\tsc{acc}P,
+          tikz={
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.8,
+          fit to=tree]{};
+          \onslide<4>{
+          \node[draw,circle,
+          dashed,
+          scale=0.85,
+          fill=DG,fill opacity=0.2,
+          fit to=tree]{};
+          }
+          }
+              [\tsc{k}2]
+              [\tsc{nomP}
+                  [\tsc{k}1]
+                  [ϕP
+                      [\phantom{xxx}, roof, baseline]
+                  ]
+              ]
+          ]
+        \end{forest}
+        & \phantom{x} &
+        \begin{forest} boom
+          [\tsc{rel}P
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{we},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof, baseline]
+              ]
+              [\tsc{acc}P,
+              tikz={
+              \onslide<4>{
+              \node[draw,circle,
+              dashed,
+              scale=0.85,
+              fit to=tree]{};
+              }
+              \node[label=below:\tit{n},
+              draw,circle,
+              scale=0.8,
+              fit to=tree]{};
+              }
+                  [\tsc{k}2]
+                  [\tsc{nomP}
+                      [\tsc{k}1]
+                      [ϕP
+                          [\phantom{xxx}, roof, baseline]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}\\
+        \bottomrule
+    \end{tabular}
+  \end{adjustbox}
   \end{figure}
 
 
@@ -803,114 +990,834 @@ the external case (\tsc{ext}) does not
 
 
 
+\begin{frame}[t]{\tsc{ext}\scsub{dat} vs. \tsc{int}\scsub{acc} ↛ \tit{m}/\tit{wen}}
 
-\begin{frame}{Different lexical entries}
+\pause
 
-  \begin{forest} boom
-    [\tsc{acc}P
-        [\tsc{k}2]
-        [\tsc{nom}P
-            [\tsc{k}1]
-            [3\tsc{sg}.\tsc{k}P
-                [\phantom{xxx}, roof]
-            ]
-        ]
-    ]
-  \end{forest}
+\exg. *Ich vertraue \sout{m}, \tbf{wen} \tbf{auch} \tbf{Maria} \tbf{mag}.\\
+1\tsc{sg}.\tsc{nom} trust.\tsc{pres}.1\tsc{sg}\scsub{[dat]} \tsc{lh}.\tsc{an}.\tsc{dat} \tsc{rp}.\tsc{an}.\tsc{acc} also Maria.\tsc{nom} like.\tsc{pres}.3\tsc{sg}\scsub{[acc]}\\
+`I trust whoever Maria also likes.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{345}}\label{ex:mg-dat-acc-rep-lh}
+
+\pause
+
+\begin{figure}[H]
+  \begin{adjustbox}{max height=0.5\textheight}
+  \centering
+    \begin{tabular}[b]{ccc}
+        \toprule
+        light head \tit{m} & & relative pronoun \tit{we-n} \\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+          [\tsc{dat}P,
+          tikz={
+          \node[label=below:\tit{m},
+          draw,circle,
+          scale=0.9,
+          fit to=tree]{};
+          }
+              [\tsc{k}3]
+              [\tsc{acc}P,
+              tikz={
+              \onslide<4>{
+              \node[draw,circle,
+              dashed,
+              scale=0.85,
+              fit to=tree]{};
+              }
+              }
+                  [\tsc{k}2]
+                  [\tsc{nomP}
+                      [\tsc{k}1]
+                      [ϕP
+                          [\phantom{xxx}, roof, baseline]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}
+        & \phantom{x} &
+        \begin{forest} boom
+          [\tsc{rel}P
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{we},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof, baseline]
+              ]
+              [\tsc{acc}P,
+              tikz={
+              \onslide<4>{
+              \node[draw,circle,
+              dashed,
+              scale=0.85,
+              fit to=tree]{};
+              }
+              \node[label=below:\tit{n},
+              draw,circle,
+              scale=0.8,
+              fit to=tree]{};
+              }
+                  [\tsc{k}2]
+                  [\tsc{nomP}
+                      [\tsc{k}1]
+                      [ϕP
+                          [\phantom{xxx}, roof, baseline]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}\\
+        \bottomrule
+    \end{tabular}
+    \label{fig:acc-nom-intonly}
+  \end{adjustbox}
+  \end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}[t]{\tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{dat} → \tit{wem} in German}
+
+\pause
+
+\exg. Ich lade \sout{n} ein, \tbf{wem} \tbf{auch} \tbf{Maria} \tbf{vertraut}.\\
+1\tsc{sg}.\tsc{nom} invite.\tsc{pres}.1\tsc{sg}\scsub{[acc]} \tsc{lh}.\tsc{an}.\tsc{dat} {} \tsc{rp}.\tsc{an}.\tsc{dat} also Maria.\tsc{nom} trust.\tsc{pres}.3\tsc{sg}\scsub{[dat]}\\
+`I invite whoever Maria also trusts.' \flushfill{Modern German, adapted from \pgcitealt{vogel2001}{344}}\label{ex:mg-acc-dat-rep}
+
+\pause
+
+\begin{figure}[H]
+  \begin{adjustbox}{max height=0.5\textheight}
+  \centering
+    \begin{tabular}[b]{ccc}
+        \toprule
+        light head \tit{n} & & relative pronoun \tit{we-m}\\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+          [\tsc{acc}P,
+          tikz={
+          \onslide<4>{
+          \node[draw,circle,
+          dashed,
+          scale=0.85,
+          fill=DG,fill opacity=0.2,
+          fit to=tree]{};
+          }
+          \node[label=below:\tit{n},
+          draw,circle,
+          scale=0.8,
+          fit to=tree]{};
+          }
+              [\tsc{k}2]
+              [\tsc{nomP}
+                  [\tsc{k}1]
+                  [ϕP
+                      [\phantom{xxx}, roof, baseline]
+                  ]
+              ]
+          ]
+        \end{forest}
+        & \phantom{x} &
+        \begin{forest} boom
+          [\tsc{rel}P, s sep =15mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{we},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof, baseline]
+              ]
+              [\tsc{dat}P,
+              tikz={
+              \node[label=below:\tit{m},
+              draw,circle,
+              scale=0.9,
+              fit to=tree]{};
+              }
+                  [\tsc{k}3]
+                  [\tsc{acc}P,
+                  tikz={
+                  \onslide<4>{
+                  \node[draw,circle,
+                  dashed,
+                  scale=0.85,
+                  fit to=tree]{};
+                  }
+                  }
+                  [\tsc{k}2]
+                      [\tsc{nomP}
+                          [\tsc{k}1]
+                          [ϕP
+                              [\phantom{xxx}, roof, baseline]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+        \end{forest}\\
+        \bottomrule
+    \end{tabular}
+    \label{fig:nom-acc-intonly}
+  \end{adjustbox}
+  \end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}[t]{Differences in the lexicon}
+
+\pause
+
+    Borer-Chomsky Conjecture: the lexicon is the source of language variation
+
+\pause
 
 \begin{multicols}{2}
 
-  \begin{forest} boom
-  [\tsc{acc}P,
-  tikz={
-  \node[label=below:\tit{sie},
-  draw,circle,
-  scale=0.825,
-  fit to=tree]{};
-  }
-      [\tsc{k}2]
-      [\tsc{nom}P
-          [\tsc{k}1]
-          [3\tsc{sg}.\tsc{k}P
-              [\phantom{xxx}, roof]
-          ]
-      ]
-  ]
-  \end{forest}
+\begin{forest} boom
+[\tsc{acc}P,
+tikz={
+\onslide<4>{
+\node[label=below:\tit{sie},
+draw,circle,
+scale=0.825,
+fit to=tree]{};
+}
+}
+    [\tsc{k}2]
+    [\tsc{nom}P
+        [\tsc{k}1]
+        [3\tsc{sg}P
+            [\phantom{xxx}, roof]
+        ]
+    ]
+]
+\end{forest}
 
-  \begin{forest} boom
-  [\tsc{acc}P, s sep=15mm
-      [\tsc{nom}P,
-      tikz={
-      \node[label={below:\tit{luw}},
-      draw,circle,
-      scale=0.775,
-      fit to=tree]{};
-      }
-          [\tsc{k}1]
-          [3\tsc{sg}P
-              [\phantom{xxx}, roof]
-          ]
-      ]
-      [\tsc{acc}P,
-      tikz={
-      \node[label={below:\tit{e:l}},
-      draw,circle,
-      scale=0.775,
-      fit to=tree]{};
-      }
-       [\tsc{k}2]
-      ]
-  ]
-  \end{forest}
+\pause
+\pause
+
+\begin{forest} boom
+[\tsc{acc}P, s sep=15mm
+    [\tsc{nom}P,
+    tikz={
+    \node[label={below:\tit{luw}},
+    draw,circle,
+    scale=0.775,
+    fit to=tree]{};
+    }
+        [\tsc{k}1]
+        [3\tsc{sg}P
+            [\phantom{xxx}, roof]
+        ]
+    ]
+    [\tsc{acc}P,
+    tikz={
+    \node[label={below:\tit{e:l}},
+    draw,circle,
+    scale=0.775,
+    fit to=tree]{};
+    }
+     [\tsc{k}2]
+    ]
+]
+\end{forest}
 
 \end{multicols}
 
-
 \end{frame}
 
 
-
-\begin{frame}
-
+\begin{frame}[t]{The pattern in Polish}
 
   \begin{table}[H]
     \center
-    \caption{Different language types in different situations}
-    \begin{tabular}{ccc}
+    \begin{tabular}{c|c|c|c}
       \toprule
-    language type &   situation                               & surface element         \\
-    \cmidrule(lr){1-1}  \cmidrule(lr){2-2} \cmidrule(lr){3-3}
-    internal-only &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
-                  &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int}     \\
-                  &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
-                  \cmidrule(lr){2-2} \cmidrule(lr){3-3}
-    matching      &   \tsc{k}\scsub{int} = \tsc{k}\scsub{ext} & \tsc{rp}\scsub{int/ext} \\
-                  &   \tsc{k}\scsub{int} > \tsc{k}\scsub{ext} & *                       \\
-                  &   \tsc{k}\scsub{int} < \tsc{k}\scsub{ext} & *                       \\
-    \bottomrule
+      \textsubscript{\tsc{int}} \textsuperscript{\tsc{ext}}
+             & [\tsc{nom}]
+             & [\tsc{acc}]
+             & [\tsc{dat}]
+             \\ \cmidrule{1-4}
+         [\tsc{nom}]
+             & \tsc{nom}
+             & \cellcolor{LG}*
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{acc}]
+             & \cellcolor{DG}*
+             & \tsc{acc}
+             & \cellcolor{LG}*
+             \\ \cmidrule{1-4}
+         [\tsc{dat}]
+             & \cellcolor{DG}*
+             & \cellcolor{DG}*
+             & \tsc{dat}
+             \\
+       \bottomrule
     \end{tabular}
-    \label{tbl:overview-situations}
-    \end{table}
-
-
-\end{frame}
-
-
-\begin{frame}
-
+      \label{tbl:case-competition-none}
+  \end{table}
 
 \end{frame}
 
 
 
+\begin{frame}[t]{Light head and relative pronoun in Polish}
+
+\onslide<2-4>{
+  \begin{figure}[H]
+      \begin{adjustbox}{max height=0.4\textheight}
+    \centering
+    \begin{tabular}[b]{ccc}
+        \toprule
+        light head & & relative pronoun \\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+        [\tsc{k}P, s sep = 15 mm
+            [ϕP,
+            tikz={
+            \node[label=below:\tit{o},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[label=below:\tit{go/mu},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{k}, baseline]
+            ]
+        ]
+        \end{forest}
+        & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{k},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof, baseline]
+            ]
+            [\tsc{k}P, s sep = 15 mm
+                [ϕP,
+                tikz={
+                \node[label=below:\tit{o},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof]
+                ]
+                [\tsc{k}P,
+                tikz={
+                \node[label=below:\tit{go/mu},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\tsc{k1}, baseline]
+                ]
+            ]
+        ]
+      \end{forest}\\
+        \bottomrule
+    \end{tabular}
+    \label{fig:rel-lh-matching}
+  \end{adjustbox}
+  \end{figure}
+  }
+
+\only<3>{
+  \begin{figure}[H]
+      \begin{adjustbox}{max height=0.4\textheight}
+    \centering
+    \begin{tabular}[b]{ccc}
+        \toprule
+        light head & & relative pronoun \\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+          [\tsc{k}P,
+          tikz={
+          \node[label=below:\tit{n/m},
+          draw,circle,
+          scale=0.75,
+          fit to=tree]{};
+          }
+              [\tsc{k}]
+              [ϕP
+                  [\phantom{xxx}, roof, baseline]
+              ]
+          ]
+        \end{forest}
+        & \phantom{x} &
+        \begin{forest} boom
+          [\tsc{rel}P, s sep=15mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{we},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof]
+              ]
+              [\tsc{k}P,
+              tikz={
+              \node[label=below:\tit{n/m},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\tsc{k}]
+                  [ϕP
+                      [\phantom{xxx}, roof, baseline]
+                  ]
+              ]
+          ]
+        \end{forest}\\
+        \bottomrule
+    \end{tabular}
+    \label{fig:rel-lh-mg}
+  \end{adjustbox}
+  \end{figure}
+}
+
+
+\end{frame}
+
+
+\begin{frame}[t]{\tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{acc} → \tit{kogo} in Polish}
+
+\pause
+
+\exg. Jan lubi [ogo] \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an}.\tsc{sg}  \tsc{rp}.\tsc{acc}.\tsc{an} ever Maria like.\tsc{3sg}\scsub{[acc]}\\
+`Jan likes whoever Maria likes.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-acc-rep}
+
+\pause
+
+  \begin{figure}[H]
+    \begin{adjustbox}{max height=0.5\textheight}
+    \centering
+    \begin{tabular}[b]{ccc}
+      \toprule
+      light head \tit{o-go} & & relative pronoun \tit{k-o-go} \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{acc}P,
+        tikz={
+        \onslide<4>{
+        \node[
+        draw, circle,
+        fill=DG,fill opacity=0.2,
+        scale=0.95,
+        yshift=-0.5cm,
+        dashed,
+        fit to=tree]{};
+        }
+        }
+            [ϕP,
+            tikz={
+            \node[label=below:\tit{o},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{acc}P,
+            tikz={
+            \node[label=below:\tit{go},
+            draw,circle,
+            scale=0.9,
+            fit to=tree]{};
+            }
+                [\tsc{k}2]
+                [\tsc{nom}P
+                    [\tsc{k}1]
+                ]
+            ]
+        ]
+      \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{o},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{acc}P,
+            tikz={
+            \onslide<4>{
+            \node[
+            draw, circle,
+            scale=0.95,
+            yshift=-0.5cm,
+            dashed,
+            fit to=tree]{};
+            }
+            }
+                [ϕP,
+                tikz={
+                \node[label=below:\tit{o},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof]
+                ]
+                [\tsc{acc}P,
+                tikz={
+                \node[label=below:\tit{go},
+                draw,circle,
+                scale=0.9,
+                fit to=tree]{};
+                }
+                    [\tsc{k}2]
+                    [\tsc{nom}P
+                        [\tsc{k}1]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+    \end{tabular}
+  \end{adjustbox}
+   \label{fig:nom-nom-matching}
+  \end{figure}
+
+\end{frame}
 
 
 
-\begin{frame}{References}
+\begin{frame}[t]{\tsc{ext}\scsub{dat} vs. \tsc{int}\scsub{acc} ↛ \tit{omu}/\tit{kogo} in Polish}
+
+\pause
+
+\exg. *Jan ufa \sout{omu} \tbf{kogo} \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
+Jan trust.\tsc{3sg}\scsub{[dat]} \tsc{elh}.\tsc{dat}.\tsc{an} \tsc{rp}.\tsc{acc}.\tsc{an} ever let.\tsc{3sg}\scsub{[acc]} to home\\
+`Jan trusts whoever he let into the house.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-dat-acc-rel}
+
+\pause
+
+  \begin{figure}[H]
+    \begin{adjustbox}{max height=0.5\textheight}
+    \centering
+    \begin{tabular}[b]{ccc}
+      \toprule
+      light head \tit{o-mu} & & relative pronoun \tit{k-o-go} \\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+        [\tsc{dat}P
+            [\tsc{ϕ}P,
+            tikz={
+            \onslide<4>{
+            \node[
+            draw,circle,
+            scale=0.85,
+            dashed,
+            fit to=tree]{};
+            }
+            \node[label=below:\tit{o},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{dat}P,
+            tikz={
+            \node[label=below:\tit{mu},
+            draw,circle,
+            scale=0.95,
+            fit to=tree]{};
+            }
+                [\tsc{k}3]
+                [\tsc{acc}P,
+                tikz={
+                \onslide<4>{
+                \node[
+                draw,circle,
+                scale=0.9,
+                dashed,
+                fit to=tree]{};
+                }
+                }
+                    [\tsc{k}2]
+                    [\tsc{nom}P
+                        [\tsc{k}1]
+                    ]
+                ]
+            ]
+        ]
+        \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{k},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{acc}P
+                [\tsc{ϕ}P,
+                tikz={
+                \onslide<4>{
+                \node[
+                draw,circle,
+                scale=0.85,
+                dashed,
+                fit to=tree]{};
+                }
+                \node[label=below:\tit{o},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof]
+                ]
+                [\tsc{acc}P,
+                tikz={
+                \node[label=below:\tit{go},
+                draw,circle,
+                scale=0.9,
+                fit to=tree]{};
+                \onslide<4>{
+                \node[
+                draw,circle,
+                scale=0.95,
+                dashed,
+                fit to=tree]{};
+                }
+                }
+                    [\tsc{k}2]
+                    [\tsc{nom}P
+                        [\tsc{k}1]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+    \end{tabular}
+  \end{adjustbox}
+   \label{fig:nom-acc-matching}
+  \end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}[t]{\tsc{ext}\scsub{acc} vs. \tsc{int}\scsub{dat} ↛ \tit{ogo}/\tit{komu}}
+
+\pause
+
+\exg. *Jan lubi \sout{ogo} \tbf{komu} \tbf{-kolkwiek} \tbf{dokucza}.\\
+Jan like.\tsc{3sg}\scsub{[acc]} \tsc{elh}.\tsc{acc}.\tsc{an} \tsc{rp}.\tsc{dat}.\tsc{an}.\tsc{sg} ever tease.\tsc{3sg}\scsub{[dat]}\\
+`Jan likes whoever he teases.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-acc-dat-rel}
+
+\pause
+
+  \begin{figure}[H]
+    \begin{adjustbox}{max height=0.5\textheight}
+    \centering
+    \begin{tabular}[b]{ccc}
+      \toprule
+      light head \tit{o-go} & & relative pronoun \tit{k-o-mu}\\
+      \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+      \begin{forest} boom
+          [\tsc{acc}P
+              [\tsc{ϕ}P,
+              tikz={
+              \onslide<4>{
+              \node[
+              draw,circle,
+              scale=0.9,
+              dashed,
+              fit to=tree]{};
+              }
+              \node[label=below:\tit{o},
+              draw,circle,
+              scale=0.85,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof]
+              ]
+              [\tsc{acc}P,
+              tikz={
+              \node[label=below:\tit{go},
+              draw,circle,
+              scale=0.9,
+              fit to=tree]{};
+              \onslide<4>{
+              \node[
+              draw,circle,
+              scale=0.95,
+              dashed,
+              fit to=tree]{};
+              }
+              }
+                  [\tsc{k}2]
+                  [\tsc{nom}P
+                      [\tsc{k}1]
+                  ]
+              ]
+          ]
+        \end{forest}
+      & \phantom{x} &
+      \begin{forest} boom
+        [\tsc{rel}P
+            [\tsc{rel}P,
+            tikz={
+            \node[label=below:\tit{k},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\phantom{xxx}, roof]
+            ]
+            [\tsc{dat}P
+                [\tsc{ϕ}P,
+                tikz={
+                \onslide<4>{
+                \node[
+                draw,circle,
+                scale=0.9,
+                dashed,
+                fit to=tree]{};
+                }
+                \node[label=below:\tit{o},
+                draw,circle,
+                scale=0.85,
+                fit to=tree]{};
+                }
+                    [\phantom{xxx}, roof]
+                ]
+                [\tsc{dat}P,
+                tikz={
+                \node[label=below:\tit{mu},
+                draw,circle,
+                scale=0.95,
+                fit to=tree]{};
+                }
+                    [\tsc{k}3]
+                    [\tsc{acc}P, tikz={
+                    \onslide<4>{
+                    \node[
+                    draw,circle,
+                    scale=0.9,
+                    dashed,
+                    fit to=tree]{};
+                    }
+                    }
+                        [\tsc{k}2]
+                        [\tsc{nom}P
+                            [\tsc{k}1]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+      \end{forest}\\
+      \bottomrule
+    \end{tabular}
+  \end{adjustbox}
+   \label{fig:nom-acc-matching}
+  \end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}[t]{}
+
+\pause
+
+  \begin{figure}[H]
+    \centering
+    \begin{tabular}[b]{c}
+      \toprule
+      \begin{tikzpicture}[node distance=1.5cm]
+        \onslide<1-2>{
+        \node (question2) [question]
+        {\tsc{int} approved};
+        }
+        \onslide<3->{
+        \node (question2) [question]
+        {ϕ+\tsc{k} portmanteau};
+        }
+            \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
+            {matching};
+                \node (example2) [example, below of=outcome2]
+                {e.g. Polish\\\phantom{x}\\\phantom{x}};
+            \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
+            {\tsc{ext} approved};
+                \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
+                {internal-only};
+                    \node (example3) [example, below of=outcome3]
+                    {e.g. Modern German\\\phantom{x}};
+                \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
+                {unrestricted};
+                    \node (example4) [example, below of=outcome4]
+                    {e.g. Gothic, Old High German, Classical Greek};
+
+      \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+      \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+      \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+      \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+      \end{tikzpicture}\\
+      \bottomrule
+    \end{tabular}
+      \label{fig:lexical-entries}
+  \end{figure}
+
+\end{frame}
+
+
+\begin{frame}[t]{Again}
+
+  Properties of morphology show reflexes in syntax
+
+\end{frame}
+
+\begin{frame}[t]{Conclusion}
+
+\end{frame}
+
+
+\begin{frame}[t]{References}
 
 Citko, Barbara (2013). “Size matters: Multidominance and DP structure in Polish”. In: \tit{Talk at the th Poznan Linguistic Meeting}.\\
-Daskalaki, Evangelia (2011). “Case Mis-Matching as Kase Stranding”. In: U\tit{niversity of Pennsylvania Working Papers in Linguistics.} Ed. by Lauren A. Friedman. Vol. 17. Philadelphia: Penn Linguistics Club, pp. 77–86.\\
+Daskalaki, Evangelia (2011). “Case Mis-Matching as Kase Stranding”. In: \tit{University of Pennsylvania Working Papers in Linguistics.} Ed. by Lauren A. Friedman. Vol. 17. Philadelphia: Penn Linguistics Club, pp. 77–86.\\
 Harbert, Wayne Eugene (1978). “Gothic syntax: a relational grammar”. PhD thesis. Urbana-Champaign.\\
 Himmelreich, Anke (2017). “Case Matching Effects in Free Relatives and Parasitic Gaps: A Study on the Properties of Agree”. PhD thesis. Universität Leipzig.\\
 Vogel, Ralf (2001). “Case Conflict in German Free Relative Constructions: An Optimality Theoretic Treatment”. In: \tit{Competition in Syntax.} Ed. by Gereon Müller and Wolfgang Sternefeld. Berlin: Mouton de Gruyter, pp. 341–375. doi: 10.1515/9783110829068.341.
