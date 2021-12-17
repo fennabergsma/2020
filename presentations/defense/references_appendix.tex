@@ -178,6 +178,28 @@ I trust\scsub{[dat]} \tsc{lh}.\tsc{dat} \tsc{rp}.\tsc{acc} also Maria like\scsub
 
 \end{frame}
 
+\begin{frame}[t,noframenumbering]{Modern German syncretism}
+
+  \exg. Ich erzähle, \tbf{was} \tbf{immer} \tbf{mir} \tbf{gefällt}.\\
+   I tell\scsub{[acc]} \tsc{rp}.\tsc{nom} ever me pleases\scsub{[nom]}\\
+   `I tell whatever pleases me.' \flushfill{Modern German, \pgcitealt{vogel2001}{344}}\label{ex:mg-nom-acc-syn}
+
+\end{frame}
+
+
+\begin{frame}[t,noframenumbering]{Weak and strong definites as head of a relative clause}
+
+  \exg. *Fritz ist jetzt im Haus, das er sich letztes Jahr gebaut hat.\\
+  Fritz is now {in the} house that the \tsc{refl} last year built has\\
+  `Fritz is now in the house that he built last year.' \flushfill{Modern German, \pgcitealt{schwarz2009}{22} after \pgcitealt{hartmann1978}{77}}\label{ex:mg-florian-fritz-m}
+
+  \exg. Fritz ist jetzt in dem Haus, das er sich letztes Jahr gebaut hat.\\
+  Fritz is now in the house that the \tsc{refl} last year built has\\
+  `Fritz is now in the house that he built last year.' \flushfill{Modern German, \pgcitealt{schwarz2009}{22} after \pgcitealt{hartmann1978}{77}}\label{ex:mg-florian-fritz-dem}
+
+\end{frame}
+
+
 \begin{frame}[t,noframenumbering]{\tsc{acc}\scsub{ext} vs. \tsc{acc}\scsub{int} in Polish}
 
 \exg. Jan lubi \sout{ogo} \tbf{kogo} \tbf{-kolkwiek} \tbf{Maria} \tbf{lubi}.\\
@@ -286,13 +308,9 @@ Jan like\scsub{[acc]} \tsc{lh}.\tsc{acc}  \tsc{rp}.\tsc{acc} ever Maria like\scs
 
 \begin{frame}[t,noframenumbering]{\tsc{dat}\scsub{ext} vs. \tsc{acc}\scsub{int} in Polish}
 
-
-
 \exg. *Jan ufa \sout{omu} \tbf{kogo} \tbf{-kolkwiek} \tbf{wpuścil} \tbf{do} \tbf{domu}.\\
-Jan trust\scsub{[dat]} \tsc{elh}.\tsc{dat} \tsc{rp}.\tsc{acc} ever let\scsub{[acc]} to home\\
+Jan trust\scsub{[dat]} \tsc{lh}.\tsc{dat} \tsc{rp}.\tsc{acc} ever let\scsub{[acc]} to home\\
 `Jan trusts whoever he let into the house.' \flushfill{Polish, adapted from \citealt{citko2013} after \pgcitealt{himmelreich2017}{17}}\label{ex:polish-dat-acc-rel}
-
-
 
   \begin{figure}[H]
     \begin{adjustbox}{max height=0.5\textheight}
@@ -402,96 +420,144 @@ Jan trust\scsub{[dat]} \tsc{elh}.\tsc{dat} \tsc{rp}.\tsc{acc} ever let\scsub{[ac
    \label{fig:nom-acc-matching}
   \end{figure}
 
-
 \end{frame}
 
-\begin{frame}[t,noframenumbering]{Weak and strong definites as head of a relative clause}
 
-  \exg. *Fritz ist jetzt im Haus, das er sich letztes Jahr gebaut hat.\\
-  Fritz is now {in the} house that the \tsc{refl} last year built has\\
-  `Fritz is now in the house that he built last year.' \flushfill{Modern German, \pgcitealt{schwarz2009}{22} after \pgcitealt{hartmann1978}{77}}\label{ex:mg-florian-fritz-m}
 
-  \exg. Fritz ist jetzt in dem Haus, das er sich letztes Jahr gebaut hat.\\
-  Fritz is now in the house that the \tsc{refl} last year built has\\
-  `Fritz is now in the house that he built last year.' \flushfill{Modern German, \pgcitealt{schwarz2009}{22} after \pgcitealt{hartmann1978}{77}}\label{ex:mg-florian-fritz-dem}
 
-\end{frame}
 
-\begin{frame}[t,noframenumbering]{Three descriptive parameters generate four language types}
+
+\begin{frame}[t,noframenumbering]{Old High German \tsc{elh} and \tsc{rp}}
 
   \begin{figure}[H]
-    \centering
-    \begin{adjustbox}{max height=0.8\textheight}
-    \begin{tabular}[b]{c}
+    \center
+    \begin{tabular}[b]{ccc}
         \toprule
-      \begin{tikzpicture}[node distance=1.5cm]
-      \node (question1) [question]
-      {cases\\ considered:};
-          \node (outcome1) [outcome, below of=question1, xshift=-2cm, yshift=-0.5cm]
-          {always external};
-              \node (example1) [example, below of=outcome1]
-              {e.g. Old English, Modern Greek (5)\\\phantom{x}};
-      \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
-        {allow \tsc{int}}; %ϕ+\tsc{k} portmanteau?
-            \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
-            {matching};
-                \node (example2) [example, below of=outcome2]
-                {e.g. Polish (9)\\\phantom{x}\\\phantom{x}};
-            \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
-            {allow \tsc{ext}}; %\tsc{lh}-\tsc{rp} syncretism?
-                \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
-                {internal-only};
-                    \node (example3) [example, below of=outcome3]
-                    {e.g. Modern German (3)\\\phantom{x}};
-                \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
-                {urestricted};
-                    \node (example4) [example, below of=outcome4]
-                    {e.g. Gothic, Old High German, Classical Greek (2)};
-
-      \draw [arrow] (question1) -- node[anchor=north] {\tsc{int} + \tsc{ext}} (question2);
-      \draw [arrow] (question1) -- node[anchor=east] {\tsc{ext}} (outcome1);
-      \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-      \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-      \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
-      \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
-
-      \end{tikzpicture}\\
-      \bottomrule
+        extra light head & & relative pronoun \\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+          [\tsc{k}P,
+          tikz={
+          \node[label=below:\tit{ër/ën},
+          draw,circle,
+          scale=0.75,
+          fit to=tree]{};
+          }
+              [\tsc{k}]
+              [ϕP
+                  [\phantom{xxx}, roof, baseline]
+              ]
+          ]
+        \end{forest}
+        & \phantom{x} &
+        \begin{forest} boom
+          [\tsc{rel}P, s sep=15mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{d},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof]
+              ]
+              [\tsc{k}P,
+              tikz={
+              \node[label=below:\tit{ër/ën},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\tsc{k}]
+                  [ϕP
+                      [\phantom{xxx}, roof, baseline]
+                  ]
+              ]
+          ]
+        \end{forest}\\
+        \bottomrule
     \end{tabular}
-    \end{adjustbox}
-      \label{fig:typology}
+     \caption {\tsc{elh} and \tsc{rp} in Old High German }
+    \label{fig:rel-elh-ohg-sum}
   \end{figure}
 
 \end{frame}
 
 
-\begin{frame}[t,noframenumbering]{Logically possible patterns for headless relatives}
+\begin{frame}[t,noframenumbering]{Old High German \tsc{dem} and \tsc{rp}}
 
-  \begin{table}[H]
+  \begin{figure}[H]
     \center
-      \begin{tabular}{ccc|ccc}
-      \toprule
-        &   \multicolumn{2}{c}{[\tsc{int}]>[\tsc{ext}]} & \multicolumn{2}{|c}{[\tsc{ext}]>[\tsc{int}]} &                  \\
-            \cmidrule(lr){2-3}                      \cmidrule(lr){4-5}
-        &   \tsc{int}            & \tsc{ext}          & \tsc{int}          & \tsc{ext}            & language              \\
-            \cmidrule(lr){2-2}  \cmidrule(lr){3-3}  \cmidrule(lr){4-4}  \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
-      1 &   ✔                   & *                 & ✔               & *                     & n.a.                  \\
-      2 &   ✔                   & *                 & *               & ✔                     & e.g. Old High German  \\
-      3 &   ✔                   & *                 & *               & *                     & e.g. Modern German    \\
-      4 &   {*}                 & ✔                 & ✔               & *                     & n.a.                  \\
-      5 &   {*}                 & ✔                 & *               & ✔                     & e.g. Old English      \\
-      6 &   {*}                 & ✔                 & *               & *                     & n.a.                  \\
-      7 &   {*}                 & *                 & ✔               & *                     & n.a.                  \\
-      8 &   {*}                 & *                 & *               & ✔                     & n.a.                  \\
-      9 &   {*}                 & *                 & *               & *                     & e.g. Polish           \\
-      \bottomrule
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}[b]{ccc}
+        \toprule
+        light head & & relative pronoun \\
+        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
+        \begin{forest} boom
+        [\tsc{dem}P, s sep = 17.5 mm
+            [\tsc{dem}P,
+            tikz={
+            \node[label=below:\tit{d},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{dem}]
+                [\tsc{rel}P
+                    [\phantom{x}\tit{dh}\phantom{x}, roof]
+                ]
+            ]
+            [\tsc{k}P,
+            tikz={
+            \node[label=below:\tit{ër/ën},
+            draw,circle,
+            scale=0.85,
+            fit to=tree]{};
+            }
+                [\tsc{k}]
+                [ϕP
+                    [\phantom{xxx}, roof, baseline]
+                ]
+            ]
+        ]
+        \end{forest}
+        & \phantom{x} &
+        \begin{forest} boom
+          [\tsc{rel}P, s sep = 17.5 mm
+              [\tsc{rel}P,
+              tikz={
+              \node[label=below:\tit{d},
+              draw,circle,
+              scale=0.85,
+              fit to=tree]{};
+              }
+                  [\phantom{xxx}, roof, baseline]
+              ]
+              [\tsc{k}P,
+              tikz={
+              \node[label=below:\tit{ër/ën},
+              draw,circle,
+              scale=0.75,
+              fit to=tree]{};
+              }
+                  [\tsc{k}]
+                  [ϕP
+                      [\phantom{xxx}, roof, baseline]
+                  ]
+              ]
+          ]
+        \end{forest}\\
+        \bottomrule
     \end{tabular}
-      \label{tbl:possible-headless-relatives}
-  \end{table}
+  \end{adjustbox}
+     \caption {\tsc{dem} and \tsc{rp} in Old High German }
+    \label{fig:rel-lh-ohg-sum}
+  \end{figure}
 
 \end{frame}
 
-\begin{frame}{Greek examples}
+
+\begin{frame}[t,noframenumbering]{Modern Greek examples}
 
   \exg. Irθan ópji \tbf{káleses}.\\
   come.\tsc{pst}.3\tsc{pl}\scsub{[nom]} \tsc{rp}.\tsc{pl}.\tsc{m}.\tsc{nom} invite.\tsc{pst}.2\tsc{sg}\scsub{[acc]}\\
@@ -648,140 +714,77 @@ Jan trust\scsub{[dat]} \tsc{elh}.\tsc{dat} \tsc{rp}.\tsc{acc} ever let\scsub{[ac
 
 \end{frame}
 
-\begin{frame}[t,noframenumbering]{Modern German syncretism}
 
-  \exg. Ich erzähle, \tbf{was} \tbf{immer} \tbf{mir} \tbf{gefällt}.\\
-   I tell\scsub{[acc]} \tsc{rp}.\tsc{nom} ever me pleases\scsub{[nom]}\\
-   `I tell whatever pleases me.' \flushfill{Modern German, \pgcitealt{vogel2001}{344}}\label{ex:mg-nom-acc-syn}
-
-\end{frame}
-
-
-\begin{frame}[t,noframenumbering]{Old High German \tsc{elh} and \tsc{rp}}
+\begin{frame}[t,noframenumbering]{Three descriptive parameters generate four language types}
 
   \begin{figure}[H]
-    \center
-    \begin{tabular}[b]{ccc}
+    \centering
+    \begin{adjustbox}{max height=0.8\textheight}
+    \begin{tabular}[b]{c}
         \toprule
-        extra light head & & relative pronoun \\
-        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
-        \begin{forest} boom
-          [\tsc{k}P,
-          tikz={
-          \node[label=below:\tit{ër/ën},
-          draw,circle,
-          scale=0.75,
-          fit to=tree]{};
-          }
-              [\tsc{k}]
-              [ϕP
-                  [\phantom{xxx}, roof, baseline]
-              ]
-          ]
-        \end{forest}
-        & \phantom{x} &
-        \begin{forest} boom
-          [\tsc{rel}P, s sep=15mm
-              [\tsc{rel}P,
-              tikz={
-              \node[label=below:\tit{d},
-              draw,circle,
-              scale=0.75,
-              fit to=tree]{};
-              }
-                  [\phantom{xxx}, roof]
-              ]
-              [\tsc{k}P,
-              tikz={
-              \node[label=below:\tit{ër/ën},
-              draw,circle,
-              scale=0.75,
-              fit to=tree]{};
-              }
-                  [\tsc{k}]
-                  [ϕP
-                      [\phantom{xxx}, roof, baseline]
-                  ]
-              ]
-          ]
-        \end{forest}\\
-        \bottomrule
+      \begin{tikzpicture}[node distance=1.5cm]
+      \node (question1) [question]
+      {cases\\ considered:};
+          \node (outcome1) [outcome, below of=question1, xshift=-2cm, yshift=-0.5cm]
+          {always external};
+              \node (example1) [example, below of=outcome1]
+              {e.g. Old English, Modern Greek (5)\\\phantom{x}};
+      \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
+        {allow \tsc{int}}; %ϕ+\tsc{k} portmanteau?
+            \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
+            {matching};
+                \node (example2) [example, below of=outcome2]
+                {e.g. Polish (9)\\\phantom{x}\\\phantom{x}};
+            \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
+            {allow \tsc{ext}}; %\tsc{lh}-\tsc{rp} syncretism?
+                \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
+                {internal-only};
+                    \node (example3) [example, below of=outcome3]
+                    {e.g. Modern German (3)\\\phantom{x}};
+                \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
+                {urestricted};
+                    \node (example4) [example, below of=outcome4]
+                    {e.g. Gothic, Old High German, Classical Greek (2)};
+
+      \draw [arrow] (question1) -- node[anchor=north] {\tsc{int} + \tsc{ext}} (question2);
+      \draw [arrow] (question1) -- node[anchor=east] {\tsc{ext}} (outcome1);
+      \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
+      \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
+      \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
+      \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+
+      \end{tikzpicture}\\
+      \bottomrule
     \end{tabular}
-     \caption {\tsc{elh} and \tsc{rp} in Old High German }
-    \label{fig:rel-elh-ohg-sum}
+    \end{adjustbox}
+      \label{fig:typology}
   \end{figure}
 
 \end{frame}
 
 
-\begin{frame}[t,noframenumbering]{Old High German \tsc{dem} and \tsc{rp}}
+\begin{frame}[t,noframenumbering]{Logically possible patterns for headless relatives}
 
-  \begin{figure}[H]
+  \begin{table}[H]
     \center
-    \begin{adjustbox}{max width=\textwidth}
-    \begin{tabular}[b]{ccc}
-        \toprule
-        light head & & relative pronoun \\
-        \cmidrule(lr){1-1} \cmidrule(lr){3-3}
-        \begin{forest} boom
-        [\tsc{dem}P, s sep = 17.5 mm
-            [\tsc{dem}P,
-            tikz={
-            \node[label=below:\tit{d},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            }
-                [\tsc{dem}]
-                [\tsc{rel}P
-                    [\phantom{x}\tit{dh}\phantom{x}, roof]
-                ]
-            ]
-            [\tsc{k}P,
-            tikz={
-            \node[label=below:\tit{ër/ën},
-            draw,circle,
-            scale=0.85,
-            fit to=tree]{};
-            }
-                [\tsc{k}]
-                [ϕP
-                    [\phantom{xxx}, roof, baseline]
-                ]
-            ]
-        ]
-        \end{forest}
-        & \phantom{x} &
-        \begin{forest} boom
-          [\tsc{rel}P, s sep = 17.5 mm
-              [\tsc{rel}P,
-              tikz={
-              \node[label=below:\tit{d},
-              draw,circle,
-              scale=0.85,
-              fit to=tree]{};
-              }
-                  [\phantom{xxx}, roof, baseline]
-              ]
-              [\tsc{k}P,
-              tikz={
-              \node[label=below:\tit{ër/ën},
-              draw,circle,
-              scale=0.75,
-              fit to=tree]{};
-              }
-                  [\tsc{k}]
-                  [ϕP
-                      [\phantom{xxx}, roof, baseline]
-                  ]
-              ]
-          ]
-        \end{forest}\\
-        \bottomrule
+      \begin{tabular}{ccc|ccc}
+      \toprule
+        &   \multicolumn{2}{c}{[\tsc{int}]>[\tsc{ext}]} & \multicolumn{2}{|c}{[\tsc{ext}]>[\tsc{int}]} &                  \\
+            \cmidrule(lr){2-3}                      \cmidrule(lr){4-5}
+        &   \tsc{int}            & \tsc{ext}          & \tsc{int}          & \tsc{ext}            & language              \\
+            \cmidrule(lr){2-2}  \cmidrule(lr){3-3}  \cmidrule(lr){4-4}  \cmidrule(lr){5-5}    \cmidrule(lr){6-6}
+      1 &   ok                   & *                 & ok               & *                     & n.a.                  \\
+      2 &   ok                   & *                 & *               & ok                     & e.g. Old High German  \\
+      3 &   ok                   & *                 & *               & *                     & e.g. Modern German    \\
+      4 &   {*}                 & ok                 & ok               & *                     & n.a.                  \\
+      5 &   {*}                 & ok                 & *               & ok                     & e.g. Old English      \\
+      6 &   {*}                 & ok                 & *               & *                     & n.a.                  \\
+      7 &   {*}                 & *                 & ok               & *                     & n.a.                  \\
+      8 &   {*}                 & *                 & *               & ok                     & n.a.                  \\
+      9 &   {*}                 & *                 & *               & *                     & e.g. Polish           \\
+      \bottomrule
     \end{tabular}
-  \end{adjustbox}
-     \caption {\tsc{dem} and \tsc{rp} in Old High German }
-    \label{fig:rel-lh-ohg-sum}
-  \end{figure}
+      \label{tbl:possible-headless-relatives}
+  \end{table}
 
 \end{frame}
