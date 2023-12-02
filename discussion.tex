@@ -1,6 +1,6 @@
 % !TEX root = thesis.tex
 
-\chapter{Conclusion}\label{ch:discussion}
+\chapter{Summary}\label{ch:discussion}
 
 This dissertation discussed two aspects of case competition in headless relatives. The first aspect was introduced in Chapter \ref{ch:recurring} and concerns which case wins the case competition. In all languages with case competition that I discussed, this is determined by the case scale in \ref{ex:case-scale-summary}.
 
@@ -68,7 +68,7 @@ To my knowledge, there is no language that behaves like this.
 The matching type of language allows neither the internal nor the external case to surface when either of them wins the case competition.
 An example of this language type is Polish.
 
-Chapter \ref{ch:without-case-competition} took a small detour to discuss languages without case competition. These types of languages would show either always the internal case or always the external case. To my knowledge, there is no language in which it is always the internal case that surfaces. Two examples in which the external case always surfaces are Modern Greek and Old English.
+Chapter \ref{ch:without-case-competition} took a small detour to discuss languages without case competition. These types of languages would show either always the internal case or always the external case. To my knowledge, there is no language in which it is always the internal case that surfaces. Two examples in which the external case always surfaces are Modern Greek and Old English. 
 
 The diagram in Figure \ref{fig:typology-summary} generates the four possible language types that I discussed in this dissertation.
 
@@ -79,26 +79,26 @@ The diagram in Figure \ref{fig:typology-summary} generates the four possible lan
       \toprule
     \begin{tikzpicture}[node distance=1.5cm]
     \node (question1) [question]
-    {cases\\ considered:};
+    {cases considered};
         \node (outcome1) [outcome, below of=question1, xshift=-2cm, yshift=-0.5cm]
         {always external};
-            \node (example1) [example, below of=outcome1]
+            \node (example1) [example, below of=outcome1, yshift=0.5cm]
             {e.g. Old English, Modern Greek\\\phantom{x}};
     \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
       {allow \tsc{int}};
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
           {matching};
-              \node (example2) [example, below of=outcome2]
+              \node (example2) [example, below of=outcome2, yshift=0.5cm]
               {e.g. Polish\\\phantom{x}\\\phantom{x}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
           {allow \tsc{ext}};
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
               {internal-only};
-                  \node (example3) [example, below of=outcome3]
+                  \node (example3) [example, below of=outcome3, yshift=0.5cm]
                   {e.g. Modern German\\\phantom{x}};
               \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
-              {urestricted};
-                  \node (example4) [example, below of=outcome4]
+              {unrestricted};
+                  \node (example4) [example, below of=outcome4, yshift=0.5cm]
                   {e.g. Gothic, Old High German, Classical Greek};
 
     \draw [arrow] (question1) -- node[anchor=north] {\ac{int} + \ac{ext}} (question2);
@@ -121,7 +121,7 @@ If a language considers both the internal and external case, it can allow the in
 If a language allows the internal case to surface when it wins the case competition, it can allow the external case to surface when it wins the case competition or it cannot. If it does not, the internal-only type of language is generated.
 If a language allows the external case to surface when it wins the competition, the unrestricted type of language is generated.
 
-The goal of Part \ref{part:deriving} of the dissertation was to derive the crosslinguistic differences from something that can be independently observed within a language. I proposed to investigate the morphology of the languages. By doing so, I could suggest differences between the lexical entries in the different languages. These different lexical entries would then ultimately lead languages to be of different types.
+The goal of Part \ref{part:deriving} of the dissertation was to derive the crosslinguistic differences from something that can be independently observed within a language. I proposed to investigate the morphology of the languages. By doing so, I could suggest differences between the lexical entries in the different languages. These different lexical entries would then ultimately lead languages to be of different types. Within this dissertation, I translated two of the three descriptive parameters to something that can independently observed in morphology, namely 'allow \tsc{int}' and 'allow \tsc{ext}' and not cases considered. In other words, the system can differentiate between different languages with case competition, but not between languages with and without case competition.
 
 Chapter \ref{ch:the-basic-idea} put in place the assumptions needed for the proposal to work. First, I assume that headless relatives are derived from light-headed relatives. Light-headed relatives contain a light head and a relative pronoun. In a headless relative either the light head or the relative pronoun is deleted. The necessary requirement for deletion is that the deleted element (either the light head or relative pronoun) is structurally or formally contained in the other element. All languages have two possible light heads, which partly overlap in feature content with the relative pronoun.
 
@@ -143,17 +143,17 @@ In sum, I reformulated two of the descriptive parameters from Figure \ref{fig:ty
       {ϕ+\tsc{k} portmanteau};
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
           {matching};
-              \node (example2) [example, below of=outcome2]
+              \node (example2) [example, below of=outcome2, yshift=0.5cm]
               {e.g. Polish\\\phantom{x}\\\phantom{x}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
           {\tsc{lh}-\tsc{rp} syncretism};
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
               {internal-only};
-                  \node (example3) [example, below of=outcome3]
+                  \node (example3) [example, below of=outcome3, yshift=0.5cm]
                   {e.g. Modern German\\\phantom{x}};
               \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
               {unrestricted};
-                  \node (example4) [example, below of=outcome4]
+                  \node (example4) [example, below of=outcome4, yshift=0.5cm]
                   {e.g. Gothic, Old High German, Classical Greek};
 
     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
@@ -171,3 +171,6 @@ In sum, I reformulated two of the descriptive parameters from Figure \ref{fig:ty
 A language can either have a portmanteau for phi and case features, or it does not and multiple lexical entries spell out these features. If there is not a phi and case feature portmanteau, the matching type of language is generated.
 If a language has a phi and case feature portmanteau, it can either have a syncretism between relative pronouns (used in headless relatives) and demonstratives, or there is no such syncretism. If there is no such syncretism, the internal-only type of language is generated.
 If there is such a syncretism, the unrestricted type of language is generated.
+
+Chapter \ref{ch:previous-approaches} placed my account in a broader perspective. It discussed three different proposals that account for different language types in headless relatives and compared them to the approach put forward in this dissertation. All of the proposals account for the case facts using some kind of case hierarchy. The proposals differ in how they model the variation, both in the technical details of the proposal, but more importantly, also in empirical scope and predictions they make.
+

@@ -197,7 +197,7 @@ In the example that follows I show that Old English is of the type in Table \ref
 
 Consider the example in \ref{ex:oe-acc-dat}.
 The internal case is dative, as the preposition \tit{onuppan} `upon' takes dative objects.
-The external case is accusative, as the predicate \tit{tōbrȳsan} `pulversize' takes accusative objects.
+The external case is accusative, as the predicate \tit{tōbrȳsan} `pulverize' takes accusative objects.
 The relative pronoun \tit{ðone} `\ac{rp}.\ac{sg}.\ac{m}.\ac{acc}' appears in the external case: the accusative.
 The relative pronoun appears in the external case, which is the least complex case of the two. The example is grammatical, because Old English does not show case competition, so the case scale is irrelevant. As long as the relative pronoun appears in the external case, the headless relative is grammatical.
 
@@ -552,26 +552,26 @@ I incorporate the parameter that models this pattern into the diagram from Secti
       \toprule
     \begin{tikzpicture}[node distance=1.5cm]
     \node (question1) [question]
-    {cases\\ considered:};
+    {cases considered};
         \node (outcome1) [outcome, below of=question1, xshift=-2cm, yshift=-0.5cm]
         {always external};
-            \node (example1) [example, below of=outcome1]
+            \node (example1) [example, below of=outcome1, yshift=0.5cm]
             {e.g. Old English, Modern Greek (5)\\\phantom{x}};
     \node (question2) [question, below of=question1, xshift=2.5cm, yshift=-1cm]
       {allow \tsc{int}}; %ϕ+\tsc{k} portmanteau?
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
           {matching};
-              \node (example2) [example, below of=outcome2]
+              \node (example2) [example, below of=outcome2, yshift=0.5cm]
               {e.g. Polish (9)\\\phantom{x}\\\phantom{x}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
           {allow \tsc{ext}}; %\tsc{lh}-\ac{rp} syncretism?
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
               {internal-only};
-                  \node (example3) [example, below of=outcome3]
+                  \node (example3) [example, below of=outcome3, yshift=0.5cm]
                   {e.g. Modern German (3)\\\phantom{x}};
               \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
-              {urestricted};
-                  \node (example4) [example, below of=outcome4]
+              {unrestricted};
+                  \node (example4) [example, below of=outcome4, yshift=0.5cm]
                   {e.g. Gothic, Old High German, Classical Greek (2)};
 
     \draw [arrow] (question1) -- node[anchor=north] {\ac{int} + \ac{ext}} (question2);

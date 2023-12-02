@@ -13,17 +13,17 @@ In Chapter \ref{ch:typology}, I introduced two descriptive parameters that descr
       {allow \tsc{int}};
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
           {matching};
-              \node (example2) [example, below of=outcome2]
+              \node (example2) [example, below of=outcome2, yshift=0.5cm]
               {e.g. Polish\\\phantom{x}\\\phantom{x}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
           {allow \tsc{ext}};
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
               {internal-only};
-                  \node (example3) [example, below of=outcome3]
+                  \node (example3) [example, below of=outcome3, yshift=0.5cm]
                   {e.g. Modern German\\\phantom{x}};
               \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
               {unrestricted};
-                  \node (example4) [example, below of=outcome4]
+                  \node (example4) [example, below of=outcome4, yshift=0.5cm]
                   {e.g. Gothic, Old High German, Classical Greek};
 
     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
@@ -60,7 +60,7 @@ This section lays out the underlying assumptions that I make in my proposal. Fir
 
 I start with my assumption that headless relatives are derived from relative clauses headed by a light head.\footnote{
 The same is argued for headless relatives with \tsc{d}-pronouns in Modern German by \citet{fuss2014,hanink2018} and for Polish by \citet{citko2004}.
-Several others claim that headless relatives have a head, but that it is phonologically empty \citep[cf.][]{bresnan1978,groos1981,himmelreich2017,sanfelici2021}.
+Several others claim that headless relatives have a head, but that it is phonologically empty \citep[cf.][]{bresnan1978,groos1981,himmelreich2017}.
 }
 The light head bears the external case, and the relative pronoun bears the internal case, as illustrated in \ref{ex:light+rel}.
 
@@ -81,11 +81,12 @@ To see what a light-headed relative looks like, consider the Old High German lig
 The difference between a light-headed relative and a headless relative is that in a headless relative either the light head or the relative pronoun does not surface.
 The surfacing element is the one that bears the winning case, and the absent element is the one that bears the losing case. This means that what I have so far been glossing as the relative pronoun and calling the relative pronoun is actually sometimes the light head (when the relative pronoun is deleted) and sometimes the relative pronoun (when the light head is deleted). To reflect that, I call the surfacing element from now on the surface element.
 
-This brings me to my second assumption, which concerns the circumstances under which the light head or the relative pronoun can be deleted. A light head or a relative pronoun can be deleted when their content can be recovered. The content can be recovered when there is an antecedent which contains the deleted element. More specifically, the deleted element needs to be contained as a whole within the antecedent.\footnote{
-In Section \ref{sec:basic-matching} I show that `containment as a whole' is also a necessary requirement in other types of deletion operations.
-}\footnote{
-Throughout this chapter I elaborate further on the exact requirements for containment. There are two types of containment possible. The first type is structural containment: an element can be absent if it is structurally contained in the other element. I elaborate on this in Section \ref{sec:basic-matching}. The second type is formal containment: an element can be absent if it is formally contained in the other element. I elaborate on this in Section \ref{sec:basic-unrestricted}.
+This brings me to my second assumption, which concerns the circumstances under which the light head or the relative pronoun can be deleted.\footnote{
+The circumstances I discuss here only involve properties of the light head and the relative pronoun themselves. Their positions in a larger syntactic structure do not play a role here. For that, I refer the reader to the end of this chapter and the end of Chapter \ref{ch:deriving-unrestricted}.
 }
+A light head or a relative pronoun can be deleted when their content can be recovered. The content can be recovered when there is an antecedent which contains the deleted element. More specifically, the deleted element needs to be contained as a whole within the antecedent.\footnote{
+In Section \ref{sec:basic-matching} I show that `containment as a whole' is also a necessary requirement in other types of deletion operations.}
+Throughout this chapter I elaborate further on the exact requirements for containment. There are two types of containment possible. The first type is structural containment: an element can be absent if it is structurally contained in the other element. I elaborate on this in Section \ref{sec:basic-matching}. The second type is formal containment: an element can be absent if it is formally contained in the other element. I elaborate on this in Section \ref{sec:basic-unrestricted}.
 For light heads and relative pronouns this means that one of them can be absent when it is contained in the other element. That is, the light head can be absent when it is contained in the relative pronoun, or the relative pronoun can be absent when it is contained in the light head.
 In other words, it depends on the comparison between the light head and the relative pronoun themselves which one of them is absent.
 Note that it is also possible that neither of the elements is contained in the other one. The consequence is then that neither of them is deleted, which describes the situation in which there is no grammatical headless relative.
@@ -265,7 +266,7 @@ Consider the syntactic structure of the accusative pronoun in Khanty in \ref{ex:
 The only available lexical entry in Khanty that contains the \tsc{acc}P is \ref{ex:khanty-el-lexicon-rep}. Nanosyntax only allows constituents to be spelled out, which means that in order to spell out the \tsc{acc}P, the \tsc{nom}P needs to be moved out of the way first.\footnote{
 The movement operation is part of the spellout algorithm in Nanosyntax, which is the same for all languages. I elaborate on this spellout algorithm in Chapters \ref{ch:deriving-onlyinternal} and \ref{ch:deriving-matching}.
 }
-Now compare the syntactic structures of the German accusative pronoun in \ref{ex:german-sie-spellout-rep} and the Khanty one in \ref{ex:khanty-luw-el-spellout-rep}. The feature content is the same (except for the feminine feature, which does not play a role here), but the internal syntax looks different.
+Now compare the syntactic structures of the German accusative pronoun in \ref{ex:german-sie-spellout-rep} and the Khanty one in \ref{ex:khanty-luw-el-spellout-rep}. The feature content is the same (except for the feminine feature, which does not play a role here), but the internal syntax, i.e. the syntactic structure inside the pronoun, looks different.
 This change in internal syntax is a direct consequence of the lexical entries that I gave for the different languages.
 
 Exactly this type of difference is what leads to the different language types in headless relatives. Languages contain different lexical entries that spell out the features of the light heads and the relative pronouns.
@@ -306,12 +307,12 @@ The different language types appear by going through the chain in \ref{ex:summar
 
 In the unrestricted type of language, the lexical entries are such that there is a grammatical headless relative when the cases match, when the internal case is more complex and when the external case is more complex. When the cases match, the surface element can be either the relative pronoun that bears the internal case or the light head that bears the external case.\footnote{
 In Section \ref{sec:basic-unrestricted} I show why the surface element can be both the relative pronoun or the light head.
-} When the internal case is more complex, the surface is element is the relative pronoun that bears the internal case. When the external case is more complex, the surface element is the light head that bears the external case.
+} When the internal case is more complex, the surface element is the relative pronoun that bears the internal case. When the external case is more complex, the surface element is the light head that bears the external case.
 
 In the internal-only type of language, the lexical entries are such that there is a grammatical headless relative when the cases match and when the internal case is more complex but not when external case is more complex. When the cases match, the surface element is the relative pronoun that bears the internal (and external) case.\footnote{
 In Section \ref{sec:basic-internal} I show why the surface pronoun can only be the relative pronoun.
 }
-When the internal case is more complex, the surface is element is the relative pronoun that bears the internal case.
+When the internal case is more complex, the surface element is the relative pronoun that bears the internal case.
 
 In the matching type of language, the lexical entries are such that there is a grammatical headless relative when the cases match but not when the internal case is more complex or when the external case is more complex. When the cases match, the surface element is the relative pronoun that bears the internal (and external) case.\footnote{
 In Section \ref{sec:basic-matching} I show why the surface pronoun can only be the relative pronoun.
@@ -609,6 +610,7 @@ I suggest that the light head and the relative pronoun in this type of language 
 
 \begin{figure}[H]
   \center
+  \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}[b]{ccc}
       \toprule
       light head & & relative pronoun \\
@@ -666,6 +668,7 @@ I suggest that the light head and the relative pronoun in this type of language 
     \end{forest}\\
       \bottomrule
   \end{tabular}
+  \end{adjustbox}
    \caption {\tsc{lh} and \tsc{rp} in the matching type}
   \label{fig:rel-lh-matching}
 \end{figure}
@@ -739,6 +742,7 @@ In Figure \ref{fig:nom-acc-matching}, I give an example in which the relative pr
 
 \begin{figure}[H]
   \center
+  \begin{adjustbox}{max width=\textwidth}
   \begin{tabular}[b]{ccc}
     \toprule
     light head & & relative pronoun \\
@@ -798,6 +802,7 @@ In Figure \ref{fig:nom-acc-matching}, I give an example in which the relative pr
     \end{forest}\\
     \bottomrule
   \end{tabular}
+  \end{adjustbox}
   \caption {\tsc{ext}\scsub{nom} vs. \tsc{int}\scsub{acc} in the matching type}
  \label{fig:nom-acc-matching}
 \end{figure}
@@ -934,6 +939,7 @@ not: `those white houses and these white houses'\label{ex:kipsigis-houses} \flus
 
 The order of the noun, the demonstrative and the adjective indicates that the NP must have moved (probably cyclically via YP) to the specifier of WP. I show this in \ref{ex:np-dem-adj-kipsigis}.
 
+\begin{adjustbox}{max width=\textwidth}
 \ex.\label{ex:np-dem-adj-kipsigis}
 \begin{forest} boom
   [WP
@@ -962,6 +968,7 @@ The order of the noun, the demonstrative and the adjective indicates that the NP
   \draw[->,dashed] (src) to[out=south west,in=south] (tgt1);
   \draw[->,dashed] (tgt1) to[out=south west,in=south] (tgt2);
 \end{forest}
+\end{adjustbox}
 
 In Figure \ref{fig:kipsigis-houses}, I schematically show the first and second conjunct of \ref{ex:kipsigis-houses}.
 
@@ -1722,17 +1729,17 @@ The source of variation between languages is the different lexical entries that 
       {ϕ+\tsc{k} portmanteau};
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
           {matching};
-              \node (example2) [example, below of=outcome2]
+              \node (example2) [example, below of=outcome2, yshift=0.5cm]
               {e.g. Polish\\\phantom{x}\\\phantom{x}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
           {\tsc{lh}-\tsc{rp} syncretism};
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
               {internal-only};
-                  \node (example3) [example, below of=outcome3]
+                  \node (example3) [example, below of=outcome3, yshift=0.5cm]
                   {e.g. Modern German\\\phantom{x}};
               \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
               {unrestricted};
-                  \node (example4) [example, below of=outcome4]
+                  \node (example4) [example, below of=outcome4, yshift=0.5cm]
                   {e.g. Gothic, Old High German, Classical Greek};
 
     \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
