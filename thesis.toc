@@ -5,73 +5,73 @@
 \contentsline {chapter}{List of abbreviations}{xii}{table.0.1}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Decomposing the title}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}The content of this dissertation}{5}{section.1.2}%
-\contentsline {part}{\partnumberline {I}Case competition}{9}{part.1}%
-\contentsline {chapter}{\chapternumberline {2}The case scale}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}In headless relatives}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}In morphology}{20}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Syncretism}{20}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Morphological case containment}{21}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Summary}{22}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Aside: In syntax}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Agreement}{23}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Relativization}{30}{subsection.2.3.2}%
-\contentsline {chapter}{\chapternumberline {3}Case decomposition}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The basic idea}{40}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Deriving syncretism}{41}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{59}{section.3.3}%
-\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{64}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Summary}{66}{section.3.5}%
-\contentsline {part}{\partnumberline {II}The typology}{69}{part.2}%
-\contentsline {chapter}{\chapternumberline {4}Languages with case competition}{71}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Four possible patterns}{72}{section.4.1}%
-\contentsline {section}{\numberline {4.2}The unrestricted type of language}{76}{section.4.2}%
-\contentsline {section}{\numberline {4.3}The internal-only type of language}{84}{section.4.3}%
-\contentsline {section}{\numberline {4.4}The external-only type of language}{94}{section.4.4}%
-\contentsline {section}{\numberline {4.5}The matching type of language}{97}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Summary}{101}{section.4.6}%
-\contentsline {chapter}{\chapternumberline {5}Aside: languages without case competition}{105}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Always external case}{106}{section.5.1}%
-\contentsline {section}{\numberline {5.2}A typology of headless relatives}{113}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Summary and discussion}{118}{section.5.3}%
-\contentsline {part}{\partnumberline {III}Deriving the typology}{119}{part.3}%
-\contentsline {chapter}{\chapternumberline {6}The source of variation}{121}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Underlying assumptions}{122}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The three language types}{129}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{130}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}The matching type}{133}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{140}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Summary}{149}{section.6.3}%
-\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{155}{chapter.7}%
-\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{158}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Aside: Notes on Modern German relative pronouns}{165}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Modern German weak pronouns}{165}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Deixis in relative pronouns}{166}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Alternative segmentation of \textit {wer}}{167}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}Combining morphemes in Nanosyntax}{169}{section.7.3}%
-\contentsline {section}{\numberline {7.4}The Modern German (extra) light head}{181}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Comparing light heads and relative pronouns}{190}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Summary and discussion}{197}{section.7.6}%
-\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{201}{chapter.8}%
-\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{204}{section.8.1}%
-\contentsline {section}{\numberline {8.2}The Polish extra light head}{223}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Comparing light heads and relative pronouns}{229}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Summary and discussion}{236}{section.8.4}%
-\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{239}{chapter.9}%
-\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{245}{section.9.1}%
-\contentsline {section}{\numberline {9.2}The Old High German light heads}{254}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}The extra light head}{255}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}The demonstrative}{259}{subsection.9.2.2}%
-\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{268}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Coming back to the light heads}{281}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{282}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{285}{subsection.9.4.2}%
-\contentsline {section}{\numberline {9.5}Summary and discussion}{290}{section.9.5}%
-\contentsline {chapter}{\chapternumberline {10}Previous approaches}{293}{chapter.10}%
-\contentsline {section}{\numberline {10.1}\citealt {vogel2002}}{293}{section.10.1}%
-\contentsline {section}{\numberline {10.2}\citealt {himmelreich2017}}{297}{section.10.2}%
-\contentsline {section}{\numberline {10.3}\citealt {bergsma2019}}{301}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Summary}{304}{section.10.4}%
-\contentsline {chapter}{\chapternumberline {11}Summary}{307}{chapter.11}%
-\contentsline {chapter}{Primary texts}{313}{table.11.1}%
-\contentsline {chapter}{Bibliography}{315}{section*.155}%
+\contentsline {section}{\numberline {1.2}The content of this dissertation}{6}{section.1.2}%
+\contentsline {part}{\partnumberline {I}Case competition}{11}{part.1}%
+\contentsline {chapter}{\chapternumberline {2}The case scale}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}In headless relatives}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}In morphology}{23}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Syncretism}{23}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Morphological case containment}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Summary}{25}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Aside: In syntax}{26}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Agreement}{26}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Relativization}{34}{subsection.2.3.2}%
+\contentsline {chapter}{\chapternumberline {3}Case decomposition}{43}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The basic idea}{44}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Deriving syncretism}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Deriving morphological case containment}{65}{section.3.3}%
+\contentsline {section}{\numberline {3.4}The intuition for headless relatives}{70}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Summary}{73}{section.3.5}%
+\contentsline {part}{\partnumberline {II}The typology}{75}{part.2}%
+\contentsline {chapter}{\chapternumberline {4}Languages with case competition}{77}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Four possible patterns}{78}{section.4.1}%
+\contentsline {section}{\numberline {4.2}The unrestricted type of language}{83}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The internal-only type of language}{92}{section.4.3}%
+\contentsline {section}{\numberline {4.4}The external-only type of language}{103}{section.4.4}%
+\contentsline {section}{\numberline {4.5}The matching type of language}{106}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Summary}{110}{section.4.6}%
+\contentsline {chapter}{\chapternumberline {5}Aside: languages without case competition}{115}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Always external case}{117}{section.5.1}%
+\contentsline {section}{\numberline {5.2}A typology of headless relatives}{125}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Summary and discussion}{129}{section.5.3}%
+\contentsline {part}{\partnumberline {III}Deriving the typology}{131}{part.3}%
+\contentsline {chapter}{\chapternumberline {6}The source of variation}{133}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Underlying assumptions}{134}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The three language types}{141}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}The internal-only type}{142}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}The matching type}{146}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}The unrestricted type}{153}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Summary}{163}{section.6.3}%
+\contentsline {chapter}{\chapternumberline {7}Deriving the internal-only type}{169}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The Modern German relative pronoun}{172}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Aside: Notes on Modern German relative pronouns}{179}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Modern German weak pronouns}{180}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Deixis in relative pronouns}{181}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Alternative segmentation of \textit {wer}}{182}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Combining morphemes in Nanosyntax}{183}{section.7.3}%
+\contentsline {section}{\numberline {7.4}The Modern German (extra) light head}{198}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Comparing light heads and relative pronouns}{208}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Summary and discussion}{216}{section.7.6}%
+\contentsline {chapter}{\chapternumberline {8}Deriving the matching type}{219}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The Polish relative pronoun}{222}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Polish extra light head}{242}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Comparing light heads and relative pronouns}{248}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Summary and discussion}{256}{section.8.4}%
+\contentsline {chapter}{\chapternumberline {9}Deriving the unrestricted type}{259}{chapter.9}%
+\contentsline {section}{\numberline {9.1}The Old High German German relative pronoun}{266}{section.9.1}%
+\contentsline {section}{\numberline {9.2}The Old High German light heads}{276}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}The extra light head}{277}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}The demonstrative}{281}{subsection.9.2.2}%
+\contentsline {section}{\numberline {9.3}Comparing light heads and relative pronouns}{290}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Coming back to the light heads}{306}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}The interpretation of Old High German headless relatives}{306}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}The larger syntactic structure and deletion operation}{310}{subsection.9.4.2}%
+\contentsline {section}{\numberline {9.5}Summary and discussion}{315}{section.9.5}%
+\contentsline {chapter}{\chapternumberline {10}Previous approaches}{319}{chapter.10}%
+\contentsline {section}{\numberline {10.1}\citealt {vogel2002}}{320}{section.10.1}%
+\contentsline {section}{\numberline {10.2}\citealt {himmelreich2017}}{323}{section.10.2}%
+\contentsline {section}{\numberline {10.3}\citealt {bergsma2019}}{328}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Summary}{332}{section.10.4}%
+\contentsline {chapter}{\chapternumberline {11}Summary}{333}{chapter.11}%
+\contentsline {chapter}{Primary texts}{339}{table.11.1}%
+\contentsline {chapter}{Bibliography}{341}{section*.155}%

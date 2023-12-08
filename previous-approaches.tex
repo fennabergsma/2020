@@ -167,7 +167,7 @@ The structure that corresponds to this sentence is given in \ref{ex:bergsma-acc-
  \begin{tikzpicture}[baseline,decoration={brace}]
 \Tree [.\node(abovev){}; [.\node(V){V$_{nom}$}; ] 
 [.\node(grow){}; ] ]
-\begin{scope}[shift={(0.5in,-0.5in)}]
+\begin{scope}[shift={(0.75in,-0.5in)}]
 \Tree [.\node(bigtree){}; 
 [.\node(Acc){\textsc{accP}};  [.\node(B){\textsc{f2}}; ]
 [.\node(Nom){\textsc{nomP}};  [.\node(A){\textsc{f1}}; ]
@@ -193,12 +193,12 @@ The structure that corresponds to this sentence is given in \ref{ex:bergsma-nom-
 \Tree [.\node(topnode){}; [.V$_{acc}$ ]
 [.\node(Acc){\tsc{accP}}; [.\node(C){\tsc{f2}}; ] \edge[transparent];
 [.\node(grow){}; ] ] ] ] ] ]
-\begin{scope}[shift={(1.0in,-0.5in)}]
-\Tree [.\node(bigtree){}; [.\node(free){\tsc{nomP}};
+\begin{scope}[shift={(1.0in,-1.0in)}]
+\Tree [.\node(free){\tsc{nomP}};
 [.\node(Nom){\tsc{nomP}};  [.\node(A){\tsc{f1}}; ]
 [.\node(root){DP}; \edge[roof]; {} ] ]
 [ [.{...} ] 
-[.\node(V){V$_{nom}$}; ] ] ] ]
+[.\node(V){V$_{nom}$}; ] ] ]
 \end{scope}
 \draw (Acc.south) edge[out=320,in=80] (free.north);
 \end{tikzpicture}

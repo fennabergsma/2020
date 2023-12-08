@@ -1,4 +1,4 @@
-\documentclass[hidelinks,a4paper,twoside,openright,12pt]{memoir}
+\documentclass[hidelinks,a4paper,twoside,openright,14pt]{memoir}
 
 %\includeonly{languages-without-case-competition}
 
@@ -9,6 +9,18 @@
 \usepackage{fenna-files/packages}
 \addbibresource{fenna-files/references.bib}
 \usepackage{fenna-files/abbreviations}
+
+\settrimmedsize{297mm}{210mm}{*}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{\stockwidth}
+\addtolength{\trimedge}{-\paperwidth}
+\settypeblocksize{634pt}{448.13pt}{*}
+\setulmargins{4cm}{*}{*}
+\setlrmargins{*}{*}{1.5}
+\setmarginnotes{17pt}{51pt}{\onelineskip}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{2\onelineskip}{*}
+\checkandfixthelayout
 
 \makeatletter
 \renewcommand{\@makeschapterhead}[1]{%
@@ -31,13 +43,17 @@
 \newpage
 
 \center
+
 \large
 
+\thispagestyle{empty}
 \phantom{xx}
 
 \vspace{3em}
 
-{\LARGE
+\thispagestyle{empty}
+
+{\Large
 \tbf{Case competition in headless relatives}}\\
 
 \vspace{5em}
@@ -59,17 +75,28 @@ aus: Boarnsterhim, Niederlande\\
 
 \vspace{3em}
 
-2023\\
+Einreichungsjahr: 2021\\
+Erscheinungsjahr: 2023\\
 
-\vspace{1em}
+\vspace{5em}
+
+\normalsize
+
+\thispagestyle{empty}
+
+{\raggedright
 
 1. Gutachterin: Prof. Dr. Katharina Hartmann\\
 2. Gutachter: Dr. Pavel Caha\\
+
+\thispagestyle{empty}
 
 \vspace{1em}
 
 Tag der mündlichen Prüfung: 17.12.2021
 
+
+}
 
 \end{titlingpage}
 
@@ -90,6 +117,7 @@ Tag der mündlichen Prüfung: 17.12.2021
 \vspace{-7em}
 \listoffigures
 \clearpage
+
 
 \chapter*[List of abbreviations]{List of abbreviations}
 \begingroup
@@ -112,6 +140,7 @@ Tag der mündlichen Prüfung: 17.12.2021
 \part{The typology}\label{part:variation}
 \include{case-competition-typology}
 \include{languages-without-case-competition}
+
 
 \part{Deriving the typology}\label{part:deriving}
 \include{the-basic-idea}

@@ -403,9 +403,9 @@ The hierarchy is schematically represented in Figure \ref{fig:agr-sub-do-io}. It
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-    \node[] at (0,2.75) {subject};
-    \node[] at (0,1.5) {direct object};
-    \node[align=center] at (0,0) {indirect\\ object};
+    \node[] at (0,2.75) {\footnotesize{subject}};
+    \node[] at (0,1.5) {\footnotesize{direct object}};
+    \node[align=center] at (0,0) {{\footnotesize{indirect}}\\ {\footnotesize{object}}};
   \end{tikzpicture}\\
     \bottomrule
   \end{tabular}
@@ -445,6 +445,7 @@ Putting the languages in \posscitet{moravcsik1978} schema gives the result as sh
 
  \begin{figure}[H]
    \centering
+   \begin{adjustbox}{max width=\textwidth}
    \begin{tabular}[b]{c}
      \toprule
    \begin{tikzpicture}
@@ -452,17 +453,18 @@ Putting the languages in \posscitet{moravcsik1978} schema gives the result as sh
      \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
      \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-     \node[] at (0,2.75) {subject};
-     \node[] at (0,1.5) {direct object};
-     \node[align=center] at (0,0) {indirect\\ object};
+     \node[] at (0,2.75) {\footnotesize{subject}};
+     \node[] at (0,1.5) {\footnotesize{direct object}};
+     \node[align=center] at (0,0) {\footnotesize{indirect}\\ \footnotesize{object}};
 
-     \node[] at (2.5,3) {\footnotesize{● Japanese}};
-     \node[] at (2.25,2) {\footnotesize{● German}};
-     \node[] at (2,1) {\footnotesize{● Hungarian}};
-     \node[] at (1.375,0) {\footnotesize{● Basque}};
+     \node[] at (2.5,3) {\scriptsize{● Japanese}};
+     \node[] at (2.25,2) {\scriptsize{● German}};
+     \node[] at (2,1) {\scriptsize{● Hungarian}};
+     \node[] at (1.375,0) {\scriptsize{● Basque}};
    \end{tikzpicture}\\
     \bottomrule
  \end{tabular}
+ \end{adjustbox}
    \caption{Agreement hierarchy with languages}
    \label{fig:agr-sub-do-io-lang}
  \end{figure}
@@ -485,7 +487,7 @@ Putting the languages in \posscitet{moravcsik1978} schema gives the result as sh
            ✔    & ✔ & ✔ & 23  & Basque     \\
            ✔    & * & ✔ & (1) & -          \\
            {*}  & ✔ & ✔ & 0   & -          \\
-           {*}  & x & * & 0   & -          \\
+           {*}  & * & * & 0   & -          \\
            {*}  & * & ✔ & 0   & -          \\
        \bottomrule
      \end{tabular}
@@ -512,20 +514,23 @@ The second type of evidence that \citeauthor{bobaljik2006} gives comes from erga
 
 \begin{figure}[H]
   \centering
+\begin{adjustbox}{max width=\textwidth}
   \begin{tabular}[b]{c}
     \toprule
-  \begin{tikzpicture}
+\begin{tikzpicture}
     \node[] at (0,1) {A};
     \node[] at (1.5,1) {O};
     \node[] at (0.75,0) {S};
 
-    \draw[rotate around={45:(0.375,0.5)}] (0.375,0.5) ellipse (0.5 and 1);
+    \draw[rotate around={35:(0.375,0.5)}] (0.375,0.5) ellipse (0.5 and 1);
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}
+\end{adjustbox}
   \caption{Nominative-accusative alignment}
   \label{fig:nom-acc-lang}
 \end{figure}
+
 
 In ergative-absolutive languages, the alignment is different. The subject of an intransitive verb (S) has the same marking as the object of the transitive verb (O), namely absolutive. The subject of the transitive verb (A) has its own marking, namely ergative. This is schematically shown in \ref{fig:erg-abs-lang}.
 
@@ -538,7 +543,7 @@ In ergative-absolutive languages, the alignment is different. The subject of an 
     \node[] at (1.5,1) {O};
     \node[] at (0.75,0) {S};
 
-    \draw[rotate around={135:(1,0.5)}] (1,0.5) ellipse (0.5 and 1);
+    \draw[rotate around={140:(1,0.5)}] (1,0.5) ellipse (0.5 and 1);
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}
@@ -561,14 +566,14 @@ Note here that nominative-accusative languages use the same case marking for the
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-    \node[] at (0,2.75) {unmarked case};
-    \node[] at (0,1.5) {dependent case};
-    \node[] at (0,0) {dative};
+    \node[] at (0,2.75) {\footnotesize{unmarked case}};
+    \node[] at (0,1.5) {\footnotesize{dependent case}};
+    \node[] at (0,0) {\footnotesize{dative}};
 
-    \node[] at (2.5,3) {\footnotesize{● Japanese}};
-    \node[] at (2.25,2) {\footnotesize{● German}};
-    \node[] at (2,1) {\footnotesize{● Hungarian}};
-    \node[] at (1.375,0) {\footnotesize{● Basque}};
+    \node[] at (2.5,3) {\scriptsize{● Japanese}};
+    \node[] at (2.25,2) {\scriptsize{● German}};
+    \node[] at (2,1) {\scriptsize{● Hungarian}};
+    \node[] at (1.375,0) {\scriptsize{● Basque}};
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}
@@ -593,9 +598,9 @@ In the languages I discuss in this dissertation, I focus on languages that have 
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-    \node[] at (0,2.75) {nominative};
-    \node[] at (0,1.75) {accusative};
-    \node[] at (0,0) {dative};
+    \node[] at (0,2.75) {\footnotesize{nominative}};
+    \node[] at (0,1.75) {\footnotesize{accusative}};
+    \node[] at (0,0) {\footnotesize{dative}};
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}
@@ -634,9 +639,9 @@ The implicational hierarchy is schematically represented in Figure \ref{fig:rel-
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-    \node[] at (0,2.75) {subject};
-    \node[] at (0,1.5) {direct object};
-    \node[align=center] at (0,0) {indirect\\ object};
+    \node[] at (0,2.75) {\footnotesize{subject}};
+    \node[] at (0,1.5) {\footnotesize{direct object}};
+    \node[align=center] at (0,0) {\footnotesize{indirect}\\ \footnotesize{object}};
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}
@@ -759,13 +764,13 @@ Putting the languages in the schema gives the result as shown in Figure \ref{fig
      \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
      \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-     \node[] at (0,2.75) {subject};
-     \node[] at (0,1.5) {direct object};
-     \node[align=center] at (0,0) {indirect\\ object};
+     \node[] at (0,2.75) {\footnotesize{subject}};
+     \node[] at (0,1.5) {\footnotesize{direct object}};
+     \node[align=center] at (0,0) {\footnotesize{indirect}\\ \footnotesize{object}};
 
-     \node[] at (2.5,2) {\footnotesize{● Malagasy/German}};
-     \node[] at (2,1) {\footnotesize{● Malay/Finnish}};
-     \node[] at (1.375,0) {\footnotesize{● Basque}};
+     \node[] at (2.7,2) {\scriptsize{● Malagasy/German}};
+     \node[] at (2.1,1) {\scriptsize{● Malay/Finnish}};
+     \node[] at (1.375,0) {\scriptsize{● Basque}};
    \end{tikzpicture}\\
     \bottomrule
  \end{tabular}
@@ -812,13 +817,13 @@ In conclusion, just as the agreement hierarchy, the relativization hierarchy is 
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-    \node[] at (0,2.75) {unmarked case};
-    \node[] at (0,1.5) {dependent case};
-    \node[align=center] at (0,0) {dative};
+    \node[] at (0,2.75) {\footnotesize{unmarked case}};
+    \node[] at (0,1.5) {\footnotesize{dependent case}};
+    \node[align=center] at (0,0) {\footnotesize{dative}};
 
-    \node[] at (2.5,2) {\footnotesize{● Malagasy/German}};
-    \node[] at (2,1) {\footnotesize{● Malay/Finnish}};
-    \node[] at (1.375,0) {\footnotesize{● Basque}};
+    \node[] at (2.7,2) {\scriptsize{● Malagasy/German}};
+    \node[] at (2.1,1) {\scriptsize{● Malay/Finnish}};
+    \node[] at (1.375,0) {\scriptsize{● Basque}};
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}
@@ -842,9 +847,9 @@ In the languages I discuss in this dissertation, I focus on languages that have 
     \draw [fill opacity=0.4, fill=LG] (0,0.5) circle (1.75);
     \draw [fill opacity=0.4, fill=DG] (0,0) circle (1.25);
 
-    \node[] at (0,2.75) {nominative};
-    \node[] at (0,1.5) {accusative};
-    \node[align=center] at (0,0) {dative};
+    \node[] at (0,2.75) {\footnotesize{nominative}};
+    \node[] at (0,1.5) {\footnotesize{accusative}};
+    \node[align=center] at (0,0) {\footnotesize{dative}};
   \end{tikzpicture}\\
     \bottomrule
 \end{tabular}

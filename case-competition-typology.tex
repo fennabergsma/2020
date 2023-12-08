@@ -1294,27 +1294,27 @@ Figure \ref{fig:attested-headless-relatives-case-competition} shows a diagram th
   \begin{tabular}[b]{c}
     \toprule
     \begin{tikzpicture}[node distance=1.5cm]
-      \node (question2) [question]
-      {allow \tsc{int}}; %ϕ+\tsc{k} portmanteau?
+	\node (question2) [question]
+      {\small{allow \tsc{int}}}; %ϕ+\tsc{k} portmanteau?
           \node (outcome2) [outcome, below of=question2, xshift=-2cm, yshift=-0.5cm]
-          {matching};
+          {\small{matching}};
               \node (example2) [example, below of=outcome2, yshift=0.5cm]
-              {e.g. Polish\\\phantom{x}\\\phantom{x}};
+              {\small{e.g. Polish (9)\\\phantom{x}\\\phantom{x}}};
           \node (question3) [question, below of=question2, xshift=2.5cm, yshift=-1cm]
-          {allow \tsc{ext}}; %\tsc{lh}-\tsc{rp} syncretism?
+          {\small{allow \tsc{ext}}}; %\tsc{lh}-\ac{rp} syncretism?
               \node (outcome3) [outcome, below of=question3, xshift=-2cm, yshift=-0.5cm]
-              {internal-only};
+              {\small{internal-only}};
                   \node (example3) [example, below of=outcome3, yshift=0.5cm]
-                  {e.g. Modern German\\\phantom{x}};
+                  {\small{e.g. Modern German (3)\\\phantom{x}}};
               \node (outcome4) [outcome, below of=question3, xshift=2cm, yshift=-0.5cm]
-              {unrestricted};
+              {\small{unrestricted}};
                   \node (example4) [example, below of=outcome4, yshift=0.5cm]
-                  {e.g. Gothic, Old High German, Classical Greek};
+                  {\small{e.g. Gothic, Old High German, Classical Greek (2)}};
 
-    \draw [arrow] (question2) -- node[anchor=east] {no} (outcome2);
-    \draw [arrow] (question2) -- node[anchor=west] {yes} (question3);
-    \draw [arrow] (question3) -- node[anchor=east] {no} (outcome3);
-    \draw [arrow] (question3) -- node[anchor=west] {yes} (outcome4);
+    \draw [arrow] (question2) -- node[anchor=east] {\small{no}} (outcome2);
+    \draw [arrow] (question2) -- node[anchor=west] {\small{yes}} (question3);
+    \draw [arrow] (question3) -- node[anchor=east] {\small{no}} (outcome3);
+    \draw [arrow] (question3) -- node[anchor=west] {\small{yes}} (outcome4);
     \end{tikzpicture}\\
     \bottomrule
   \end{tabular}

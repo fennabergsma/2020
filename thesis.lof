@@ -1,71 +1,71 @@
 \acswitchoff 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Agreement hierarchy\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Agreement hierarchy with languages\relax }}{26}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Nominative-accusative alignment\relax }}{28}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Ergative-absolutive alignment\relax }}{28}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Agreement hierarchy (case)\relax }}{29}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Agreement hierarchy (\textsc {nom}/\textsc {acc/\textsc {dat}})\relax }}{30}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Relativization hierarchy\relax }}{31}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Relativization hierarchy with languages\relax }}{36}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Relativization hierarchy (case)\relax }}{37}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Relativization hierarchy (\textsc {nom}/\textsc {acc}/\textsc {dat})\relax }}{38}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Agreement hierarchy\relax }}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Agreement hierarchy with languages\relax }}{29}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Nominative-accusative alignment\relax }}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ergative-absolutive alignment\relax }}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Agreement hierarchy (case)\relax }}{32}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Agreement hierarchy (\textsc {nom}/\textsc {acc/\textsc {dat}})\relax }}{33}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Relativization hierarchy\relax }}{34}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Relativization hierarchy with languages\relax }}{40}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Relativization hierarchy (case)\relax }}{41}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Relativization hierarchy (\textsc {nom}/\textsc {acc}/\textsc {dat})\relax }}{42}{figure.caption.26}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Two descriptive parameters generate three language types\relax }}{104}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Two descriptive parameters generate three language types\relax }}{113}{figure.caption.58}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Three descriptive parameters generate four language types\relax }}{115}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Three descriptive parameters generate four language types\relax }}{126}{figure.caption.72}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Two descriptive parameters generate three language types (repeated)\relax }}{121}{figure.caption.75}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \textsc {lh}-1 and \textsc {rp}\relax }}{124}{figure.caption.76}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \textsc {lh}-2 and \textsc {rp}\relax }}{125}{figure.caption.77}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \textsc {lh} and \textsc {rp} in the internal-only type\relax }}{130}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the internal-only type\relax }}{131}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the internal-only type\relax }}{131}{figure.caption.81}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the internal-only type\relax }}{132}{figure.caption.82}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces \textsc {lh} and \textsc {rp} in the matching type\relax }}{134}{figure.caption.84}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the matching type\relax }}{135}{figure.caption.85}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the matching type\relax }}{135}{figure.caption.86}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the internal-only type (repeated)\relax }}{136}{figure.caption.87}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Nominal ellipsis in Dutch\relax }}{137}{figure.caption.88}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Nominal ellipsis in Kipsigis\relax }}{138}{figure.caption.89}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in the unrestricted type\relax }}{140}{figure.caption.91}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} with case syncretism in the internal-only type\relax }}{142}{figure.caption.92}%
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Syncretism between \textsc {lh} and \textsc {rp}\relax }}{144}{figure.caption.93}%
-\contentsline {figure}{\numberline {6.17}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in the unrestricted type\relax }}{145}{figure.caption.94}%
-\contentsline {figure}{\numberline {6.18}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the unrestricted type\relax }}{146}{figure.caption.95}%
-\contentsline {figure}{\numberline {6.19}{\ignorespaces \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the unrestricted type\relax }}{147}{figure.caption.96}%
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Different lexical entries generate three language types\relax }}{150}{figure.caption.99}%
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Syncretism between \textsc {lh} and \textsc {rp} (repeated)\relax }}{152}{figure.caption.100}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Two descriptive parameters generate three language types (repeated)\relax }}{133}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \textsc {lh}-1 and \textsc {rp}\relax }}{136}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \textsc {lh}-2 and \textsc {rp}\relax }}{137}{figure.caption.77}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \textsc {lh} and \textsc {rp} in the internal-only type\relax }}{143}{figure.caption.79}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the internal-only type\relax }}{143}{figure.caption.80}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the internal-only type\relax }}{144}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the internal-only type\relax }}{145}{figure.caption.82}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \textsc {lh} and \textsc {rp} in the matching type\relax }}{146}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the matching type\relax }}{147}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the matching type\relax }}{148}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} in the internal-only type (repeated)\relax }}{149}{figure.caption.87}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Nominal ellipsis in Dutch\relax }}{150}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Nominal ellipsis in Kipsigis\relax }}{151}{figure.caption.89}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in the unrestricted type\relax }}{153}{figure.caption.91}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} with case syncretism in the internal-only type\relax }}{156}{figure.caption.92}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Syncretism between \textsc {lh} and \textsc {rp}\relax }}{157}{figure.caption.93}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in the unrestricted type\relax }}{158}{figure.caption.94}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the unrestricted type\relax }}{159}{figure.caption.95}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} in the unrestricted type\relax }}{160}{figure.caption.96}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Different lexical entries generate three language types\relax }}{164}{figure.caption.99}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Syncretism between \textsc {lh} and \textsc {rp} (repeated)\relax }}{166}{figure.caption.100}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces \textsc {lh} and \textsc {rp} in the internal-only type\relax }}{155}{figure.caption.101}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces \textsc {lh} and \textsc {rp} in Modern German\relax }}{157}{figure.caption.103}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {wen}\relax }}{192}{figure.caption.109}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {dat}} → \textit {wem}\relax }}{194}{figure.caption.110}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {dat}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {m}/\textit {wen}\relax }}{196}{figure.caption.111}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces \textsc {elh} and \textsc {rp} in Modern German (repeated)\relax }}{198}{figure.caption.112}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces \textsc {lh} and \textsc {rp} in the internal-only type\relax }}{169}{figure.caption.101}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces \textsc {lh} and \textsc {rp} in Modern German\relax }}{171}{figure.caption.103}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {wen}\relax }}{210}{figure.caption.109}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {dat}} → \textit {wem}\relax }}{212}{figure.caption.110}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Modern German \textsc {ext}\textsc {\textsubscript {dat}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {m}/\textit {wen}\relax }}{214}{figure.caption.111}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces \textsc {elh} and \textsc {rp} in Modern German (repeated)\relax }}{216}{figure.caption.112}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {8.1}{\ignorespaces \textsc {lh} and \textsc {rp} in the matching type\relax }}{201}{figure.caption.113}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces \textsc {lh} and \textsc {rp} in Polish\relax }}{203}{figure.caption.115}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Polish \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {kogo}\relax }}{230}{figure.caption.124}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Polish \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {dat}} ↛ \textit {ogo}/\textit {komu}\relax }}{232}{figure.caption.125}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Polish \textsc {ext}\textsc {\textsubscript {dat}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {omu}/\textit {kogo}\relax }}{235}{figure.caption.126}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces \textsc {elh} and \textsc {rp} in Polish (repeated)\relax }}{236}{figure.caption.127}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces \textsc {lh} and \textsc {rp} in the matching type\relax }}{219}{figure.caption.113}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces \textsc {lh} and \textsc {rp} in Polish\relax }}{221}{figure.caption.115}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Polish \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {kogo}\relax }}{250}{figure.caption.124}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Polish \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {dat}} ↛ \textit {ogo}/\textit {komu}\relax }}{252}{figure.caption.125}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Polish \textsc {ext}\textsc {\textsubscript {dat}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {omu}/\textit {kogo}\relax }}{255}{figure.caption.126}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces \textsc {elh} and \textsc {rp} in Polish (repeated)\relax }}{256}{figure.caption.127}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {9.1}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in the unrestricted type\relax }}{240}{figure.caption.128}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in Old High German\relax }}{241}{figure.caption.130}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in the unrestricted type\relax }}{242}{figure.caption.131}%
-\contentsline {figure}{\numberline {9.4}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in Old High German\relax }}{244}{figure.caption.133}%
-\contentsline {figure}{\numberline {9.5}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {elh})\relax }}{270}{figure.caption.137}%
-\contentsline {figure}{\numberline {9.6}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {dem})\relax }}{271}{figure.caption.138}%
-\contentsline {figure}{\numberline {9.7}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {en}/\textit {dher} (\textsc {elh})\relax }}{273}{figure.caption.139}%
-\contentsline {figure}{\numberline {9.8}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {dhen}/\textit {dher} (\textsc {dem})\relax }}{275}{figure.caption.140}%
-\contentsline {figure}{\numberline {9.9}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {then} (\textsc {elh})\relax }}{279}{figure.caption.141}%
-\contentsline {figure}{\numberline {9.10}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {ther}/\textit {then} (\textsc {dem})\relax }}{281}{figure.caption.142}%
-\contentsline {figure}{\numberline {9.11}{\ignorespaces \textsc {elh} and \textsc {rp} in Old High German (repeated)\relax }}{290}{figure.caption.145}%
-\contentsline {figure}{\numberline {9.12}{\ignorespaces \textsc {dem} and \textsc {rp} in Old High German (repeated)\relax }}{291}{figure.caption.146}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in the unrestricted type\relax }}{260}{figure.caption.128}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces \textsc {lh}-1 and \textsc {rp} in Old High German\relax }}{261}{figure.caption.130}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in the unrestricted type\relax }}{262}{figure.caption.131}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces \textsc {lh}-2 and \textsc {rp} in Old High German\relax }}{264}{figure.caption.133}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {elh})\relax }}{293}{figure.caption.137}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {nom}} → \textit {dher} (\textsc {dem})\relax }}{294}{figure.caption.138}%
+\contentsline {figure}{\numberline {9.7}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {en}/\textit {dher} (\textsc {elh})\relax }}{297}{figure.caption.139}%
+\contentsline {figure}{\numberline {9.8}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {acc}} vs. \textsc {int}\textsc {\textsubscript {nom}} ↛ \textit {dhen}/\textit {dher} (\textsc {dem})\relax }}{298}{figure.caption.140}%
+\contentsline {figure}{\numberline {9.9}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} → \textit {then} (\textsc {elh})\relax }}{304}{figure.caption.141}%
+\contentsline {figure}{\numberline {9.10}{\ignorespaces Old High German \textsc {ext}\textsc {\textsubscript {nom}} vs. \textsc {int}\textsc {\textsubscript {acc}} ↛ \textit {ther}/\textit {then} (\textsc {dem})\relax }}{305}{figure.caption.142}%
+\contentsline {figure}{\numberline {9.11}{\ignorespaces \textsc {elh} and \textsc {rp} in Old High German (repeated)\relax }}{316}{figure.caption.145}%
+\contentsline {figure}{\numberline {9.12}{\ignorespaces \textsc {dem} and \textsc {rp} in Old High German (repeated)\relax }}{316}{figure.caption.146}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Three descriptive parameters generate four language types (repeated)\relax }}{309}{figure.caption.151}%
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Different lexical entries generate three language types (repeated)\relax }}{311}{figure.caption.152}%
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Three descriptive parameters generate four language types (repeated)\relax }}{335}{figure.caption.151}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Different lexical entries generate three language types (repeated)\relax }}{338}{figure.caption.152}%

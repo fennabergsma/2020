@@ -980,18 +980,19 @@ I follow \citet{caha2019} who proposes that this happens via Backtracking. He ar
 In this dissertation I do not discuss the effect that Backtracking `normally' has, namely to try a different spellout option at the previous cycle. That does not mean that I assume it is not part of the derivation: I actually assume it a step that is attempted. I refrain from mentioning it, because this does not lead to a successful spellout in any of the derivations I discuss.
 }
 
-\ex. \tbf{The logic of backtracking} \pgcitep{caha2019}{198}\\\label{ex:backtracking}
+\ex.\label{ex:backtracking} \tbf{The logic of backtracking} \pgcitep{caha2019}{198}\\
 When spellout of F fails, go back to the previous cycle, and provide a different configuration for Merge F.
 
 Imagine a situation in which the previous feature was spelled out with a complex specifier and the next feature reaches the derivational option Backtracking. This is exactly the situation that arises after \tsc{rel} is merged. Providing a different configuration means splitting up the two phrases, and then merging the feature again. Specifically, I adopt the proposal in which the feature is merged in both workspaces, as stated in \ref{ex:multiple-merge}.
 
-\ex. \tbf{Multiple Merge} \pgcitep{caha2019}{227}\\\label{ex:multiple-merge}
+\ex.\label{ex:multiple-merge} \tbf{Multiple Merge} \pgcitep{caha2019}{227}\\
 When backtracking reopens multiple workspaces, merge F in each such workspace.
 
 For the example under discussion, the situation looks as in \ref{ex:mg-rel-2x}.
 
 \ex.\label{ex:mg-rel-2x}
 \a.\label{ex:mg-whp-rel}
+\begin{adjustbox}{max width=0.85\textwidth}
 \begin{forest} boom
   [\tsc{rel}P
       [\tsc{rel}]
@@ -1004,7 +1005,9 @@ For the example under discussion, the situation looks as in \ref{ex:mg-rel-2x}.
       ]
   ]
 \end{forest}
+\end{adjustbox}
 \b.\label{ex:mg-indp-rel}
+\begin{adjustbox}{max width=0.85\textwidth}
 \begin{forest} boom
   [\tsc{rel}P
       [\tsc{rel}]
@@ -1020,6 +1023,7 @@ For the example under discussion, the situation looks as in \ref{ex:mg-rel-2x}.
       ]
   ]
 \end{forest}
+\end{adjustbox}
 
 The feature \tsc{rel} is merged in both workspaces, so it combines with the \tsc{wh}P in \ref{ex:mg-whp-rel} and with the \#P in \ref{ex:mg-indp-rel}. From here on, the derivation proceeds, as usual, according to the Spellout Algorithm, with the only difference that it happens in two workspaces simultaneously. Spellout has to be successful in at least one of the two workspaces.
 
@@ -1029,7 +1033,7 @@ There is no successful spellout for \ref{ex:mg-indp-rel}, so the \tsc{rel} is re
 As spellout has succeeded at least once, the workspaces can be merged back together. The result is shown in \ref{ex:mg-spellout-relp-inspec}.
 
 \ex.\label{ex:mg-spellout-relp-inspec}
-\begin{adjustbox}{max width=0.9\textwidth}
+\begin{adjustbox}{max width=0.85\textwidth}
 \begin{forest} boom
   [\tsc{rel}P, s sep = 40mm
       [\tsc{rel}P,
@@ -1078,7 +1082,7 @@ It forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which cor
 The \tsc{nom}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-nom}.
 
 \ex.\label{ex:mg-spellout-rel-nom}
-\begin{adjustbox}{max width=0.9\textwidth}
+\begin{adjustbox}{max width=0.85\textwidth}
 \begin{forest} boom
       [\tsc{rel}P, s sep=40mm
           [\tsc{rel}P,
@@ -1128,7 +1132,7 @@ The feature \tsc{k}2 is merged in both workspaces, so with the \tsc{rel}P and wi
 It forms a constituent in the lexical tree in \ref{ex:mg-entry-n-rep}, which corresponds to the \tit{n}. The \tsc{acc}P is spelled out as \tit{n}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-acc}.
 
 \ex.\label{ex:mg-spellout-rel-acc}
-\begin{adjustbox}{max width=0.9\textwidth}
+\begin{adjustbox}{max width=0.85\textwidth}
 \begin{forest} boom
       [\tsc{rel}P, s sep=45mm
           [\tsc{rel}P,
@@ -1182,7 +1186,7 @@ It forms a constituent in the lexical tree in \ref{ex:mg-entry-m-rep}.
 The \tsc{dat}P is spelled out as \tit{m}, and all constituents are merged back into the existing syntactic structure, as shown in \ref{ex:mg-spellout-rel-dat}.
 
 \ex.\label{ex:mg-spellout-rel-dat}
-\begin{adjustbox}{max width=0.9\textwidth}
+\begin{adjustbox}{max width=0.85\textwidth}
 \begin{forest} boom
       [\tsc{rel}P, s sep=45mm
           [\tsc{rel}P,
